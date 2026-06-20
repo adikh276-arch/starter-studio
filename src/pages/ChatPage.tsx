@@ -2,9 +2,9 @@ import { useState } from "react";
 import { useNavigate, useParams } from "react-router";
 import { ArrowLeft, Send, Paperclip, Video, Phone, MoreVertical, Check, CheckCheck } from "lucide-react";
 import { motion } from "motion/react";
-import { Sidebar } from "./Sidebar";
-import { MobileNav } from "./MobileNav";
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+import { Sidebar } from "@/components/Sidebar";
+import { MobileNav } from "@/components/MobileNav";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 interface Message {
   id: string;

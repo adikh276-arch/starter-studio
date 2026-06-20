@@ -16,8 +16,8 @@ import {
   Info,
   ChevronRight
 } from "lucide-react";
-import { Sidebar } from "./Sidebar";
-import { MobileNav } from "./MobileNav";
+import { Sidebar } from "@/components/Sidebar";
+import { MobileNav } from "@/components/MobileNav";
 import depressionIcon from "figma:asset/9bf1f8df86a3e4ea2495de00da50989960d460f4.png";
 
 interface ExerciseCard {

@@ -1,10 +1,10 @@
 import { useNavigate } from "react-router";
 import { MessageCircle, ArrowRight, Activity, Heart, ChevronRight, Sparkles, Clock, Check, Award, CheckCircle, Headphones, BarChart3, FileText, BookOpen, Play, ChevronDown, AlertCircle, Library, Wind, Target, Video, Box, Weight, Gauge, Utensils, Droplet, GlassWater, CalendarDays, Smile, Baby, Moon, Ruler, Cigarette, Zap, Eye, BarChart, ClipboardCheck, Star, Beer, Pill, Leaf, Waves, Moon as MoonIcon, Sparkle, Calculator, User, BookOpenCheck, DollarSign, Wind as Breathing, ThermometerSun, UtensilsCrossed, Focus, Pencil, X } from "lucide-react";
 import { motion } from "motion/react";
-import { Sidebar } from "./Sidebar";
-import { MobileNav } from "./MobileNav";
+import { Sidebar } from "@/components/Sidebar";
+import { MobileNav } from "@/components/MobileNav";
 import { useState } from "react";
-import { MobileAppModal } from "./MobileAppModal";
+import { MobileAppModal } from "@/components/modals/MobileAppModal";
 
 export function DeaddictionPage() {
   const navigate = useNavigate();

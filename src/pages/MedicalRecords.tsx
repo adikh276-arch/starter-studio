@@ -2,9 +2,9 @@ import { useState } from "react";
 import { useNavigate } from "react-router";
 import { ChevronLeft, FileText, Download, Eye, Calendar, User, Weight, Activity, Stethoscope, AlertCircle, Search, Filter, Plus } from "lucide-react";
 import { motion } from "motion/react";
-import { Sidebar } from "./Sidebar";
-import { MobileNav } from "./MobileNav";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { Sidebar } from "@/components/Sidebar";
+import { MobileNav } from "@/components/MobileNav";
+import { ImageWithFallback } from "@/components/figma/ImageWithFallback";
 
 interface MedicalRecord {
   id: string;

@@ -3,9 +3,9 @@ import { useNavigate } from "react-router";
 import { ChevronLeft, Search, Circle, Moon, Music, Target, Waves, Clock, ArrowRight, Volume2, GraduationCap, Baby } from "lucide-react";
 import { WiHorizonAlt } from "react-icons/wi";
 import { motion } from "motion/react";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
-import { DarkSidebar } from "./DarkSidebar";
-import { MobileNav } from "./MobileNav";
+import { ImageWithFallback } from "@/components/figma/ImageWithFallback";
+import { DarkSidebar } from "@/components/DarkSidebar";
+import { MobileNav } from "@/components/MobileNav";
 
 export function SelfCarePage() {
   const navigate = useNavigate();

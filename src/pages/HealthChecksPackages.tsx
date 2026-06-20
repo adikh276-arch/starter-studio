@@ -2,8 +2,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router";
 import { ChevronLeft, Search, Package, Heart, Activity, Droplet, Brain, Users, Baby, Sparkles, ChevronRight, Star, Calendar, Clock, ArrowLeft } from "lucide-react";
 import { motion } from "motion/react";
-import { Sidebar } from "./Sidebar";
-import { MobileNav } from "./MobileNav";
+import { Sidebar } from "@/components/Sidebar";
+import { MobileNav } from "@/components/MobileNav";
 
 export function HealthChecksPackages() {
   const navigate = useNavigate();

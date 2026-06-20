@@ -25,17 +25,17 @@ import {
   Zap,
   RotateCcw,
 } from "lucide-react";
-import { Sidebar } from "./Sidebar";
-import { MobileNav } from "./MobileNav";
-import { ChooseFocusAreaModal } from "./ChooseFocusAreaModal";
-import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
-import { Button } from "./ui/button";
-import { Badge } from "./ui/badge";
-import { Progress } from "./ui/progress";
-import { Checkbox } from "./ui/checkbox";
-import { MobileAppModal } from "./MobileAppModal";
-import { SessionRatingModal } from "./SessionRatingModal";
-import { ServicesFilterModal } from "./ServicesFilterModal";
+import { Sidebar } from "@/components/Sidebar";
+import { MobileNav } from "@/components/MobileNav";
+import { ChooseFocusAreaModal } from "@/components/modals/ChooseFocusAreaModal";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Progress } from "@/components/ui/progress";
+import { Checkbox } from "@/components/ui/checkbox";
+import { MobileAppModal } from "@/components/modals/MobileAppModal";
+import { SessionRatingModal } from "@/components/modals/SessionRatingModal";
+import { ServicesFilterModal } from "@/components/modals/ServicesFilterModal";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 type TaskStatus = "todo" | "done";

@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { useNavigate, useParams } from "react-router";
 import { ChevronLeft, ChevronRight, RotateCcw, Play, CheckCircle2 } from "lucide-react";
 import { motion } from "motion/react";
-import { Sidebar } from "./Sidebar";
-import { MobileNav } from "./MobileNav";
+import { Sidebar } from "@/components/Sidebar";
+import { MobileNav } from "@/components/MobileNav";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Area, AreaChart } from "recharts";
 import exampleImage from "figma:asset/b10f0466762b7638a487dda766c6a48b7120c758.png";
 

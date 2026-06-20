@@ -2,9 +2,9 @@ import React from "react";
 import { useNavigate } from "react-router";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { motion } from "motion/react";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
-import { DarkSidebar } from "./DarkSidebar";
-import { MobileNav } from "./MobileNav";
+import { ImageWithFallback } from "@/components/figma/ImageWithFallback";
+import { DarkSidebar } from "@/components/DarkSidebar";
+import { MobileNav } from "@/components/MobileNav";
 import Slider from "react-slick";
 
 export function BrowseByGoalDetail() {

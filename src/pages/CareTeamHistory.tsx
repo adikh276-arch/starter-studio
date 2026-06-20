@@ -1,8 +1,8 @@
 import { MessageCircle, Search, Send, Paperclip, MoreVertical, Phone, Video, ArrowLeft, ChevronRight, ChevronLeft } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
-import { Sidebar } from "./Sidebar";
-import { MobileNav } from "./MobileNav";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { Sidebar } from "@/components/Sidebar";
+import { MobileNav } from "@/components/MobileNav";
+import { ImageWithFallback } from "@/components/figma/ImageWithFallback";
 
 interface Expert {
   id: string;

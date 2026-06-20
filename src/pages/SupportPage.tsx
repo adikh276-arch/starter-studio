@@ -4,8 +4,8 @@ import {
   HelpCircle, Mail, Phone, Ticket, Building2, RefreshCcw,
   Link2, MessageCircle, X, Send, Clock, CheckCircle2, ExternalLink, ChevronDown,
 } from "lucide-react";
-import { Sidebar } from "./Sidebar";
-import { MobileNav } from "./MobileNav";
+import { Sidebar } from "@/components/Sidebar";
+import { MobileNav } from "@/components/MobileNav";
 
 function TicketModal({ onClose }: { onClose: () => void }) {
   const [subject, setSubject]     = useState("");

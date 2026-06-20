@@ -1,7 +1,7 @@
 import { useNavigate, useParams } from "react-router";
 import { motion } from "motion/react";
-import { Sidebar } from "./Sidebar";
-import { MobileNav } from "./MobileNav";
+import { Sidebar } from "@/components/Sidebar";
+import { MobileNav } from "@/components/MobileNav";
 import { ChevronLeft, Clock, Heart, Share2 } from "lucide-react";
 
 interface ArticleDetail {

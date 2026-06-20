@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import { motion } from "motion/react";
-import { Sidebar } from "./Sidebar";
-import { MobileNav } from "./MobileNav";
+import { Sidebar } from "@/components/Sidebar";
+import { MobileNav } from "@/components/MobileNav";
 import { ChevronLeft, Activity, ChevronRight } from "lucide-react";
 import { GiNightSleep } from "react-icons/gi";
 import { FaRunning, FaDumbbell } from "react-icons/fa";

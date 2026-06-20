@@ -4,8 +4,8 @@ import {
   Lightbulb, Star, Send, CheckCircle2, MessageSquare,
   ChevronDown, Paperclip,
 } from "lucide-react";
-import { Sidebar } from "./Sidebar";
-import { MobileNav } from "./MobileNav";
+import { Sidebar } from "@/components/Sidebar";
+import { MobileNav } from "@/components/MobileNav";
 
 type Category = { id: string; label: string };
 type RatingLabel = { icon: React.ElementType; label: string; color: string; bg: string };

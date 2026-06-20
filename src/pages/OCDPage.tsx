@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router";
 import { Calendar, MessageCircle, CheckCircle, ChevronRight, ChevronLeft, Sparkles, Heart, Wind, BookOpen, BarChart3, ArrowRight, Play, Headphones, FileText, Activity, Moon, Music, Star, ArrowUpRight, Clock, Award, Check, Zap, Battery, Users } from "lucide-react";
 import { motion } from "motion/react";
-import { Sidebar } from "./Sidebar";
-import { MobileNav } from "./MobileNav";
-import { MobileAppModal } from "./MobileAppModal";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { Sidebar } from "@/components/Sidebar";
+import { MobileNav } from "@/components/MobileNav";
+import { MobileAppModal } from "@/components/modals/MobileAppModal";
+import { ImageWithFallback } from "@/components/figma/ImageWithFallback";
 import ocdCtaImage from "figma:asset/db1e749f8f0e51fd6bed6aac17a276ea49c074c0.png";
 
 export function OCDPage() {

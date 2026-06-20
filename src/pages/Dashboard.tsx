@@ -20,21 +20,21 @@ import ctaDonationImage from "figma:asset/ad9770a57919dd35529282700469e4cde35152
 import { useNavigate } from "react-router";
 import { MessageCircle, ArrowRight, Activity, Heart, TrendingUp, Calendar, Video, ChevronRight, Smartphone, Download, Star, Sparkles, Clock, Check, User, CheckSquare, Headphones, BarChart3, FileText, BookOpen, Play, Award, CheckCircle, Globe, ChevronDown, AlertCircle, Users } from "lucide-react";
 import { motion } from "motion/react";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
-import { Sidebar } from "./Sidebar";
-import { MobileNav } from "./MobileNav";
+import { ImageWithFallback } from "@/components/figma/ImageWithFallback";
+import { Sidebar } from "@/components/Sidebar";
+import { MobileNav } from "@/components/MobileNav";
 import { useState, useEffect } from "react";
-import { Button } from "./ui/button";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "./ui/card";
-import { Badge } from "./ui/badge";
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
-import { ChooseProviderModal } from "./ChooseProviderModal";
-import { ScheduleAppointmentModal } from "./ScheduleAppointmentModal";
-import { MobileAppModal } from "./MobileAppModal";
-import { AppointmentDeclinedModal } from "./AppointmentDeclinedModal";
-import { AppointmentConfirmationModal } from "./AppointmentConfirmationModal";
-import { SessionsVerificationModal } from "./SessionsVerificationModal";
-import { BuyPlanModal } from "./BuyPlanModal";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { ChooseProviderModal } from "@/components/modals/ChooseProviderModal";
+import { ScheduleAppointmentModal } from "@/components/modals/ScheduleAppointmentModal";
+import { MobileAppModal } from "@/components/modals/MobileAppModal";
+import { AppointmentDeclinedModal } from "@/components/modals/AppointmentDeclinedModal";
+import { AppointmentConfirmationModal } from "@/components/modals/AppointmentConfirmationModal";
+import { SessionsVerificationModal } from "@/components/modals/SessionsVerificationModal";
+import { BuyPlanModal } from "@/components/modals/BuyPlanModal";
 
 interface Service {
   id: string;

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { DollarSign, Award, Timer, Ban, TrendingUp, Sparkles, Pencil, RotateCcw } from "lucide-react";
-import { SobrietyTrackerModal, SobrietyFormData } from "./SobrietyTrackerModal";
+import { SobrietyTrackerModal, SobrietyFormData } from "@/components/modals/SobrietyTrackerModal";
 
 export function SobrietyTracker() {
   const [quitDate, setQuitDate] = useState<string>("");

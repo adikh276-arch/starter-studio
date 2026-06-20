@@ -1,22 +1,22 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
-import { Sidebar } from "./Sidebar";
-import { MobileNav } from "./MobileNav";
-import { ChooseProviderModal } from "./ChooseProviderModal";
-import { ScheduleAppointmentModal } from "./ScheduleAppointmentModal";
-import { SessionsDetailsModal } from "./SessionsDetailsModal";
-import { AppointmentConfirmationModal } from "./AppointmentConfirmationModal";
-import { SessionRatingModal } from "./SessionRatingModal";
-import { PendingSessionModal } from "./PendingSessionModal";
-import { AppointmentDeclinedModal } from "./AppointmentDeclinedModal";
-import { SessionsVerificationModal } from "./SessionsVerificationModal";
+import { ImageWithFallback } from "@/components/figma/ImageWithFallback";
+import { Sidebar } from "@/components/Sidebar";
+import { MobileNav } from "@/components/MobileNav";
+import { ChooseProviderModal } from "@/components/modals/ChooseProviderModal";
+import { ScheduleAppointmentModal } from "@/components/modals/ScheduleAppointmentModal";
+import { SessionsDetailsModal } from "@/components/modals/SessionsDetailsModal";
+import { AppointmentConfirmationModal } from "@/components/modals/AppointmentConfirmationModal";
+import { SessionRatingModal } from "@/components/modals/SessionRatingModal";
+import { PendingSessionModal } from "@/components/modals/PendingSessionModal";
+import { AppointmentDeclinedModal } from "@/components/modals/AppointmentDeclinedModal";
+import { SessionsVerificationModal } from "@/components/modals/SessionsVerificationModal";
 import { useSearchParams, useNavigate } from "react-router";
-import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
-import { Button } from "./ui/button";
-import { Badge } from "./ui/badge";
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   Calendar,
   CalendarDays,

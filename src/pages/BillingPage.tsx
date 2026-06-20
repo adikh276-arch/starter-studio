@@ -47,23 +47,23 @@ import {
   ArrowUpRight,
   ArrowDownRight,
 } from "lucide-react";
-import { Sidebar } from "./Sidebar";
-import { MobileNav } from "./MobileNav";
-import { AddInsuranceModal } from "./AddInsuranceModal";
-import { AddPaymentMethodModal } from "./AddPaymentMethodModal";
-import { ClaimDetailsModal } from "./ClaimDetailsModal";
-import { FileAppealModal } from "./FileAppealModal";
-import { PayCopayModal } from "./PayCopayModal";
-import { MakePaymentModal } from "./MakePaymentModal";
-import { BookSessionModal } from "./BookSessionModal";
+import { Sidebar } from "@/components/Sidebar";
+import { MobileNav } from "@/components/MobileNav";
+import { AddInsuranceModal } from "@/components/modals/AddInsuranceModal";
+import { AddPaymentMethodModal } from "@/components/modals/AddPaymentMethodModal";
+import { ClaimDetailsModal } from "@/components/modals/ClaimDetailsModal";
+import { FileAppealModal } from "@/components/modals/FileAppealModal";
+import { PayCopayModal } from "@/components/modals/PayCopayModal";
+import { MakePaymentModal } from "@/components/modals/MakePaymentModal";
+import { BookSessionModal } from "@/components/modals/BookSessionModal";
 import { useNavigate, useLocation } from "react-router";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "./ui/card";
-import { Button } from "./ui/button";
-import { Badge } from "./ui/badge";
-import { Input } from "./ui/input";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "./ui/table";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Input } from "@/components/ui/input";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // SHARED TYPES & DATA

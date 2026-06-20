@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router";
 import { motion, AnimatePresence } from "motion/react";
-import { Sidebar } from "./Sidebar";
-import { MobileNav } from "./MobileNav";
+import { Sidebar } from "@/components/Sidebar";
+import { MobileNav } from "@/components/MobileNav";
 import { ChevronLeft, MessageCircle } from "lucide-react";
 import { GiFemale, GiMeditation } from "react-icons/gi";
 import { FaBaby, FaBrain, FaAppleAlt, FaBabyCarriage, FaNotesMedical, FaSeedling, FaUserClock } from "react-icons/fa";

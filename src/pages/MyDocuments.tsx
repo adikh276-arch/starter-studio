@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Sidebar } from "./Sidebar";
-import { MobileNav } from "./MobileNav";
+import { Sidebar } from "@/components/Sidebar";
+import { MobileNav } from "@/components/MobileNav";
 import {
   Upload, Download, Share2, Eye, Shield, Lock, X,
   FlaskConical, Scan, Pill, AlertCircle, Stethoscope,
@@ -8,7 +8,7 @@ import {
   FileText, ChevronLeft, MoreVertical, ZoomIn,
 } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
 
 // ─── Brand ───────────────────────────────────────────────────────────────────
 const B = {

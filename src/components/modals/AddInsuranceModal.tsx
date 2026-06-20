@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { X, ChevronDown, Upload, Check, Info } from "lucide-react";
-import { InsuranceNotFoundModal } from "./InsuranceNotFoundModal";
+import { InsuranceNotFoundModal } from "@/components/modals/InsuranceNotFoundModal";
 
 interface AddInsuranceModalProps {
   isOpen: boolean;

@@ -2,10 +2,10 @@ import { useState } from "react";
 import { X, ArrowLeft, Settings, Star, MapPin, CheckCircle, ChevronRight, ChevronLeft, RefreshCw } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import { useNavigate } from "react-router";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
-import { ContinueMatchingModal } from "./ContinueMatchingModal";
-import { PreferencesModal } from "./PreferencesModal";
-import { FeedbackModal } from "./FeedbackModal";
+import { ImageWithFallback } from "@/components/figma/ImageWithFallback";
+import { ContinueMatchingModal } from "@/components/modals/ContinueMatchingModal";
+import { PreferencesModal } from "@/components/modals/PreferencesModal";
+import { FeedbackModal } from "@/components/modals/FeedbackModal";
 
 interface Expert {
   id: string;

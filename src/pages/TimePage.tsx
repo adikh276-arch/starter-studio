@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { useNavigate, useParams } from "react-router";
 import { ChevronLeft, Play, Clock } from "lucide-react";
 import { motion } from "motion/react";
-import { DarkSidebar } from "./DarkSidebar";
-import { MobileNav } from "./MobileNav";
+import { DarkSidebar } from "@/components/DarkSidebar";
+import { MobileNav } from "@/components/MobileNav";
 
 export function TimePage() {
   const navigate = useNavigate();

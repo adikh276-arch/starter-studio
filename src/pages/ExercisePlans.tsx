@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router";
 import { ArrowLeft, CheckCircle2, Circle, Play, ChevronRight, ChevronLeft, Activity } from "lucide-react";
 import { motion } from "motion/react";
-import { Sidebar } from "./Sidebar";
-import { MobileNav } from "./MobileNav";
+import { Sidebar } from "@/components/Sidebar";
+import { MobileNav } from "@/components/MobileNav";
 import { FaDumbbell, FaRunning } from "react-icons/fa";
 import { GiNightSleep } from "react-icons/gi";
-import { QuickStartModal } from "./QuickStartModal";
+import { QuickStartModal } from "@/components/modals/QuickStartModal";
 
 interface ExercisePlan {
   id: string;

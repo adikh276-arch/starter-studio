@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import { motion, AnimatePresence } from "motion/react";
-import { Sidebar } from "./Sidebar";
-import { MobileNav } from "./MobileNav";
+import { Sidebar } from "@/components/Sidebar";
+import { MobileNav } from "@/components/MobileNav";
 import { ChevronLeft, Target, Briefcase, Heart, TrendingUp, Users, Award, GraduationCap, Lightbulb, Shield, ChevronRight, ChevronDown, Bot, Compass, Brain, HeartPulse, Gauge, TrendingUp as Growth } from "lucide-react";
 
 interface MoodOption {

@@ -17,8 +17,8 @@ import {
   Receipt,
   Zap,
 } from "lucide-react";
-import { Sidebar } from "./Sidebar";
-import { MobileNav } from "./MobileNav";
+import { Sidebar } from "@/components/Sidebar";
+import { MobileNav } from "@/components/MobileNav";
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 interface Order {

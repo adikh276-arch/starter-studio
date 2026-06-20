@@ -18,9 +18,9 @@ import {
   UserCheck,
   Gift,
 } from "lucide-react";
-import { Sidebar } from "./Sidebar";
-import { MobileNav } from "./MobileNav";
-import { ShareLeadModal } from "./ShareLeadModal";
+import { Sidebar } from "@/components/Sidebar";
+import { MobileNav } from "@/components/MobileNav";
+import { ShareLeadModal } from "@/components/modals/ShareLeadModal";
 
 type TabId = "provider" | "client" | "corporate";
 

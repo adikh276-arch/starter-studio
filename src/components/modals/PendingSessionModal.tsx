@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from "motion/react";
 import { X, Calendar, Clock, Video, MessageCircle, Phone, MapPin, CheckCircle, XCircle } from "lucide-react";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { ImageWithFallback } from "@/components/figma/ImageWithFallback";
 
 type SessionMode = "Video" | "Chat" | "Call" | "In-Person";
 

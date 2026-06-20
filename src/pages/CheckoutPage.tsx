@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import { Check, ArrowLeft } from "lucide-react";
-import { Sidebar } from "./Sidebar";
+import { Sidebar } from "@/components/Sidebar";
 
 export function CheckoutPage() {
   const navigate = useNavigate();

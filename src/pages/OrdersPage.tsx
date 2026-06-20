@@ -24,8 +24,8 @@ import {
   ReceiptText,
   Download,
 } from "lucide-react";
-import { Sidebar } from "./Sidebar";
-import { MobileNav } from "./MobileNav";
+import { Sidebar } from "@/components/Sidebar";
+import { MobileNav } from "@/components/MobileNav";
 
 // ─── Types ─────────────────────────────────────────────────────────────────────
 type OrderStatus = "active" | "expired" | "pending" | "refunded";

@@ -1,11 +1,11 @@
 import { useNavigate } from "react-router";
 import { Bell, MessageCircle, ArrowRight, Gift, Star, Smartphone, Download, Sparkles, Calendar, Activity, Heart, ChevronRight, Check } from "lucide-react";
 import { motion } from "motion/react";
-import { Button } from "./ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
-import { Badge } from "./ui/badge";
-import { Sidebar } from "./Sidebar";
-import { MobileNav } from "./MobileNav";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Sidebar } from "@/components/Sidebar";
+import { MobileNav } from "@/components/MobileNav";
 
 export function NoActivePlan() {
   const navigate = useNavigate();

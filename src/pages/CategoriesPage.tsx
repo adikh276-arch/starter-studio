@@ -2,8 +2,8 @@ import React from "react";
 import { useNavigate } from "react-router";
 import { ChevronLeft, Circle, Moon, Waves, Coffee, Heart, Music, Sparkles, Mic, Sun, TreePine, Droplets, Volume2, Fish, Compass, Wind, BookOpen, Headphones, Target, Brain, Activity, Search, X } from "lucide-react";
 import { motion } from "motion/react";
-import { DarkSidebar } from "./DarkSidebar";
-import { MobileNav } from "./MobileNav";
+import { DarkSidebar } from "@/components/DarkSidebar";
+import { MobileNav } from "@/components/MobileNav";
 
 export function CategoriesPage() {
   const navigate = useNavigate();

@@ -2,8 +2,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router";
 import { ChevronLeft, Pill, Upload, Plus, X, FileText, Clock, Shield, CheckCircle2, Send } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
-import { Sidebar } from "./Sidebar";
-import { MobileNav } from "./MobileNav";
+import { Sidebar } from "@/components/Sidebar";
+import { MobileNav } from "@/components/MobileNav";
 
 interface Medication {
   id: string;

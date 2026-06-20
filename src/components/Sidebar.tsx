@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate, useLocation } from "react-router";
 import { Home, MessageSquare, Calendar, CheckSquare, BarChart3, Receipt, CreditCard, Gift, Lightbulb, HelpCircle, Menu, UserCircle, LogOut, FileText } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
-import { MantraLogoSVG } from "./MantraLogoSVG";
+import { MantraLogoSVG } from "@/components/MantraLogoSVG";
 
 export function Sidebar() {
   const navigate = useNavigate();

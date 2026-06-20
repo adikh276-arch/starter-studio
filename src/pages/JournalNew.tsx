@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import { ArrowLeft, Share2, RefreshCw, Smile, Sun, Coffee, Moon, Cloud, Meh, Frown, Save, Sparkles, Check, MoreHorizontal, X, CheckCircle2, ChevronLeft, Edit2, Filter } from "lucide-react";
 import { useNavigate, useParams } from "react-router";
 import { motion } from "motion/react";
-import { Sidebar } from "./Sidebar";
-import { MobileNav } from "./MobileNav";
+import { Sidebar } from "@/components/Sidebar";
+import { MobileNav } from "@/components/MobileNav";
 
 const serviceOptions = [
   { id: "all", label: "All Services" },

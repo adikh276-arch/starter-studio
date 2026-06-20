@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router";
 import { ArrowLeft, Calendar, CheckCircle, ChevronRight, ChevronLeft, Headphones, BookOpen, Play, Target, Moon, Briefcase, Music, Circle, Sunrise, Waves, Coffee, Clock, Award, Sparkles, Heart, Wind, BarChart3, MessageCircle, ArrowRight, Star, Check, FileText, Activity, Users } from "lucide-react";
 import { motion } from "motion/react";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
-import { DarkSidebar } from "./DarkSidebar";
-import { MobileNav } from "./MobileNav";
-import { MobileAppModal } from "./MobileAppModal";
+import { ImageWithFallback } from "@/components/figma/ImageWithFallback";
+import { DarkSidebar } from "@/components/DarkSidebar";
+import { MobileNav } from "@/components/MobileNav";
+import { MobileAppModal } from "@/components/modals/MobileAppModal";
 import meditationInstructor from "figma:asset/47db5590b60a149044811969902735d9f1d5d598.png";
 
 export function MindfulnessPage() {

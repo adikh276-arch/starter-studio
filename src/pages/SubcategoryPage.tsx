@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { useNavigate, useParams } from "react-router";
 import { ChevronLeft, Play, Sparkles, Heart } from "lucide-react";
 import { motion } from "motion/react";
-import { DarkSidebar } from "./DarkSidebar";
-import { MobileNav } from "./MobileNav";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { DarkSidebar } from "@/components/DarkSidebar";
+import { MobileNav } from "@/components/MobileNav";
+import { ImageWithFallback } from "@/components/figma/ImageWithFallback";
 
 export function SubcategoryPage() {
   const navigate = useNavigate();

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { X, Star, ThumbsUp, Send, XCircle, Calendar, Clock, Video, MessageCircle, Phone, MapPin } from "lucide-react";
-import { SessionsVerificationModal } from "./SessionsVerificationModal";
+import { SessionsVerificationModal } from "@/components/modals/SessionsVerificationModal";
 
 type SessionMode = "Video" | "Chat" | "Call" | "In-Person";
 

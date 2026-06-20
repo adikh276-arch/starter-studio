@@ -2,8 +2,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router";
 import { Eye, EyeOff, Globe, Check, User, Mail, Phone, Lock } from "lucide-react";
 import { motion } from "motion/react";
-import { Input } from "./ui/input";
-import { Button } from "./ui/button";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 
 export function SignUp() {
   const navigate = useNavigate();

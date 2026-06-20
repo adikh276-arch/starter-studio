@@ -2,8 +2,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router";
 import { Check, Video, MessageSquare, ArrowLeft } from "lucide-react";
 import { motion } from "motion/react";
-import { Sidebar } from "./Sidebar";
-import { AddInsuranceModal } from "./AddInsuranceModal";
+import { Sidebar } from "@/components/Sidebar";
+import { AddInsuranceModal } from "@/components/modals/AddInsuranceModal";
 
 type TherapyType = "individual" | "couple";
 type SessionMode = "live" | "chat";

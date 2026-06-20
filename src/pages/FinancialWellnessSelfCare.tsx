@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import { motion, AnimatePresence } from "motion/react";
-import { Sidebar } from "./Sidebar";
-import { MobileNav } from "./MobileNav";
+import { Sidebar } from "@/components/Sidebar";
+import { MobileNav } from "@/components/MobileNav";
 import { ChevronLeft, MessageCircle, BookOpen, Video, FileText, Heart, Shield, ChevronRight, ChevronDown, Sparkles, Target, Award, Crown, Clock, Timer, Activity, Music, Moon, Sunrise, Headphones, Brain, Users, TrendingUp, Lightbulb, Calculator, AlertTriangle, TrendingDown, BarChart, Newspaper, MessageSquare, Zap, DollarSign, PiggyBank, CreditCard, Wallet, Bot, Compass, HeartPulse, Gauge, TrendingUp as Growth } from "lucide-react";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { ImageWithFallback } from "@/components/figma/ImageWithFallback";
 
 interface MoodOption {
   emoji: string;

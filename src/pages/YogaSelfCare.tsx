@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import { motion, AnimatePresence } from "motion/react";
-import { Sidebar } from "./Sidebar";
-import { MobileNav } from "./MobileNav";
+import { Sidebar } from "@/components/Sidebar";
+import { MobileNav } from "@/components/MobileNav";
 import { ChevronLeft, MessageCircle, BookOpen, Video, FileText, Heart, Shield, ChevronRight, ChevronDown, Sparkles, Target, Award, Crown, Clock, Timer, Activity, Music, Moon, Sunrise, Headphones } from "lucide-react";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { ImageWithFallback } from "@/components/figma/ImageWithFallback";
 
 interface MoodOption {
   emoji: string;

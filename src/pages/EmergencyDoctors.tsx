@@ -2,8 +2,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router";
 import { ChevronLeft, Phone, Copy, Check, Globe, Clock, Shield, AlertCircle, ChevronDown, Calendar, ArrowRight, Stethoscope } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
-import { Sidebar } from "./Sidebar";
-import { MobileNav } from "./MobileNav";
+import { Sidebar } from "@/components/Sidebar";
+import { MobileNav } from "@/components/MobileNav";
 
 export function EmergencyDoctors() {
   const navigate = useNavigate();

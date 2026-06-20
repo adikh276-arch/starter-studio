@@ -1,13 +1,13 @@
 import { useNavigate, useParams } from "react-router";
 import { ArrowLeft, MapPin, Star, Calendar, User, Clock, Globe, Shield, Heart, ChevronLeft, RefreshCw, AlertCircle } from "lucide-react";
 import { motion } from "motion/react";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
-import { Sidebar } from "./Sidebar";
-import { MobileNav } from "./MobileNav";
+import { ImageWithFallback } from "@/components/figma/ImageWithFallback";
+import { Sidebar } from "@/components/Sidebar";
+import { MobileNav } from "@/components/MobileNav";
 import { useState } from "react";
-import { SwitchExpertModal } from "./SwitchExpertModal";
-import { RateProviderModal } from "./RateProviderModal";
-import { ReportProviderModal } from "./ReportProviderModal";
+import { SwitchExpertModal } from "@/components/modals/SwitchExpertModal";
+import { RateProviderModal } from "@/components/modals/RateProviderModal";
+import { ReportProviderModal } from "@/components/modals/ReportProviderModal";
 
 export function ProviderProfile() {
   const navigate = useNavigate();
