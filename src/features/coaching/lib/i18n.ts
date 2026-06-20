@@ -42,3 +42,20 @@ export function useTranslation() {
 
 /** Compatibility re-export – some legacy modules import the hook directly. */
 export const useT = useTranslation;
+
+/**
+ * Passthrough for the legacy `useTranslatedContent` hook. The original returned
+ * translator functions that re-shaped content for the active locale; in our
+ * English-only frontend phase we hand back what's passed in.
+ */
+export function useTranslatedContent() {
+  const identity = <T,>(value: T): T => value;
+  return {
+    getTranslatedArea: identity,
+    getTranslatedExercise: <T,>(_id: string, value: T): T => value,
+    getTranslatedLearn: <T,>(_areaId: string, _index: number, value: T): T => value,
+    getTranslatedResource: <T,>(_areaId: string, value: T): T => value,
+    getTranslatedQuiz: identity,
+    getTranslatedCheckin: identity,
+  };
+}
