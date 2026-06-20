@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Check, Smile, MessageCircle, ArrowRight, Calendar, ArrowLeft } from 'lucide-react';
-import { ActivityHistoryDrawer } from "@/components/ActivityHistoryDrawer";
-import { StandardCompletionModal } from "@/components/StandardCompletionModal";
-import "@/lib/i18n";
+import { ActivityHistoryDrawer } from "../../_shared/ActivityHistoryDrawer";
+import { StandardCompletionModal } from "../../_shared/StandardCompletionModal";
 import { toast } from "sonner";
 import { useTranslation } from "react-i18next";
 
@@ -137,15 +136,10 @@ const MoodTracker = () => {
       {/* Header */}
       <div className="w-full flex flex-col gap-8 mb-10 z-10 relative">
         <div className="flex items-center justify-between">
-          <button 
-            onClick={() => {
-              if (window.parent !== window) {
-                 window.parent.postMessage({ action: 'exit' }, 'https://web.mantracare.com');
-              } else {
-                 window.location.href = 'https://web.mantracare.com';
-              }
-             }}
+          <button
+            onClick={() => window.history.back()}
             className="p-2 rounded-full hover:bg-slate-100 transition-colors text-slate-500"
+            aria-label="Back"
           >
             <ArrowLeft size={20} />
           </button>
