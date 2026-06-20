@@ -17,6 +17,7 @@ interface TopicCard {
   icon: any;
   label: string;
   image: string;
+  to?: string;
 }
 
 interface ToolCard {
@@ -32,6 +33,7 @@ interface FinancialLevelCard {
   id: string;
   icon: any;
   label: string;
+  to: string;
 }
 
 const toolCards: ToolCard[] = [
@@ -44,17 +46,17 @@ const toolCards: ToolCard[] = [
 ];
 
 const topicCards: TopicCard[] = [
-  { id: "articles", icon: Newspaper, label: "Articles", image: "https://images.unsplash.com/photo-1574884280706-7342ca3d4231?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaW5hbmNlJTIwYXJ0aWNsZXMlMjBtb25leSUyMGVkdWNhdGlvbnxlbnwxfHx8fDE3NzMyMjEwODN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" },
-  { id: "tips", icon: Lightbulb, label: "Tips", image: "https://images.unsplash.com/photo-1768839721776-038d3070721e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaW5hbmNpYWwlMjB0aXBzJTIwYnVkZ2V0aW5nJTIwYWR2aWNlfGVufDF8fHx8MTc3MzIyMTA4NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" },
-  { id: "myths", icon: MessageSquare, label: "Myths", image: "https://images.unsplash.com/photo-1614623072017-924ade10a6f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb25leSUyMG15dGhzJTIwZmFjdHMlMjBmaW5hbmNlfGVufDF8fHx8MTc3MzIyMTA4NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" },
-  { id: "stories", icon: MessageSquare, label: "Stories", image: "https://images.unsplash.com/photo-1689903777384-31fd780bef3c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaW5hbmNpYWwlMjBzdWNjZXNzJTIwd2VhbHRoJTIwc3Rvcmllc3xlbnwxfHx8fDE3NzMyMjEwODR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" },
+  { id: "articles", icon: Newspaper,     label: "Articles", to: "/financial/explore", image: "https://images.unsplash.com/photo-1574884280706-7342ca3d4231?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaW5hbmNlJTIwYXJ0aWNsZXMlMjBtb25leSUyMGVkdWNhdGlvbnxlbnwxfHx8fDE3NzMyMjEwODN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" },
+  { id: "tips",     icon: Lightbulb,     label: "Tips",     to: "/financial/learn",   image: "https://images.unsplash.com/photo-1768839721776-038d3070721e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaW5hbmNpYWwlMjB0aXBzJTIwYnVkZ2V0aW5nJTIwYWR2aWNlfGVufDF8fHx8MTc3MzIyMTA4NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" },
+  { id: "myths",    icon: MessageSquare, label: "Myths",    to: "/financial/explore", image: "https://images.unsplash.com/photo-1614623072017-924ade10a6f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb25leSUyMG15dGhzJTIwZmFjdHMlMjBmaW5hbmNlfGVufDF8fHx8MTc3MzIyMTA4NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" },
+  { id: "stories",  icon: MessageSquare, label: "Stories",  to: "/financial/explore", image: "https://images.unsplash.com/photo-1689903777384-31fd780bef3c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaW5hbmNpYWwlMjBzdWNjZXNzJTIwd2VhbHRoJTIwc3Rvcmllc3xlbnwxfHx8fDE3NzMyMjEwODR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" },
 ];
 
 const financialLevelCards: FinancialLevelCard[] = [
-  { id: "budget", icon: Calculator, label: "Budget Calculator" },
-  { id: "savings", icon: PiggyBank, label: "Savings Planner" },
-  { id: "debt", icon: CreditCard, label: "Debt Manager" },
-  { id: "wealth", icon: TrendingUp, label: "Wealth Builder" },
+  { id: "budget",  icon: Calculator, label: "Budget Calculator", to: "/financial/budget-planner" },
+  { id: "savings", icon: PiggyBank,  label: "Savings Planner",   to: "/financial/savings-goal" },
+  { id: "debt",    icon: CreditCard, label: "Debt Manager",      to: "/financial/debt-management-guide" },
+  { id: "wealth",  icon: TrendingUp, label: "Wealth Builder",    to: "/financial/investment-planner" },
 ];
 
 export function FinancialWellnessSelfCare() {
@@ -177,9 +179,7 @@ export function FinancialWellnessSelfCare() {
                       layout
                       whileHover={{ y: -4, scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
-                      onClick={() => {
-                        console.log(`Navigate to ${level.id}`);
-                      }}
+                      onClick={() => navigate(level.to)}
                       className={`${color.bg} rounded-2xl p-5 hover:shadow-lg shadow-sm transition-all relative border-2 ${color.border}`}
                     >
                       {/* Top Section: Number and Icon */}
@@ -223,9 +223,7 @@ export function FinancialWellnessSelfCare() {
                       layout
                       whileHover={{ y: -6, scale: 1.03 }}
                       whileTap={{ scale: 0.97 }}
-                      onClick={() => {
-                        console.log(`Navigate to ${topic.id}`);
-                      }}
+                      onClick={() => topic.to && navigate(topic.to)}
                       className="relative rounded-2xl overflow-hidden h-40 shadow-md hover:shadow-2xl transition-all group"
                     >
                       {/* Background Image */}

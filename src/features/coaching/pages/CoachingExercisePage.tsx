@@ -26,6 +26,8 @@ import {
 import { slugify } from "../lib/slug";
 import { SuccessDialog } from "../components/SuccessDialog";
 import { legacyExerciseHistoryKey, listExerciseHistory } from "../lib/storage";
+import { trackerRegistry, type SpecialKind } from "../trackers/registry";
+import { useNavigate } from "react-router";
 
 interface HistoryEntry {
   id: string;
@@ -42,10 +44,11 @@ interface HistoryEntry {
  */
 export function CoachingExercisePage() {
   const { areaId, exerciseSlug } = useParams<{ areaId: string; exerciseSlug: string }>();
+  const navigate = useNavigate();
   const area = coachingAreas.find((a) => a.id === areaId);
   const exercise = area?.exercises.find((e) => slugify(e.title) === exerciseSlug);
 
-  const specialKind = exercise ? specialExercises[exercise.title] : null;
+  const specialKind = (exercise ? specialExercises[exercise.title] : null) as SpecialKind | null;
   const template: ExerciseTemplate | null = useMemo(() => {
     if (!exercise || specialKind) return null;
     const templateId = exerciseTitleToTemplateId[exercise.title];
@@ -56,6 +59,9 @@ export function CoachingExercisePage() {
   const title = exercise?.title ?? "Exercise";
   const subtitle = area ? `${area.name} · Exercise` : undefined;
 
+  const SpecialTracker = specialKind ? trackerRegistry[specialKind] : null;
+  const handleBack = () => navigate(backTo);
+
   return (
     <div className="flex min-h-screen bg-background">
       <Sidebar />
@@ -65,15 +71,8 @@ export function CoachingExercisePage() {
 
         {!exercise ? (
           <EmptyCard message="This exercise isn't available." />
-        ) : specialKind ? (
-          <EmptyCard
-            message={
-              <>
-                Interactive tracker for <span className="font-medium text-foreground">{exercise.title}</span>{" "}
-                is being ported. Open it from the area page once available.
-              </>
-            }
-          />
+        ) : SpecialTracker ? (
+          <SpecialTracker onBack={handleBack} />
         ) : template ? (
           <TemplateExercise template={template} />
         ) : (

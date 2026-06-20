@@ -42,12 +42,24 @@ export interface FeatureModule {
 }
 
 import { coachingFeature } from "./coaching";
+import { financialFeature } from "./financial";
+import { lgbtqFeature } from "./lgbtq";
+import { womenFeature } from "./women";
+import { substanceFeature } from "./substance";
+import { ocdFeature } from "./ocd";
+import { emotionalFeature } from "./emotional";
 
 /**
  * Verticals register themselves here as they get ported in Phase B.
  */
 export const featureRegistry: FeatureModule[] = [
   coachingFeature,
+  financialFeature,
+  lgbtqFeature,
+  womenFeature,
+  substanceFeature,
+  ocdFeature,
+  emotionalFeature,
 ];
 
 export function getFeatureRoutes(): FeatureRoute[] {
