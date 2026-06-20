@@ -75,10 +75,10 @@ const serviceDetails: Record<string, {
     ],
     quickTools: [
       { label: "Journal",            Icon: BookOpen,  grad: "#E0A82E", link: "/journal" },
-      { label: "Selfcare Tracker",   Icon: Heart,     grad: "#E74C3C", link: "https://web.mantracare.com/app/daily_self_care_tracker/" },
-      { label: "Daily Life",         Icon: Calendar,  grad: "#0B2545", link: "https://web.mantracare.com/app/daily_life/" },
-      { label: "Mood Tracker",       Icon: Smile,     grad: "#FF8A4C", link: "https://web.mantracare.com/app/mood_tracker/" },
-      { label: "Energy Check",       Icon: Zap,       grad: "#16A371", link: "https://web.mantracare.com/app/energy_tracker" },
+      { label: "Selfcare Tracker",   Icon: Heart,     grad: "#E74C3C", link: "/emotional/daily-self-care-tracker" },
+      { label: "Daily Life",         Icon: Calendar,  grad: "#0B2545", link: "/emotional/daily-life" },
+      { label: "Mood Tracker",       Icon: Smile,     grad: "#FF8A4C", link: "/emotional/mood-tracker" },
+      { label: "Energy Check",       Icon: Zap,       grad: "#16A371", link: "/emotional/energy-tracker" },
       { label: "Meditation",         Icon: Wind,      grad: "#13B5B1", link: "/service/meditation" },
     ]
   },
@@ -114,11 +114,11 @@ const serviceDetails: Record<string, {
       { title: "Self Care Resources", subtitle: "Tools and guidance for your wellness journey", iconType: "selfcare" },
     ],
     quickTools: [
-      { label: "AI Role Play",      Icon: Users2,    grad: "#E74C3C", link: "https://web.mantracare.com/app/ai-role-play" },
-      { label: "Assessment",         Icon: ClipboardCheck, grad: "#0B2545", link: "https://pridemantra.com/get-started/" },
-      { label: "Pride Spectrum",     Icon: Sparkles,  grad: "#FF8A4C", link: "https://web.mantracare.com/app/identity_spectrum" },
+      { label: "AI Role Play",      Icon: Users2,    grad: "#E74C3C", link: "/emotional/ai-role-play" },
+      { label: "Assessment",         Icon: ClipboardCheck, grad: "#0B2545", link: "/lgbtq/get-started" },
+      { label: "Pride Spectrum",     Icon: Sparkles,  grad: "#FF8A4C", link: "/emotional/identity-spectrum" },
       { label: "Journal",            Icon: BookOpen,  grad: "#E0A82E", link: "/journal" },
-      { label: "Identity Journey",   Icon: Route,     grad: "#8B5CF6", link: "https://web.mantracare.com/app/identity_journey" },
+      { label: "Identity Journey",   Icon: Route,     grad: "#8B5CF6", link: "/emotional/identity-journey" },
       { label: "Mindfulness",        Icon: Wind,      grad: "#13B5B1", link: "/service/meditation" },
     ]
   },
@@ -158,8 +158,8 @@ const serviceDetails: Record<string, {
       { label: "Weight", Icon: Weight, grad: "#0B2545", link: null },
       { label: "Blood Pressure", Icon: Gauge, grad: "#FF8A4C", link: null },
       { label: "Calories", Icon: Utensils, grad: "#16A371", link: null },
-      { label: "What to Eat?", Icon: UtensilsCrossed, grad: "#13B5B1", link: "https://app.mantracare.org/glycemic-load/" },
-      { label: "Videos", Icon: PlayCircle, grad: "#E74C3C", link: "https://app.mantracare.org/video/" },
+      { label: "What to Eat?", Icon: UtensilsCrossed, grad: "#13B5B1", link: "/coaching/glycemic-load" },
+      { label: "Videos", Icon: PlayCircle, grad: "#E74C3C", link: "/coaching/video" },
     ],
   },
   "women-wellness": {
@@ -197,7 +197,7 @@ const serviceDetails: Record<string, {
       { label: "Water",      iconKey: "water",      grad: "#3B82F6" },
       { label: "Weight",     iconKey: "weight",     grad: "#8B5CF6" },
       { label: "Periods",    iconKey: "periods",    grad: "#EC4899" },
-      { label: "Mood",       iconKey: "mood",       grad: "#F59E0B", link: "https://web.mantracare.com/app/mood_tracker/" },
+      { label: "Mood",       iconKey: "mood",       grad: "#F59E0B", link: "/emotional/mood-tracker" },
       { label: "Meal",       iconKey: "meal",       grad: "#10B981" },
       { label: "Pregnancy",  iconKey: "pregnancy",  grad: "#F97316" },
     ],
@@ -236,7 +236,7 @@ const serviceDetails: Record<string, {
       { label: "Pain Assessment", Icon: ClipboardCheck, grad: "#2563EB", link: "/journal" },
       { label: "Insights", Icon: TrendingUp, grad: "#10B981", link: null },
       { label: "Pain Tracker", Icon: Activity, grad: "#F59E0B", link: null },
-      { label: "AI Body Analysis", Icon: ScanEye, grad: "#8B5CF6", link: "https://platform.mantracare.com/body-assessment/" },
+      { label: "AI Body Analysis", Icon: ScanEye, grad: "#8B5CF6", link: "/emotional/body-assessment" },
     ],
   },
   "coach": {
@@ -271,19 +271,19 @@ const serviceDetails: Record<string, {
       { title: "Coaching Areas (Wordpress)",           subtitle: "Explore coaching areas in career, executive, leadership, finance, and more.",               iconType: "coachbook" },
     ],
     quickTools: [
-      { label: "360° Skill Profiling",         Icon: BookOpen,  grad: "#E0A82E", link: "https://app.mantracare.org/360-degree-form/" },
-      { label: "Assessment",      Icon: BarChart3, grad: "#0B2545", link: "https://app.mantracare.com/coachapp/assessments/" },
-      { label: "Academy",         Icon: Library,   grad: "#FF8A4C", link: "https://web.mantracare.com/app/mantracoach_academy/" },
+      { label: "360° Skill Profiling",         Icon: BookOpen,  grad: "#E0A82E", link: "/coaching/360-degree-form" },
+      { label: "Assessment",      Icon: BarChart3, grad: "#0B2545", link: "/coaching/assessments" },
+      { label: "Academy",         Icon: Library,   grad: "#FF8A4C", link: "/emotional/mantracoach-academy" },
       { label: "My Journey",       Icon: Route,     grad: "#16A371", link: null },
-      { label: "AI Role Plays",   Icon: Target,    grad: "#13B5B1", link: "https://web.mantracare.com/app/roleplay-mantra/" },
-      { label: "Vision Board",    Icon: Sparkles,  grad: "#E74C3C", link: "https://app.mantracare.org/coachapp/improvement-canvas/" },
+      { label: "AI Role Plays",   Icon: Target,    grad: "#13B5B1", link: "/emotional/roleplay-mantra" },
+      { label: "Vision Board",    Icon: Sparkles,  grad: "#E74C3C", link: "/coaching/improvement-canvas" },
     ],
     trackers: [
-      { label: "Daily Focus Tracker", iconKey: "assessment", grad: "#E0A82E", link: "https://web.mantracare.com/app/performance_focus/" },
-      { label: "Emotional Regulation", iconKey: "mood", grad: "#0B2545", link: "https://web.mantracare.com/app/emotional_regulation/" },
-      { label: "Goal Momentum", iconKey: "energy", grad: "#FF8A4C", link: "https://web.mantracare.com/app/goal_momentum/" },
-      { label: "Confidence Check-in", iconKey: "heartbeat", grad: "#16A371", link: "https://web.mantracare.com/app/confidence_identity/" },
-      { label: "Coaching Integration", iconKey: "watch", grad: "#13B5B1", link: "https://web.mantracare.com/app/coaching_integration/" },
+      { label: "Daily Focus Tracker", iconKey: "assessment", grad: "#E0A82E", link: "/emotional/performance-focus" },
+      { label: "Emotional Regulation", iconKey: "mood", grad: "#0B2545", link: "/emotional/emotional-regulation" },
+      { label: "Goal Momentum", iconKey: "energy", grad: "#FF8A4C", link: "/emotional/goal-momentum" },
+      { label: "Confidence Check-in", iconKey: "heartbeat", grad: "#16A371", link: "/emotional/confidence-identity" },
+      { label: "Coaching Integration", iconKey: "watch", grad: "#13B5B1", link: "/emotional/coaching-integration" },
       { label: "Journal", iconKey: "journal", grad: "#E74C3C", link: "/journal" },
     ],
   },
@@ -321,7 +321,7 @@ const serviceDetails: Record<string, {
     trackers: [
       { label: "Blood Pressure", iconKey: "blood-pressure", grad: "#FF8A4C" },
       { label: "Weight", iconKey: "weight", grad: "#0B2545" },
-      { label: "Heart Rate", iconKey: "heart-rate", grad: "#13B5B1", link: "https://platform.mantracare.com/heartbeat/" },
+      { label: "Heart Rate", iconKey: "heart-rate", grad: "#13B5B1", link: "/emotional/heartbeat" },
       { label: "Calories", iconKey: "calories", grad: "#16A371" },
       { label: "Cholesterol", iconKey: "cholesterol", grad: "#E74C3C" },
       { label: "Water", iconKey: "water", grad: "#0B2545" },
@@ -358,9 +358,9 @@ const serviceDetails: Record<string, {
       { label: "Calories", iconKey: "calories", grad: "#16A371" },
       { label: "Weight", iconKey: "weight", grad: "#E74C3C" },
       { label: "Water", iconKey: "water", grad: "#0B2545" },
-      { label: "Sleep", iconKey: "sleep", grad: "#13B5B1", link: "https://web.mantracare.com/app/sleep_tracker/" },
-      { label: "Heartbeat", iconKey: "heartbeat", grad: "#F97316", link: "https://platform.mantracare.com/heartbeat/" },
-      { label: "BMI", iconKey: "bmi", grad: "#E0A82E", link: "https://web.mantracare.com/app/bmi-calculator-new/" },
+      { label: "Sleep", iconKey: "sleep", grad: "#13B5B1", link: "/emotional/sleep-tracker" },
+      { label: "Heartbeat", iconKey: "heartbeat", grad: "#F97316", link: "/emotional/heartbeat" },
+      { label: "BMI", iconKey: "bmi", grad: "#E0A82E", link: "/emotional/bmi-calculator-new" },
     ],
     featureLinks: [
       { title: "Talk to a Fitness Instructor", subtitle: "Talk to your fitness coach",        iconType: "chat"    },
@@ -398,9 +398,9 @@ const serviceDetails: Record<string, {
       { label: "Calories", iconKey: "calories", grad: "#16A371" },
       { label: "Weight", iconKey: "weight", grad: "#E74C3C" },
       { label: "Water", iconKey: "water", grad: "#0B2545" },
-      { label: "Sleep", iconKey: "sleep", grad: "#13B5B1", link: "https://web.mantracare.com/app/sleep_tracker/" },
-      { label: "Heartbeat", iconKey: "heartbeat", grad: "#F97316", link: "https://platform.mantracare.com/heartbeat/" },
-      { label: "BMI", iconKey: "bmi", grad: "#E0A82E", link: "https://web.mantracare.com/app/bmi-calculator-new/" },
+      { label: "Sleep", iconKey: "sleep", grad: "#13B5B1", link: "/emotional/sleep-tracker" },
+      { label: "Heartbeat", iconKey: "heartbeat", grad: "#F97316", link: "/emotional/heartbeat" },
+      { label: "BMI", iconKey: "bmi", grad: "#E0A82E", link: "/emotional/bmi-calculator-new" },
     ],
     featureLinks: [
       { title: "Talk to a Dietitian", subtitle: "Talk to your nutrition coach",        iconType: "chat"    },
@@ -480,10 +480,10 @@ const serviceDetails: Record<string, {
     quickTools: [
       { label: "Journal", Icon: BookOpen, grad: "#E0A82E", link: "/journal" },
       { label: "Water Tracker", Icon: GlassWater, grad: "#0B2545", link: null },
-      { label: "Mood Tracker", Icon: Heart, grad: "#FF8A4C", link: "https://web.mantracare.com/app/mood_tracker/" },
+      { label: "Mood Tracker", Icon: Heart, grad: "#FF8A4C", link: "/emotional/mood-tracker" },
       { label: "Meditation", Icon: Wind, grad: "#16A371", link: "/service/meditation" },
-      { label: "Breathwork", Icon: Wind, grad: "#13B5B1", link: "https://web.mantracare.com/app/breadth-pacer/" },
-      { label: "Physical Activity Log", Icon: Activity, grad: "#E74C3C", link: "https://platform.mantracare.com/joyful-motion-log/" },
+      { label: "Breathwork", Icon: Wind, grad: "#13B5B1", link: "/emotional/breadth-pacer" },
+      { label: "Physical Activity Log", Icon: Activity, grad: "#E74C3C", link: "/emotional/joyful-motion-log" },
     ],
   },
   "quit-smoking": {
@@ -617,11 +617,11 @@ const serviceDetails: Record<string, {
     ],
     quickTools: [
       { label: "Journal",         Icon: BookOpen,  grad: "#E0A82E", link: "/journal" },
-      { label: "SIP Calculator",      Icon: BarChart3, grad: "#0B2545", link: "https://forms.mantracare.org/sip-calculator/" },
-      { label: "EMI Calculator",         Icon: Library,   grad: "#FF8A4C", link: "https://forms.mantracare.org/emi-calculator/" },
-      { label: "FD Calculator",       Icon: Video,     grad: "#16A371", link: "https://forms.mantracare.org/fd-calculator/" },
-      { label: "Home Loan EMI",   Icon: Target,    grad: "#13B5B1", link: "https://forms.mantracare.org/home-loan-emi-calculator/" },
-      { label: "Personal Loan EMI",    Icon: Sparkles,  grad: "#E74C3C", link: "https://forms.mantracare.org/personal-loan-emi-calculator/" },
+      { label: "SIP Calculator",      Icon: BarChart3, grad: "#0B2545", link: "/coaching/sip-calculator" },
+      { label: "EMI Calculator",         Icon: Library,   grad: "#FF8A4C", link: "/coaching/emi-calculator" },
+      { label: "FD Calculator",       Icon: Video,     grad: "#16A371", link: "/coaching/fd-calculator" },
+      { label: "Home Loan EMI",   Icon: Target,    grad: "#13B5B1", link: "/coaching/home-loan-emi-calculator" },
+      { label: "Personal Loan EMI",    Icon: Sparkles,  grad: "#E74C3C", link: "/coaching/personal-loan-emi-calculator" },
     ],
   },
   "teleconsultation": {
@@ -653,11 +653,11 @@ const serviceDetails: Record<string, {
     ],
     featureLinks: [],
     quickTools: [
-      { label: "Heartbeat", Icon: HeartPulse, grad: "#3B82F6", link: "https://platform.mantracare.com/heartbeat/" },
+      { label: "Heartbeat", Icon: HeartPulse, grad: "#3B82F6", link: "/emotional/heartbeat" },
       { label: "Medical Records", Icon: FileText, grad: "#10B981", link: "/medical-records" },
       { label: "Prescription Refill", Icon: Briefcase, grad: "#F59E0B", link: "/prescription-refill" },
       { label: "Health Reports", Icon: BarChart3, grad: "#8B5CF6", link: null },
-      { label: "Body Assessment", Icon: Activity, grad: "#EF4444", link: "https://platform.mantracare.com/body-assessment/" },
+      { label: "Body Assessment", Icon: Activity, grad: "#EF4444", link: "/emotional/body-assessment" },
       { label: "Emergency Help", Icon: Phone, grad: "#DC2626", link: "/emergency-doctors" },
     ],
     trackers: [
@@ -943,7 +943,7 @@ export function ServicePage() {
                     onClick={() => {
                       if (tracker.link) {
                         if (tracker.link.startsWith('http')) {
-                          window.open(tracker.link, '_blank', 'noopener,noreferrer');
+                          navigate(tracker.link);
                         } else {
                           navigate(tracker.link);
                         }
@@ -1203,7 +1203,7 @@ export function ServicePage() {
                     onClick={() => {
                       if (tracker.link) {
                         if (tracker.link.startsWith('http')) {
-                          window.open(tracker.link, '_blank', 'noopener,noreferrer');
+                          navigate(tracker.link);
                         } else {
                           navigate(tracker.link);
                         }
@@ -3859,7 +3859,7 @@ export function ServicePage() {
                     onClick={() => {
                       if (tool.link) {
                         if (tool.link.startsWith('http')) {
-                          window.open(tool.link, '_blank', 'noopener,noreferrer');
+                          navigate(tool.link);
                         } else {
                           navigate(tool.link);
                         }
@@ -3917,7 +3917,7 @@ export function ServicePage() {
                       setShowMobileAppModal(true);
                     } else if (tool.link) {
                       if (tool.link.startsWith('http')) {
-                        window.open(tool.link, '_blank', 'noopener,noreferrer');
+                        navigate(tool.link);
                       } else {
                         navigate(tool.link);
                       }
@@ -3995,7 +3995,7 @@ export function ServicePage() {
                     onClick={() => {
                       if (tracker.link) {
                         if (tracker.link.startsWith('http')) {
-                          window.open(tracker.link, '_blank', 'noopener,noreferrer');
+                          navigate(tracker.link);
                         } else {
                           navigate(tracker.link);
                         }
@@ -4745,7 +4745,7 @@ export function ServicePage() {
                       onClick={() => {
                         if (tracker.link) {
                           if (tracker.link.startsWith('http')) {
-                            window.open(tracker.link, '_blank', 'noopener,noreferrer');
+                            navigate(tracker.link);
                           } else {
                             navigate(tracker.link);
                           }
@@ -4782,7 +4782,7 @@ export function ServicePage() {
                         setShowMobileAppModal(true);
                       } else if (tool.link) {
                         if (tool.link.startsWith('http')) {
-                          window.open(tool.link, '_blank', 'noopener,noreferrer');
+                          navigate(tool.link);
                         } else {
                           navigate(tool.link);
                         }
@@ -4802,11 +4802,11 @@ export function ServicePage() {
                 // Render default Quick Tools
                 [
                   { label: "Journal",      Icon: BookOpen, grad: "#E0A82E", link: "/journal" },
-                  { label: "Assessment",   Icon: BarChart3, grad: "#0B2545", link: "https://content.mantracare.com/en/therapyapp/assessments/?lang=en" },
-                  { label: "Mood Tracker", Icon: Heart,    grad: "#FF8A4C", link: "https://web.mantracare.com/app/mood_tracker/" },
+                  { label: "Assessment",   Icon: BarChart3, grad: "#0B2545", link: "/coaching/assessments" },
+                  { label: "Mood Tracker", Icon: Heart,    grad: "#FF8A4C", link: "/emotional/mood-tracker" },
                   { label: "Mindfulness",   Icon: Wind,     grad: "#16A371", link: "/service/meditation" },
-                  { label: "AI Stress Tracker",        Icon: Moon,     grad: "#13B5B1", link: "https://platform.mantracare.com/stress-face/" },
-                  { label: "Affirmations", Icon: Sparkles, grad: "#E74C3C", link: "https://platform.mantracare.com/affirmations/?lang=en" },
+                  { label: "AI Stress Tracker",        Icon: Moon,     grad: "#13B5B1", link: "/emotional/stress-face" },
+                  { label: "Affirmations", Icon: Sparkles, grad: "#E74C3C", link: "/emotional/affirmations" },
                 ].map((tool, i) => (
                   <motion.button
                     key={tool.label}
@@ -4819,7 +4819,7 @@ export function ServicePage() {
                     onClick={() => {
                       if (tool.link) {
                         if (tool.link.startsWith('http')) {
-                          window.open(tool.link, '_blank', 'noopener,noreferrer');
+                          navigate(tool.link);
                         } else {
                           navigate(tool.link);
                         }
@@ -4967,7 +4967,7 @@ export function ServicePage() {
                     }}
                     whileHover={{ scale: 1.06, y: -6 }}
                     whileTap={{ scale: 0.96 }}
-                    onClick={() => window.open(substance.url, '_blank', 'noopener,noreferrer')}
+                    onClick={() => navigate(substance.url)}
                     className="group relative bg-white border-2 border-gray-200 rounded-[20px] p-6 md:p-7 flex flex-col items-center gap-3 hover:border-transparent shadow-sm hover:shadow-2xl transition-all duration-300 overflow-hidden"
                     style={{
                       boxShadow: '0 2px 8px rgba(0,0,0,0.04)'
@@ -5083,7 +5083,7 @@ export function ServicePage() {
                           setShowMobileAppModal(true);
                         } else if (tool.link) {
                           if (tool.link.startsWith('http')) {
-                            window.open(tool.link, '_blank', 'noopener,noreferrer');
+                            navigate(tool.link);
                           } else {
                             navigate(tool.link);
                           }
@@ -5147,7 +5147,7 @@ export function ServicePage() {
                         onClick={() => {
                           if (tracker.link) {
                             if (tracker.link.startsWith('http')) {
-                              window.open(tracker.link, '_blank', 'noopener,noreferrer');
+                              navigate(tracker.link);
                             } else {
                               navigate(tracker.link);
                             }
@@ -5320,7 +5320,7 @@ export function ServicePage() {
                     className="flex flex-col items-center gap-2"
                     onClick={() => {
                       if (quickLink.link.startsWith('http')) {
-                        window.open(quickLink.link, '_blank', 'noopener,noreferrer');
+                        navigate(quickLink.link);
                       } else {
                         navigate(quickLink.link);
                       }
@@ -5397,7 +5397,7 @@ export function ServicePage() {
                     onClick={() => {
                       if (tracker.link) {
                         if (tracker.link.startsWith('http')) {
-                          window.open(tracker.link, '_blank', 'noopener,noreferrer');
+                          navigate(tracker.link);
                         } else {
                           navigate(tracker.link);
                         }

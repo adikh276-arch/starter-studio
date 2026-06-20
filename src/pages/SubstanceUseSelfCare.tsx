@@ -190,8 +190,8 @@ export function SubstanceUseSelfCare() {
                       whileHover={{ y: -2 }}
                       whileTap={{ scale: 0.98 }}
                       onClick={() => {
-                        if (tool.url) {
-                          window.open(tool.url, '_blank');
+                        if (tool.internalId) {
+                          navigate(`/substance/${tool.internalId}`);
                         }
                       }}
                       className="rounded-2xl p-5 shadow-sm flex flex-col items-start justify-between h-28"
@@ -213,7 +213,7 @@ export function SubstanceUseSelfCare() {
               animate={{ opacity: 1, y: 0 }}
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.98 }}
-              onClick={() => window.open('https://platform.mantracare.com/quit_learn/', '_blank')}
+              onClick={() => navigate('/substance/learn')}
               className="w-full bg-white rounded-2xl p-5 shadow-sm flex items-center gap-4 group transition-shadow hover:shadow-md"
             >
               <div className="w-14 h-14 bg-gradient-to-br from-[#fb923c] to-[#f97316] rounded-xl flex items-center justify-center flex-shrink-0">
