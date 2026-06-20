@@ -44,6 +44,18 @@ const overrideRoutes = Object.entries(pageMap).map(([id, loader]) => {
   };
 });
 
+overrideRoutes.push({
+  path: "/lgbtq/content/:slug",
+  element: (
+    <Suspense fallback={null}>
+      {(() => {
+        const C = lazy(() => import("./pages/PrideStaticViewer"));
+        return <C />;
+      })()}
+    </Suspense>
+  ),
+});
+
 const base = createVerticalFeature({
   id: "lgbtq",
   label: "LGBTQ+ Self-Care",
