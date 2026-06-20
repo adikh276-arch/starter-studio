@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { Story } from "../data/stories";
 import { useState } from "react";
 import { Share2 } from "lucide-react";
-import { ShareModal } from "@/components/pride/ShareModal";
+import { ShareModal } from "@/features/lgbtq/components/pride/ShareModal";
 
 interface StoryDetailProps {
   story: Story;

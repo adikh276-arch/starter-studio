@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { ArrowLeft, Clock, MessageSquare, CheckCircle2 } from "lucide-react";
 
-import "@/lib/i18n";
+import "@/features/ocd/_shared/i18n";
 import { useTranslation } from "react-i18next";
 
 interface SavedEntriesProps {

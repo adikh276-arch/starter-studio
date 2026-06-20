@@ -2,7 +2,7 @@ import { useState, useEffect, useMemo } from 'react';
 import { ArrowLeft, BookOpen, CheckCircle2, AlertCircle } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { useTranslation, Trans } from 'react-i18next';
-import confetti from 'canvas-confetti';
+
 import { logUserActivity } from '@/features/fitness/lib/db';
 
 interface MacroEducationData {
@@ -110,12 +110,7 @@ export default function MacroEducationModule({ onBack }: { onBack: () => void })
       completed_at: new Date().toISOString(),
     });
 
-    confetti({
-      particleCount: 100,
-      spread: 70,
-      origin: { y: 0.6 },
-      colors: ['#3B82F6', '#60A5FA', '#93C5FD'],
-    });
+    /* ponytail: removed unneeded confetti */
   };
 
   const submitQuiz = () => {
@@ -140,12 +135,7 @@ export default function MacroEducationModule({ onBack }: { onBack: () => void })
     });
 
     if (score === 3) {
-      confetti({
-        particleCount: 150,
-        spread: 80,
-        origin: { y: 0.6 },
-        colors: ['#FCD34D', '#F59E0B', '#D97706'],
-      });
+      /* ponytail: removed unneeded confetti */
     }
   };
 

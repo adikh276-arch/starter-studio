@@ -5,7 +5,7 @@ import { useState, useCallback, useRef } from "react";
 import { useNavigate } from "react-router";
 import { ChevronLeft, ArrowRight, ArrowLeft, RefreshCcw, Share2 } from "lucide-react";
 import { ShareModal } from "@/components/pride/ShareModal";
-import confetti from "canvas-confetti";
+
 import { motion, AnimatePresence } from "framer-motion";
 
 interface CardData {
@@ -171,12 +171,7 @@ const TransitionCards = () => {
     setFinished(true);
             triggerActivityWebhook();
     setTimeout(() => {
-      confetti({
-        particleCount: 150,
-        spread: 90,
-        origin: { y: 0.6 },
-        colors: ["#55cdfc", "#f7a8b8", "#ffffff"],
-      });
+      /* ponytail: removed unneeded confetti */
     }, 100);
   };
 

@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { ArrowLeft, Dumbbell, Plus, Check, Trash2, Trophy, TrendingUp, Search, AlertCircle, ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import confetti from 'canvas-confetti';
+
 import { logUserActivity } from '@/features/fitness/lib/db';
 import { useTranslation } from "react-i18next";
 
@@ -490,12 +490,7 @@ export default function StrengthTrainingGuide({ onBack }: { onBack: () => void }
     // Check for PR
     const currentPR = strengthData.personalRecords[selectedExercise] || 0;
     if (estimated1RM > currentPR) {
-      confetti({
-        particleCount: 150,
-        spread: 80,
-        origin: { y: 0.6 },
-        colors: ['#475569', '#64748B', '#94A3B8'],
-      });
+      /* ponytail: removed unneeded confetti */
     }
 
     // Reset for next exercise
@@ -547,12 +542,7 @@ export default function StrengthTrainingGuide({ onBack }: { onBack: () => void }
     });
 
     // Celebration
-    confetti({
-      particleCount: 100,
-      spread: 70,
-      origin: { y: 0.6 },
-      colors: ['#64748B', '#94A3B8', '#CBD5E1'],
-    });
+    /* ponytail: removed unneeded confetti */
 
     // Reset session
     setCurrentSession([]);

@@ -5,7 +5,7 @@ import { useState, useCallback, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useNavigate } from "react-router";
 import { useTranslation } from "react-i18next";
-import confetti from "canvas-confetti";
+
 import Card1Stats from "./Card1Stats";
 import Card2Causes from "./Card2Causes";
 import Card3Breathing from "./Card3Breathing";
@@ -33,7 +33,7 @@ const TransMentalHealthActivity = () => {
 
   const goNext = useCallback(() => {
     if (current >= TOTAL - 1) {
-      confetti({ particleCount: 120, spread: 80, origin: { y: 0.7 }, colors: ["#55cdfc", "#f7a8b8", "#ffffff"] });
+      /* ponytail: removed unneeded confetti */
       setFinished(true);
             triggerActivityWebhook();
       return;

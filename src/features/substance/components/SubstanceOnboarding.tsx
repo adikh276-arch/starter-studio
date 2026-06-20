@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, ArrowLeft, Calendar, Target, AlertTriangle, CheckCircle2 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { SubstanceConfig } from '@/data/types';
-import { setStreak, getPrefix } from '@/data/storage';
+import { SubstanceConfig } from '@/features/substance/data/types';
+import { setStreak, getPrefix } from '@/features/substance/data/storage';
 import SubstanceIcon from './SubstanceIcon';
-import { analytics } from '@/lib/analytics';
+import { analytics } from '@/features/substance/lib/analytics';
 
 const heroGradients: Record<string, string> = {
   alcohol: 'from-red-600 via-rose-500 to-red-700',

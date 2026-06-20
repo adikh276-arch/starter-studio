@@ -2,7 +2,7 @@
 
 import i18next from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import enTranslations from './en.json';
+import enTranslations from './locales/en.json';
 
 const i18n = i18next.createInstance();
 
@@ -23,7 +23,7 @@ export const loadLocale = async (lang: string) => {
     return;
   }
   try {
-    const res = await import(`./${lang}.json`);
+    const res = await import(`./locales/${lang}.json`);
     i18n.addResourceBundle(lang, 'translation', res.default || res, true, false);
     await i18n.changeLanguage(lang);
   } catch (err) {

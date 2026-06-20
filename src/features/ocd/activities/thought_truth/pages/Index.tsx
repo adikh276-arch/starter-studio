@@ -1,5 +1,5 @@
 import ThoughtOrTruth from "@/features/ocd/activities/thought_truth/components/ThoughtOrTruth";
-import { ShareActivity } from "@/components/ShareActivity";
+import { ShareActivity } from "@/features/ocd/_shared/ShareActivity";
 
 
 const Index = () => (

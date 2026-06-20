@@ -420,7 +420,7 @@ export default function SavingsGoalPage() {
               </button>
               <button
                 className="btn btn-lg btn-secondary"
-                onClick={() => router.replace('/')}
+                onClick={() => router('/', { replace: true })}
                 style={{ width: '100%' }}
               >
                 {t('Back to Dashboard')} <ArrowRight size={18} />

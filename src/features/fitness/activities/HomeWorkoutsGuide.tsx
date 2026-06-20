@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { ArrowLeft, Home, Dumbbell, Droplets, Calendar, Award, TrendingUp, Flame, Clock, Zap, CheckCircle2, AlertCircle, Play, Pause, RotateCcw, X, Eye, ChevronRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import confetti from 'canvas-confetti';
+
 import { logUserActivity, fetchUserActivityLogs } from '@/features/fitness/lib/db';
 import { useTranslation } from "react-i18next";
 
@@ -547,12 +547,7 @@ export default function HomeWorkoutsGuide({ onBack }: { onBack: () => void }) {
     playFinishChime();
 
     // Confetti
-    confetti({
-      particleCount: 150,
-      spread: 80,
-      origin: { y: 0.6 },
-      colors: ['#FB7185', '#F472B6', '#FDA4AF'],
-    });
+    /* ponytail: removed unneeded confetti */
   };
 
   const saveToProgressTracker = () => {
@@ -602,12 +597,7 @@ export default function HomeWorkoutsGuide({ onBack }: { onBack: () => void }) {
     });
 
     // Celebrate
-    confetti({
-      particleCount: 100,
-      spread: 70,
-      origin: { y: 0.6 },
-      colors: ['#FB7185', '#F472B6', '#FDA4AF'],
-    });
+    /* ponytail: removed unneeded confetti */
 
     // Reset form
     setPrefilledWorkout('');

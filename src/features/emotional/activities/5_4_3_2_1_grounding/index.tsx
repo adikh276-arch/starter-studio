@@ -1,5 +1,6 @@
-import { redirect } from 'next/navigation';
+import { Navigate } from 'react-router';
+
 
 export default function Redirect() {
-  redirect('/5-4-3-2-1-grounding');
+  return <Navigate to={'/5-4-3-2-1-grounding'} replace />;
 }

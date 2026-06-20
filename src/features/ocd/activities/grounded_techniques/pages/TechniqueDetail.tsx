@@ -2,8 +2,8 @@ import { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { ArrowLeft, ChevronLeft, ChevronRight, CheckCircle2, Wind, Sparkles, Droplets, Hand, Utensils, Coffee, Footprints, Snowflake, Flower, Move, Ear, Heart } from "lucide-react";
 import { techniques } from "@/features/ocd/activities/grounded_techniques/data/techniques";
-import { StandardCompletionModal } from "@/components/StandardCompletionModal";
-import { ActivityHistoryDrawer } from "@/components/ActivityHistoryDrawer";
+import { StandardCompletionModal } from "@/features/ocd/_shared/StandardCompletionModal";
+import { ActivityHistoryDrawer } from "@/features/ocd/_shared/ActivityHistoryDrawer";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
 

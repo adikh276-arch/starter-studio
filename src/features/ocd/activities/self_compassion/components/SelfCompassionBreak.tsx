@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { StandardCompletionModal } from "@/components/StandardCompletionModal";
+import { StandardCompletionModal } from "@/features/ocd/_shared/StandardCompletionModal";
 import { Heart, User, MessageCircle, ChevronRight, Activity, Info, CheckCircle2, ArrowLeft, ChevronLeft } from "lucide-react";
-import { ActivityHistoryDrawer } from "@/components/ActivityHistoryDrawer";
+import { ActivityHistoryDrawer } from "@/features/ocd/_shared/ActivityHistoryDrawer";
 import { useTranslation } from "react-i18next";
 
 const BreathingHeart = () => {

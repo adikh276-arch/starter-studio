@@ -93,7 +93,7 @@ function ResourceListInner({ concern, type }: ResourceListInnerProps) {
   return (
     <PremiumLayout 
       title={title}
-      onBack={() => navigate("/self-care?lang=${i18n.language}`)}
+      onBack={() => navigate(-1)}
     >
       <div className="w-full max-w-4xl mx-auto space-y-12 pb-24 px-4">
         <div className="grid gap-6">

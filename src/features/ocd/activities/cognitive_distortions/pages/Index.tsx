@@ -1,6 +1,6 @@
 import React, { useRef, useState, useCallback, useEffect } from "react";
 import { ChevronLeft, ChevronRight, ArrowLeft } from "lucide-react";
-import { ActivityHistoryDrawer } from "@/components/ActivityHistoryDrawer";
+import { ActivityHistoryDrawer } from "@/features/ocd/_shared/ActivityHistoryDrawer";
 
 import DistortionCard from "../components/DistortionCard";
 import FinishCard from "../components/FinishCard";

@@ -1,6 +1,6 @@
 // @ts-nocheck
 import SwipeableCards from "../components/SwipeableCards";
-import { StandardCompletionModal } from "@/components/StandardCompletionModal";
+import { StandardCompletionModal } from "@/features/ocd/_shared/StandardCompletionModal";
 import { useState } from "react";
 import { ArrowLeft } from "lucide-react";
 import { useTranslation } from "react-i18next";

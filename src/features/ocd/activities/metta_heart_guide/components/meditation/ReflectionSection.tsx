@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { StandardFinishCard } from "@/components/StandardFinishCard";
+import { StandardFinishCard } from "@/features/ocd/_shared/StandardFinishCard";
 import { useTranslation } from "react-i18next";
 
 const ReflectionSection = () => {

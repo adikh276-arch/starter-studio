@@ -2,7 +2,7 @@ import { useState, useCallback } from "react";
 import { motion, AnimatePresence, type PanInfo } from "framer-motion";
 import { RotateCcw, CheckCircle2, ChevronLeft, ChevronRight, Waves } from "lucide-react";
 import { cards } from "./cardData";
-import { StandardCompletionModal } from "@/components/StandardCompletionModal";
+import { StandardCompletionModal } from "@/features/ocd/_shared/StandardCompletionModal";
 import { useTranslation } from "react-i18next";
 
 interface CardsScreenProps {

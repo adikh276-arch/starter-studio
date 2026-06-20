@@ -442,7 +442,7 @@ function SelfCareHubInner({ topicId }: { topicId?: string }) {
   const prefetchTool = (path: string) => {
     if (!path || path.startsWith('http')) return;
     // Next.js prefetching is automatic via <Link> or router.prefetch
-    router.prefetch(path);
+    // router.prefetch(path);
   };
 
   // No popstate listener needed — back navigation is handled directly:
@@ -481,7 +481,7 @@ function SelfCareHubInner({ topicId }: { topicId?: string }) {
                   className="space-y-8"
                 >
                   <button
-                    onClick={() => router.replace(withLang('/'))}
+                    onClick={() => router(withLang('/', { replace: true }))}
                     className="flex items-center gap-2 text-[#64748B] hover:text-[#020817] transition-colors group mb-4"
                   >
                     <ChevronLeft size={20} className="group-hover:-translate-x-1 transition-transform" />
@@ -642,17 +642,7 @@ function SelfCareHubInner({ topicId }: { topicId?: string }) {
                 <div className="space-y-2">
                   <div className="flex items-center gap-3">
                     <button 
-                      onClick={() => {
-                        if (typeof window !== 'undefined') {
-                          if ((window as any).ReactNativeWebView) {
-                            );
-                          } else if (window.parent !== window) {
-                             window.history.back();
-                          } else {
-                             window.history.back();
-                          }
-                        }
-                      }} 
+                      onClick={() => navigate(-1)} 
                       className="p-2 -ml-2 text-slate-400 hover:text-slate-600"
                     >
                       <ChevronLeft size={24} />
@@ -681,15 +671,7 @@ function SelfCareHubInner({ topicId }: { topicId?: string }) {
                         onClick={() => {
                           playPop();
                           if (tool.id === 'mindful-space') {
-                            if (typeof window !== 'undefined') {
-                              if ((window as any).ReactNativeWebView) {
-                                );
-                              } else if (window.parent !== window) {
-                                window.history.back();
-                              } else {
-                                window.history.back();
-                              }
-                            }
+                            navigate(-1);
                           } else if (tool.url?.startsWith('http')) {
                             window.location.href = withLang(tool.url);
                           } else {
@@ -722,19 +704,11 @@ function SelfCareHubInner({ topicId }: { topicId?: string }) {
                         onClick={() => {
                           playPop();
                           if (topic.id === 'ocd') {
-                            if (typeof window !== 'undefined') {
-                              if ((window as any).ReactNativeWebView) {
-                                );
-                              } else if (window.parent !== window) {
-                                window.history.back();
-                              } else {
-                                window.location.href = withLang('https://web.mantracare.com');
-                              }
-                            }
+                            navigate(-1);
                           } else if (topic.url) {
                             window.location.href = withLang(topic.url);
                           } else {
-                            router.replace(withLang(`/topics/${topic.id}`));
+                            router(withLang(`/topics/${topic.id}`, { replace: true }));
                           }
                         }}
                         className="p-6 bg-white border border-slate-100 rounded-2xl flex flex-col items-center gap-4 transition-all hover:shadow-md"

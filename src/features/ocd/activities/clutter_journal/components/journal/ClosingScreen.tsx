@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { StandardCompletionModal } from "@/components/StandardCompletionModal";
+import { StandardCompletionModal } from "@/features/ocd/_shared/StandardCompletionModal";
 import { BookOpen, ChevronRight, CheckCircle2 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 

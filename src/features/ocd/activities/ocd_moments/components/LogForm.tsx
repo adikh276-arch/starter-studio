@@ -3,7 +3,7 @@ import { Home, Briefcase, Users, MapPin, Zap, Clock, Shield, ArrowRight, Loader2
 import { saveEntry, LogEntry } from '../lib/storage';
 import { toast } from 'sonner';
 import { motion, AnimatePresence } from 'framer-motion';
-import { StandardCompletionModal } from "@/components/StandardCompletionModal";
+import { StandardCompletionModal } from "@/features/ocd/_shared/StandardCompletionModal";
 import { useTranslation } from "react-i18next";
 
 /* ─── Shared sub-components ──────────────────────────────────────────────────── */

@@ -19,17 +19,7 @@ export function StaticContentViewerClient({ concern, type }: StaticContentViewer
     <div className="flex flex-col h-screen bg-[#F6F8FB]">
       <header className="flex items-center px-4 h-14 bg-white border-b gap-3 flex-shrink-0">
         <button
-          onClick={() => {
-            if (typeof window !== 'undefined') {
-              if ((window as any).ReactNativeWebView) {
-                );
-              } else if (window.parent !== window) {
-                window.history.back();
-              } else {
-                navigate(-1);
-              }
-            }
-          }}
+          onClick={() => navigate(-1)}
           className="p-2 hover:bg-slate-100 rounded-full transition-colors"
         >
           <ChevronLeft size={20} />

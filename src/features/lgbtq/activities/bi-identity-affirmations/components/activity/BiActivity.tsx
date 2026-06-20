@@ -5,7 +5,7 @@ import { useState, useCallback, useRef } from 'react';
 import { ChevronLeft, Share2 } from 'lucide-react';
 import { ShareModal } from "@/components/pride/ShareModal";
 import { useNavigate } from "react-router";
-import confetti from 'canvas-confetti';
+
 import { cards } from '../../data/cardContent';
 import FloatingOrbs from '../../components/activity/FloatingOrbs';
 import ProgressBar from '../../components/activity/ProgressBar';
@@ -22,9 +22,9 @@ const BiActivity = () => {
 
   const fireConfetti = useCallback(() => {
     const biColors = ['#d1006c', '#6b35b8', '#0050a0'];
-    confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 }, colors: biColors });
+    /* ponytail: removed unneeded confetti */
     setTimeout(() => {
-      confetti({ particleCount: 60, spread: 90, origin: { y: 0.5 }, colors: biColors });
+      /* ponytail: removed unneeded confetti */
     }, 200);
   }, []);
 

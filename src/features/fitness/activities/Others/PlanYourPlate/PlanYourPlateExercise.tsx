@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowLeft, Clock, ChevronDown, X } from "lucide-react";
-import { Button } from "@/app/components/ui/button";
+import { Button } from '@/components/ui/button';
 import { saveMealPlanEntry, fetchMealPlanEntries } from "@/features/fitness/lib/persistence";
 import { useTranslation } from "react-i18next";
 

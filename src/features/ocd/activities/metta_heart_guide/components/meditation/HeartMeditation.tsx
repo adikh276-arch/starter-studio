@@ -1,8 +1,8 @@
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Play, Pause, RotateCcw, Heart, ArrowLeft } from "lucide-react";
-import { StandardCompletionModal } from "@/components/StandardCompletionModal";
-import { ActivityHistoryDrawer } from "@/components/ActivityHistoryDrawer";
+import { StandardCompletionModal } from "@/features/ocd/_shared/StandardCompletionModal";
+import { ActivityHistoryDrawer } from "@/features/ocd/_shared/ActivityHistoryDrawer";
 import { useTranslation } from "react-i18next";
 
 /* ─── Shared sub-components ──────────────────────────────────────────────────── */

@@ -1,5 +1,6 @@
-import { redirect } from 'next/navigation';
+import { Navigate } from 'react-router';
+
 
 export default function Redirect() {
-  redirect('/4-6-8-breathing');
+  return <Navigate to={'/4-6-8-breathing'} replace />;
 }

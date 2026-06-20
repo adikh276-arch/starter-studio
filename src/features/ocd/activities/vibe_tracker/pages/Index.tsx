@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { ArrowLeft, RotateCcw, ArrowRight, Check, ChevronLeft } from "lucide-react";
-import { StandardCompletionModal } from "@/components/StandardCompletionModal";
-import { ActivityHistoryDrawer } from "@/components/ActivityHistoryDrawer";
-import { getStoredUserId } from "@/lib/auth";
+import { StandardCompletionModal } from "@/features/ocd/_shared/StandardCompletionModal";
+import { ActivityHistoryDrawer } from "@/features/ocd/_shared/ActivityHistoryDrawer";
+import { getStoredUserId } from "@/features/ocd/_shared/auth";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
 type Step = "selection" | "reflect1" | "reflect2" | "reflect3";

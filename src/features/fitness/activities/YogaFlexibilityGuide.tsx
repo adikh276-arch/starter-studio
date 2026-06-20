@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { ArrowLeft, User, Search, Clock, TrendingUp, Smile, Meh, Frown, Heart, Sparkles, X, Info, Play, Pause, SkipForward, Award } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import confetti from 'canvas-confetti';
+
 import { logUserActivity } from '@/features/fitness/lib/db';
 import { useTranslation } from "react-i18next";
 
@@ -392,12 +392,7 @@ export default function YogaFlexibilityGuide({ onBack }: { onBack: () => void })
       currentStreak: newStreak,
     }));
 
-    confetti({
-      particleCount: 100,
-      spread: 70,
-      origin: { y: 0.6 },
-      colors: ['#14B8A6', '#06B6D4', '#10B981'],
-    });
+    /* ponytail: removed unneeded confetti */
 
     closeFlow();
     setActiveTab('log');
@@ -489,12 +484,7 @@ export default function YogaFlexibilityGuide({ onBack }: { onBack: () => void })
     });
 
     // Show Namaste notification
-    confetti({
-      particleCount: 50,
-      spread: 60,
-      origin: { y: 0.6 },
-      colors: ['#06B6D4', '#14B8A6', '#10B981'],
-    });
+    /* ponytail: removed unneeded confetti */
 
     // Reset form
     setDuration('');

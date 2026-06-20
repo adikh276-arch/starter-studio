@@ -1,9 +1,9 @@
 import React, { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { StandardCompletionModal } from "@/components/StandardCompletionModal";
+import { StandardCompletionModal } from "@/features/ocd/_shared/StandardCompletionModal";
 import { Brain, Sparkles, Heart, ChevronRight, RotateCcw, Info, AlertCircle, CheckCircle2, ArrowLeft, ChevronLeft } from "lucide-react";
 import { toast } from "sonner";
-import { ActivityHistoryDrawer } from "@/components/ActivityHistoryDrawer";
+import { ActivityHistoryDrawer } from "@/features/ocd/_shared/ActivityHistoryDrawer";
 import { useTranslation } from "react-i18next";
 
 type Screen = "welcome" | "before" | "quiz" | "results";

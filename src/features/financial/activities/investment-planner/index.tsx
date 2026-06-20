@@ -11,7 +11,8 @@ import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts';
 import { storage, fmt, calc } from '@/features/financial/lib/storage';
 import { PageHeader } from '@/features/financial/components/layout/PageHeader';
 import { useTranslation } from 'react-i18next';
-import { useSearchParams } from 'next/navigation';
+import { useSearchParams } from 'react-router';
+
 import { ShareModal } from '@/features/financial/components/shared/ShareModal';
 
 
@@ -28,7 +29,7 @@ const STEPS = ['Capital', 'Strategy', 'Results'];
 export default function InvestmentPlanner() {
   const { t } = useTranslation(['investment-planner', 'share']);
   const [isShareModalOpen, setIsShareModalOpen] = useState(false);
-  const searchParams = useSearchParams();
+  const [searchParams] = useSearchParams();
   const query = searchParams.toString();
   const suffix = query ? `?${query}` : '';
 

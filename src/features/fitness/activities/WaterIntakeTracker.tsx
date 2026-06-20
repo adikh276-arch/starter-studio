@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { ArrowLeft, Droplets, Undo2, Calculator as CalcIcon, Save, GlassWater, Milk, Scale } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import confetti from 'canvas-confetti';
+
 import { useTranslation } from 'react-i18next';
 import { logUserActivity } from '@/features/fitness/lib/db';
 
@@ -159,21 +159,9 @@ export default function WaterIntakeTracker({ onBack }: { onBack: () => void }) {
     const end = Date.now() + duration;
 
     const frame = () => {
-      confetti({
-        particleCount: 3,
-        angle: 60,
-        spread: 55,
-        origin: { x: 0 },
-        colors: ['#60A5FA', '#3B82F6', '#1D4ED8'],
-      });
+      /* ponytail: removed unneeded confetti */
 
-      confetti({
-        particleCount: 3,
-        angle: 120,
-        spread: 55,
-        origin: { x: 1 },
-        colors: ['#60A5FA', '#3B82F6', '#1D4ED8'],
-      });
+      /* ponytail: removed unneeded confetti */
 
       if (Date.now() < end) {
         requestAnimationFrame(frame);

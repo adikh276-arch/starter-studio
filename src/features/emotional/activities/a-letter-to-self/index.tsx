@@ -2,7 +2,8 @@
 
 import { useState, useEffect, useRef, useCallback, useMemo, Suspense } from 'react';
 import { useTranslation, I18nextProvider } from 'react-i18next';
-import { useSearchParams } from 'next/navigation';
+import { useSearchParams } from 'react-router';
+
 import { motion, AnimatePresence } from 'framer-motion';
 import { Mail, Calendar, Trash2, Loader2, Sparkles, Heart, ChevronDown, Check, Send, Save, History, X } from 'lucide-react';
 import i18n, { loadLocale } from './i18n';
@@ -573,7 +574,7 @@ function ALetterToSelfInner() {
     updatedAt: new Date().toISOString(),
   });
 
-  const searchParams = useSearchParams();
+  const [searchParams] = useSearchParams();
 
   // Load language dynamically based on url search param
   useEffect(() => {

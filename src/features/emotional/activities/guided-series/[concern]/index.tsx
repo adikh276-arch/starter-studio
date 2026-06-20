@@ -1,29 +1,9 @@
-import { cookies } from "next/headers";
-import { redirect } from "next/navigation";
+import { useParams } from "react-router";
 import guidedData from "@/features/emotional/data/guidedSeries.json";
 import { GuidedSeriesClient } from "./GuidedSeriesClient";
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ concern: string }>;
-}) {
-  const { concern } = useParams();
-  const displayName = concern.charAt(0).toUpperCase() + concern.slice(1);
-  return {
-    title: `${displayName} Guided Series | TherapyMantra`,
-    description: `A step-by-step therapeutic guided series for ${displayName}.`,
-  };
-}
-
-import { useParams } from "react-router";
 export default function GuidedSeriesPage() {
-  const cookieStore = await cookies();
-  if (!cookieStore.get("user_id")?.value) {
-    redirect("/token");
-  }
-
-  const { concern } = await params;
+  const { concern = "" } = useParams();
 
   // Case-insensitive lookup
   const lookupKey = Object.keys(guidedData).find(

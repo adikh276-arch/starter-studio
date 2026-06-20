@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { ArrowLeft, Zap, Play, Pause, RotateCcw, TrendingUp, Award, Flame, Timer, SkipForward, Volume2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import confetti from 'canvas-confetti';
+
 import { logUserActivity, fetchUserActivityLogs } from '@/features/fitness/lib/db';
 import { useTranslation } from "react-i18next";
 
@@ -453,12 +453,7 @@ export default function HIITCardioGuide({ onBack }: { onBack: () => void }) {
     setIsRunning(false);
 
     // Celebrate
-    confetti({
-      particleCount: 150,
-      spread: 90,
-      origin: { y: 0.6 },
-      colors: ['#F97316', '#EA580C', '#FB923C'],
-    });
+    /* ponytail: removed unneeded confetti */
   };
 
   const logWorkout = (workoutName: string = 'Custom HIIT') => {
@@ -521,12 +516,7 @@ export default function HIITCardioGuide({ onBack }: { onBack: () => void }) {
     // Show Sweat Equity badge for high RPE
     if (rpeScore >= 8) {
       setTimeout(() => {
-        confetti({
-          particleCount: 100,
-          spread: 70,
-          origin: { y: 0.6 },
-          colors: ['#FCD34D', '#F59E0B', '#D97706'],
-        });
+        /* ponytail: removed unneeded confetti */
       }, 500);
     }
 

@@ -3,7 +3,7 @@
 import { triggerActivityWebhook } from "@/lib/webhook";
 import { useState, useCallback, useRef } from "react";
 import { useNavigate } from "react-router";
-import confetti from "canvas-confetti";
+
 import { PrideFloatingOrbs } from "../../../components/PrideFloatingOrbs";
 import { PrideActivityHeader } from "../../../components/PrideActivityHeader";
 import { PrideSuccessState } from "../../../components/PrideSuccessState";
@@ -150,22 +150,15 @@ const cards: CardData[] = [
 ];
 
 function miniConfetti(x: number, y: number) {
-  confetti({
-    particleCount: 30,
-    spread: 50,
-    origin: { x: x / window.innerWidth, y: y / window.innerHeight },
-    colors: ["#55cdfc", "#f7a8b8", "#ffffff"],
-    scalar: 0.7,
-    gravity: 0.8,
-  });
+  /* ponytail: removed unneeded confetti */
 }
 
 function bigConfetti() {
   const end = Date.now() + 2000;
   const colors = ["#55cdfc", "#f7a8b8", "#ffffff", "#f7a8b8", "#55cdfc"];
   (function frame() {
-    confetti({ particleCount: 4, angle: 60, spread: 55, origin: { x: 0 }, colors });
-    confetti({ particleCount: 4, angle: 120, spread: 55, origin: { x: 1 }, colors });
+    /* ponytail: removed unneeded confetti */
+    /* ponytail: removed unneeded confetti */
     if (Date.now() < end) requestAnimationFrame(frame);
   })();
 }

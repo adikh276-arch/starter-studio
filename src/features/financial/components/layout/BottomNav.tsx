@@ -1,6 +1,7 @@
 'use client';
 
-import Link from 'next/link';
+import { Link } from 'react-router';
+
 import { useLocation } from "react-router";
 import { useTranslation } from 'react-i18next';
 import { Home, BookOpen, Wrench, HeartPulse, Compass } from 'lucide-react';

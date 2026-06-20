@@ -1,8 +1,8 @@
 import { DayLog } from "@/features/ocd/activities/fear_ladder/hooks/useFearLadderStorage";
 import { LadderStep } from "./LadderBuilder";
 import { useEffect, useState } from "react";
-import { StandardFinishCard } from "@/components/StandardFinishCard";
-import { StandardCompletionModal } from "@/components/StandardCompletionModal";
+import { StandardFinishCard } from "@/features/ocd/_shared/StandardFinishCard";
+import { StandardCompletionModal } from "@/features/ocd/_shared/StandardCompletionModal";
 import { useTranslation } from "react-i18next";
 
 interface CompletionScreenProps {

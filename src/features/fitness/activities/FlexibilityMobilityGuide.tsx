@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { ArrowLeft, Move, Play, Award, TrendingUp, Calendar, CheckCircle2, AlertCircle, Sparkles, Pause, RotateCcw, X, ChevronRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import confetti from 'canvas-confetti';
+
 import { logUserActivity, fetchUserActivityLogs } from '@/features/fitness/lib/db';
 import { useTranslation } from "react-i18next";
 
@@ -503,12 +503,7 @@ export default function FlexibilityMobilityGuide({ onBack }: { onBack: () => voi
     setShowRoutineComplete(true);
     playCompletionChime();
 
-    confetti({
-      particleCount: 150,
-      spread: 80,
-      origin: { y: 0.6 },
-      colors: ['#A78BFA', '#C084FC', '#E9D5FF'],
-    });
+    /* ponytail: removed unneeded confetti */
   };
 
   const saveRoutineSession = () => {
@@ -613,12 +608,7 @@ export default function FlexibilityMobilityGuide({ onBack }: { onBack: () => voi
     });
 
     // Celebrate
-    confetti({
-      particleCount: 100,
-      spread: 70,
-      origin: { y: 0.6 },
-      colors: ['#A78BFA', '#C084FC', '#E9D5FF'],
-    });
+    /* ponytail: removed unneeded confetti */
 
     // Reset form
     setDuration('');

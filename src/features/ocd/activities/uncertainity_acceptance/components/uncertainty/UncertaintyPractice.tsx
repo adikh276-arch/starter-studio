@@ -1,5 +1,5 @@
 import { useState, useCallback, useRef } from "react";
-import { StandardCompletionModal } from "@/components/StandardCompletionModal";
+import { StandardCompletionModal } from "@/features/ocd/_shared/StandardCompletionModal";
 import { toast } from "sonner";
 import { ArrowLeft, ChevronLeft } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";

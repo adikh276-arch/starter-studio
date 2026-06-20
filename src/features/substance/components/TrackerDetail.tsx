@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronDown, ChevronUp, History, Save, CheckCircle2, Lightbulb } from 'lucide-react';
 import { BarChart, Bar, LineChart, Line, AreaChart, Area, XAxis, YAxis, ResponsiveContainer, Tooltip } from 'recharts';
-import { TrackerConfig, SubstanceConfig } from '@/data/types';
-import { getEntries, saveEntry, todayStr, getEntry } from '@/data/storage';
+import { TrackerConfig, SubstanceConfig } from '@/features/substance/data/types';
+import { getEntries, saveEntry, todayStr, getEntry } from '@/features/substance/data/storage';
 import { useTranslation } from 'react-i18next';
-import { analytics } from '@/lib/analytics';
+import { analytics } from '@/features/substance/lib/analytics';
 import { toast } from 'sonner';
 
 interface Props {

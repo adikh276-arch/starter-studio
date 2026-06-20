@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { StandardFinishCard } from "@/components/StandardFinishCard";
-import { StandardCompletionModal } from "@/components/StandardCompletionModal";
+import { StandardFinishCard } from "@/features/ocd/_shared/StandardFinishCard";
+import { StandardCompletionModal } from "@/features/ocd/_shared/StandardCompletionModal";
 import { useTranslation } from "react-i18next";
 
 interface Screen4Props {

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { StandardCompletionModal } from "@/components/StandardCompletionModal";
+import { StandardCompletionModal } from "@/features/ocd/_shared/StandardCompletionModal";
 import CycleWheel, { NODES_META } from "./CycleWheel";
 import { ArrowLeft } from "lucide-react";
 

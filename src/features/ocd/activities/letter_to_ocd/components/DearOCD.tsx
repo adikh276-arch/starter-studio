@@ -1,9 +1,9 @@
 import { useState, useCallback, useEffect } from "react";
 import { toast } from "sonner";
-import { StandardCompletionModal } from "@/components/StandardCompletionModal";
+import { StandardCompletionModal } from "@/features/ocd/_shared/StandardCompletionModal";
 import { ArrowLeft, PenLine, RotateCcw, CheckCircle2, ChevronLeft, ChevronRight, Mail } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ActivityHistoryDrawer } from "@/components/ActivityHistoryDrawer";
+import { ActivityHistoryDrawer } from "@/features/ocd/_shared/ActivityHistoryDrawer";
 import { useTranslation } from "react-i18next";
 
 type Screen = "welcome" | "writing" | "preview";

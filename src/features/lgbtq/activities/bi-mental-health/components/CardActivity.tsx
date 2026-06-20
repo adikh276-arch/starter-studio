@@ -5,7 +5,7 @@ import { useState, useCallback, useRef } from "react";
 import { ChevronLeft, Share2 } from "lucide-react";
 import { ShareModal } from "@/components/pride/ShareModal";
 import { useNavigate } from "react-router";
-import confetti from "canvas-confetti";
+
 import TapToReveal from "./TapToReveal";
 import BreathingOrb from "./BreathingOrb";
 
@@ -239,12 +239,7 @@ const CardActivity = () => {
 
   const goNext = useCallback(() => {
     if (current >= total - 1) {
-      confetti({
-        particleCount: 120,
-        spread: 80,
-        origin: { y: 0.6 },
-        colors: ["#d1006c", "#6b35b8", "#0050a0", "#FFD700"],
-      });
+      /* ponytail: removed unneeded confetti */
       setFinished(true);
           triggerActivityWebhook();
       return;

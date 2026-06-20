@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ActivityHistoryDrawer } from "@/components/ActivityHistoryDrawer";
+import { ActivityHistoryDrawer } from "@/features/ocd/_shared/ActivityHistoryDrawer";
 import WelcomeScreen from "@/features/ocd/activities/clutter_journal/components/journal/WelcomeScreen";
 import ExplorationScreen from "@/features/ocd/activities/clutter_journal/components/journal/ExplorationScreen";
 import InsightScreen from "@/features/ocd/activities/clutter_journal/components/journal/InsightScreen";

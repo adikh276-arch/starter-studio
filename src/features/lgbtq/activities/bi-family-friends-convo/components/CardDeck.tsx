@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 import { ChevronLeft, Share2 } from "lucide-react";
 import { ShareModal } from "@/components/pride/ShareModal";
 import { useNavigate } from "react-router";
-import confetti from "canvas-confetti";
+
 import ActivityCard from "./ActivityCard";
 import TapBubble from "./TapBubble";
 import BreathingOrb from "./BreathingOrb";
@@ -49,19 +49,9 @@ const CardDeck = () => {
   const handleFinish = () => {
     setFinished(true);
                   triggerActivityWebhook();
-    confetti({
-      particleCount: 150,
-      spread: 80,
-      origin: { y: 0.6 },
-      colors: ["#d1006c", "#6b35b8", "#0050a0", "#ffd700"],
-    });
+    /* ponytail: removed unneeded confetti */
     setTimeout(() => {
-      confetti({
-        particleCount: 80,
-        spread: 100,
-        origin: { x: 0.3, y: 0.5 },
-        colors: ["#d1006c", "#6b35b8", "#0050a0"],
-      });
+      /* ponytail: removed unneeded confetti */
     }, 300);
   };
 
@@ -121,7 +111,7 @@ const CardDeck = () => {
 
           {/* Active card */}
           <div className="relative z-10">
-            {renderCard(current, next, handleFinish, finished, router.push, setCurrent, setFinished, () => setIsShareOpen(true), t)}
+            {renderCard(current, next, handleFinish, finished, navigate, setCurrent, setFinished, () => setIsShareOpen(true), t)}
           </div>
         </div>
       </div>

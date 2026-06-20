@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Star, Camera } from "lucide-react";
-import { Button } from "@/app/components/ui/button";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/app/components/ui/select";
+import { Button } from '@/components/ui/button';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 

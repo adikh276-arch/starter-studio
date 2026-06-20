@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from "react";
-import { StandardCompletionModal } from "@/components/StandardCompletionModal";
-import { ActivityHistoryDrawer } from "@/components/ActivityHistoryDrawer";
+import { StandardCompletionModal } from "@/features/ocd/_shared/StandardCompletionModal";
+import { ActivityHistoryDrawer } from "@/features/ocd/_shared/ActivityHistoryDrawer";
 import { ArrowLeft, ChevronLeft } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { toast } from "sonner";
@@ -15,7 +15,8 @@ import Screen8Reflection from "./Screen8Reflection";
 import Screen9BuildHabit from "./Screen9BuildHabit";
 import Screen10Closing from "./Screen10Closing";
 import { useTranslation } from "react-i18next";
-import { useSearchParams } from "next/navigation";
+import { useSearchParams } from 'react-router';
+
 import { useEffect } from "react";
 
 type Screen = 'welcome' | 'whats-happening' | 'breathing' | 'name-it' | 'body-check' | 'the-wait' | 'during-wait' | 'reflection' | 'build-habit' | 'closing';
@@ -34,7 +35,7 @@ interface SessionState {
 const TOTAL_SCREENS = 10;
 const ExerciseController: React.FC = () => {
   const { t, i18n } = useTranslation(["reassurance_resistance", "common"]);
-  const searchParams = useSearchParams();
+  const [searchParams] = useSearchParams();
 
   // Force language change if lang param is present
   useEffect(() => {

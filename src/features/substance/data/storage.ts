@@ -1,5 +1,5 @@
 import { TrackerEntry, AssessmentResult, SubstanceSlug } from './types';
-import { executeQuery } from '@/lib/db';
+import { executeQuery } from '@/features/substance/lib/db';
 
 export const getUserId = () => localStorage.getItem('therapy_user_id') || 'anon';
 export const getPrefix = () => `quitmantra_${getUserId()}`;

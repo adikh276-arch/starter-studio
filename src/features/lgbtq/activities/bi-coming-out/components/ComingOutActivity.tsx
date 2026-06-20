@@ -5,7 +5,7 @@ import { useState, useCallback } from "react";
 import { useNavigate } from "react-router";
 import { ChevronLeft, Share2 } from "lucide-react";
 import { ShareModal } from "@/components/pride/ShareModal";
-import confetti from "canvas-confetti";
+
 import TapToRevealBubble from "./TapToRevealBubble";
 
 const BAND_COLORS = ["bi-pink", "bi-purple", "bi-blue", "bi-pink", "bi-purple", "bi-blue", "bi-pink", "bi-purple", "bi-blue", "bi-pink"];
@@ -242,19 +242,9 @@ export default function ComingOutActivity() {
       // Final card - finish
       setFinished(true);
         triggerActivityWebhook();
-      confetti({
-        particleCount: 150,
-        spread: 80,
-        origin: { y: 0.6 },
-        colors: ["#d1006c", "#6b35b8", "#0050a0", "#ffffff"],
-      });
+      /* ponytail: removed unneeded confetti */
       setTimeout(() => {
-        confetti({
-          particleCount: 80,
-          spread: 60,
-          origin: { x: 0.3, y: 0.5 },
-          colors: ["#d1006c", "#6b35b8", "#0050a0"],
-        });
+        /* ponytail: removed unneeded confetti */
       }, 300);
       return;
     }

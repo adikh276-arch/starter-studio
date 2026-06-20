@@ -1,13 +1,6 @@
 export const handlePlatformExit = () => {
   if (typeof window === 'undefined') return;
-  
-  if ((window as any).ReactNativeWebView) {
-    );
-  } else if (window.parent !== window) {
-    window.history.back();
-  } else {
-    window.history.back();
-  }
+  window.history.back();
 };
 
 export const withLang = (url: string) => {

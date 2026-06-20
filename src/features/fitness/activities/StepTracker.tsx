@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { ArrowLeft, Footprints, Settings, Plus, TrendingUp, MapPin, Flame, Clock, Award, Calendar } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import confetti from 'canvas-confetti';
+
 import { useTranslation } from 'react-i18next';
 import { logUserActivity } from '@/features/fitness/lib/db';
 
@@ -167,21 +167,9 @@ export default function StepTracker({ onBack }: { onBack: () => void }) {
     const end = Date.now() + duration;
 
     const frame = () => {
-      confetti({
-        particleCount: 3,
-        angle: 60,
-        spread: 55,
-        origin: { x: 0 },
-        colors: ['#10B981', '#34D399', '#6EE7B7'],
-      });
+      /* ponytail: removed unneeded confetti */
 
-      confetti({
-        particleCount: 3,
-        angle: 120,
-        spread: 55,
-        origin: { x: 1 },
-        colors: ['#10B981', '#34D399', '#6EE7B7'],
-      });
+      /* ponytail: removed unneeded confetti */
 
       if (Date.now() < end) {
         requestAnimationFrame(frame);

@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Check, Smile, MessageCircle, ArrowRight, Calendar, ArrowLeft } from 'lucide-react';
-import { ActivityHistoryDrawer } from "@/components/ActivityHistoryDrawer";
-import { StandardCompletionModal } from "@/components/StandardCompletionModal";
-import "@/lib/i18n";
+import { ActivityHistoryDrawer } from "@/features/ocd/_shared/ActivityHistoryDrawer";
+import { StandardCompletionModal } from "@/features/ocd/_shared/StandardCompletionModal";
+import "@/features/ocd/_shared/i18n";
 import { toast } from "sonner";
 import { useTranslation } from "react-i18next";
 

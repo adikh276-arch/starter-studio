@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Button } from "@/app/components/ui/button";
-import { Textarea } from "@/app/components/ui/textarea";
+import { Button } from '@/components/ui/button';
+import { Textarea } from '@/components/ui/textarea';
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 

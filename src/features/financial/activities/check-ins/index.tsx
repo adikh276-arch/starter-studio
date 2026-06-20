@@ -1,8 +1,10 @@
 'use client';
 import { useTranslation } from 'react-i18next';
-import { useRouter, useSearchParams } from 'next/navigation';
+import { useSearchParams, useNavigate as useRouter } from 'react-router';
+
 import { motion } from 'framer-motion';
-import Link from 'next/link';
+import { Link } from 'react-router';
+
 import { CheckSquare, Heart, Activity, TrendingUp, ChevronRight, ChevronLeft, Star, ActivityIcon, ClipboardCheck, History } from 'lucide-react';
 import { handleExternalExit } from '@/features/financial/lib/navigation';
 
@@ -65,7 +67,7 @@ const itemVariants = {
 export default function CheckInsHub() {
   const { t } = useTranslation('check-ins');
   const navigate = useNavigate();
-  const searchParams = useSearchParams();
+  const [searchParams] = useSearchParams();
   const query = searchParams.toString();
   const suffix = query ? `?${query}` : '';
 

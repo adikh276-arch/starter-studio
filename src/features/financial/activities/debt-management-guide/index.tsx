@@ -150,7 +150,7 @@ export default function DebtManagementPage() {
                   borderRadius: 'var(--radius-xl)', padding: 'var(--space-4)',
                   boxShadow: 'var(--shadow-xs)',
                 }}>
-                  <p style={{ fontWeight: 700, fontSize: 'var(--text-sm)', color: cat.color, marginBottom: 'var(--space-3)', textTransform: 'uppercase', fontSize: 11, letterSpacing: '0.06em' }}>
+                  <p style={{ fontWeight: 700, color: cat.color, marginBottom: 'var(--space-3)', textTransform: 'uppercase', fontSize: 11, letterSpacing: '0.06em' }}>
                     {cat.label}
                   </p>
                   {cat.items.map((item, i) => (
@@ -291,7 +291,7 @@ export default function DebtManagementPage() {
                 <button className="btn btn-secondary btn-lg" style={{ flex: 1 }} onClick={handleReset}>
                   <RotateCcw size={16} /> {t('Start Over')}
                 </button>
-                <button className="btn btn-primary btn-lg" style={{ flex: 1 }} onClick={() => router.replace('/')}>
+                <button className="btn btn-primary btn-lg" style={{ flex: 1 }} onClick={() => router('/', { replace: true })}>
                   {t('Back')}
                 </button>
               </div>

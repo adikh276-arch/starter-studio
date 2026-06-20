@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { ArrowLeft, Clock, Calendar, CheckCircle2, Utensils, Award } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import confetti from 'canvas-confetti';
+
 import { logUserActivity, fetchUserActivityLogs } from '@/features/fitness/lib/db';
 import { useTranslation } from "react-i18next";
 
@@ -140,12 +140,7 @@ export default function FastTimer({ onBack }: { onBack: () => void }) {
 
     // Confetti if goal reached
     if (goalReached) {
-      confetti({
-        particleCount: 150,
-        spread: 80,
-        origin: { y: 0.6 },
-        colors: ['#A855F7', '#C084FC', '#E9D5FF'],
-      });
+      /* ponytail: removed unneeded confetti */
     }
 
     // Hide success message after 4 seconds

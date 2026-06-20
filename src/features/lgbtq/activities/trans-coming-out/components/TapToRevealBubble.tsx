@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import confetti from "canvas-confetti";
+
 
 interface TapToRevealBubbleProps {
   icon: string;
@@ -21,15 +21,7 @@ const TapToRevealBubble = ({ icon, text, color, onReveal }: TapToRevealBubblePro
     const x = (rect.left + rect.width / 2) / window.innerWidth;
     const y = (rect.top + rect.height / 2) / window.innerHeight;
 
-    confetti({
-      particleCount: 25,
-      spread: 50,
-      startVelocity: 15,
-      scalar: 0.6,
-      origin: { x, y },
-      colors: ['#55cdfc', '#f7a8b8', '#ffffff'],
-      ticks: 60,
-    });
+    /* ponytail: removed unneeded confetti */
   };
 
   const overlayBg = color === "blue"

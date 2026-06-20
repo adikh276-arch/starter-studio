@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { ActivityHistoryDrawer } from "@/components/ActivityHistoryDrawer";
-import { StandardCompletionModal } from "@/components/StandardCompletionModal";
+import { ActivityHistoryDrawer } from "@/features/ocd/_shared/ActivityHistoryDrawer";
+import { StandardCompletionModal } from "@/features/ocd/_shared/StandardCompletionModal";
 import { CheckCircle2, RotateCcw } from "lucide-react";
 import { useTranslation } from "react-i18next";
 

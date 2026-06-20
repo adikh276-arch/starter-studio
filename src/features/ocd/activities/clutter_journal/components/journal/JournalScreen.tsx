@@ -1,4 +1,4 @@
-import { ActivityHistoryDrawer } from "@/components/ActivityHistoryDrawer";
+import { ActivityHistoryDrawer } from "@/features/ocd/_shared/ActivityHistoryDrawer";
 import { BookOpen, PlusCircle, ChevronRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 

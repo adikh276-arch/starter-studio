@@ -1,7 +1,9 @@
 'use client';
 import { useTranslation } from 'react-i18next';
-import { useSearchParams } from 'next/navigation';
-import Link from 'next/link';
+import { useSearchParams } from 'react-router';
+
+import { Link } from 'react-router';
+
 import { motion } from 'framer-motion';
 import { Clock, BookOpen, CheckCircle2, ChevronRight, Share2 } from 'lucide-react';
 import { PageHeader } from './layout/PageHeader';
@@ -45,7 +47,7 @@ export function LearnModule({
 }: LearnModuleProps) {
   const { t } = useTranslation(['learn', 'share']);
   const [isShareModalOpen, setIsShareModalOpen] = useState(false);
-  const searchParams = useSearchParams();
+  const [searchParams] = useSearchParams();
   const query = searchParams.toString();
   const suffix = query ? `?${query}` : '';
 

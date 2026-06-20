@@ -1,8 +1,8 @@
 "use client";
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ActivityHistoryDrawer } from "@/components/ActivityHistoryDrawer";
-import { StandardCompletionModal } from "@/components/StandardCompletionModal";
+import { ActivityHistoryDrawer } from "@/features/ocd/_shared/ActivityHistoryDrawer";
+import { StandardCompletionModal } from "@/features/ocd/_shared/StandardCompletionModal";
 import { toast } from "sonner";
 import { Trash2, CheckCircle2, Package, ChevronRight, ArrowLeft, ChevronLeft } from "lucide-react";
 import { useTranslation } from "react-i18next";

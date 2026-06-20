@@ -1,6 +1,7 @@
 'use client';
 
-import Link from 'next/link';
+import { Link } from 'react-router';
+
 import { useLocation } from "react-router";
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';

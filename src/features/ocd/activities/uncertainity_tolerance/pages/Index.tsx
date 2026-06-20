@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, ShieldAlert, Timer, CheckCircle2, MessageCircle, Star, ChevronLeft } from 'lucide-react';
-import { StandardCompletionModal } from "@/components/StandardCompletionModal";
-import { ActivityHistoryDrawer } from "@/components/ActivityHistoryDrawer";
+import { StandardCompletionModal } from "@/features/ocd/_shared/StandardCompletionModal";
+import { ActivityHistoryDrawer } from "@/features/ocd/_shared/ActivityHistoryDrawer";
 import { useActivitySession } from "../hooks/useActivitySession";
 import { toast } from "sonner";
 import { useTranslation } from "react-i18next";
-import { useSearchParams } from 'next/navigation';
+import { useSearchParams } from 'react-router';
+
 
 /* ─── Shared sub-components ──────────────────────────────────────────────────── */
 function GradientBadge({ children }: { children: React.ReactNode }) {
@@ -35,7 +36,7 @@ function ActivityButton({ children, onClick, disabled, variant = 'primary', load
 
 const Index = () => {
   const { t, i18n } = useTranslation(["uncertainity_tolerance", "common"]);
-  const searchParams = useSearchParams();
+  const [searchParams] = useSearchParams();
 
   // Force language change if lang param is present
   useEffect(() => {

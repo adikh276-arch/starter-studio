@@ -11,7 +11,7 @@ const pageMap: Record<string, () => Promise<{ default: React.ComponentType<any> 
   "check-ins/money-stress-quiz": () => import("./activities/check-ins/money-stress-quiz/index"),
   "check-ins/savings-check-up": () => import("./activities/check-ins/savings-check-up/index"),
   "check-ins/spending-style-quiz": () => import("./activities/check-ins/spending-style-quiz/index"),
-  "dashboard": () => import("./activities/dashboard/index"),
+
   "debt-management-guide": () => import("./activities/debt-management-guide/index"),
   "emergency-fund": () => import("./activities/emergency-fund/index"),
   "explore/financial-articles": () => import("./activities/explore/financial-articles/index"),

@@ -1,4 +1,4 @@
-import { initializeMockData } from '@/data/initMockData';
+import { initializeMockData } from '@/features/substance/data/initMockData';
 import Landing from './Landing';
 
 initializeMockData();

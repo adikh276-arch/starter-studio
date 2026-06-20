@@ -1,6 +1,6 @@
 "use client";
 import { useState, useCallback } from "react";
-import confetti from "canvas-confetti";
+
 
 interface Bubble {
   icon?: string;
@@ -23,15 +23,7 @@ const TapToReveal = ({ bubbles }: TapToRevealProps) => {
       const rect = (e.currentTarget as HTMLElement).getBoundingClientRect();
       const x = (rect.left + rect.width / 2) / window.innerWidth;
       const y = (rect.top + rect.height / 2) / window.innerHeight;
-      confetti({
-        particleCount: 18,
-        spread: 40,
-        startVelocity: 15,
-        origin: { x, y },
-        colors: ["#d1006c", "#6b35b8", "#0050a0"],
-        scalar: 0.6,
-        ticks: 60,
-      });
+      /* ponytail: removed unneeded confetti */
 
       setRevealed((prev) => new Set(prev).add(index));
       if (hintVisible) setHintVisible(false);

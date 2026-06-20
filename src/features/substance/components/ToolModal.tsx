@@ -2,12 +2,12 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronRight, ArrowUp, Lock, Check, Play, Pause, Trophy, Sparkles, Heart, BookmarkCheck, Bookmark, Target, Zap, ClipboardList } from 'lucide-react';
 import { DynamicIcon } from './DynamicIcon';
-import { SubstanceConfig } from '@/data/types';
-import { getAssessment, saveAssessment, toggleCommunityUpvote, getCommunityUpvotes, addUserPost, getUserPosts, logAssessmentWebhook } from '@/data/storage';
+import { SubstanceConfig } from '@/features/substance/data/types';
+import { getAssessment, saveAssessment, toggleCommunityUpvote, getCommunityUpvotes, addUserPost, getUserPosts, logAssessmentWebhook } from '@/features/substance/data/storage';
 import { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
-import { analytics } from '@/lib/analytics';
-import { getUserId } from '@/data/storage';
+import { analytics } from '@/features/substance/lib/analytics';
+import { getUserId } from '@/features/substance/data/storage';
 
 const sparkColors: Record<string, string> = {
   alcohol: '#ef4444', tobacco: '#d97706', opioids: '#8b5cf6', cannabis: '#10b981',

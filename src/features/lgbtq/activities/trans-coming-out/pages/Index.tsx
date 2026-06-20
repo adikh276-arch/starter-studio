@@ -5,7 +5,7 @@ import { useState, useCallback, ReactNode } from "react";
 import { useNavigate } from "react-router";
 import { ChevronLeft, Share2 } from "lucide-react";
 import { ShareModal } from "@/components/pride/ShareModal";
-import confetti from "canvas-confetti";
+
 import FloatingOrbs from "../components/FloatingOrbs";
 import ProgressBar from "../components/ProgressBar";
 import ActivityCard from "../components/ActivityCard";
@@ -255,20 +255,8 @@ const Index = () => {
     triggerActivityWebhook();
     const end = Date.now() + 2500;
     const frame = () => {
-      confetti({
-        particleCount: 4,
-        angle: 60,
-        spread: 55,
-        origin: { x: 0, y: 0.7 },
-        colors: ['#55cdfc', '#f7a8b8', '#ffffff'],
-      });
-      confetti({
-        particleCount: 4,
-        angle: 120,
-        spread: 55,
-        origin: { x: 1, y: 0.7 },
-        colors: ['#55cdfc', '#f7a8b8', '#ffffff'],
-      });
+      /* ponytail: removed unneeded confetti */
+      /* ponytail: removed unneeded confetti */
       if (Date.now() < end) requestAnimationFrame(frame);
     };
     frame();

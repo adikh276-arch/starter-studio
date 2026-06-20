@@ -6,7 +6,7 @@ import IntroScreen from "./IntroScreen";
 import QuestionScreen from "./QuestionScreen";
 import RevealScreen from "./RevealScreen";
 import ResultsScreen from "./ResultsScreen";
-import { ActivityHistoryDrawer } from "@/components/ActivityHistoryDrawer";
+import { ActivityHistoryDrawer } from "@/features/ocd/_shared/ActivityHistoryDrawer";
 import { useTranslation } from "react-i18next";
 
 type Screen = "intro" | "question" | "reveal" | "results";

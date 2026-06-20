@@ -1,5 +1,5 @@
-import { StandardCompletionModal } from "@/components/StandardCompletionModal";
-import { ActivityHistoryDrawer } from "@/components/ActivityHistoryDrawer";
+import { StandardCompletionModal } from "@/features/ocd/_shared/StandardCompletionModal";
+import { ActivityHistoryDrawer } from "@/features/ocd/_shared/ActivityHistoryDrawer";
 import { useState, useEffect } from "react";
 
 import { BarChart3, CheckCircle, Info, TrendingUp, ArrowLeft, Loader2, Calendar } from "lucide-react";

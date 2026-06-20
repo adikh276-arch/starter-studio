@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { ArrowLeft, Leaf, Award, CheckCircle2, AlertCircle, Plus, Trash2, Lightbulb, Sparkles, ChevronDown, Search } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import confetti from 'canvas-confetti';
+
 import { useTranslation } from 'react-i18next';
 import { useMemo } from 'react';
 import { logUserActivity } from '@/features/fitness/lib/db';
@@ -375,12 +375,7 @@ export default function VeganNutritionGuide({ onBack }: { onBack: () => void }) 
 
     // Celebrate if goal achieved (assuming 50g minimum)
     if (total >= 50) {
-      confetti({
-        particleCount: 100,
-        spread: 70,
-        origin: { y: 0.6 },
-        colors: ['#22C55E', '#16A34A', '#15803D'],
-      });
+      /* ponytail: removed unneeded confetti */
     }
 
     // Reset entries

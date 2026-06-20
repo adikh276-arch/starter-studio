@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Loader2, Calendar, Clock } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { getTrackerHistory } from "@/app/actions/trackers";
+import { getTrackerHistory } from '@/actions/trackers';
 
 interface PrideTrackerHistoryProps {
   tableName: string;

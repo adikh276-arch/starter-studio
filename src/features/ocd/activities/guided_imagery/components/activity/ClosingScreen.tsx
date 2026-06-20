@@ -1,4 +1,4 @@
-import { StandardCompletionModal } from "@/components/StandardCompletionModal";
+import { StandardCompletionModal } from "@/features/ocd/_shared/StandardCompletionModal";
 import { useState } from "react";
 import { CheckCircle2, Leaf } from "lucide-react";
 import { useTranslation } from "react-i18next";

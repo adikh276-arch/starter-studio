@@ -4,7 +4,7 @@ import { triggerActivityWebhook } from "@/lib/webhook";
 import { useState, useCallback } from "react";
 import { useNavigate } from "react-router";
 import { motion, AnimatePresence, PanInfo } from "framer-motion";
-import confetti from "canvas-confetti";
+
 import Card1Split from "./Card1Split";
 import Card2Scale from "./Card2Scale";
 import Card3Breathing from "./Card3Breathing";
@@ -42,9 +42,9 @@ const DysphoriaActivity = () => {
   const handleFinish = () => {
     setFinished(true);
             triggerActivityWebhook();
-    confetti({ particleCount: 150, spread: 90, origin: { y: 0.6 }, colors: ["#55cdfc", "#f7a8b8", "#ffffff"] });
-    setTimeout(() => confetti({ particleCount: 80, spread: 120, origin: { y: 0.5, x: 0.3 }, colors: ["#55cdfc", "#f7a8b8", "#ffffff"] }), 400);
-    setTimeout(() => confetti({ particleCount: 80, spread: 120, origin: { y: 0.5, x: 0.7 }, colors: ["#55cdfc", "#f7a8b8", "#ffffff"] }), 700);
+    /* ponytail: removed unneeded confetti */
+    setTimeout(() => {} /* ponytail: removed unneeded confetti */, 400);
+    setTimeout(() => {} /* ponytail: removed unneeded confetti */, 700);
   };
 
   const card = cards[current];

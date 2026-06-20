@@ -18,3 +18,12 @@ export const getDynamicMiniHistory = async (table: string, userId: string) => {
   const existing = existingStr ? JSON.parse(existingStr) : [];
   return { success: true, data: existing };
 };
+
+export const deleteDynamicMiniEntry = async (table: string, userId: string, id: string) => {
+  const key = `dynamic-mini-${table}-${userId}`;
+  const existingStr = localStorage.getItem(key);
+  let existing = existingStr ? JSON.parse(existingStr) : [];
+  existing = existing.filter((e: any) => e.id !== id);
+  localStorage.setItem(key, JSON.stringify(existing));
+  return { success: true };
+};

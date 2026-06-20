@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { ArrowLeft, Sparkles, ChevronRight, Wind, Droplets, Hand, Utensils, Coffee, Footprints, Snowflake, Flower, Move, Ear, Heart } from "lucide-react";
 import { techniques } from "@/features/ocd/activities/grounded_techniques/data/techniques";
-import { ActivityHistoryDrawer } from "@/components/ActivityHistoryDrawer";
+import { ActivityHistoryDrawer } from "@/features/ocd/_shared/ActivityHistoryDrawer";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 

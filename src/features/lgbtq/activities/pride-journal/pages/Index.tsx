@@ -1,6 +1,6 @@
 "use client";
 
-import { triggerActivityWebhook } from "@/lib/webhook";
+import { triggerActivityWebhook } from "@/features/lgbtq/lib/webhook";
 import { MemoryRouter, Routes, Route } from "react-router-dom";
 import { useState, useEffect, useCallback } from "react";
 import { useNavigate } from "react-router";

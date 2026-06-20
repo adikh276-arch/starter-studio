@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { illustrations } from "./MoveIllustrations";
-import { StandardCompletionModal } from "@/components/StandardCompletionModal";
-import { ActivityHistoryDrawer } from "@/components/ActivityHistoryDrawer";
+import { StandardCompletionModal } from "@/features/ocd/_shared/StandardCompletionModal";
+import { ActivityHistoryDrawer } from "@/features/ocd/_shared/ActivityHistoryDrawer";
 import { Hand, Timer, ArrowLeft, Zap, Info, CheckCircle2, Waves, ChevronRight, ChevronLeft } from "lucide-react";
 import { useTranslation } from "react-i18next";
 

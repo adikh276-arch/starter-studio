@@ -1,4 +1,4 @@
-import { StandardFinishCard } from "@/components/StandardFinishCard";
+import { StandardFinishCard } from "@/features/ocd/_shared/StandardFinishCard";
 import { CheckCircle2 } from "lucide-react";
 import { useState } from "react";
 import GratitudeCheckIn from "@/features/ocd/activities/gratitude_logs/components/GratitudeCheckIn";

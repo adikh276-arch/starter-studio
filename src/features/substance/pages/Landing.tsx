@@ -1,12 +1,12 @@
 import { useNavigate } from "react-router";
 import { motion } from 'framer-motion';
-import { substances } from '@/data/substances';
-import { getStreak, syncGlobalDataFromCloud } from '@/data/storage';
+import { substances } from '@/features/substance/data/substances';
+import { getStreak, syncGlobalDataFromCloud } from '@/features/substance/data/storage';
 import { Shield, Sparkles, Flame, TrendingUp, ChevronRight, ArrowLeft } from 'lucide-react';
-import SubstanceIcon from '@/components/SubstanceIcon';
+import SubstanceIcon from '@/features/substance/components/SubstanceIcon';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
-import { loadModuleTranslations } from '@/i18n/dynamicLoader';
+import { loadModuleTranslations } from '@/features/substance/i18n/dynamicLoader';
 
 const substanceColors: Record<string, { gradient: string; bg: string; ring: string; orb: string }> = {
   alcohol:         { gradient: 'from-red-500 to-rose-600',       bg: 'bg-red-50 dark:bg-red-950/40',    ring: 'ring-red-200 dark:ring-red-800/40',    orb: 'bg-red-300/20' },

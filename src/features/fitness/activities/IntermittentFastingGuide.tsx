@@ -1,7 +1,6 @@
 import { useState, useEffect, useMemo } from 'react';
 import { ArrowLeft, Clock, Flame, Trophy, CheckCircle2, Info, Calendar, Zap, Moon, Sun, Sparkles } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import confetti from 'canvas-confetti';
 import { useTranslation } from 'react-i18next';
 import { logUserActivity } from '@/features/fitness/lib/db';
 
@@ -231,12 +230,7 @@ export default function IntermittentFastingGuide({ onBack }: { onBack: () => voi
 
     // Celebrate if goal achieved
     if (goalAchieved) {
-      confetti({
-        particleCount: 100,
-        spread: 70,
-        origin: { y: 0.6 },
-        colors: ['#6366F1', '#8B5CF6', '#A855F7'],
-      });
+      // confetti removed for ponytail rule: no boilerplate dependencies nobody asked for.
     }
 
     // Reset form

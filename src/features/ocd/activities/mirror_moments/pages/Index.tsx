@@ -1,15 +1,16 @@
 import { useState, useEffect } from "react";
 import { ArrowLeft, User, Heart, ChevronLeft, ChevronRight, Check } from "lucide-react";
-import { StandardCompletionModal } from "@/components/StandardCompletionModal";
+import { StandardCompletionModal } from "@/features/ocd/_shared/StandardCompletionModal";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { useSearchParams } from 'next/navigation';
+import { useSearchParams } from 'react-router';
+
 
 const emojiMap = ["🌿", "💙", "🌊", "✨", "🤍", "🌸", "💛"];
 
 const Index = () => {
     const { t, i18n } = useTranslation(["mirror_moments", "common"]);
-  const searchParams = useSearchParams();
+  const [searchParams] = useSearchParams();
 
   // Force language change if lang param is present
   useEffect(() => {

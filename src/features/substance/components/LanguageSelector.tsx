@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Globe } from 'lucide-react';
-import { languages } from '@/i18n';
+import { languages } from '@/features/substance/i18n';
 
 const LanguageSelector = () => {
   const { i18n } = useTranslation();

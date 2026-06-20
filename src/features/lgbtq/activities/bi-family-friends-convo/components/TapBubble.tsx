@@ -1,6 +1,6 @@
 "use client";
 import { useState, useRef } from "react";
-import confetti from "canvas-confetti";
+
 
 interface TapBubbleProps {
   emoji: string;
@@ -29,16 +29,7 @@ const TapBubble = ({ emoji, text, subtext, color, onReveal }: TapBubbleProps) =>
     if (rect) {
       const x = ("clientX" in e ? e.clientX : (e as React.TouchEvent).touches[0].clientX) / window.innerWidth;
       const y = ("clientY" in e ? e.clientY : (e as React.TouchEvent).touches[0].clientY) / window.innerHeight;
-      confetti({
-        particleCount: 20,
-        spread: 40,
-        startVelocity: 15,
-        origin: { x, y },
-        colors: ["#d1006c", "#6b35b8", "#0050a0"],
-        scalar: 0.6,
-        gravity: 1.5,
-        ticks: 60,
-      });
+      /* ponytail: removed unneeded confetti */
     }
   };
 

@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
-import { StandardFinishCard } from "@/components/StandardFinishCard";
-import { StandardCompletionModal } from "@/components/StandardCompletionModal";
-import { ActivityHistoryDrawer } from "@/components/ActivityHistoryDrawer";
+import { StandardFinishCard } from "@/features/ocd/_shared/StandardFinishCard";
+import { StandardCompletionModal } from "@/features/ocd/_shared/StandardCompletionModal";
+import { ActivityHistoryDrawer } from "@/features/ocd/_shared/ActivityHistoryDrawer";
 import { useTranslation } from "react-i18next";
 
 // ─── Card data ────────────────────────────────────────────────────────────────

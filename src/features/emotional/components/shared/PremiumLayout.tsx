@@ -1,13 +1,14 @@
 'use client';
 
 import React, { useEffect, Suspense } from 'react';
-import { useSearchParams } from 'next/navigation';
+import { useSearchParams } from 'react-router';
+
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, RotateCcw } from 'lucide-react';
 import { handlePlatformExit } from '../../lib/navigation';
 
 function ActivityTrackerInner() {
-  const searchParams = useSearchParams();
+  const [searchParams] = useSearchParams();
 
   useEffect(() => {
     if (typeof window !== 'undefined') {

@@ -10,7 +10,7 @@ import PracticeScreen from "@/features/ocd/activities/fear_ladder/components/Fea
 import CompletionScreen from "@/features/ocd/activities/fear_ladder/components/FearLadder/CompletionScreen";
 import ProgressPanel from "@/features/ocd/activities/fear_ladder/components/FearLadder/ProgressPanel";
 import { useFearLadderStorage } from "@/features/ocd/activities/fear_ladder/hooks/useFearLadderStorage";
-import { ActivityHistoryDrawer } from "@/components/ActivityHistoryDrawer";
+import { ActivityHistoryDrawer } from "@/features/ocd/_shared/ActivityHistoryDrawer";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
 

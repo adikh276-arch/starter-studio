@@ -1,15 +1,5 @@
-"use client";
-import { useLocation } from "react-router";
+import React from 'react';
 
 export const AuthGuard = ({ children }: { children: React.ReactNode }) => {
-  const userId = sessionStorage.getItem("user_id");
-  const location = usePathname();
-
-  if (!userId) {
-    // Phase 7, Step 4 — Failure Handling: hard redirect to /token
-    window.location.href = "/token";
-    return null;
-  }
-
-  return <>{children}</>;
+    return <>{children}</>;
 };

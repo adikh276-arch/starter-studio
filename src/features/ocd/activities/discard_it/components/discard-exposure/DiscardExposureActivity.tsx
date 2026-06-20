@@ -11,7 +11,7 @@ import Screen7WellDone from "./Screen7WellDone";
 import Screen8Ladder from "./Screen8Ladder";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { ActivityHistoryDrawer } from "@/components/ActivityHistoryDrawer";
+import { ActivityHistoryDrawer } from "@/features/ocd/_shared/ActivityHistoryDrawer";
 
 const DiscardExposureActivity = () => {
     const { t } = useTranslation("discard_it");

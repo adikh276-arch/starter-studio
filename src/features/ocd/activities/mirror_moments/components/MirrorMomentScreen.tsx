@@ -1,6 +1,6 @@
 import { Button } from "@/features/ocd/activities/mirror_moments/components/ui/button";
-import { StandardFinishCard } from "@/components/StandardFinishCard";
-import { StandardCompletionModal } from "@/components/StandardCompletionModal";
+import { StandardFinishCard } from "@/features/ocd/_shared/StandardFinishCard";
+import { StandardCompletionModal } from "@/features/ocd/_shared/StandardCompletionModal";
 import { useState, useEffect, useCallback } from "react";
 import { useTranslation } from "react-i18next";
 

@@ -104,18 +104,18 @@ const mindfulnessCards: MindfulnessCard[] = [
 ];
 
 const toolCards: TopicCard[] = [
-  { id: "smoking-index", icon: Cigarette, label: "Smoking Index", bgColor: "linear-gradient(135deg, #ef4444 0%, #dc2626 100%)", iconColor: "#EF4444", id: "smoking-index" },
-  { id: "urge-watcher", icon: Eye, label: "Urge Watcher", bgColor: "linear-gradient(135deg, #f59e0b 0%, #d97706 100%)", iconColor: "#F59E0B", id: "urge-watcher" },
-  { id: "consumption-check", icon: CheckCircle, label: "Consumtion Check", bgColor: "linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%)", iconColor: "#8B5CF6", id: "consumption-tracker" },
-  { id: "habits-check", icon: Activity, label: "Habits Check", bgColor: "linear-gradient(135deg, #06b6d4 0%, #0891b2 100%)", iconColor: "#06B6D4", id: "habits-check" },
-  { id: "withdrawal-tracker", icon: AlertTriangle, label: "Withdrawal Tracker", bgColor: "linear-gradient(135deg, #ec4899 0%, #db2777 100%)", iconColor: "#EC4899", id: "withdrawal-tracker" },
-  { id: "energy-track", icon: Battery, label: "Energy Track", bgColor: "linear-gradient(135deg, #10b981 0%, #059669 100%)", iconColor: "#10B981", id: "energy-track" },
-  { id: "craving-check", icon: Wind, label: "Craving Check", bgColor: "linear-gradient(135deg, #f97316 0%, #ea580c 100%)", iconColor: "#F97316", id: "smoke-craving-tracker" },
-  { id: "sleep-check", icon: Bed, label: "Sleep Check", bgColor: "linear-gradient(135deg, #6366f1 0%, #4f46e5 100%)", iconColor: "#6366F1", id: "sleep-check" },
-  { id: "mood-check", icon: SmilePlus, label: "Mood Check", bgColor: "linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%)", iconColor: "#FBBF24", id: "mood-tracker" },
-  { id: "pause-button", icon: PauseCircle, label: "Pause Button", bgColor: "linear-gradient(135deg, #a855f7 0%, #9333ea 100%)", iconColor: "#A855F7", id: "pause-button" },
-  { id: "grounding", icon: Anchor, label: "Grounding", bgColor: "linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%)", iconColor: "#0EA5E9", id: "grounding" },
-  { id: "affirmations", icon: Smile, label: "Affirmations", bgColor: "linear-gradient(135deg, #f472b6 0%, #ec4899 100%)", iconColor: "#F472B6", id: "affirmations" },
+  { id: "smoking-index", icon: Cigarette, label: "Smoking Index", bgColor: "linear-gradient(135deg, #ef4444 0%, #dc2626 100%)", iconColor: "#EF4444" },
+  { id: "urge-watcher", icon: Eye, label: "Urge Watcher", bgColor: "linear-gradient(135deg, #f59e0b 0%, #d97706 100%)", iconColor: "#F59E0B" },
+  { id: "consumption-tracker", icon: CheckCircle, label: "Consumtion Check", bgColor: "linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%)", iconColor: "#8B5CF6" },
+  { id: "habits-check", icon: Activity, label: "Habits Check", bgColor: "linear-gradient(135deg, #06b6d4 0%, #0891b2 100%)", iconColor: "#06B6D4" },
+  { id: "withdrawal-tracker", icon: AlertTriangle, label: "Withdrawal Tracker", bgColor: "linear-gradient(135deg, #ec4899 0%, #db2777 100%)", iconColor: "#EC4899" },
+  { id: "energy-track", icon: Battery, label: "Energy Track", bgColor: "linear-gradient(135deg, #10b981 0%, #059669 100%)", iconColor: "#10B981" },
+  { id: "smoke-craving-tracker", icon: Wind, label: "Craving Check", bgColor: "linear-gradient(135deg, #f97316 0%, #ea580c 100%)", iconColor: "#F97316" },
+  { id: "sleep-check", icon: Bed, label: "Sleep Check", bgColor: "linear-gradient(135deg, #6366f1 0%, #4f46e5 100%)", iconColor: "#6366F1" },
+  { id: "mood-tracker", icon: SmilePlus, label: "Mood Check", bgColor: "linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%)", iconColor: "#FBBF24" },
+  { id: "pause-button", icon: PauseCircle, label: "Pause Button", bgColor: "linear-gradient(135deg, #a855f7 0%, #9333ea 100%)", iconColor: "#A855F7" },
+  { id: "grounding", icon: Anchor, label: "Grounding", bgColor: "linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%)", iconColor: "#0EA5E9" },
+  { id: "affirmations", icon: Smile, label: "Affirmations", bgColor: "linear-gradient(135deg, #f472b6 0%, #ec4899 100%)", iconColor: "#F472B6" },
 ];
 
 export function SubstanceUseSelfCare() {

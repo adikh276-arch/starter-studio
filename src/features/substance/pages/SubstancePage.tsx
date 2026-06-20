@@ -1,19 +1,19 @@
 import { useParams, useNavigate, useSearchParams } from "react-router";
 import { motion } from 'framer-motion';
 import { ArrowLeft, ClipboardList, Calculator, Dumbbell, BookOpen, TrendingUp, Calendar, Flame, ChevronRight, Zap, Lightbulb, RefreshCw, DollarSign, ShieldCheck, CigaretteOff, Activity } from 'lucide-react';
-import { getSubstance } from '@/data/substances';
-import { getStreak, getEntries, getPrefix, fetchOnboarded, saveOnboarded, resetOnboarded, syncUserDataFromCloud, getDynamicStat } from '@/data/storage';
+import { getSubstance } from '@/features/substance/data/substances';
+import { getStreak, getEntries, getPrefix, fetchOnboarded, saveOnboarded, resetOnboarded, syncUserDataFromCloud, getDynamicStat } from '@/features/substance/data/storage';
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { loadModuleTranslations } from '@/i18n/dynamicLoader';
-import TrackerDetail from '@/components/TrackerDetail';
-import ToolModal from '@/components/ToolModal';
-import SubstanceIcon from '@/components/SubstanceIcon';
-import SubstanceOnboarding from '@/components/SubstanceOnboarding';
-import { ConfirmModal } from '@/components/ConfirmModal';
+import { loadModuleTranslations } from '@/features/substance/i18n/dynamicLoader';
+import TrackerDetail from '@/features/substance/components/TrackerDetail';
+import ToolModal from '@/features/substance/components/ToolModal';
+import SubstanceIcon from '@/features/substance/components/SubstanceIcon';
+import SubstanceOnboarding from '@/features/substance/components/SubstanceOnboarding';
+import { ConfirmModal } from '@/features/substance/components/ConfirmModal';
 import { LineChart, Line, ResponsiveContainer } from 'recharts';
-import { useToast } from '@/hooks/use-toast';
-import { analytics } from '@/lib/analytics';
+import { useToast } from '@/features/substance/hooks/use-toast';
+import { analytics } from '@/features/substance/lib/analytics';
 
 const heroGradients: Record<string, string> = {
   alcohol: 'from-red-600 via-rose-500 to-red-700',

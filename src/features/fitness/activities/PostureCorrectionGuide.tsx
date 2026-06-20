@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { ArrowLeft, Target, Play, Pause, RotateCcw, CheckCircle2, Bell, Award, TrendingUp, AlertTriangle, Clock, Monitor, Eye, ChevronRight, X, Trophy } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import confetti from 'canvas-confetti';
+
 import { logUserActivity } from '@/features/fitness/lib/db';
 import { useTranslation } from "react-i18next";
 
@@ -457,12 +457,7 @@ export default function PostureCorrectionGuide({ onBack }: { onBack: () => void 
     playChime();
 
     // Confetti
-    confetti({
-      particleCount: 150,
-      spread: 80,
-      origin: { y: 0.6 },
-      colors: ['#6366F1', '#818CF8', '#A5B4FC'],
-    });
+    /* ponytail: removed unneeded confetti */
   };
 
   // Desk Break Player Functions
@@ -537,12 +532,7 @@ export default function PostureCorrectionGuide({ onBack }: { onBack: () => void 
     setShowBreakComplete(true);
 
     // Confetti
-    confetti({
-      particleCount: 120,
-      spread: 70,
-      origin: { y: 0.6 },
-      colors: ['#6366F1', '#818CF8', '#A5B4FC'],
-    });
+    /* ponytail: removed unneeded confetti */
   };
 
   // Ergonomic Wizard Functions
@@ -559,12 +549,7 @@ export default function PostureCorrectionGuide({ onBack }: { onBack: () => void 
 
     if (isNowComplete && !wasComplete) {
       setShowWizardCelebration(true);
-      confetti({
-        particleCount: 200,
-        spread: 100,
-        origin: { y: 0.6 },
-        colors: ['#FCD34D', '#F59E0B', '#D97706'],
-      });
+      /* ponytail: removed unneeded confetti */
 
       // Database log
       logUserActivity('posture_correction', 'ergonomic_setup_complete', {

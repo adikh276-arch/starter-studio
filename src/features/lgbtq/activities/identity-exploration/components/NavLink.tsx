@@ -1,5 +1,6 @@
 "use client";
-import Link from "next/link";
+import { Link } from 'react-router';
+
 import { forwardRef } from "react";
 import { cn } from "@/lib/utils";
 import { useLocation } from "react-router";
