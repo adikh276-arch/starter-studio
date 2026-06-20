@@ -9,28 +9,28 @@ import HttpApi from "i18next-http-backend";
  * Each activity registers its own namespace (e.g. "mood_tracker") and the
  * shared "common" namespace is preloaded for the history drawer / share UI.
  */
-let initialized = false;
+// Eagerly initialise on module import so that `useTranslation` calls inside
+// activity components find a registered i18n instance on first render.
+if (!i18n.isInitialized) {
+  i18n
+    .use(HttpApi)
+    .use(LanguageDetector)
+    .use(initReactI18next)
+    .init({
+      fallbackLng: "en",
+      defaultNS: "common",
+      ns: ["common"],
+      load: "languageOnly",
+      interpolation: { escapeValue: false },
+      backend: { loadPath: "/locales/{{lng}}/{{ns}}.json" },
+      detection: { order: ["querystring", "localStorage", "navigator"], caches: ["localStorage"] },
+      react: { useSuspense: false },
+      returnEmptyString: false,
+    });
+}
+
 export function ensureOcdI18n(extraNamespaces: string[] = []) {
-  if (!initialized) {
-    void i18n
-      .use(HttpApi)
-      .use(LanguageDetector)
-      .use(initReactI18next)
-      .init({
-        fallbackLng: "en",
-        defaultNS: "common",
-        ns: ["common", ...extraNamespaces],
-        load: "languageOnly",
-        interpolation: { escapeValue: false },
-        backend: { loadPath: "/locales/{{lng}}/{{ns}}.json" },
-        detection: { order: ["querystring", "localStorage", "navigator"], caches: ["localStorage"] },
-        react: { useSuspense: false },
-        returnEmptyString: false,
-      });
-    initialized = true;
-  } else if (extraNamespaces.length) {
-    void i18n.loadNamespaces(extraNamespaces);
-  }
+  if (extraNamespaces.length) void i18n.loadNamespaces(extraNamespaces);
 }
 
 export { i18n };
