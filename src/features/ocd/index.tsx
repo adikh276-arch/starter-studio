@@ -12,6 +12,8 @@ import { ocdSubApps } from "./data/subApps";
  */
 const pageMap: Record<string, () => Promise<{ default: React.ComponentType }>> = {
   mood_tracker: () => import("./activities/mood_tracker"),
+  vibe_tracker: () => import("./activities/vibe_tracker"),
+  gratitude_logs: () => import("./activities/gratitude_logs"),
 };
 
 const overrideRoutes = Object.entries(pageMap).map(([id, loader]) => {
