@@ -32,7 +32,7 @@ function humanise(key: string): string {
     .replace(/\b\w/g, (c) => c.toUpperCase());
 }
 
-export function useTranslation() {
+export function useTranslation(_namespace?: string) {
   return {
     t: (key: string, fallback?: string): string =>
       fallback ?? DEFAULT_DICT[key] ?? humanise(key),
