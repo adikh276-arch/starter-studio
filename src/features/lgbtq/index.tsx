@@ -23,20 +23,13 @@ const pageMap: Record<string, () => Promise<{ default: React.ComponentType }>> =
   "lgbtq-articles":       () => import("@/pages/LGBTQArticles").then((m) => ({ default: m.LGBTQArticles })),
   "lgbtq-myths-facts":    () => import("@/pages/LGBTQMythsFacts").then((m) => ({ default: m.LGBTQMythsFacts })),
   "lgbtq-tips":           () => import("@/pages/LGBTQTips").then((m) => ({ default: m.LGBTQTips })),
-  // In-app trackers (replaced the previous external mantracare/web links).
-  "mood-tracker":         () => import("./pages/trackers").then((m) => ({ default: m.MoodTrackerPage })),
-  "sleep-tracker":        () => import("./pages/trackers").then((m) => ({ default: m.SleepTrackerPage })),
-  "gratitude-tracker":    () => import("./pages/trackers").then((m) => ({ default: m.GratitudeTrackerPage })),
-  "vibe-tracker":         () => import("./pages/trackers").then((m) => ({ default: m.VibeTrackerPage })),
-  "daily-care":           () => import("./pages/trackers").then((m) => ({ default: m.DailyCareTrackerPage })),
-  // Identity tooling that previously linked out.
-  "identity-journey":     () => import("./pages/IdentityJourneyPage").then((m) => ({ default: m.IdentityJourneyPage })),
-  "identity-exploration": () => import("./pages/IdentityExplorationPage").then((m) => ({ default: m.IdentityExplorationPage })),
-  "identity-reflection":  () => import("./pages/IdentityExplorationPage").then((m) => ({ default: m.IdentityExplorationPage })),
-  // In-app curated content + assessments.
-  "lgbtq-assessments":    () => import("./pages/AssessmentsPage").then((m) => ({ default: m.AssessmentsPage })),
-  "bisexual-stories":     () => import("./pages/StoriesPage").then((m) => ({ default: m.StoriesPage })),
-  "stories":              () => import("./pages/StoriesPage").then((m) => ({ default: m.StoriesPage })),
+  // Pride trackers ported verbatim from `legacy/LGBTQ+ Selfcare/src/features/pride/trackers/`.
+  // Same UI, exit/persistence rewired for our single-repo, no-backend setup.
+  "mood-tracker":      () => import("./pages/MoodTracker"),
+  "sleep-tracker":     () => import("./pages/SleepTracker"),
+  "gratitude-tracker": () => import("./pages/GratitudeTracker"),
+  "vibe-tracker":      () => import("./pages/VibeTracker"),
+  "daily-care":        () => import("./pages/DailyCareTracker"),
 };
 
 const overrideRoutes = Object.entries(pageMap).map(([id, loader]) => {
