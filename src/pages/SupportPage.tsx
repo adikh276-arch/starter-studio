@@ -1,3 +1,4 @@
+import { useNavigate, Link } from "react-router";
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import {
@@ -188,7 +189,7 @@ export function SupportPage() {
       icon: HelpCircle, iconBg: "bg-[#F1F7F7]", iconColor: "text-[#0B2545]",
       title: "Support", email: "support@mantra.care", phone: "+1 (431) 304-6171",
       action: (
-        <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.96 }} onClick={() => window.open('https://content.mantracare.com/support-ticket/', '_blank')}
+        <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.96 }} onClick={() => setShowTicket(true)}
           className="flex items-center gap-2 bg-[#0B2545] hover:bg-[#13B5B1] text-white text-sm px-5 py-2 rounded-xl transition-colors shadow-sm"
         ><Ticket size={15} />Raise Support Ticket</motion.button>
       ),
@@ -230,10 +231,10 @@ export function SupportPage() {
                   <div className="flex flex-wrap items-center gap-5">
                     <a href={`mailto:${card.email}`} className="flex items-center gap-2 text-[#0B2545] hover:text-[#13B5B1] transition-colors group">
                       <Mail size={15} /><span className="text-sm group-hover:underline">{card.email}</span>
-                    </a>
+                    </Link>
                     <a href={`tel:${card.phone.replace(/\s|\(|\)|-/g, "")}`} className="flex items-center gap-2 text-[#0B2545] hover:text-[#13B5B1] transition-colors group">
                       <Phone size={15} /><span className="text-sm group-hover:underline">{card.phone}</span>
-                    </a>
+                    </Link>
                   </div>
                   {card.action && <div>{card.action}</div>}
                 </div>
@@ -247,15 +248,14 @@ export function SupportPage() {
                 <div className="w-9 h-9 rounded-xl bg-[#F1F7F7] flex items-center justify-center"><RefreshCcw size={17} className="text-[#0B2545]" /></div>
                 <span className="text-slate-800 font-medium">Refunds</span>
               </div>
-              <a href="https://content.mantracare.com/refund-policy/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[#0B2545] hover:text-[#13B5B1] transition-colors group">
+              <Link to="/support" className="inline-flex items-center gap-2 text-[#0B2545] hover:text-[#13B5B1] transition-colors group">
                 <Link2 size={14} /><span className="text-sm group-hover:underline">See Refund Policy</span>
-                <ExternalLink size={12} className="text-[#E5EAF0] group-hover:text-[#0B2545] transition-colors" />
-              </a>
+              </Link>
             </motion.div>
 
             <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3, delay: 0.2 }} className="grid grid-cols-1 sm:grid-cols-3 gap-3">
               {[
-                { label: "FAQs",             desc: "Common questions answered", icon: HelpCircle,   color: "text-[#0B2545]",  bg: "bg-[#F1F7F7]", link: "https://content.mantracare.com/faq/" },
+                { label: "FAQs",             desc: "Common questions answered", icon: HelpCircle,   color: "text-[#0B2545]",  bg: "bg-[#F1F7F7]", link: "/support" },
                 { label: "Response Time",    desc: "Usually within 24 hours",   icon: Clock,        color: "text-[#0B2545]",  bg: "bg-[#F1F7F7]" },
                 { label: "Priority Support", desc: "For premium plan members",  icon: CheckCircle2, color: "text-[#0B2545]",  bg: "bg-[#F1F7F7]" },
               ].map((tile, i) => {
@@ -272,14 +272,12 @@ export function SupportPage() {
                 return (
                   <motion.div key={tile.label} initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.25, delay: 0.24 + i * 0.05 }}>
                     {tile.link ? (
-                      <a
-                        href={tile.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                      <Link
+                        to="/support"
                         className="bg-white border border-slate-200 rounded-2xl p-4 flex items-start gap-3 hover:shadow-sm transition-shadow cursor-pointer block"
                       >
                         {content}
-                      </a>
+                      </Link>
                     ) : (
                       <div className="bg-white border border-slate-200 rounded-2xl p-4 flex items-start gap-3 hover:shadow-sm transition-shadow cursor-default">
                         {content}
@@ -291,7 +289,7 @@ export function SupportPage() {
             </motion.div>
 
             <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3, delay: 0.28 }} className="flex justify-center pt-2">
-              <motion.button whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }} onClick={() => window.open('https://crm.mantracare.com/online/mc', '_blank')}
+              <motion.button whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }} onClick={() => navigate("/support")}
                 className="flex items-center gap-2.5 bg-[#0B2545] hover:bg-[#13B5B1] text-white px-8 py-3 rounded-xl text-sm font-medium transition-colors shadow-sm"
               >
                 <MessageCircle size={17} />Chat With Us

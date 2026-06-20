@@ -55,7 +55,7 @@ interface Tool {
   icon: any;
   bgColor: string;
   iconColor: string;
-  url: string;
+  route: string;
 }
 
 const tools: Tool[] = [
@@ -65,7 +65,7 @@ const tools: Tool[] = [
     icon: Shield,
     bgColor: "#FFF4E5",
     iconColor: "#FF8C42",
-    url: "https://web.mantracare.com/app/reassurance_ocd"
+    route: "/ocd/reassurance_resistance"
   },
   {
     id: "uncertainty-tolerance",
@@ -73,7 +73,7 @@ const tools: Tool[] = [
     icon: Timer,
     bgColor: "#E3F2FD",
     iconColor: "#42A5F5",
-    url: "https://web.mantracare.com/app/uncertainity_tolerance"
+    route: "/ocd/uncertainity_tolerance"
   },
   {
     id: "psycho-education",
@@ -81,7 +81,7 @@ const tools: Tool[] = [
     icon: BookOpen,
     bgColor: "#E8F5E9",
     iconColor: "#66BB6A",
-    url: "https://platform.mantracare.com/anxiety_cycle/"
+    route: "/ocd/anxiety_cycle"
   },
   {
     id: "mirror-moments",
@@ -89,7 +89,7 @@ const tools: Tool[] = [
     icon: Sparkles,
     bgColor: "#F3E5F5",
     iconColor: "#AB47BC",
-    url: "https://platform.mantracare.com/mirror_moments/"
+    route: "/ocd/mirror_moments"
   }
 ];
 
@@ -309,7 +309,7 @@ export function HealthOCDPage() {
                   whileTap={{ scale: 0.97 }}
                   className="bg-white border border-[#E5E7EB] rounded-2xl p-6 flex flex-col items-center gap-3 hover:shadow-lg transition-all"
                   onClick={() => {
-                    window.open(tool.url, "_blank");
+                    navigate(tool.route);
                   }}
                 >
                   <div

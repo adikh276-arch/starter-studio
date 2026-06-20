@@ -26,7 +26,6 @@ interface ExerciseCard {
   label: string;
   iconColor: string;
   bgColor: string;
-  url: string;
 }
 
 interface TodoCard {
@@ -35,7 +34,6 @@ interface TodoCard {
   label: string;
   iconColor: string;
   bgColor: string;
-  url: string;
 }
 
 interface ResourceItem {
@@ -44,28 +42,27 @@ interface ResourceItem {
   label: string;
   iconColor: string;
   bgColor: string;
-  url: string;
 }
 
 const exerciseCards: ExerciseCard[] = [
-  { id: "grounding", icon: Circle, label: "5-4-3-2-1 Grounding", iconColor: "#3B82F6", bgColor: "#EFF6FF", url: "https://platform.mantracare.com/5-4-3-2-1-grounding" },
-  { id: "guided-imagery", icon: Play, label: "Guided Imagery", iconColor: "#3B82F6", bgColor: "#EFF6FF", url: "https://web.mantracare.com/app/guided_imagery?lang=en" },
-  { id: "affirmations", icon: Smile, label: "Affirmations", iconColor: "#3B82F6", bgColor: "#EFF6FF", url: "https://platform.mantracare.com/affirmations/?lang=en" },
-  { id: "joyful-activities", icon: Sparkles, label: "Joyful Activities", iconColor: "#3B82F6", bgColor: "#EFF6FF", url: "https://platform.mantracare.com/joyful_activities/?lang=en" },
+  { id: "5-4-3-2-1-grounding", icon: Circle, label: "5-4-3-2-1 Grounding", iconColor: "#3B82F6", bgColor: "#EFF6FF" },
+  { id: "guided-imagery", icon: Play, label: "Guided Imagery", iconColor: "#3B82F6", bgColor: "#EFF6FF" },
+  { id: "affirmations", icon: Smile, label: "Affirmations", iconColor: "#3B82F6", bgColor: "#EFF6FF" },
+  { id: "joyful-activities", icon: Sparkles, label: "Joyful Activities", iconColor: "#3B82F6", bgColor: "#EFF6FF" },
 ];
 
 const todoCards: TodoCard[] = [
-  { id: "gratitude-tracker", icon: Star, label: "Gratitude Tracker", iconColor: "#3B82F6", bgColor: "#EFF6FF", url: "https://web.mantracare.com/app/gratitude_tracker" },
-  { id: "daily-self-care", icon: Heart, label: "Daily Self Care Tracker", iconColor: "#3B82F6", bgColor: "#EFF6FF", url: "https://web.mantracare.com/app/daily_self_care_tracker" },
-  { id: "brain-dump", icon: Brain, label: "Brain Dump & Sort", iconColor: "#3B82F6", bgColor: "#EFF6FF", url: "https://web.mantracare.com/app/brain_dump_and_sort" },
-  { id: "letter-to-self", icon: Mail, label: "Letter to Self", iconColor: "#3B82F6", bgColor: "#EFF6FF", url: "https://web.mantracare.com/app/letter_to_self" },
+  { id: "gratitude-tracker", icon: Star, label: "Gratitude Tracker", iconColor: "#3B82F6", bgColor: "#EFF6FF" },
+  { id: "daily-self-care", icon: Heart, label: "Daily Self Care Tracker", iconColor: "#3B82F6", bgColor: "#EFF6FF" },
+  { id: "brain-dump-and-sort", icon: Brain, label: "Brain Dump & Sort", iconColor: "#3B82F6", bgColor: "#EFF6FF" },
+  { id: "a-letter-to-self", icon: Mail, label: "Letter to Self", iconColor: "#3B82F6", bgColor: "#EFF6FF" },
 ];
 
 const resourceItems: ResourceItem[] = [
-  { id: "articles", icon: FileText, label: "Articles", iconColor: "#3B82F6", bgColor: "#EFF6FF", url: "https://platform.mantracare.com/depression_articles/?lang=en" },
-  { id: "tips", icon: Lightbulb, label: "Tips", iconColor: "#3B82F6", bgColor: "#EFF6FF", url: "https://platform.mantracare.com/depression_tips/?lang=en" },
-  { id: "stories", icon: BookOpen, label: "Stories", iconColor: "#3B82F6", bgColor: "#EFF6FF", url: "https://platform.mantracare.com/depression_stories/?lang=en" },
-  { id: "myths", icon: Info, label: "Myths", iconColor: "#3B82F6", bgColor: "#EFF6FF", url: "https://platform.mantracare.com/depression_myths/?lang=en" },
+  { id: "depression-articles", icon: FileText, label: "Articles", iconColor: "#3B82F6", bgColor: "#EFF6FF" },
+  { id: "depression-tips", icon: Lightbulb, label: "Tips", iconColor: "#3B82F6", bgColor: "#EFF6FF" },
+  { id: "depression-stories", icon: BookOpen, label: "Stories", iconColor: "#3B82F6", bgColor: "#EFF6FF" },
+  { id: "depression-myths", icon: Info, label: "Myths", iconColor: "#3B82F6", bgColor: "#EFF6FF" },
 ];
 
 export function DepressionPage() {
@@ -126,7 +123,7 @@ export function DepressionPage() {
             className="mb-8"
           >
             <button
-              onClick={() => window.open("https://app.mantracare.com/therapy/depression/depr-guided-series/", "_blank")}
+              onClick={() => navigate("/emotional")}
               className="w-full bg-white border border-[#E5EAF0] rounded-xl p-4 hover:shadow-md transition-all flex items-center justify-between group"
             >
               <div className="flex items-center gap-4">
@@ -160,7 +157,7 @@ export function DepressionPage() {
                     variants={item}
                     whileHover={{ y: -2 }}
                     whileTap={{ scale: 0.98 }}
-                    onClick={() => window.open(exercise.url, "_blank")}
+                    onClick={() => navigate(`/emotional/${exercise.id}`)}
                     className="bg-white border border-[#E5EAF0] rounded-xl p-6 hover:shadow-md transition-all text-left"
                   >
                     <div
@@ -194,7 +191,7 @@ export function DepressionPage() {
                     variants={item}
                     whileHover={{ y: -2 }}
                     whileTap={{ scale: 0.98 }}
-                    onClick={() => window.open(todo.url, "_blank")}
+                    onClick={() => navigate(`/emotional/${todo.id}`)}
                     className="bg-white border border-[#E5EAF0] rounded-xl p-6 hover:shadow-md transition-all text-left"
                   >
                     <div
@@ -228,7 +225,7 @@ export function DepressionPage() {
                     variants={item}
                     whileHover={{ y: -2 }}
                     whileTap={{ scale: 0.98 }}
-                    onClick={() => window.open(resource.url, "_blank")}
+                    onClick={() => navigate(`/emotional/${resource.id}`)}
                     className="w-full bg-white border border-[#E5EAF0] rounded-xl p-4 hover:shadow-md transition-all flex items-center justify-between group"
                   >
                     <div className="flex items-center gap-4">

@@ -50,12 +50,12 @@ export function DeaddictionPage() {
       { title: "Talk to a Deaddiction Therapist", subtitle: "Get professional support for recovery", iconType: "chat" },
     ],
     trackers: [
-      { label: "Consumption Tracker", iconKey: "assessment", grad: "#E74C3C", link: "https://web.mantracare.com/app/consumption_tracker" },
-      { label: "Smoking Craving", iconKey: "craving", grad: "#0B2545", link: "https://web.mantracare.com/app/smoke_craving_tracker" },
-      { label: "Withdrawal", iconKey: "withdrawal", grad: "#13B5B1", link: "https://web.mantracare.com/app/withdrawal_tracker" },
-      { label: "Urge Watcher", iconKey: "watch", grad: "#F97316", link: "https://web.mantracare.com/app/urge-watcher" },
-      { label: "Smoking Index", iconKey: "index", grad: "#E0A82E", link: "https://web.mantracare.com/app/smoking-index/" },
-      { label: "Mood", iconKey: "mood", grad: "#FF8A4C", link: "https://web.mantracare.com/app/mood_tracker/" },
+      { label: "Consumption Tracker", iconKey: "assessment", grad: "#E74C3C", id: "consumption-tracker" },
+      { label: "Smoking Craving", iconKey: "craving", grad: "#0B2545", id: "smoke-craving-tracker" },
+      { label: "Withdrawal", iconKey: "withdrawal", grad: "#13B5B1", id: "withdrawal-tracker" },
+      { label: "Urge Watcher", iconKey: "watch", grad: "#F97316", id: "urge-watcher" },
+      { label: "Smoking Index", iconKey: "index", grad: "#E0A82E", id: "smoking-index" },
+      { label: "Mood", iconKey: "mood", grad: "#FF8A4C", id: "mood-tracker" },
     ],
   };
 

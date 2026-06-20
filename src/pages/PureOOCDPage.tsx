@@ -20,7 +20,7 @@ interface Article {
   id: number;
   title: string;
   description: string;
-  url?: string;
+  route?: string;
 }
 
 const articles: Article[] = [
@@ -60,7 +60,7 @@ interface Story {
   id: number;
   title: string;
   description: string;
-  url?: string;
+  route?: string;
 }
 
 const stories: Story[] = [
@@ -102,7 +102,7 @@ interface Tool {
   icon: any;
   bgColor: string;
   iconColor: string;
-  url?: string;
+  route?: string;
 }
 
 const tools: Tool[] = [
@@ -112,7 +112,7 @@ const tools: Tool[] = [
     icon: Clock,
     bgColor: "#F3E5F5",
     iconColor: "#A855F7",
-    url: "https://web.mantracare.com/app/thought_diffusion"
+    route: "/ocd/thought_diffusion"
   },
   {
     id: "thought-or-truth",
@@ -120,7 +120,7 @@ const tools: Tool[] = [
     icon: Lightbulb,
     bgColor: "#E3F2FD",
     iconColor: "#3B82F6",
-    url: "https://platform.mantracare.com/thought_truth/"
+    route: "/ocd/thought_truth"
   },
   {
     id: "uncertainty-acceptance",
@@ -128,7 +128,7 @@ const tools: Tool[] = [
     icon: Target,
     bgColor: "#E8F5E9",
     iconColor: "#10B981",
-    url: "https://web.mantracare.com/app/uncertainty_acceptance"
+    route: "/ocd/uncertainity_acceptance"
   },
   {
     id: "letter-to-ocd",
@@ -136,7 +136,7 @@ const tools: Tool[] = [
     icon: Mail,
     bgColor: "#FCE7F3",
     iconColor: "#EC4899",
-    url: "https://web.mantracare.com/app/letter_ocd"
+    route: "/ocd/letter_to_ocd"
   }
 ];
 
@@ -353,8 +353,8 @@ export function PureOOCDPage() {
                   <button
                     key={tool.id}
                     onClick={() => {
-                      if (tool.url) {
-                        window.open(tool.url, "_blank");
+                      if (tool.route) {
+                        navigate(tool.route);
                       }
                     }}
                     className="border border-[#E5E7EB] rounded-xl p-4 hover:shadow-md transition-all"

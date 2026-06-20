@@ -1,0 +1,38 @@
+--- a/src/features/substance/data/subApps.ts
++++ b/src/features/substance/data/subApps.ts
+@@ -1,4 +1,4 @@
+-import { Wine, Cigarette, Leaf, Pill, Brain, FlaskConical, Activity, type LucideIcon } from "lucide-react";
++import { Wine, Cigarette, Leaf, Pill, Brain, FlaskConical, Activity, BarChart3, Wind, AlertCircle, Eye, ClipboardCheck, Smile, Gauge, Bed, PauseCircle, Anchor, BookOpen, type LucideIcon } from "lucide-react";
+ import type { SubApp } from "../../_shared/types";
+ 
+ export const substanceSubApps: SubApp[] = [
+@@ -11,4 +11,16 @@
+   { id: "kratom",          label: "Kratom",           description: "Tracking and support for kratom use.",           icon: Leaf,         category: "substances" },
+   { id: "mdma",            label: "MDMA",             description: "Harm reduction and recovery for MDMA.",          icon: FlaskConical, category: "substances" },
+   { id: "dashboard",       label: "Recovery Dashboard", description: "Your sobriety streaks, mood and milestones.", icon: Brain,        category: "tools" },
++  { id: "consumption-tracker", label: "Consumption Tracker", description: "Track your substance consumption.", icon: BarChart3, category: "trackers" },
++  { id: "smoke-craving-tracker", label: "Smoking Craving", description: "Track your smoking cravings.", icon: Wind, category: "trackers" },
++  { id: "withdrawal-tracker", label: "Withdrawal Tracker", description: "Monitor withdrawal symptoms.", icon: AlertCircle, category: "trackers" },
++  { id: "urge-watcher", label: "Urge Watcher", description: "Watch and manage your urges.", icon: Eye, category: "trackers" },
++  { id: "smoking-index", label: "Smoking Index", description: "Calculate your smoking index.", icon: ClipboardCheck, category: "trackers" },
++  { id: "mood-tracker", label: "Mood Tracker", description: "Track your daily mood.", icon: Smile, category: "trackers" },
++  { id: "habits-check", label: "Habits Check", description: "Monitor your daily habits.", icon: Activity, category: "trackers" },
++  { id: "energy-track", label: "Energy Track", description: "Monitor your energy levels.", icon: Gauge, category: "trackers" },
++  { id: "sleep-check", label: "Sleep Check", description: "Track your sleep patterns.", icon: Bed, category: "trackers" },
++  { id: "pause-button", label: "Pause Button", description: "A simple tool to help you pause and reflect.", icon: PauseCircle, category: "trackers" },
++  { id: "grounding", label: "Grounding", description: "Quick exercises to help you stay present.", icon: Anchor, category: "trackers" },
++  { id: "affirmations", label: "Affirmations", description: "Positive thoughts to support your recovery.", icon: Smile, category: "trackers" },
++  { id: "learn", label: "Learn", description: "Educational resources for recovery.", icon: BookOpen, category: "trackers" },
+ ];
+--- a/src/features/substance/index.tsx
++++ b/src/features/substance/index.tsx
+@@ -9,7 +9,7 @@
+   hubPath: "/substance",
+   routePrefix: "/substance",
+   icon: Wine,
+-  categoryOrder: ["substances", "tools"],
+-  categoryTitles: { substances: "By substance", tools: "Tools" },
++  categoryOrder: ["substances", "tools", "trackers"],
++  categoryTitles: { substances: "By substance", tools: "Tools", trackers: "Trackers" },
+   subApps: substanceSubApps,
+ });
