@@ -260,7 +260,7 @@ export function BrowseByGoalDetail() {
                         
                         {/* Number badge for nights */}
                         {night.number && (
-                          <div className="absolute top-3 left-3 w-12 h-12 rounded-lg bg-[#00c0ff] flex items-center justify-center">
+                          <div className="absolute top-3 left-3 w-12 h-12 rounded-lg bg-[#13B5B1] flex items-center justify-center">
                             <span className="text-white text-xl font-bold">{night.number}</span>
                           </div>
                         )}
@@ -317,7 +317,7 @@ export function BrowseByGoalDetail() {
           >
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-base md:text-lg text-white">Fall Asleep</h2>
-              <button className="text-xs text-[#00c0ff] hover:underline">See All</button>
+              <button className="text-xs text-[#13B5B1] hover:underline">See All</button>
             </div>
 
             <div className="grid grid-cols-4 gap-3 md:gap-4">
@@ -355,7 +355,7 @@ export function BrowseByGoalDetail() {
           >
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-base md:text-lg text-white">Popular Sleep Stories</h2>
-              <button className="text-xs text-[#00c0ff] hover:underline">See All</button>
+              <button className="text-xs text-[#13B5B1] hover:underline">See All</button>
             </div>
 
             <div className="grid grid-cols-4 gap-3 md:gap-4">
@@ -393,7 +393,7 @@ export function BrowseByGoalDetail() {
           >
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-base md:text-lg text-white">Sleep Meditations</h2>
-              <button className="text-xs text-[#00c0ff] hover:underline">See All</button>
+              <button className="text-xs text-[#13B5B1] hover:underline">See All</button>
             </div>
 
             <div className="grid grid-cols-4 gap-3 md:gap-4">

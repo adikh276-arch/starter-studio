@@ -37,7 +37,7 @@ export function MobileNav() {
   return (
     <>
       {/* Mobile Navigation Bar */}
-      <div className="md:hidden fixed top-0 left-0 right-0 bg-white border-b border-[#E2ECF5] h-16 flex items-center justify-between px-4 z-50 shadow-sm">
+      <div className="md:hidden fixed top-0 left-0 right-0 bg-white border-b border-[#E5EAF0] h-16 flex items-center justify-between px-4 z-50 shadow-sm">
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           className="w-10 h-10 rounded-lg flex items-center justify-center text-[#64748B] hover:bg-slate-100 transition-colors"
@@ -48,7 +48,7 @@ export function MobileNav() {
           <div className="w-8 h-8 bg-[#7C3AED] rounded-lg flex items-center justify-center">
             <span className="text-white font-bold text-sm">M</span>
           </div>
-          <span className="text-[#020817] font-bold text-lg">MantraCare</span>
+          <span className="text-[#0F172A] font-bold text-lg">MantraCare</span>
         </div>
         <div className="w-10"></div>
       </div>
@@ -73,12 +73,12 @@ export function MobileNav() {
               className="md:hidden fixed top-0 right-0 bottom-0 w-72 bg-white shadow-2xl z-50 flex flex-col"
             >
               {/* Drawer Header */}
-              <div className="flex items-center justify-between p-4 border-b border-[#E2ECF5]">
+              <div className="flex items-center justify-between p-4 border-b border-[#E5EAF0]">
                 <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 bg-[#2D9CDB] rounded-full flex items-center justify-center text-white font-semibold text-sm">
+                  <div className="w-8 h-8 bg-[#13B5B1] rounded-full flex items-center justify-center text-white font-semibold text-sm">
                     {userName.charAt(0).toUpperCase()}
                   </div>
-                  <span className="text-[#020817] font-semibold text-sm">{userName}</span>
+                  <span className="text-[#0F172A] font-semibold text-sm">{userName}</span>
                 </div>
                 <button
                   onClick={() => setMobileMenuOpen(false)}
@@ -108,28 +108,28 @@ export function MobileNav() {
                   ))}
                 </div>
 
-                <div className="my-3 border-t border-[#E2ECF5]" />
+                <div className="my-3 border-t border-[#E5EAF0]" />
 
                 <button
-                  className="w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all text-left text-[#1E293B] hover:bg-[#E6F4FF]"
+                  className="w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all text-left text-[#0F172A] hover:bg-[#E6F8F7]"
                   onClick={() => handleNav("/refer")}
                 >
                   <Gift size={20} />
                   <span className="text-sm font-medium">Invite a Friend</span>
                 </button>
 
-                <div className="my-3 border-t border-[#E2ECF5]" />
+                <div className="my-3 border-t border-[#E5EAF0]" />
 
                 <div className="space-y-1">
                   <button
-                    className="w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all text-[#64748B] hover:bg-[#E6F4FF] hover:text-[#020817]"
+                    className="w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all text-[#64748B] hover:bg-[#E6F8F7] hover:text-[#0F172A]"
                     onClick={() => handleNav("/feedback")}
                   >
                     <Lightbulb size={20} />
                     <span className="text-sm">Share Feedback</span>
                   </button>
                   <button
-                    className="w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all text-[#64748B] hover:bg-[#E6F4FF] hover:text-[#020817]"
+                    className="w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all text-[#64748B] hover:bg-[#E6F8F7] hover:text-[#0F172A]"
                     onClick={() => handleNav("/support")}
                   >
                     <HelpCircle size={20} />
@@ -139,10 +139,10 @@ export function MobileNav() {
               </nav>
 
               {/* Logout */}
-              <div className="p-3 border-t border-[#E2ECF5]">
+              <div className="p-3 border-t border-[#E5EAF0]">
                 <button
                   onClick={handleLogout}
-                  className="w-full px-4 py-3 rounded-xl text-sm text-[#64748B] hover:bg-[#EEF4FF] hover:text-[#020817] transition-colors text-left font-medium"
+                  className="w-full px-4 py-3 rounded-xl text-sm text-[#64748B] hover:bg-[#EEF4FF] hover:text-[#0F172A] transition-colors text-left font-medium"
                 >
                   Sign Out
                 </button>

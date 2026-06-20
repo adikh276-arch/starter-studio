@@ -91,7 +91,7 @@ export function SessionsVerificationModal({
           >
             <div className="bg-white rounded-2xl shadow-2xl w-full max-w-md max-h-[90vh] overflow-y-auto">
               {/* Header */}
-              <div className="sticky top-0 bg-gradient-to-r from-[#043570] to-[#00c0ff] px-6 py-5 rounded-t-2xl">
+              <div className="sticky top-0 bg-gradient-to-r from-[#0B2545] to-[#13B5B1] px-6 py-5 rounded-t-2xl">
                 <div className="flex items-center justify-between mb-1">
                   <h2 className="text-lg font-semibold text-white">
                     Session Verification
@@ -135,18 +135,18 @@ export function SessionsVerificationModal({
                 {/* Names with Session Mode Icon */}
                 <div className="flex items-center justify-center gap-3 mb-6">
                   {/* Session Mode Icon */}
-                  <div className="w-10 h-10 bg-[#00c0ff] rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 bg-[#13B5B1] rounded-full flex items-center justify-center flex-shrink-0">
                     <ModeIconComponent size={18} className="text-white" />
                   </div>
                   
                   {/* Provider Name */}
-                  <span className="text-base font-semibold text-[#020817]">
+                  <span className="text-base font-semibold text-[#0F172A]">
                     {appointment.providerName}
                   </span>
                   
                   {/* Two-way Arrows Icon */}
                   <svg
-                    className="w-5 h-5 text-[#020817] flex-shrink-0"
+                    className="w-5 h-5 text-[#0F172A] flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -160,28 +160,28 @@ export function SessionsVerificationModal({
                   </svg>
                   
                   {/* User Name */}
-                  <span className="text-base font-semibold text-[#020817]">
+                  <span className="text-base font-semibold text-[#0F172A]">
                     {userName}
                   </span>
                 </div>
 
                 {/* Session Details */}
-                <div className="bg-[#f3faff] rounded-xl p-4 space-y-3 mb-6">
+                <div className="bg-[#F1F7F7] rounded-xl p-4 space-y-3 mb-6">
                   {/* Service */}
                   <div className="flex items-center gap-3">
-                    <Calendar size={20} className="text-[#043570] flex-shrink-0" />
+                    <Calendar size={20} className="text-[#0B2545] flex-shrink-0" />
                     <div className="flex items-center gap-2">
-                      <span className="text-sm font-semibold text-[#043570]">Service:</span>
-                      <span className="text-sm text-[#020817]">{appointment.service}</span>
+                      <span className="text-sm font-semibold text-[#0B2545]">Service:</span>
+                      <span className="text-sm text-[#0F172A]">{appointment.service}</span>
                     </div>
                   </div>
 
                   {/* Time */}
                   <div className="flex items-center gap-3">
-                    <Clock size={20} className="text-[#043570] flex-shrink-0" />
+                    <Clock size={20} className="text-[#0B2545] flex-shrink-0" />
                     <div className="flex items-center gap-2">
-                      <span className="text-sm font-semibold text-[#043570]">Time:</span>
-                      <span className="text-sm text-[#020817]">
+                      <span className="text-sm font-semibold text-[#0B2545]">Time:</span>
+                      <span className="text-sm text-[#0F172A]">
                         {appointment.date} at {appointment.time} at {appointment.time}
                       </span>
                     </div>
@@ -190,7 +190,7 @@ export function SessionsVerificationModal({
                   {/* Duration */}
                   <div className="flex items-center gap-3">
                     <svg
-                      className="w-5 h-5 text-[#043570] flex-shrink-0"
+                      className="w-5 h-5 text-[#0B2545] flex-shrink-0"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -203,15 +203,15 @@ export function SessionsVerificationModal({
                       />
                     </svg>
                     <div className="flex items-center gap-2">
-                      <span className="text-sm font-semibold text-[#043570]">Duration:</span>
-                      <span className="text-sm text-[#020817]">{appointment.duration} mins</span>
+                      <span className="text-sm font-semibold text-[#0B2545]">Duration:</span>
+                      <span className="text-sm text-[#0F172A]">{appointment.duration} mins</span>
                     </div>
                   </div>
                 </div>
 
                 {/* Reason Selection */}
                 <div className="mb-6">
-                  <label className="block text-sm font-medium text-[#020817] mb-3">
+                  <label className="block text-sm font-medium text-[#0F172A] mb-3">
                     What happened?
                   </label>
                   <div className="space-y-2">
@@ -222,7 +222,7 @@ export function SessionsVerificationModal({
                         className={`w-full text-left px-4 py-3 rounded-xl border-2 transition-all ${
                           selectedReason === reason
                             ? "border-[#2563EB] bg-[#DBEAFE] text-[#2563EB]"
-                            : "border-[#E2E8F0] bg-white text-[#64748B] hover:border-[#CBD5E1]"
+                            : "border-[#E5EAF0] bg-white text-[#64748B] hover:border-[#CBD5E1]"
                         }`}
                       >
                         <div className="flex items-center justify-between">
@@ -253,14 +253,14 @@ export function SessionsVerificationModal({
                 {/* Additional Details (shown when "Other" is selected) */}
                 {selectedReason === "Other" && (
                   <div className="mb-6">
-                    <label className="block text-sm font-medium text-[#020817] mb-2">
+                    <label className="block text-sm font-medium text-[#0F172A] mb-2">
                       Please provide details
                     </label>
                     <textarea
                       value={additionalDetails}
                       onChange={(e) => setAdditionalDetails(e.target.value)}
                       placeholder="Describe what happened..."
-                      className="w-full h-24 px-4 py-3 bg-[#F8FAFC] border border-[#E2E8F0] rounded-xl text-sm text-[#020817] placeholder-[#94A3B8] focus:outline-none focus:border-[#2563EB] focus:ring-2 focus:ring-[#DBEAFE] resize-none transition-all"
+                      className="w-full h-24 px-4 py-3 bg-[#F8FAFC] border border-[#E5EAF0] rounded-xl text-sm text-[#0F172A] placeholder-[#94A3B8] focus:outline-none focus:border-[#2563EB] focus:ring-2 focus:ring-[#DBEAFE] resize-none transition-all"
                     />
                   </div>
                 )}

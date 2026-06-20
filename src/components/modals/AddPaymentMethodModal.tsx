@@ -92,8 +92,8 @@ export function AddPaymentMethodModal({ isOpen, onClose, onSave }: AddPaymentMet
               className="bg-white rounded-2xl shadow-2xl w-full max-w-md max-h-[90vh] overflow-y-auto"
             >
               {/* Header */}
-              <div className="sticky top-0 bg-white border-b border-[#E2E8F0] px-6 py-4 flex items-center justify-center rounded-t-2xl">
-                <h2 className="text-lg font-semibold text-[#020817]">Add a card</h2>
+              <div className="sticky top-0 bg-white border-b border-[#E5EAF0] px-6 py-4 flex items-center justify-center rounded-t-2xl">
+                <h2 className="text-lg font-semibold text-[#0F172A]">Add a card</h2>
               </div>
 
               {/* Form */}
@@ -107,7 +107,7 @@ export function AddPaymentMethodModal({ isOpen, onClose, onSave }: AddPaymentMet
                     type="text"
                     value={cardholderName}
                     onChange={(e) => setCardholderName(e.target.value)}
-                    className="w-full px-4 py-3 border border-[#E2E8F0] rounded-xl text-[#0F172A] text-sm focus:outline-none focus:border-[#00c0ff] focus:ring-2 focus:ring-[#f3faff] transition-all"
+                    className="w-full px-4 py-3 border border-[#E5EAF0] rounded-xl text-[#0F172A] text-sm focus:outline-none focus:border-[#13B5B1] focus:ring-2 focus:ring-[#F1F7F7] transition-all"
                     placeholder="John Doe"
                   />
                 </div>
@@ -122,7 +122,7 @@ export function AddPaymentMethodModal({ isOpen, onClose, onSave }: AddPaymentMet
                       type="text"
                       value={cardNumber}
                       onChange={handleCardNumberChange}
-                      className="w-full px-4 py-3 pr-24 border border-[#E2E8F0] rounded-xl text-[#0F172A] text-sm focus:outline-none focus:border-[#00c0ff] focus:ring-2 focus:ring-[#f3faff] transition-all"
+                      className="w-full px-4 py-3 pr-24 border border-[#E5EAF0] rounded-xl text-[#0F172A] text-sm focus:outline-none focus:border-[#13B5B1] focus:ring-2 focus:ring-[#F1F7F7] transition-all"
                       placeholder="1234 1234 1234 1234"
                     />
                     {/* Card Brand Icons */}
@@ -142,7 +142,7 @@ export function AddPaymentMethodModal({ isOpen, onClose, onSave }: AddPaymentMet
                       type="text"
                       value={expirationDate}
                       onChange={handleExpirationDateChange}
-                      className="w-full px-4 py-3 border border-[#E2E8F0] rounded-xl text-[#0F172A] text-sm focus:outline-none focus:border-[#00c0ff] focus:ring-2 focus:ring-[#f3faff] transition-all"
+                      className="w-full px-4 py-3 border border-[#E5EAF0] rounded-xl text-[#0F172A] text-sm focus:outline-none focus:border-[#13B5B1] focus:ring-2 focus:ring-[#F1F7F7] transition-all"
                       placeholder="MM / YY"
                     />
                   </div>
@@ -160,7 +160,7 @@ export function AddPaymentMethodModal({ isOpen, onClose, onSave }: AddPaymentMet
                             setSecurityCode(value);
                           }
                         }}
-                        className="w-full px-4 py-3 pr-12 border border-[#E2E8F0] rounded-xl text-[#0F172A] text-sm focus:outline-none focus:border-[#00c0ff] focus:ring-2 focus:ring-[#f3faff] transition-all"
+                        className="w-full px-4 py-3 pr-12 border border-[#E5EAF0] rounded-xl text-[#0F172A] text-sm focus:outline-none focus:border-[#13B5B1] focus:ring-2 focus:ring-[#F1F7F7] transition-all"
                         placeholder="CVC"
                       />
                       <div className="absolute right-3 top-1/2 -translate-y-1/2">
@@ -179,7 +179,7 @@ export function AddPaymentMethodModal({ isOpen, onClose, onSave }: AddPaymentMet
                     <select
                       value={country}
                       onChange={(e) => setCountry(e.target.value)}
-                      className="w-full px-4 py-3 border border-[#E2E8F0] rounded-xl text-[#0F172A] text-sm focus:outline-none focus:border-[#00c0ff] focus:ring-2 focus:ring-[#f3faff] transition-all appearance-none bg-white cursor-pointer"
+                      className="w-full px-4 py-3 border border-[#E5EAF0] rounded-xl text-[#0F172A] text-sm focus:outline-none focus:border-[#13B5B1] focus:ring-2 focus:ring-[#F1F7F7] transition-all appearance-none bg-white cursor-pointer"
                     >
                       <option value="United States">United States</option>
                       <option value="India">India</option>
@@ -200,7 +200,7 @@ export function AddPaymentMethodModal({ isOpen, onClose, onSave }: AddPaymentMet
                       type="text"
                       value={zipCode}
                       onChange={(e) => setZipCode(e.target.value)}
-                      className="w-full px-4 py-3 border border-[#E2E8F0] rounded-xl text-[#0F172A] text-sm focus:outline-none focus:border-[#00c0ff] focus:ring-2 focus:ring-[#f3faff] transition-all"
+                      className="w-full px-4 py-3 border border-[#E5EAF0] rounded-xl text-[#0F172A] text-sm focus:outline-none focus:border-[#13B5B1] focus:ring-2 focus:ring-[#F1F7F7] transition-all"
                       placeholder="12345"
                     />
                   </div>
@@ -219,7 +219,7 @@ export function AddPaymentMethodModal({ isOpen, onClose, onSave }: AddPaymentMet
                   <button
                     onClick={() => setSetAsDefault(!setAsDefault)}
                     className={`relative w-12 h-6 rounded-full transition-colors ${
-                      setAsDefault ? "bg-[#00c0ff]" : "bg-[#E2E8F0]"
+                      setAsDefault ? "bg-[#13B5B1]" : "bg-[#E5EAF0]"
                     }`}
                   >
                     <motion.div
@@ -238,7 +238,7 @@ export function AddPaymentMethodModal({ isOpen, onClose, onSave }: AddPaymentMet
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   onClick={handleSave}
-                  className="w-full bg-[#00c0ff] hover:bg-[#00b0ef] text-white font-semibold py-3.5 rounded-xl transition-colors shadow-sm"
+                  className="w-full bg-[#13B5B1] hover:bg-[#00b0ef] text-white font-semibold py-3.5 rounded-xl transition-colors shadow-sm"
                 >
                   Save card
                 </motion.button>

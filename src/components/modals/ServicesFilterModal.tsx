@@ -76,13 +76,13 @@ export function ServicesFilterModal({
                         onClick={() => onSelectService(service.name)}
                         className={`flex items-center gap-2 px-3 py-2.5 rounded-xl text-left transition-all ${
                           isSelected
-                            ? "bg-[#043570] text-white shadow-md"
+                            ? "bg-[#0B2545] text-white shadow-md"
                             : "bg-white hover:bg-slate-50 text-[#0F172A] border border-slate-200"
                         }`}
                       >
                         <Icon
                           size={16}
-                          className={isSelected ? "text-white" : "text-[#00c0ff]"}
+                          className={isSelected ? "text-white" : "text-[#13B5B1]"}
                         />
                         <span className="text-xs font-medium">{service.name}</span>
                       </button>
@@ -102,7 +102,7 @@ export function ServicesFilterModal({
                 </button>
                 <button
                   onClick={onClose}
-                  className="flex-1 px-4 py-2.5 text-sm font-medium text-white bg-[#043570] rounded-xl hover:bg-[#032852] transition-all"
+                  className="flex-1 px-4 py-2.5 text-sm font-medium text-white bg-[#0B2545] rounded-xl hover:bg-[#032852] transition-all"
                 >
                   Apply
                 </button>

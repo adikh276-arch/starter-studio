@@ -80,12 +80,12 @@ export function LGBTQMythsFacts() {
                 whileHover={{ x: -4 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => navigate(-1)}
-                className="flex items-center justify-center w-10 h-10 rounded-xl bg-white/80 backdrop-blur-sm text-[#64748B] hover:text-[#020817] hover:bg-white transition-all shadow-sm hover:shadow-md border border-gray-100"
+                className="flex items-center justify-center w-10 h-10 rounded-xl bg-white/80 backdrop-blur-sm text-[#64748B] hover:text-[#0F172A] hover:bg-white transition-all shadow-sm hover:shadow-md border border-gray-100"
               >
                 <ChevronLeft size={20} strokeWidth={2.5} />
               </motion.button>
               <div>
-                <h1 className="text-3xl md:text-4xl text-[#1E293B] font-bold tracking-tight">
+                <h1 className="text-3xl md:text-4xl text-[#0F172A] font-bold tracking-tight">
                   Myths & Facts
                 </h1>
                 <p className="text-base md:text-lg text-[#64748B] mt-2">

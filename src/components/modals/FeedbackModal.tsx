@@ -61,8 +61,8 @@ export function FeedbackModal({ isOpen, onClose, onSubmit, expertRole }: Feedbac
           className="relative w-full max-w-2xl bg-white rounded-2xl shadow-2xl overflow-hidden"
         >
           {/* Header */}
-          <div className="bg-[#f3faff] border-b border-[#E2ECF5] px-6 py-5">
-            <h2 className="text-xl font-semibold text-[#020817]">
+          <div className="bg-[#F1F7F7] border-b border-[#E5EAF0] px-6 py-5">
+            <h2 className="text-xl font-semibold text-[#0F172A]">
               Why do you want to switch this {expertRole}?
             </h2>
             <p className="text-sm text-[#64748B] mt-1">
@@ -78,8 +78,8 @@ export function FeedbackModal({ isOpen, onClose, onSubmit, expertRole }: Feedbac
                   <label
                     className={`flex items-start gap-3 p-4 border-2 rounded-xl cursor-pointer transition-all ${
                       selectedReasons.includes(option)
-                        ? "border-[#00c0ff] bg-[#f3faff]"
-                        : "border-[#E2ECF5] hover:border-[#00c0ff]/30 hover:bg-[#f3faff]/50"
+                        ? "border-[#13B5B1] bg-[#F1F7F7]"
+                        : "border-[#E5EAF0] hover:border-[#13B5B1]/30 hover:bg-[#F1F7F7]/50"
                     }`}
                   >
                     <input
@@ -88,9 +88,9 @@ export function FeedbackModal({ isOpen, onClose, onSubmit, expertRole }: Feedbac
                       value={option}
                       checked={selectedReasons.includes(option)}
                       onChange={(e) => toggleReason(e.target.value)}
-                      className="mt-0.5 w-4 h-4 text-[#00c0ff] border-[#E2ECF5] focus:ring-[#00c0ff] focus:ring-offset-0"
+                      className="mt-0.5 w-4 h-4 text-[#13B5B1] border-[#E5EAF0] focus:ring-[#13B5B1] focus:ring-offset-0"
                     />
-                    <span className="text-sm font-medium text-[#020817]">{option}</span>
+                    <span className="text-sm font-medium text-[#0F172A]">{option}</span>
                   </label>
 
                   {/* Show text input when "Other" is selected */}
@@ -106,7 +106,7 @@ export function FeedbackModal({ isOpen, onClose, onSubmit, expertRole }: Feedbac
                         value={otherText}
                         onChange={(e) => setOtherText(e.target.value)}
                         placeholder="Please describe your reason..."
-                        className="w-full px-4 py-3 border-2 border-[#E2ECF5] rounded-xl text-sm text-[#020817] placeholder:text-[#94A3B8] focus:border-[#00c0ff] focus:outline-none focus:ring-0 resize-none transition-colors"
+                        className="w-full px-4 py-3 border-2 border-[#E5EAF0] rounded-xl text-sm text-[#0F172A] placeholder:text-[#94A3B8] focus:border-[#13B5B1] focus:outline-none focus:ring-0 resize-none transition-colors"
                         rows={3}
                       />
                     </motion.div>
@@ -120,7 +120,7 @@ export function FeedbackModal({ isOpen, onClose, onSubmit, expertRole }: Feedbac
           <div className="px-6 py-4 bg-[#F9FAFB] flex items-center justify-end gap-3">
             <button
               onClick={handleClose}
-              className="px-6 py-2.5 border border-[#E2ECF5] rounded-lg text-sm font-medium text-[#64748B] hover:bg-white hover:text-[#020817] transition-colors"
+              className="px-6 py-2.5 border border-[#E5EAF0] rounded-lg text-sm font-medium text-[#64748B] hover:bg-white hover:text-[#0F172A] transition-colors"
             >
               Cancel
             </button>
@@ -129,8 +129,8 @@ export function FeedbackModal({ isOpen, onClose, onSubmit, expertRole }: Feedbac
               disabled={selectedReasons.length === 0 || (selectedReasons.includes("Other (Please specify)") && !otherText.trim())}
               className={`px-6 py-2.5 rounded-lg text-sm font-medium transition-colors ${
                 selectedReasons.length === 0 || (selectedReasons.includes("Other (Please specify)") && !otherText.trim())
-                  ? "bg-[#E2ECF5] text-[#94A3B8] cursor-not-allowed"
-                  : "bg-[#043570] text-white hover:bg-[#032656]"
+                  ? "bg-[#E5EAF0] text-[#94A3B8] cursor-not-allowed"
+                  : "bg-[#0B2545] text-white hover:bg-[#032656]"
               }`}
             >
               Submit
@@ -140,7 +140,7 @@ export function FeedbackModal({ isOpen, onClose, onSubmit, expertRole }: Feedbac
           {/* Close Button */}
           <button
             onClick={handleClose}
-            className="absolute top-5 right-5 w-8 h-8 flex items-center justify-center rounded-lg hover:bg-white text-[#64748B] hover:text-[#043570] transition-colors"
+            className="absolute top-5 right-5 w-8 h-8 flex items-center justify-center rounded-lg hover:bg-white text-[#64748B] hover:text-[#0B2545] transition-colors"
           >
             <X size={20} />
           </button>

@@ -79,7 +79,7 @@ export function PendingSessionModal({ isOpen, onClose, appointment }: PendingSes
               className="bg-white rounded-2xl shadow-2xl w-full max-w-md overflow-hidden"
             >
               {/* Header */}
-              <div className="bg-gradient-to-r from-[#043570] to-[#00c0ff] px-6 py-5">
+              <div className="bg-gradient-to-r from-[#0B2545] to-[#13B5B1] px-6 py-5">
                 <div className="flex items-center justify-between mb-4">
                   <h2 className="text-lg font-semibold text-white">Session Verification</h2>
                   <button
@@ -104,7 +104,7 @@ export function PendingSessionModal({ isOpen, onClose, appointment }: PendingSes
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-[#00c0ff] rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+                    <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-[#13B5B1] rounded-full flex items-center justify-center border-2 border-white shadow-sm">
                       <ModeIcon size={12} className="text-white" />
                     </div>
                   </div>
@@ -116,17 +116,17 @@ export function PendingSessionModal({ isOpen, onClose, appointment }: PendingSes
                 </div>
 
                 {/* Session Details */}
-                <div className="bg-[#f3faff] rounded-xl p-4 mb-6 space-y-3">
+                <div className="bg-[#F1F7F7] rounded-xl p-4 mb-6 space-y-3">
                   <div className="flex items-center gap-3">
-                    <Calendar size={16} className="text-[#00c0ff]" />
+                    <Calendar size={16} className="text-[#13B5B1]" />
                     <span className="text-[#0F172A] text-sm">{appointment.date}</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Clock size={16} className="text-[#00c0ff]" />
+                    <Clock size={16} className="text-[#13B5B1]" />
                     <span className="text-[#0F172A] text-sm">{appointment.duration} minutes</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <ModeIcon size={16} className="text-[#00c0ff]" />
+                    <ModeIcon size={16} className="text-[#13B5B1]" />
                     <span className="text-[#0F172A] text-sm">{appointment.mode}</span>
                   </div>
                 </div>

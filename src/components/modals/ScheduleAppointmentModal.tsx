@@ -190,22 +190,22 @@ export function ScheduleAppointmentModal({
           >
             <div className="bg-white rounded-2xl shadow-2xl w-full max-w-lg max-h-[85vh] overflow-y-auto">
               {/* Header */}
-              <div className="sticky top-0 bg-white border-b border-[#E2E8F0] px-4 py-3 flex items-center justify-between">
+              <div className="sticky top-0 bg-white border-b border-[#E5EAF0] px-4 py-3 flex items-center justify-between">
                 {step === 2 && (
                   <button
                     onClick={handleBack}
-                    className="w-9 h-9 rounded-xl flex items-center justify-center transition-colors flex-shrink-0 text-[#64748B] hover:text-[#020817] hover:bg-[#f3faff]"
+                    className="w-9 h-9 rounded-xl flex items-center justify-center transition-colors flex-shrink-0 text-[#64748B] hover:text-[#0F172A] hover:bg-[#F1F7F7]"
                   >
                     <ChevronLeft size={24} />
                   </button>
                 )}
                 {(step === 1 || step === 3) && <div className="w-8" />}
-                <h2 className="text-lg font-semibold text-[#020817]">
+                <h2 className="text-lg font-semibold text-[#0F172A]">
                   {step === 3 ? "Appointment Requested" : "Schedule Appointment"}
                 </h2>
                 <button
                   onClick={handleClose}
-                  className="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-[#f3faff] text-[#64748B] transition-colors"
+                  className="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-[#F1F7F7] text-[#64748B] transition-colors"
                 >
                   <X size={20} />
                 </button>
@@ -213,7 +213,7 @@ export function ScheduleAppointmentModal({
 
               {/* Expert Info - Hide on confirmation step */}
               {step !== 3 && (
-                <div className="px-4 py-3 border-b border-[#E2E8F0]">
+                <div className="px-4 py-3 border-b border-[#E5EAF0]">
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
                     <div className="flex items-center gap-3">
                       <img
@@ -222,7 +222,7 @@ export function ScheduleAppointmentModal({
                         className="w-12 h-12 rounded-full object-cover"
                       />
                       <div>
-                        <h3 className="font-semibold text-[#020817]">{expertName}</h3>
+                        <h3 className="font-semibold text-[#0F172A]">{expertName}</h3>
                         <p className="text-sm text-[#64748B]">{expertTitle}</p>
                       </div>
                     </div>
@@ -231,7 +231,7 @@ export function ScheduleAppointmentModal({
                     <div className="relative self-end md:self-auto">
                       <button
                         onClick={() => setShowTimezoneDropdown(!showTimezoneDropdown)}
-                        className="flex items-center gap-1.5 px-3 py-1.5 bg-[#f3faff] hover:bg-[#E2ECF5] border border-[#E2E8F0] rounded-lg transition-colors text-[#043570]"
+                        className="flex items-center gap-1.5 px-3 py-1.5 bg-[#F1F7F7] hover:bg-[#E5EAF0] border border-[#E5EAF0] rounded-lg transition-colors text-[#0B2545]"
                       >
                         <Clock size={14} />
                         <span className="text-xs font-medium">{formatTimezone(selectedTimezone)}</span>
@@ -240,7 +240,7 @@ export function ScheduleAppointmentModal({
                       
                       {/* Dropdown Menu */}
                       {showTimezoneDropdown && (
-                        <div className="absolute right-0 top-full mt-2 w-64 bg-white border border-[#E2E8F0] rounded-lg shadow-lg max-h-64 overflow-y-auto z-10">
+                        <div className="absolute right-0 top-full mt-2 w-64 bg-white border border-[#E5EAF0] rounded-lg shadow-lg max-h-64 overflow-y-auto z-10">
                           {timezones.map((tz) => (
                             <button
                               key={tz}
@@ -248,8 +248,8 @@ export function ScheduleAppointmentModal({
                                 setSelectedTimezone(tz);
                                 setShowTimezoneDropdown(false);
                               }}
-                              className={`w-full text-left px-4 py-2 text-xs hover:bg-[#f3faff] transition-colors ${
-                                selectedTimezone === tz ? 'bg-[#f3faff] text-[#043570] font-medium' : 'text-[#64748B]'
+                              className={`w-full text-left px-4 py-2 text-xs hover:bg-[#F1F7F7] transition-colors ${
+                                selectedTimezone === tz ? 'bg-[#F1F7F7] text-[#0B2545] font-medium' : 'text-[#64748B]'
                               }`}
                             >
                               {formatTimezone(tz)}
@@ -273,7 +273,7 @@ export function ScheduleAppointmentModal({
                       animate={{ opacity: 1, x: 0 }}
                       exit={{ opacity: 0, x: -20 }}
                     >
-                      <h3 className="text-lg font-semibold text-[#020817] mb-4">
+                      <h3 className="text-lg font-semibold text-[#0F172A] mb-4">
                         What day works best for you?
                       </h3>
 
@@ -291,8 +291,8 @@ export function ScheduleAppointmentModal({
                                 flex flex-col items-center justify-center p-3 rounded-lg transition-all
                                 ${
                                   isSelected
-                                    ? "bg-[#00c0ff] text-white"
-                                    : "hover:bg-[#f3faff] text-[#64748B]"
+                                    ? "bg-[#13B5B1] text-white"
+                                    : "hover:bg-[#F1F7F7] text-[#64748B]"
                                 }
                               `}
                             >
@@ -309,7 +309,7 @@ export function ScheduleAppointmentModal({
                       </div>
 
                       {/* Time Slots */}
-                      <h3 className="text-lg font-semibold text-[#020817] mb-3">
+                      <h3 className="text-lg font-semibold text-[#0F172A] mb-3">
                         What time works?
                       </h3>
 
@@ -327,10 +327,10 @@ export function ScheduleAppointmentModal({
                                 py-2 px-3 rounded-lg text-sm font-medium transition-all
                                 ${
                                   isUnavailable
-                                    ? "bg-[#F1F5F9] text-[#CBD5E1] cursor-not-allowed"
+                                    ? "bg-[#F1F4F8] text-[#CBD5E1] cursor-not-allowed"
                                     : isSelected
-                                    ? "bg-[#00c0ff] text-white"
-                                    : "bg-white border border-[#E2E8F0] text-[#64748B] hover:bg-[#f3faff] hover:border-[#00c0ff]"
+                                    ? "bg-[#13B5B1] text-white"
+                                    : "bg-white border border-[#E5EAF0] text-[#64748B] hover:bg-[#F1F7F7] hover:border-[#13B5B1]"
                                 }
                               `}
                             >
@@ -342,7 +342,7 @@ export function ScheduleAppointmentModal({
 
                       {/* Session Type Selector */}
                       <div className="mb-4">
-                        <label className="text-sm font-medium text-[#020817] mb-2 block">
+                        <label className="text-sm font-medium text-[#0F172A] mb-2 block">
                           Session type:
                         </label>
                         <div className="flex gap-3">
@@ -352,8 +352,8 @@ export function ScheduleAppointmentModal({
                               flex-1 py-2.5 px-3 rounded-lg text-sm font-medium transition-all flex items-center justify-center gap-2
                               ${
                                 selectedSessionType === "Video"
-                                  ? "bg-[#00c0ff] text-white"
-                                  : "bg-white border border-[#E2E8F0] text-[#64748B] hover:bg-[#f3faff] hover:border-[#00c0ff]"
+                                  ? "bg-[#13B5B1] text-white"
+                                  : "bg-white border border-[#E5EAF0] text-[#64748B] hover:bg-[#F1F7F7] hover:border-[#13B5B1]"
                               }
                             `}
                           >
@@ -366,8 +366,8 @@ export function ScheduleAppointmentModal({
                               flex-1 py-2.5 px-3 rounded-lg text-sm font-medium transition-all flex items-center justify-center gap-2
                               ${
                                 selectedSessionType === "Chat"
-                                  ? "bg-[#00c0ff] text-white"
-                                  : "bg-white border border-[#E2E8F0] text-[#64748B] hover:bg-[#f3faff] hover:border-[#00c0ff]"
+                                  ? "bg-[#13B5B1] text-white"
+                                  : "bg-white border border-[#E5EAF0] text-[#64748B] hover:bg-[#F1F7F7] hover:border-[#13B5B1]"
                               }
                             `}
                           >
@@ -385,8 +385,8 @@ export function ScheduleAppointmentModal({
                           w-full py-3 rounded-xl text-sm font-semibold transition-all
                           ${
                             selectedDate && selectedTime
-                              ? "bg-[#00c0ff] text-white hover:bg-[#00a8e0]"
-                              : "bg-[#F1F5F9] text-[#CBD5E1] cursor-not-allowed"
+                              ? "bg-[#13B5B1] text-white hover:bg-[#00a8e0]"
+                              : "bg-[#F1F4F8] text-[#CBD5E1] cursor-not-allowed"
                           }
                         `}
                       >
@@ -429,7 +429,7 @@ export function ScheduleAppointmentModal({
                       {/* Names with Icon */}
                       <div className="flex items-center justify-center gap-2 mb-6">
                         {/* Session Mode Icon */}
-                        <div className="w-7 h-7 bg-[#00c0ff] rounded-full flex items-center justify-center">
+                        <div className="w-7 h-7 bg-[#13B5B1] rounded-full flex items-center justify-center">
                           {(() => {
                             const ModeIconComponent = MODE_ICON[sessionMode];
                             return <ModeIconComponent size={14} className="text-white" />;
@@ -437,13 +437,13 @@ export function ScheduleAppointmentModal({
                         </div>
                         
                         {/* Expert Name */}
-                        <span className="text-base font-semibold text-[#020817]">
+                        <span className="text-base font-semibold text-[#0F172A]">
                           {expertName}
                         </span>
                         
                         {/* Two-way Arrows Icon */}
                         <svg
-                          className="w-5 h-5 text-[#020817]"
+                          className="w-5 h-5 text-[#0F172A]"
                           fill="none"
                           stroke="currentColor"
                           viewBox="0 0 24 24"
@@ -457,7 +457,7 @@ export function ScheduleAppointmentModal({
                         </svg>
                         
                         {/* User Name */}
-                        <span className="text-base font-semibold text-[#020817]">
+                        <span className="text-base font-semibold text-[#0F172A]">
                           {userName}
                         </span>
                       </div>
@@ -466,19 +466,19 @@ export function ScheduleAppointmentModal({
                       <div className="bg-[#F8FAFC] rounded-xl p-4 mb-4 text-left space-y-3">
                         {/* Service */}
                         <div className="flex items-start gap-3">
-                          <CalendarIcon size={20} className="text-[#043570] mt-0.5 flex-shrink-0" />
+                          <CalendarIcon size={20} className="text-[#0B2545] mt-0.5 flex-shrink-0" />
                           <div>
-                            <span className="text-sm font-semibold text-[#043570]">Service:</span>
-                            <span className="text-sm text-[#020817] ml-2">{expertTitle}</span>
+                            <span className="text-sm font-semibold text-[#0B2545]">Service:</span>
+                            <span className="text-sm text-[#0F172A] ml-2">{expertTitle}</span>
                           </div>
                         </div>
 
                         {/* Time */}
                         <div className="flex items-start gap-3">
-                          <Clock size={20} className="text-[#043570] mt-0.5 flex-shrink-0" />
+                          <Clock size={20} className="text-[#0B2545] mt-0.5 flex-shrink-0" />
                           <div>
-                            <span className="text-sm font-semibold text-[#043570]">Time:</span>
-                            <span className="text-sm text-[#020817] ml-2">
+                            <span className="text-sm font-semibold text-[#0B2545]">Time:</span>
+                            <span className="text-sm text-[#0F172A] ml-2">
                               {selectedDate} at {selectedTime}
                             </span>
                           </div>
@@ -487,7 +487,7 @@ export function ScheduleAppointmentModal({
                         {/* Duration */}
                         <div className="flex items-start gap-3">
                           <svg
-                            className="w-5 h-5 text-[#043570] mt-0.5 flex-shrink-0"
+                            className="w-5 h-5 text-[#0B2545] mt-0.5 flex-shrink-0"
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"
@@ -500,8 +500,8 @@ export function ScheduleAppointmentModal({
                             />
                           </svg>
                           <div>
-                            <span className="text-sm font-semibold text-[#043570]">Duration:</span>
-                            <span className="text-sm text-[#020817] ml-2">30 mins</span>
+                            <span className="text-sm font-semibold text-[#0B2545]">Duration:</span>
+                            <span className="text-sm text-[#0F172A] ml-2">30 mins</span>
                           </div>
                         </div>
                       </div>
@@ -516,7 +516,7 @@ export function ScheduleAppointmentModal({
                               onChange={(e) => setCallReminder(e.target.checked)}
                               className="peer sr-only"
                             />
-                            <div className="w-5 h-5 border-2 border-[#CBD5E1] rounded peer-checked:bg-[#00c0ff] peer-checked:border-[#00c0ff] transition-all flex items-center justify-center">
+                            <div className="w-5 h-5 border-2 border-[#CBD5E1] rounded peer-checked:bg-[#13B5B1] peer-checked:border-[#13B5B1] transition-all flex items-center justify-center">
                               {callReminder && (
                                 <svg
                                   className="w-3 h-3 text-white"
@@ -534,7 +534,7 @@ export function ScheduleAppointmentModal({
                               )}
                             </div>
                           </div>
-                          <span className="text-sm text-[#020817] font-medium group-hover:text-[#00c0ff] transition-colors">
+                          <span className="text-sm text-[#0F172A] font-medium group-hover:text-[#13B5B1] transition-colors">
                             Get reminder over a call
                           </span>
                         </label>
@@ -543,7 +543,7 @@ export function ScheduleAppointmentModal({
                       {/* Confirm Button */}
                       <button
                         onClick={() => setStep(3)}
-                        className="w-full py-3 rounded-xl text-sm font-semibold transition-all bg-[#00c0ff] text-white hover:bg-[#00a8e0]"
+                        className="w-full py-3 rounded-xl text-sm font-semibold transition-all bg-[#13B5B1] text-white hover:bg-[#00a8e0]"
                       >
                         Confirm
                       </button>
@@ -571,7 +571,7 @@ export function ScheduleAppointmentModal({
                       </motion.div>
 
                       {/* Success Message */}
-                      <h3 className="text-lg font-semibold text-[#020817] mb-2 text-center">
+                      <h3 className="text-lg font-semibold text-[#0F172A] mb-2 text-center">
                         Appointment Requested!
                       </h3>
                       <div className="text-sm text-[#64748B] leading-relaxed mb-6 text-left">
@@ -586,7 +586,7 @@ export function ScheduleAppointmentModal({
                             href="https://drive.google.com/file/d/140dDyBX3558cFbDeBbelHb1pSt7_Wgxb/view?usp=sharing"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1.5 px-3 py-1 bg-[#f3faff] text-[#043570] text-xs font-semibold rounded-full border border-[#00c0ff] hover:bg-[#E2ECF5] transition-colors"
+                            className="inline-flex items-center gap-1.5 px-3 py-1 bg-[#F1F7F7] text-[#0B2545] text-xs font-semibold rounded-full border border-[#13B5B1] hover:bg-[#E5EAF0] transition-colors"
                           >
                             <Video size={14} />
                             How it works?
@@ -601,7 +601,7 @@ export function ScheduleAppointmentModal({
                             handleClose();
                             navigate("/appointments");
                           }}
-                          className="flex-1 py-2.5 rounded-xl text-sm font-semibold transition-all bg-[#043570] text-white hover:bg-[#032656]"
+                          className="flex-1 py-2.5 rounded-xl text-sm font-semibold transition-all bg-[#0B2545] text-white hover:bg-[#032656]"
                         >
                           View Appointment
                         </button>
@@ -610,7 +610,7 @@ export function ScheduleAppointmentModal({
                             // Mock calendar functionality
                             alert("Calendar event would be added here");
                           }}
-                          className="flex-1 py-2.5 rounded-xl text-sm font-semibold transition-all bg-white border-2 border-[#00c0ff] text-[#00c0ff] hover:bg-[#f3faff] flex items-center justify-center gap-2"
+                          className="flex-1 py-2.5 rounded-xl text-sm font-semibold transition-all bg-white border-2 border-[#13B5B1] text-[#13B5B1] hover:bg-[#F1F7F7] flex items-center justify-center gap-2"
                         >
                           <CalendarIcon size={18} />
                           Add to Calendar

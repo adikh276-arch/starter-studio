@@ -97,7 +97,7 @@ export function SessionsDetailsModal({ isOpen, onClose }: SessionsDetailsModalPr
       label: "Remaining",
       count: 449,
       icon: <RefreshCw size={18} />,
-      iconBg: "bg-[#00c0ff]",
+      iconBg: "bg-[#13B5B1]",
       isHighlight: true,
       isClickable: false,
     },
@@ -127,7 +127,7 @@ export function SessionsDetailsModal({ isOpen, onClose }: SessionsDetailsModalPr
           >
             <div className="bg-white rounded-2xl shadow-2xl w-full max-w-md max-h-[90vh] overflow-y-auto">
               {/* Header */}
-              <div className="sticky top-0 bg-white border-b border-[#E2E8F0] px-6 py-4 flex items-center justify-between">
+              <div className="sticky top-0 bg-white border-b border-[#E5EAF0] px-6 py-4 flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <button
                     onClick={onClose}
@@ -147,13 +147,13 @@ export function SessionsDetailsModal({ isOpen, onClose }: SessionsDetailsModalPr
                       />
                     </svg>
                   </button>
-                  <h2 className="text-lg font-semibold text-[#020817]">
+                  <h2 className="text-lg font-semibold text-[#0F172A]">
                     Sessions Details
                   </h2>
                 </div>
                 <div className="relative">
                   <button
-                    className="flex items-center gap-1 text-sm text-[#64748B] font-medium hover:text-[#020817] transition-colors"
+                    className="flex items-center gap-1 text-sm text-[#64748B] font-medium hover:text-[#0F172A] transition-colors"
                     onClick={() => setShowServiceDropdown(!showServiceDropdown)}
                   >
                     {selectedService}
@@ -165,14 +165,14 @@ export function SessionsDetailsModal({ isOpen, onClose }: SessionsDetailsModalPr
                         className="fixed inset-0 z-10"
                         onClick={() => setShowServiceDropdown(false)}
                       />
-                      <div className="absolute right-0 top-8 bg-white border border-[#E2E8F0] rounded-xl shadow-lg z-20 min-w-[180px] py-2 max-h-[300px] overflow-y-auto">
+                      <div className="absolute right-0 top-8 bg-white border border-[#E5EAF0] rounded-xl shadow-lg z-20 min-w-[180px] py-2 max-h-[300px] overflow-y-auto">
                         {services.map((service) => (
                           <button
                             key={service}
                             className={`block w-full px-4 py-2.5 text-sm text-left transition-colors ${
                               selectedService === service
-                                ? "bg-[#f3faff] text-[#043570] font-medium"
-                                : "text-[#64748B] hover:bg-[#F8FAFC] hover:text-[#020817]"
+                                ? "bg-[#F1F7F7] text-[#0B2545] font-medium"
+                                : "text-[#64748B] hover:bg-[#F8FAFC] hover:text-[#0F172A]"
                             }`}
                             onClick={() => {
                               setSelectedService(service);
@@ -200,10 +200,10 @@ export function SessionsDetailsModal({ isOpen, onClose }: SessionsDetailsModalPr
                         w-full flex items-center justify-between p-4 rounded-xl transition-all
                         ${
                           stat.isHighlight
-                            ? "bg-[#00c0ff] text-white"
+                            ? "bg-[#13B5B1] text-white"
                             : stat.isClickable
-                            ? "bg-white hover:bg-[#F8FAFC] text-[#020817] cursor-pointer"
-                            : "bg-white text-[#020817]"
+                            ? "bg-white hover:bg-[#F8FAFC] text-[#0F172A] cursor-pointer"
+                            : "bg-white text-[#0F172A]"
                         }
                       `}
                       onClick={stat.isClickable ? () => handleStatClick(stat.id) : undefined}
@@ -220,7 +220,7 @@ export function SessionsDetailsModal({ isOpen, onClose }: SessionsDetailsModalPr
                         </div>
                         <span
                           className={`font-medium ${
-                            stat.isHighlight ? "text-white" : "text-[#020817]"
+                            stat.isHighlight ? "text-white" : "text-[#0F172A]"
                           }`}
                         >
                           {stat.label}
@@ -229,7 +229,7 @@ export function SessionsDetailsModal({ isOpen, onClose }: SessionsDetailsModalPr
                       <div className="flex items-center gap-2">
                         <span
                           className={`font-semibold ${
-                            stat.isHighlight ? "text-white" : "text-[#043570]"
+                            stat.isHighlight ? "text-white" : "text-[#0B2545]"
                           }`}
                         >
                           {stat.isHighlight ? "" : "(-)"} {stat.count}
@@ -249,7 +249,7 @@ export function SessionsDetailsModal({ isOpen, onClose }: SessionsDetailsModalPr
               {/* Buy More Sessions Button */}
               <div className="px-6 pb-6">
                 <button
-                  className="w-full py-4 bg-[#043570] text-white font-semibold rounded-xl hover:bg-[#032a59] transition-colors"
+                  className="w-full py-4 bg-[#0B2545] text-white font-semibold rounded-xl hover:bg-[#032a59] transition-colors"
                   onClick={() => navigate("/buy-sessions")}
                 >
                   Buy More Sessions

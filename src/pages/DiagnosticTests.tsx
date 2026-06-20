@@ -304,12 +304,12 @@ export function DiagnosticTests() {
           <div className="flex items-center gap-3 mb-2">
             <button
               onClick={() => navigate(-1)}
-              className="flex items-center justify-center text-[#64748B] hover:text-[#043570] transition-colors"
+              className="flex items-center justify-center text-[#64748B] hover:text-[#0B2545] transition-colors"
             >
               <ChevronLeft size={20} />
             </button>
-            <div className="w-10 h-10 bg-[#F1F5F9] rounded-md flex items-center justify-center flex-shrink-0">
-              <TestTube size={20} className="text-[#1E293B]" strokeWidth={2} />
+            <div className="w-10 h-10 bg-[#F1F4F8] rounded-md flex items-center justify-center flex-shrink-0">
+              <TestTube size={20} className="text-[#0F172A]" strokeWidth={2} />
             </div>
             <div>
               <h1 className="text-2xl text-[#0f172b] font-medium">
@@ -337,7 +337,7 @@ export function DiagnosticTests() {
               placeholder="Search tests..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-12 pr-4 py-3 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#2563EB]/20 focus:border-[#2563EB] text-[#043570] placeholder:text-[#64748B]"
+              className="w-full pl-12 pr-4 py-3 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#2563EB]/20 focus:border-[#2563EB] text-[#0B2545] placeholder:text-[#64748B]"
             />
           </div>
 
@@ -371,7 +371,7 @@ export function DiagnosticTests() {
           className="mb-4"
         >
           <p className="text-sm text-[#64748B]">
-            Showing <span className="font-semibold text-[#043570]">{filteredTests.length}</span> tests
+            Showing <span className="font-semibold text-[#0B2545]">{filteredTests.length}</span> tests
           </p>
         </motion.div>
 
@@ -404,7 +404,7 @@ export function DiagnosticTests() {
                       <div className="flex items-start justify-between gap-4 mb-3">
                         <div className="flex-1">
                           <div className="flex items-center gap-2 mb-2">
-                            <h3 className="text-lg font-semibold text-[#043570]">
+                            <h3 className="text-lg font-semibold text-[#0B2545]">
                               {test.name}
                             </h3>
                             {test.popular && (
@@ -430,7 +430,7 @@ export function DiagnosticTests() {
                             </div>
                             <div className="flex items-center gap-1.5">
                               <Star size={14} fill="#F59E0B" className="text-[#F59E0B]" />
-                              <span className="font-medium text-[#043570]">{test.rating}</span>
+                              <span className="font-medium text-[#0B2545]">{test.rating}</span>
                               <span>({test.reviews.toLocaleString()} reviews)</span>
                             </div>
                           </div>
@@ -440,7 +440,7 @@ export function DiagnosticTests() {
                             {test.features.slice(0, 4).map((feature, idx) => (
                               <span
                                 key={idx}
-                                className="bg-[#f3faff] text-[#043570] text-xs px-3 py-1 rounded-full border border-slate-200"
+                                className="bg-[#F1F7F7] text-[#0B2545] text-xs px-3 py-1 rounded-full border border-slate-200"
                               >
                                 {feature}
                               </span>
@@ -463,7 +463,7 @@ export function DiagnosticTests() {
                               {test.discount}% OFF
                             </span>
                           </div>
-                          <div className="text-2xl font-bold text-[#043570] mb-3">
+                          <div className="text-2xl font-bold text-[#0B2545] mb-3">
                             ₹{test.price}
                           </div>
                           <button className="bg-[#2563EB] text-white px-6 py-2.5 rounded-xl font-medium hover:bg-[#1d4ed8] transition-colors flex items-center gap-2 group/btn shadow-sm">
@@ -489,7 +489,7 @@ export function DiagnosticTests() {
             className="text-center py-16"
           >
             <TestTube className="mx-auto text-[#64748B] mb-4" size={48} />
-            <h3 className="text-xl font-semibold text-[#043570] mb-2">
+            <h3 className="text-xl font-semibold text-[#0B2545] mb-2">
               No tests found
             </h3>
             <p className="text-[#64748B]">

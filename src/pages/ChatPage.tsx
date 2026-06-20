@@ -88,13 +88,13 @@ export function ChatPage() {
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="bg-white border-b border-[#E2E8F0] px-4 md:px-6 py-4"
+            className="bg-white border-b border-[#E5EAF0] px-4 md:px-6 py-4"
           >
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-3">
                 <button
                   onClick={() => navigate(-1)}
-                  className="w-9 h-9 rounded-xl flex items-center justify-center hover:bg-[#F1F5F9] transition-colors"
+                  className="w-9 h-9 rounded-xl flex items-center justify-center hover:bg-[#F1F4F8] transition-colors"
                 >
                   <ArrowLeft size={20} className="text-[#64748B]" />
                 </button>
@@ -114,21 +114,21 @@ export function ChatPage() {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="w-9 h-9 rounded-xl flex items-center justify-center hover:bg-[#F1F5F9] transition-colors"
+                  className="w-9 h-9 rounded-xl flex items-center justify-center hover:bg-[#F1F4F8] transition-colors"
                 >
                   <Video size={20} className="text-[#64748B]" />
                 </motion.button>
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="w-9 h-9 rounded-xl flex items-center justify-center hover:bg-[#F1F5F9] transition-colors"
+                  className="w-9 h-9 rounded-xl flex items-center justify-center hover:bg-[#F1F4F8] transition-colors"
                 >
                   <Phone size={20} className="text-[#64748B]" />
                 </motion.button>
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="w-9 h-9 rounded-xl flex items-center justify-center hover:bg-[#F1F5F9] transition-colors"
+                  className="w-9 h-9 rounded-xl flex items-center justify-center hover:bg-[#F1F4F8] transition-colors"
                 >
                   <MoreVertical size={20} className="text-[#64748B]" />
                 </motion.button>
@@ -151,7 +151,7 @@ export function ChatPage() {
                       className={`rounded-2xl px-4 py-3 ${
                         message.sender === "user"
                           ? "bg-[#2563EB] text-white rounded-br-md"
-                          : "bg-white border border-[#E2E8F0] text-[#1a1a1a] rounded-bl-md"
+                          : "bg-white border border-[#E5EAF0] text-[#1a1a1a] rounded-bl-md"
                       }`}
                     >
                       <p className="text-sm leading-relaxed">{message.text}</p>
@@ -192,18 +192,18 @@ export function ChatPage() {
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="bg-white border-t border-[#E2E8F0] px-4 md:px-6 py-4"
+            className="bg-white border-t border-[#E5EAF0] px-4 md:px-6 py-4"
           >
             <div className="flex items-end gap-3">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="w-10 h-10 rounded-xl flex items-center justify-center hover:bg-[#F1F5F9] transition-colors flex-shrink-0"
+                className="w-10 h-10 rounded-xl flex items-center justify-center hover:bg-[#F1F4F8] transition-colors flex-shrink-0"
               >
                 <Paperclip size={20} className="text-[#64748B]" />
               </motion.button>
 
-              <div className="flex-1 bg-[#F1F5F9] rounded-2xl px-4 py-3">
+              <div className="flex-1 bg-[#F1F4F8] rounded-2xl px-4 py-3">
                 <textarea
                   value={messageInput}
                   onChange={(e) => setMessageInput(e.target.value)}
@@ -223,7 +223,7 @@ export function ChatPage() {
                 className={`w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 transition-all ${
                   messageInput.trim()
                     ? "bg-[#2563EB] hover:bg-[#1d4ed8] text-white"
-                    : "bg-[#E2E8F0] text-[#94A3B8] cursor-not-allowed"
+                    : "bg-[#E5EAF0] text-[#94A3B8] cursor-not-allowed"
                 }`}
               >
                 <Send size={18} />

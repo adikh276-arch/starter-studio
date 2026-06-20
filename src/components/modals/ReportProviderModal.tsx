@@ -104,7 +104,7 @@ export function ReportProviderModal({ isOpen, onClose, providerName, onSubmit }:
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.2 }}
-                    className="text-xl font-semibold text-[#020817] mb-2"
+                    className="text-xl font-semibold text-[#0F172A] mb-2"
                   >
                     Report submitted
                   </motion.h2>
@@ -125,16 +125,16 @@ export function ReportProviderModal({ isOpen, onClose, providerName, onSubmit }:
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.4 }}
-                  className="bg-[#f3faff] rounded-xl p-4 border border-[#E2ECF5]"
+                  className="bg-[#F1F7F7] rounded-xl p-4 border border-[#E5EAF0]"
                 >
-                  <p className="text-sm text-[#020817] leading-relaxed">
+                  <p className="text-sm text-[#0F172A] leading-relaxed">
                     Thank you for bringing this to our attention. Our team will carefully review your report and take appropriate action to ensure the safety and quality of our platform.
                   </p>
                 </motion.div>
               </div>
 
               {/* Success Footer */}
-              <div className="bg-white border-t border-[#E2ECF5] px-6 py-4">
+              <div className="bg-white border-t border-[#E5EAF0] px-6 py-4">
                 <motion.button
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -142,7 +142,7 @@ export function ReportProviderModal({ isOpen, onClose, providerName, onSubmit }:
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   onClick={handleClose}
-                  className="w-full py-3.5 rounded-xl text-sm font-semibold bg-[#043570] text-white hover:bg-[#032656] transition-all"
+                  className="w-full py-3.5 rounded-xl text-sm font-semibold bg-[#0B2545] text-white hover:bg-[#032656] transition-all"
                 >
                   Done
                 </motion.button>
@@ -159,7 +159,7 @@ export function ReportProviderModal({ isOpen, onClose, providerName, onSubmit }:
                     <AlertCircle size={32} className="text-[#EF4444]" />
                   </div>
                   
-                  <h2 className="text-xl font-semibold text-[#020817] mb-1">Report provider</h2>
+                  <h2 className="text-xl font-semibold text-[#0F172A] mb-1">Report provider</h2>
                   <p className="text-sm text-[#64748B] text-center">
                     Help us understand the issue with {providerName}
                   </p>
@@ -189,8 +189,8 @@ export function ReportProviderModal({ isOpen, onClose, providerName, onSubmit }:
                             onClick={() => handleToggleReason(reason)}
                             className={`flex-shrink-0 w-5 h-5 rounded border-2 transition-all mt-0.5 ${
                               isSelected
-                                ? "bg-[#00c0ff] border-[#00c0ff]"
-                                : "bg-white border-[#CBD5E1] group-hover:border-[#00c0ff]"
+                                ? "bg-[#13B5B1] border-[#13B5B1]"
+                                : "bg-white border-[#CBD5E1] group-hover:border-[#13B5B1]"
                             }`}
                           >
                             {isSelected && (
@@ -209,7 +209,7 @@ export function ReportProviderModal({ isOpen, onClose, providerName, onSubmit }:
                             )}
                           </button>
                           
-                          <span className="text-sm text-[#020817] select-none">
+                          <span className="text-sm text-[#0F172A] select-none">
                             {reason}
                           </span>
                         </label>
@@ -236,7 +236,7 @@ export function ReportProviderModal({ isOpen, onClose, providerName, onSubmit }:
                         onChange={(e) => setOtherReason(e.target.value)}
                         placeholder="Please describe the issue in detail..."
                         rows={4}
-                        className="w-full px-4 py-3 bg-[#f3faff] border border-[#E2ECF5] rounded-xl text-sm text-[#020817] placeholder:text-[#94A3B8] focus:outline-none focus:ring-2 focus:ring-[#00c0ff] focus:border-transparent resize-none"
+                        className="w-full px-4 py-3 bg-[#F1F7F7] border border-[#E5EAF0] rounded-xl text-sm text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:ring-2 focus:ring-[#13B5B1] focus:border-transparent resize-none"
                       />
                     </motion.div>
                   )}
@@ -244,7 +244,7 @@ export function ReportProviderModal({ isOpen, onClose, providerName, onSubmit }:
               </div>
 
               {/* Footer */}
-              <div className="bg-white border-t border-[#E2ECF5] px-6 py-4">
+              <div className="bg-white border-t border-[#E5EAF0] px-6 py-4">
                 <motion.button
                   whileHover={{ scale: isSubmitDisabled ? 1 : 1.02 }}
                   whileTap={{ scale: isSubmitDisabled ? 1 : 0.98 }}
@@ -252,8 +252,8 @@ export function ReportProviderModal({ isOpen, onClose, providerName, onSubmit }:
                   disabled={isSubmitDisabled}
                   className={`w-full py-3.5 rounded-xl text-sm font-semibold transition-all ${
                     isSubmitDisabled
-                      ? "bg-[#E2ECF5] text-[#94A3B8] cursor-not-allowed"
-                      : "bg-[#043570] text-white hover:bg-[#032656]"
+                      ? "bg-[#E5EAF0] text-[#94A3B8] cursor-not-allowed"
+                      : "bg-[#0B2545] text-white hover:bg-[#032656]"
                   }`}
                 >
                   {isSubmitting ? (
@@ -280,7 +280,7 @@ export function ReportProviderModal({ isOpen, onClose, providerName, onSubmit }:
           {/* Close Button - Desktop Only */}
           <button
             onClick={handleClose}
-            className="hidden md:flex absolute top-4 right-4 w-8 h-8 items-center justify-center rounded-lg hover:bg-[#f3faff] text-[#64748B] hover:text-[#043570] transition-colors"
+            className="hidden md:flex absolute top-4 right-4 w-8 h-8 items-center justify-center rounded-lg hover:bg-[#F1F7F7] text-[#64748B] hover:text-[#0B2545] transition-colors"
           >
             <X size={20} />
           </button>

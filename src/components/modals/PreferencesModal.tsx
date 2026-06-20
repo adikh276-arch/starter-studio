@@ -195,7 +195,7 @@ export function PreferencesModal({ isOpen, onClose, currentExpertRole }: Prefere
             {/* Close Button */}
             <button
               onClick={onClose}
-              className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-lg hover:bg-[#f3faff] text-[#64748B] transition-colors z-10"
+              className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-lg hover:bg-[#F1F7F7] text-[#64748B] transition-colors z-10"
             >
               <X size={20} />
             </button>
@@ -203,7 +203,7 @@ export function PreferencesModal({ isOpen, onClose, currentExpertRole }: Prefere
             {/* Header */}
             {currentStep <= 4 && (
               <div className="px-8 pt-8 pb-6">
-                <h2 className="text-xl font-semibold text-[#020817] mb-1">
+                <h2 className="text-xl font-semibold text-[#0F172A] mb-1">
                   {currentExpertRole} Preferences
                 </h2>
                 <p className="text-sm text-[#64748B] mb-4">
@@ -214,12 +214,12 @@ export function PreferencesModal({ isOpen, onClose, currentExpertRole }: Prefere
                   <span className="text-sm text-[#64748B]">{progressPercentage}%</span>
                 </div>
                 {/* Progress Bar */}
-                <div className="w-full h-2 bg-[#E2E8F0] rounded-full overflow-hidden">
+                <div className="w-full h-2 bg-[#E5EAF0] rounded-full overflow-hidden">
                   <motion.div
                     initial={{ width: 0 }}
                     animate={{ width: `${progressPercentage}%` }}
                     transition={{ duration: 0.3 }}
-                    className="h-full bg-[#4F7FCD] rounded-full"
+                    className="h-full bg-[#13315C] rounded-full"
                   />
                 </div>
               </div>
@@ -228,7 +228,7 @@ export function PreferencesModal({ isOpen, onClose, currentExpertRole }: Prefere
             {/* Header for Step 5 */}
             {currentStep === 5 && !showFinalMessage && (
               <div className="px-8 pt-8 pb-6">
-                <h2 className="text-xl font-semibold text-[#020817] mb-1">
+                <h2 className="text-xl font-semibold text-[#0F172A] mb-1">
                   {currentExpertRole} Preferences
                 </h2>
                 <p className="text-sm text-[#64748B]">
@@ -249,7 +249,7 @@ export function PreferencesModal({ isOpen, onClose, currentExpertRole }: Prefere
                     exit={{ opacity: 0, x: -20 }}
                     className="space-y-4"
                   >
-                    <h2 className="text-xl font-semibold text-[#020817] mb-6">
+                    <h2 className="text-xl font-semibold text-[#0F172A] mb-6">
                       What specialization are you looking for?
                     </h2>
                     <div className="space-y-3">
@@ -259,23 +259,23 @@ export function PreferencesModal({ isOpen, onClose, currentExpertRole }: Prefere
                           onClick={() => toggleSpecialization(spec)}
                           className={`w-full px-6 py-4 rounded-xl border-2 text-left transition-all ${
                             specializations.has(spec)
-                              ? "border-[#4F7FCD] bg-[#EFF6FF]"
-                              : "border-[#E2E8F0] bg-white hover:border-[#CBD5E1]"
+                              ? "border-[#13315C] bg-[#EFF6FF]"
+                              : "border-[#E5EAF0] bg-white hover:border-[#CBD5E1]"
                           }`}
                         >
                           <div className="flex items-center gap-3">
                             <div
                               className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${
                                 specializations.has(spec)
-                                  ? "border-[#4F7FCD]"
+                                  ? "border-[#13315C]"
                                   : "border-[#CBD5E1]"
                               }`}
                             >
                               {specializations.has(spec) && (
-                                <div className="w-3 h-3 rounded-full bg-[#4F7FCD]" />
+                                <div className="w-3 h-3 rounded-full bg-[#13315C]" />
                               )}
                             </div>
-                            <span className="text-[#020817] font-medium">{spec}</span>
+                            <span className="text-[#0F172A] font-medium">{spec}</span>
                           </div>
                         </button>
                       ))}
@@ -292,17 +292,17 @@ export function PreferencesModal({ isOpen, onClose, currentExpertRole }: Prefere
                     exit={{ opacity: 0, x: -20 }}
                     className="space-y-4"
                   >
-                    <h2 className="text-xl font-semibold text-[#020817] mb-6">
+                    <h2 className="text-xl font-semibold text-[#0F172A] mb-6">
                       Which country should the {currentExpertRole} be from?
                     </h2>
                     <div className="relative">
                       {/* Selected Country Display */}
                       <button
                         onClick={() => setShowCountryDropdown(!showCountryDropdown)}
-                        className="w-full px-6 py-4 rounded-xl border-2 text-left transition-all flex items-center justify-between border-[#4F7FCD] bg-[#EFF6FF]"
+                        className="w-full px-6 py-4 rounded-xl border-2 text-left transition-all flex items-center justify-between border-[#13315C] bg-[#EFF6FF]"
                       >
                         <div className="flex items-center gap-3">
-                          <span className="text-[#020817] font-medium">{country}</span>
+                          <span className="text-[#0F172A] font-medium">{country}</span>
                         </div>
                         <ChevronDown
                           size={20}
@@ -317,9 +317,9 @@ export function PreferencesModal({ isOpen, onClose, currentExpertRole }: Prefere
                         <motion.div
                           initial={{ opacity: 0, y: -10 }}
                           animate={{ opacity: 1, y: 0 }}
-                          className="absolute left-0 right-0 top-full mt-2 bg-white border-2 border-[#E2E8F0] rounded-xl shadow-xl z-20 overflow-hidden"
+                          className="absolute left-0 right-0 top-full mt-2 bg-white border-2 border-[#E5EAF0] rounded-xl shadow-xl z-20 overflow-hidden"
                         >
-                          <div className="p-3 border-b border-[#E2E8F0]">
+                          <div className="p-3 border-b border-[#E5EAF0]">
                             <div className="relative">
                               <Search size={18} className="absolute left-3 top-1/2 -translate-y-1/2 text-[#64748B]" />
                               <input
@@ -327,7 +327,7 @@ export function PreferencesModal({ isOpen, onClose, currentExpertRole }: Prefere
                                 value={countrySearchTerm}
                                 onChange={(e) => setCountrySearchTerm(e.target.value)}
                                 placeholder="Search countries..."
-                                className="w-full pl-10 pr-4 py-2 border border-[#E2E8F0] rounded-lg text-sm text-[#043570] bg-white focus:outline-none focus:border-[#4F7FCD]"
+                                className="w-full pl-10 pr-4 py-2 border border-[#E5EAF0] rounded-lg text-sm text-[#0B2545] bg-white focus:outline-none focus:border-[#13315C]"
                               />
                             </div>
                           </div>
@@ -346,8 +346,8 @@ export function PreferencesModal({ isOpen, onClose, currentExpertRole }: Prefere
                                   }}
                                   className={`w-full px-6 py-3 text-left transition-all ${
                                     country === c
-                                      ? "bg-[#EFF6FF] text-[#4F7FCD] font-medium"
-                                      : "hover:bg-[#F8FAFC] text-[#020817]"
+                                      ? "bg-[#EFF6FF] text-[#13315C] font-medium"
+                                      : "hover:bg-[#F8FAFC] text-[#0F172A]"
                                   }`}
                                 >
                                   {c}
@@ -369,17 +369,17 @@ export function PreferencesModal({ isOpen, onClose, currentExpertRole }: Prefere
                     exit={{ opacity: 0, x: -20 }}
                     className="space-y-4"
                   >
-                    <h2 className="text-xl font-semibold text-[#020817] mb-6">
+                    <h2 className="text-xl font-semibold text-[#0F172A] mb-6">
                       What language should they speak?
                     </h2>
                     <div className="relative">
                       {/* Selected Language Display */}
                       <button
                         onClick={() => setShowLanguageDropdown(!showLanguageDropdown)}
-                        className="w-full px-6 py-4 rounded-xl border-2 text-left transition-all flex items-center justify-between border-[#4F7FCD] bg-[#EFF6FF]"
+                        className="w-full px-6 py-4 rounded-xl border-2 text-left transition-all flex items-center justify-between border-[#13315C] bg-[#EFF6FF]"
                       >
                         <div className="flex items-center gap-3">
-                          <span className="text-[#020817] font-medium">{language}</span>
+                          <span className="text-[#0F172A] font-medium">{language}</span>
                         </div>
                         <ChevronDown
                           size={20}
@@ -394,9 +394,9 @@ export function PreferencesModal({ isOpen, onClose, currentExpertRole }: Prefere
                         <motion.div
                           initial={{ opacity: 0, y: -10 }}
                           animate={{ opacity: 1, y: 0 }}
-                          className="absolute left-0 right-0 top-full mt-2 bg-white border-2 border-[#E2E8F0] rounded-xl shadow-xl z-20 overflow-hidden"
+                          className="absolute left-0 right-0 top-full mt-2 bg-white border-2 border-[#E5EAF0] rounded-xl shadow-xl z-20 overflow-hidden"
                         >
-                          <div className="p-3 border-b border-[#E2E8F0]">
+                          <div className="p-3 border-b border-[#E5EAF0]">
                             <div className="relative">
                               <Search size={18} className="absolute left-3 top-1/2 -translate-y-1/2 text-[#64748B]" />
                               <input
@@ -404,7 +404,7 @@ export function PreferencesModal({ isOpen, onClose, currentExpertRole }: Prefere
                                 value={languageSearchTerm}
                                 onChange={(e) => setLanguageSearchTerm(e.target.value)}
                                 placeholder="Search languages..."
-                                className="w-full pl-10 pr-4 py-2 border border-[#E2E8F0] rounded-lg text-sm text-[#043570] bg-white focus:outline-none focus:border-[#4F7FCD]"
+                                className="w-full pl-10 pr-4 py-2 border border-[#E5EAF0] rounded-lg text-sm text-[#0B2545] bg-white focus:outline-none focus:border-[#13315C]"
                               />
                             </div>
                           </div>
@@ -423,8 +423,8 @@ export function PreferencesModal({ isOpen, onClose, currentExpertRole }: Prefere
                                   }}
                                   className={`w-full px-6 py-3 text-left transition-all ${
                                     language === lang
-                                      ? "bg-[#EFF6FF] text-[#4F7FCD] font-medium"
-                                      : "hover:bg-[#F8FAFC] text-[#020817]"
+                                      ? "bg-[#EFF6FF] text-[#13315C] font-medium"
+                                      : "hover:bg-[#F8FAFC] text-[#0F172A]"
                                   }`}
                                 >
                                   {lang}
@@ -447,13 +447,13 @@ export function PreferencesModal({ isOpen, onClose, currentExpertRole }: Prefere
                     className="space-y-4"
                   >
                     <div className="flex items-center justify-between mb-6">
-                      <h2 className="text-xl font-semibold text-[#020817]">
+                      <h2 className="text-xl font-semibold text-[#0F172A]">
                         Choose your preferred times.
                       </h2>
                       <select
                         value={timezone}
                         onChange={(e) => setTimezone(e.target.value)}
-                        className="px-4 py-2 border border-[#E2E8F0] rounded-lg text-sm text-[#043570] bg-white hover:border-[#CBD5E1] transition-colors"
+                        className="px-4 py-2 border border-[#E5EAF0] rounded-lg text-sm text-[#0B2545] bg-white hover:border-[#CBD5E1] transition-colors"
                       >
                         {timezones.map((tz) => (
                           <option key={tz} value={tz}>
@@ -476,9 +476,9 @@ export function PreferencesModal({ isOpen, onClose, currentExpertRole }: Prefere
                             setAvailabilitySlots(new Set(timeSlots.map((slot) => slot.id)));
                           }
                         }}
-                        className="w-4 h-4 text-[#4F7FCD] border-[#CBD5E1] rounded focus:ring-[#4F7FCD] focus:ring-offset-0"
+                        className="w-4 h-4 text-[#13315C] border-[#CBD5E1] rounded focus:ring-[#13315C] focus:ring-offset-0"
                       />
-                      <span className="text-sm text-[#020817]">All the time slots work for me.</span>
+                      <span className="text-sm text-[#0F172A]">All the time slots work for me.</span>
                     </label>
 
                     {/* Time Slots in 2 Columns */}
@@ -491,15 +491,15 @@ export function PreferencesModal({ isOpen, onClose, currentExpertRole }: Prefere
                             onClick={() => toggleTimeSlot(slot.id)}
                             className={`px-4 py-3 rounded-xl border text-left transition-all ${
                               isSelected
-                                ? "border-[#4F7FCD] bg-[#EFF6FF]"
-                                : "border-[#E2E8F0] bg-white hover:border-[#CBD5E1]"
+                                ? "border-[#13315C] bg-[#EFF6FF]"
+                                : "border-[#E5EAF0] bg-white hover:border-[#CBD5E1]"
                             }`}
                           >
                             <div className="flex items-start gap-2.5">
                               <div
                                 className={`w-5 h-5 rounded border flex items-center justify-center flex-shrink-0 mt-0.5 ${
                                   isSelected
-                                    ? "border-[#4F7FCD] bg-[#4F7FCD]"
+                                    ? "border-[#13315C] bg-[#13315C]"
                                     : "border-[#CBD5E1] bg-white"
                                 }`}
                               >
@@ -520,7 +520,7 @@ export function PreferencesModal({ isOpen, onClose, currentExpertRole }: Prefere
                                 )}
                               </div>
                               <div>
-                                <div className="text-[#020817] font-semibold text-sm">{slot.label}</div>
+                                <div className="text-[#0F172A] font-semibold text-sm">{slot.label}</div>
                                 <div className="text-xs text-[#64748B] mt-0.5">{slot.time}</div>
                               </div>
                             </div>
@@ -540,7 +540,7 @@ export function PreferencesModal({ isOpen, onClose, currentExpertRole }: Prefere
                     exit={{ opacity: 0, x: -20 }}
                   >
                     <div className="text-center mb-6">
-                      <h2 className="text-2xl font-semibold text-[#020817] mb-2">
+                      <h2 className="text-2xl font-semibold text-[#0F172A] mb-2">
                         How would you like to find your {currentExpertRole}?
                       </h2>
                       <p className="text-sm text-[#64748B]">
@@ -554,19 +554,19 @@ export function PreferencesModal({ isOpen, onClose, currentExpertRole }: Prefere
                         onClick={() => setMatchingMethod("auto-match")}
                         className={`w-full p-6 rounded-2xl border-2 text-left transition-all relative ${
                           matchingMethod === "auto-match"
-                            ? "border-[#4F7FCD] bg-[#EFF6FF]"
-                            : "border-[#E2E8F0] bg-white hover:border-[#CBD5E1]"
+                            ? "border-[#13315C] bg-[#EFF6FF]"
+                            : "border-[#E5EAF0] bg-white hover:border-[#CBD5E1]"
                         }`}
                       >
                         <div className="absolute bottom-4 right-4 bg-[#10B981] text-white text-xs px-2 py-1 rounded">
                           Recommended
                         </div>
                         <div className="flex items-start gap-4">
-                          <div className="w-12 h-12 rounded-full bg-[#EFF6FF] border border-[#4F7FCD]/20 flex items-center justify-center flex-shrink-0">
-                            <Zap size={24} className="text-[#4F7FCD]" />
+                          <div className="w-12 h-12 rounded-full bg-[#EFF6FF] border border-[#13315C]/20 flex items-center justify-center flex-shrink-0">
+                            <Zap size={24} className="text-[#13315C]" />
                           </div>
                           <div className="flex-1">
-                            <h3 className="text-lg font-semibold text-[#020817] mb-2">
+                            <h3 className="text-lg font-semibold text-[#0F172A] mb-2">
                               Auto-Match for Me
                             </h3>
                             <p className="text-sm text-[#64748B] leading-relaxed">
@@ -576,12 +576,12 @@ export function PreferencesModal({ isOpen, onClose, currentExpertRole }: Prefere
                           <div
                             className={`w-6 h-6 rounded-full border-2 flex items-center justify-center flex-shrink-0 ${
                               matchingMethod === "auto-match"
-                                ? "border-[#4F7FCD]"
+                                ? "border-[#13315C]"
                                 : "border-[#CBD5E1]"
                             }`}
                           >
                             {matchingMethod === "auto-match" && (
-                              <div className="w-3.5 h-3.5 rounded-full bg-[#4F7FCD]" />
+                              <div className="w-3.5 h-3.5 rounded-full bg-[#13315C]" />
                             )}
                           </div>
                         </div>
@@ -592,16 +592,16 @@ export function PreferencesModal({ isOpen, onClose, currentExpertRole }: Prefere
                         onClick={() => setMatchingMethod("browse")}
                         className={`w-full p-6 rounded-2xl border-2 text-left transition-all ${
                           matchingMethod === "browse"
-                            ? "border-[#4F7FCD] bg-[#EFF6FF]"
-                            : "border-[#E2E8F0] bg-white hover:border-[#CBD5E1]"
+                            ? "border-[#13315C] bg-[#EFF6FF]"
+                            : "border-[#E5EAF0] bg-white hover:border-[#CBD5E1]"
                         }`}
                       >
                         <div className="flex items-start gap-4">
-                          <div className="w-12 h-12 rounded-full bg-white border border-[#E2E8F0] flex items-center justify-center flex-shrink-0">
-                            <Search size={24} className="text-[#4F7FCD]" />
+                          <div className="w-12 h-12 rounded-full bg-white border border-[#E5EAF0] flex items-center justify-center flex-shrink-0">
+                            <Search size={24} className="text-[#13315C]" />
                           </div>
                           <div className="flex-1">
-                            <h3 className="text-lg font-semibold text-[#020817] mb-2">
+                            <h3 className="text-lg font-semibold text-[#0F172A] mb-2">
                               Browse & Choose Yourself
                             </h3>
                             <p className="text-sm text-[#64748B] leading-relaxed">
@@ -611,12 +611,12 @@ export function PreferencesModal({ isOpen, onClose, currentExpertRole }: Prefere
                           <div
                             className={`w-6 h-6 rounded-full border-2 flex items-center justify-center flex-shrink-0 ${
                               matchingMethod === "browse"
-                                ? "border-[#4F7FCD]"
+                                ? "border-[#13315C]"
                                 : "border-[#CBD5E1]"
                             }`}
                           >
                             {matchingMethod === "browse" && (
-                              <div className="w-3.5 h-3.5 rounded-full bg-[#4F7FCD]" />
+                              <div className="w-3.5 h-3.5 rounded-full bg-[#13315C]" />
                             )}
                           </div>
                         </div>
@@ -630,7 +630,7 @@ export function PreferencesModal({ isOpen, onClose, currentExpertRole }: Prefere
                     {/* Find Matches Button */}
                     <button
                       onClick={handleFindMatches}
-                      className="w-full py-4 bg-[#4F7FCD] text-white rounded-xl font-semibold hover:bg-[#4169B8] transition-colors"
+                      className="w-full py-4 bg-[#13315C] text-white rounded-xl font-semibold hover:bg-[#4169B8] transition-colors"
                     >
                       Find My Matches
                     </button>
@@ -648,12 +648,12 @@ export function PreferencesModal({ isOpen, onClose, currentExpertRole }: Prefere
                     <div className="mb-6">
                       <div className="w-16 h-16 bg-[#EFF6FF] rounded-full flex items-center justify-center mx-auto mb-4">
                         {matchingMethod === "browse" ? (
-                          <Search size={32} className="text-[#4F7FCD]" />
+                          <Search size={32} className="text-[#13315C]" />
                         ) : (
-                          <Zap size={32} className="text-[#4F7FCD]" />
+                          <Zap size={32} className="text-[#13315C]" />
                         )}
                       </div>
-                      <p className="text-lg text-[#020817] font-medium">
+                      <p className="text-lg text-[#0F172A] font-medium">
                         {matchingMethod === "browse"
                           ? "Redirecting to provider selection..."
                           : "Sending request to all matching providers..."}
@@ -661,7 +661,7 @@ export function PreferencesModal({ isOpen, onClose, currentExpertRole }: Prefere
                     </div>
                     <button
                       onClick={handleOK}
-                      className="px-8 py-3 bg-[#4F7FCD] text-white rounded-xl font-semibold hover:bg-[#4169B8] transition-colors"
+                      className="px-8 py-3 bg-[#13315C] text-white rounded-xl font-semibold hover:bg-[#4169B8] transition-colors"
                     >
                       OK
                     </button>
@@ -678,8 +678,8 @@ export function PreferencesModal({ isOpen, onClose, currentExpertRole }: Prefere
                   disabled={currentStep === 1}
                   className={`flex-1 py-3 rounded-xl font-medium transition-colors flex items-center justify-center gap-2 ${
                     currentStep === 1
-                      ? "bg-[#F1F5F9] text-[#CBD5E1] cursor-not-allowed"
-                      : "bg-white border border-[#E2E8F0] text-[#64748B] hover:bg-[#F8FAFC]"
+                      ? "bg-[#F1F4F8] text-[#CBD5E1] cursor-not-allowed"
+                      : "bg-white border border-[#E5EAF0] text-[#64748B] hover:bg-[#F8FAFC]"
                   }`}
                 >
                   <ChevronLeft size={20} />
@@ -687,7 +687,7 @@ export function PreferencesModal({ isOpen, onClose, currentExpertRole }: Prefere
                 </button>
                 <button
                   onClick={handleNext}
-                  className="flex-1 py-3 bg-[#4F7FCD] text-white rounded-xl font-semibold hover:bg-[#4169B8] transition-colors flex items-center justify-center gap-2"
+                  className="flex-1 py-3 bg-[#13315C] text-white rounded-xl font-semibold hover:bg-[#4169B8] transition-colors flex items-center justify-center gap-2"
                 >
                   Next
                   <ChevronRight size={20} />

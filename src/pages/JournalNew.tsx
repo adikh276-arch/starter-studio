@@ -247,12 +247,12 @@ export function JournalNew() {
                 <div className="flex items-center gap-3">
                   <button
                     onClick={() => navigate(-1)}
-                    className="flex items-center justify-center text-[#64748B] hover:text-[#043570] transition-colors"
+                    className="flex items-center justify-center text-[#64748B] hover:text-[#0B2545] transition-colors"
                   >
                     <ChevronLeft size={20} />
                   </button>
-                  <div className="w-10 h-10 bg-[#F1F5F9] rounded-md flex items-center justify-center flex-shrink-0">
-                    <Edit2 size={20} className="text-[#1E293B]" strokeWidth={2} />
+                  <div className="w-10 h-10 bg-[#F1F4F8] rounded-md flex items-center justify-center flex-shrink-0">
+                    <Edit2 size={20} className="text-[#0F172A]" strokeWidth={2} />
                   </div>
                   <div className="flex-1">
                     <h1 className="text-2xl text-[#0f172b] font-medium">
@@ -274,7 +274,7 @@ export function JournalNew() {
                   <select
                     value={selectedService}
                     onChange={(e) => setSelectedService(e.target.value)}
-                    className="px-4 py-2 bg-white border border-[#E2ECF5] rounded-xl text-sm text-[#020817] font-medium focus:outline-none focus:ring-2 focus:ring-[#00c0ff] focus:border-transparent cursor-pointer hover:border-[#00c0ff] transition-colors"
+                    className="px-4 py-2 bg-white border border-[#E5EAF0] rounded-xl text-sm text-[#0F172A] font-medium focus:outline-none focus:ring-2 focus:ring-[#13B5B1] focus:border-transparent cursor-pointer hover:border-[#13B5B1] transition-colors"
                   >
                     {serviceOptions.map((service) => (
                       <option key={service.id} value={service.id}>
@@ -292,14 +292,14 @@ export function JournalNew() {
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
-                className="bg-gradient-to-r from-[#f3faff] to-white border border-[#E2ECF5] rounded-xl p-4 mb-6"
+                className="bg-gradient-to-r from-[#F1F7F7] to-white border border-[#E5EAF0] rounded-xl p-4 mb-6"
               >
                 <div className="flex items-start gap-3">
-                  <div className="flex-shrink-0 w-12 h-12 bg-[#00c0ff] rounded-lg flex items-center justify-center">
+                  <div className="flex-shrink-0 w-12 h-12 bg-[#13B5B1] rounded-lg flex items-center justify-center">
                     <Sparkles size={20} className="text-white" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-base font-semibold text-[#043570] mb-1">
+                    <h3 className="text-base font-semibold text-[#0B2545] mb-1">
                       Suggested topic for today
                     </h3>
                     <p className="text-base text-[#64748B] leading-relaxed">
@@ -317,14 +317,14 @@ export function JournalNew() {
                     </button>
                     <button
                       onClick={handleRefreshSuggestion}
-                      className="text-[#00c0ff] hover:text-[#043570] transition-colors p-1"
+                      className="text-[#13B5B1] hover:text-[#0B2545] transition-colors p-1"
                       title="Get new suggestion"
                     >
                       <RefreshCw size={24} />
                     </button>
                     <button
                       onClick={() => setShowSuggestionsModal(true)}
-                      className="text-[#94A3B8] hover:text-[#043570] transition-colors p-1"
+                      className="text-[#94A3B8] hover:text-[#0B2545] transition-colors p-1"
                       title="More options"
                     >
                       <MoreHorizontal size={24} />
@@ -345,7 +345,7 @@ export function JournalNew() {
             <div className="space-y-5">
               {/* Title */}
               <div>
-                <label className="block text-sm font-semibold text-[#020817] mb-3">
+                <label className="block text-sm font-semibold text-[#0F172A] mb-3">
                   Title
                 </label>
                 <div className="relative">
@@ -354,7 +354,7 @@ export function JournalNew() {
                     placeholder="Give your entry a title..."
                     value={title}
                     onChange={(e) => setTitle(e.target.value)}
-                    className="w-full px-4 py-3 pr-20 bg-white border border-[#E2ECF5] rounded-xl text-[#020817] placeholder:text-[#94A3B8] focus:outline-none focus:ring-2 focus:ring-[#00c0ff] focus:border-transparent"
+                    className="w-full px-4 py-3 pr-20 bg-white border border-[#E5EAF0] rounded-xl text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:ring-2 focus:ring-[#13B5B1] focus:border-transparent"
                     maxLength={100}
                   />
                   <div className="absolute top-1/2 -translate-y-1/2 right-4 text-xs text-[#94A3B8] pointer-events-none">
@@ -365,7 +365,7 @@ export function JournalNew() {
 
               {/* Content */}
               <div>
-                <label className="block text-sm font-semibold text-[#020817] mb-3">
+                <label className="block text-sm font-semibold text-[#0F172A] mb-3">
                   What's on your mind?
                 </label>
                 <div className="relative">
@@ -374,7 +374,7 @@ export function JournalNew() {
                     value={content}
                     onChange={(e) => setContent(e.target.value)}
                     rows={12}
-                    className="w-full px-4 py-3 pb-8 bg-white border border-[#E2ECF5] rounded-xl text-[#020817] placeholder:text-[#94A3B8] focus:outline-none focus:ring-2 focus:ring-[#00c0ff] focus:border-transparent resize-none"
+                    className="w-full px-4 py-3 pb-8 bg-white border border-[#E5EAF0] rounded-xl text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:ring-2 focus:ring-[#13B5B1] focus:border-transparent resize-none"
                     maxLength={5000}
                   />
                   <div className="absolute bottom-[15px] right-4 text-xs text-[#94A3B8] pointer-events-none">
@@ -388,8 +388,8 @@ export function JournalNew() {
                 onClick={() => setShareWithProvider(!shareWithProvider)}
                 className={`flex items-center gap-2 px-4 py-2 rounded-xl border transition-all text-sm font-medium ${
                   shareWithProvider
-                    ? "bg-[#00c0ff] text-white border-[#00c0ff]"
-                    : "bg-white text-[#64748B] border-[#E2ECF5] hover:border-[#00c0ff]"
+                    ? "bg-[#13B5B1] text-white border-[#13B5B1]"
+                    : "bg-white text-[#64748B] border-[#E5EAF0] hover:border-[#13B5B1]"
                 }`}
               >
                 <Share2 size={16} />
@@ -405,8 +405,8 @@ export function JournalNew() {
                 disabled={!isFormValid}
                 className={`w-full py-4 rounded-xl font-semibold text-base transition-all flex items-center justify-center gap-2 ${
                   isFormValid
-                    ? "bg-[#043570] text-white hover:bg-[#032656] shadow-lg shadow-[#043570]/20"
-                    : "bg-[#E2ECF5] text-[#94A3B8] cursor-not-allowed"
+                    ? "bg-[#0B2545] text-white hover:bg-[#032656] shadow-lg shadow-[#0B2545]/20"
+                    : "bg-[#E5EAF0] text-[#94A3B8] cursor-not-allowed"
                 }`}
               >
                 <Save size={20} />
@@ -432,11 +432,11 @@ export function JournalNew() {
             className="bg-white rounded-2xl w-full max-w-[600px] max-h-[80vh] overflow-hidden shadow-2xl"
           >
             {/* Header */}
-            <div className="flex items-center justify-between px-6 py-4 border-b border-[#E2ECF5]">
-              <h2 className="text-xl font-bold text-[#020817]">Suggested Topics</h2>
+            <div className="flex items-center justify-between px-6 py-4 border-b border-[#E5EAF0]">
+              <h2 className="text-xl font-bold text-[#0F172A]">Suggested Topics</h2>
               <button
                 onClick={() => setShowSuggestionsModal(false)}
-                className="text-[#94A3B8] hover:text-[#043570] transition-colors p-1"
+                className="text-[#94A3B8] hover:text-[#0B2545] transition-colors p-1"
               >
                 <X size={24} />
               </button>
@@ -448,7 +448,7 @@ export function JournalNew() {
                 <div key={category.category}>
                   {/* Category Header */}
                   <div className="px-6 py-3 bg-[#F8FAFC]">
-                    <h3 className="text-base font-bold text-[#020817]">
+                    <h3 className="text-base font-bold text-[#0F172A]">
                       {category.category}
                     </h3>
                   </div>
@@ -459,9 +459,9 @@ export function JournalNew() {
                       <button
                         key={promptIndex}
                         onClick={() => handleSelectPrompt(prompt)}
-                        className="w-full px-6 py-4 flex items-start justify-between gap-4 hover:bg-[#f3faff] transition-colors group border-b border-[#F1F5F9] last:border-b-0"
+                        className="w-full px-6 py-4 flex items-start justify-between gap-4 hover:bg-[#F1F7F7] transition-colors group border-b border-[#F1F4F8] last:border-b-0"
                       >
-                        <span className="text-left text-sm text-[#020817] leading-relaxed flex-1">
+                        <span className="text-left text-sm text-[#0F172A] leading-relaxed flex-1">
                           {prompt}
                         </span>
                         <CheckCircle2 

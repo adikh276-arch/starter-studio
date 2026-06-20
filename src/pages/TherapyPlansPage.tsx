@@ -40,12 +40,12 @@ export function TherapyPlansPage() {
           <div className="mb-8">
             <button
               onClick={() => navigate("/plans")}
-              className="flex items-center gap-2 text-[#043570] hover:text-[#00c0ff] transition-colors mb-4"
+              className="flex items-center gap-2 text-[#0B2545] hover:text-[#13B5B1] transition-colors mb-4"
             >
               <ArrowLeft size={20} />
               <span className="font-medium">Back to Plans</span>
             </button>
-            <h1 className="text-3xl font-bold text-[#043570] text-center">
+            <h1 className="text-3xl font-bold text-[#0B2545] text-center">
               Choose the plan that works best for you
             </h1>
           </div>
@@ -63,8 +63,8 @@ export function TherapyPlansPage() {
                 onClick={() => setTherapyType("individual")}
                 className={`flex-1 py-3 px-6 rounded-xl font-semibold transition-all ${
                   therapyType === "individual"
-                    ? "text-[#00c0ff] border-b-4 border-[#00c0ff]"
-                    : "text-slate-500 hover:text-[#043570]"
+                    ? "text-[#13B5B1] border-b-4 border-[#13B5B1]"
+                    : "text-slate-500 hover:text-[#0B2545]"
                 }`}
               >
                 Individual
@@ -73,8 +73,8 @@ export function TherapyPlansPage() {
                 onClick={() => setTherapyType("couple")}
                 className={`flex-1 py-3 px-6 rounded-xl font-semibold transition-all ${
                   therapyType === "couple"
-                    ? "text-[#00c0ff] border-b-4 border-[#00c0ff]"
-                    : "text-slate-500 hover:text-[#043570]"
+                    ? "text-[#13B5B1] border-b-4 border-[#13B5B1]"
+                    : "text-slate-500 hover:text-[#0B2545]"
                 }`}
               >
                 Couple
@@ -87,7 +87,7 @@ export function TherapyPlansPage() {
                 onClick={() => setSessionMode("live")}
                 className={`flex-1 py-3 px-6 rounded-xl font-semibold transition-all ${
                   sessionMode === "live"
-                    ? "bg-gradient-to-r from-[#00c0ff] to-[#043570] text-white shadow-lg"
+                    ? "bg-gradient-to-r from-[#13B5B1] to-[#0B2545] text-white shadow-lg"
                     : "bg-slate-100 text-slate-600 hover:bg-slate-200"
                 }`}
               >
@@ -97,7 +97,7 @@ export function TherapyPlansPage() {
                 onClick={() => setSessionMode("chat")}
                 className={`flex-1 py-3 px-6 rounded-xl font-semibold transition-all ${
                   sessionMode === "chat"
-                    ? "bg-gradient-to-r from-[#00c0ff] to-[#043570] text-white shadow-lg"
+                    ? "bg-gradient-to-r from-[#13B5B1] to-[#0B2545] text-white shadow-lg"
                     : "bg-slate-100 text-slate-600 hover:bg-slate-200"
                 }`}
               >
@@ -109,7 +109,7 @@ export function TherapyPlansPage() {
             <div className="mb-6">
               <div className="flex items-start gap-4 mb-6">
                 {/* Icon */}
-                <div className="w-14 h-14 bg-gradient-to-br from-[#00c0ff] to-[#043570] rounded-2xl flex items-center justify-center flex-shrink-0">
+                <div className="w-14 h-14 bg-gradient-to-br from-[#13B5B1] to-[#0B2545] rounded-2xl flex items-center justify-center flex-shrink-0">
                   {sessionMode === "live" ? (
                     <Video size={28} className="text-white" />
                   ) : (
@@ -119,7 +119,7 @@ export function TherapyPlansPage() {
 
                 {/* Title & Price */}
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold text-[#043570] mb-1">
+                  <h2 className="text-2xl font-bold text-[#0B2545] mb-1">
                     Therapy
                   </h2>
                   <p className="text-sm text-slate-600">1 Video session</p>
@@ -138,13 +138,13 @@ export function TherapyPlansPage() {
               </div>
 
               {/* Features */}
-              <div className="space-y-3 bg-[#f3faff] rounded-xl p-5 border border-[#00c0ff]/20">
+              <div className="space-y-3 bg-[#F1F7F7] rounded-xl p-5 border border-[#13B5B1]/20">
                 {features.map((feature, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                       <Check size={14} className="text-white" strokeWidth={3} />
                     </div>
-                    <p className="text-sm text-[#043570] font-medium">
+                    <p className="text-sm text-[#0B2545] font-medium">
                       {feature}
                     </p>
                   </div>
@@ -159,7 +159,7 @@ export function TherapyPlansPage() {
                   onClick={() => setSelectedDuration("trial")}
                   className={`py-3 px-4 rounded-xl font-semibold text-sm transition-all ${
                     selectedDuration === "trial"
-                      ? "bg-gradient-to-r from-[#00c0ff] to-[#043570] text-white shadow-md"
+                      ? "bg-gradient-to-r from-[#13B5B1] to-[#0B2545] text-white shadow-md"
                       : "bg-slate-100 text-slate-700 hover:bg-slate-200"
                   }`}
                 >
@@ -169,7 +169,7 @@ export function TherapyPlansPage() {
                   onClick={() => setSelectedDuration("1month")}
                   className={`py-3 px-4 rounded-xl font-semibold text-sm transition-all ${
                     selectedDuration === "1month"
-                      ? "bg-slate-200 text-[#043570] shadow-md border-2 border-[#00c0ff]"
+                      ? "bg-slate-200 text-[#0B2545] shadow-md border-2 border-[#13B5B1]"
                       : "bg-slate-100 text-slate-700 hover:bg-slate-200"
                   }`}
                 >
@@ -179,7 +179,7 @@ export function TherapyPlansPage() {
                   onClick={() => setSelectedDuration("3months")}
                   className={`py-3 px-4 rounded-xl font-semibold text-sm transition-all ${
                     selectedDuration === "3months"
-                      ? "bg-slate-200 text-[#043570] shadow-md border-2 border-[#00c0ff]"
+                      ? "bg-slate-200 text-[#0B2545] shadow-md border-2 border-[#13B5B1]"
                       : "bg-slate-100 text-slate-700 hover:bg-slate-200"
                   }`}
                 >
@@ -189,7 +189,7 @@ export function TherapyPlansPage() {
                   onClick={() => setSelectedDuration("6months")}
                   className={`py-3 px-4 rounded-xl font-semibold text-sm transition-all ${
                     selectedDuration === "6months"
-                      ? "bg-slate-200 text-[#043570] shadow-md border-2 border-[#00c0ff]"
+                      ? "bg-slate-200 text-[#0B2545] shadow-md border-2 border-[#13B5B1]"
                       : "bg-slate-100 text-slate-700 hover:bg-slate-200"
                   }`}
                 >
@@ -202,13 +202,13 @@ export function TherapyPlansPage() {
             <div className="flex gap-3 mb-6">
               <button
                 onClick={handleProceedToPay}
-                className="flex-1 py-4 px-6 bg-gradient-to-r from-[#043570] to-[#2563EB] hover:from-[#032a56] hover:to-[#1d4ed8] text-white rounded-xl font-semibold transition-all shadow-lg hover:shadow-xl"
+                className="flex-1 py-4 px-6 bg-gradient-to-r from-[#0B2545] to-[#2563EB] hover:from-[#032a56] hover:to-[#1d4ed8] text-white rounded-xl font-semibold transition-all shadow-lg hover:shadow-xl"
               >
                 Proceed to Pay
               </button>
               <button
                 onClick={handlePayViaInsurance}
-                className="flex-1 py-4 px-6 bg-white border-2 border-[#00c0ff] text-[#00c0ff] hover:bg-[#f3faff] rounded-xl font-semibold transition-all"
+                className="flex-1 py-4 px-6 bg-white border-2 border-[#13B5B1] text-[#13B5B1] hover:bg-[#F1F7F7] rounded-xl font-semibold transition-all"
               >
                 Pay via Insurance
               </button>
@@ -218,7 +218,7 @@ export function TherapyPlansPage() {
             <div className="text-center">
               <a
                 href="#"
-                className="text-sm text-[#00c0ff] hover:text-[#043570] font-medium transition-colors"
+                className="text-sm text-[#13B5B1] hover:text-[#0B2545] font-medium transition-colors"
               >
                 Can't afford? Try Therapy Interns or Request Financial Aid
               </a>

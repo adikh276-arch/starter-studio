@@ -38,7 +38,7 @@ export function CheckoutPage() {
           {/* Back Button */}
           <button
             onClick={() => navigate(-1)}
-            className="flex items-center gap-2 text-[#043570] hover:text-[#00c0ff] transition-colors mb-6"
+            className="flex items-center gap-2 text-[#0B2545] hover:text-[#13B5B1] transition-colors mb-6"
           >
             <ArrowLeft size={20} />
             <span className="font-medium">Back</span>
@@ -46,18 +46,18 @@ export function CheckoutPage() {
 
           <div className="max-w-[600px] mx-auto">
             {/* Page Title */}
-            <h1 className="text-3xl font-bold text-[#043570] text-center mb-8">
+            <h1 className="text-3xl font-bold text-[#0B2545] text-center mb-8">
               Checkout
             </h1>
 
             {/* Checkout Card */}
             <div className="bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden">
               {/* Plan Header */}
-              <div className="bg-gradient-to-r from-[#043570] to-[#00c0ff] p-6">
+              <div className="bg-gradient-to-r from-[#0B2545] to-[#13B5B1] p-6">
                 <div className="flex items-start justify-between">
                   <div className="flex items-start gap-4">
                     <div className="w-6 h-6 bg-white rounded flex items-center justify-center flex-shrink-0 mt-1">
-                      <Check size={16} className="text-[#00c0ff]" />
+                      <Check size={16} className="text-[#13B5B1]" />
                     </div>
                     <div>
                       <h2 className="text-xl font-bold text-white mb-1">
@@ -79,7 +79,7 @@ export function CheckoutPage() {
                 <ul className="space-y-3">
                   {planDetails.features.map((feature, index) => (
                     <li key={index} className="flex items-start gap-3">
-                      <div className="w-1.5 h-1.5 rounded-full bg-[#00c0ff] mt-2 flex-shrink-0" />
+                      <div className="w-1.5 h-1.5 rounded-full bg-[#13B5B1] mt-2 flex-shrink-0" />
                       <span className="text-slate-700 text-sm leading-relaxed">
                         {feature}
                       </span>
@@ -89,11 +89,11 @@ export function CheckoutPage() {
               </div>
 
               {/* Coupon Section */}
-              <div className="px-6 py-4 bg-[#f3faff] border-b border-slate-200">
+              <div className="px-6 py-4 bg-[#F1F7F7] border-b border-slate-200">
                 {!showCouponInput ? (
                   <button
                     onClick={() => setShowCouponInput(true)}
-                    className="text-[#00c0ff] hover:text-[#043570] font-medium text-sm transition-colors"
+                    className="text-[#13B5B1] hover:text-[#0B2545] font-medium text-sm transition-colors"
                   >
                     I have a coupon?
                   </button>
@@ -104,9 +104,9 @@ export function CheckoutPage() {
                       value={couponCode}
                       onChange={(e) => setCouponCode(e.target.value)}
                       placeholder="Enter coupon code"
-                      className="flex-1 px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00c0ff] text-sm"
+                      className="flex-1 px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#13B5B1] text-sm"
                     />
-                    <button className="px-4 py-2 bg-[#00c0ff] hover:bg-[#043570] text-white rounded-lg transition-colors text-sm font-medium">
+                    <button className="px-4 py-2 bg-[#13B5B1] hover:bg-[#0B2545] text-white rounded-lg transition-colors text-sm font-medium">
                       Apply
                     </button>
                   </div>
@@ -121,13 +121,13 @@ export function CheckoutPage() {
                 </div>
                 <div className="flex items-center justify-between text-slate-700">
                   <span className="font-medium">Pay Via Insurance:</span>
-                  <span className="font-semibold text-[#00c0ff]">
+                  <span className="font-semibold text-[#13B5B1]">
                     ${insuranceAmount}
                   </span>
                 </div>
                 <div className="h-px bg-slate-200" />
                 <div className="flex items-center justify-between">
-                  <span className="text-lg font-bold text-[#043570]">
+                  <span className="text-lg font-bold text-[#0B2545]">
                     Payable:
                   </span>
                   <span className="text-2xl font-bold text-green-600">
@@ -138,7 +138,7 @@ export function CheckoutPage() {
 
               {/* Proceed Button */}
               <div className="p-6 pt-0">
-                <button className="w-full py-4 bg-gradient-to-r from-[#00c0ff] to-[#043570] hover:from-[#043570] hover:to-[#00c0ff] text-white rounded-xl font-bold text-lg transition-all shadow-lg hover:shadow-xl">
+                <button className="w-full py-4 bg-gradient-to-r from-[#13B5B1] to-[#0B2545] hover:from-[#0B2545] hover:to-[#13B5B1] text-white rounded-xl font-bold text-lg transition-all shadow-lg hover:shadow-xl">
                   Proceed to payment
                 </button>
               </div>
@@ -149,7 +149,7 @@ export function CheckoutPage() {
               <p className="text-slate-600 text-sm mb-2">
                 Have questions about your plan or insurance coverage?
               </p>
-              <button className="text-[#00c0ff] hover:text-[#043570] font-semibold text-sm transition-colors">
+              <button className="text-[#13B5B1] hover:text-[#0B2545] font-semibold text-sm transition-colors">
                 Contact Support →
               </button>
             </div>

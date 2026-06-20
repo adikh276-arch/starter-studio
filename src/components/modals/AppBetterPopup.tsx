@@ -30,10 +30,10 @@ export function AppBetterPopup({ onClose }: AppBetterPopupProps) {
   };
 
   const features = [
-    { icon: Heart, label: "Selfcare", color: "text-[#1E293B] bg-[#E8F4FD]" },
-    { icon: Brain, label: "AI Coach", color: "text-[#1E293B] bg-[#E8F4FD]" },
-    { icon: Calendar, label: "Booking", color: "text-[#1E293B] bg-[#E8F4FD]" },
-    { icon: Zap, label: "Trackers", color: "text-[#1E293B] bg-[#E8F4FD]" },
+    { icon: Heart, label: "Selfcare", color: "text-[#0F172A] bg-[#E8F4FD]" },
+    { icon: Brain, label: "AI Coach", color: "text-[#0F172A] bg-[#E8F4FD]" },
+    { icon: Calendar, label: "Booking", color: "text-[#0F172A] bg-[#E8F4FD]" },
+    { icon: Zap, label: "Trackers", color: "text-[#0F172A] bg-[#E8F4FD]" },
   ];
 
   return (
@@ -63,10 +63,10 @@ export function AppBetterPopup({ onClose }: AppBetterPopupProps) {
             </button>
 
             {/* Header with Simple Background */}
-            <div className="relative bg-gradient-to-b from-[#E8F4FD] to-white p-6 text-center overflow-hidden border-b border-[#E2ECF5]">
+            <div className="relative bg-gradient-to-b from-[#E8F4FD] to-white p-6 text-center overflow-hidden border-b border-[#E5EAF0]">
               {/* Decorative Background Elements */}
               <div className="absolute inset-0 opacity-20">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-[#E2ECF5] rounded-full blur-3xl"></div>
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[#E5EAF0] rounded-full blur-3xl"></div>
                 <div className="absolute bottom-0 left-0 w-24 h-24 bg-[#E8F4FD] rounded-full blur-2xl"></div>
               </div>
 
@@ -76,13 +76,13 @@ export function AppBetterPopup({ onClose }: AppBetterPopupProps) {
                 animate={{ scale: 1, rotate: 0 }}
                 transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
               >
-                <div className="w-16 h-16 bg-white backdrop-blur-sm border border-[#E2E8F0] rounded-2xl flex items-center justify-center mx-auto mb-3 shadow-lg">
+                <div className="w-16 h-16 bg-white backdrop-blur-sm border border-[#E5EAF0] rounded-2xl flex items-center justify-center mx-auto mb-3 shadow-lg">
                   <Smartphone className="text-[#2196F3]" size={32} />
                 </div>
               </motion.div>
 
               <motion.h2 
-                className="text-2xl font-bold text-[#020817] mb-1"
+                className="text-2xl font-bold text-[#0F172A] mb-1"
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4 }}
@@ -150,7 +150,7 @@ export function AppBetterPopup({ onClose }: AppBetterPopupProps) {
 
               {/* Actions */}
               <motion.div 
-                className="space-y-1.5 text-center border-t border-[#E2ECF5] pt-3"
+                className="space-y-1.5 text-center border-t border-[#E5EAF0] pt-3"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.9 }}
@@ -159,7 +159,7 @@ export function AppBetterPopup({ onClose }: AppBetterPopupProps) {
                   onClick={handleMaybeLater}
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="w-full text-[#64748B] hover:text-[#020817] font-medium transition-colors px-4 py-2 rounded-xl hover:bg-[#E8F4FD] text-sm"
+                  className="w-full text-[#64748B] hover:text-[#0F172A] font-medium transition-colors px-4 py-2 rounded-xl hover:bg-[#E8F4FD] text-sm"
                 >
                   Maybe Later
                 </motion.button>

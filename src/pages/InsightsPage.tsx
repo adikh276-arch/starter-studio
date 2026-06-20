@@ -122,8 +122,8 @@ export function InsightsPage() {
             className="mb-6"
           >
             <div className="flex items-center gap-3 mb-2">
-              <div className="w-10 h-10 bg-[#F1F5F9] rounded-md flex items-center justify-center flex-shrink-0 self-center">
-                <BarChart3 size={20} className="text-[#1E293B]" strokeWidth={2} />
+              <div className="w-10 h-10 bg-[#F1F4F8] rounded-md flex items-center justify-center flex-shrink-0 self-center">
+                <BarChart3 size={20} className="text-[#0F172A]" strokeWidth={2} />
               </div>
               <div>
                 <h1 className="text-2xl text-[#0f172b] font-medium">Insights</h1>
@@ -137,7 +137,7 @@ export function InsightsPage() {
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.35, delay: 0.05 }}
-            className="flex gap-4 mb-4 overflow-x-auto scrollbar-hide border-b border-[#E2ECF5]"
+            className="flex gap-4 mb-4 overflow-x-auto scrollbar-hide border-b border-[#E5EAF0]"
           >
             {(["Therapy", "Addiction Treatment", "Coach"] as ServiceTab[]).map((tab) => (
               <button
@@ -145,15 +145,15 @@ export function InsightsPage() {
                 onClick={() => setServiceTab(tab)}
                 className={`relative pb-3 text-sm whitespace-nowrap transition-colors ${
                   serviceTab === tab 
-                    ? "text-[#00c0ff] font-medium" 
-                    : "text-[#64748B] hover:text-[#020817]"
+                    ? "text-[#13B5B1] font-medium" 
+                    : "text-[#64748B] hover:text-[#0F172A]"
                 }`}
               >
                 {tab}
                 {serviceTab === tab && (
                   <motion.div
                     layoutId="service-tab-indicator"
-                    className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#00c0ff]"
+                    className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#13B5B1]"
                     transition={{ type: "spring", stiffness: 400, damping: 30 }}
                   />
                 )}
@@ -174,8 +174,8 @@ export function InsightsPage() {
                 onClick={() => setViewMode("Charts")}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
                   viewMode === "Charts"
-                    ? "bg-[#00c0ff] text-white shadow-md"
-                    : "bg-white text-[#64748B] border border-[#E2ECF5] hover:border-[#00c0ff]"
+                    ? "bg-[#13B5B1] text-white shadow-md"
+                    : "bg-white text-[#64748B] border border-[#E5EAF0] hover:border-[#13B5B1]"
                 }`}
               >
                 Charts
@@ -184,8 +184,8 @@ export function InsightsPage() {
                 onClick={() => setViewMode("Entries")}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
                   viewMode === "Entries"
-                    ? "bg-[#00c0ff] text-white shadow-md"
-                    : "bg-white text-[#64748B] border border-[#E2ECF5] hover:border-[#00c0ff]"
+                    ? "bg-[#13B5B1] text-white shadow-md"
+                    : "bg-white text-[#64748B] border border-[#E5EAF0] hover:border-[#13B5B1]"
                 }`}
               >
                 Entries
@@ -197,7 +197,7 @@ export function InsightsPage() {
               <div className="relative">
                 <button
                   onClick={() => setShowTimeDropdown(!showTimeDropdown)}
-                  className="flex items-center gap-2 bg-white border border-[#E2ECF5] rounded-lg px-3 py-2 text-sm text-[#020817] hover:border-[#00c0ff] transition-colors font-medium"
+                  className="flex items-center gap-2 bg-white border border-[#E5EAF0] rounded-lg px-3 py-2 text-sm text-[#0F172A] hover:border-[#13B5B1] transition-colors font-medium"
                 >
                   {timeRange}
                   <ChevronDown size={14} className="text-[#64748B]" />
@@ -209,7 +209,7 @@ export function InsightsPage() {
                       animate={{ opacity: 1, y: 0, scale: 1 }}
                       exit={{ opacity: 0, y: 6, scale: 0.97 }}
                       transition={{ duration: 0.15 }}
-                      className="absolute right-0 top-full mt-1.5 bg-white border border-[#E2ECF5] rounded-xl shadow-lg z-20 overflow-hidden min-w-[120px]"
+                      className="absolute right-0 top-full mt-1.5 bg-white border border-[#E5EAF0] rounded-xl shadow-lg z-20 overflow-hidden min-w-[120px]"
                     >
                       {["Week", "Month", "3 Months"].map((range) => (
                         <button
@@ -220,7 +220,7 @@ export function InsightsPage() {
                           }}
                           className={`w-full text-left px-4 py-2.5 text-sm transition-colors ${
                             timeRange === range
-                              ? "bg-[#f3faff] text-[#00c0ff] font-medium"
+                              ? "bg-[#F1F7F7] text-[#13B5B1] font-medium"
                               : "text-[#64748B] hover:bg-[#F8FAFC]"
                           }`}
                         >
@@ -244,12 +244,12 @@ export function InsightsPage() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
                 transition={{ duration: 0.3 }}
-                className="bg-white rounded-2xl border border-[#E2ECF5] shadow-sm p-12 md:p-16 flex flex-col items-center justify-center text-center"
+                className="bg-white rounded-2xl border border-[#E5EAF0] shadow-sm p-12 md:p-16 flex flex-col items-center justify-center text-center"
               >
                 <div className="w-20 h-20 bg-[#E0F2FE] rounded-2xl flex items-center justify-center mb-6">
                   <BarChart3 size={40} className="text-[#0284c7]" strokeWidth={2} />
                 </div>
-                <h3 className="text-xl font-semibold text-[#043570] mb-3">No Data Available</h3>
+                <h3 className="text-xl font-semibold text-[#0B2545] mb-3">No Data Available</h3>
                 <p className="text-[#64748B] text-base mb-6 max-w-md">
                   Start taking assessments to generate personalized insights and track your wellness journey
                 </p>
@@ -257,7 +257,7 @@ export function InsightsPage() {
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   onClick={() => setShowMobileAppModal(true)}
-                  className="bg-[#043570] text-white px-6 py-3 rounded-lg text-sm font-medium hover:bg-[#032656] transition-colors shadow-sm"
+                  className="bg-[#0B2545] text-white px-6 py-3 rounded-lg text-sm font-medium hover:bg-[#032656] transition-colors shadow-sm"
                 >
                   Start Assessment
                 </motion.button>
@@ -282,10 +282,10 @@ export function InsightsPage() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
                 transition={{ duration: 0.3 }}
-                className="bg-white rounded-2xl overflow-hidden border border-[#E2ECF5] shadow-sm"
+                className="bg-white rounded-2xl overflow-hidden border border-[#E5EAF0] shadow-sm"
               >
                 {/* Table Header */}
-                <div className="bg-gradient-to-r from-[#00c0ff] to-[#0EA5E9] px-6 py-4 flex items-center">
+                <div className="bg-gradient-to-r from-[#13B5B1] to-[#0EA5E9] px-6 py-4 flex items-center">
                   <div className="flex-1 text-white text-sm font-semibold">Date</div>
                   <div className="flex-1 text-white text-sm font-semibold">Assessment</div>
                   <div className="w-24 text-white text-sm font-semibold">Share</div>
@@ -293,18 +293,18 @@ export function InsightsPage() {
                 </div>
 
                 {/* Table Body */}
-                <div className="divide-y divide-[#E2ECF5]">
+                <div className="divide-y divide-[#E5EAF0]">
                   {ENTRIES.map((entry, idx) => (
                     <motion.div
                       key={entry.id}
                       initial={{ opacity: 0, x: -8 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.25, delay: idx * 0.03 }}
-                      className="px-6 py-4 flex items-center hover:bg-[#f3faff] transition-all group"
+                      className="px-6 py-4 flex items-center hover:bg-[#F1F7F7] transition-all group"
                     >
-                      <div className="flex-1 text-sm text-[#020817] font-medium">{entry.date}</div>
+                      <div className="flex-1 text-sm text-[#0F172A] font-medium">{entry.date}</div>
                       <div className="flex-1">
-                        <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-[#f3faff] text-[#043570] border border-[#E2ECF5]">
+                        <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-[#F1F7F7] text-[#0B2545] border border-[#E5EAF0]">
                           {entry.assessment}
                         </span>
                       </div>
@@ -326,7 +326,7 @@ export function InsightsPage() {
                       <div className="w-32 flex items-center gap-3">
                         {/* View (Eye Icon) */}
                         <button 
-                          className="p-1.5 text-[#64748B] hover:text-[#00c0ff] hover:bg-[#f3faff] rounded-lg transition-all"
+                          className="p-1.5 text-[#64748B] hover:text-[#13B5B1] hover:bg-[#F1F7F7] rounded-lg transition-all"
                           title="View entry"
                         >
                           <Eye size={18} />
@@ -352,7 +352,7 @@ export function InsightsPage() {
 
                 {/* Pagination or Info Footer */}
                 {ENTRIES.length > 0 && (
-                  <div className="px-6 py-4 border-t border-[#E2ECF5] bg-[#F8FAFC]">
+                  <div className="px-6 py-4 border-t border-[#E5EAF0] bg-[#F8FAFC]">
                     <p className="text-xs text-[#64748B]">
                       Showing {ENTRIES.length} {ENTRIES.length === 1 ? 'entry' : 'entries'}
                     </p>
@@ -380,19 +380,19 @@ function ChartCard({ metric, index }: { metric: ChartMetric; index: number }) {
       initial={{ opacity: 0, y: 16 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.35, delay: index * 0.08 }}
-      className="bg-white border border-[#E2ECF5] rounded-2xl p-4 md:p-5 shadow-sm"
+      className="bg-white border border-[#E5EAF0] rounded-2xl p-4 md:p-5 shadow-sm"
     >
       {/* Header */}
       <div className="flex items-start justify-between mb-4">
         <div className="flex-1">
-          <h3 className="text-base font-semibold text-[#020817] mb-1">{metric.title}</h3>
+          <h3 className="text-base font-semibold text-[#0F172A] mb-1">{metric.title}</h3>
           <div className="space-y-0.5">
             {metric.subtitle.split('\n').map((line, i) => (
               <p key={i} className="text-xs text-[#64748B]">{line}</p>
             ))}
           </div>
         </div>
-        <button className="w-5 h-5 flex items-center justify-center text-[#64748B] hover:text-[#00c0ff] transition-colors">
+        <button className="w-5 h-5 flex items-center justify-center text-[#64748B] hover:text-[#13B5B1] transition-colors">
           <Info size={16} />
         </button>
       </div>
@@ -404,7 +404,7 @@ function ChartCard({ metric, index }: { metric: ChartMetric; index: number }) {
             {/* Grid lines */}
             <div className="absolute inset-0 flex flex-col justify-between">
               {[...Array(5)].map((_, i) => (
-                <div key={i} className="border-t border-[#E2ECF5]" />
+                <div key={i} className="border-t border-[#E5EAF0]" />
               ))}
             </div>
 
@@ -421,7 +421,7 @@ function ChartCard({ metric, index }: { metric: ChartMetric; index: number }) {
             <div className="absolute inset-0 flex items-center justify-center pl-8">
               <div className="relative">
                 <div className="w-3 h-3 bg-[#2563EB] rounded-full" />
-                <div className="absolute -top-6 left-1/2 -translate-x-1/2 text-xs font-semibold text-[#020817] whitespace-nowrap">
+                <div className="absolute -top-6 left-1/2 -translate-x-1/2 text-xs font-semibold text-[#0F172A] whitespace-nowrap">
                   {metric.data[0].value.toFixed(1)}
                 </div>
               </div>
@@ -439,14 +439,14 @@ function ChartCard({ metric, index }: { metric: ChartMetric; index: number }) {
           </div>
 
           {/* Date Navigation */}
-          <div className="flex items-center justify-center gap-4 pt-6 border-t border-[#E2ECF5]">
-            <button className="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-[#f3faff] text-[#64748B] hover:text-[#00c0ff] transition-colors">
+          <div className="flex items-center justify-center gap-4 pt-6 border-t border-[#E5EAF0]">
+            <button className="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-[#F1F7F7] text-[#64748B] hover:text-[#13B5B1] transition-colors">
               <ChevronLeft size={18} />
             </button>
-            <span className="text-sm text-[#020817] font-medium min-w-[140px] text-center">
+            <span className="text-sm text-[#0F172A] font-medium min-w-[140px] text-center">
               {metric.dateRange}
             </span>
-            <button className="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-[#f3faff] text-[#64748B] hover:text-[#00c0ff] transition-colors">
+            <button className="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-[#F1F7F7] text-[#64748B] hover:text-[#13B5B1] transition-colors">
               <ChevronRight size={18} />
             </button>
           </div>

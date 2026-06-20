@@ -172,17 +172,17 @@ export function SwitchExpertModal({ isOpen, onClose, currentExpertRole, onExpert
           {/* Scrollable Content Wrapper for Mobile */}
           <div className="flex flex-col flex-1 overflow-y-auto md:overflow-hidden">
           {/* Header */}
-          <div className="bg-white border-b border-[#E2ECF5] px-6 py-4 md:sticky md:top-0 md:z-10">
+          <div className="bg-white border-b border-[#E5EAF0] px-6 py-4 md:sticky md:top-0 md:z-10">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
               <div className="flex items-center gap-3">
                 <button
                   onClick={onClose}
-                  className="w-9 h-9 rounded-xl flex items-center justify-center transition-colors flex-shrink-0 text-[#64748B] hover:text-[#020817] hover:bg-[#f3faff]"
+                  className="w-9 h-9 rounded-xl flex items-center justify-center transition-colors flex-shrink-0 text-[#64748B] hover:text-[#0F172A] hover:bg-[#F1F7F7]"
                 >
                   <ChevronLeft size={24} />
                 </button>
                 <div>
-                  <h2 className="text-xl font-semibold text-[#020817]">Choose Expert</h2>
+                  <h2 className="text-xl font-semibold text-[#0F172A]">Choose Expert</h2>
                   <p className="text-sm text-[#64748B] mt-0.5">
                     Here's a list of psychologists ranked based on your preferences. You may use our auto matching (recommended) or manually send invites.
                   </p>
@@ -191,7 +191,7 @@ export function SwitchExpertModal({ isOpen, onClose, currentExpertRole, onExpert
               <div className="flex justify-end md:justify-start">
                 <button
                   onClick={handlePreferencesClick}
-                  className="flex items-center gap-2 px-4 py-2 border border-[#E2ECF5] rounded-lg text-sm font-medium text-[#043570] hover:bg-[#f3faff] transition-colors"
+                  className="flex items-center gap-2 px-4 py-2 border border-[#E5EAF0] rounded-lg text-sm font-medium text-[#0B2545] hover:bg-[#F1F7F7] transition-colors"
                 >
                   <Settings size={16} />
                   Preferences
@@ -204,7 +204,7 @@ export function SwitchExpertModal({ isOpen, onClose, currentExpertRole, onExpert
               <button
                 onClick={() => setAutoMatching(!autoMatching)}
                 className={`relative w-11 h-6 rounded-full transition-colors ${
-                  autoMatching ? "bg-[#00c0ff]" : "bg-[#E2ECF5]"
+                  autoMatching ? "bg-[#13B5B1]" : "bg-[#E5EAF0]"
                 }`}
               >
                 <motion.div
@@ -215,7 +215,7 @@ export function SwitchExpertModal({ isOpen, onClose, currentExpertRole, onExpert
                 />
               </button>
               <div className="flex items-center gap-2">
-                <span className="text-sm font-medium text-[#043570]">Auto Matching</span>
+                <span className="text-sm font-medium text-[#0B2545]">Auto Matching</span>
                 {autoMatching && (
                   <motion.div
                     initial={{ scale: 0, rotate: 0 }}
@@ -232,7 +232,7 @@ export function SwitchExpertModal({ isOpen, onClose, currentExpertRole, onExpert
                       }
                     }}
                   >
-                    <RefreshCw size={16} className="text-[#00c0ff]" />
+                    <RefreshCw size={16} className="text-[#13B5B1]" />
                   </motion.div>
                 )}
               </div>
@@ -247,15 +247,15 @@ export function SwitchExpertModal({ isOpen, onClose, currentExpertRole, onExpert
                   animate={{ opacity: 1, height: "auto" }}
                   exit={{ opacity: 0, height: 0 }}
                   transition={{ duration: 0.2 }}
-                  className="mt-3 px-4 py-3 bg-[#f3faff] border border-[#E2ECF5] rounded-lg"
+                  className="mt-3 px-4 py-3 bg-[#F1F7F7] border border-[#E5EAF0] rounded-lg"
                 >
                   <div className="flex items-center justify-between gap-4">
-                    <p className="text-sm text-[#043570]">
+                    <p className="text-sm text-[#0B2545]">
                       Hold tight! We'll match you with a provider within 24 hours. Meanwhile, please complete these tasks.
                     </p>
                     <button
                       onClick={() => navigate('/tasks')}
-                      className="flex items-center gap-1 text-sm text-[#00c0ff] hover:text-[#0284c7] font-medium whitespace-nowrap transition-colors"
+                      className="flex items-center gap-1 text-sm text-[#13B5B1] hover:text-[#0284c7] font-medium whitespace-nowrap transition-colors"
                     >
                       Tasks
                       <ChevronRight size={16} />
@@ -300,7 +300,7 @@ export function SwitchExpertModal({ isOpen, onClose, currentExpertRole, onExpert
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3 }}
-                    className="bg-white border border-[#E2ECF5] rounded-2xl p-5 hover:border-[#00c0ff]/30 hover:shadow-md transition-all"
+                    className="bg-white border border-[#E5EAF0] rounded-2xl p-5 hover:border-[#13B5B1]/30 hover:shadow-md transition-all"
                   >
                     {/* Expert Header */}
                     <div className="flex items-start gap-4 mb-4">
@@ -316,10 +316,10 @@ export function SwitchExpertModal({ isOpen, onClose, currentExpertRole, onExpert
                       </div>
                       <div className="flex-1 min-w-0">
                         <div className="flex items-start justify-between gap-2 mb-1">
-                          <h3 className="text-base font-semibold text-[#020817]">{expert.name}</h3>
-                          <div className="flex items-center gap-1 bg-[#f3faff] px-2 py-1 rounded-lg flex-shrink-0">
-                            <Star size={14} className="text-[#00c0ff] fill-[#00c0ff]" />
-                            <span className="text-xs font-semibold text-[#043570]">{expert.rating}</span>
+                          <h3 className="text-base font-semibold text-[#0F172A]">{expert.name}</h3>
+                          <div className="flex items-center gap-1 bg-[#F1F7F7] px-2 py-1 rounded-lg flex-shrink-0">
+                            <Star size={14} className="text-[#13B5B1] fill-[#13B5B1]" />
+                            <span className="text-xs font-semibold text-[#0B2545]">{expert.rating}</span>
                             <span className="text-xs text-[#64748B]">({expert.totalReviews})</span>
                           </div>
                         </div>
@@ -329,7 +329,7 @@ export function SwitchExpertModal({ isOpen, onClose, currentExpertRole, onExpert
                           <span className="truncate">{expert.location}</span>
                         </div>
                         {expert.status === "offline" && (
-                          <span className="inline-block text-xs text-[#64748B] bg-[#F1F5F9] px-2 py-0.5 rounded">
+                          <span className="inline-block text-xs text-[#64748B] bg-[#F1F4F8] px-2 py-0.5 rounded">
                             Offline
                           </span>
                         )}
@@ -342,7 +342,7 @@ export function SwitchExpertModal({ isOpen, onClose, currentExpertRole, onExpert
                     </div>
 
                     {/* Description */}
-                    <p className="text-sm text-[#020817] leading-relaxed mb-4 line-clamp-3">
+                    <p className="text-sm text-[#0F172A] leading-relaxed mb-4 line-clamp-3">
                       {expert.description}
                     </p>
 
@@ -351,13 +351,13 @@ export function SwitchExpertModal({ isOpen, onClose, currentExpertRole, onExpert
                       {expert.specialties.slice(0, 8).map((specialty, index) => (
                         <span
                           key={index}
-                          className="text-xs px-2.5 py-1 bg-[#f3faff] text-[#043570] rounded-lg border border-[#E2ECF5]"
+                          className="text-xs px-2.5 py-1 bg-[#F1F7F7] text-[#0B2545] rounded-lg border border-[#E5EAF0]"
                         >
                           {specialty}
                         </span>
                       ))}
                       {expert.specialties.length > 8 && (
-                        <span className="text-xs px-2.5 py-1 bg-[#f3faff] text-[#00c0ff] rounded-lg border border-[#00c0ff]/20 font-medium">
+                        <span className="text-xs px-2.5 py-1 bg-[#F1F7F7] text-[#13B5B1] rounded-lg border border-[#13B5B1]/20 font-medium">
                           +{expert.specialties.length - 8} more
                         </span>
                       )}
@@ -367,7 +367,7 @@ export function SwitchExpertModal({ isOpen, onClose, currentExpertRole, onExpert
                     <div className="flex items-center gap-3 mb-4">
                       <button
                         onClick={() => handleViewProfile(expert.id)}
-                        className="flex-1 px-4 py-2.5 border border-[#E2ECF5] rounded-lg text-sm font-medium text-[#043570] hover:bg-[#f3faff] transition-colors"
+                        className="flex-1 px-4 py-2.5 border border-[#E5EAF0] rounded-lg text-sm font-medium text-[#0B2545] hover:bg-[#F1F7F7] transition-colors"
                       >
                         View profile
                       </button>
@@ -376,8 +376,8 @@ export function SwitchExpertModal({ isOpen, onClose, currentExpertRole, onExpert
                         disabled={isInvited}
                         className={`flex-1 px-4 py-2.5 rounded-lg text-sm font-medium transition-colors ${
                           isInvited
-                            ? "bg-[#f3faff] text-[#64748B] cursor-not-allowed border border-[#E2ECF5]"
-                            : "bg-[#043570] text-white hover:bg-[#032656]"
+                            ? "bg-[#F1F7F7] text-[#64748B] cursor-not-allowed border border-[#E5EAF0]"
+                            : "bg-[#0B2545] text-white hover:bg-[#032656]"
                         }`}
                       >
                         {isInvited ? (
@@ -392,7 +392,7 @@ export function SwitchExpertModal({ isOpen, onClose, currentExpertRole, onExpert
                     </div>
 
                     {/* Footer Info */}
-                    <div className="flex items-center justify-between text-xs text-[#64748B] pt-3 border-t border-[#E2ECF5]">
+                    <div className="flex items-center justify-between text-xs text-[#64748B] pt-3 border-t border-[#E5EAF0]">
                       <span>Languages: {expert.languages.join(", ")}</span>
                       <span>{expert.gender}</span>
                     </div>
@@ -405,7 +405,7 @@ export function SwitchExpertModal({ isOpen, onClose, currentExpertRole, onExpert
           {/* Close Button */}
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-lg hover:bg-[#f3faff] text-[#64748B] hover:text-[#043570] transition-colors"
+            className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-lg hover:bg-[#F1F7F7] text-[#64748B] hover:text-[#0B2545] transition-colors"
           >
             <X size={20} />
           </button>

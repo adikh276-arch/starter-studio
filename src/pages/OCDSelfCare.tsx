@@ -142,7 +142,7 @@ export function OCDSelfCare() {
             <div className="flex items-center gap-4 mb-2">
               <button
                 onClick={() => navigate(-1)}
-                className="flex items-center justify-center w-9 h-9 rounded-lg text-[#64748B] hover:text-[#043570] hover:bg-white/80 transition-all"
+                className="flex items-center justify-center w-9 h-9 rounded-lg text-[#64748B] hover:text-[#0B2545] hover:bg-white/80 transition-all"
               >
                 <ChevronLeft size={20} strokeWidth={2.5} />
               </button>
@@ -228,7 +228,7 @@ export function OCDSelfCare() {
                           }
                         }
                       }}
-                      className="bg-white border border-[#E2E8F0] rounded-2xl py-6 px-2 hover:shadow-md transition-all text-center"
+                      className="bg-white border border-[#E5EAF0] rounded-2xl py-6 px-2 hover:shadow-md transition-all text-center"
                     >
                       <div 
                         className="w-16 h-16 rounded-2xl flex items-center justify-center mb-4 mx-auto"
@@ -236,7 +236,7 @@ export function OCDSelfCare() {
                       >
                         <IconComponent size={28} style={{ color: topic.iconColor }} strokeWidth={2} />
                       </div>
-                      <h3 className="text-[#1E293B] font-medium text-base">{topic.label}</h3>
+                      <h3 className="text-[#0F172A] font-medium text-base">{topic.label}</h3>
                     </motion.button>
                   );
                 })}
@@ -273,7 +273,7 @@ export function OCDSelfCare() {
                           }
                         }
                       }}
-                      className="bg-white border border-[#E2E8F0] rounded-2xl py-6 px-2 hover:shadow-md transition-all text-center"
+                      className="bg-white border border-[#E5EAF0] rounded-2xl py-6 px-2 hover:shadow-md transition-all text-center"
                     >
                       <div 
                         className="w-16 h-16 rounded-2xl flex items-center justify-center mb-4 mx-auto"
@@ -281,7 +281,7 @@ export function OCDSelfCare() {
                       >
                         <IconComponent size={28} style={{ color: guide.iconColor }} strokeWidth={2} />
                       </div>
-                      <h3 className="text-[#1E293B] font-medium text-base">{guide.label}</h3>
+                      <h3 className="text-[#0F172A] font-medium text-base">{guide.label}</h3>
                     </motion.button>
                   );
                 })}

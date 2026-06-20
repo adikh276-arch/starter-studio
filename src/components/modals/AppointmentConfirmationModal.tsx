@@ -86,7 +86,7 @@ export function AppointmentConfirmationModal({
           >
             <div className="bg-white rounded-2xl shadow-2xl w-full max-w-lg max-h-[90vh] overflow-y-auto">
               {/* Header */}
-              <div className="sticky top-0 bg-gradient-to-r from-[#043570] to-[#00c0ff] px-6 py-5 rounded-t-2xl">
+              <div className="sticky top-0 bg-gradient-to-r from-[#0B2545] to-[#13B5B1] px-6 py-5 rounded-t-2xl">
                 <div className="flex items-center justify-between mb-1">
                   <h2 className="text-lg font-semibold text-white">
                     Appointment Details
@@ -136,18 +136,18 @@ export function AppointmentConfirmationModal({
                     {/* Names with Icon */}
                     <div className="flex items-center justify-center gap-3 mb-8">
                       {/* Session Mode Icon */}
-                      <div className="w-10 h-10 bg-[#00c0ff] rounded-full flex items-center justify-center">
+                      <div className="w-10 h-10 bg-[#13B5B1] rounded-full flex items-center justify-center">
                         <ModeIconComponent size={18} className="text-white" />
                       </div>
                       
                       {/* Expert Name */}
-                      <span className="text-base font-semibold text-[#020817]">
+                      <span className="text-base font-semibold text-[#0F172A]">
                         {appointment.providerName}
                       </span>
                       
                       {/* Two-way Arrows Icon */}
                       <svg
-                        className="w-5 h-5 text-[#020817]"
+                        className="w-5 h-5 text-[#0F172A]"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -161,7 +161,7 @@ export function AppointmentConfirmationModal({
                       </svg>
                       
                       {/* User Name */}
-                      <span className="text-base font-semibold text-[#020817]">
+                      <span className="text-base font-semibold text-[#0F172A]">
                         {userName}
                       </span>
                     </div>
@@ -170,19 +170,19 @@ export function AppointmentConfirmationModal({
                     <div className="bg-[#F8FAFC] rounded-2xl p-6 mb-6 text-left space-y-4">
                       {/* Service */}
                       <div className="flex items-start gap-3">
-                        <CalendarIcon size={20} className="text-[#043570] mt-0.5 flex-shrink-0" />
+                        <CalendarIcon size={20} className="text-[#0B2545] mt-0.5 flex-shrink-0" />
                         <div>
-                          <span className="text-sm font-semibold text-[#043570]">Service:</span>
-                          <span className="text-sm text-[#020817] ml-2">{appointment.service}</span>
+                          <span className="text-sm font-semibold text-[#0B2545]">Service:</span>
+                          <span className="text-sm text-[#0F172A] ml-2">{appointment.service}</span>
                         </div>
                       </div>
 
                       {/* Date & Time */}
                       <div className="flex items-start gap-3">
-                        <Clock size={20} className="text-[#043570] mt-0.5 flex-shrink-0" />
+                        <Clock size={20} className="text-[#0B2545] mt-0.5 flex-shrink-0" />
                         <div>
-                          <span className="text-sm font-semibold text-[#043570]">Time:</span>
-                          <span className="text-sm text-[#020817] ml-2">
+                          <span className="text-sm font-semibold text-[#0B2545]">Time:</span>
+                          <span className="text-sm text-[#0F172A] ml-2">
                             {appointment.date} at {appointment.time}
                           </span>
                         </div>
@@ -191,7 +191,7 @@ export function AppointmentConfirmationModal({
                       {/* Duration */}
                       <div className="flex items-start gap-3">
                         <svg
-                          className="w-5 h-5 text-[#043570] mt-0.5 flex-shrink-0"
+                          className="w-5 h-5 text-[#0B2545] mt-0.5 flex-shrink-0"
                           fill="none"
                           stroke="currentColor"
                           viewBox="0 0 24 24"
@@ -204,8 +204,8 @@ export function AppointmentConfirmationModal({
                           />
                         </svg>
                         <div>
-                          <span className="text-sm font-semibold text-[#043570]">Duration:</span>
-                          <span className="text-sm text-[#020817] ml-2">{appointment.duration} mins</span>
+                          <span className="text-sm font-semibold text-[#0B2545]">Duration:</span>
+                          <span className="text-sm text-[#0F172A] ml-2">{appointment.duration} mins</span>
                         </div>
                       </div>
                     </div>
@@ -275,7 +275,7 @@ export function AppointmentConfirmationModal({
                     </motion.div>
                     
                     {/* Success Message */}
-                    <h3 className="text-2xl font-bold text-[#020817] mb-3">
+                    <h3 className="text-2xl font-bold text-[#0F172A] mb-3">
                       Appointment Confirmed!
                     </h3>
                     <p className="text-base text-[#64748B]">

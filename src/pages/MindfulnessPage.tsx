@@ -139,7 +139,7 @@ export function MindfulnessPage() {
                   whileHover={{ scale: 1.01 }}
                   whileTap={{ scale: 0.98 }}
                   onClick={() => navigate("/mindfulness-self-care")}
-                  className="w-full bg-[#1a2744] border border-[#1E293B]/25 rounded-2xl px-5 py-5 flex items-center justify-between shadow-sm hover:shadow-md transition-all group"
+                  className="w-full bg-[#1a2744] border border-[#0F172A]/25 rounded-2xl px-5 py-5 flex items-center justify-between shadow-sm hover:shadow-md transition-all group"
                 >
                   <div className="flex items-center gap-4">
                     <div className="w-14 h-14 bg-white/10 backdrop-blur-sm rounded-[18px] flex items-center justify-center flex-shrink-0 shadow-md">
@@ -286,7 +286,7 @@ export function MindfulnessPage() {
                     {/* Checkbox */}
                     <div 
                       className={`w-5 h-5 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-colors ${
-                        isCompleted ? 'bg-[#00c0ff] border-[#00c0ff]' : 'border-white/25'
+                        isCompleted ? 'bg-[#13B5B1] border-[#13B5B1]' : 'border-white/25'
                       }`}
                     >
                       {isCompleted && (
@@ -439,7 +439,7 @@ export function MindfulnessPage() {
                     initial={{ opacity: 0, y: 12 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3, delay: 0.35 + i * 0.08 }}
-                    className="bg-[#1A2744] hover:bg-[#1f3060] rounded-2xl overflow-hidden transition-all group text-left shadow-lg hover:shadow-xl border border-[#1E293B]/30"
+                    className="bg-[#1A2744] hover:bg-[#1f3060] rounded-2xl overflow-hidden transition-all group text-left shadow-lg hover:shadow-xl border border-[#0F172A]/30"
                     onClick={() => setShowMobileAppModal(true)}
                   >
                     {/* Image Container */}
@@ -456,7 +456,7 @@ export function MindfulnessPage() {
                       {/* Play button overlay */}
                       <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center shadow-xl">
-                          <Play size={20} className="text-[#043570] ml-0.5" fill="currentColor" />
+                          <Play size={20} className="text-[#0B2545] ml-0.5" fill="currentColor" />
                         </div>
                       </div>
 
@@ -480,7 +480,7 @@ export function MindfulnessPage() {
                         {favorite.title}
                       </h4>
                       <div className="flex items-center gap-1.5 flex-wrap">
-                        <span className="px-2 py-0.5 rounded-full text-[10px] md:text-xs font-medium bg-[#00c0ff]/15 text-[#00c0ff] border border-[#00c0ff]/25">
+                        <span className="px-2 py-0.5 rounded-full text-[10px] md:text-xs font-medium bg-[#13B5B1]/15 text-[#13B5B1] border border-[#13B5B1]/25">
                           {favorite.type}
                         </span>
                         <span className="text-[10px] md:text-xs text-slate-400">
@@ -498,17 +498,17 @@ export function MindfulnessPage() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="bg-gradient-to-br from-[#1a2744] via-[#0f172a] to-[#1a2744] rounded-2xl p-6 md:p-8 shadow-lg border border-[#1E293B]/50 relative overflow-hidden group hover:shadow-xl transition-shadow duration-300 mb-6 md:mb-8"
+              className="bg-gradient-to-br from-[#1a2744] via-[#0f172a] to-[#1a2744] rounded-2xl p-6 md:p-8 shadow-lg border border-[#0F172A]/50 relative overflow-hidden group hover:shadow-xl transition-shadow duration-300 mb-6 md:mb-8"
             >
               {/* Decorative elements */}
-              <div className="absolute -top-10 -right-10 w-40 h-40 bg-[#00c0ff]/10 rounded-full blur-3xl"></div>
+              <div className="absolute -top-10 -right-10 w-40 h-40 bg-[#13B5B1]/10 rounded-full blur-3xl"></div>
               <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-[#0EA5E9]/10 rounded-full blur-2xl"></div>
 
               <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-2">
                 <div className="flex-1 space-y-4">
                   {/* Badge */}
-                  <div className="inline-flex items-center gap-2 bg-[#00c0ff]/10 text-[#00c0ff] border-[#00c0ff]/20 px-3 py-1.5 rounded-full text-xs font-semibold border">
-                    <Sparkles size={14} className="text-[#00c0ff]" />
+                  <div className="inline-flex items-center gap-2 bg-[#13B5B1]/10 text-[#13B5B1] border-[#13B5B1]/20 px-3 py-1.5 rounded-full text-xs font-semibold border">
+                    <Sparkles size={14} className="text-[#13B5B1]" />
                     Certified Mindfulness Instructors
                   </div>
 
@@ -548,7 +548,7 @@ export function MindfulnessPage() {
                   {/* CTA Button */}
                   <button
                     onClick={() => navigate("/care-team")}
-                    className="bg-[#00c0ff] hover:bg-[#00aae6] text-white px-6 py-3 rounded-xl font-semibold transition-all duration-200 inline-flex items-center gap-2 shadow-lg hover:shadow-[0_0_20px_rgba(0,192,255,0.5)] group/btn"
+                    className="bg-[#13B5B1] hover:bg-[#00aae6] text-white px-6 py-3 rounded-xl font-semibold transition-all duration-200 inline-flex items-center gap-2 shadow-lg hover:shadow-[0_0_20px_rgba(0,192,255,0.5)] group/btn"
                   >
                     Book Your First Session
                     <ArrowRight size={18} className="group-hover/btn:translate-x-1 transition-transform" />
@@ -558,10 +558,10 @@ export function MindfulnessPage() {
                 {/* Profile Image with decoration */}
                 <div className="hidden md:block flex-shrink-0 relative mx-auto w-auto md:w-64">
                   {/* Glow effect */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#00c0ff] to-[#0EA5E9] rounded-full blur-xl opacity-20 group-hover:opacity-30 transition-opacity"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#13B5B1] to-[#0EA5E9] rounded-full blur-xl opacity-20 group-hover:opacity-30 transition-opacity"></div>
                   
                   {/* Image container */}
-                  <div className="relative w-36 h-36 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-[#1a2744] shadow-2xl ring-4 ring-[#00c0ff]/20">
+                  <div className="relative w-36 h-36 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-[#1a2744] shadow-2xl ring-4 ring-[#13B5B1]/20">
                     <ImageWithFallback
                       src={meditationInstructor}
                       alt="Mindfulness Instructor"

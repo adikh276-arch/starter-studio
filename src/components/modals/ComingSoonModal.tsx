@@ -48,7 +48,7 @@ export function ComingSoonModal({ isOpen, onClose }: ComingSoonModalProps) {
 
               {/* Content */}
               <div className="text-center">
-                <h3 className="text-2xl font-bold text-[#043570] mb-3">
+                <h3 className="text-2xl font-bold text-[#0B2545] mb-3">
                   Coming Soon
                 </h3>
                 <p className="text-gray-600 mb-8 leading-relaxed">

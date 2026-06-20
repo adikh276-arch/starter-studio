@@ -178,7 +178,7 @@ export function QuickStartModal({ isOpen, onClose, planTitle, planColor }: Quick
                     <button
                       onClick={handleCameraToggle}
                       className={`relative w-11 h-6 rounded-full transition-colors ${
-                        cameraPermission ? "bg-[#00c0ff]" : "bg-gray-300"
+                        cameraPermission ? "bg-[#13B5B1]" : "bg-gray-300"
                       }`}
                     >
                       <motion.div
@@ -209,7 +209,7 @@ export function QuickStartModal({ isOpen, onClose, planTitle, planColor }: Quick
                     <button
                       onClick={handleMicToggle}
                       className={`relative w-11 h-6 rounded-full transition-colors ${
-                        micPermission ? "bg-[#00c0ff]" : "bg-gray-300"
+                        micPermission ? "bg-[#13B5B1]" : "bg-gray-300"
                       }`}
                     >
                       <motion.div
@@ -236,7 +236,7 @@ export function QuickStartModal({ isOpen, onClose, planTitle, planColor }: Quick
                   className="flex items-center gap-3 mb-3 cursor-pointer group"
                 >
                   <div className={`w-5 h-5 rounded border-2 flex items-center justify-center transition-colors ${
-                    hasMatChecked ? "bg-[#00c0ff] border-[#00c0ff]" : "border-gray-300"
+                    hasMatChecked ? "bg-[#13B5B1] border-[#13B5B1]" : "border-gray-300"
                   }`}>
                     {hasMatChecked && <CheckCircle2 size={14} className="text-white" strokeWidth={3} />}
                   </div>
@@ -252,7 +252,7 @@ export function QuickStartModal({ isOpen, onClose, planTitle, planColor }: Quick
                   className="flex items-center gap-3 cursor-pointer group"
                 >
                   <div className={`w-5 h-5 rounded border-2 flex items-center justify-center transition-colors ${
-                    hasChairChecked ? "bg-[#00c0ff] border-[#00c0ff]" : "border-gray-300"
+                    hasChairChecked ? "bg-[#13B5B1] border-[#13B5B1]" : "border-gray-300"
                   }`}>
                     {hasChairChecked && <CheckCircle2 size={14} className="text-white" strokeWidth={3} />}
                   </div>
@@ -271,7 +271,7 @@ export function QuickStartModal({ isOpen, onClose, planTitle, planColor }: Quick
                 whileTap={{ scale: !cameraPermission || !micPermission ? 1 : 0.98 }}
                 className={`w-full py-3.5 rounded-xl font-semibold text-sm transition-all ${
                   cameraPermission && micPermission
-                    ? "bg-[#00c0ff] text-white shadow-lg hover:shadow-xl"
+                    ? "bg-[#13B5B1] text-white shadow-lg hover:shadow-xl"
                     : "bg-gray-200 text-gray-400 cursor-not-allowed"
                 }`}
               >
@@ -332,7 +332,7 @@ export function QuickStartModal({ isOpen, onClose, planTitle, planColor }: Quick
                 <motion.button
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="w-full py-3.5 rounded-xl font-semibold text-sm bg-[#00c0ff] text-white shadow-lg hover:shadow-xl transition-all"
+                  className="w-full py-3.5 rounded-xl font-semibold text-sm bg-[#13B5B1] text-white shadow-lg hover:shadow-xl transition-all"
                 >
                   Adjust your position
                 </motion.button>

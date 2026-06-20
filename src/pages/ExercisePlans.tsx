@@ -157,7 +157,7 @@ export function ExercisePlans() {
   const [quickStartPlan, setQuickStartPlan] = useState<ExercisePlan | null>(null);
 
   return (
-    <div className="flex h-screen overflow-hidden bg-[#F6F8FB]">
+    <div className="flex h-screen overflow-hidden bg-[#F7F8FA]">
       <Sidebar />
       
       <div className="flex-1 flex flex-col overflow-hidden">
@@ -174,12 +174,12 @@ export function ExercisePlans() {
               <div className="flex items-center gap-3 mb-2">
                 <button
                   onClick={() => navigate(-1)}
-                  className="flex items-center justify-center text-[#64748B] hover:text-[#043570] transition-colors"
+                  className="flex items-center justify-center text-[#64748B] hover:text-[#0B2545] transition-colors"
                 >
                   <ChevronLeft size={20} />
                 </button>
-                <div className="w-10 h-10 bg-[#F1F5F9] rounded-md flex items-center justify-center flex-shrink-0">
-                  <Activity size={20} className="text-[#1E293B]" strokeWidth={2} />
+                <div className="w-10 h-10 bg-[#F1F4F8] rounded-md flex items-center justify-center flex-shrink-0">
+                  <Activity size={20} className="text-[#0F172A]" strokeWidth={2} />
                 </div>
                 <div>
                   <h1 className="text-2xl text-[#0f172b] font-medium">Recommended Exercise Plans</h1>
@@ -222,22 +222,22 @@ export function ExercisePlans() {
                       </div>
                       
                       <div className="flex-1 min-w-0">
-                        <h3 className="text-base md:text-lg font-semibold text-[#043570] mb-1">
+                        <h3 className="text-base md:text-lg font-semibold text-[#0B2545] mb-1">
                           {plan.title}
                         </h3>
-                        <p className="text-xs md:text-sm text-[#043570]/60 mb-2">
+                        <p className="text-xs md:text-sm text-[#0B2545]/60 mb-2">
                           {plan.description}
                         </p>
                         <div className="flex items-center gap-2 flex-wrap">
-                          <span className="text-xs text-[#043570]/70">
+                          <span className="text-xs text-[#0B2545]/70">
                             {plan.exercises} exercises
                           </span>
-                          <span className="text-[#E2E8F0]">•</span>
-                          <span className="text-xs text-[#043570]/70">
+                          <span className="text-[#E5EAF0]">•</span>
+                          <span className="text-xs text-[#0B2545]/70">
                             {plan.duration}
                           </span>
-                          <span className="text-[#E2E8F0]">•</span>
-                          <span className="text-xs text-[#043570]/70">
+                          <span className="text-[#E5EAF0]">•</span>
+                          <span className="text-xs text-[#0B2545]/70">
                             {plan.frequency}
                           </span>
                           <span 
@@ -255,14 +255,14 @@ export function ExercisePlans() {
 
                     {/* Benefits */}
                     <div className="mb-4">
-                      <p className="text-xs font-semibold text-[#043570]/80 mb-2">
+                      <p className="text-xs font-semibold text-[#0B2545]/80 mb-2">
                         Benefits / Goals
                       </p>
                       <div className="flex flex-wrap gap-2">
                         {plan.benefits.map((benefit, i) => (
                           <span
                             key={i}
-                            className="text-xs px-2.5 py-1 bg-[#f3faff] text-[#043570]/70 rounded-full border"
+                            className="text-xs px-2.5 py-1 bg-[#F1F7F7] text-[#0B2545]/70 rounded-full border"
                           >
                             {benefit}
                           </span>
@@ -272,14 +272,14 @@ export function ExercisePlans() {
 
                     {/* Exercise List */}
                     <div className="mb-4">
-                      <p className="text-xs font-semibold text-[#043570]/80 mb-2">
+                      <p className="text-xs font-semibold text-[#0B2545]/80 mb-2">
                         Exercises
                       </p>
                       <div className="space-y-1.5">
                         {plan.exerciseList.map((exercise, i) => (
                           <div key={i} className="flex items-center gap-2">
-                            <Circle size={14} className="text-[#043570]/20" strokeWidth={2} />
-                            <span className="text-xs md:text-sm text-[#043570]/70">
+                            <Circle size={14} className="text-[#0B2545]/20" strokeWidth={2} />
+                            <span className="text-xs md:text-sm text-[#0B2545]/70">
                               {exercise}
                             </span>
                           </div>

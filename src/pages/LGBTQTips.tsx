@@ -94,12 +94,12 @@ export function LGBTQTips() {
                 whileHover={{ x: -4 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => navigate(-1)}
-                className="flex items-center justify-center w-10 h-10 rounded-xl bg-white/80 backdrop-blur-sm text-[#64748B] hover:text-[#020817] hover:bg-white transition-all shadow-sm hover:shadow-md border border-gray-100"
+                className="flex items-center justify-center w-10 h-10 rounded-xl bg-white/80 backdrop-blur-sm text-[#64748B] hover:text-[#0F172A] hover:bg-white transition-all shadow-sm hover:shadow-md border border-gray-100"
               >
                 <ChevronLeft size={20} strokeWidth={2.5} />
               </motion.button>
               <div>
-                <h1 className="text-3xl md:text-4xl text-[#1E293B] font-bold tracking-tight">
+                <h1 className="text-3xl md:text-4xl text-[#0F172A] font-bold tracking-tight">
                   Care for Your Whole Self
                 </h1>
                 <p className="text-base md:text-lg text-[#64748B] mt-2">
@@ -156,7 +156,7 @@ export function LGBTQTips() {
 
                   {/* Content */}
                   <div className="flex-1 text-left relative z-10">
-                    <h3 className="text-lg md:text-xl font-bold text-[#1E293B] mb-2 group-hover:text-[#BE51F5] transition-colors duration-300">
+                    <h3 className="text-lg md:text-xl font-bold text-[#0F172A] mb-2 group-hover:text-[#BE51F5] transition-colors duration-300">
                       {tip.title}
                     </h3>
                     <p className="text-sm md:text-base text-[#64748B] leading-relaxed">

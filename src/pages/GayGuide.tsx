@@ -141,7 +141,7 @@ export function GayGuide() {
             className="mb-10 relative"
           >
             <div className="absolute -left-2 top-0 w-1 h-16 bg-gradient-to-b from-[#3B82F6] to-[#2563EB] rounded-full"></div>
-            <h1 className="text-4xl md:text-5xl font-bold text-[#020817] mb-3 pl-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#0F172A] mb-3 pl-4">
               Gay
             </h1>
             <p className="text-[#64748B] text-lg md:text-xl pl-4">
@@ -164,7 +164,7 @@ export function GayGuide() {
                 <Lightbulb className="text-white" size={24} strokeWidth={2} />
               </div>
               <div className="flex-1">
-                <h2 className="text-lg font-bold text-[#020817] mb-0.5">Tips</h2>
+                <h2 className="text-lg font-bold text-[#0F172A] mb-0.5">Tips</h2>
                 <p className="text-[#64748B] text-sm">Daily wisdom for your wellbeing</p>
               </div>
               <ChevronDown
@@ -196,7 +196,7 @@ export function GayGuide() {
                       <div className="w-8 h-8 rounded-lg bg-[#A855F7] flex items-center justify-center flex-shrink-0">
                         <Lightbulb className="text-white" size={16} strokeWidth={2} />
                       </div>
-                      <h3 className="text-base font-bold text-[#020817] leading-tight flex-1">{tip.title}</h3>
+                      <h3 className="text-base font-bold text-[#0F172A] leading-tight flex-1">{tip.title}</h3>
                     </div>
                     <p className="text-[#64748B] leading-relaxed text-sm">
                       {tip.description}
@@ -222,7 +222,7 @@ export function GayGuide() {
                 <MessageSquare className="text-white" size={24} strokeWidth={2} />
               </div>
               <div className="flex-1">
-                <h2 className="text-lg font-bold text-[#020817] mb-0.5">Myths</h2>
+                <h2 className="text-lg font-bold text-[#0F172A] mb-0.5">Myths</h2>
                 <p className="text-[#64748B] text-sm">Debunking harmful stereotypes</p>
               </div>
               <ChevronDown
@@ -254,7 +254,7 @@ export function GayGuide() {
                       <div className="w-8 h-8 rounded-lg bg-[#3B82F6] flex items-center justify-center flex-shrink-0">
                         <MessageSquare className="text-white" size={16} strokeWidth={2} />
                       </div>
-                      <h3 className="text-base font-bold text-[#020817] leading-tight flex-1">{myth.title}</h3>
+                      <h3 className="text-base font-bold text-[#0F172A] leading-tight flex-1">{myth.title}</h3>
                     </div>
                     <p className="text-[#64748B] leading-relaxed text-sm">
                       {myth.description}
@@ -277,7 +277,7 @@ export function GayGuide() {
                 <TrendingUp className="text-white" size={24} strokeWidth={2} />
               </div>
               <div>
-                <h2 className="text-lg font-bold text-[#020817] mb-0.5">Interactive Tools</h2>
+                <h2 className="text-lg font-bold text-[#0F172A] mb-0.5">Interactive Tools</h2>
                 <p className="text-[#64748B] text-sm">Exercises for recovery and wellness</p>
               </div>
             </div>
@@ -309,7 +309,7 @@ export function GayGuide() {
                     >
                       <IconComponent style={{ color: iconColors[index] }} size={24} strokeWidth={2.5} />
                     </div>
-                    <span className="text-xs font-bold text-[#020817] text-center leading-tight relative z-10 group-hover:text-[#020817]/90">
+                    <span className="text-xs font-bold text-[#0F172A] text-center leading-tight relative z-10 group-hover:text-[#0F172A]/90">
                       {tool.label}
                     </span>
                   </motion.button>

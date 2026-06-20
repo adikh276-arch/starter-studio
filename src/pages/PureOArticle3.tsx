@@ -23,7 +23,7 @@ export function PureOArticle3() {
             <div className="flex items-center gap-4 mb-2">
               <button
                 onClick={() => navigate(-1)}
-                className="flex items-center justify-center w-9 h-9 rounded-lg text-[#64748B] hover:text-[#043570] hover:bg-white/80 transition-all"
+                className="flex items-center justify-center w-9 h-9 rounded-lg text-[#64748B] hover:text-[#0B2545] hover:bg-white/80 transition-all"
               >
                 <ChevronLeft size={20} strokeWidth={2.5} />
               </button>
@@ -32,7 +32,7 @@ export function PureOArticle3() {
               </div>
               <div>
                 <p className="text-sm text-[#3B82F6] mb-1">Expert Review of Neurotherapeutics (Taylor & Francis), 2023</p>
-                <h1 className="text-2xl font-bold text-[#020817]">{`How Does Pure O OCD Impact a Patient's Treatment Plan?`}</h1>
+                <h1 className="text-2xl font-bold text-[#0F172A]">{`How Does Pure O OCD Impact a Patient's Treatment Plan?`}</h1>
               </div>
             </div>
           </motion.div>

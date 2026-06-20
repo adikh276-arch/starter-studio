@@ -127,23 +127,23 @@ const SUBSCRIPTIONS: Subscription[] = [
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 const STATUS_CONFIG = {
-  active:    { label: "Active",    bg: "bg-[#F1F5F9]", text: "text-[#1E293B]", icon: CheckCircle2, dot: "bg-[#0D9488]" },
-  cancelled: { label: "Cancelled", bg: "bg-[#F8FAFC]", text: "text-[#64748B]", icon: XCircle,      dot: "bg-[#E2E8F0]" },
-  expired:   { label: "Expired",   bg: "bg-[#F8FAFC]", text: "text-[#64748B]", icon: AlertCircle,  dot: "bg-[#E2E8F0]" },
-  paused:    { label: "Paused",    bg: "bg-[#F1F5F9]", text: "text-[#1E293B]", icon: AlertCircle,  dot: "bg-[#E2E8F0]" },
+  active:    { label: "Active",    bg: "bg-[#F1F4F8]", text: "text-[#0F172A]", icon: CheckCircle2, dot: "bg-[#0D9488]" },
+  cancelled: { label: "Cancelled", bg: "bg-[#F8FAFC]", text: "text-[#64748B]", icon: XCircle,      dot: "bg-[#E5EAF0]" },
+  expired:   { label: "Expired",   bg: "bg-[#F8FAFC]", text: "text-[#64748B]", icon: AlertCircle,  dot: "bg-[#E5EAF0]" },
+  paused:    { label: "Paused",    bg: "bg-[#F1F4F8]", text: "text-[#0F172A]", icon: AlertCircle,  dot: "bg-[#E5EAF0]" },
 };
 
 const TYPE_CONFIG = {
-  Video:      { bg: "bg-[#1E293B]", icon: "📹", light: "bg-[#F1F5F9]", text: "text-[#1E293B]", border: "border-[#E2E8F0]" },
-  Chat:       { bg: "bg-[#0D9488]", icon: "💬", light: "bg-[#F1F5F9]", text: "text-[#1E293B]", border: "border-[#E2E8F0]" },
-  Psychiatry: { bg: "bg-[#1E293B]", icon: "🏥", light: "bg-[#F1F5F9]", text: "text-[#1E293B]", border: "border-[#E2E8F0]" },
-  Wellness:   { bg: "bg-[#0D9488]", icon: "🌿", light: "bg-[#F1F5F9]", text: "text-[#1E293B]", border: "border-[#E2E8F0]" },
+  Video:      { bg: "bg-[#0F172A]", icon: "📹", light: "bg-[#F1F4F8]", text: "text-[#0F172A]", border: "border-[#E5EAF0]" },
+  Chat:       { bg: "bg-[#0D9488]", icon: "💬", light: "bg-[#F1F4F8]", text: "text-[#0F172A]", border: "border-[#E5EAF0]" },
+  Psychiatry: { bg: "bg-[#0F172A]", icon: "🏥", light: "bg-[#F1F4F8]", text: "text-[#0F172A]", border: "border-[#E5EAF0]" },
+  Wellness:   { bg: "bg-[#0D9488]", icon: "🌿", light: "bg-[#F1F4F8]", text: "text-[#0F172A]", border: "border-[#E5EAF0]" },
 };
 
 const ORDER_STATUS = {
-  paid:    { label: "Paid",    cls: "bg-[#F1F5F9] text-[#1E293B]" },
+  paid:    { label: "Paid",    cls: "bg-[#F1F4F8] text-[#0F172A]" },
   refunded:{ label: "Refunded",cls: "bg-[#F8FAFC] text-[#64748B]" },
-  pending: { label: "Pending", cls: "bg-[#F1F5F9] text-[#0D9488]" },
+  pending: { label: "Pending", cls: "bg-[#F1F4F8] text-[#0D9488]" },
 };
 
 // ─── Subscription Card ────────────────────────────────────────────────────────
@@ -207,13 +207,13 @@ function SubscriptionCard({ sub, index }: { sub: Subscription; index: number }) 
               <div className="mt-2.5">
                 <div className="flex items-center justify-between mb-1">
                   <span className="text-[10px] text-slate-400">{sub.sessionsUsed} of {sub.sessions} sessions used</span>
-                  <span className={`text-[10px] font-medium ${sessionsLeft > 0 ? "text-[#0D9488]" : "text-[#E2E8F0]"}`}>
+                  <span className={`text-[10px] font-medium ${sessionsLeft > 0 ? "text-[#0D9488]" : "text-[#E5EAF0]"}`}>
                     {sessionsLeft > 0 ? `${sessionsLeft} remaining` : "Exhausted"}
                   </span>
                 </div>
-                <div className="h-1 bg-[#F1F5F9] rounded-full overflow-hidden">
+                <div className="h-1 bg-[#F1F4F8] rounded-full overflow-hidden">
                   <motion.div
-                    className={`h-full rounded-full ${sub.status === "active" ? "bg-[#0D9488]" : "bg-[#E2E8F0]"}`}
+                    className={`h-full rounded-full ${sub.status === "active" ? "bg-[#0D9488]" : "bg-[#E5EAF0]"}`}
                     initial={{ width: 0 }}
                     animate={{ width: `${pct}%` }}
                     transition={{ duration: 0.8, delay: index * 0.1 + 0.2, ease: "easeOut" }}
@@ -249,15 +249,15 @@ function SubscriptionCard({ sub, index }: { sub: Subscription; index: number }) 
             {/* Action buttons */}
             {sub.status === "active" && (
               <div className="mx-5 mb-4 flex flex-wrap gap-2">
-                <button className="flex items-center gap-1.5 px-3 py-1.5 bg-[#1E293B] text-white text-xs rounded-xl hover:bg-[#0D9488] transition-colors shadow-sm">
+                <button className="flex items-center gap-1.5 px-3 py-1.5 bg-[#0F172A] text-white text-xs rounded-xl hover:bg-[#0D9488] transition-colors shadow-sm">
                   <RefreshCw size={12} />
                   Renew Plan
                 </button>
-                <button className="flex items-center gap-1.5 px-3 py-1.5 bg-white border border-[#E2E8F0] text-[#64748B] text-xs rounded-xl hover:border-[#0D9488] hover:bg-[#F8FAFC] transition-colors">
+                <button className="flex items-center gap-1.5 px-3 py-1.5 bg-white border border-[#E5EAF0] text-[#64748B] text-xs rounded-xl hover:border-[#0D9488] hover:bg-[#F8FAFC] transition-colors">
                   <ExternalLink size={12} />
                   Manage Plan
                 </button>
-                <button className="flex items-center gap-1.5 px-3 py-1.5 bg-white border border-[#E2E8F0] text-[#64748B] text-xs rounded-xl hover:border-[#0D9488] hover:bg-[#F8FAFC] transition-colors">
+                <button className="flex items-center gap-1.5 px-3 py-1.5 bg-white border border-[#E5EAF0] text-[#64748B] text-xs rounded-xl hover:border-[#0D9488] hover:bg-[#F8FAFC] transition-colors">
                   <Zap size={12} />
                   Book Session
                 </button>
@@ -265,7 +265,7 @@ function SubscriptionCard({ sub, index }: { sub: Subscription; index: number }) 
             )}
             {sub.status === "cancelled" && (
               <div className="mx-5 mb-4 flex flex-wrap gap-2">
-                <button className="flex items-center gap-1.5 px-3 py-1.5 bg-[#1E293B] text-white text-xs rounded-xl hover:bg-[#0D9488] transition-colors shadow-sm">
+                <button className="flex items-center gap-1.5 px-3 py-1.5 bg-[#0F172A] text-white text-xs rounded-xl hover:bg-[#0D9488] transition-colors shadow-sm">
                   <ArrowRight size={12} />
                   Resubscribe
                 </button>
@@ -300,7 +300,7 @@ function SubscriptionCard({ sub, index }: { sub: Subscription; index: number }) 
                         className="grid grid-cols-3 px-4 py-2.5 hover:bg-slate-50 transition-colors"
                       >
                         <span className="text-xs text-[#0D9488] font-medium flex items-center gap-1">
-                          <Hash size={10} className="text-[#E2E8F0]" />
+                          <Hash size={10} className="text-[#E5EAF0]" />
                           {order.id}
                         </span>
                         <span className="text-xs text-slate-600">{order.date}</span>
@@ -356,9 +356,9 @@ function SummaryStats() {
   return (
     <div className="grid grid-cols-3 gap-3 mb-6">
       {[
-        { label: "Active Plans",    value: active,    icon: CheckCircle2, bg: "bg-[#0D9488]",  border: "border-[#E2E8F0]", bubble: "bg-[#F1F5F9]", text: "text-[#1E293B]" },
-        { label: "Cancelled",       value: cancelled, icon: XCircle,      bg: "bg-[#64748B]",  border: "border-[#E2E8F0]", bubble: "bg-[#F8FAFC]", text: "text-[#64748B]" },
-        { label: "Total Payments",  value: total,     icon: Receipt,      bg: "bg-[#1E293B]",  border: "border-[#E2E8F0]", bubble: "bg-[#F1F5F9]", text: "text-[#0D9488]" },
+        { label: "Active Plans",    value: active,    icon: CheckCircle2, bg: "bg-[#0D9488]",  border: "border-[#E5EAF0]", bubble: "bg-[#F1F4F8]", text: "text-[#0F172A]" },
+        { label: "Cancelled",       value: cancelled, icon: XCircle,      bg: "bg-[#64748B]",  border: "border-[#E5EAF0]", bubble: "bg-[#F8FAFC]", text: "text-[#64748B]" },
+        { label: "Total Payments",  value: total,     icon: Receipt,      bg: "bg-[#0F172A]",  border: "border-[#E5EAF0]", bubble: "bg-[#F1F4F8]", text: "text-[#0D9488]" },
       ].map((s, i) => (
         <motion.div
           key={s.label}
@@ -404,7 +404,7 @@ export function SubscriptionPage() {
               <h1 className="text-xl md:text-2xl text-slate-900">Subscription</h1>
               <p className="text-slate-500 text-sm mt-0.5">Manage your MantraCare plans and payment history</p>
             </div>
-            <button className="flex items-center gap-2 bg-[#1E293B] hover:bg-[#0D9488] text-white text-sm px-4 py-2 rounded-xl transition-colors shadow-sm">
+            <button className="flex items-center gap-2 bg-[#0F172A] hover:bg-[#0D9488] text-white text-sm px-4 py-2 rounded-xl transition-colors shadow-sm">
               <Zap size={14} />
               <span className="hidden sm:inline">New Plan</span>
             </button>
@@ -418,11 +418,11 @@ export function SubscriptionPage() {
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.35, delay: 0.2 }}
-            className="bg-[#F1F5F9] border border-[#E2E8F0] rounded-xl px-4 py-3 mb-5 flex items-start gap-3"
+            className="bg-[#F1F4F8] border border-[#E5EAF0] rounded-xl px-4 py-3 mb-5 flex items-start gap-3"
           >
-            <AlertCircle size={16} className="text-[#1E293B] flex-shrink-0 mt-0.5" />
+            <AlertCircle size={16} className="text-[#0F172A] flex-shrink-0 mt-0.5" />
             <div>
-              <p className="text-[#1E293B] text-sm">You have cancelled subscriptions. Resubscribe to resume sessions with your care team.</p>
+              <p className="text-[#0F172A] text-sm">You have cancelled subscriptions. Resubscribe to resume sessions with your care team.</p>
             </div>
           </motion.div>
 

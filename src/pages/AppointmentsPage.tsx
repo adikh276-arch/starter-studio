@@ -418,8 +418,8 @@ export function AppointmentsPage() {
           >
             <div className="flex items-center justify-between gap-3">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-[#F1F5F9] rounded-md flex items-center justify-center flex-shrink-0">
-                  <Calendar size={20} className="text-[#1E293B]" strokeWidth={2} />
+                <div className="w-10 h-10 bg-[#F1F4F8] rounded-md flex items-center justify-center flex-shrink-0">
+                  <Calendar size={20} className="text-[#0F172A]" strokeWidth={2} />
                 </div>
                 <div>
                   <h1 className="text-2xl text-[#0f172b] font-medium">Appointments</h1>
@@ -445,7 +445,7 @@ export function AppointmentsPage() {
                   <select
                     value={serviceFilter}
                     onChange={(e) => setServiceFilter(e.target.value)}
-                    className="appearance-none pl-3 pr-9 py-2 bg-white border border-[#E2ECF5] rounded-xl text-sm text-[#043570] hover:border-[#00c0ff] focus:outline-none focus:border-[#00c0ff] focus:ring-2 focus:ring-[#f3faff] transition-all cursor-pointer"
+                    className="appearance-none pl-3 pr-9 py-2 bg-white border border-[#E5EAF0] rounded-xl text-sm text-[#0B2545] hover:border-[#13B5B1] focus:outline-none focus:border-[#13B5B1] focus:ring-2 focus:ring-[#F1F7F7] transition-all cursor-pointer"
                   >
                     {allServices.map((service) => (
                       <option key={service} value={service}>
@@ -461,7 +461,7 @@ export function AppointmentsPage() {
                   <select
                     value={providerFilter}
                     onChange={(e) => setProviderFilter(e.target.value)}
-                    className="appearance-none pl-3 pr-9 py-2 bg-white border border-[#E2ECF5] rounded-xl text-sm text-[#043570] hover:border-[#00c0ff] focus:outline-none focus:border-[#00c0ff] focus:ring-2 focus:ring-[#f3faff] transition-all cursor-pointer"
+                    className="appearance-none pl-3 pr-9 py-2 bg-white border border-[#E5EAF0] rounded-xl text-sm text-[#0B2545] hover:border-[#13B5B1] focus:outline-none focus:border-[#13B5B1] focus:ring-2 focus:ring-[#F1F7F7] transition-all cursor-pointer"
                   >
                     {allProviders.map((provider) => (
                       <option key={provider} value={provider}>
@@ -515,13 +515,13 @@ export function AppointmentsPage() {
               <button 
                 onClick={() => setShowFilterModal(true)}
                 className={`relative flex items-center gap-2 px-4 py-2.5 bg-white border rounded-xl text-sm text-slate-700 hover:border-slate-300 focus:outline-none focus:border-[#2563EB] focus:ring-2 focus:ring-[#DBEAFE] transition-all flex-shrink-0 ${
-                  hasActiveFilters ? "border-[#00c0ff] bg-[#f3faff]" : "border-slate-200"
+                  hasActiveFilters ? "border-[#13B5B1] bg-[#F1F7F7]" : "border-slate-200"
                 }`}
               >
-                <Filter size={16} className={hasActiveFilters ? "text-[#00c0ff]" : "text-slate-500"} />
+                <Filter size={16} className={hasActiveFilters ? "text-[#13B5B1]" : "text-slate-500"} />
                 <span className="hidden sm:inline">Filter</span>
                 {hasActiveFilters && (
-                  <span className="absolute -top-1 -right-1 w-4 h-4 bg-[#00c0ff] rounded-full flex items-center justify-center text-white text-[10px] font-bold">
+                  <span className="absolute -top-1 -right-1 w-4 h-4 bg-[#13B5B1] rounded-full flex items-center justify-center text-white text-[10px] font-bold">
                     {[filterDateFrom || filterDateTo, filterProviderName, filterSessionStatus !== "All"].filter(Boolean).length}
                   </span>
                 )}
@@ -531,12 +531,12 @@ export function AppointmentsPage() {
             {/* Right: Remaining Sessions Container (30%) */}
             <button
               onClick={() => setShowSessionsModal(true)}
-              className="flex items-center justify-between gap-3 px-4 py-2.5 bg-white rounded-xl hover:bg-[#f3faff] transition-all group w-full md:w-[30%]"
+              className="flex items-center justify-between gap-3 px-4 py-2.5 bg-white rounded-xl hover:bg-[#F1F7F7] transition-all group w-full md:w-[30%]"
             >
               <div className="flex items-center gap-2">
-                <div className="w-8 h-8 bg-[#00c0ff]/10 rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-8 h-8 bg-[#13B5B1]/10 rounded-full flex items-center justify-center flex-shrink-0">
                   <svg
-                    className="w-4 h-4 text-[#00c0ff]"
+                    className="w-4 h-4 text-[#13B5B1]"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -550,10 +550,10 @@ export function AppointmentsPage() {
                   </svg>
                 </div>
                 <div className="text-left">
-                  <p className="text-[#020817] text-sm font-semibold whitespace-nowrap">Remaining Sessions</p>
+                  <p className="text-[#0F172A] text-sm font-semibold whitespace-nowrap">Remaining Sessions</p>
                 </div>
               </div>
-              <span className="text-[#043570] text-xl font-bold">449</span>
+              <span className="text-[#0B2545] text-xl font-bold">449</span>
             </button>
           </motion.div>
 
@@ -573,14 +573,14 @@ export function AppointmentsPage() {
                   className={`relative flex-1 py-3.5 text-sm transition-colors ${
                     activeTab === tab.key
                       ? "text-[#2563EB] font-semibold"
-                      : "text-[#64748B] hover:text-[#020817]"
+                      : "text-[#64748B] hover:text-[#0F172A]"
                   }`}
                 >
                   <span className="flex items-center justify-center gap-1.5">
                     {tab.key}
                     {tab.count !== undefined && (
                       <span className={`text-[10px] px-1.5 py-0.5 rounded-full ${
-                        activeTab === tab.key ? "bg-[#F1F5F9] text-[#1E293B]" : "bg-[#F8FAFC] text-[#E2E8F0]"
+                        activeTab === tab.key ? "bg-[#F1F4F8] text-[#0F172A]" : "bg-[#F8FAFC] text-[#E5EAF0]"
                       }`}>
                         {tab.count}
                       </span>
@@ -942,7 +942,7 @@ function FilterModal({
           className="relative bg-white rounded-2xl shadow-2xl w-full max-w-[480px] max-h-[90vh] flex flex-col overflow-hidden"
         >
           {/* Header */}
-          <div className="flex items-center justify-between px-6 py-5 border-b border-slate-200 bg-gradient-to-r from-[#043570] to-[#00c0ff] flex-shrink-0">
+          <div className="flex items-center justify-between px-6 py-5 border-b border-slate-200 bg-gradient-to-r from-[#0B2545] to-[#13B5B1] flex-shrink-0">
             <h2 className="text-lg font-semibold text-white">Filter Appointments</h2>
             <button
               onClick={onClose}
@@ -956,18 +956,18 @@ function FilterModal({
           <div className="px-6 py-6 space-y-6 overflow-y-auto flex-1">
             {/* Date Range Dropdown */}
             <div>
-              <label className="block text-sm font-medium text-[#043570] mb-2">
+              <label className="block text-sm font-medium text-[#0B2545] mb-2">
                 Date
               </label>
               <div className="relative">
                 <button
                   onClick={() => setShowDateDropdown(!showDateDropdown)}
-                  className="w-full px-4 py-3 bg-[#f3faff] border-2 border-[#00c0ff]/30 rounded-xl text-left flex items-center justify-between hover:border-[#00c0ff] transition-all group"
+                  className="w-full px-4 py-3 bg-[#F1F7F7] border-2 border-[#13B5B1]/30 rounded-xl text-left flex items-center justify-between hover:border-[#13B5B1] transition-all group"
                 >
-                  <span className="text-[#043570] font-medium">{dateRange}</span>
+                  <span className="text-[#0B2545] font-medium">{dateRange}</span>
                   <ChevronDown
                     size={18}
-                    className={`text-[#00c0ff] transition-transform duration-300 ${
+                    className={`text-[#13B5B1] transition-transform duration-300 ${
                       showDateDropdown ? "rotate-180" : ""
                     }`}
                   />
@@ -980,7 +980,7 @@ function FilterModal({
                       animate={{ opacity: 1, height: "auto" }}
                       exit={{ opacity: 0, height: 0 }}
                       transition={{ duration: 0.3 }}
-                      className="absolute top-full left-0 right-0 mt-2 bg-white border-2 border-[#00c0ff]/30 rounded-xl shadow-xl overflow-hidden z-10"
+                      className="absolute top-full left-0 right-0 mt-2 bg-white border-2 border-[#13B5B1]/30 rounded-xl shadow-xl overflow-hidden z-10"
                     >
                       {(["Week", "Month", "Year", "Custom"] as const).map((range, index) => (
                         <motion.button
@@ -991,13 +991,13 @@ function FilterModal({
                           onClick={() => handleDateRangeSelect(range)}
                           className={`w-full px-4 py-3 text-left transition-all flex items-center justify-between group ${
                             dateRange === range
-                              ? "bg-[#043570] text-white"
-                              : "text-[#043570] hover:bg-[#f3faff]"
+                              ? "bg-[#0B2545] text-white"
+                              : "text-[#0B2545] hover:bg-[#F1F7F7]"
                           }`}
                         >
                           <span className="font-medium">{range}</span>
                           {dateRange === range && (
-                            <Check size={18} className="text-[#00c0ff]" />
+                            <Check size={18} className="text-[#13B5B1]" />
                           )}
                         </motion.button>
                       ))}
@@ -1019,7 +1019,7 @@ function FilterModal({
                       type="date"
                       value={filterDateFrom}
                       onChange={(e) => setFilterDateFrom(e.target.value)}
-                      className="w-full px-3 py-2 bg-[#f3faff] border border-[#00c0ff]/30 rounded-lg text-sm text-[#043570] focus:outline-none focus:border-[#00c0ff] focus:ring-2 focus:ring-[#f3faff] transition-all"
+                      className="w-full px-3 py-2 bg-[#F1F7F7] border border-[#13B5B1]/30 rounded-lg text-sm text-[#0B2545] focus:outline-none focus:border-[#13B5B1] focus:ring-2 focus:ring-[#F1F7F7] transition-all"
                     />
                   </div>
                   <div>
@@ -1028,7 +1028,7 @@ function FilterModal({
                       type="date"
                       value={filterDateTo}
                       onChange={(e) => setFilterDateTo(e.target.value)}
-                      className="w-full px-3 py-2 bg-[#f3faff] border border-[#00c0ff]/30 rounded-lg text-sm text-[#043570] focus:outline-none focus:border-[#00c0ff] focus:ring-2 focus:ring-[#f3faff] transition-all"
+                      className="w-full px-3 py-2 bg-[#F1F7F7] border border-[#13B5B1]/30 rounded-lg text-sm text-[#0B2545] focus:outline-none focus:border-[#13B5B1] focus:ring-2 focus:ring-[#F1F7F7] transition-all"
                     />
                   </div>
                 </motion.div>
@@ -1037,20 +1037,20 @@ function FilterModal({
 
             {/* Provider Name Dropdown */}
             <div>
-              <label className="block text-sm font-medium text-[#043570] mb-2">
+              <label className="block text-sm font-medium text-[#0B2545] mb-2">
                 Provider Name
               </label>
               <div className="relative">
                 <button
                   onClick={() => setShowProviderDropdown(!showProviderDropdown)}
-                  className="w-full px-4 py-3 bg-[#f3faff] border-2 border-[#00c0ff]/30 rounded-xl text-left flex items-center justify-between hover:border-[#00c0ff] transition-all group"
+                  className="w-full px-4 py-3 bg-[#F1F7F7] border-2 border-[#13B5B1]/30 rounded-xl text-left flex items-center justify-between hover:border-[#13B5B1] transition-all group"
                 >
-                  <span className="text-[#043570] font-medium">
+                  <span className="text-[#0B2545] font-medium">
                     {filterProviderName || "All Providers"}
                   </span>
                   <ChevronDown
                     size={18}
-                    className={`text-[#00c0ff] transition-transform duration-300 ${
+                    className={`text-[#13B5B1] transition-transform duration-300 ${
                       showProviderDropdown ? "rotate-180" : ""
                     }`}
                   />
@@ -1063,7 +1063,7 @@ function FilterModal({
                       animate={{ opacity: 1, height: "auto" }}
                       exit={{ opacity: 0, height: 0 }}
                       transition={{ duration: 0.3 }}
-                      className="absolute top-full left-0 right-0 mt-2 bg-white border-2 border-[#00c0ff]/30 rounded-xl shadow-xl overflow-hidden z-10 max-h-[200px] overflow-y-auto"
+                      className="absolute top-full left-0 right-0 mt-2 bg-white border-2 border-[#13B5B1]/30 rounded-xl shadow-xl overflow-hidden z-10 max-h-[200px] overflow-y-auto"
                     >
                       {uniqueProviders.map((provider, index) => (
                         <motion.button
@@ -1075,14 +1075,14 @@ function FilterModal({
                           className={`w-full px-4 py-3 text-left transition-all flex items-center justify-between group ${
                             (provider === "All Providers" && !filterProviderName) ||
                             provider === filterProviderName
-                              ? "bg-[#043570] text-white"
-                              : "text-[#043570] hover:bg-[#f3faff]"
+                              ? "bg-[#0B2545] text-white"
+                              : "text-[#0B2545] hover:bg-[#F1F7F7]"
                           }`}
                         >
                           <span className="font-medium">{provider}</span>
                           {((provider === "All Providers" && !filterProviderName) ||
                             provider === filterProviderName) && (
-                            <Check size={18} className="text-[#00c0ff]" />
+                            <Check size={18} className="text-[#13B5B1]" />
                           )}
                         </motion.button>
                       ))}
@@ -1094,18 +1094,18 @@ function FilterModal({
 
             {/* Session Status Dropdown */}
             <div>
-              <label className="block text-sm font-medium text-[#043570] mb-2">
+              <label className="block text-sm font-medium text-[#0B2545] mb-2">
                 Session Status
               </label>
               <div className="relative">
                 <button
                   onClick={() => setShowSessionStatusDropdown(!showSessionStatusDropdown)}
-                  className="w-full px-4 py-3 bg-[#f3faff] border-2 border-[#00c0ff]/30 rounded-xl text-left flex items-center justify-between hover:border-[#00c0ff] transition-all group"
+                  className="w-full px-4 py-3 bg-[#F1F7F7] border-2 border-[#13B5B1]/30 rounded-xl text-left flex items-center justify-between hover:border-[#13B5B1] transition-all group"
                 >
-                  <span className="text-[#043570] font-medium">{filterSessionStatus}</span>
+                  <span className="text-[#0B2545] font-medium">{filterSessionStatus}</span>
                   <ChevronDown
                     size={18}
-                    className={`text-[#00c0ff] transition-transform duration-300 ${
+                    className={`text-[#13B5B1] transition-transform duration-300 ${
                       showSessionStatusDropdown ? "rotate-180" : ""
                     }`}
                   />
@@ -1118,7 +1118,7 @@ function FilterModal({
                       animate={{ opacity: 1, height: "auto" }}
                       exit={{ opacity: 0, height: 0 }}
                       transition={{ duration: 0.3 }}
-                      className="absolute top-full left-0 right-0 mt-2 bg-white border-2 border-[#00c0ff]/30 rounded-xl shadow-xl overflow-hidden z-10"
+                      className="absolute top-full left-0 right-0 mt-2 bg-white border-2 border-[#13B5B1]/30 rounded-xl shadow-xl overflow-hidden z-10"
                     >
                       {(["All", "Valid", "Invalid"] as const).map((status, index) => (
                         <motion.button
@@ -1129,13 +1129,13 @@ function FilterModal({
                           onClick={() => handleSessionStatusSelect(status)}
                           className={`w-full px-4 py-3 text-left transition-all flex items-center justify-between group ${
                             filterSessionStatus === status
-                              ? "bg-[#043570] text-white"
-                              : "text-[#043570] hover:bg-[#f3faff]"
+                              ? "bg-[#0B2545] text-white"
+                              : "text-[#0B2545] hover:bg-[#F1F7F7]"
                           }`}
                         >
                           <span className="font-medium">{status}</span>
                           {filterSessionStatus === status && (
-                            <Check size={18} className="text-[#00c0ff]" />
+                            <Check size={18} className="text-[#13B5B1]" />
                           )}
                         </motion.button>
                       ))}
@@ -1147,20 +1147,20 @@ function FilterModal({
 
             {/* Service Filter Dropdown */}
             <div className="md:hidden">
-              <label className="block text-sm font-medium text-[#043570] mb-2">
+              <label className="block text-sm font-medium text-[#0B2545] mb-2">
                 Service
               </label>
               <div className="relative">
                 <button
                   onClick={() => setShowServiceDropdown(!showServiceDropdown)}
-                  className="w-full px-4 py-3 bg-[#f3faff] border-2 border-[#00c0ff]/30 rounded-xl text-left flex items-center justify-between hover:border-[#00c0ff] transition-all group"
+                  className="w-full px-4 py-3 bg-[#F1F7F7] border-2 border-[#13B5B1]/30 rounded-xl text-left flex items-center justify-between hover:border-[#13B5B1] transition-all group"
                 >
-                  <span className="text-[#043570] font-medium">
+                  <span className="text-[#0B2545] font-medium">
                     {serviceFilter}
                   </span>
                   <ChevronDown
                     size={18}
-                    className={`text-[#00c0ff] transition-transform duration-300 ${
+                    className={`text-[#13B5B1] transition-transform duration-300 ${
                       showServiceDropdown ? "rotate-180" : ""
                     }`}
                   />
@@ -1173,7 +1173,7 @@ function FilterModal({
                       animate={{ opacity: 1, height: "auto" }}
                       exit={{ opacity: 0, height: 0 }}
                       transition={{ duration: 0.3 }}
-                      className="absolute top-full left-0 right-0 mt-2 bg-white border-2 border-[#00c0ff]/30 rounded-xl shadow-xl overflow-hidden z-10 max-h-[200px] overflow-y-auto"
+                      className="absolute top-full left-0 right-0 mt-2 bg-white border-2 border-[#13B5B1]/30 rounded-xl shadow-xl overflow-hidden z-10 max-h-[200px] overflow-y-auto"
                     >
                       {allServices.map((service, index) => (
                         <motion.button
@@ -1187,13 +1187,13 @@ function FilterModal({
                           }}
                           className={`w-full px-4 py-3 text-left transition-all flex items-center justify-between group ${
                             service === serviceFilter
-                              ? "bg-[#043570] text-white"
-                              : "text-[#043570] hover:bg-[#f3faff]"
+                              ? "bg-[#0B2545] text-white"
+                              : "text-[#0B2545] hover:bg-[#F1F7F7]"
                           }`}
                         >
                           <span className="font-medium">{service}</span>
                           {service === serviceFilter && (
-                            <Check size={18} className="text-[#00c0ff]" />
+                            <Check size={18} className="text-[#13B5B1]" />
                           )}
                         </motion.button>
                       ))}
@@ -1222,7 +1222,7 @@ function FilterModal({
             )}
             <button
               onClick={handleApply}
-              className="flex-1 px-4 py-2.5 bg-[#00c0ff] hover:bg-[#043570] text-white rounded-lg transition-colors font-medium text-sm"
+              className="flex-1 px-4 py-2.5 bg-[#13B5B1] hover:bg-[#0B2545] text-white rounded-lg transition-colors font-medium text-sm"
             >
               Apply Filters
             </button>
@@ -1281,7 +1281,7 @@ function AppointmentCard({
           onOpenPendingModal(apt);
         }
       }}
-      className="bg-white border border-[#E2E8F0] rounded-2xl p-4 hover:shadow-md hover:border-[#CBD5E1] transition-all group cursor-pointer"
+      className="bg-white border border-[#E5EAF0] rounded-2xl p-4 hover:shadow-md hover:border-[#CBD5E1] transition-all group cursor-pointer"
     >
       {/* Header: Avatar + Name + Blue Circle */}
       <div className="flex items-start gap-3 mb-3">
@@ -1295,7 +1295,7 @@ function AppointmentCard({
             />
           </div>
           {/* Mode Badge */}
-          <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-[#00c0ff] rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+          <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-[#13B5B1] rounded-full flex items-center justify-center border-2 border-white shadow-sm">
             <ModeIcon size={12} className="text-white" />
           </div>
         </div>
@@ -1353,7 +1353,7 @@ function AppointmentCard({
                 e.stopPropagation();
                 handleCancel();
               }}
-              className="flex-1 flex items-center justify-center gap-1.5 text-[#0F172A] text-sm font-medium px-4 py-2.5 rounded-xl border border-[#E2E8F0] hover:border-[#CBD5E1] hover:bg-[#F8FAFC] transition-colors"
+              className="flex-1 flex items-center justify-center gap-1.5 text-[#0F172A] text-sm font-medium px-4 py-2.5 rounded-xl border border-[#E5EAF0] hover:border-[#CBD5E1] hover:bg-[#F8FAFC] transition-colors"
             >
               <X size={16} />
               <span>Cancel</span>
@@ -1371,7 +1371,7 @@ function AppointmentCard({
               e.stopPropagation();
               onOpenConfirmationModal(apt);
             }}
-            className="flex-1 flex items-center justify-center gap-1.5 text-[#0F172A] text-sm font-medium px-4 py-2 rounded-xl border border-[#E2E8F0] hover:border-[#CBD5E1] hover:bg-[#F8FAFC] transition-colors"
+            className="flex-1 flex items-center justify-center gap-1.5 text-[#0F172A] text-sm font-medium px-4 py-2 rounded-xl border border-[#E5EAF0] hover:border-[#CBD5E1] hover:bg-[#F8FAFC] transition-colors"
           >
             <Calendar size={16} />
             <span>Reschedule</span>
@@ -1381,7 +1381,7 @@ function AppointmentCard({
               e.stopPropagation();
               handleCancel();
             }}
-            className="flex-1 flex items-center justify-center gap-1.5 text-[#0F172A] text-sm font-medium px-4 py-2 rounded-xl border border-[#E2E8F0] hover:border-[#CBD5E1] hover:bg-[#F8FAFC] transition-colors"
+            className="flex-1 flex items-center justify-center gap-1.5 text-[#0F172A] text-sm font-medium px-4 py-2 rounded-xl border border-[#E5EAF0] hover:border-[#CBD5E1] hover:bg-[#F8FAFC] transition-colors"
           >
             <X size={16} />
             <span>Cancel</span>
@@ -1403,7 +1403,7 @@ function AppointmentCard({
             <Star
               key={i}
               size={13}
-              className={i < apt.rating! ? "text-[#F59E0B] fill-[#F59E0B]" : "text-[#E2E8F0] fill-[#E2E8F0]"}
+              className={i < apt.rating! ? "text-[#F59E0B] fill-[#F59E0B]" : "text-[#E5EAF0] fill-[#E5EAF0]"}
             />
           ))}
           <span className="text-[10px] text-[#64748B] ml-1">Session rated</span>

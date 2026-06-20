@@ -91,7 +91,7 @@ export function SessionRatingModal({
             >
               <div className="bg-white rounded-2xl shadow-2xl w-full max-w-md max-h-[90vh] overflow-y-auto">
                 {/* Header */}
-                <div className="sticky top-0 bg-gradient-to-r from-[#043570] to-[#00c0ff] px-6 py-5 rounded-t-2xl">
+                <div className="sticky top-0 bg-gradient-to-r from-[#0B2545] to-[#13B5B1] px-6 py-5 rounded-t-2xl">
                   <div className="flex items-center justify-between mb-1">
                     <h2 className="text-lg font-semibold text-white">
                       Session Rating
@@ -121,7 +121,7 @@ export function SessionRatingModal({
                   </motion.div>
 
                   {/* Row 2: Heading */}
-                  <h3 className="text-xl font-semibold text-[#020817] mb-6">
+                  <h3 className="text-xl font-semibold text-[#0F172A] mb-6">
                     You rated this session
                   </h3>
 
@@ -134,7 +134,7 @@ export function SessionRatingModal({
                         className={
                           i < rating
                             ? "text-[#F59E0B] fill-[#F59E0B]"
-                            : "text-[#E2E8F0] fill-[#E2E8F0]"
+                            : "text-[#E5EAF0] fill-[#E5EAF0]"
                         }
                       />
                     ))}
@@ -144,12 +144,12 @@ export function SessionRatingModal({
                   {feedback && (
                     <div className="bg-[#F8FAFC] rounded-xl p-4 mb-6 text-left">
                       <p className="text-sm text-[#64748B] mb-1 font-medium">Your feedback:</p>
-                      <p className="text-sm text-[#020817]">{feedback}</p>
+                      <p className="text-sm text-[#0F172A]">{feedback}</p>
                     </div>
                   )}
 
                   {/* Row 5: Share feedback on app stores */}
-                  <div className="mt-8 pt-6 border-t border-[#E2E8F0]">
+                  <div className="mt-8 pt-6 border-t border-[#E5EAF0]">
                     <p className="text-sm text-[#64748B] mb-4">Share feedback on:</p>
                     <div className="flex items-center justify-center gap-4">
                       {/* Play Store */}
@@ -157,7 +157,7 @@ export function SessionRatingModal({
                         href="https://play.google.com"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 px-4 py-2.5 bg-[#F8FAFC] border border-[#E2E8F0] rounded-xl hover:border-[#CBD5E1] hover:bg-white transition-all"
+                        className="flex items-center gap-2 px-4 py-2.5 bg-[#F8FAFC] border border-[#E5EAF0] rounded-xl hover:border-[#CBD5E1] hover:bg-white transition-all"
                       >
                         <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none">
                           <path
@@ -177,7 +177,7 @@ export function SessionRatingModal({
                             fill="#EA4335"
                           />
                         </svg>
-                        <span className="text-sm font-medium text-[#020817]">Play Store</span>
+                        <span className="text-sm font-medium text-[#0F172A]">Play Store</span>
                       </a>
 
                       {/* App Store */}
@@ -185,15 +185,15 @@ export function SessionRatingModal({
                         href="https://apps.apple.com"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 px-4 py-2.5 bg-[#F8FAFC] border border-[#E2E8F0] rounded-xl hover:border-[#CBD5E1] hover:bg-white transition-all"
+                        className="flex items-center gap-2 px-4 py-2.5 bg-[#F8FAFC] border border-[#E5EAF0] rounded-xl hover:border-[#CBD5E1] hover:bg-white transition-all"
                       >
                         <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                           <path
                             d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09997 22C7.78997 22.05 6.79997 20.68 5.95997 19.47C4.24997 17 2.93997 12.45 4.69997 9.39C5.56997 7.87 7.12997 6.91 8.81997 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"
-                            className="text-[#020817]"
+                            className="text-[#0F172A]"
                           />
                         </svg>
-                        <span className="text-sm font-medium text-[#020817]">App Store</span>
+                        <span className="text-sm font-medium text-[#0F172A]">App Store</span>
                       </a>
                     </div>
                   </div>
@@ -229,7 +229,7 @@ export function SessionRatingModal({
           >
             <div className="bg-white rounded-2xl shadow-2xl w-full max-w-md max-h-[90vh] overflow-y-auto">
               {/* Header */}
-              <div className="sticky top-0 bg-gradient-to-r from-[#043570] to-[#00c0ff] px-6 py-5 rounded-t-2xl">
+              <div className="sticky top-0 bg-gradient-to-r from-[#0B2545] to-[#13B5B1] px-6 py-5 rounded-t-2xl">
                 <div className="flex items-center justify-between mb-1">
                   <h2 className="text-lg font-semibold text-white">
                     Rate Session
@@ -273,7 +273,7 @@ export function SessionRatingModal({
                 {/* Names with Session Mode Icon */}
                 <div className="flex items-center justify-center gap-3 mb-6">
                   {/* Session Mode Icon */}
-                  <div className="w-10 h-10 bg-[#00c0ff] rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 bg-[#13B5B1] rounded-full flex items-center justify-center flex-shrink-0">
                     {(() => {
                       const ModeIconComponent = MODE_ICON[appointment.mode];
                       return <ModeIconComponent size={18} className="text-white" />;
@@ -281,13 +281,13 @@ export function SessionRatingModal({
                   </div>
                   
                   {/* Provider Name */}
-                  <span className="text-base font-semibold text-[#020817]">
+                  <span className="text-base font-semibold text-[#0F172A]">
                     {appointment.providerName}
                   </span>
                   
                   {/* Two-way Arrows Icon */}
                   <svg
-                    className="w-5 h-5 text-[#020817] flex-shrink-0"
+                    className="w-5 h-5 text-[#0F172A] flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -301,28 +301,28 @@ export function SessionRatingModal({
                   </svg>
                   
                   {/* User Name */}
-                  <span className="text-base font-semibold text-[#020817]">
+                  <span className="text-base font-semibold text-[#0F172A]">
                     {userName}
                   </span>
                 </div>
 
                 {/* Session Details */}
-                <div className="bg-[#f3faff] rounded-xl p-4 space-y-3 mb-6">
+                <div className="bg-[#F1F7F7] rounded-xl p-4 space-y-3 mb-6">
                   {/* Service */}
                   <div className="flex items-center gap-3">
-                    <Calendar size={20} className="text-[#043570] flex-shrink-0" />
+                    <Calendar size={20} className="text-[#0B2545] flex-shrink-0" />
                     <div className="flex items-start gap-1.5">
-                      <span className="text-sm font-medium text-[#043570]">Service:</span>
-                      <span className="text-sm text-[#020817]">{appointment.service}</span>
+                      <span className="text-sm font-medium text-[#0B2545]">Service:</span>
+                      <span className="text-sm text-[#0F172A]">{appointment.service}</span>
                     </div>
                   </div>
 
                   {/* Time */}
                   <div className="flex items-center gap-3">
-                    <Clock size={20} className="text-[#043570] flex-shrink-0" />
+                    <Clock size={20} className="text-[#0B2545] flex-shrink-0" />
                     <div className="flex items-start gap-1.5">
-                      <span className="text-sm font-medium text-[#043570]">Time:</span>
-                      <span className="text-sm text-[#020817]">
+                      <span className="text-sm font-medium text-[#0B2545]">Time:</span>
+                      <span className="text-sm text-[#0F172A]">
                         {appointment.date} at {appointment.time}
                       </span>
                     </div>
@@ -330,10 +330,10 @@ export function SessionRatingModal({
 
                   {/* Duration */}
                   <div className="flex items-center gap-3">
-                    <Clock size={20} className="text-[#043570] flex-shrink-0" />
+                    <Clock size={20} className="text-[#0B2545] flex-shrink-0" />
                     <div className="flex items-start gap-1.5">
-                      <span className="text-sm font-medium text-[#043570]">Duration:</span>
-                      <span className="text-sm text-[#020817]">{appointment.duration} mins</span>
+                      <span className="text-sm font-medium text-[#0B2545]">Duration:</span>
+                      <span className="text-sm text-[#0F172A]">{appointment.duration} mins</span>
                     </div>
                   </div>
                 </div>
@@ -341,7 +341,7 @@ export function SessionRatingModal({
                 {/* Heading and Rating in Single Row */}
                 <div className="flex items-center justify-between mb-6">
                   {/* Heading on Left */}
-                  <h3 className="text-base font-medium text-[#020817]">
+                  <h3 className="text-base font-medium text-[#0F172A]">
                     How was the Session?
                   </h3>
 
@@ -361,7 +361,7 @@ export function SessionRatingModal({
                           className={
                             i < (hoverRating || rating)
                               ? "text-[#F59E0B] fill-[#F59E0B]"
-                              : "text-[#E2E8F0] fill-[#E2E8F0]"
+                              : "text-[#E5EAF0] fill-[#E5EAF0]"
                           }
                         />
                       </button>
@@ -371,14 +371,14 @@ export function SessionRatingModal({
 
                 {/* Row 3: Comments Input */}
                 <div className="mb-6">
-                  <label className="block text-sm font-medium text-[#020817] mb-2">
+                  <label className="block text-sm font-medium text-[#0F172A] mb-2">
                     Additional Feedback (Optional)
                   </label>
                   <textarea
                     value={feedback}
                     onChange={(e) => setFeedback(e.target.value)}
                     placeholder="Share your experience with this session..."
-                    className="w-full h-32 px-4 py-3 bg-[#F8FAFC] border border-[#E2E8F0] rounded-xl text-sm text-[#020817] placeholder-[#94A3B8] focus:outline-none focus:border-[#2563EB] focus:ring-2 focus:ring-[#DBEAFE] resize-none transition-all"
+                    className="w-full h-32 px-4 py-3 bg-[#F8FAFC] border border-[#E5EAF0] rounded-xl text-sm text-[#0F172A] placeholder-[#94A3B8] focus:outline-none focus:border-[#2563EB] focus:ring-2 focus:ring-[#DBEAFE] resize-none transition-all"
                   />
                 </div>
 
@@ -386,7 +386,7 @@ export function SessionRatingModal({
                 <div className="flex gap-3">
                   <button
                     onClick={handleClose}
-                    className="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-white border border-[#E2E8F0] text-[#64748B] rounded-xl font-semibold hover:bg-[#F8FAFC] hover:border-[#CBD5E1] transition-colors"
+                    className="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-white border border-[#E5EAF0] text-[#64748B] rounded-xl font-semibold hover:bg-[#F8FAFC] hover:border-[#CBD5E1] transition-colors"
                   >
                     <XCircle size={18} />
                     Cancel
@@ -399,7 +399,7 @@ export function SessionRatingModal({
                     className={`flex-1 flex items-center justify-center gap-2 px-4 py-3 rounded-xl font-semibold transition-colors ${
                       rating > 0
                         ? "bg-[#2563EB] hover:bg-[#1E40AF] text-white"
-                        : "bg-[#E2E8F0] text-[#94A3B8] cursor-not-allowed"
+                        : "bg-[#E5EAF0] text-[#94A3B8] cursor-not-allowed"
                     }`}
                   >
                     <Send size={18} />

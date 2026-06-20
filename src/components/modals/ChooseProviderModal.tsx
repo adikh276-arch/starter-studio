@@ -109,16 +109,16 @@ export function ChooseProviderModal({
           >
             <div className="bg-white rounded-2xl shadow-2xl w-full max-w-lg max-h-[90vh] overflow-y-auto">
               {/* Header */}
-              <div className="sticky top-0 bg-white border-b border-[#E2E8F0] px-6 py-4">
+              <div className="sticky top-0 bg-white border-b border-[#E5EAF0] px-6 py-4">
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3">
                   <div className="flex-1">
                     <div className="flex items-start justify-between gap-2 mb-2">
-                      <h2 className="text-lg font-semibold text-[#020817]">
+                      <h2 className="text-lg font-semibold text-[#0F172A]">
                         Choose Expert
                       </h2>
                       <button
                         onClick={handleClose}
-                        className="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-[#f3faff] text-[#64748B] transition-colors flex-shrink-0 sm:hidden"
+                        className="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-[#F1F7F7] text-[#64748B] transition-colors flex-shrink-0 sm:hidden"
                       >
                         <X size={20} />
                       </button>
@@ -131,7 +131,7 @@ export function ChooseProviderModal({
                   <div className="flex items-center justify-end gap-2">
                     <button
                       onClick={handleClose}
-                      className="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-[#f3faff] text-[#64748B] transition-colors flex-shrink-0"
+                      className="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-[#F1F7F7] text-[#64748B] transition-colors flex-shrink-0"
                     >
                       <X size={20} />
                     </button>
@@ -152,7 +152,7 @@ export function ChooseProviderModal({
                         w-full flex items-center gap-3 p-3 rounded-lg transition-all text-left
                         ${
                           isSelected
-                            ? "border-2 border-[#00c0ff] bg-[#f3faff]"
+                            ? "border-2 border-[#13B5B1] bg-[#F1F7F7]"
                             : "border-2 border-transparent hover:bg-[#F8FAFC]"
                         }
                       `}
@@ -170,7 +170,7 @@ export function ChooseProviderModal({
                       {/* Provider Info */}
                       <div className="flex-1 min-w-0">
                         <div className="flex items-baseline gap-1.5 flex-wrap">
-                          <span className="font-semibold text-[#020817] text-[15px]">
+                          <span className="font-semibold text-[#0F172A] text-[15px]">
                             {provider.name}
                           </span>
                           <span className="text-[13px] text-[#94A3B8]">
@@ -187,7 +187,7 @@ export function ChooseProviderModal({
               </div>
 
               {/* Continue Button */}
-              <div className="sticky bottom-0 bg-white border-t border-[#E2E8F0] px-6 py-4">
+              <div className="sticky bottom-0 bg-white border-t border-[#E5EAF0] px-6 py-4">
                 <button
                   onClick={handleContinue}
                   disabled={!selectedProviderId}
@@ -195,8 +195,8 @@ export function ChooseProviderModal({
                     w-full py-3.5 rounded-xl font-semibold transition-all
                     ${
                       selectedProviderId
-                        ? "bg-[#00c0ff] text-white hover:bg-[#00a8e0]"
-                        : "bg-[#F1F5F9] text-[#CBD5E1] cursor-not-allowed"
+                        ? "bg-[#13B5B1] text-white hover:bg-[#00a8e0]"
+                        : "bg-[#F1F4F8] text-[#CBD5E1] cursor-not-allowed"
                     }
                   `}
                 >

@@ -377,41 +377,41 @@ const SUB_STATUS_CFG = {
   active:    { label: "Active",    bg: "bg-[#D1FAE5]", text: "text-[#065F46]", icon: CheckCircle2, dot: "bg-[#10B981]" },
   cancelled: { label: "Cancelled", bg: "bg-[#FFE4E6]", text: "text-[#F43F5E]", icon: XCircle,      dot: "bg-[#F43F5E]" },
   expired:   { label: "Expired",   bg: "bg-[#FED7AA]", text: "text-[#F97316]", icon: AlertCircle,  dot: "bg-[#F97316]" },
-  paused:    { label: "Paused",    bg: "bg-[#f3faff]", text: "text-[#043570]", icon: AlertCircle,  dot: "bg-[#00c0ff]" },
+  paused:    { label: "Paused",    bg: "bg-[#F1F7F7]", text: "text-[#0B2545]", icon: AlertCircle,  dot: "bg-[#13B5B1]" },
 };
 
 const TYPE_CFG_SUB = {
-  Video:      { bg: "bg-[#043570]", light: "bg-[#f3faff]", text: "text-[#043570]", border: "border-[#00c0ff]/30" },
-  Chat:       { bg: "bg-[#043570]", light: "bg-[#f3faff]", text: "text-[#043570]", border: "border-[#00c0ff]/30" },
-  Psychiatry: { bg: "bg-[#043570]", light: "bg-[#f3faff]", text: "text-[#043570]", border: "border-[#00c0ff]/30" },
-  Wellness:   { bg: "bg-[#043570]", light: "bg-[#f3faff]", text: "text-[#043570]", border: "border-[#00c0ff]/30" },
+  Video:      { bg: "bg-[#0B2545]", light: "bg-[#F1F7F7]", text: "text-[#0B2545]", border: "border-[#13B5B1]/30" },
+  Chat:       { bg: "bg-[#0B2545]", light: "bg-[#F1F7F7]", text: "text-[#0B2545]", border: "border-[#13B5B1]/30" },
+  Psychiatry: { bg: "bg-[#0B2545]", light: "bg-[#F1F7F7]", text: "text-[#0B2545]", border: "border-[#13B5B1]/30" },
+  Wellness:   { bg: "bg-[#0B2545]", light: "bg-[#F1F7F7]", text: "text-[#0B2545]", border: "border-[#13B5B1]/30" },
 };
 
 const SUB_ORDER_STATUS = {
-  paid:     { label: "Paid",     cls: "bg-[#f3faff] text-[#043570]" },
+  paid:     { label: "Paid",     cls: "bg-[#F1F7F7] text-[#0B2545]" },
   refunded: { label: "Refunded", cls: "bg-[#FED7AA] text-[#F97316]" },
-  pending:  { label: "Pending",  cls: "bg-[#f3faff] text-[#043570]" },
+  pending:  { label: "Pending",  cls: "bg-[#F1F7F7] text-[#0B2545]" },
 };
 
 const ORDER_STATUS_CFG: Record<OrderStatus, { label: string; bg: string; text: string; dot: string; icon: React.ElementType }> = {
-  active:   { label: "Active",   bg: "bg-[#f3faff]", text: "text-[#043570]", dot: "bg-[#00c0ff]", icon: CheckCircle2 },
-  expired:  { label: "Expired",  bg: "bg-[#f3faff]",  text: "text-[#64748B]", dot: "bg-[#00c0ff]", icon: XCircle      },
-  pending:  { label: "Pending",  bg: "bg-[#f3faff]",  text: "text-[#F97316]", dot: "bg-[#00c0ff]", icon: AlertCircle  },
-  refunded: { label: "Refunded", bg: "bg-[#f3faff]",  text: "text-[#F43F5E]", dot: "bg-[#00c0ff]", icon: RefreshCw    },
+  active:   { label: "Active",   bg: "bg-[#F1F7F7]", text: "text-[#0B2545]", dot: "bg-[#13B5B1]", icon: CheckCircle2 },
+  expired:  { label: "Expired",  bg: "bg-[#F1F7F7]",  text: "text-[#64748B]", dot: "bg-[#13B5B1]", icon: XCircle      },
+  pending:  { label: "Pending",  bg: "bg-[#F1F7F7]",  text: "text-[#F97316]", dot: "bg-[#13B5B1]", icon: AlertCircle  },
+  refunded: { label: "Refunded", bg: "bg-[#F1F7F7]",  text: "text-[#F43F5E]", dot: "bg-[#13B5B1]", icon: RefreshCw    },
 };
 
 const DAY_STATUS_CFG: Record<DayStatus, { label: (n: number) => string; bg: string; text: string }> = {
-  expired: { label: (n) => `${Math.abs(n)}d ago`, bg: "bg-[#f3faff]",  text: "text-[#64748B]" },
-  today:   { label: ()  => "Expires today",        bg: "bg-[#f3faff]",  text: "text-[#043570]" },
-  soon:    { label: (n) => `${n}d left`,           bg: "bg-[#f3faff]",  text: "text-[#F97316]" },
-  ok:      { label: (n) => `${n}d left`,           bg: "bg-[#f3faff]",  text: "text-[#043570]" },
+  expired: { label: (n) => `${Math.abs(n)}d ago`, bg: "bg-[#F1F7F7]",  text: "text-[#64748B]" },
+  today:   { label: ()  => "Expires today",        bg: "bg-[#F1F7F7]",  text: "text-[#0B2545]" },
+  soon:    { label: (n) => `${n}d left`,           bg: "bg-[#F1F7F7]",  text: "text-[#F97316]" },
+  ok:      { label: (n) => `${n}d left`,           bg: "bg-[#F1F7F7]",  text: "text-[#0B2545]" },
 };
 
 const TYPE_CFG_ORD = {
-  Video:      { bg: "bg-[#f3faff]", text: "text-[#043570]", dot: "bg-[#00c0ff]" },
-  Chat:       { bg: "bg-[#f3faff]", text: "text-[#043570]", dot: "bg-[#00c0ff]" },
-  Psychiatry: { bg: "bg-[#f3faff]", text: "text-[#043570]", dot: "bg-[#00c0ff]" },
-  Wellness:   { bg: "bg-[#f3faff]", text: "text-[#043570]", dot: "bg-[#00c0ff]" },
+  Video:      { bg: "bg-[#F1F7F7]", text: "text-[#0B2545]", dot: "bg-[#13B5B1]" },
+  Chat:       { bg: "bg-[#F1F7F7]", text: "text-[#0B2545]", dot: "bg-[#13B5B1]" },
+  Psychiatry: { bg: "bg-[#F1F7F7]", text: "text-[#0B2545]", dot: "bg-[#13B5B1]" },
+  Wellness:   { bg: "bg-[#F1F7F7]", text: "text-[#0B2545]", dot: "bg-[#13B5B1]" },
 };
 
 type SortKey = "id" | "product" | "amount" | "from" | "daysToExpire" | "status";
@@ -447,7 +447,7 @@ function SubscriptionCard({ sub, index }: { sub: Subscription; index: number }) 
       initial={{ opacity: 0, y: 16 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.35, delay: index * 0.08 }}
-      className="bg-white border border-[#E2E8F0] rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+      className="bg-white border border-[#E5EAF0] rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow"
     >
       <div className="px-5 py-4 cursor-pointer select-none" onClick={() => setExpanded(e => !e)}>
         <div className="flex items-start gap-3">
@@ -484,13 +484,13 @@ function SubscriptionCard({ sub, index }: { sub: Subscription; index: number }) 
               <div className="mt-2.5">
                 <div className="flex items-center justify-between mb-1">
                   <span className="text-[10px] text-slate-400">{sub.sessionsUsed} of {sub.sessions} sessions used</span>
-                  <span className={`text-[10px] font-medium ${sessionsLeft > 0 ? "text-[#22C55E]" : "text-[#E2E8F0]"}`}>
+                  <span className={`text-[10px] font-medium ${sessionsLeft > 0 ? "text-[#22C55E]" : "text-[#E5EAF0]"}`}>
                     {sessionsLeft > 0 ? `${sessionsLeft} remaining` : "Exhausted"}
                   </span>
                 </div>
-                <div className="h-1 bg-[#F1F5F9] rounded-full overflow-hidden">
+                <div className="h-1 bg-[#F1F4F8] rounded-full overflow-hidden">
                   <motion.div
-                    className={`h-full rounded-full ${sub.status === "active" ? "bg-[#00c0ff]" : "bg-[#E2E8F0]"}`}
+                    className={`h-full rounded-full ${sub.status === "active" ? "bg-[#13B5B1]" : "bg-[#E5EAF0]"}`}
                     initial={{ width: 0 }}
                     animate={{ width: `${pct}%` }}
                     transition={{ duration: 0.8, delay: index * 0.1 + 0.2, ease: "easeOut" }}
@@ -522,7 +522,7 @@ function SubscriptionCard({ sub, index }: { sub: Subscription; index: number }) 
 
             {sub.status === "active" && (
               <div className="mx-5 mb-4 flex flex-wrap gap-2">
-                <button className="flex items-center gap-1.5 px-3 py-1.5 bg-[#043570] text-white text-xs rounded-xl hover:bg-[#00c0ff] transition-colors shadow-sm">
+                <button className="flex items-center gap-1.5 px-3 py-1.5 bg-[#0B2545] text-white text-xs rounded-xl hover:bg-[#13B5B1] transition-colors shadow-sm">
                   <RefreshCw size={12} /> Renew Plan
                 </button>
                 <button className="flex items-center gap-1.5 px-3 py-1.5 bg-white border border-[#FFE4E6] text-[#F43F5E] text-xs rounded-xl hover:bg-[#FFE4E6] transition-colors">
@@ -532,7 +532,7 @@ function SubscriptionCard({ sub, index }: { sub: Subscription; index: number }) 
             )}
             {sub.status === "cancelled" && (
               <div className="mx-5 mb-4 flex flex-wrap gap-2">
-                <button className="flex items-center gap-1.5 px-3 py-1.5 bg-[#043570] text-white text-xs rounded-xl hover:bg-[#00c0ff] transition-colors shadow-sm">
+                <button className="flex items-center gap-1.5 px-3 py-1.5 bg-[#0B2545] text-white text-xs rounded-xl hover:bg-[#13B5B1] transition-colors shadow-sm">
                   <ArrowRight size={12} /> Resubscribe
                 </button>
               </div>
@@ -561,7 +561,7 @@ function SubscriptionCard({ sub, index }: { sub: Subscription; index: number }) 
                         className="grid grid-cols-3 px-4 py-2.5 hover:bg-slate-50 transition-colors"
                       >
                         <span className="text-xs text-[#2563EB] font-medium flex items-center gap-1">
-                          <Hash size={10} className="text-[#E2E8F0]" />{order.id}
+                          <Hash size={10} className="text-[#E5EAF0]" />{order.id}
                         </span>
                         <span className="text-xs text-slate-600">{order.date}</span>
                         <div className="flex items-center justify-end gap-2">
@@ -598,7 +598,7 @@ function ExtendButton() {
       <button
         onMouseEnter={() => setShowExtendPopup(true)}
         onMouseLeave={() => setShowExtendPopup(false)}
-        className="px-2.5 py-1 rounded-lg flex items-center gap-1 bg-[#043570] text-white hover:bg-[#00c0ff] transition-all text-[11px] font-medium"
+        className="px-2.5 py-1 rounded-lg flex items-center gap-1 bg-[#0B2545] text-white hover:bg-[#13B5B1] transition-all text-[11px] font-medium"
         title="Extend Plan"
       >
         <RefreshCw size={11} />
@@ -612,14 +612,14 @@ function ExtendButton() {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 5 }}
             transition={{ duration: 0.15 }}
-            className="absolute left-1/2 -translate-x-1/2 top-full mt-2 bg-white border border-[#E2E8F0] rounded-xl shadow-2xl p-3 z-50 min-w-[180px]"
+            className="absolute left-1/2 -translate-x-1/2 top-full mt-2 bg-white border border-[#E5EAF0] rounded-xl shadow-2xl p-3 z-50 min-w-[180px]"
             onMouseEnter={() => setShowExtendPopup(true)}
             onMouseLeave={() => setShowExtendPopup(false)}
           >
             {/* Arrow */}
-            <div className="absolute -top-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-white border-t border-l border-[#E2E8F0] rotate-45" />
+            <div className="absolute -top-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-white border-t border-l border-[#E5EAF0] rotate-45" />
 
-            <p className="text-xs text-[#020817] font-medium mb-2.5">Extend this plan?</p>
+            <p className="text-xs text-[#0F172A] font-medium mb-2.5">Extend this plan?</p>
             <div className="flex items-center gap-2">
               <button
                 onClick={(e) => {
@@ -627,7 +627,7 @@ function ExtendButton() {
                   setShowExtendPopup(false);
                   // Handle extend logic here
                 }}
-                className="flex-1 px-3 py-1.5 bg-[#043570] hover:bg-[#00c0ff] text-white text-xs rounded-lg transition-colors font-medium"
+                className="flex-1 px-3 py-1.5 bg-[#0B2545] hover:bg-[#13B5B1] text-white text-xs rounded-lg transition-colors font-medium"
               >
                 Extend
               </button>
@@ -636,7 +636,7 @@ function ExtendButton() {
                   e.stopPropagation();
                   setShowExtendPopup(false);
                 }}
-                className="flex-1 px-3 py-1.5 bg-white border border-[#E2E8F0] hover:bg-[#F8FAFC] text-[#64748B] text-xs rounded-lg transition-colors font-medium"
+                className="flex-1 px-3 py-1.5 bg-white border border-[#E5EAF0] hover:bg-[#F8FAFC] text-[#64748B] text-xs rounded-lg transition-colors font-medium"
               >
                 Cancel
               </button>
@@ -651,7 +651,7 @@ function ExtendButton() {
 function AddDependentsButton() {
   return (
     <button
-      className="px-2.5 py-1 rounded-lg flex items-center gap-1 bg-[#043570] text-white hover:bg-[#00c0ff] transition-all text-[11px] font-medium"
+      className="px-2.5 py-1 rounded-lg flex items-center gap-1 bg-[#0B2545] text-white hover:bg-[#13B5B1] transition-all text-[11px] font-medium"
       title="Add Dependents"
       onClick={(e) => {
         e.stopPropagation();
@@ -697,11 +697,11 @@ function ActionButtons({ order }: { order: Order }) {
     <div className="flex items-center gap-2">
       {/* Download Icon */}
       <button 
-        className="p-1.5 text-[#64748B] hover:text-[#00c0ff] hover:bg-[#f3faff] rounded-lg transition-all relative group"
+        className="p-1.5 text-[#64748B] hover:text-[#13B5B1] hover:bg-[#F1F7F7] rounded-lg transition-all relative group"
         title="Download Receipt"
       >
         <Download size={16} />
-        <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 bg-[#020817] text-white text-[10px] rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+        <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 bg-[#0F172A] text-white text-[10px] rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
           Download Receipt
         </span>
       </button>
@@ -715,7 +715,7 @@ function ActionButtons({ order }: { order: Order }) {
           title="Request Refund"
         >
           <CircleAlert size={16} />
-          <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 bg-[#020817] text-white text-[10px] rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+          <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 bg-[#0F172A] text-white text-[10px] rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
             Request Refund
           </span>
         </a>
@@ -758,10 +758,10 @@ function SubscriptionsTab() {
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.35, delay: 0.2 }}
-        className="bg-[#f3faff] border border-[#00c0ff]/30 rounded-xl px-4 py-3 mb-4 flex items-start gap-3"
+        className="bg-[#F1F7F7] border border-[#13B5B1]/30 rounded-xl px-4 py-3 mb-4 flex items-start gap-3"
       >
-        <AlertCircle size={16} className="text-[#043570] flex-shrink-0 mt-0.5" />
-        <p className="text-[#043570] text-sm">You have cancelled subscriptions. Resubscribe to resume sessions with your care team.</p>
+        <AlertCircle size={16} className="text-[#0B2545] flex-shrink-0 mt-0.5" />
+        <p className="text-[#0B2545] text-sm">You have cancelled subscriptions. Resubscribe to resume sessions with your care team.</p>
       </motion.div>
 
       {/* Cards */}
@@ -850,7 +850,7 @@ function OrdersTab() {
             placeholder="Search order ID or product…"
             value={search}
             onChange={e => { setSearch(e.target.value); resetPage(); }}
-            className="w-full pl-8 pr-3 py-2 text-sm bg-[#F8FAFC] border border-[#E2E8F0] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#93C5FD] focus:border-[#2563EB] transition"
+            className="w-full pl-8 pr-3 py-2 text-sm bg-[#F8FAFC] border border-[#E5EAF0] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#93C5FD] focus:border-[#2563EB] transition"
           />
         </div>
         <div className="flex items-center gap-1.5">
@@ -858,7 +858,7 @@ function OrdersTab() {
           <select
             value={statusFilter}
             onChange={e => { setStatus(e.target.value as "all" | OrderStatus); resetPage(); }}
-            className="text-sm bg-[#F8FAFC] border border-[#E2E8F0] rounded-xl px-2.5 py-2 focus:outline-none focus:ring-2 focus:ring-[#E2E8F0] text-[#64748B]"
+            className="text-sm bg-[#F8FAFC] border border-[#E5EAF0] rounded-xl px-2.5 py-2 focus:outline-none focus:ring-2 focus:ring-[#E5EAF0] text-[#64748B]"
           >
             <option value="all">All Status</option>
             <option value="active">Active</option>
@@ -870,7 +870,7 @@ function OrdersTab() {
         <select
           value={typeFilter}
           onChange={e => { setType(e.target.value as "all" | Order["type"]); resetPage(); }}
-          className="text-sm bg-[#F8FAFC] border border-[#E2E8F0] rounded-xl px-2.5 py-2 focus:outline-none focus:ring-2 focus:ring-[#E2E8F0] text-[#64748B]"
+          className="text-sm bg-[#F8FAFC] border border-[#E5EAF0] rounded-xl px-2.5 py-2 focus:outline-none focus:ring-2 focus:ring-[#E5EAF0] text-[#64748B]"
         >
           <option value="all">All Types</option>
           <option value="Video">Video</option>
@@ -934,7 +934,7 @@ function OrdersTab() {
                     className="hover:bg-slate-50 transition-colors"
                   >
                     <td className="px-4 py-3 whitespace-nowrap">
-                      <span className="flex items-center gap-1 text-[#00c0ff] font-medium text-[12px]">
+                      <span className="flex items-center gap-1 text-[#13B5B1] font-medium text-[12px]">
                         <Hash size={12} className="text-slate-300" />{order.id}
                       </span>
                     </td>
@@ -979,8 +979,8 @@ function OrdersTab() {
                   onClick={() => toggleRow(order.id)}
                 >
                   <div className="flex-1">
-                    <p className="text-[#00c0ff] font-medium text-xs flex items-center gap-1">
-                      <Hash size={10} className="text-[#E2E8F0]" />{order.id}
+                    <p className="text-[#13B5B1] font-medium text-xs flex items-center gap-1">
+                      <Hash size={10} className="text-[#E5EAF0]" />{order.id}
                     </p>
                     <div className="flex items-center gap-2 mt-0.5 flex-wrap">
                       <span className={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${TYPE_CFG_ORD[order.type].dot}`} />
@@ -1053,7 +1053,7 @@ function OrdersTab() {
             <select
               value={rowsPerPage}
               onChange={e => { setRowsPerPage(Number(e.target.value)); setPage(1); }}
-              className="text-[12px] bg-white border border-[#E2E8F0] rounded-lg px-1.5 py-1 focus:outline-none focus:ring-1 focus:ring-[#22C55E]"
+              className="text-[12px] bg-white border border-[#E5EAF0] rounded-lg px-1.5 py-1 focus:outline-none focus:ring-1 focus:ring-[#22C55E]"
             >
               {ROWS_OPTIONS.map(n => <option key={n} value={n}>{n}</option>)}
             </select>
@@ -1073,7 +1073,7 @@ function OrdersTab() {
                   <button
                     key={p}
                     onClick={() => setPage(p)}
-                    className={`w-7 h-7 rounded-lg text-[12px] font-medium transition-colors ${p === safeP ? "bg-[#043570] text-white shadow-sm" : "text-[#64748B] hover:bg-[#f3faff]"}`}
+                    className={`w-7 h-7 rounded-lg text-[12px] font-medium transition-colors ${p === safeP ? "bg-[#0B2545] text-white shadow-sm" : "text-[#64748B] hover:bg-[#F1F7F7]"}`}
                   >
                     {p}
                   </button>
@@ -1130,12 +1130,12 @@ function PaymentMethodsTab() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.35, delay: 0.2 + i * 0.08 }}
-            className="bg-white border border-[#E2E8F0] rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+            className="bg-white border border-[#E5EAF0] rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow"
           >
             <div className="px-5 py-4">
               <div className="flex items-start gap-4">
                 {/* Icon */}
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#043570] to-[#00c0ff] flex items-center justify-center flex-shrink-0 shadow-sm">
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#0B2545] to-[#13B5B1] flex items-center justify-center flex-shrink-0 shadow-sm">
                   {pm.type === "card" && <CreditCard size={20} className="text-white" />}
                   {pm.type === "upi" && <Wallet size={20} className="text-white" />}
                   {pm.type === "netbanking" && <Building2 size={20} className="text-white" />}
@@ -1149,7 +1149,7 @@ function PaymentMethodsTab() {
                       <div className="flex items-center gap-2 flex-wrap">
                         <p className="text-slate-800 text-sm font-medium">{pm.name}</p>
                         {pm.isDefault && (
-                          <span className="inline-flex items-center gap-1 text-[10px] px-2 py-0.5 rounded-full font-medium bg-[#f3faff] text-[#043570] border border-[#00c0ff]/30">
+                          <span className="inline-flex items-center gap-1 text-[10px] px-2 py-0.5 rounded-full font-medium bg-[#F1F7F7] text-[#0B2545] border border-[#13B5B1]/30">
                             <Star size={9} className="fill-current" /> Default
                           </span>
                         )}
@@ -1185,7 +1185,7 @@ function PaymentMethodsTab() {
 
                     {/* Actions */}
                     <div className="flex items-center gap-2 flex-shrink-0">
-                      <button className="p-2 text-[#64748B] hover:text-[#043570] hover:bg-[#f3faff] rounded-lg transition-all" title="Edit">
+                      <button className="p-2 text-[#64748B] hover:text-[#0B2545] hover:bg-[#F1F7F7] rounded-lg transition-all" title="Edit">
                         <Edit2 size={14} />
                       </button>
                       <button className="p-2 text-[#64748B] hover:text-[#F43F5E] hover:bg-[#FFE4E6] rounded-lg transition-all" title="Remove">
@@ -1205,10 +1205,10 @@ function PaymentMethodsTab() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.4, delay: 0.5 }}
-        className="mt-6 bg-[#f3faff] border border-[#00c0ff]/30 rounded-xl px-4 py-3 flex items-start gap-3"
+        className="mt-6 bg-[#F1F7F7] border border-[#13B5B1]/30 rounded-xl px-4 py-3 flex items-start gap-3"
       >
-        <ShieldCheck size={16} className="text-[#043570] flex-shrink-0 mt-0.5" />
-        <p className="text-[#043570] text-xs">
+        <ShieldCheck size={16} className="text-[#0B2545] flex-shrink-0 mt-0.5" />
+        <p className="text-[#0B2545] text-xs">
           Your payment information is encrypted and secure. We never store your complete card details on our servers.
         </p>
       </motion.div>
@@ -1286,9 +1286,9 @@ function InsuranceTab() {
   };
   
   const insuranceStatusCfg = {
-    active: { label: "Active", bg: "bg-[#f3faff]", text: "text-[#043570]", icon: CheckCircle2 },
+    active: { label: "Active", bg: "bg-[#F1F7F7]", text: "text-[#0B2545]", icon: CheckCircle2 },
     expired: { label: "Expired", bg: "bg-[#FED7AA]", text: "text-[#F97316]", icon: XCircle },
-    pending: { label: "Pending", bg: "bg-[#f3faff]", text: "text-[#043570]", icon: AlertCircle },
+    pending: { label: "Pending", bg: "bg-[#F1F7F7]", text: "text-[#0B2545]", icon: AlertCircle },
   };
 
   return (
@@ -1307,26 +1307,26 @@ function InsuranceTab() {
               onClick={() => setActiveSubTab("insurance")}
               className={`relative pb-3 text-sm font-medium transition-colors ${
                 activeSubTab === "insurance"
-                  ? "text-[#00c0ff]"
-                  : "text-[#64748B] hover:text-[#020817]"
+                  ? "text-[#13B5B1]"
+                  : "text-[#64748B] hover:text-[#0F172A]"
               }`}
             >
               Insurance
               {activeSubTab === "insurance" && (
-                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#00c0ff]"></div>
+                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#13B5B1]"></div>
               )}
             </button>
             <button
               onClick={() => setActiveSubTab("claims")}
               className={`relative pb-3 text-sm font-medium transition-colors ${
                 activeSubTab === "claims"
-                  ? "text-[#00c0ff]"
-                  : "text-[#64748B] hover:text-[#020817]"
+                  ? "text-[#13B5B1]"
+                  : "text-[#64748B] hover:text-[#0F172A]"
               }`}
             >
               Claims
               {activeSubTab === "claims" && (
-                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#00c0ff]"></div>
+                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#13B5B1]"></div>
               )}
             </button>
           </div>
@@ -1371,7 +1371,7 @@ function InsuranceTab() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.35, delay: 0.2 + i * 0.08 }}
-              className="bg-white border border-[#E2E8F0] rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+              className="bg-white border border-[#E5EAF0] rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow"
             >
               <div className="px-5 py-4">
                 <div className="flex items-start gap-4">
@@ -1398,31 +1398,31 @@ function InsuranceTab() {
                     </div>
 
                     {/* Info Grid */}
-                    <div className="bg-[#f3faff] border border-[#00c0ff]/30 rounded-xl p-3 mb-3">
+                    <div className="bg-[#F1F7F7] border border-[#13B5B1]/30 rounded-xl p-3 mb-3">
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
                         <div className="flex items-start gap-2">
-                          <Hash size={12} className="text-[#043570] mt-0.5 flex-shrink-0" />
+                          <Hash size={12} className="text-[#0B2545] mt-0.5 flex-shrink-0" />
                           <div>
                             <p className="text-slate-400 text-[10px] uppercase tracking-wide">Policy Holder</p>
                             <p className="text-slate-700 font-medium">{policy.policyHolder}</p>
                           </div>
                         </div>
                         <div className="flex items-start gap-2">
-                          <Calendar size={12} className="text-[#043570] mt-0.5 flex-shrink-0" />
+                          <Calendar size={12} className="text-[#0B2545] mt-0.5 flex-shrink-0" />
                           <div>
                             <p className="text-slate-400 text-[10px] uppercase tracking-wide">Coverage Period</p>
                             <p className="text-slate-700 font-medium">{policy.startDate} - {policy.endDate}</p>
                           </div>
                         </div>
                         <div className="flex items-start gap-2">
-                          <Receipt size={12} className="text-[#043570] mt-0.5 flex-shrink-0" />
+                          <Receipt size={12} className="text-[#0B2545] mt-0.5 flex-shrink-0" />
                           <div>
                             <p className="text-slate-400 text-[10px] uppercase tracking-wide">Coverage Type</p>
                             <p className="text-slate-700 font-medium">{policy.coverage}</p>
                           </div>
                         </div>
                         <div className="flex items-start gap-2">
-                          <IndianRupee size={12} className="text-[#043570] mt-0.5 flex-shrink-0" />
+                          <IndianRupee size={12} className="text-[#0B2545] mt-0.5 flex-shrink-0" />
                           <div>
                             <p className="text-slate-400 text-[10px] uppercase tracking-wide">Copay / Deductible</p>
                             <p className="text-slate-700 font-medium">{policy.copay} / {policy.deductible}</p>
@@ -1444,14 +1444,14 @@ function InsuranceTab() {
                           className={`flex items-center gap-1.5 px-3 py-1.5 text-xs rounded-xl transition-all ${
                             policy.isPrimary 
                               ? 'bg-amber-100 border border-amber-200 text-amber-700' 
-                              : 'bg-white border border-[#E2E8F0] text-[#64748B] hover:bg-amber-50 hover:border-amber-200'
+                              : 'bg-white border border-[#E5EAF0] text-[#64748B] hover:bg-amber-50 hover:border-amber-200'
                           }`}
                           title={policy.isPrimary ? "Primary Insurance" : "Set as Primary"}
                         >
                           <Star size={12} className={policy.isPrimary ? "fill-current" : ""} />
                           {policy.isPrimary ? "Primary" : "Set Primary"}
                         </button>
-                        <button className="flex items-center gap-1.5 px-3 py-1.5 bg-white border border-[#E2E8F0] text-[#64748B] text-xs rounded-xl hover:bg-[#f3faff] transition-colors">
+                        <button className="flex items-center gap-1.5 px-3 py-1.5 bg-white border border-[#E5EAF0] text-[#64748B] text-xs rounded-xl hover:bg-[#F1F7F7] transition-colors">
                           <Edit2 size={12} /> Edit
                         </button>
                         <button className="flex items-center gap-1.5 px-3 py-1.5 bg-white border border-[#FFE4E6] text-[#F43F5E] text-xs rounded-xl hover:bg-[#FFE4E6] transition-colors">
@@ -1475,7 +1475,7 @@ function InsuranceTab() {
                   whileHover={{ y: -1, scale: 1.02 }}
                   whileTap={{ scale: 0.97 }}
                   onClick={() => setIsAddModalOpen(true)}
-                  className="flex items-center gap-1.5 bg-[#043570] hover:bg-[#00c0ff] text-white text-sm px-3 py-2 rounded-xl shadow-sm shadow-[#043570]/20 transition-colors"
+                  className="flex items-center gap-1.5 bg-[#0B2545] hover:bg-[#13B5B1] text-white text-sm px-3 py-2 rounded-xl shadow-sm shadow-[#0B2545]/20 transition-colors"
                 >
                   <Plus size={14} />
                   <span className="hidden sm:inline">Add Insurance</span>
@@ -1488,10 +1488,10 @@ function InsuranceTab() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.4, delay: 0.5 }}
-                className="mt-4 bg-[#f3faff] border border-[#00c0ff]/30 rounded-xl px-4 py-3 flex items-start gap-3"
+                className="mt-4 bg-[#F1F7F7] border border-[#13B5B1]/30 rounded-xl px-4 py-3 flex items-start gap-3"
               >
-                <AlertCircle size={16} className="text-[#043570] flex-shrink-0 mt-0.5" />
-                <p className="text-[#043570] text-xs">
+                <AlertCircle size={16} className="text-[#0B2545] flex-shrink-0 mt-0.5" />
+                <p className="text-[#0B2545] text-xs">
                   Insurance claims may take 3-5 business days to process. Contact your insurance provider for specific coverage details.
                 </p>
               </motion.div>
@@ -1539,7 +1539,7 @@ function InsuranceTab() {
                             </span>
                             {/* Copay Badge for Eligible claims with payable amount */}
                             {claim.status === "Eligible" && (claim.payableAmount || 0) > 0 && (
-                              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-xs font-medium border" style={{ backgroundColor: '#E5F8FF', color: '#00c0ff', borderColor: '#00c0ff' }}>
+                              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-xs font-medium border" style={{ backgroundColor: '#E5F8FF', color: '#13B5B1', borderColor: '#13B5B1' }}>
                                 <Coins size={12} />
                                 Copay
                               </span>
@@ -1831,7 +1831,7 @@ function MantraCoinsTab() {
               className="flex items-center gap-3 px-4 py-3 hover:bg-slate-50 transition-colors"
             >
               <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${
-                tx.type === "credit" ? "bg-[#F1F5F9]" : "bg-[#F8FAFC]"
+                tx.type === "credit" ? "bg-[#F1F4F8]" : "bg-[#F8FAFC]"
               }`}>
                 {tx.type === "credit"
                   ? <ArrowUpRight size={15} className="text-[#0D9488]" />
@@ -1891,8 +1891,8 @@ export function BillingPage() {
           >
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-[#F1F5F9] rounded-md flex items-center justify-center flex-shrink-0">
-                  <CreditCard size={20} className="text-[#1E293B]" strokeWidth={2} />
+                <div className="w-10 h-10 bg-[#F1F4F8] rounded-md flex items-center justify-center flex-shrink-0">
+                  <CreditCard size={20} className="text-[#0F172A]" strokeWidth={2} />
                 </div>
                 <div>
                   <h1 className="text-2xl text-[#0f172b] font-medium mb-1">Billing</h1>
@@ -1903,7 +1903,7 @@ export function BillingPage() {
                 {activeTab === "subscriptions" && (
                   <button 
                     onClick={() => navigate("/plans")}
-                    className="flex items-center gap-2 bg-[#043570] hover:bg-[#00c0ff] text-white text-sm px-4 py-2 rounded-xl transition-colors shadow-sm"
+                    className="flex items-center gap-2 bg-[#0B2545] hover:bg-[#13B5B1] text-white text-sm px-4 py-2 rounded-xl transition-colors shadow-sm"
                   >
                     <Zap size={14} />
                     <span className="hidden sm:inline">New Plan</span>
@@ -1921,8 +1921,8 @@ export function BillingPage() {
                 onClick={() => setActiveTab(tab.id)}
                 className={`relative flex items-center gap-2 px-5 py-2 rounded-xl text-sm transition-colors ${
                   activeTab === tab.id
-                    ? "bg-[#043570] text-white shadow-sm"
-                    : "text-[#64748B] hover:text-[#020817] hover:bg-[#f3faff]"
+                    ? "bg-[#0B2545] text-white shadow-sm"
+                    : "text-[#64748B] hover:text-[#0F172A] hover:bg-[#F1F7F7]"
                 }`}
               >
                 <tab.icon size={14} />

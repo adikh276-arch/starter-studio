@@ -174,18 +174,18 @@ export function CareTeamHistory() {
       <div className="flex-1 flex flex-col min-w-0">
         <main className="flex-1 flex">
           {/* Left Panel - Experts & Messages */}
-          <div className={`${showExpertsList ? 'flex' : 'hidden md:flex'} w-full md:w-80 lg:w-96 xl:w-[420px] 2xl:w-[480px] bg-white border-r border-[#E2ECF5] flex-col pt-[60px] md:pt-0`}>
+          <div className={`${showExpertsList ? 'flex' : 'hidden md:flex'} w-full md:w-80 lg:w-96 xl:w-[420px] 2xl:w-[480px] bg-white border-r border-[#E5EAF0] flex-col pt-[60px] md:pt-0`}>
             {/* Header */}
-            <div className="p-4 border-b border-[#E2ECF5]">
+            <div className="p-4 border-b border-[#E5EAF0]">
               <div className="flex items-center justify-between mb-3">
                 <div className="flex items-center gap-2">
                   <button
                     onClick={() => navigate(-1)}
-                    className="w-9 h-9 rounded-xl flex items-center justify-center transition-colors flex-shrink-0 text-[#64748B] hover:text-[#020817] hover:bg-[#f3faff]"
+                    className="w-9 h-9 rounded-xl flex items-center justify-center transition-colors flex-shrink-0 text-[#64748B] hover:text-[#0F172A] hover:bg-[#F1F7F7]"
                   >
                     <ChevronLeft size={24} />
                   </button>
-                  <h2 className="text-lg font-semibold text-[#020817]">History</h2>
+                  <h2 className="text-lg font-semibold text-[#0F172A]">History</h2>
                 </div>
               </div>
               
@@ -197,7 +197,7 @@ export function CareTeamHistory() {
                   placeholder="Search conversations..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full pl-9 pr-3 py-2 bg-[#f3faff] border border-[#E2ECF5] rounded-lg text-sm text-[#020817] placeholder-[#64748B] focus:outline-none focus:ring-2 focus:ring-[#00c0ff] focus:border-transparent"
+                  className="w-full pl-9 pr-3 py-2 bg-[#F1F7F7] border border-[#E5EAF0] rounded-lg text-sm text-[#0F172A] placeholder-[#64748B] focus:outline-none focus:ring-2 focus:ring-[#13B5B1] focus:border-transparent"
                 />
               </div>
             </div>
@@ -215,7 +215,7 @@ export function CareTeamHistory() {
                     const hasMessage = !!expertMessage;
                     
                     // Compute classNames outside JSX to avoid template literal issues
-                    const nameClassName = 'text-sm truncate font-medium text-[#020817]';
+                    const nameClassName = 'text-sm truncate font-medium text-[#0F172A]';
                     const roleClassName = 'text-xs text-[#64748B]';
                     const messageClassName = 'text-xs truncate text-[#64748B]';
                     
@@ -227,8 +227,8 @@ export function CareTeamHistory() {
                         onClick={() => handleExpertClick(expert)}
                         className={`w-full flex items-start gap-3 p-3 rounded-xl transition-all ${
                           selectedExpert?.id === expert.id
-                            ? "bg-[#f3faff] border-2 border-[#00c0ff]"
-                            : "hover:bg-[#f3faff] border-2 border-transparent"
+                            ? "bg-[#F1F7F7] border-2 border-[#13B5B1]"
+                            : "hover:bg-[#F1F7F7] border-2 border-transparent"
                         }`}
                       >
                         <div className="relative flex-shrink-0">
@@ -239,7 +239,7 @@ export function CareTeamHistory() {
                               className="w-11 h-11 rounded-full object-cover"
                             />
                           ) : (
-                            <div className="w-11 h-11 bg-gradient-to-br from-[#00c0ff] to-[#043570] rounded-full flex items-center justify-center text-white font-semibold text-sm">
+                            <div className="w-11 h-11 bg-gradient-to-br from-[#13B5B1] to-[#0B2545] rounded-full flex items-center justify-center text-white font-semibold text-sm">
                               {expert.avatar}
                             </div>
                           )}
@@ -280,12 +280,12 @@ export function CareTeamHistory() {
             {selectedExpert ? (
               <>
                 {/* Chat Header */}
-                <div className="bg-white border-b border-[#E2ECF5] px-4 md:px-6 py-4">
+                <div className="bg-white border-b border-[#E5EAF0] px-4 md:px-6 py-4">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-3">
                       <button
                         onClick={handleBack}
-                        className="md:hidden w-9 h-9 rounded-xl flex items-center justify-center transition-colors flex-shrink-0 text-[#64748B] hover:text-[#020817] hover:bg-[#f3faff]"
+                        className="md:hidden w-9 h-9 rounded-xl flex items-center justify-center transition-colors flex-shrink-0 text-[#64748B] hover:text-[#0F172A] hover:bg-[#F1F7F7]"
                       >
                         <ChevronLeft size={24} />
                       </button>
@@ -297,7 +297,7 @@ export function CareTeamHistory() {
                             className="w-10 h-10 rounded-full object-cover"
                           />
                         ) : (
-                          <div className="w-10 h-10 bg-gradient-to-br from-[#00c0ff] to-[#043570] rounded-full flex items-center justify-center text-white font-semibold text-sm">
+                          <div className="w-10 h-10 bg-gradient-to-br from-[#13B5B1] to-[#0B2545] rounded-full flex items-center justify-center text-white font-semibold text-sm">
                             {selectedExpert.avatar}
                           </div>
                         )}
@@ -306,7 +306,7 @@ export function CareTeamHistory() {
                         }`}></div>
                       </div>
                       <div>
-                        <h3 className="text-sm font-semibold text-[#020817]">{selectedExpert.name}</h3>
+                        <h3 className="text-sm font-semibold text-[#0F172A]">{selectedExpert.name}</h3>
                         <p className="text-xs text-[#64748B]">
                           {selectedExpert.status === "online" ? "Online" : `Last seen ${selectedExpert.lastSeen}`}
                         </p>
@@ -316,21 +316,21 @@ export function CareTeamHistory() {
                       <motion.button
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-[#f3faff] text-[#64748B] hover:text-[#043570] transition-colors"
+                        className="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-[#F1F7F7] text-[#64748B] hover:text-[#0B2545] transition-colors"
                       >
                         <Phone size={18} />
                       </motion.button>
                       <motion.button
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-[#f3faff] text-[#64748B] hover:text-[#043570] transition-colors"
+                        className="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-[#F1F7F7] text-[#64748B] hover:text-[#0B2545] transition-colors"
                       >
                         <Video size={18} />
                       </motion.button>
                       <motion.button
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-[#f3faff] text-[#64748B] hover:text-[#043570] transition-colors"
+                        className="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-[#F1F7F7] text-[#64748B] hover:text-[#0B2545] transition-colors"
                       >
                         <MoreVertical size={18} />
                       </motion.button>
@@ -343,7 +343,7 @@ export function CareTeamHistory() {
                   <div className="max-w-4xl mx-auto">
                     {/* Date Divider */}
                     <div className="flex items-center justify-center mb-6">
-                      <span className="text-xs text-[#64748B] bg-white px-3 py-1 rounded-full border border-[#E2ECF5]">
+                      <span className="text-xs text-[#64748B] bg-white px-3 py-1 rounded-full border border-[#E5EAF0]">
                         {selectedMessage?.date || "Past Conversation"}
                       </span>
                     </div>
@@ -359,13 +359,13 @@ export function CareTeamHistory() {
                             className="w-8 h-8 rounded-full object-cover flex-shrink-0"
                           />
                         ) : (
-                          <div className="w-8 h-8 bg-gradient-to-br from-[#00c0ff] to-[#043570] rounded-full flex items-center justify-center text-white font-semibold text-xs flex-shrink-0">
+                          <div className="w-8 h-8 bg-gradient-to-br from-[#13B5B1] to-[#0B2545] rounded-full flex items-center justify-center text-white font-semibold text-xs flex-shrink-0">
                             {selectedExpert.avatar}
                           </div>
                         )}
                         <div className="flex-1">
-                          <div className="bg-white rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm border border-[#E2ECF5] max-w-md">
-                            <p className="text-sm text-[#020817]">
+                          <div className="bg-white rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm border border-[#E5EAF0] max-w-md">
+                            <p className="text-sm text-[#0F172A]">
                               Hello! How can I help you today? Feel free to share any concerns or questions you have.
                             </p>
                           </div>
@@ -379,7 +379,7 @@ export function CareTeamHistory() {
                           U
                         </div>
                         <div className="flex-1 flex flex-col items-end">
-                          <div className="bg-[#043570] rounded-2xl rounded-tr-sm px-4 py-3 shadow-sm max-w-md">
+                          <div className="bg-[#0B2545] rounded-2xl rounded-tr-sm px-4 py-3 shadow-sm max-w-md">
                             <p className="text-sm text-white">
                               Hi! I've been following the program for a week now and I'm feeling great. Thanks for all your support!
                             </p>
@@ -397,13 +397,13 @@ export function CareTeamHistory() {
                             className="w-8 h-8 rounded-full object-cover flex-shrink-0"
                           />
                         ) : (
-                          <div className="w-8 h-8 bg-gradient-to-br from-[#00c0ff] to-[#043570] rounded-full flex items-center justify-center text-white font-semibold text-xs flex-shrink-0">
+                          <div className="w-8 h-8 bg-gradient-to-br from-[#13B5B1] to-[#0B2545] rounded-full flex items-center justify-center text-white font-semibold text-xs flex-shrink-0">
                             {selectedExpert.avatar}
                           </div>
                         )}
                         <div className="flex-1">
-                          <div className="bg-white rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm border border-[#E2ECF5] max-w-md">
-                            <p className="text-sm text-[#020817]">
+                          <div className="bg-white rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm border border-[#E5EAF0] max-w-md">
+                            <p className="text-sm text-[#0F172A]">
                               That's wonderful to hear! Keep up the great work. Remember to stay consistent with your daily activities.
                             </p>
                           </div>
@@ -415,13 +415,13 @@ export function CareTeamHistory() {
                 </div>
 
                 {/* Message Input */}
-                <div className="bg-white border-t border-[#E2ECF5] p-4 md:p-6">
+                <div className="bg-white border-t border-[#E5EAF0] p-4 md:p-6">
                   <div className="max-w-4xl mx-auto">
                     <div className="flex items-end gap-3">
                       <motion.button
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="w-10 h-10 flex items-center justify-center rounded-lg hover:bg-[#f3faff] text-[#64748B] hover:text-[#043570] transition-colors flex-shrink-0"
+                        className="w-10 h-10 flex items-center justify-center rounded-lg hover:bg-[#F1F7F7] text-[#64748B] hover:text-[#0B2545] transition-colors flex-shrink-0"
                       >
                         <Paperclip size={20} />
                       </motion.button>
@@ -431,7 +431,7 @@ export function CareTeamHistory() {
                           onChange={(e) => setMessageInput(e.target.value)}
                           placeholder="Type your message..."
                           rows={1}
-                          className="w-full px-4 py-3 bg-[#f3faff] border border-[#E2ECF5] rounded-xl text-sm text-[#020817] placeholder-[#64748B] focus:outline-none focus:ring-2 focus:ring-[#00c0ff] focus:border-transparent resize-none"
+                          className="w-full px-4 py-3 bg-[#F1F7F7] border border-[#E5EAF0] rounded-xl text-sm text-[#0F172A] placeholder-[#64748B] focus:outline-none focus:ring-2 focus:ring-[#13B5B1] focus:border-transparent resize-none"
                           style={{ minHeight: "44px", maxHeight: "120px" }}
                         />
                       </div>
@@ -439,7 +439,7 @@ export function CareTeamHistory() {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                         disabled={!messageInput.trim()}
-                        className="w-10 h-10 flex items-center justify-center rounded-lg bg-[#043570] text-white hover:bg-[#032656] transition-colors flex-shrink-0 disabled:opacity-50 disabled:cursor-not-allowed"
+                        className="w-10 h-10 flex items-center justify-center rounded-lg bg-[#0B2545] text-white hover:bg-[#032656] transition-colors flex-shrink-0 disabled:opacity-50 disabled:cursor-not-allowed"
                       >
                         <Send size={18} />
                       </motion.button>
@@ -455,11 +455,11 @@ export function CareTeamHistory() {
                     initial={{ scale: 0.9, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
                     transition={{ duration: 0.3 }}
-                    className="w-16 h-16 bg-[#f3faff] rounded-2xl flex items-center justify-center mx-auto mb-4"
+                    className="w-16 h-16 bg-[#F1F7F7] rounded-2xl flex items-center justify-center mx-auto mb-4"
                   >
-                    <MessageCircle className="text-[#00c0ff]" size={32} />
+                    <MessageCircle className="text-[#13B5B1]" size={32} />
                   </motion.div>
-                  <h3 className="text-lg font-semibold text-[#020817] mb-2">Chat History</h3>
+                  <h3 className="text-lg font-semibold text-[#0F172A] mb-2">Chat History</h3>
                   <p className="text-sm text-[#64748B] mb-6">
                     Select a conversation from the sidebar to view past messages
                   </p>
@@ -467,7 +467,7 @@ export function CareTeamHistory() {
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                     onClick={() => setShowExpertsList(true)}
-                    className="md:hidden bg-[#043570] text-white px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-[#032656] transition-colors"
+                    className="md:hidden bg-[#0B2545] text-white px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-[#032656] transition-colors"
                   >
                     View History
                   </motion.button>

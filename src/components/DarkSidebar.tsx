@@ -125,7 +125,7 @@ export function DarkSidebar() {
             onClick={() => setDropdownOpen(!dropdownOpen)}
             className={`w-full flex items-center rounded-xl transition-all py-2 ${collapsed ? "justify-center px-0" : "gap-3 px-3"} text-slate-400 hover:bg-slate-800 hover:text-white`}
           >
-            <div className="w-8 h-8 bg-[#2D9CDB] rounded-full flex items-center justify-center text-white font-semibold text-sm flex-shrink-0">
+            <div className="w-8 h-8 bg-[#13B5B1] rounded-full flex items-center justify-center text-white font-semibold text-sm flex-shrink-0">
               {userName.charAt(0).toUpperCase()}
             </div>
             <AnimatePresence>
@@ -212,8 +212,8 @@ function NavItem({ icon: Icon, label, collapsed, active, onClick, colorClass }: 
           colorClass
             ? colorClass
             : active
-            ? "bg-[#00c0ff] text-white"
-            : "text-slate-400 hover:bg-[#00c0ff] hover:text-white"
+            ? "bg-[#13B5B1] text-white"
+            : "text-slate-400 hover:bg-[#13B5B1] hover:text-white"
         }`}
       >
         <Icon size={20} className="flex-shrink-0" />

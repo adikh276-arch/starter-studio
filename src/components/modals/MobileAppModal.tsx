@@ -48,7 +48,7 @@ export function MobileAppModal({ isOpen, onClose }: MobileAppModalProps) {
 
               {/* Content */}
               <div className="text-center">
-                <p className="text-[#1E293B] text-base leading-relaxed">
+                <p className="text-[#0F172A] text-base leading-relaxed">
                   Feature available in the mobile app. Please download
                 </p>
               </div>

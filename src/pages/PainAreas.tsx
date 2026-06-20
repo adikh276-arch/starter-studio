@@ -50,12 +50,12 @@ export function PainAreas() {
             <div className="flex items-center gap-3 mb-2">
               <button
                 onClick={() => navigate(-1)}
-                className="flex items-center justify-center text-[#64748B] hover:text-[#043570] transition-colors"
+                className="flex items-center justify-center text-[#64748B] hover:text-[#0B2545] transition-colors"
               >
                 <ChevronLeft size={20} />
               </button>
-              <div className="w-10 h-10 bg-[#F1F5F9] rounded-md flex items-center justify-center flex-shrink-0">
-                <Activity size={20} className="text-[#1E293B]" strokeWidth={2} />
+              <div className="w-10 h-10 bg-[#F1F4F8] rounded-md flex items-center justify-center flex-shrink-0">
+                <Activity size={20} className="text-[#0F172A]" strokeWidth={2} />
               </div>
               <div>
                 <h1 className="text-2xl text-[#0f172b] font-medium">Area of Pain</h1>
@@ -81,10 +81,10 @@ export function PainAreas() {
                 transition={{ duration: 0.3, delay: 0.1 + index * 0.03 }}
                 whileHover={{ scale: 1.05, y: -4 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-white border border-[#E2E8F0] rounded-2xl p-4 hover:border-[#00c0ff]/40 hover:shadow-lg transition-all group"
+                className="bg-white border border-[#E5EAF0] rounded-2xl p-4 hover:border-[#13B5B1]/40 hover:shadow-lg transition-all group"
               >
                 {/* Pain Image or Icon */}
-                <div className="w-full aspect-square bg-gradient-to-br from-[#f3faff] to-[#E0F2FE] rounded-xl flex items-center justify-center mb-3 group-hover:from-[#E0F2FE] group-hover:to-[#BAE6FD] transition-all overflow-hidden">
+                <div className="w-full aspect-square bg-gradient-to-br from-[#F1F7F7] to-[#E0F2FE] rounded-xl flex items-center justify-center mb-3 group-hover:from-[#E0F2FE] group-hover:to-[#BAE6FD] transition-all overflow-hidden">
                   {area.imageUrl ? (
                     <img 
                       src={area.imageUrl} 
@@ -92,10 +92,10 @@ export function PainAreas() {
                       className="w-full h-full object-contain p-2"
                     />
                   ) : (
-                    <Activity className="text-[#00c0ff]" size={32} strokeWidth={2} />
+                    <Activity className="text-[#13B5B1]" size={32} strokeWidth={2} />
                   )}
                 </div>
-                <h3 className="text-[#043570] font-semibold text-sm text-center">
+                <h3 className="text-[#0B2545] font-semibold text-sm text-center">
                   {area.name}
                 </h3>
               </motion.button>
@@ -109,7 +109,7 @@ export function PainAreas() {
             transition={{ duration: 0.4, delay: 0.2 }}
             className="mb-8"
           >
-            <h2 className="text-lg font-semibold text-[#0f172b] mb-4 border-l-4 border-[#00c0ff] pl-3">
+            <h2 className="text-lg font-semibold text-[#0f172b] mb-4 border-l-4 border-[#13B5B1] pl-3">
               Recommended Exercise Plans
             </h2>
 
@@ -119,7 +119,7 @@ export function PainAreas() {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
-                className="bg-white border border-[#E2E8F0] rounded-2xl p-4 hover:shadow-lg transition-all"
+                className="bg-white border border-[#E5EAF0] rounded-2xl p-4 hover:shadow-lg transition-all"
               >
                 <div className="flex items-start gap-4 mb-4">
                   <div className="w-12 h-12 bg-[#FCE7F3] rounded-full flex items-center justify-center flex-shrink-0">
@@ -131,10 +131,10 @@ export function PainAreas() {
                   </div>
                 </div>
                 <div className="grid grid-cols-2 gap-3">
-                  <button className="border-2 border-[#00c0ff] text-[#00c0ff] px-4 py-2.5 rounded-xl font-semibold text-sm hover:bg-[#00c0ff]/5 transition-all">
+                  <button className="border-2 border-[#13B5B1] text-[#13B5B1] px-4 py-2.5 rounded-xl font-semibold text-sm hover:bg-[#13B5B1]/5 transition-all">
                     Quick Start
                   </button>
-                  <button className="bg-[#00c0ff] text-white px-4 py-2.5 rounded-xl font-semibold text-sm hover:bg-[#0284c7] transition-all">
+                  <button className="bg-[#13B5B1] text-white px-4 py-2.5 rounded-xl font-semibold text-sm hover:bg-[#0284c7] transition-all">
                     Explore
                   </button>
                 </div>
@@ -145,7 +145,7 @@ export function PainAreas() {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.35 }}
-                className="bg-white border border-[#E2E8F0] rounded-2xl p-4 hover:shadow-lg transition-all"
+                className="bg-white border border-[#E5EAF0] rounded-2xl p-4 hover:shadow-lg transition-all"
               >
                 <div className="flex items-start gap-4 mb-4">
                   <div className="w-12 h-12 bg-[#CCFBF1] rounded-full flex items-center justify-center flex-shrink-0">
@@ -157,10 +157,10 @@ export function PainAreas() {
                   </div>
                 </div>
                 <div className="grid grid-cols-2 gap-3">
-                  <button className="border-2 border-[#00c0ff] text-[#00c0ff] px-4 py-2.5 rounded-xl font-semibold text-sm hover:bg-[#00c0ff]/5 transition-all">
+                  <button className="border-2 border-[#13B5B1] text-[#13B5B1] px-4 py-2.5 rounded-xl font-semibold text-sm hover:bg-[#13B5B1]/5 transition-all">
                     Quick Start
                   </button>
-                  <button className="bg-[#00c0ff] text-white px-4 py-2.5 rounded-xl font-semibold text-sm hover:bg-[#0284c7] transition-all">
+                  <button className="bg-[#13B5B1] text-white px-4 py-2.5 rounded-xl font-semibold text-sm hover:bg-[#0284c7] transition-all">
                     Explore
                   </button>
                 </div>
@@ -171,7 +171,7 @@ export function PainAreas() {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4 }}
-                className="bg-white border border-[#E2E8F0] rounded-2xl p-4 hover:shadow-lg transition-all"
+                className="bg-white border border-[#E5EAF0] rounded-2xl p-4 hover:shadow-lg transition-all"
               >
                 <div className="flex items-start gap-4 mb-4">
                   <div className="w-12 h-12 bg-[#FFF4ED] rounded-full flex items-center justify-center flex-shrink-0">
@@ -183,10 +183,10 @@ export function PainAreas() {
                   </div>
                 </div>
                 <div className="grid grid-cols-2 gap-3">
-                  <button className="border-2 border-[#00c0ff] text-[#00c0ff] px-4 py-2.5 rounded-xl font-semibold text-sm hover:bg-[#00c0ff]/5 transition-all">
+                  <button className="border-2 border-[#13B5B1] text-[#13B5B1] px-4 py-2.5 rounded-xl font-semibold text-sm hover:bg-[#13B5B1]/5 transition-all">
                     Quick Start
                   </button>
-                  <button className="bg-[#00c0ff] text-white px-4 py-2.5 rounded-xl font-semibold text-sm hover:bg-[#0284c7] transition-all">
+                  <button className="bg-[#13B5B1] text-white px-4 py-2.5 rounded-xl font-semibold text-sm hover:bg-[#0284c7] transition-all">
                     Explore
                   </button>
                 </div>
@@ -198,7 +198,7 @@ export function PainAreas() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
-              className="text-[#00c0ff] hover:text-[#0284c7] font-semibold text-sm mt-4 flex items-center gap-1 mx-auto"
+              className="text-[#13B5B1] hover:text-[#0284c7] font-semibold text-sm mt-4 flex items-center gap-1 mx-auto"
             >
               View All Exercise Plans →
             </motion.button>
@@ -209,7 +209,7 @@ export function PainAreas() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="bg-gradient-to-r from-[#043570] to-[#00c0ff] rounded-2xl p-8 shadow-xl relative overflow-hidden"
+            className="bg-gradient-to-r from-[#0B2545] to-[#13B5B1] rounded-2xl p-8 shadow-xl relative overflow-hidden"
           >
             {/* Background decoration circles */}
             <div className="absolute inset-0 opacity-20">
@@ -237,7 +237,7 @@ export function PainAreas() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   onClick={() => navigate("/plans")}
-                  className="flex items-center gap-2 bg-white text-[#043570] px-6 py-3 rounded-xl font-semibold text-sm hover:shadow-xl transition-all"
+                  className="flex items-center gap-2 bg-white text-[#0B2545] px-6 py-3 rounded-xl font-semibold text-sm hover:shadow-xl transition-all"
                 >
                   Book a Session Now
                   <ChevronRight size={18} strokeWidth={2.5} />

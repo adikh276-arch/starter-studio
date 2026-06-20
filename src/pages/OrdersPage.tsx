@@ -80,24 +80,24 @@ const ALL_ORDERS: Order[] = [
 
 // ─── Config helpers ────────────────────────────────────────────────────────────
 const ORDER_STATUS_CFG: Record<OrderStatus, { label: string; bg: string; text: string; dot: string; icon: React.ElementType }> = {
-  active:   { label: "Active",   bg: "bg-[#F1F5F9]", text: "text-[#1E293B]", dot: "bg-[#0D9488]", icon: CheckCircle2 },
-  expired:  { label: "Expired",  bg: "bg-[#F8FAFC]", text: "text-[#64748B]", dot: "bg-[#E2E8F0]", icon: XCircle      },
-  pending:  { label: "Pending",  bg: "bg-[#F1F5F9]", text: "text-[#0D9488]", dot: "bg-[#0D9488]", icon: AlertCircle  },
+  active:   { label: "Active",   bg: "bg-[#F1F4F8]", text: "text-[#0F172A]", dot: "bg-[#0D9488]", icon: CheckCircle2 },
+  expired:  { label: "Expired",  bg: "bg-[#F8FAFC]", text: "text-[#64748B]", dot: "bg-[#E5EAF0]", icon: XCircle      },
+  pending:  { label: "Pending",  bg: "bg-[#F1F4F8]", text: "text-[#0D9488]", dot: "bg-[#0D9488]", icon: AlertCircle  },
   refunded: { label: "Refunded", bg: "bg-[#F8FAFC]", text: "text-[#64748B]", dot: "bg-[#64748B]", icon: RefreshCw    },
 };
 
 const DAY_STATUS_CFG: Record<DayStatus, { label: (n: number) => string; bg: string; text: string }> = {
   expired: { label: (n) => `${Math.abs(n)}d ago`, bg: "bg-[#F8FAFC]",  text: "text-[#64748B]"  },
-  today:   { label: ()  => "Expires today",        bg: "bg-[#F1F5F9]",  text: "text-[#0D9488]"  },
-  soon:    { label: (n) => `${n}d left`,            bg: "bg-[#F1F5F9]",  text: "text-[#1E293B]"  },
-  ok:      { label: (n) => `${n}d left`,            bg: "bg-[#F1F5F9]",  text: "text-[#0D9488]"  },
+  today:   { label: ()  => "Expires today",        bg: "bg-[#F1F4F8]",  text: "text-[#0D9488]"  },
+  soon:    { label: (n) => `${n}d left`,            bg: "bg-[#F1F4F8]",  text: "text-[#0F172A]"  },
+  ok:      { label: (n) => `${n}d left`,            bg: "bg-[#F1F4F8]",  text: "text-[#0D9488]"  },
 };
 
 const TYPE_CFG = {
-  Video:      { bg: "bg-[#F1F5F9]", text: "text-[#1E293B]", dot: "bg-[#1E293B]" },
-  Chat:       { bg: "bg-[#F1F5F9]", text: "text-[#0D9488]", dot: "bg-[#0D9488]" },
-  Psychiatry: { bg: "bg-[#F1F5F9]", text: "text-[#1E293B]", dot: "bg-[#1E293B]" },
-  Wellness:   { bg: "bg-[#F1F5F9]", text: "text-[#0D9488]", dot: "bg-[#0D9488]" },
+  Video:      { bg: "bg-[#F1F4F8]", text: "text-[#0F172A]", dot: "bg-[#0F172A]" },
+  Chat:       { bg: "bg-[#F1F4F8]", text: "text-[#0D9488]", dot: "bg-[#0D9488]" },
+  Psychiatry: { bg: "bg-[#F1F4F8]", text: "text-[#0F172A]", dot: "bg-[#0F172A]" },
+  Wellness:   { bg: "bg-[#F1F4F8]", text: "text-[#0D9488]", dot: "bg-[#0D9488]" },
 };
 
 type SortKey = "id" | "product" | "amount" | "from" | "daysToExpire" | "status";
@@ -167,8 +167,8 @@ export function OrdersPage() {
           >
             <div className="flex items-start justify-between">
               <div className="flex items-center gap-3 mb-2">
-                <div className="w-10 h-10 bg-[#F1F5F9] rounded-md flex items-center justify-center flex-shrink-0 self-center">
-                  <Package size={20} className="text-[#1E293B]" strokeWidth={2} />
+                <div className="w-10 h-10 bg-[#F1F4F8] rounded-md flex items-center justify-center flex-shrink-0 self-center">
+                  <Package size={20} className="text-[#0F172A]" strokeWidth={2} />
                 </div>
                 <div>
                   <h1 className="text-2xl text-[#0f172b] font-medium">Order Details</h1>
@@ -177,7 +177,7 @@ export function OrdersPage() {
                   </p>
                 </div>
               </div>
-              <button className="flex items-center gap-2 bg-white border border-[#E2E8F0] hover:border-[#0D9488] hover:bg-[#F1F5F9] text-[#64748B] hover:text-[#1E293B] text-sm px-3.5 py-2 rounded-xl transition-colors shadow-sm">
+              <button className="flex items-center gap-2 bg-white border border-[#E5EAF0] hover:border-[#0D9488] hover:bg-[#F1F4F8] text-[#64748B] hover:text-[#0F172A] text-sm px-3.5 py-2 rounded-xl transition-colors shadow-sm">
                 <Download size={14} />
                 <span className="hidden sm:inline">Export</span>
               </button>
@@ -187,10 +187,10 @@ export function OrdersPage() {
           {/* ── Stats ── */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
             {[
-              { label: "Total Orders",   value: ALL_ORDERS.length, icon: ReceiptText,  bg: "bg-[#1E293B]",  border: "border-[#E2E8F0]", bubble: "bg-[#F1F5F9]", text: "text-[#1E293B]" },
-              { label: "Active",         value: activeCount,       icon: CheckCircle2, bg: "bg-[#0D9488]",  border: "border-[#E2E8F0]", bubble: "bg-[#F1F5F9]", text: "text-[#0D9488]" },
-              { label: "Expired",        value: expiredCount,      icon: XCircle,      bg: "bg-[#64748B]",  border: "border-[#E2E8F0]", bubble: "bg-[#F8FAFC]", text: "text-[#64748B]" },
-              { label: "Total Spend",    value: `₹${totalAmt.toFixed(2)}`, icon: IndianRupee, bg: "bg-[#1E293B]", border: "border-[#E2E8F0]", bubble: "bg-[#F1F5F9]", text: "text-[#1E293B]" },
+              { label: "Total Orders",   value: ALL_ORDERS.length, icon: ReceiptText,  bg: "bg-[#0F172A]",  border: "border-[#E5EAF0]", bubble: "bg-[#F1F4F8]", text: "text-[#0F172A]" },
+              { label: "Active",         value: activeCount,       icon: CheckCircle2, bg: "bg-[#0D9488]",  border: "border-[#E5EAF0]", bubble: "bg-[#F1F4F8]", text: "text-[#0D9488]" },
+              { label: "Expired",        value: expiredCount,      icon: XCircle,      bg: "bg-[#64748B]",  border: "border-[#E5EAF0]", bubble: "bg-[#F8FAFC]", text: "text-[#64748B]" },
+              { label: "Total Spend",    value: `₹${totalAmt.toFixed(2)}`, icon: IndianRupee, bg: "bg-[#0F172A]", border: "border-[#E5EAF0]", bubble: "bg-[#F1F4F8]", text: "text-[#0F172A]" },
             ].map((s, i) => (
               <motion.div
                 key={s.label}
@@ -228,7 +228,7 @@ export function OrdersPage() {
                 placeholder="Search order ID or product…"
                 value={search}
                 onChange={e => { setSearch(e.target.value); resetPage(); }}
-                className="w-full pl-8 pr-3 py-2 text-sm bg-[#F8FAFC] border border-[#E2E8F0] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#E2E8F0] focus:border-[#0D9488] transition"
+                className="w-full pl-8 pr-3 py-2 text-sm bg-[#F8FAFC] border border-[#E5EAF0] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#E5EAF0] focus:border-[#0D9488] transition"
               />
             </div>
 
@@ -238,7 +238,7 @@ export function OrdersPage() {
               <select
                 value={statusFilter}
                 onChange={e => { setStatus(e.target.value as "all" | OrderStatus); resetPage(); }}
-                className="text-sm bg-[#F8FAFC] border border-[#E2E8F0] rounded-xl px-2.5 py-2 focus:outline-none focus:ring-2 focus:ring-[#E2E8F0] text-[#64748B]"
+                className="text-sm bg-[#F8FAFC] border border-[#E5EAF0] rounded-xl px-2.5 py-2 focus:outline-none focus:ring-2 focus:ring-[#E5EAF0] text-[#64748B]"
               >
                 <option value="all">All Status</option>
                 <option value="active">Active</option>
@@ -252,7 +252,7 @@ export function OrdersPage() {
             <select
               value={typeFilter}
               onChange={e => { setType(e.target.value as "all" | Order["type"]); resetPage(); }}
-              className="text-sm bg-[#F8FAFC] border border-[#E2E8F0] rounded-xl px-2.5 py-2 focus:outline-none focus:ring-2 focus:ring-[#E2E8F0] text-[#64748B]"
+              className="text-sm bg-[#F8FAFC] border border-[#E5EAF0] rounded-xl px-2.5 py-2 focus:outline-none focus:ring-2 focus:ring-[#E5EAF0] text-[#64748B]"
             >
               <option value="all">All Types</option>
               <option value="Video">Video</option>
@@ -328,7 +328,7 @@ export function OrdersPage() {
                           {/* Order ID */}
                           <td className="px-4 py-3 whitespace-nowrap">
                             <span className="flex items-center gap-1 text-[#0D9488] font-medium text-[12px]">
-                              <Hash size={12} className="text-[#E2E8F0]" />
+                              <Hash size={12} className="text-[#E5EAF0]" />
                               {order.id}
                             </span>
                           </td>
@@ -396,7 +396,7 @@ export function OrdersPage() {
                     <div className="flex items-start justify-between mb-2">
                       <div>
                         <p className="text-[#0D9488] font-medium text-xs flex items-center gap-1">
-                          <Hash size={10} className="text-[#E2E8F0]" />
+                          <Hash size={10} className="text-[#E5EAF0]" />
                           {order.id}
                         </p>
                         <div className="flex items-center gap-2 mt-0.5 flex-wrap">
@@ -440,7 +440,7 @@ export function OrdersPage() {
                 <select
                   value={rowsPerPage}
                   onChange={e => { setRowsPerPage(Number(e.target.value)); setPage(1); }}
-                  className="text-[12px] bg-white border border-[#E2E8F0] rounded-lg px-1.5 py-1 focus:outline-none focus:ring-1 focus:ring-[#0D9488]"
+                  className="text-[12px] bg-white border border-[#E5EAF0] rounded-lg px-1.5 py-1 focus:outline-none focus:ring-1 focus:ring-[#0D9488]"
                 >
                   {ROWS_OPTIONS.map(n => <option key={n} value={n}>{n}</option>)}
                 </select>
@@ -466,8 +466,8 @@ export function OrdersPage() {
                         onClick={() => setPage(p)}
                         className={`w-7 h-7 rounded-lg text-[12px] font-medium transition-colors ${
                           p === safeP
-                            ? "bg-[#1E293B] text-white shadow-sm"
-                            : "text-[#64748B] hover:bg-[#F1F5F9]"
+                            ? "bg-[#0F172A] text-white shadow-sm"
+                            : "text-[#64748B] hover:bg-[#F1F4F8]"
                         }`}
                       >
                         {p}
@@ -524,7 +524,7 @@ function DayBadge({ order }: { order: Order }) {
 function ActionButton({ order }: { order: Order }) {
   if (order.status === "active" || order.dayStatus === "soon" || order.dayStatus === "today") {
     return (
-      <button className="text-[12px] text-[#0D9488] hover:text-[#1E293B] font-medium hover:underline transition-colors flex items-center gap-1">
+      <button className="text-[12px] text-[#0D9488] hover:text-[#0F172A] font-medium hover:underline transition-colors flex items-center gap-1">
         <Zap size={12} />
         Extend Plan
       </button>
@@ -540,7 +540,7 @@ function ActionButton({ order }: { order: Order }) {
   }
   if (order.status === "pending") {
     return (
-      <button className="text-[12px] text-[#1E293B] hover:text-[#0D9488] font-medium hover:underline transition-colors flex items-center gap-1">
+      <button className="text-[12px] text-[#0F172A] hover:text-[#0D9488] font-medium hover:underline transition-colors flex items-center gap-1">
         <Calendar size={11} />
         Complete
       </button>
@@ -558,7 +558,7 @@ function PagBtn({
       disabled={disabled}
       title={label}
       className={`w-7 h-7 flex items-center justify-center rounded-lg text-[#64748B] transition-colors ${
-        disabled ? "opacity-30 cursor-not-allowed" : "hover:bg-[#F1F5F9] hover:text-[#1E293B]"
+        disabled ? "opacity-30 cursor-not-allowed" : "hover:bg-[#F1F4F8] hover:text-[#0F172A]"
       }`}
     >
       <Icon size={14} />
