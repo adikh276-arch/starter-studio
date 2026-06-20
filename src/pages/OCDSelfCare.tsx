@@ -54,7 +54,7 @@ interface TopicCard {
   label: string;
   bgColor: string;
   iconColor: string;
-  url?: string;
+  route?: string;
 }
 
 interface MindfulnessCard {
@@ -73,14 +73,14 @@ const moodOptions: MoodOption[] = [
 ];
 
 const topicCards: TopicCard[] = [
-  { id: "ocd-tips", icon: Lightbulb, label: "OCD Tips", bgColor: "#FFF4E5", iconColor: "#FFB347", url: "https://platform.mantracare.com/ocd-tips" },
-  { id: "manage-ocd", icon: Shield, label: "Manage OCD", bgColor: "#EBF4FF", iconColor: "#4F95FF", url: "https://platform.mantracare.com/ocd_management" },
-  { id: "fear-ladder", icon: TrendingUp, label: "Fear Ladder", bgColor: "#F3EEFF", iconColor: "#9D6CFF", url: "https://web.mantracare.com/app/fear_ladder" },
-  { id: "self-compassion", icon: Heart, label: "Self Compassion", bgColor: "#FFEBF0", iconColor: "#FF6B9D", url: "https://platform.mantracare.com/self_compassion" },
-  { id: "ocd-cycle", icon: RefreshCw, label: "OCD Cycle", bgColor: "#E0F7FA", iconColor: "#00BCD4", url: "https://platform.mantracare.com/ocd_cycle" },
-  { id: "reframing-thoughts", icon: Brain, label: "Reframing Thoughts", bgColor: "#E8F8F5", iconColor: "#34D399", url: "https://platform.mantracare.com/reframing-thoughts" },
-  { id: "success-stories", icon: Award, label: "Success Stories", bgColor: "#F7FEE7", iconColor: "#84CC16", url: "https://platform.mantracare.com/ocd_success_stories" },
-  { id: "meditation", icon: BookOpen, label: "Meditation", bgColor: "#EDE9FE", iconColor: "#8B5CF6", url: "/service/meditation" },
+  { id: "ocd-tips", icon: Lightbulb, label: "OCD Tips", bgColor: "#FFF4E5", iconColor: "#FFB347", route: "/ocd/ocd_tips" },
+  { id: "manage-ocd", icon: Shield, label: "Manage OCD", bgColor: "#EBF4FF", iconColor: "#4F95FF", route: "/ocd/ocd_management" },
+  { id: "fear-ladder", icon: TrendingUp, label: "Fear Ladder", bgColor: "#F3EEFF", iconColor: "#9D6CFF", route: "/ocd/fear_ladder" },
+  { id: "self-compassion", icon: Heart, label: "Self Compassion", bgColor: "#FFEBF0", iconColor: "#FF6B9D", route: "/ocd/self_compassion" },
+  { id: "ocd-cycle", icon: RefreshCw, label: "OCD Cycle", bgColor: "#E0F7FA", iconColor: "#00BCD4", route: "/ocd/ocd_cycle" },
+  { id: "reframing-thoughts", icon: Brain, label: "Reframing Thoughts", bgColor: "#E8F8F5", iconColor: "#34D399", route: "/ocd/reframe_thoughts" },
+  { id: "success-stories", icon: Award, label: "Success Stories", bgColor: "#F7FEE7", iconColor: "#84CC16", route: "/ocd/ocd_success_stories" },
+  { id: "meditation", icon: BookOpen, label: "Meditation", bgColor: "#EDE9FE", iconColor: "#8B5CF6", route: "/service/meditation" },
 ];
 
 const mindfulnessCards: MindfulnessCard[] = [
@@ -91,20 +91,20 @@ const mindfulnessCards: MindfulnessCard[] = [
 ];
 
 const selfCareToolCards: TopicCard[] = [
-  { id: "log-ocd-moments", icon: Clock, label: "Log OCD Moments", bgColor: "linear-gradient(135deg, #a855f7 0%, #9333ea 100%)", iconColor: "#A855F7", url: "https://web.mantracare.com/app/ocd_moments" },
-  { id: "ocd-daily-life", icon: Calendar, label: "OCD In Daily Life", bgColor: "linear-gradient(135deg, #06b6d4 0%, #0891b2 100%)", iconColor: "#06B6D4", url: "https://web.mantracare.com/app/daily_life" },
-  { id: "mood-tracker", icon: Smile, label: "Mood Tracker", bgColor: "linear-gradient(135deg, #f59e0b 0%, #d97706 100%)", iconColor: "#F59E0B", url: "https://web.mantracare.com/app/mood_tracker" },
-  { id: "gratitude-tracker", icon: Star, label: "Gratitude Tracker", bgColor: "linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%)", iconColor: "#FBBF24", url: "https://web.mantracare.com/app/gratitude_logs" },
-  { id: "vibe-tracker", icon: Sparkles, label: "Vibe Tracker", bgColor: "linear-gradient(135deg, #ec4899 0%, #db2777 100%)", iconColor: "#EC4899", url: "https://web.mantracare.com/app/vibe_tracker" },
-  { id: "withdrawal-tracker", icon: TrendingUp, label: "Withdrawal Tracker", bgColor: "linear-gradient(135deg, #10b981 0%, #059669 100%)", iconColor: "#10B981", url: "http://web.mantracare.com/app/withdrawal_tracker" },
+  { id: "log-ocd-moments", icon: Clock, label: "Log OCD Moments", bgColor: "linear-gradient(135deg, #a855f7 0%, #9333ea 100%)", iconColor: "#A855F7", route: "/ocd/ocd_moments" },
+  { id: "ocd-daily-life", icon: Calendar, label: "OCD In Daily Life", bgColor: "linear-gradient(135deg, #06b6d4 0%, #0891b2 100%)", iconColor: "#06B6D4", route: "/ocd/daily_life" },
+  { id: "mood-tracker", icon: Smile, label: "Mood Tracker", bgColor: "linear-gradient(135deg, #f59e0b 0%, #d97706 100%)", iconColor: "#F59E0B", route: "/ocd/mood_tracker" },
+  { id: "gratitude-tracker", icon: Star, label: "Gratitude Tracker", bgColor: "linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%)", iconColor: "#FBBF24", route: "/ocd/gratitude_logs" },
+  { id: "vibe-tracker", icon: Sparkles, label: "Vibe Tracker", bgColor: "linear-gradient(135deg, #ec4899 0%, #db2777 100%)", iconColor: "#EC4899", route: "/ocd/vibe_tracker" },
+  { id: "withdrawal-tracker", icon: TrendingUp, label: "Withdrawal Tracker", bgColor: "linear-gradient(135deg, #10b981 0%, #059669 100%)", iconColor: "#10B981", route: "/substance/withdrawal-tracker" },
 ];
 
 const wellnessGuideCards: TopicCard[] = [
-  { id: "health-ocd", icon: HeartPulse, label: "Health OCD", bgColor: "#FFEBEE", iconColor: "#EF5350", url: "/health-ocd" },
-  { id: "hoarding-ocd", icon: FolderTree, label: "Hoarding OCD", bgColor: "#FFF3E0", iconColor: "#FF9800", url: "/hoarding-ocd" },
-  { id: "trichotillomania", icon: Sparkles, label: "Trichotillomania", bgColor: "#F3E5F5", iconColor: "#AB47BC", url: "/trichotillomania" },
-  { id: "contamination-ocd", icon: Shield, label: "Contamination OCD", bgColor: "#E8F5E9", iconColor: "#66BB6A", url: "/contamination-ocd" },
-  { id: "pure-o-ocd", icon: Brain, label: "Pure O OCD", bgColor: "#E3F2FD", iconColor: "#42A5F5", url: "/pure-o-ocd" },
+  { id: "health-ocd", icon: HeartPulse, label: "Health OCD", bgColor: "#FFEBEE", iconColor: "#EF5350", route: "/health-ocd" },
+  { id: "hoarding-ocd", icon: FolderTree, label: "Hoarding OCD", bgColor: "#FFF3E0", iconColor: "#FF9800", route: "/hoarding-ocd" },
+  { id: "trichotillomania", icon: Sparkles, label: "Trichotillomania", bgColor: "#F3E5F5", iconColor: "#AB47BC", route: "/trichotillomania" },
+  { id: "contamination-ocd", icon: Shield, label: "Contamination OCD", bgColor: "#E8F5E9", iconColor: "#66BB6A", route: "/contamination-ocd" },
+  { id: "pure-o-ocd", icon: Brain, label: "Pure O OCD", bgColor: "#E3F2FD", iconColor: "#42A5F5", route: "/pure-o-ocd" },
 ];
 
 export function OCDSelfCare() {
@@ -179,11 +179,11 @@ export function OCDSelfCare() {
                       whileHover={{ y: -2 }}
                       whileTap={{ scale: 0.98 }}
                       onClick={() => {
-                        if (tool.url) {
-                          if (tool.url.startsWith('/')) {
-                            navigate(tool.url);
+                        if (tool.route) {
+                          if (tool.route.startsWith('/')) {
+                            navigate(tool.route);
                           } else {
-                            window.open(tool.url, '_blank');
+                            navigate(tool.route);
                           }
                         }
                       }}
@@ -220,11 +220,11 @@ export function OCDSelfCare() {
                       whileHover={{ y: -2 }}
                       whileTap={{ scale: 0.98 }}
                       onClick={() => {
-                        if (topic.url) {
-                          if (topic.url.startsWith('/')) {
-                            navigate(topic.url);
+                        if (topic.route) {
+                          if (topic.route.startsWith('/')) {
+                            navigate(topic.route);
                           } else {
-                            window.open(topic.url, '_blank');
+                            navigate(topic.route);
                           }
                         }
                       }}
@@ -265,11 +265,11 @@ export function OCDSelfCare() {
                       whileHover={{ y: -2 }}
                       whileTap={{ scale: 0.98 }}
                       onClick={() => {
-                        if (guide.url) {
-                          if (guide.url.startsWith('/')) {
-                            navigate(guide.url);
+                        if (guide.route) {
+                          if (guide.route.startsWith('/')) {
+                            navigate(guide.route);
                           } else {
-                            window.open(guide.url, '_blank');
+                            navigate(guide.route);
                           }
                         }
                       }}
