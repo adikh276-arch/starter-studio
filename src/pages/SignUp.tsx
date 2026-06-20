@@ -4,6 +4,7 @@ import { Eye, EyeOff, Globe, Check, User, Mail, Phone, Lock } from "lucide-react
 import { motion } from "motion/react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { EmojiIcon } from "@/lib/emoji-icon";
 
 export function SignUp() {
   const navigate = useNavigate();
@@ -136,7 +137,7 @@ export function SignUp() {
           
           <div className="flex gap-2">
             <div className="flex items-center gap-1.5 px-3 border border-[#E2ECF5] rounded-lg bg-[#F6F8FB] min-w-[72px] h-11">
-              <span className="text-base">🇮🇳</span>
+              <span className="text-base"><EmojiIcon emoji="🇮🇳" size={18} /></span>
               <span className="text-xs text-[#64748B]">+91</span>
             </div>
             <div className="relative flex-1">
