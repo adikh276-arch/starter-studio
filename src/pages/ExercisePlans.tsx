@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
-import { ArrowLeft, CheckCircle2, Circle, Play, ChevronRight, ChevronLeft, Activity } from "lucide-react";
+import { Activity, ArrowLeft, CheckCircle2, ChevronLeft, ChevronRight, Circle, Dumbbell, Footprints, Moon, Play } from "lucide-react";
 import { motion } from "motion/react";
 import { Sidebar } from "@/components/Sidebar";
 import { MobileNav } from "@/components/MobileNav";
-import { FaDumbbell, FaRunning } from "react-icons/fa";
-import { GiNightSleep } from "react-icons/gi";
 import { QuickStartModal } from "@/components/modals/QuickStartModal";
 
 interface ExercisePlan {
@@ -34,7 +32,7 @@ const exercisePlans: ExercisePlan[] = [
     difficulty: "Beginner",
     iconColor: "#EC4899",
     iconBg: "from-[#FCE7F3] to-[#FBCFE8]",
-    IconComponent: FaDumbbell,
+    IconComponent: Dumbbell,
     benefits: ["Reduce pain", "Improve posture", "Build core strength"],
     exerciseList: [
       "Pelvic Tilts",
@@ -55,7 +53,7 @@ const exercisePlans: ExercisePlan[] = [
     difficulty: "Gentle",
     iconColor: "#14B8A6",
     iconBg: "from-[#CCFBF1] to-[#99F6E4]",
-    IconComponent: GiNightSleep,
+    IconComponent: Moon,
     benefits: ["Reduce stiffness", "Improve flexibility", "Ease neck tension"],
     exerciseList: [
       "Neck Rotations",
@@ -74,7 +72,7 @@ const exercisePlans: ExercisePlan[] = [
     difficulty: "Moderate",
     iconColor: "#FB923C",
     iconBg: "from-[#FFF4ED] to-[#FFEDD5]",
-    IconComponent: FaRunning,
+    IconComponent: Footprints,
     benefits: ["Improve posture", "Reduce tension", "Build strength"],
     exerciseList: [
       "Wall Angels",
@@ -95,7 +93,7 @@ const exercisePlans: ExercisePlan[] = [
     difficulty: "Gentle",
     iconColor: "#3B82F6",
     iconBg: "from-[#DBEAFE] to-[#BFDBFE]",
-    IconComponent: FaDumbbell,
+    IconComponent: Dumbbell,
     benefits: ["Increase mobility", "Reduce stiffness", "Prevent injury"],
     exerciseList: [
       "Arm Circles",
@@ -115,7 +113,7 @@ const exercisePlans: ExercisePlan[] = [
     difficulty: "Moderate",
     iconColor: "#EF4444",
     iconBg: "from-[#FEE2E2] to-[#FECACA]",
-    IconComponent: FaRunning,
+    IconComponent: Footprints,
     benefits: ["Build core strength", "Improve stability", "Better balance"],
     exerciseList: [
       "Plank",
@@ -138,7 +136,7 @@ const exercisePlans: ExercisePlan[] = [
     difficulty: "Beginner",
     iconColor: "#A855F7",
     iconBg: "from-[#F3E8FF] to-[#E9D5FF]",
-    IconComponent: GiNightSleep,
+    IconComponent: Moon,
     benefits: ["Increase flexibility", "Reduce tightness", "Improve mobility"],
     exerciseList: [
       "Hip Circles",

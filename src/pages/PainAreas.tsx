@@ -3,9 +3,7 @@ import { useNavigate } from "react-router";
 import { motion } from "motion/react";
 import { Sidebar } from "@/components/Sidebar";
 import { MobileNav } from "@/components/MobileNav";
-import { ChevronLeft, Activity, ChevronRight } from "lucide-react";
-import { GiNightSleep } from "react-icons/gi";
-import { FaRunning, FaDumbbell } from "react-icons/fa";
+import { Activity, ChevronLeft, ChevronRight, Dumbbell, Footprints, Moon } from "lucide-react";
 
 const painAreas = [
   { id: 1, name: "Neck", imageUrl: "https://therapy.mantracare.com/wp-content/uploads/2023/03/Neck-150x150.png" },
@@ -123,7 +121,7 @@ export function PainAreas() {
               >
                 <div className="flex items-start gap-4 mb-4">
                   <div className="w-12 h-12 bg-[#FCE7F3] rounded-full flex items-center justify-center flex-shrink-0">
-                    <FaDumbbell className="text-[#EC4899]" size={20} />
+                    <Dumbbell className="text-[#EC4899]" size={20} />
                   </div>
                   <div className="flex-1">
                     <h3 className="text-[#0f172b] font-semibold text-base mb-1">Lower back exercises</h3>
@@ -149,7 +147,7 @@ export function PainAreas() {
               >
                 <div className="flex items-start gap-4 mb-4">
                   <div className="w-12 h-12 bg-[#CCFBF1] rounded-full flex items-center justify-center flex-shrink-0">
-                    <GiNightSleep className="text-[#14B8A6]" size={22} />
+                    <Moon className="text-[#14B8A6]" size={22} />
                   </div>
                   <div className="flex-1">
                     <h3 className="text-[#0f172b] font-semibold text-base mb-1">Neck rehabilitation</h3>
@@ -175,7 +173,7 @@ export function PainAreas() {
               >
                 <div className="flex items-start gap-4 mb-4">
                   <div className="w-12 h-12 bg-[#FFF4ED] rounded-full flex items-center justify-center flex-shrink-0">
-                    <FaRunning className="text-[#FB923C]" size={20} />
+                    <Footprints className="text-[#FB923C]" size={20} />
                   </div>
                   <div className="flex-1">
                     <h3 className="text-[#0f172b] font-semibold text-base mb-1">Upper back exercises</h3>

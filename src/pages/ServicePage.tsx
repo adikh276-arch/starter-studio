@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useNavigate, useParams } from "react-router";
-import { ArrowLeft, Calendar, Video, FileText, TrendingUp, Clock, Users, Award, Star, MessageCircle, Phone, CheckCircle, ChevronRight, ChevronLeft, ChevronDown, ArrowRight, Play, BookOpen, Headphones, BarChart3, Sparkles, Heart, Wind, Brain, Activity, Smile, Target, Moon, Briefcase, Music, Circle, Sunrise, Waves, Coffee, ArrowUpRight, Library, Droplet, Scale, Gauge, Utensils, Weight, Box, GlassWater, CalendarDays, Baby, Ruler, NotebookPen, Cigarette, Zap, AlertCircle, Shield, UtensilsCrossed, PlayCircle, Check, Building2, ClipboardCheck, Eye, BarChart, Stethoscope, Microscope, HeartPulse, Bone, Ear, ScanEye, Syringe, UserCircle, Pill, Skull, Flame, TestTube, Droplets, Users2, BriefcaseMedical, FolderOpen, ShoppingBag, Headset, Flag, Route, Thermometer, Beer, Leaf, X, Pencil, User, BookOpenCheck, DollarSign, Calculator, Sparkle, Layers, ExternalLink } from "lucide-react";
+import { Activity, AlertCircle, ArrowLeft, ArrowRight, ArrowUpRight, Award, Baby, BarChart, BarChart3, Beer, Bone, BookOpen, BookOpenCheck, Box, Brain, Briefcase, BriefcaseMedical, Building2, Calculator, Calendar, CalendarDays, Check, CheckCircle, ChevronDown, ChevronLeft, ChevronRight, Cigarette, Circle, ClipboardCheck, Clock, Coffee, DollarSign, Droplet, Droplets, Dumbbell, Ear, ExternalLink, Eye, FileText, Flag, Flame, FolderOpen, Footprints, Gauge, GlassWater, Headphones, Headset, Heart, HeartPulse, Layers, Leaf, Library, MessageCircle, Microscope, Moon, Music, NotebookPen, Pencil, Phone, Pill, Play, PlayCircle, Route, Ruler, Scale, ScanEye, Shield, ShoppingBag, Skull, Smile, Sparkle, Sparkles, Star, Stethoscope, Sunrise, Syringe, Target, TestTube, Thermometer, TrendingUp, User, UserCircle, Users, Users2, Utensils, UtensilsCrossed, Video, Waves, Weight, Wind, X, Zap } from "lucide-react";
 import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
 import { ImageWithFallback } from "@/components/figma/ImageWithFallback";
@@ -13,8 +13,6 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { QuickStartModal } from "@/components/modals/QuickStartModal";
-import { GiNightSleep } from "react-icons/gi";
-import { FaRunning, FaDumbbell } from "react-icons/fa";
 import ctaImage from "figma:asset/186fd1bf328aaeb6e734ad5272daebfb694e31f6.png";
 import diabetesCtaImage from "figma:asset/e9173f3475e4ceb647370182f4f401b5495918f8.png";
 import womenWellnessCtaImage from "figma:asset/691691d2f5c5222546c7faac6a5bdfc1dda8a74c.png";
@@ -925,7 +923,7 @@ export function ServicePage() {
                   craving: Cigarette,
                   energy: Zap,
                   withdrawal: AlertCircle,
-                  steps: FaRunning,
+                  steps: Footprints,
                   heartbeat: Heart,
                   assessment: ClipboardCheck,
                   watch: Eye,
@@ -1185,7 +1183,7 @@ export function ServicePage() {
                   craving: Cigarette,
                   energy: Zap,
                   withdrawal: AlertCircle,
-                  steps: FaRunning,
+                  steps: Footprints,
                   heartbeat: Heart,
                   assessment: ClipboardCheck,
                   watch: Eye,
@@ -3977,7 +3975,7 @@ export function ServicePage() {
                   craving: Cigarette,
                   energy: Zap,
                   withdrawal: AlertCircle,
-                  steps: FaRunning,
+                  steps: Footprints,
                   heartbeat: Heart,
                   assessment: ClipboardCheck,
                   watch: Eye,
@@ -4333,7 +4331,7 @@ export function ServicePage() {
                 <div className="flex items-start gap-3 md:gap-4 mb-3">
                   <div className="relative">
                     <div className="w-14 h-14 bg-gradient-to-br from-[#FCE7F3] to-[#FBCFE8] rounded-2xl flex items-center justify-center flex-shrink-0 shadow-sm group-hover:shadow-md transition-shadow">
-                      <FaDumbbell className="text-[#EC4899]" size={22} />
+                      <Dumbbell className="text-[#EC4899]" size={22} />
                     </div>
                     <div className="absolute -top-1 -right-1 w-5 h-5 bg-[#EC4899] rounded-full flex items-center justify-center text-white text-[10px] font-bold shadow-sm">
                       6
@@ -4389,7 +4387,7 @@ export function ServicePage() {
                 <div className="flex items-start gap-3 md:gap-4 mb-3">
                   <div className="relative">
                     <div className="w-14 h-14 bg-gradient-to-br from-[#CCFBF1] to-[#99F6E4] rounded-2xl flex items-center justify-center flex-shrink-0 shadow-sm group-hover:shadow-md transition-shadow">
-                      <GiNightSleep className="text-[#14B8A6]" size={24} />
+                      <Moon className="text-[#14B8A6]" size={24} />
                     </div>
                     <div className="absolute -top-1 -right-1 w-5 h-5 bg-[#14B8A6] rounded-full flex items-center justify-center text-white text-[10px] font-bold shadow-sm">
                       4
@@ -4445,7 +4443,7 @@ export function ServicePage() {
                 <div className="flex items-start gap-3 md:gap-4 mb-3">
                   <div className="relative">
                     <div className="w-14 h-14 bg-gradient-to-br from-[#FFF4ED] to-[#FFEDD5] rounded-2xl flex items-center justify-center flex-shrink-0 shadow-sm group-hover:shadow-md transition-shadow">
-                      <FaRunning className="text-[#FB923C]" size={22} />
+                      <Footprints className="text-[#FB923C]" size={22} />
                     </div>
                     <div className="absolute -top-1 -right-1 w-5 h-5 bg-[#FB923C] rounded-full flex items-center justify-center text-white text-[10px] font-bold shadow-sm">
                       6
@@ -4726,7 +4724,7 @@ export function ServicePage() {
                     craving: Cigarette,
                     energy: Zap,
                     withdrawal: AlertCircle,
-                    steps: FaRunning,
+                    steps: Footprints,
                     assessment: ClipboardCheck,
                     watch: Eye,
                     index: BarChart,
@@ -5380,7 +5378,7 @@ export function ServicePage() {
                   craving: Cigarette,
                   energy: Zap,
                   withdrawal: AlertCircle,
-                  steps: FaRunning,
+                  steps: Footprints,
                   assessment: ClipboardCheck,
                   watch: Eye,
                   index: BarChart,

@@ -1,7 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router";
-import { ChevronLeft, Search, Circle, Moon, Music, Target, Waves, Clock, ArrowRight, Volume2, GraduationCap, Baby } from "lucide-react";
-import { WiHorizonAlt } from "react-icons/wi";
+import { ArrowRight, Baby, ChevronLeft, Circle, Clock, GraduationCap, Moon, Music, Search, Sunrise, Target, Volume2, Waves } from "lucide-react";
 import { motion } from "motion/react";
 import { ImageWithFallback } from "@/components/figma/ImageWithFallback";
 import { DarkSidebar } from "@/components/DarkSidebar";
@@ -354,7 +353,7 @@ export function SelfCarePage() {
 
                 <div className="flex items-center gap-4 relative z-10">
                   <div className="w-14 h-14 bg-white/10 backdrop-blur-sm rounded-[18px] flex items-center justify-center flex-shrink-0 shadow-md">
-                    <WiHorizonAlt className="text-white" size={32} />
+                    <Sunrise className="text-white" size={32} />
                   </div>
                   <div className="text-left">
                     <h4 className="text-base font-semibold text-white">Find a daily program</h4>
