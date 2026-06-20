@@ -382,7 +382,7 @@ function Section({ title, icon, children }: { title: string; icon: string; child
       className="bg-white rounded-2xl p-6 mb-4 shadow-sm"
     >
       <h2 className="text-sm font-semibold text-[#043570] mb-4 flex items-center gap-2">
-        <span>{icon}</span>
+        <EmojiIcon emoji={icon} size={16} className="text-[#043570]" />
         {title}
       </h2>
       {children}
