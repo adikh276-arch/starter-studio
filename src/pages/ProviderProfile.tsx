@@ -400,7 +400,7 @@ function InfoRow({ icon, label, value }: { icon: string; label: string; value: s
       className="bg-white rounded-2xl p-6 mb-4 shadow-sm"
     >
       <div className="flex items-center gap-2">
-        <span>{icon}</span>
+        <EmojiIcon emoji={icon} size={16} className="text-[#043570]" />
         <span className="text-sm font-semibold text-[#043570]">{label}:</span>
         <span className="text-sm text-[#64748B]">{value}</span>
       </div>
