@@ -340,14 +340,7 @@ export function OCDPage() {
 
               {/* Mobile: 3×2 grid | Desktop: 6-column single row */}
               <div className="grid grid-cols-3 md:grid-cols-6 gap-4 md:gap-6">
-                {[
-                  { label: "Log OCD Moments", Icon: FileText, grad: "#E0A82E", link: "https://web.mantracare.com/app/ocd_moments", external: true },
-                  { label: "Journal", Icon: BookOpen, grad: "#0B2545", link: "/journal", external: false },
-                  { label: "OCD in Daily Life", Icon: Calendar, grad: "#FF8A4C", link: "https://web.mantracare.com/app/daily_life", external: true },
-                  { label: "Mood Tracker", Icon: Heart, grad: "#E74C3C", link: "https://web.mantracare.com/app/mood_tracker", external: true },
-                  { label: "Energy Check", Icon: Battery, grad: "#13B5B1", link: "https://web.mantracare.com/app/energy_tracker", external: true },
-                  { label: "OCD Assessment", Icon: CheckCircle, grad: "#16A371", link: "https://app.mantracare.org/ocd-test/", external: true },
-                ].map((tool, i) => (
+                {[ { label: "Log OCD Moments", Icon: FileText, grad: "#E0A82E", route: "/ocd/ocd_moments" }, { label: "Journal", Icon: BookOpen, grad: "#0B2545", route: "/journal" }, { label: "OCD in Daily Life", Icon: Calendar, grad: "#FF8A4C", route: "/ocd/daily_life" }, { label: "Mood Tracker", Icon: Heart, grad: "#E74C3C", route: "/ocd/mood_tracker" }, { label: "Energy Check", Icon: Battery, grad: "#13B5B1", route: "/ocd/vibe_tracker" }, { label: "OCD Assessment", Icon: CheckCircle, grad: "#16A371", route: "/ocd-selfcare" }, ].map((tool, i) => (
                   <motion.button
                     key={tool.label}
                     whileHover={{ scale: 1.05 }}
@@ -356,13 +349,7 @@ export function OCDPage() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.35, delay: 0.3 + i * 0.06 }}
                     className="flex flex-col items-center gap-2"
-                    onClick={() => {
-                      if (tool.external) {
-                        window.open(tool.link, '_blank');
-                      } else {
-                        navigate(tool.link);
-                      }
-                    }}
+                    onClick={() => navigate(tool.route)}
                   >
                     <div
                       className="w-16 h-16 md:w-20 md:h-20 rounded-3xl flex items-center justify-center shadow-md hover:shadow-lg transition-shadow"

@@ -19,7 +19,7 @@ interface Article {
   id: number;
   title: string;
   description: string;
-  url?: string;
+  route?: string;
 }
 
 const articles: Article[] = [
@@ -59,7 +59,7 @@ interface Story {
   id: number;
   title: string;
   description: string;
-  url?: string;
+  route?: string;
 }
 
 const stories: Story[] = [
@@ -101,7 +101,7 @@ interface Tool {
   icon: any;
   bgColor: string;
   iconColor: string;
-  url?: string;
+  route?: string;
 }
 
 const tools: Tool[] = [
@@ -111,7 +111,7 @@ const tools: Tool[] = [
     icon: Trash2,
     bgColor: "#FFEBEE",
     iconColor: "#EF5350",
-    url: "https://web.mantracare.com/app/one-thing-out"
+    route: "/ocd/one_thing_out"
   },
   {
     id: "discard-it",
@@ -119,7 +119,7 @@ const tools: Tool[] = [
     icon: DiscIcon,
     bgColor: "#E3F2FD",
     iconColor: "#42A5F5",
-    url: "https://web.mantracare.com/app/discard_it"
+    route: "/ocd/discard_it"
   },
   {
     id: "clutter-free-space",
@@ -127,7 +127,7 @@ const tools: Tool[] = [
     icon: Home,
     bgColor: "#E8F5E9",
     iconColor: "#66BB6A",
-    url: "https://platform.mantracare.com/clutter_free/"
+    route: "/ocd-selfcare"
   },
   {
     id: "emotion-journal",
@@ -135,7 +135,7 @@ const tools: Tool[] = [
     icon: BookOpen,
     bgColor: "#F3E5F5",
     iconColor: "#AB47BC",
-    url: "https://web.mantracare.com/app/clutter_journal"
+    route: "/ocd/clutter_journal"
   }
 ];
 
@@ -339,8 +339,8 @@ export function HoardingOCDPage() {
                   whileTap={{ scale: 0.97 }}
                   className="bg-white border border-[#E5E7EB] rounded-2xl p-6 flex flex-col items-center gap-3 hover:shadow-lg transition-all"
                   onClick={() => {
-                    if (tool.url) {
-                      window.open(tool.url, "_blank");
+                    if (tool.route) {
+                      navigate(tool.route);
                     }
                   }}
                 >

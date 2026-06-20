@@ -19,7 +19,7 @@ interface Myth {
   id: number;
   title: string;
   description: string;
-  url?: string;
+  route?: string;
 }
 
 const myths: Myth[] = [
@@ -59,7 +59,7 @@ interface Article {
   id: number;
   title: string;
   description: string;
-  url?: string;
+  route?: string;
 }
 
 const articles: Article[] = [
@@ -101,7 +101,7 @@ interface Tool {
   icon: any;
   bgColor: string;
   iconColor: string;
-  url?: string;
+  route?: string;
 }
 
 const tools: Tool[] = [
@@ -111,7 +111,7 @@ const tools: Tool[] = [
     icon: Sparkles,
     bgColor: "#F3E5F5",
     iconColor: "#AB47BC",
-    url: "https://web.mantracare.com/app/urge_surfing"
+    route: "/ocd/urge_surfing"
   },
   {
     id: "competing-response",
@@ -119,7 +119,7 @@ const tools: Tool[] = [
     icon: Shield,
     bgColor: "#E3F2FD",
     iconColor: "#42A5F5",
-    url: "https://platform.mantracare.com/response_guide/"
+    route: "/ocd/response_guide"
   },
   {
     id: "did-you-know",
@@ -127,7 +127,7 @@ const tools: Tool[] = [
     icon: Info,
     bgColor: "#E8F5E9",
     iconColor: "#66BB6A",
-    url: "https://platform.mantracare.com/did_you_know/"
+    route: "/ocd/did_you_know"
   },
   {
     id: "self-compassion-break",
@@ -135,7 +135,7 @@ const tools: Tool[] = [
     icon: Heart,
     bgColor: "#FFEBEE",
     iconColor: "#EF5350",
-    url: "https://web.mantracare.com/app/self_compassion_break"
+    route: "/ocd/compassion-break"
   }
 ];
 
@@ -339,8 +339,8 @@ export function TrichotillomaniaPage() {
                   whileTap={{ scale: 0.97 }}
                   className="bg-white border border-[#E5E7EB] rounded-2xl p-6 flex flex-col items-center gap-3 hover:shadow-lg transition-all"
                   onClick={() => {
-                    if (tool.url) {
-                      window.open(tool.url, "_blank");
+                    if (tool.route) {
+                      navigate(tool.route);
                     }
                   }}
                 >

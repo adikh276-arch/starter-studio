@@ -26,7 +26,7 @@ interface ToolCard {
   label: string;
   bgColor: string;
   iconColor: string;
-  url?: string;
+  route?: string;
 }
 
 interface FinancialLevelCard {
@@ -37,12 +37,12 @@ interface FinancialLevelCard {
 }
 
 const toolCards: ToolCard[] = [
-  { id: "grow", icon: Bot, label: "GROW", bgColor: "linear-gradient(135deg, #a855f7 0%, #7c3aed 100%)", iconColor: "#AB47BC", url: "https://app.mantracare.org/coachapp/grow/" },
-  { id: "life-guidance", icon: Compass, label: "Life Guidance", bgColor: "linear-gradient(135deg, #06b6d4 0%, #0891b2 100%)", iconColor: "#00BCD4", url: "https://web.mantracare.com/app/compass-guide-your-life/" },
-  { id: "self-awareness", icon: Brain, label: "Self-Awareness", bgColor: "linear-gradient(135deg, #f472b6 0%, #ec4899 100%)", iconColor: "#EC407A", url: "https://content.mantracare.com/en/coachapp/self-awareness-assessment/" },
-  { id: "stress-wellbeing", icon: HeartPulse, label: "Stress & Wellbeing", bgColor: "linear-gradient(135deg, #10b981 0%, #059669 100%)", iconColor: "#66BB6A", url: "https://content.mantracare.com/en/coachapp/stress-and-well-being-assessment/" },
-  { id: "control-motivation", icon: Gauge, label: "Control & Motivation", bgColor: "linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%)", iconColor: "#F9A825", url: "https://content.mantracare.com/en/coachapp/control-and-motivation-assessment/" },
-  { id: "professional-growth", icon: Growth, label: "Professional Growth", bgColor: "linear-gradient(135deg, #fb923c 0%, #f97316 100%)", iconColor: "#FF9800", url: "https://content.mantracare.com/en/coachapp/leadership-and-professional-growth-assessment/" },
+  { id: "grow", icon: Bot, label: "GROW", bgColor: "linear-gradient(135deg, #a855f7 0%, #7c3aed 100%)", iconColor: "#AB47BC", route: "/financial/grow" },
+  { id: "life-guidance", icon: Compass, label: "Life Guidance", bgColor: "linear-gradient(135deg, #06b6d4 0%, #0891b2 100%)", iconColor: "#00BCD4", route: "/financial/compass" },
+  { id: "self-awareness", icon: Brain, label: "Self-Awareness", bgColor: "linear-gradient(135deg, #f472b6 0%, #ec4899 100%)", iconColor: "#EC407A", route: "/financial/self-awareness" },
+  { id: "stress-wellbeing", icon: HeartPulse, label: "Stress & Wellbeing", bgColor: "linear-gradient(135deg, #10b981 0%, #059669 100%)", iconColor: "#66BB6A", route: "/financial/stress-wellbeing" },
+  { id: "control-motivation", icon: Gauge, label: "Control & Motivation", bgColor: "linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%)", iconColor: "#F9A825", route: "/financial/control-motivation" },
+  { id: "professional-growth", icon: Growth, label: "Professional Growth", bgColor: "linear-gradient(135deg, #fb923c 0%, #f97316 100%)", iconColor: "#FF9800", route: "/financial/professional-growth" },
 ];
 
 const topicCards: TopicCard[] = [

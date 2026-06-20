@@ -19,7 +19,7 @@ interface Tip {
   id: number;
   title: string;
   description: string;
-  url?: string;
+  route?: string;
 }
 
 const tips: Tip[] = [
@@ -59,7 +59,7 @@ interface Article {
   id: number;
   title: string;
   description: string;
-  url?: string;
+  route?: string;
 }
 
 const articles: Article[] = [
@@ -101,7 +101,7 @@ interface Tool {
   icon: any;
   bgColor: string;
   iconColor: string;
-  url?: string;
+  route?: string;
 }
 
 const tools: Tool[] = [
@@ -111,7 +111,7 @@ const tools: Tool[] = [
     icon: TrendingUp,
     bgColor: "#E8F5E9",
     iconColor: "#10B981",
-    url: "https://web.mantracare.com/app/brave_steps"
+    route: "/ocd/brave_steps"
   },
   {
     id: "ritual-cost-calculator",
@@ -119,7 +119,7 @@ const tools: Tool[] = [
     icon: Calculator,
     bgColor: "#E3F2FD",
     iconColor: "#3B82F6",
-    url: "https://platform.mantracare.com/ritual_cost/"
+    route: "/ocd/ritual_cost"
   },
   {
     id: "trigger-map",
@@ -127,7 +127,7 @@ const tools: Tool[] = [
     icon: Map,
     bgColor: "#F3E5F5",
     iconColor: "#A855F7",
-    url: "https://web.mantracare.com/app/trigger_map"
+    route: "/ocd/trigger_map"
   },
   {
     id: "quiz",
@@ -135,7 +135,7 @@ const tools: Tool[] = [
     icon: HelpCircle,
     bgColor: "#FFF4E5",
     iconColor: "#F97316",
-    url: "https://platform.mantracare.com/truth_seeker/"
+    route: "/ocd/truth_seeker_quiz"
   }
 ];
 
@@ -339,8 +339,8 @@ export function ContaminationOCDPage() {
                   whileTap={{ scale: 0.97 }}
                   className="bg-white border border-[#E5E7EB] rounded-2xl p-6 flex flex-col items-center gap-3 hover:shadow-lg transition-all"
                   onClick={() => {
-                    if (tool.url) {
-                      window.open(tool.url, "_blank");
+                    if (tool.route) {
+                      navigate(tool.route);
                     }
                   }}
                 >

@@ -1,7 +1,7 @@
 import {
   Wind, Sparkles, Heart, ScrollText, Activity, Lightbulb, Brain,
   Moon, Apple, Compass, MessageCircle, BookOpen, ClipboardList,
-  type LucideIcon,
+  Play, FileText, Info, type LucideIcon,
 } from "lucide-react";
 import type { SubApp } from "../../_shared/types";
 
@@ -13,6 +13,7 @@ const sleep   = "sleep";
 const food    = "food_body";
 const relate  = "relationships";
 const learn   = "learn";
+const exercises = "exercises";
 
 export const emotionalSubApps: SubApp[] = [
   // Breath & grounding
@@ -87,5 +88,11 @@ export const emotionalSubApps: SubApp[] = [
   { id: "stress-tips",            label: "Stress Tips",           description: "Quick stress-relief tips.",                  icon: Lightbulb, category: learn },
   { id: "real-stories-to-overcome-anxiety", label: "Stories: Overcoming Anxiety", description: "Real stories from real people.", icon: ScrollText, category: learn },
   { id: "topics",                 label: "Topics",                description: "Browse all emotional topics.",               icon: BookOpen,  category: learn },
-];
 
+  // Added for Depression Page
+  { id: "guided-imagery",         label: "Guided Imagery",        description: "Visualizing a peaceful place.",              icon: Play,    category: exercises },
+  { id: "daily-self-care",        label: "Daily Self Care",       description: "Track your daily self-care habits.",         icon: Heart,   category: tracker },
+  { id: "depression-articles",    label: "Depression Articles",   description: "Read articles about managing depression.",   icon: FileText,category: learn },
+  { id: "depression-stories",     label: "Depression Stories",    description: "Real stories of overcoming depression.",      icon: BookOpen,category: learn },
+  { id: "depression-myths",       label: "Depression Myths",      description: "Busting common myths about depression.",    icon: Info,    category: learn },
+];
