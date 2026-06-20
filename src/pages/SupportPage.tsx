@@ -255,7 +255,7 @@ export function SupportPage() {
 
             <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3, delay: 0.2 }} className="grid grid-cols-1 sm:grid-cols-3 gap-3">
               {[
-                { label: "FAQs",             desc: "Common questions answered", icon: HelpCircle,   color: "text-[#0B2545]",  bg: "bg-[#F1F7F7]", link: "https://content.mantracare.com/faq/" },
+                { label: "FAQs",             desc: "Common questions answered", icon: HelpCircle,   color: "text-[#0B2545]",  bg: "bg-[#F1F7F7]", link: "/support" },
                 { label: "Response Time",    desc: "Usually within 24 hours",   icon: Clock,        color: "text-[#0B2545]",  bg: "bg-[#F1F7F7]" },
                 { label: "Priority Support", desc: "For premium plan members",  icon: CheckCircle2, color: "text-[#0B2545]",  bg: "bg-[#F1F7F7]" },
               ].map((tile, i) => {
