@@ -17,7 +17,7 @@ interface TopicCard {
   label: string;
   bgColor: string;
   iconColor: string;
-  url?: string;
+  route?: string;
 }
 
 interface MindfulnessCard {
@@ -36,21 +36,21 @@ const moodOptions: MoodOption[] = [
 ];
 
 const topicCards: TopicCard[] = [
-  { id: "depression", icon: CloudRain, label: "Depression", bgColor: "#EBF4FF", iconColor: "#4F95FF", url: "https://app-mantra.com/therapy/depression/" },
-  { id: "anxiety", icon: Brain, label: "Anxiety", bgColor: "#F3EEFF", iconColor: "#9D6CFF", url: "https://app-mantra.com/therapy/anxiety/" },
-  { id: "stress", icon: Zap, label: "Stress", bgColor: "#FFF4E5", iconColor: "#FFB347", url: "https://app-mantra.com/therapy/stress/?" },
-  { id: "adolescent", icon: Users, label: "Adolescent", bgColor: "#E8F8F5", iconColor: "#34D399", url: "https://app-mantra.com/therapy/adolescent/" },
-  { id: "relationship", icon: Heart, label: "Relationship", bgColor: "#FFEBF0", iconColor: "#FF6B9D", url: "https://app-mantra.com/therapy/relationship/?" },
-  { id: "workplace", icon: Briefcase, label: "Workplace", bgColor: "#F1F4F8", iconColor: "#64748B", url: "https://app-mantra.com/therapy/workplace" },
-  { id: "sleep", icon: Moon, label: "Sleep", bgColor: "#EDE9FE", iconColor: "#8B5CF6", url: "https://app-mantra.com/therapy/sleep/" },
-  { id: "parenting", icon: Baby, label: "Parenting", bgColor: "#FCE7F3", iconColor: "#EC4899", url: "https://app-mantra.com/therapy/parenting/" },
-  { id: "anger", icon: Flame, label: "Anger", bgColor: "#FFF0EB", iconColor: "#F97316", url: "https://app-mantra.com/therapy/anger/" },
-  { id: "grief", icon: Frown, label: "Grief", bgColor: "#F1F4F8", iconColor: "#475569", url: "https://app-mantra.com/therapy/grief/" },
-  { id: "ptsd", icon: Frown, label: "PTSD", bgColor: "#E6FAF5", iconColor: "#14B8A6", url: "https://app-mantra.com/therapy/ptsd/" },
-  { id: "acceptance", icon: HandHeart, label: "Acceptance", bgColor: "#E0F7FA", iconColor: "#00BCD4", url: "https://app-mantra.com/therapy/acceptance/" },
-  { id: "postpartum", icon: Baby, label: "Postpartum", bgColor: "#F5E6FF", iconColor: "#B794F4", url: "https://app-mantra.com/therapy/postpartum/?" },
-  { id: "self-esteem", icon: Sparkles, label: "Self Esteem", bgColor: "#F0E7FF", iconColor: "#A78BFA", url: "https://app-mantra.com/therapy/sexuality/" },
-  { id: "eating-disorder", icon: UtensilsCrossed, label: "Eating Disorder", bgColor: "#F7FEE7", iconColor: "#84CC16", url: "https://app-mantra.com/therapy/eating-disorder/" },
+  { id: "depression", icon: CloudRain, label: "Depression", bgColor: "#EBF4FF", iconColor: "#4F95FF", route: "/emotional/depression" },
+  { id: "anxiety", icon: Brain, label: "Anxiety", bgColor: "#F3EEFF", iconColor: "#9D6CFF", route: "/emotional/anxiety" },
+  { id: "stress", icon: Zap, label: "Stress", bgColor: "#FFF4E5", iconColor: "#FFB347", route: "/emotional/stress" },
+  { id: "adolescent", icon: Users, label: "Adolescent", bgColor: "#E8F8F5", iconColor: "#34D399", route: "/emotional/adolescent" },
+  { id: "relationship", icon: Heart, label: "Relationship", bgColor: "#FFEBF0", iconColor: "#FF6B9D", route: "/emotional/relationship" },
+  { id: "workplace", icon: Briefcase, label: "Workplace", bgColor: "#F1F4F8", iconColor: "#64748B", route: "/emotional/workplace" },
+  { id: "sleep", icon: Moon, label: "Sleep", bgColor: "#EDE9FE", iconColor: "#8B5CF6", route: "/emotional/sleep" },
+  { id: "parenting", icon: Baby, label: "Parenting", bgColor: "#FCE7F3", iconColor: "#EC4899", route: "/emotional/parenting" },
+  { id: "anger", icon: Flame, label: "Anger", bgColor: "#FFF0EB", iconColor: "#F97316", route: "/emotional/anger" },
+  { id: "grief", icon: Frown, label: "Grief", bgColor: "#F1F4F8", iconColor: "#475569", route: "/emotional/grief" },
+  { id: "ptsd", icon: Frown, label: "PTSD", bgColor: "#E6FAF5", iconColor: "#14B8A6", route: "/emotional/ptsd" },
+  { id: "acceptance", icon: HandHeart, label: "Acceptance", bgColor: "#E0F7FA", iconColor: "#00BCD4", route: "/emotional/acceptance" },
+  { id: "postpartum", icon: Baby, label: "Postpartum", bgColor: "#F5E6FF", iconColor: "#B794F4", route: "/emotional/postpartum" },
+  { id: "self-esteem", icon: Sparkles, label: "Self Esteem", bgColor: "#F0E7FF", iconColor: "#A78BFA", route: "/emotional/self-esteem" },
+  { id: "eating-disorder", icon: UtensilsCrossed, label: "Eating Disorder", bgColor: "#F7FEE7", iconColor: "#84CC16", route: "/emotional/eating-disorder" },
   { id: "ocd", icon: RefreshCw, label: "OCD", bgColor: "#DBEAFE", iconColor: "#3B82F6" },
 ];
 
@@ -62,12 +62,12 @@ const mindfulnessCards: MindfulnessCard[] = [
 ];
 
 const toolCards: TopicCard[] = [
-  { id: "box-breathing", icon: Wind, label: "Box Breathing", bgColor: "linear-gradient(135deg, #06b6d4 0%, #0891b2 100%)", iconColor: "#00BCD4", url: "https://platform.mantracare.com/box_breathing/?lang=en" },
-  { id: "gratitude-tracker", icon: Star, label: "Gratitude Tracker", bgColor: "linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%)", iconColor: "#F9A825", url: "https://platform.mantracare.com/gratitude_tracker/" },
-  { id: "loving-kindness-meditation", icon: Heart, label: "Loving-Kindness Meditation", bgColor: "linear-gradient(135deg, #f472b6 0%, #ec4899 100%)", iconColor: "#EC407A", url: "https://platform.mantracare.com/metta-heart-guide/" },
-  { id: "affirmations", icon: Smile, label: "Affirmations", bgColor: "linear-gradient(135deg, #a855f7 0%, #7c3aed 100%)", iconColor: "#AB47BC", url: "https://platform.mantracare.com/affirmations/?lang=en" },
-  { id: "mindful-space", icon: Compass, label: "Mindful Space", bgColor: "linear-gradient(135deg, #10b981 0%, #059669 100%)", iconColor: "#66BB6A", url: "https://platform.mantracare.com/calm_space/" },
-  { id: "letter-to-self", icon: Mail, label: "A Letter To Self", bgColor: "linear-gradient(135deg, #fb923c 0%, #f97316 100%)", iconColor: "#FF9800", url: "https://platform.mantracare.com/letter_to_self/" },
+  { id: "box-breathing", icon: Wind, label: "Box Breathing", bgColor: "linear-gradient(135deg, #06b6d4 0%, #0891b2 100%)", iconColor: "#00BCD4", route: "/emotional/box-breathing" },
+  { id: "gratitude-tracker", icon: Star, label: "Gratitude Tracker", bgColor: "linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%)", iconColor: "#F9A825", route: "/emotional/gratitude-tracker" },
+  { id: "loving-kindness-meditation", icon: Heart, label: "Loving-Kindness Meditation", bgColor: "linear-gradient(135deg, #f472b6 0%, #ec4899 100%)", iconColor: "#EC407A", route: "/emotional/loving-kindness-meditation" },
+  { id: "affirmations", icon: Smile, label: "Affirmations", bgColor: "linear-gradient(135deg, #a855f7 0%, #7c3aed 100%)", iconColor: "#AB47BC", route: "/emotional/affirmations" },
+  { id: "mindful-space", icon: Compass, label: "Mindful Space", bgColor: "linear-gradient(135deg, #10b981 0%, #059669 100%)", iconColor: "#66BB6A", route: "/emotional/mindful-space" },
+  { id: "letter-to-self", icon: Mail, label: "A Letter To Self", bgColor: "linear-gradient(135deg, #fb923c 0%, #f97316 100%)", iconColor: "#FF9800", route: "/emotional/a-letter-to-self" },
 ];
 
 export function SelfCareResources() {
@@ -179,8 +179,8 @@ export function SelfCareResources() {
                       whileHover={{ y: -2 }}
                       whileTap={{ scale: 0.98 }}
                       onClick={() => {
-                        if (topic.url) {
-                          window.open(topic.url, "_blank");
+                        if (topic.route) {
+                          navigate(topic.route);
                         } else {
                           console.log(`Navigate to ${topic.id}`);
                         }
