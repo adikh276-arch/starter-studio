@@ -1,63 +1,86 @@
-## What this project actually is right now
+## Reality check
 
-This isn't a Lovable project yet — it's a **Figma Make export** with ~150 page components, a 500-line `App.tsx` that imports every page by hand, MUI mixed in with shadcn, Tailwind v4 (Lovable uses v3), and emojis sprinkled through the UI. The dev server is also currently throwing a 500 because a stale TanStack-Start virtual entry is being requested. So "make it Lovable-quality" means a real migration, not a polish pass.
+You've dropped 8 standalone apps into this repo:
 
-I won't try to do all of this in one shot — that would produce a broken app. Here is the staged plan I'll work through, committing after each stage so you can preview.
+| Folder | Framework | Approx pages |
+|---|---|---|
+| `emotional wellbeing selfcare` | Next.js App Router | ~80+ skills/exercises |
+| `coaching areas` | Next.js | ~40 |
+| `ocd selfcare` | Next.js | ~60 |
+| `Financial Wellbeing selfcare` | Next.js | ~30 |
+| `Fitness selfcare` | Next.js | ~50 (with CSV data) |
+| `LGBTQ+ Selfcare` | Next.js | ~40 |
+| `Women Wellness selfcare` | Next.js | ~50 |
+| `substances in substance use` | Vite + Next-app dual | ~60 |
 
----
+The main app is **React + Vite + React Router**. The added apps use **Next.js App Router, `app/` directories, server actions, server-side DB calls (`lib/db.ts`), `"use server"`, `next/link`, `next/navigation`, `next/image`, i18n with `next-intl`/`i18next`, and Server Components**. None of that runs in Vite. **This is not a copy-paste job — it is a port of ~400 pages.**
 
-## Stage 1 — Unbreak the preview & normalize the foundation
-
-1. Kill the stale TanStack-Start state, restart Vite, confirm the app renders.
-2. Move to the Lovable-native layout:
-   - `src/main.tsx`, `src/App.tsx`, `src/pages/`, `src/components/`, `src/components/ui/`, `src/lib/utils.ts`, `src/hooks/`
-   - Delete `src/app/` after moves, delete `src/imports/` Figma cruft we don't need.
-3. Downgrade Tailwind v4 → v3 with proper `tailwind.config.ts` + `postcss.config.js`, port the theme tokens from `src/styles/theme.css` into `src/index.css` using HSL semantic tokens (so dark mode and shadcn variants work).
-4. Remove unused heavy deps (`@mui/*`, `@emotion/*`, `react-slick`, `slick-carousel`, `react-icons`, `react-dnd*`, `@popperjs/core`, `react-popper`, `react-responsive-masonry`) — none of these are Lovable-standard and most are unused.
-5. Replace the hand-rolled `figma-asset-resolver` with normal `@/assets/...` imports.
-
-After this stage: app boots, looks the same, but on a Lovable-standard foundation.
-
-## Stage 2 — Router & page organization
-
-1. Replace the 500-line `App.tsx` route wall with a single `routes.tsx` config array (path + lazy component), so `App.tsx` becomes ~20 lines.
-2. Lazy-load every page via `React.lazy` + `Suspense` — current bundle eagerly imports 150 components.
-3. Reorganize `src/pages/` by domain (`ocd/`, `lgbtq/`, `selfcare/`, `care-team/`, `billing/`, `records/`, `academy/`, etc.) instead of one flat folder.
-4. Add a proper `NotFound` page and a single `AppShell` layout (sidebar + mobile nav) so each page stops re-mounting the chrome.
-
-## Stage 3 — Emoji → Lucide sweep + shared primitives
-
-1. Project-wide find of emoji characters in JSX; replace each with the semantic Lucide icon (e.g. ✅ → `<CheckCircle2 />`, ❤️ → `<Heart />`, 🔒 → `<Lock />`, 📄 → `<FileText />`, etc.).
-2. Extract repeated patterns I can see across pages into shared components: `PageHeader`, `SectionHeader`, `IconTile`, `ResourceRow`, `GradientCTA`, `BackButton`. Most pages currently re-implement these inline.
-3. Replace hardcoded hex colors (`#043570`, `#00c0ff`, `#F8FAFC`, etc.) with semantic tokens (`text-primary`, `bg-background`, `border-border`). This is the single biggest source of "AI slop" feel.
-
-## Stage 4 — Design system uplift (the "surprise me" part)
-
-A calm, premium clinical direction — Apple Health × Linear, tuned for healthcare:
-
-- **Palette**: deep navy primary `#0B2545`, teal accent `#13B5B1`, soft surface `#F7F8FA`, ink `#0F172A`, muted `#64748B`. Single accent gradient reserved for hero CTAs only.
-- **Typography**: Instrument Serif for display headlines (editorial, trustworthy), Inter Tight for UI — loaded via `@fontsource`.
-- **Radius**: 14px cards, 10px buttons, 999px pills. Consistent, no mix of 8/12/16/24 like today.
-- **Shadows**: two-layer soft shadow token, no harsh drop-shadows.
-- **Motion**: keep `motion/react`, standardize on one easing + 0.4s duration token, remove the per-component `whileHover={{ y: -4, scale: 1.02 }}` repetition.
-- Apply the new tokens via `index.css` so every page inherits without per-page edits.
-
-## Stage 5 — Cleanup & verification
-
-1. Delete orphaned components, dead imports, unused assets in `src/imports/`.
-2. Run the build, fix any type/import fallout.
-3. Walk the main routes in headless Chromium and screenshot to verify nothing regressed visually.
+Doing all of this + a full repo restructure + tracker rewiring in one turn will break the preview and produce code worse than what's there. We need to phase it.
 
 ---
 
-## What I will NOT do without asking
+## Proposed phased plan
 
-- Touch business logic, localStorage shape (`mantraUser`), or routing URLs — your existing flows keep working.
-- Rewrite the content of long-form article pages (OCD/LGBTQ/Trich articles). They get the new shell, header, and typography — the words stay.
-- Add backend / Lovable Cloud — you didn't ask for it.
+### Phase A — Repo hygiene (this turn, safe, ~30 min)
+1. Move all 8 sub-apps out of the build path into `legacy/` so Vite stops trying to index them and the preview stays healthy.
+2. Strip auth/DB/backend from the **main** app:
+   - Remove `ProtectedRoute`, `mantraUser` localStorage gating, `hasSubscription` redirects.
+   - SignUp/SignIn become no-op → straight to `/dashboard`.
+   - Delete any Supabase/cloud client code if present.
+3. Establish the target structure in `src/`:
+   ```text
+   src/
+     app/                  # routing only (App.tsx + route tree)
+     features/             # one folder per self-care vertical
+       mindfulness/
+       ocd/
+       fitness/
+       financial/
+       lgbtq/
+       women/
+       emotional/
+       coaching/
+       substance/
+     shared/
+       components/   ui/   hooks/   lib/   styles/
+     pages/                # only top-level pages that aren't a feature
+   ```
+4. Create a single **feature registry** (`src/features/registry.ts`) that every vertical plugs into — gives one source of truth for routes, trackers, cards, and nav.
 
-## Estimated work
+Deliverable: green preview, clean foundation, zero auth/DB, nothing from the 8 folders broken because they're parked in `legacy/`.
 
-This is realistically **5 sequential responses** from me, one per stage. Each stage leaves the app running. If at any point you want to stop, change direction, or skip a stage (e.g. skip the design uplift), just say so.
+### Phase B — Port verticals one at a time (one turn each)
+For each vertical, in this order (smallest first):
+1. Coaching areas
+2. Financial wellbeing
+3. LGBTQ+
+4. Women wellness
+5. Fitness (has CSV data — bigger)
+6. OCD
+7. Emotional wellbeing (biggest — 80+ skills)
+8. Substance use
 
-Shall I start with Stage 1?
+Per vertical I will:
+- Convert Next.js pages → Vite/React Router pages under `src/features/<vertical>/pages/`.
+- Replace `next/link` → `react-router` `Link`, `next/image` → `<img>`, `next/navigation` → `useNavigate`/`useParams`.
+- Strip server actions, replace DB persistence with `localStorage` (or remove if it's a static read).
+- Lift shared UI primitives once (don't duplicate shadcn across folders — there's already a copy in `src/components/ui`).
+- Register routes + tracker entries in the registry so they hook into existing nav and tracker links.
+- Verify the vertical renders with Playwright before moving on.
+
+### Phase C — Tracker wiring
+Once all verticals exist, do one focused pass that fixes every tracker/quick-action link across the dashboard, mobile nav, and self-care cards to point at the right feature route. Verified with Playwright screenshots.
+
+### Phase D — Design polish
+Only after structure + nav are correct, as you said.
+
+---
+
+## What I need from you before starting
+
+1. **Confirm "park in `legacy/`"** is OK. The 8 folders stay in the repo (preserved, untouched) but moved under `legacy/` so the Vite dev server stops trying to type-check / index them. Without this the preview will keep getting slower and start failing.
+2. **Confirm priority order** for Phase B (or reorder).
+3. **i18n**: most sub-apps ship 30+ locale files. For Phase B, ship **English only** and drop the locale folders? (Strongly recommended — adding i18n back later is mechanical.)
+4. **Strip backend from sub-apps too?** Confirm: any place a sub-app reads/writes DB becomes `localStorage` (or in-memory), no Supabase, no API routes, no server actions.
+
+If you say "yes go" to all four, I start Phase A this turn and then we knock out Phase B one vertical per turn. Trying to do it all in one shot will produce exactly the "ugly, unmaintainable" output you're trying to get away from.

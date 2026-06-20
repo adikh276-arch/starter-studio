@@ -122,7 +122,8 @@ const WomenWellnessSelfCare = lazy(() => import("@/pages/WomenWellnessSelfCare")
 const YogaSelfCare = lazy(() => import("@/pages/YogaSelfCare").then(m => ({ default: m.YogaSelfCare })));
 
 export const routes = [
-{ path: "/", element: <SignUp /> },
+  { path: "/", element: <Dashboard /> },
+  { path: "/signup", element: <SignUp /> },
   { path: "/dashboard", element: <ProtectedRoute><Dashboard /></ProtectedRoute> },
   { path: "/no-plan", element: <ProtectedRoute><NoActivePlan /></ProtectedRoute> },
   { path: "/self-care", element: <ProtectedRoute><SelfCareResources /></ProtectedRoute> },

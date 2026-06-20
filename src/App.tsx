@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router";
 import { routes } from "@/routes";
-import { AppPopupGate } from "@/components/AppPopupGate";
+import { getFeatureRoutes } from "@/features/registry";
 import { NotFound } from "@/pages/NotFound";
 
 function PageFallback() {
@@ -13,12 +13,15 @@ function PageFallback() {
 }
 
 export default function App() {
+  const featureRoutes = getFeatureRoutes();
   return (
     <BrowserRouter>
-      <AppPopupGate />
       <Suspense fallback={<PageFallback />}>
         <Routes>
           {routes.map((r) => (
+            <Route key={r.path} path={r.path} element={r.element} />
+          ))}
+          {featureRoutes.map((r) => (
             <Route key={r.path} path={r.path} element={r.element} />
           ))}
           <Route path="*" element={<NotFound />} />

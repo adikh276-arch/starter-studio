@@ -1,2 +1,7 @@
 packages:
   - '.'
+# The 8 sub-apps under legacy/ are parked Next.js / Vite projects kept for
+# reference while we port their pages into src/features/. They must NOT be
+# part of the workspace – their package.json files would otherwise pull in
+# Next.js, Supabase, i18next, etc. that this app does not need.
+ignoredBuiltDependencies: []
