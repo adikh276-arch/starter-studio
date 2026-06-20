@@ -169,7 +169,7 @@ export function DeaddictionPage() {
                         if (link.title === "Talk to a Deaddiction Therapist") {
                           navigate("/care-team");
                         } else if (link.title === "Self Care") {
-                          navigate("/substance-use-self-care");
+                          navigate("/substance");
                         }
                       }}
                       initial={{ opacity: 0, y: 10 }}

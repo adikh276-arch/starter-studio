@@ -500,7 +500,7 @@ function SelfCareHubInner({ topicId }: { topicId?: string }) {
                       whileTap={{ scale: 0.98 }}
                       onClick={() => {
                         playPop();
-                        navigate(withLang(`/guided-series/${selectedTopic}`));
+                        navigate(withLang(`/emotional/guided-series/${selectedTopic}`));
                       }}
                       className="w-full bg-[#F5FBFF] border-2 border-[#E0F2FE] rounded-2xl p-6 flex items-center justify-between hover:border-primary hover:shadow-lg transition-all group"
                     >

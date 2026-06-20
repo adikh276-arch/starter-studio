@@ -92,7 +92,7 @@ export function GuidedSeriesClient({ concern, data }: GuidedSeriesClientProps) {
       return;
     }
     navigate(withLang(`/emotional/guided-series/${concern}/${encodeURIComponent(activity.name)}`));
-  }, [concern, router]);
+  }, [concern, navigate]);
 
   return (
     <div className="min-h-screen bg-[#F8FAFC] pb-10">

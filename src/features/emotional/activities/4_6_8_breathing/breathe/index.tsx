@@ -92,7 +92,7 @@ const ActiveBreathing = () => {
     }, 1000);
 
     return clearTimer;
-  }, [status, totalRounds, clearTimer, router]);
+  }, [status, totalRounds, clearTimer, navigate]);
 
   const handleStart = () => {
     if (status === "paused") {

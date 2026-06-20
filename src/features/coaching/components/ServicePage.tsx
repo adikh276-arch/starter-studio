@@ -1466,7 +1466,7 @@ export function ServicePage() {
                       } else if (link.title === "Self Care" && serviceId === "nutrition") {
                         navigate("/nutrition-self-care");
                       } else if (link.title === "Self Care" && serviceId === "quit-smoking") {
-                        navigate("/substance-use-self-care");
+                        navigate("/substance");
                       } else if (link.title === "Self Care" && (serviceId === "financial-wellness" || serviceId === "finance")) {
                         navigate("/financial-wellness-self-care");
                       } else if (link.title === "Self Care" && serviceId === "health-checks") {

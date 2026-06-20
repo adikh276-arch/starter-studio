@@ -100,7 +100,7 @@ const ServicePage = lazy(() => import("@/pages/ServicePage").then(m => ({ defaul
 const SetGentleBoundaries = lazy(() => import("@/pages/SetGentleBoundaries").then(m => ({ default: m.SetGentleBoundaries })));
 const SignUp = lazy(() => import("@/pages/SignUp").then(m => ({ default: m.SignUp })));
 const SubcategoryPage = lazy(() => import("@/pages/SubcategoryPage").then(m => ({ default: m.SubcategoryPage })));
-const SubstanceUseSelfCare = lazy(() => import("@/pages/SubstanceUseSelfCare").then(m => ({ default: m.SubstanceUseSelfCare })));
+
 const SupportPage = lazy(() => import("@/pages/SupportPage").then(m => ({ default: m.SupportPage })));
 const TasksPage = lazy(() => import("@/pages/TasksPage").then(m => ({ default: m.TasksPage })));
 const ThatHoarderStory = lazy(() => import("@/pages/ThatHoarderStory").then(m => ({ default: m.ThatHoarderStory })));
@@ -224,7 +224,7 @@ export const routes = [
   { path: "/fitness-self-care", element: <ProtectedRoute><FitnessSelfCare /></ProtectedRoute> },
   { path: "/nutrition-self-care", element: <ProtectedRoute><NutritionSelfCare /></ProtectedRoute> },
   { path: "/yoga-self-care", element: <ProtectedRoute><YogaSelfCare /></ProtectedRoute> },
-  { path: "/substance-use-self-care", element: <ProtectedRoute><SubstanceUseSelfCare /></ProtectedRoute> },
+
   { path: "/deaddiction", element: <ProtectedRoute><DeaddictionPage /></ProtectedRoute> },
   { path: "/financial-wellness-self-care", element: <ProtectedRoute><FinancialWellnessSelfCare /></ProtectedRoute> },
   { path: "/categories", element: <ProtectedRoute><CategoriesPage /></ProtectedRoute> },
