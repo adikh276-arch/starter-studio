@@ -1,0 +1,174 @@
+{
+  "header": {
+    "title": "심장 건강 가이드",
+    "subtitle": "활력 징후를 추적하고, DASH 다이어트를 배우고, 심장 건강 습관을 기르세요.",
+    "back": "대시보드로 돌아가기"
+  },
+  "alerts": {
+    "crisis": {
+      "title": "고혈압 위기 경고",
+      "desc": "혈압 수치가 위험할 정도로 높습니다(≥180/120). 이는 즉각적인 치료가 필요합니다.",
+      "actions": [
+        "즉시 911에 전화하거나 응급실로 가세요",
+        "압력이 저절로 낮아지는지 기다리지 마십시오.",
+        "이로 인해 뇌졸중, 심장마비 또는 장기 손상이 발생할 수 있습니다."
+      ]
+    },
+    "vitals": {
+      "invalid": "유효한 수치를 입력하세요.",
+      "success": "기록된 읽기: {{sys}}/{{dia}} - {{category}}"
+    }
+  },
+  "tabs": {
+    "dash": "대시 다이어트",
+    "vitals": "바이탈 로그",
+    "habits": "심장 습관"
+  },
+  "vitals": {
+    "form": {
+      "title": "귀하의 활력소를 기록하십시오",
+      "bp": {
+        "label": "혈압",
+        "systolic": "수축기",
+        "systolic_desc": "상위 번호",
+        "diastolic": "확장기",
+        "diastolic_desc": "하단 번호"
+      },
+      "heart_rate": {
+        "label": "안정시 심박수(BPM)",
+        "placeholder": "예: 72"
+      },
+      "submit": "로그 읽기"
+    },
+    "recent": {
+      "title": "최근 독서",
+      "empty": "아직 기록된 판독값이 없습니다.",
+      "bpm": "{{count}} BPM"
+    },
+    "chart": {
+      "title": "7일 혈압 추세",
+      "systolic": "수축기",
+      "diastolic": "확장기"
+    },
+    "guidelines": {
+      "title": "AHA 혈압 카테고리:",
+      "normal": "일반: <120/80",
+      "elevated": "상승: 120-129/<80",
+      "stage1": "1단계: 130-139/80-89",
+      "stage2": "2단계: ≥140/90"
+    },
+    "categories": {
+      "crisis": "고혈압 위기",
+      "stage2": "고혈압 2단계",
+      "stage1": "고혈압 1단계",
+      "elevated": "높은",
+      "normal": "보통",
+      "unknown": "알 수 없음"
+    }
+  },
+  "dash": {
+    "intro": {
+      "title": "대시 다이어트",
+      "desc": "고혈압을 멈추기 위한 식이요법 - 자연적으로 혈압을 낮추는 과학적으로 입증된 식사 계획입니다."
+    },
+    "principles": {
+      "sodium": {
+        "title": "나트륨 한도",
+        "limit": "하루 <2,300mg",
+        "high_risk": "(또는 고위험군의 경우 1,500mg)",
+        "desc": "과도한 나트륨은 수분 정체를 유발하여 혈액량을 증가시키고 동맥 벽에 압력을 가합니다."
+      },
+      "potassium": {
+        "title": "칼륨파워",
+        "limit": "하루 4,700mg",
+        "source": "전체 식품에서",
+        "foods": [
+          "바나나 (배지당 422mg)",
+          "고구마 (매체당 540mg)",
+          "시금치 (요리된 컵당 840mg)"
+        ]
+      },
+      "magnesium": {
+        "title": "마그네슘 및 섬유",
+        "limit": "500mg Mg / 25-35g 섬유질",
+        "target": "일일 목표",
+        "foods": [
+          "아몬드, 캐슈, 호박씨",
+          "통곡물(귀리, 퀴노아)",
+          "콩과 식물과 짙은 잎이 많은 채소"
+        ]
+      }
+    },
+    "scanner": {
+      "title": "⚠️ 숨겨진 나트륨 스캐너: \"은밀한 소금\" 식품",
+      "subtitle": "겉으로는 무해해 보이는 이 음식들은 생각보다 나트륨을 더 많이 함유하고 있습니다.",
+      "swaps": {
+        "title": "💡 DASH 친화적인 스왑:",
+        "items": [
+          "저염육수로 만든 수프(200mg vs 800mg)",
+          "델리 고기 대신 구운 닭 가슴살 (70mg 대 520mg)",
+          "통조림 대신 신선한 야채(5mg 대 300mg)"
+        ]
+      }
+    }
+  },
+  "habits": {
+    "vitality": {
+      "title": "활력 점수",
+      "start": "심장 건강을 위한 연속 행진을 시작해 보세요!",
+      "streak_good": "🔥 {{count}}일 연속! 당신의 마음은 번성하고 있습니다",
+      "streak_continue": "{{count}}일 - 계속하세요!",
+      "streak_continue_singular": "{{count}}일 - 계속하세요!",
+      "days": "하루 연속",
+      "goal": "{{count}} / 30일 목표"
+    },
+    "checklist": {
+      "title": "일일 심장강화 체크리스트",
+      "subtitle": "심혈관 강화를 위해 매일 이러한 습관을 완료하세요",
+      "items": {
+        "cardio": {
+          "label": "30분 Zone 2 유산소 운동",
+          "desc": "대화하는 속도로 빠르게 걷기, 자전거 타기, 수영하기"
+        },
+        "low_sodium": {
+          "label": "나트륨 한도를 유지했습니다",
+          "desc": "<2,300mg(또는 고위험인 경우 1,500mg)"
+        },
+        "no_salt": {
+          "label": "테이블에 소금을 추가하지 않음",
+          "desc": "음식 본연의 맛을 빛나게 하세요"
+        },
+        "meds": {
+          "label": "복용한 약물(선택사항)",
+          "desc": "혈압약을 복용 중인 사람들의 경우"
+        }
+      }
+    },
+    "tips": {
+      "title": "심장 건강 필수품",
+      "items": [
+        "<strong>영역 2 심장강화:</strong> 최대 심박수의 60~70%로 운동하세요(계속 대화할 수 있음).",
+        "<strong>칼륨은 나트륨 배출에 도움이 됩니다.</strong> 전체 식품을 통해 매일 4,700mg을 섭취하는 것을 목표로 하세요.",
+        "<strong>일관성 > 강도:</strong> 매일 걷는 것이 산발적인 강렬한 운동보다 심장 건강에 좋습니다.",
+        "<strong>동시에 모니터링:</strong> 가장 정확한 측정값을 얻으려면 아침에 혈압을 확인하세요."
+      ]
+    }
+  },
+  "foods": {
+    "canned_soup": "통조림 수프(1컵)",
+    "deli_turkey": "델리 터키 (2온스)",
+    "white_bread": "식빵 (2조각)",
+    "frozen_pizza": "냉동 피자 (1조각)",
+    "soy_sauce": "간장(1큰술)",
+    "cottage_cheese": "코티지 치즈(1/2컵)",
+    "pickles": "피클 (중간 크기 1개)",
+    "salad_dressing": "샐러드드레싱(2큰술)"
+  },
+  "salad_dressing": "샐러드_드레싱",
+  "cottage_cheese": "별장_치즈",
+  "soy_sauce": "간장",
+  "frozen_pizza": "냉동_피자",
+  "white_bread": "흰빵",
+  "deli_turkey": "deli_turkey",
+  "canned_soup": "통조림_수프"
+}

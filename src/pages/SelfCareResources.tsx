@@ -36,22 +36,22 @@ const moodOptions: MoodOption[] = [
 ];
 
 const topicCards: TopicCard[] = [
-  { id: "depression", icon: CloudRain, label: "Depression", bgColor: "#EBF4FF", iconColor: "#4F95FF", route: "/emotional/depression" },
-  { id: "anxiety", icon: Brain, label: "Anxiety", bgColor: "#F3EEFF", iconColor: "#9D6CFF", route: "/emotional/anxiety" },
-  { id: "stress", icon: Zap, label: "Stress", bgColor: "#FFF4E5", iconColor: "#FFB347", route: "/emotional/stress" },
-  { id: "adolescent", icon: Users, label: "Adolescent", bgColor: "#E8F8F5", iconColor: "#34D399", route: "/emotional/adolescent" },
-  { id: "relationship", icon: Heart, label: "Relationship", bgColor: "#FFEBF0", iconColor: "#FF6B9D", route: "/emotional/relationship" },
-  { id: "workplace", icon: Briefcase, label: "Workplace", bgColor: "#F1F4F8", iconColor: "#64748B", route: "/emotional/workplace" },
-  { id: "sleep", icon: Moon, label: "Sleep", bgColor: "#EDE9FE", iconColor: "#8B5CF6", route: "/emotional/sleep" },
-  { id: "parenting", icon: Baby, label: "Parenting", bgColor: "#FCE7F3", iconColor: "#EC4899", route: "/emotional/parenting" },
-  { id: "anger", icon: Flame, label: "Anger", bgColor: "#FFF0EB", iconColor: "#F97316", route: "/emotional/anger" },
-  { id: "grief", icon: Frown, label: "Grief", bgColor: "#F1F4F8", iconColor: "#475569", route: "/emotional/grief" },
-  { id: "ptsd", icon: Frown, label: "PTSD", bgColor: "#E6FAF5", iconColor: "#14B8A6", route: "/emotional/ptsd" },
-  { id: "acceptance", icon: HandHeart, label: "Acceptance", bgColor: "#E0F7FA", iconColor: "#00BCD4", route: "/emotional/acceptance" },
-  { id: "postpartum", icon: Baby, label: "Postpartum", bgColor: "#F5E6FF", iconColor: "#B794F4", route: "/emotional/postpartum" },
-  { id: "self-esteem", icon: Sparkles, label: "Self Esteem", bgColor: "#F0E7FF", iconColor: "#A78BFA", route: "/emotional/self-esteem" },
-  { id: "eating-disorder", icon: UtensilsCrossed, label: "Eating Disorder", bgColor: "#F7FEE7", iconColor: "#84CC16", route: "/emotional/eating-disorder" },
-  { id: "ocd", icon: RefreshCw, label: "OCD", bgColor: "#DBEAFE", iconColor: "#3B82F6" },
+  { id: "depression", icon: CloudRain, label: "Depression", bgColor: "#EBF4FF", iconColor: "#4F95FF", route: "/emotional/topics/depression" },
+  { id: "anxiety", icon: Brain, label: "Anxiety", bgColor: "#F3EEFF", iconColor: "#9D6CFF", route: "/emotional/topics/anxiety" },
+  { id: "stress", icon: Zap, label: "Stress", bgColor: "#FFF4E5", iconColor: "#FFB347", route: "/emotional/topics/stress" },
+  { id: "adolescent", icon: Users, label: "Adolescent", bgColor: "#E8F8F5", iconColor: "#34D399", route: "/emotional/topics/adolescent" },
+  { id: "relationship", icon: Heart, label: "Relationship", bgColor: "#FFEBF0", iconColor: "#FF6B9D", route: "/emotional/topics/relationship" },
+  { id: "workplace", icon: Briefcase, label: "Workplace", bgColor: "#F1F4F8", iconColor: "#64748B", route: "/emotional/topics/workplace" },
+  { id: "sleep", icon: Moon, label: "Sleep", bgColor: "#EDE9FE", iconColor: "#8B5CF6", route: "/emotional/topics/sleep" },
+  { id: "parenting", icon: Baby, label: "Parenting", bgColor: "#FCE7F3", iconColor: "#EC4899", route: "/emotional/topics/parenting" },
+  { id: "anger", icon: Flame, label: "Anger", bgColor: "#FFF0EB", iconColor: "#F97316", route: "/emotional/topics/anger" },
+  { id: "grief", icon: Frown, label: "Grief", bgColor: "#F1F4F8", iconColor: "#475569", route: "/emotional/topics/grief" },
+  { id: "ptsd", icon: Frown, label: "PTSD", bgColor: "#E6FAF5", iconColor: "#14B8A6", route: "/emotional/topics/ptsd" },
+  { id: "acceptance", icon: HandHeart, label: "Acceptance", bgColor: "#E0F7FA", iconColor: "#00BCD4", route: "/emotional/topics/acceptance" },
+  { id: "postpartum", icon: Baby, label: "Postpartum", bgColor: "#F5E6FF", iconColor: "#B794F4", route: "/emotional/topics/postpartum" },
+  { id: "self-esteem", icon: Sparkles, label: "Self Esteem", bgColor: "#F0E7FF", iconColor: "#A78BFA", route: "/emotional/topics/self-esteem" },
+  { id: "eating-disorder", icon: UtensilsCrossed, label: "Eating Disorder", bgColor: "#F7FEE7", iconColor: "#84CC16", route: "/emotional/topics/eating-disorder" },
+  { id: "ocd", icon: RefreshCw, label: "OCD", bgColor: "#DBEAFE", iconColor: "#3B82F6", route: "/ocd-self-care" },
 ];
 
 const mindfulnessCards: MindfulnessCard[] = [

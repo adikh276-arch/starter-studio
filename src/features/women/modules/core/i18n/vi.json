@@ -1,0 +1,81 @@
+{
+  "header": {
+    "title": "Nguồn tài liệu tự chăm sóc bản thân",
+    "subtitle": "Khám phá các công cụ và hướng dẫn cho hành trình chăm sóc sức khỏe của bạn"
+  },
+  "sections": {
+    "tips": "Mẹo",
+    "support": "Tìm kiếm sự hỗ trợ cho sức khỏe của bạn",
+    "trackers": "Trình theo dõi",
+    "resources": "Tài nguyên",
+    "understanding": "Hiểu biết"
+  },
+  "common": {
+    "back": "Mặt sau",
+    "back_to": "Trở lại",
+    "chapter": "Chương",
+    "min_read": "phút đọc",
+    "sections": "sections",
+    "keep_exploring": "Tiếp tục khám phá",
+    "more_on": "Xem thêm",
+    "browse_more": "Tìm kiếm các công cụ theo dõi, bài viết, mẹo và câu chuyện được chọn lọc về chủ đề này.",
+    "words": "words",
+    "curated_by": "Được tuyển chọn bởi",
+    "the": "Cái",
+    "library": "Thư viện",
+    "up_next": "Tiếp theo",
+    "back_to_top": "Trở lại đầu trang",
+    "curated_for": "Được tuyển chọn cho",
+    "featured_read": "Bài viết nổi bật",
+    "read_article": "Hãy đọc bài báo.",
+    "issue_no": "Số phát hành",
+    "article": "Bài báo",
+    "practices": "practices",
+    "practice": "Luyện tập",
+    "community_story": "Câu chuyện cộng đồng",
+    "misconception_no": "Quan niệm sai lầm số 1.",
+    "the_myth": "Huyền thoại",
+    "the_truth": "Sự thật"
+  },
+  "resource_taglines": {
+    "articles": "Những bài viết dài, được biên soạn cẩn thận và thẩm định bởi các chuyên gia.",
+    "tips": "Những thay đổi nhỏ, thiết thực mà bạn có thể dễ dàng tích hợp vào cuộc sống hàng ngày.",
+    "stories": "Những chia sẻ chân thành từ những người đã từng trải qua con đường này.",
+    "myths": "Những quan niệm sai lầm phổ biến, được nhẹ nhàng đính chính bằng chứng cứ."
+  },
+  "resource_eyebrows": {
+    "articles": "Thư viện",
+    "tips": "Luyện tập hàng ngày",
+    "stories": "Theo lời họ",
+    "myths": "Làm rõ vấn đề"
+  },
+  "resources": {
+    "articles": "Bài viết",
+    "tips": "Mẹo",
+    "stories": "Những câu chuyện",
+    "myths": "Những huyền thoại"
+  },
+  "modules": {
+    "pcos": "Hội chứng buồng trứng đa nang (PCOS)",
+    "reproductive-health": "Sức khỏe sinh sản",
+    "medical-conditions": "Tình trạng bệnh lý",
+    "nutrition-weight": "Dinh dưỡng & Cân nặng",
+    "pregnancy-postpartum": "Mang thai và sau sinh",
+    "mental-health": "Sức khỏe tâm thần",
+    "fertility": "Khả năng sinh sản",
+    "menopause": "Mãn kinh"
+  },
+  "tips": {
+    "hair-skin": "Tóc & Da",
+    "food": "Đồ ăn",
+    "weight-loss": "Giảm cân",
+    "pms": "Hội chứng tiền kinh nguyệt"
+  },
+  "trackers": {
+    "energy": "Năng lượng",
+    "sleep": "Giấc ngủ",
+    "self_care": "Tự chăm sóc",
+    "bmi": "BMI",
+    "mood": "Tâm trạng"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "header": {
+    "title": "Recursos para el autocuidado",
+    "subtitle": "Explora herramientas y orientación para tu camino hacia el bienestar."
+  },
+  "sections": {
+    "tips": "Consejos",
+    "support": "Encuentra apoyo para tu salud",
+    "trackers": "Rastreadores",
+    "resources": "Recursos",
+    "understanding": "Comprensión"
+  },
+  "common": {
+    "back": "Atrás",
+    "back_to": "Volver a",
+    "chapter": "Capítulo",
+    "min_read": "lectura de minutos",
+    "sections": "sections",
+    "keep_exploring": "Sigue explorando",
+    "more_on": "Más información",
+    "browse_more": "Consulta rastreadores, artículos, consejos e historias seleccionados sobre este tema.",
+    "words": "words",
+    "curated_by": "Seleccionado por",
+    "the": "El",
+    "library": "Biblioteca",
+    "up_next": "A continuación",
+    "back_to_top": "Volver arriba",
+    "curated_for": "Seleccionado para",
+    "featured_read": "Lectura destacada",
+    "read_article": "Lee el artículo",
+    "issue_no": "Número de edición",
+    "article": "Artículo",
+    "practices": "practices",
+    "practice": "Práctica",
+    "community_story": "Historia de la comunidad",
+    "misconception_no": "Idea errónea n.º",
+    "the_myth": "El mito",
+    "the_truth": "La verdad"
+  },
+  "resource_taglines": {
+    "articles": "Artículos extensos, escritos con esmero y revisados por expertos.",
+    "tips": "Pequeños cambios prácticos que puedes incorporar a tu día a día.",
+    "stories": "Reflexiones sinceras de personas que han recorrido este camino.",
+    "myths": "Conceptos erróneos comunes, corregidos con rigor y con pruebas."
+  },
+  "resource_eyebrows": {
+    "articles": "La biblioteca",
+    "tips": "Práctica diaria",
+    "stories": "En sus propias palabras",
+    "myths": "Aclarando las cosas"
+  },
+  "resources": {
+    "articles": "Artículos",
+    "tips": "Consejos",
+    "stories": "Historias",
+    "myths": "Mitos"
+  },
+  "modules": {
+    "pcos": "SOP (Síndrome de Ovario Poliquístico)",
+    "reproductive-health": "Salud reproductiva",
+    "medical-conditions": "Condiciones médicas",
+    "nutrition-weight": "Nutrición y peso",
+    "pregnancy-postpartum": "Embarazo y posparto",
+    "mental-health": "Salud mental",
+    "fertility": "Fertilidad",
+    "menopause": "Menopausia"
+  },
+  "tips": {
+    "hair-skin": "Cabello y piel",
+    "food": "Alimento",
+    "weight-loss": "Pérdida de peso",
+    "pms": "síndrome premenstrual"
+  },
+  "trackers": {
+    "energy": "Energía",
+    "sleep": "Sueño",
+    "self_care": "Autocuidado",
+    "bmi": "IMC",
+    "physical_activity": "Actividad física",
+    "mood": "Estado de ánimo"
+  }
+}

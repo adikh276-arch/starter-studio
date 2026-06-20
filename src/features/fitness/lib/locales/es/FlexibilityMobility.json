@@ -1,0 +1,379 @@
+{
+  "header": {
+    "title": "Flexibilidad y movilidad",
+    "subtitle": "Mejorar el rango de movimiento y prevenir lesiones.",
+    "back": "Volver al panel"
+  },
+  "tabs": {
+    "stretches": "Estiramientos diarios",
+    "tests": "Pruebas de movilidad",
+    "log": "Registro de recuperación"
+  },
+  "player": {
+    "stretch": "Estirar {{current}} de {{total}}",
+    "resume": "Currículum",
+    "pause": "Pausa",
+    "skip": "Saltar",
+    "cancel": "Cancelar",
+    "bilateral_hint": "💡 Recuerda cambiar de lado cuando termine el cronómetro",
+    "preview": {
+      "stretches_count": "{{count}} Estiramientos ({{duration}} min total):",
+      "start": "Iniciar {{duration}}-Rutina mínima",
+      "cancel": "Cancelar"
+    },
+    "complete": {
+      "title": "¡Rutina completa!",
+      "desc": "¡Buen trabajo completando {{name}}!",
+      "rate_label": "¿Sentirse mejor? Califica tu mejora: {{rating}}/10",
+      "worse": "peor",
+      "same": "Lo mismo",
+      "much_better": "Mucho mejor",
+      "save": "Guardar sesión",
+      "done": "hecho"
+    }
+  },
+  "routines": {
+    "upper-body": {
+      "name": "Parte superior del cuerpo abierta",
+      "focus": "Pecho, hombros, media espalda",
+      "desc": "Liberar la tensión del trabajo de escritorio y el uso del teléfono.",
+      "stretches": {
+        "Doorway Chest Stretch": {
+          "name": "Estiramiento del pecho en la puerta",
+          "desc": "Párese en la puerta, coloque los antebrazos sobre el marco, inclínese hacia adelante para sentir que el pecho se estira."
+        },
+        "Shoulder Rolls": {
+          "name": "Rollos de hombro",
+          "desc": "Gire los hombros hacia atrás en círculos grandes, 10 repeticiones."
+        },
+        "Thoracic Rotation": {
+          "name": "Rotación torácica",
+          "desc": "Sobre manos y rodillas, gire la parte superior del cuerpo de lado a lado, abriendo el pecho."
+        },
+        "Neck Stretch": {
+          "name": "Estiramiento del cuello",
+          "desc": "Incline suavemente la cabeza hacia cada lado, manteniéndola durante 30 segundos por cada lado."
+        },
+        "Tricep Stretch": {
+          "name": "Estiramiento de tríceps",
+          "desc": "Estire el brazo por encima de la cabeza, doble el codo y tire suavemente con la otra mano."
+        }
+      }
+    },
+    "lower-body": {
+      "name": "Liberación de la parte inferior del cuerpo",
+      "focus": "Isquiotibiales, Glúteos, Flexores de Cadera",
+      "desc": "Estiramientos profundos para piernas y caderas tensas al estar sentado",
+      "stretches": {
+        "Pigeon Pose": {
+          "name": "Postura de la paloma",
+          "desc": "Lleve una pierna hacia adelante doblada, extienda la pierna trasera recta y hunda las caderas hacia abajo."
+        },
+        "Hamstring Stretch": {
+          "name": "Estiramiento del tendón de la corva",
+          "desc": "Siéntese con una pierna extendida, alcance los dedos de los pies y mantenga la espalda recta."
+        },
+        "Hip Flexor Lunge": {
+          "name": "Estocada del flexor de la cadera",
+          "desc": "Posición de estocada, empuje las caderas hacia adelante para sentir el estiramiento en la parte delantera de la cadera."
+        },
+        "Glute Stretch": {
+          "name": "Estiramiento de glúteos",
+          "desc": "Tumbado boca arriba, cruce el tobillo sobre la rodilla opuesta y tire hacia el pecho."
+        },
+        "Calf Stretch": {
+          "name": "Estiramiento de pantorrilla",
+          "desc": "Da un paso adelante en estocada, mantén el talón hacia atrás para estirar la pantorrilla."
+        }
+      }
+    },
+    "full-body": {
+      "name": "Flujo de cuerpo completo",
+      "focus": "Mantenimiento corporal total",
+      "desc": "Rutina completa de flexibilidad de pies a cabeza",
+      "stretches": {
+        "Cat-Cow": {
+          "name": "gato-vaca",
+          "desc": "Sobre manos y rodillas, alterne arqueando y redondeando la columna."
+        },
+        "Downward Dog": {
+          "name": "Perro boca abajo",
+          "desc": "Manos y pies plantados, caderas altas, formando una V invertida."
+        },
+        "Child's Pose": {
+          "name": "Postura del niño",
+          "desc": "Rodillas abiertas, siéntate sobre los talones y brazos extendidos hacia adelante."
+        },
+        "Seated Twist": {
+          "name": "Giro sentado",
+          "desc": "Siéntese con las piernas cruzadas, gire el torso hacia cada lado y la mano detrás de la espalda."
+        },
+        "Forward Fold": {
+          "name": "Plegado hacia adelante",
+          "desc": "De pie, gire las caderas, estire los dedos de los pies y deje colgar la cabeza."
+        },
+        "Hip Circles": {
+          "name": "Círculos de cadera",
+          "desc": "Con las manos en las caderas, haz grandes círculos con las caderas en ambas direcciones."
+        },
+        "Arm Circles": {
+          "name": "Círculos de brazos",
+          "desc": "Extiende los brazos, haz grandes círculos hacia adelante y luego hacia atrás."
+        }
+      }
+    },
+    "dynamic-warmup": {
+      "name": "Calentamiento dinámico",
+      "focus": "Activación previa al entrenamiento",
+      "desc": "Prepara tu cuerpo antes del ejercicio",
+      "stretches": {
+        "Leg Swings": {
+          "name": "columpios de piernas",
+          "desc": "Sostenga la pared, mueva la pierna hacia adelante y hacia atrás, luego de lado a lado."
+        },
+        "Arm Circles": {
+          "name": "Círculos de brazos",
+          "desc": "Círculos pequeños a grandes, hacia adelante y hacia atrás."
+        },
+        "Torso Twists": {
+          "name": "Giros del torso",
+          "desc": "Gire la parte superior del cuerpo de lado a lado con los brazos sueltos."
+        },
+        "Walking Lunges": {
+          "name": "Estocadas caminando",
+          "desc": "Da un paso adelante para hacer una estocada, alternando las piernas mientras avanzas."
+        },
+        "High Knees": {
+          "name": "rodillas altas",
+          "desc": "Marche en su lugar llevando las rodillas a la altura de las caderas."
+        }
+      }
+    }
+  },
+  "benefits": {
+    "title": "Por qué es importante el estiramiento diario",
+    "items": [
+      "Reduce el riesgo de lesiones hasta en un 50%.",
+      "Mejora el rendimiento deportivo",
+      "Alivia la tensión muscular y el estrés.",
+      "Mejora la circulación sanguínea."
+    ]
+  },
+  "tests": {
+    "status": {
+      "title": "Su estado de movilidad",
+      "based_on": "Basado en {{count}} resultados de pruebas",
+      "complete_below": "Pruebas completas a continuación",
+      "score_label": "Puntuación: {{points}}/6 puntos (Aprobado=2, Parcial=1, Necesita mejorar=0)",
+      "elite": "Movilidad de élite",
+      "good": "Buena movilidad",
+      "limited": "Movilidad limitada",
+      "not_tested": "No probado"
+    },
+    "items": {
+      "sit-reach": {
+        "name": "Prueba de sentarse y alcanzar",
+        "desc": "Siéntate con las piernas estiradas, alcanza los dedos de los pies.",
+        "pass": "Puede tocar o pasar los dedos de los pies.",
+        "fail": "Más de 6 pulgadas desde los dedos de los pies"
+      },
+      "shoulder-pass": {
+        "name": "Paso de hombro",
+        "desc": "Sostenga una banda/palo, levante los brazos por encima y detrás de la espalda.",
+        "pass": "Puede pasar sin problemas",
+        "fail": "No se puede completar el movimiento"
+      },
+      "deep-squat": {
+        "name": "Posición en cuclillas profunda",
+        "desc": "Ponte en cuclillas con los talones planos y mantén la posición durante 30 segundos.",
+        "pass": "Puede aguantar 30 años, con los talones hacia abajo.",
+        "fail": "Los talones se levantan o no pueden sostenerse."
+      }
+    },
+    "tips": {
+      "title": "Consejos de prueba",
+      "list": [
+        "Realizar pruebas después de un ligero calentamiento, no frío.",
+        "Vuelva a realizar la prueba cada 2 a 4 semanas para realizar un seguimiento del progreso",
+        "Concéntrese en las áreas que necesitan trabajar con estiramientos específicos",
+        "Consulte a un profesional si presenta limitaciones persistentes."
+      ]
+    },
+    "actions": {
+      "pass": "✓ Pase",
+      "partial": "~ Parcial",
+      "fail": "✗ Necesita trabajo"
+    }
+  },
+  "log": {
+    "title": "Sesión de recuperación de registros",
+    "duration": "Duración (minutos)",
+    "focus_areas": "Áreas de enfoque (seleccione todas las que correspondan)",
+    "soreness_label": "Dolor antes de la sesión: {{level}}/10",
+    "no_pain": "1 - Sin dolor",
+    "moderate": "5 - Moderado",
+    "very_sore": "10 - Muy dolorido",
+    "submit": "🧘 Registro de sesión",
+    "heatmap": {
+      "title": "Mapa de calor de recuperación",
+      "legend": "Los puntos morados marcan los días con sesiones de recuperación."
+    },
+    "badge": {
+      "title": "¡A prueba de lesiones!",
+      "desc": "¡Has completado {{count}} sesiones de recuperación esta semana!"
+    },
+    "stats": {
+      "total": "Minutos totales",
+      "this_week": "Esta semana"
+    },
+    "recent": "Sesiones recientes",
+    "areas": {
+      "Neck": "cuello",
+      "Shoulders": "Hombros",
+      "Back": "Atrás",
+      "Hips": "Caderas",
+      "Legs": "Piernas",
+      "Full Body": "Cuerpo completo"
+    }
+  },
+  "soreness": "Dolor:",
+  "m": "m",
+  "recent_sessions": "Sesiones recientes",
+  "this_week": "Esta semana",
+  "total_minutes": "Minutos totales",
+  "recovery_sessions_this_week": "¡Sesiones de recuperación esta semana!",
+  "you_ve_completed": "Has completado",
+  "injury_proof": "¡A prueba de lesiones!",
+  "purple_dots_mark_days_with_recovery_sess": "Los puntos morados marcan los días con sesiones de recuperación.",
+  "recovery_heatmap": "Mapa de calor de recuperación",
+  "log_session": "🧘 Registro de sesión",
+  "10_very_sore": "10 - Muy dolorido",
+  "5_moderate": "5 - Moderado",
+  "1_no_pain": "1 - Sin dolor",
+  "soreness_before_session": "Dolor antes de la sesión:",
+  "focus_areas_select_all_that_apply": "Áreas de enfoque (seleccione todas las que correspondan)",
+  "duration_minutes": "Duración (minutos)",
+  "log_recovery_session": "Sesión de recuperación de registros",
+  "consult_a_professional_for_persistent_li": "• Consulte a un profesional si presenta limitaciones persistentes.",
+  "focus_on_areas_that_need_work_with_targe": "• Concéntrese en áreas que necesitan trabajar con estiramientos específicos",
+  "retest_every_2_4_weeks_to_track_progress": "• Vuelva a realizar la prueba cada 2 a 4 semanas para realizar un seguimiento del progreso",
+  "perform_tests_after_a_light_warm_up_not_": "• Realizar pruebas después de un ligero calentamiento, no frío",
+  "testing_tips": "Consejos de prueba",
+  "needs_work": "✗ Necesita trabajo",
+  "partial": "~ Parcial",
+  "pass": "✓ Pase",
+  "6_points_pass_2_partial_1_needs_work_0": "/6 puntos (Aprobado=2, Parcial=1, Necesita Trabajo=0)",
+  "score": "Puntuación:",
+  "your_mobility_status": "Su estado de movilidad",
+  "enhances_blood_circulation": "Mejora la circulación sanguínea.",
+  "relieves_muscle_tension_and_stress": "Alivia la tensión muscular y el estrés.",
+  "improves_athletic_performance": "Mejora el rendimiento deportivo",
+  "reduces_injury_risk_by_up_to_50": "Reduce el riesgo de lesiones hasta en un 50%.",
+  "why_daily_stretching_matters": "Por qué es importante el estiramiento diario",
+  "min_routine": "-Rutina mínima",
+  "start": "Empezar",
+  "min": "mín.",
+  "remember_to_switch_sides_when_the_timer_": "💡 Recuerda cambiar de lado cuando termine el cronómetro",
+  "cancel": "Cancelar",
+  "skip": "Saltar",
+  "pause": "Pausa",
+  "resume": "Currículum",
+  "s": "s",
+  "of": "de",
+  "stretch": "Estirar",
+  "done": "hecho",
+  "save_session": "Guardar sesión",
+  "10_much_better": "10 - Mucho mejor",
+  "5_same": "5 - Mismo",
+  "1_worse": "1 - peor",
+  "feel_better_rate_your_improvement": "¿Se siente mejor? Califica tu mejora:",
+  "great_job_completing": "Gran trabajo completando",
+  "routine_complete": "¡Rutina completa!",
+  "min_total": "total mínimo):",
+  "stretches": "Se estira (",
+  "recovery_log": "Registro de recuperación",
+  "mobility_tests": "Pruebas de movilidad",
+  "daily_stretches": "Estiramientos diarios",
+  "improve_range_of_motion_and_prevent_inju": "Mejorar el rango de movimiento y prevenir lesiones.",
+  "flexibility_mobility": "Flexibilidad y movilidad",
+  "back_to_dashboard": "Volver al panel",
+  "march_in_place_bringing_knees_to_hip_hei": "Marche en su lugar llevando las rodillas a la altura de las caderas.",
+  "high_knees": "rodillas altas",
+  "step_forward_into_lunge_alternate_legs_w": "Da un paso adelante para hacer una estocada, alternando las piernas mientras avanzas.",
+  "walking_lunges": "Estocadas caminando",
+  "rotate_upper_body_side_to_side_with_arms": "Gire la parte superior del cuerpo de lado a lado con los brazos sueltos.",
+  "torso_twists": "Giros del torso",
+  "small_to_large_circles_forward_and_backw": "Círculos pequeños a grandes, hacia adelante y hacia atrás.",
+  "arm_circles": "Círculos de brazos",
+  "hold_wall_swing_leg_forward_and_back_the": "Sostenga la pared, mueva la pierna hacia adelante y hacia atrás, luego de lado a lado.",
+  "leg_swings": "columpios de piernas",
+  "from_purple_500_to_pink_500": "de-morado-500 a-rosa-500",
+  "prepare_your_body_before_exercise": "Prepara tu cuerpo antes del ejercicio",
+  "pre_workout_activation": "Activación previa al entrenamiento",
+  "dynamic_warm_up": "Calentamiento dinámico",
+  "extend_arms_wide_make_large_circles_forw": "Extiende los brazos, haz grandes círculos hacia adelante y luego hacia atrás.",
+  "hands_on_hips_make_large_circles_with_hi": "Con las manos en las caderas, haz grandes círculos con las caderas en ambas direcciones.",
+  "hip_circles": "Círculos de cadera",
+  "standing_hinge_at_hips_reach_toward_toes": "De pie, gire las caderas, estire los dedos de los pies y deje colgar la cabeza.",
+  "forward_fold": "Plegado hacia adelante",
+  "sit_cross_legged_rotate_torso_to_each_si": "Siéntese con las piernas cruzadas, gire el torso hacia cada lado y la mano detrás de la espalda.",
+  "seated_twist": "Giro sentado",
+  "knees_wide_sit_back_on_heels_arms_extend": "Rodillas abiertas, siéntate sobre los talones y brazos extendidos hacia adelante.",
+  "child_s_pose": "Postura del niño",
+  "hands_and_feet_planted_hips_high_forming": "Manos y pies plantados, caderas altas, formando una V invertida.",
+  "downward_dog": "Perro boca abajo",
+  "on_hands_and_knees_alternate_arching_and": "Sobre manos y rodillas, alterne arqueando y redondeando la columna.",
+  "cat_cow": "gato-vaca",
+  "from_indigo_400_to_purple_500": "de-índigo-400 a-morado-500",
+  "complete_head_to_toe_flexibility_routine": "Rutina completa de flexibilidad de pies a cabeza",
+  "total_body_maintenance": "Mantenimiento corporal total",
+  "full_body_flow": "Flujo de cuerpo completo",
+  "step_forward_in_lunge_keep_back_heel_dow": "Da un paso adelante en estocada, mantén el talón hacia atrás para estirar la pantorrilla.",
+  "calf_stretch": "Estiramiento de pantorrilla",
+  "lying_on_back_cross_ankle_over_opposite_": "Tumbado boca arriba, cruce el tobillo sobre la rodilla opuesta y tire hacia el pecho.",
+  "glute_stretch": "Estiramiento de glúteos",
+  "lunge_position_push_hips_forward_to_feel": "Posición de estocada, empuje las caderas hacia adelante para sentir el estiramiento en la parte delantera de la cadera.",
+  "hip_flexor_lunge": "Estocada del flexor de la cadera",
+  "sit_with_one_leg_extended_reach_toward_t": "Siéntese con una pierna extendida, alcance los dedos de los pies y mantenga la espalda recta.",
+  "hamstring_stretch": "Estiramiento del tendón de la corva",
+  "bring_one_leg_forward_bent_extend_back_l": "Lleve una pierna hacia adelante doblada, extienda la pierna trasera recta y hunda las caderas hacia abajo.",
+  "pigeon_pose": "Postura de la paloma",
+  "from_purple_400_to_violet_500": "de-morado-400 a-violeta-500",
+  "deep_stretches_for_tight_legs_and_hips_f": "Estiramientos profundos para piernas y caderas tensas al estar sentado",
+  "hamstrings_glutes_hip_flexors": "Isquiotibiales, Glúteos, Flexores de Cadera",
+  "lower_body_release": "Liberación de la parte inferior del cuerpo",
+  "reach_arm_overhead_bend_elbow_gently_pul": "Estire el brazo por encima de la cabeza, doble el codo y tire suavemente con la otra mano.",
+  "tricep_stretch": "Estiramiento de tríceps",
+  "gently_tilt_head_to_each_side_holding_fo": "Incline suavemente la cabeza hacia cada lado, manteniéndola durante 30 segundos por cada lado.",
+  "neck_stretch": "Estiramiento del cuello",
+  "on_hands_and_knees_rotate_upper_body_sid": "Sobre manos y rodillas, gire la parte superior del cuerpo de lado a lado, abriendo el pecho.",
+  "thoracic_rotation": "Rotación torácica",
+  "roll_shoulders_backward_in_large_circles": "Gire los hombros hacia atrás en círculos grandes, 10 repeticiones.",
+  "shoulder_rolls": "Rollos de hombro",
+  "stand_in_doorway_place_forearms_on_frame": "Párese en la puerta, coloque los antebrazos sobre el marco, inclínese hacia adelante para sentir que el pecho se estira.",
+  "doorway_chest_stretch": "Estiramiento del pecho en la puerta",
+  "from_violet_400_to_purple_500": "de-violeta-400 a-morado-500",
+  "release_tension_from_desk_work_and_phone": "Liberar la tensión del trabajo de escritorio y el uso del teléfono.",
+  "chest_shoulders_mid_back": "Pecho, hombros, media espalda",
+  "upper_body_open": "Parte superior del cuerpo abierta",
+  "heels_lift_or_cannot_hold": "Los talones se levantan o no pueden sostenerse.",
+  "can_hold_30s_heels_down": "Puede aguantar 30 años, con los talones hacia abajo.",
+  "squat_down_with_heels_flat_hold_for_30_s": "Ponte en cuclillas con los talones planos y mantén la posición durante 30 segundos.",
+  "deep_squat_hold": "Posición en cuclillas profunda",
+  "cannot_complete_motion": "No se puede completar el movimiento",
+  "can_pass_through_smoothly": "Puede pasar sin problemas",
+  "shoulder_pass_through": "Paso de hombro",
+  "more_than_6_inches_from_toes": "Más de 6 pulgadas desde los dedos de los pies",
+  "can_touch_or_pass_toes": "Puede tocar o pasar los dedos de los pies.",
+  "sit_with_legs_straight_reach_toward_toes": "Siéntate con las piernas estiradas, alcanza los dedos de los pies.",
+  "sit_reach_test": "Prueba de sentarse y alcanzar",
+  "full_body": "Cuerpo completo",
+  "legs": "Piernas",
+  "hips": "Caderas",
+  "back": "Atrás",
+  "shoulders": "Hombros",
+  "neck": "cuello",
+  "elite_mobility": "Movilidad de élite",
+  "good_mobility": "Buena movilidad",
+  "limited_mobility": "Movilidad limitada"
+}

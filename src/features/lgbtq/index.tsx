@@ -23,6 +23,7 @@ const pageMap: Record<string, () => Promise<{ default: React.ComponentType }>> =
   "lgbtq-articles":       () => import("@/pages/LGBTQArticles").then((m) => ({ default: m.LGBTQArticles })),
   "lgbtq-myths-facts":    () => import("@/pages/LGBTQMythsFacts").then((m) => ({ default: m.LGBTQMythsFacts })),
   "lgbtq-tips":           () => import("@/pages/LGBTQTips").then((m) => ({ default: m.LGBTQTips })),
+  "lgbtq-assessments":    () => import("@/pages/LGBTQAssessments").then((m) => ({ default: m.LGBTQAssessments })),
   // Pride trackers ported verbatim from `legacy/LGBTQ+ Selfcare/src/features/pride/trackers/`.
   // Same UI, exit/persistence rewired for our single-repo, no-backend setup.
   "mood-tracker":      () => import("./pages/MoodTracker"),
@@ -30,6 +31,29 @@ const pageMap: Record<string, () => Promise<{ default: React.ComponentType }>> =
   "gratitude-tracker": () => import("./pages/GratitudeTracker"),
   "vibe-tracker":      () => import("./pages/VibeTracker"),
   "daily-care":        () => import("./pages/DailyCareTracker"),
+
+  // Dynamic pride activities
+  "pride-mirror-moments":  () => import("./activities/pride-mirror-moments/index"),
+  "pride-spectrum":        () => import("./activities/pride-spectrum/index"),
+  "pride-journal":         () => import("./activities/pride-journal/index"),
+  "identity-exploration":  () => import("./activities/identity-exploration/index"),
+  "identity-journey":      () => import("./activities/identity-journey/index"),
+  "identity-reflection":   () => import("./activities/identity-reflection/index"),
+  "gentle-check-in":       () => import("./activities/gentle-check-in/index"),
+  "find-your-right-time":  () => import("./activities/find-your-right-time/index"),
+
+  // Static pride activities
+  "bi-coming-out":             () => import("./activities/bi-coming-out/index"),
+  "trans-coming-out":          () => import("./activities/trans-coming-out/index"),
+  "bi-family-friends-convo":   () => import("./activities/bi-family-friends-convo/index"),
+  "bi-identity-affirmations":  () => import("./activities/bi-identity-affirmations/index"),
+  "bi-mental-health":          () => import("./activities/bi-mental-health/index"),
+  "trans-and-mental-health":   () => import("./activities/trans-and-mental-health/index"),
+  "dealing-with-dysphoria":    () => import("./activities/dealing-with-dysphoria/index"),
+  "medical-transition":        () => import("./activities/medical-transition/index"),
+  "joy-pride-trans":           () => import("./activities/joy-pride-trans/index"),
+  "bisexual-stories":          () => import("./activities/bisexual-stories/index"),
+  "lgbtq-stories":             () => import("./activities/lgbtq-stories/index"),
 };
 
 const PrideStaticViewer = lazy(() => import("./pages/PrideStaticViewer"));

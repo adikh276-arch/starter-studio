@@ -1,7 +1,7 @@
 import type { LucideIcon } from "lucide-react";
 import type { ReactNode } from "react";
-import { Sidebar } from "@/components/Sidebar";
-import { MobileNav } from "@/components/MobileNav";
+import { Sidebar } from "@/features/financial/components/Sidebar";
+import { MobileNav } from "@/features/financial/components/MobileNav";
 import { PageHeader } from "@/shared/components";
 
 /**

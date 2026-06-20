@@ -1,0 +1,206 @@
+{
+  "food": {
+    "items": {
+      "0": {
+        "detail": "Mercimek, ıspanak, kabak çekirdeği ve yağsız etler adet döngünüz boyunca enerjinizi geri kazandırır.",
+        "subtitle": "Adet öncesi sendromuna bağlı yorgunluk ve halsizliği azaltmaya yardımcı olur.",
+        "title": "Demir ve Çinko Açısından Zengin Besinler Tüketin"
+      },
+      "1": {
+        "detail": "Süt ürünleri, vitaminlerle zenginleştirilmiş bitkisel sütler ve yeşil yapraklı sebzeler kemiklerinize uzun vadeli koruma sağlar.",
+        "subtitle": "Kemikleri destekler ve adet öncesi sendromu belirtilerini azaltır.",
+        "title": "Kalsiyum alımını artırın"
+      },
+      "2": {
+        "detail": "İşlenmiş şeker, kramplara ve moral bozukluğuna yol açan sessiz bir etken olan iltihaplanmayı artırır.",
+        "subtitle": "İltihabı ve ruh hali değişimlerini azaltır.",
+        "title": "Şekerden ve kızarmış yiyeceklerden uzak durun."
+      },
+      "3": {
+        "detail": "Daha düşük sodyum = özellikle adet öncesi günlerde daha az su tutulması.",
+        "subtitle": "Şişkinliği önlemeye yardımcı olur.",
+        "title": "Tuz tüketimini azaltın."
+      },
+      "4": {
+        "detail": "İkisi de uykuyu bozabilir ve adet öncesi sendromunu kötüleştirebilir. Bir fincan kahve yerine bitki çayı içmeyi deneyin.",
+        "subtitle": "Hormon dengesini korur.",
+        "title": "Kafein ve alkol tüketimini sınırlayın"
+      },
+      "5": {
+        "detail": "Somon, ceviz ve keten tohumu iltihabı yatıştırmaya ve ruh halini dengelemeye yardımcı olur.",
+        "subtitle": "Hormonları destekler ve krampları azaltır.",
+        "title": "Omega-3 Yağ Asitleri Ekleyin"
+      },
+      "6": {
+        "detail": "3-4 saatte bir yemek yemek kan şekerini ve enerjiyi dengede tutar.",
+        "subtitle": "Bulantıyı ve mide ekşimesini azaltır.",
+        "title": "Daha küçük ve sık öğünler yiyin."
+      },
+      "7": {
+        "detail": "Yumurta, balık, fasulye ve Yunan yoğurdu kaslara, hormonlara ve tokluk hissine yardımcı olur.",
+        "subtitle": "Büyümeyi ve toparlanmayı destekler.",
+        "title": "Yüksek Kaliteli Protein Seçin"
+      },
+      "8": {
+        "detail": "Avokado, zeytinyağı ve kuruyemişler olmazsa olmazdır; yağ, hormonlarınız için yakıttır.",
+        "subtitle": "Hormonları destekler ve cildin ışıldamasını sağlar.",
+        "title": "Sağlıklı Yağları Artırın"
+      }
+    },
+    "subtitle": "Genel sağlığınızı desteklemek için akıllı beslenme ipuçlarını öğrenin.",
+    "title": "Yiyecek"
+  },
+  "hair-skin": {
+    "items": {
+      "0": {
+        "detail": "Cilt tipinize uygun temizleyici seçin; yağlı ciltler için nazik jeller, kuru ciltler için kremsi formüller.",
+        "subtitle": "Cildinize uygun temizleyiciyi seçin.",
+        "title": "Yüz temizleyicinizi akıllıca seçin."
+      },
+      "1": {
+        "detail": "Gece yapılan temizlik, gün boyunca biriken kirleticileri temizleyerek cildinizin siz uyurken kendini onarmasına olanak tanır.",
+        "subtitle": "Yatmadan önce kir ve makyajı temizleyin.",
+        "title": "Temizlik ürünlerini gece kullanın."
+      },
+      "2": {
+        "detail": "Her sabah 30+ güneş koruma faktörlü güneş kremi kullanmak, edinebileceğiniz en iyi yaşlanma karşıtı alışkanlıktır.",
+        "subtitle": "Günlük güneş koruması şarttır.",
+        "title": "Güneş kremlerine sahip çıkın."
+      },
+      "3": {
+        "detail": "Sabahları alınan C vitamini, güneş ve kirlilikten kaynaklanan serbest radikalleri nötralize etmeye yardımcı olur.",
+        "subtitle": "Cildi hasardan koruyun",
+        "title": "Antioksidanlara yönelin"
+      },
+      "4": {
+        "detail": "Gece kullanılan bir retinoid veya peptit kremi, kolajen ve hücre yenilenmesini destekler.",
+        "subtitle": "Uyurken cildinizi onarın",
+        "title": "Gece Bakım Rutini"
+      },
+      "5": {
+        "detail": "Haftada 1-2 kez kimyasal peeling kullanın, mikro yırtılmalara neden olan sert peeling ürünlerinden kaçının.",
+        "subtitle": "Cildi nazikçe, sertçe değil, peeling yaparak temizleyin.",
+        "title": "Cilt soyma işlemi önemlidir."
+      },
+      "6": {
+        "detail": "Saç kremi, saç kütikülünü kapatarak nemi hapseder ve kırılmayı azaltır.",
+        "subtitle": "Her yıkamadan sonra mutlaka gerekli",
+        "title": "Saçınıza bakım yapın."
+      },
+      "7": {
+        "detail": "Saç uçlarının sağlıklı kalması ve uzamanın daha kalın görünmesi için 8-12 haftada bir uçlarını kestirmek gerekir.",
+        "subtitle": "Uçların kırılmasını önleyin",
+        "title": "Saçlarınızı düzenli olarak kestirin."
+      },
+      "8": {
+        "detail": "Kortizol sivilce ve saç dökülmesini tetikler. Uyku, nefes alma ve molalar da önemlidir.",
+        "subtitle": "Stres cilt ve saçı etkiler",
+        "title": "Rahatlayın ve Stresinizi Atın"
+      }
+    },
+    "subtitle": "Sağlıklı saçlar ve ışıldayan bir cilt için basit ipuçlarını keşfedin.",
+    "title": "Saç ve Cilt"
+  },
+  "pms": {
+    "items": {
+      "0": {
+        "detail": "Dengeli protein ve kompleks karbonhidrat içeren tam gıdalar, adet döngüsü boyunca semptomları hafifletir.",
+        "subtitle": "Hormonları destekler ve yorgunluğu azaltır.",
+        "title": "Dengeli ve Besin Değerleri Yüksek Bir Beslenme Düzeni İzleyin"
+      },
+      "1": {
+        "detail": "Sadece 20 dakikalık bir yürüyüş bile, adet öncesi sendromunun yarattığı moral bozukluğunu sessizce dengeleyen endorfinleri salgılar.",
+        "subtitle": "Ruh halini iyileştirir ve krampları hafifletir.",
+        "title": "Düzenli Egzersiz Yapın"
+      },
+      "2": {
+        "detail": "Stres, adet öncesi sendromunun tüm belirtilerini şiddetlendirir. Nefes egzersizleri ve dinlenme olmazsa olmazdır.",
+        "subtitle": "Duygusal semptomları azaltır.",
+        "title": "Stresi Etkili Bir Şekilde Yönetin"
+      },
+      "3": {
+        "detail": "Sezgisel olarak ters gibi görünse de gerçek şu ki, daha fazla su daha az su tutulması anlamına gelir.",
+        "subtitle": "Şişkinliği ve rahatsızlığı azaltır.",
+        "title": "Bol su içerek vücudunuzun susuz kalmasını önleyin."
+      },
+      "4": {
+        "detail": "Özellikle uykunun sıklıkla bozulduğu luteal fazda, 7-9 saatlik bir uyku hedefleyin.",
+        "subtitle": "Ruh halini ve enerjiyi iyileştirir.",
+        "title": "Yeterli Uyku Alın"
+      },
+      "5": {
+        "detail": "İkisi de adet öncesi dönemde kaygıyı, göğüs hassasiyetini ve uyku düzeninin bozulmasını kötüleştirir.",
+        "subtitle": "Uyku ve ruh hali sorunlarını önler.",
+        "title": "Kafein ve alkol tüketimini sınırlayın"
+      },
+      "6": {
+        "detail": "Magnezyum, B6 vitamini ve D vitamini hakkında sağlam kanıtlar mevcut, ancak önce doktorunuzla görüşün.",
+        "subtitle": "Kramplara ve yorgunluğa iyi gelir.",
+        "title": "Gerekli Takviyeleri Alın"
+      },
+      "7": {
+        "detail": "Alt karın bölgesine uygulanan bir ısıtma yastığı, kramplar için reçetesiz satılan ağrı kesicilerle aynı etkiyi gösterebilir.",
+        "subtitle": "Krampları doğal yollarla hafifletir.",
+        "title": "Ağrı Gidermek İçin Isı Terapisi Kullanın"
+      },
+      "8": {
+        "detail": "Orman meyveleri, yağlı balıklar, zerdeçal ve yeşil yapraklı sebzeler kramplara neden olan iltihabı yatıştırır.",
+        "subtitle": "Adet öncesi sendromu ağrılarını azaltmaya yardımcı olur.",
+        "title": "İltihap önleyici besinleri dahil edin."
+      }
+    },
+    "subtitle": "Adet öncesi sendromu belirtilerini yönetmenin ve her ay daha iyi hissetmenin etkili yollarını bulun.",
+    "title": "PMS"
+  },
+  "weight-loss": {
+    "items": {
+      "0": {
+        "detail": "Kan şekerini dengede tutmak için beyaz ekmek ve hamur işleri yerine tam tahıllı ürünler tüketin.",
+        "subtitle": "Kan şekerindeki ani yükselmeleri ve yağlanmayı önler.",
+        "title": "Rafine Karbonhidrat Tüketimini Azaltın"
+      },
+      "1": {
+        "detail": "Her öğünde avuç içi büyüklüğünde bir porsiyon, iştahı azaltır ve kasları korur.",
+        "subtitle": "Tok tutar ve metabolizmayı hızlandırır.",
+        "title": "Daha fazla protein tüketin"
+      },
+      "2": {
+        "detail": "Susuzluk çoğu zaman açlık gibi algılanır; her öğüne bir bardak su ile başlayın.",
+        "subtitle": "Yağ yakımını destekler ve açlığı azaltır.",
+        "title": "Daha fazla su iç"
+      },
+      "3": {
+        "detail": "Haftada iki kuvvet antrenmanı, bitmek bilmeyen kardiyo egzersizlerinden daha fazla vücut kompozisyonunu değiştirir.",
+        "subtitle": "Kas kütlesi oluşturur ve daha fazla kalori yakar.",
+        "title": "Direnç antrenmanını ekleyin."
+      },
+      "4": {
+        "detail": "Kalp sağlığınız için düzenli yürüyüşleri kısa süreli yüksek yoğunluklu egzersizlerle birleştirin.",
+        "subtitle": "Kalori yakar ve kondisyonu artırır.",
+        "title": "Daha fazla kardiyo egzersizi yapın"
+      },
+      "5": {
+        "detail": "Sebze, baklagiller, meyve ve tam tahıllardan günlük 25-30 gram tüketmeyi hedefleyin.",
+        "subtitle": "Daha uzun süre tok kalmanızı sağlar.",
+        "title": "Lifle Doyun"
+      },
+      "6": {
+        "detail": "İşlenmemiş gıdalar besin değerleri taşırken, işlenmiş gıdalar çoğunlukla ihtiyacınız olmayan fazladan maddeler içerir.",
+        "subtitle": "Boş kalorileri azaltır.",
+        "title": "İşlenmiş Gıdaları ve Şekeri Sınırlayın"
+      },
+      "7": {
+        "detail": "Yavaşlayın, ekranlardan uzak durun, beyninizin doygunluğu algılaması yaklaşık 20 dakika sürer.",
+        "subtitle": "Aşırı yemeyi önler",
+        "title": "Bilinçli Beslenmeyi Uygulayın"
+      },
+      "8": {
+        "detail": "7 saatten az uyku, ghrelin seviyesini yükseltir ve irade gücünü düşürür. Uyku, kilo verme aracıdır.",
+        "subtitle": "Açlık hormonlarını dengeler.",
+        "title": "Yeterince Uyuyun"
+      }
+    },
+    "subtitle": "Sağlıklı ve sürdürülebilir kilo yönetimi için pratik ipuçları edinin.",
+    "title": "Kilo Verme"
+  }
+}

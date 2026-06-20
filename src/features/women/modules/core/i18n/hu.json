@@ -1,0 +1,82 @@
+{
+  "header": {
+    "title": "Öngondoskodási források",
+    "subtitle": "Fedezze fel az eszközöket és útmutatásokat a wellness utazásához"
+  },
+  "sections": {
+    "tips": "Tippek",
+    "support": "Keressen támogatást az egészségéhez",
+    "trackers": "Követők",
+    "resources": "Erőforrás",
+    "understanding": "Understanding"
+  },
+  "common": {
+    "back": "Vissza",
+    "back_to": "Vissza ide:",
+    "chapter": "Fejezet",
+    "min_read": "perc olvasás",
+    "sections": "sections",
+    "keep_exploring": "Folytasd a felfedezést",
+    "more_on": "További információ",
+    "browse_more": "Böngéssz a témához kapcsolódó követők, cikkek, tippek és történetek között.",
+    "words": "words",
+    "curated_by": "Kurátor:",
+    "the": "A",
+    "library": "Könyvtár",
+    "up_next": "Következik",
+    "back_to_top": "Vissza a tetejére",
+    "curated_for": "Kurátorként összeállítva",
+    "featured_read": "Kiemelt olvasmány",
+    "read_article": "Olvasd el a cikket",
+    "issue_no": "Kiadás száma",
+    "article": "Cikk",
+    "practices": "practices",
+    "practice": "Gyakorlat",
+    "community_story": "Közösségi történet",
+    "misconception_no": "Tévhit száma.",
+    "the_myth": "A mítosz",
+    "the_truth": "Az igazság"
+  },
+  "resource_taglines": {
+    "articles": "Hosszú olvasmányok, gondosan megírva és szakértők által lektorálva.",
+    "tips": "Kis, praktikus változtatások, amiket beilleszthetsz a napodba.",
+    "stories": "Őszinte gondolatok olyan emberektől, akik már járták ezt az utat.",
+    "myths": "Gyakori tévhitek, bizonyítékokkal finoman korrigálva."
+  },
+  "resource_eyebrows": {
+    "articles": "A könyvtár",
+    "tips": "Napi gyakorlat",
+    "stories": "Szavaikkal élve",
+    "myths": "Helyesbítés"
+  },
+  "resources": {
+    "articles": "Cikkek",
+    "tips": "Tippek",
+    "stories": "Történetek",
+    "myths": "Mítoszok"
+  },
+  "modules": {
+    "pcos": "PCOS",
+    "reproductive-health": "Reproduktív egészség",
+    "medical-conditions": "Orvosi állapotok",
+    "nutrition-weight": "Táplálkozás és testsúly",
+    "pregnancy-postpartum": "Terhesség és szülés utáni időszak",
+    "mental-health": "Mentális egészség",
+    "fertility": "Termékenység",
+    "menopause": "Változás kora"
+  },
+  "tips": {
+    "hair-skin": "Haj és bőr",
+    "food": "Élelmiszer",
+    "weight-loss": "Fogyás",
+    "pms": "PMS"
+  },
+  "trackers": {
+    "energy": "Energy",
+    "sleep": "Sleep",
+    "self_care": "Self Care",
+    "bmi": "BMI",
+    "physical_activity": "Physical Activity",
+    "mood": "Mood"
+  }
+}

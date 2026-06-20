@@ -1,0 +1,82 @@
+{
+  "header": {
+    "title": "خود کی دیکھ بھال کے وسائل",
+    "subtitle": "اپنے فلاحی سفر کے لیے ٹولز اور رہنمائی دریافت کریں۔"
+  },
+  "sections": {
+    "tips": "تجاویز",
+    "support": "اپنی صحت کے لیے مدد تلاش کریں۔",
+    "trackers": "ٹریکرز",
+    "resources": "وسائل",
+    "understanding": "تفہیم"
+  },
+  "common": {
+    "back": "پیچھے",
+    "back_to": "پر واپس جائیں۔",
+    "chapter": "باب",
+    "min_read": "منٹ پڑھیں",
+    "sections": "sections",
+    "keep_exploring": "دریافت کرتے رہیں",
+    "more_on": "مزید پر",
+    "browse_more": "اس موضوع کے لیے تیار کردہ ٹریکرز، مضامین، تجاویز اور کہانیاں براؤز کریں۔",
+    "words": "words",
+    "curated_by": "کیوریٹڈ بذریعہ",
+    "the": "دی",
+    "library": "لائبریری",
+    "up_next": "اگلا",
+    "back_to_top": "واپس اوپر",
+    "curated_for": "کے لیے تیار کیا گیا ہے۔",
+    "featured_read": "نمایاں پڑھیں",
+    "read_article": "مضمون پڑھیں",
+    "issue_no": "شمارہ نمبر",
+    "article": "مضمون",
+    "practices": "practices",
+    "practice": "مشق کریں۔",
+    "community_story": "کمیونٹی کی کہانی",
+    "misconception_no": "غلط فہمی نمبر",
+    "the_myth": "افسانہ",
+    "the_truth": "سچائی"
+  },
+  "resource_taglines": {
+    "articles": "لمبی شکل میں پڑھا جاتا ہے، احتیاط سے لکھا جاتا ہے اور ماہرین کے ذریعہ جائزہ لیا جاتا ہے۔",
+    "tips": "چھوٹی، عملی تبدیلیاں جنہیں آپ اپنے دن میں جوڑ سکتے ہیں۔",
+    "stories": "اس راستے پر چلنے والے لوگوں کے ایماندارانہ تاثرات۔",
+    "myths": "عام غلط فہمیاں، ثبوت کے ساتھ نرمی سے درست کی جائیں۔"
+  },
+  "resource_eyebrows": {
+    "articles": "لائبریری",
+    "tips": "روزانہ کی مشق",
+    "stories": "ان کے الفاظ میں",
+    "myths": "اسے سیدھا سیٹ کرنا"
+  },
+  "resources": {
+    "articles": "مضامین",
+    "tips": "تجاویز",
+    "stories": "کہانیاں",
+    "myths": "خرافات"
+  },
+  "modules": {
+    "pcos": "PCOS",
+    "reproductive-health": "تولیدی صحت",
+    "medical-conditions": "طبی حالات",
+    "nutrition-weight": "غذائیت اور وزن",
+    "pregnancy-postpartum": "حمل اور بعد از پیدائش",
+    "mental-health": "دماغی صحت",
+    "fertility": "زرخیزی",
+    "menopause": "رجونورتی"
+  },
+  "tips": {
+    "hair-skin": "بال اور جلد",
+    "food": "کھانا",
+    "weight-loss": "وزن میں کمی",
+    "pms": "پی ایم ایس"
+  },
+  "trackers": {
+    "energy": " توانائی",
+    "sleep": "نیند",
+    "self_care": "خود کی دیکھ بھال",
+    "bmi": "بی ایم آئی",
+    "physical_activity": "جسمانی سرگرمی",
+    "mood": "مزاج"
+  }
+}

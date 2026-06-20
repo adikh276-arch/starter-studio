@@ -95,7 +95,7 @@ export function WomenWellnessSelfCare() {
                       whileHover={{ y: -4, scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
                       onClick={() => {
-                        console.log(`Navigate to ${topic.id}`);
+                        navigate(`/women/module/${topic.id}`);
                       }}
                       className="bg-white border border-[#E5EAF0] rounded-2xl p-4 hover:border-[#3B82F6]/40 hover:shadow-lg transition-all text-center group"
                     >

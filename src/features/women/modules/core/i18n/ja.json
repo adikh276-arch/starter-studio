@@ -1,0 +1,82 @@
+{
+  "header": {
+    "title": "セルフケアに関するリソース",
+    "subtitle": "あなたの健康への道のりをサポートするツールとガイダンスを探ってみましょう"
+  },
+  "sections": {
+    "tips": "ヒント",
+    "support": "健康に関するサポートを見つけましょう",
+    "trackers": "トラッカー",
+    "resources": "リソース",
+    "understanding": "理解"
+  },
+  "common": {
+    "back": "戻る",
+    "back_to": "戻る",
+    "chapter": "章",
+    "min_read": "分読了",
+    "sections": "sections",
+    "keep_exploring": "探検を続けよう",
+    "more_on": "詳細はこちら",
+    "browse_more": "このトピックに関連して厳選されたトラッカー、記事、ヒント、ストーリーをご覧ください。",
+    "words": "words",
+    "curated_by": "キュレーション：",
+    "the": "の",
+    "library": "図書館",
+    "up_next": "次は",
+    "back_to_top": "ページトップへ戻る",
+    "curated_for": "厳選された",
+    "featured_read": "注目記事",
+    "read_article": "記事を読む",
+    "issue_no": "発行番号",
+    "article": "記事",
+    "practices": "practices",
+    "practice": "練習する",
+    "community_story": "コミュニティストーリー",
+    "misconception_no": "誤解その1",
+    "the_myth": "神話",
+    "the_truth": "真実"
+  },
+  "resource_taglines": {
+    "articles": "丁寧に執筆され、専門家による校閲を受けた長編記事。",
+    "tips": "日常生活に取り入れられる、小さくて実践的な変化。",
+    "stories": "この道を歩んできた人々からの率直な感想。",
+    "myths": "よくある誤解を、証拠に基づいて丁寧に訂正します。"
+  },
+  "resource_eyebrows": {
+    "articles": "図書館",
+    "tips": "日々の実践",
+    "stories": "彼らの言葉",
+    "myths": "誤解を解く"
+  },
+  "resources": {
+    "articles": "記事",
+    "tips": "ヒント",
+    "stories": "物語",
+    "myths": "神話"
+  },
+  "modules": {
+    "pcos": "PCOS",
+    "reproductive-health": "生殖医療",
+    "medical-conditions": "病状",
+    "nutrition-weight": "栄養と体重",
+    "pregnancy-postpartum": "妊娠と産後",
+    "mental-health": "メンタルヘルス",
+    "fertility": "妊娠力",
+    "menopause": "閉経"
+  },
+  "tips": {
+    "hair-skin": "ヘア＆スキンケア",
+    "food": "食べ物",
+    "weight-loss": "減量",
+    "pms": "PMS"
+  },
+  "trackers": {
+    "energy": "エネルギー",
+    "sleep": "睡眠",
+    "self_care": "セルフケア",
+    "bmi": "BMI",
+    "physical_activity": "身体活動",
+    "mood": "気分"
+  }
+}

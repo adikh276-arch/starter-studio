@@ -1,0 +1,82 @@
+{
+  "header": {
+    "title": "משאבים לטיפול עצמי",
+    "subtitle": "גלו כלים והדרכה למסע הבריאות שלכם"
+  },
+  "sections": {
+    "tips": "טיפים",
+    "support": "מצא תמיכה לבריאות שלך",
+    "trackers": "עוקבים",
+    "resources": "אֶמְצָעִי",
+    "understanding": "Understanding"
+  },
+  "common": {
+    "back": "בְּחֲזָרָה",
+    "back_to": "חזרה אל",
+    "chapter": "פֶּרֶק",
+    "min_read": "דקות קריאה",
+    "sections": "sections",
+    "keep_exploring": "המשך לחקור",
+    "more_on": "עוד על",
+    "browse_more": "עיין במעקבים, מאמרים, טיפים וסיפורים שנאספו לנושא זה.",
+    "words": "words",
+    "curated_by": "אוצר על ידי",
+    "the": "ה",
+    "library": "סִפְרִיָה",
+    "up_next": "הבא בתור",
+    "back_to_top": "חזרה למעלה",
+    "curated_for": "אוצר עבור",
+    "featured_read": "קריאה מומלצת",
+    "read_article": "קרא את המאמר",
+    "issue_no": "מספר גיליון",
+    "article": "סָעִיף",
+    "practices": "practices",
+    "practice": "לְתַרְגֵל",
+    "community_story": "סיפור קהילתי",
+    "misconception_no": "תפיסה מוטעית מספר",
+    "the_myth": "המיתוס",
+    "the_truth": "האמת"
+  },
+  "resource_taglines": {
+    "articles": "קריאה ארוכה, שנכתבה בקפידה ונבדקה על ידי מומחים.",
+    "tips": "משמרות קטנות ומעשיות שתוכלו לשלב במהלך היום שלכם.",
+    "stories": "הרהורים כנים של אנשים שהלכו בדרך הזו.",
+    "myths": "תפיסות מוטעות נפוצות, מתוקנות בעדינות בעזרת ראיות."
+  },
+  "resource_eyebrows": {
+    "articles": "הספרייה",
+    "tips": "תרגול יומי",
+    "stories": "במילותיהם",
+    "myths": "הגדרת הדברים"
+  },
+  "resources": {
+    "articles": "מאמרים",
+    "tips": "טיפים",
+    "stories": "סיפורים",
+    "myths": "מיתוסים"
+  },
+  "modules": {
+    "pcos": "שחלות פוליציסטיות",
+    "reproductive-health": "בריאות הרבייה",
+    "medical-conditions": "מצבים רפואיים",
+    "nutrition-weight": "תזונה ומשקל",
+    "pregnancy-postpartum": "הריון ואחרי לידה",
+    "mental-health": "בריאות הנפש",
+    "fertility": "פִּריוֹן",
+    "menopause": "הַפסָקַת וֶסֶת"
+  },
+  "tips": {
+    "hair-skin": "שיער ועור",
+    "food": "מָזוֹן",
+    "weight-loss": "ירידה במשקל",
+    "pms": "תסמונת קדם וסתית"
+  },
+  "trackers": {
+    "energy": "Energy",
+    "sleep": "Sleep",
+    "self_care": "Self Care",
+    "bmi": "BMI",
+    "physical_activity": "Physical Activity",
+    "mood": "Mood"
+  }
+}

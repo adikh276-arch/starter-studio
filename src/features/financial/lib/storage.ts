@@ -1,32 +1,127 @@
-/**
- * LocalStorage-backed persistence for the financial vertical. Every sub-app
- * stores its state under a stable key so reloads and cross-tool navigation
- * keep user input intact. No server, no auth – matches the rest of the app's
- * client-only contract.
- */
+import i18n from './i18n';
 
-const NS = "fin:";
+// ============================================================
+// LOCAL STORAGE UTILITY — Financial Wellbeing
+// ============================================================
 
-export function load<T>(key: string, fallback: T): T {
-  if (typeof window === "undefined") return fallback;
-  try {
-    const raw = window.localStorage.getItem(NS + key);
-    return raw ? (JSON.parse(raw) as T) : fallback;
-  } catch {
-    return fallback;
+export const storage = {
+  get<T>(key: string, fallback: T): T {
+    if (typeof window === 'undefined') return fallback;
+    try {
+      const item = localStorage.getItem(`fw_${key}`);
+      return item ? JSON.parse(item) : fallback;
+    } catch {
+      return fallback;
+    }
+  },
+
+  set<T>(key: string, value: T): void {
+    if (typeof window === 'undefined') return;
+    try {
+      localStorage.setItem(`fw_${key}`, JSON.stringify(value));
+    } catch {
+      // quota issues — silently fail
+    }
+  },
+
+  remove(key: string): void {
+    if (typeof window === 'undefined') return;
+    localStorage.removeItem(`fw_${key}`);
+  },
+
+  clear(prefix?: string): void {
+    if (typeof window === 'undefined') return;
+    const p = `fw_${prefix ?? ''}`;
+    Object.keys(localStorage)
+      .filter(k => k.startsWith(p))
+      .forEach(k => localStorage.removeItem(k));
+  },
+
+  async sync(key: string, data: any, score?: number): Promise<void> {
+    if (typeof window === 'undefined') return;
+    const userId = sessionStorage.getItem("financial_wellbeing_user_id") || localStorage.getItem("fw_guest_id");
+    
+    // Fallback: we already set local storage in components. No backend saving.
+    console.log(`[Shim] Synced ${key} for user ${userId || 'guest'}`);
+    
+    try {
+      // Webhook Trigger for Daily Activity Completion
+      const upaId = sessionStorage.getItem("fw_upa_id");
+      const uid = sessionStorage.getItem("fw_uid");
+      
+      if (upaId && uid) {
+        // Prevent firing multiple times per session by removing it after first successful save
+        sessionStorage.removeItem("fw_upa_id");
+        
+        // Simulating webhook trigger
+        console.log(`[Shim] Simulated webhook for activity completion: upa_id=${upaId}, uid=${uid}`);
+      }
+    } catch (err) {
+      console.error('Persistence sync failed:', err);
+    }
+  },
+
+  async fetch(key: string): Promise<any | null> {
+    if (typeof window === 'undefined') return null;
+    const userId = sessionStorage.getItem("financial_wellbeing_user_id") || localStorage.getItem("fw_guest_id");
+    if (!userId) return null;
+
+    try {
+      // Fallback: return from localStorage directly.
+      const item = localStorage.getItem(`fw_${key}`);
+      return item ? JSON.parse(item) : null;
+    } catch (err) {
+      console.error('Persistence fetch failed:', err);
+      return null;
+    }
   }
-}
+};
 
-export function save<T>(key: string, value: T): void {
-  if (typeof window === "undefined") return;
-  try {
-    window.localStorage.setItem(NS + key, JSON.stringify(value));
-  } catch {
-    /* quota / serialisation issues are silently ignored */
-  }
-}
+// ─── Format helpers ───────────────────────────────────────────
+export const fmt = {
+  currency: (n: number, compact = false) => {
+    const lng = i18n.language || 'en';
+    if (compact && n >= 1_000_000) {
+      return `${(n / 1_000_000).toFixed(2)}M`;
+    }
+    if (compact && n >= 1_000) {
+      return `${(n / 1_000).toFixed(1)}K`;
+    }
+    return new Intl.NumberFormat(lng, { maximumFractionDigits: 0 }).format(n);
+  },
+  percent: (n: number, decimals = 1) => `${n.toFixed(decimals)}%`,
+  number: (n: number) => {
+    const lng = i18n.language || 'en';
+    return new Intl.NumberFormat(lng).format(Math.round(n));
+  },
+};
 
-export function clear(key: string): void {
-  if (typeof window === "undefined") return;
-  window.localStorage.removeItem(NS + key);
-}
+// ─── Financial calculations ───────────────────────────────────
+export const calc = {
+  // Compound interest: FV = PV(1+r)^n + PMT * [(1+r)^n - 1] / r
+  futureValue: (principal: number, annualRate: number, years: number, monthlyAdd = 0) => {
+    const r = annualRate / 100 / 12;
+    const n = years * 12;
+    const fvLump = principal * Math.pow(1 + r, n);
+    const fvSip = monthlyAdd > 0 && r > 0
+      ? monthlyAdd * (Math.pow(1 + r, n) - 1) / r * (1 + r)
+      : monthlyAdd * n;
+    return fvLump + fvSip;
+  },
+
+  // EMI: r * P * (1+r)^n / [(1+r)^n - 1]
+  emi: (principal: number, annualRate: number, tenureMonths: number) => {
+    const r = annualRate / 100 / 12;
+    if (r === 0) return principal / tenureMonths;
+    return (r * principal * Math.pow(1 + r, tenureMonths)) / (Math.pow(1 + r, tenureMonths) - 1);
+  },
+
+  // Monthly savings needed to reach goal
+  monthlySavingsNeeded: (target: number, current: number, months: number, annualRate = 0) => {
+    const remaining = target - current;
+    if (months <= 0) return remaining;
+    if (annualRate <= 0) return remaining / months;
+    const r = annualRate / 100 / 12;
+    return remaining * r / (Math.pow(1 + r, months) - 1);
+  },
+};

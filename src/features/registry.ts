@@ -48,6 +48,7 @@ import { womenFeature } from "./women";
 import { substanceFeature } from "./substance";
 import { ocdFeature } from "./ocd";
 import { emotionalFeature } from "./emotional";
+import { fitnessFeature } from "./fitness";
 
 /**
  * Verticals register themselves here as they get ported in Phase B.
@@ -60,6 +61,7 @@ export const featureRegistry: FeatureModule[] = [
   substanceFeature,
   ocdFeature,
   emotionalFeature,
+  fitnessFeature,
 ];
 
 export function getFeatureRoutes(): FeatureRoute[] {

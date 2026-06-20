@@ -1,0 +1,379 @@
+{
+  "header": {
+    "title": "Flexibiliteit & Mobiliteit",
+    "subtitle": "Verbeter het bewegingsbereik en voorkom blessures",
+    "back": "Terug naar Dashboard"
+  },
+  "tabs": {
+    "stretches": "Dagelijkse rekoefeningen",
+    "tests": "Mobiliteitstesten",
+    "log": "Herstellogboek"
+  },
+  "player": {
+    "stretch": "Rek {{current}} van {{total}}",
+    "resume": "Hervatten",
+    "pause": "Pauze",
+    "skip": "Overslaan",
+    "cancel": "Annuleer",
+    "bilateral_hint": "💡 Vergeet niet om van kant te wisselen wanneer de timer afloopt",
+    "preview": {
+      "stretches_count": "{{count}} Rekoefeningen ({{duration}} min. totaal):",
+      "start": "Start {{duration}}-Min Routine",
+      "cancel": "Annuleer"
+    },
+    "complete": {
+      "title": "Routine voltooid!",
+      "desc": "Goed gedaan om {{name}} te voltooien!",
+      "rate_label": "Voel je je beter? Beoordeel uw verbetering: {{rating}}/10",
+      "worse": "Erger nog",
+      "same": "Hetzelfde",
+      "much_better": "Veel beter",
+      "save": "Sessie opslaan",
+      "done": "Klaar"
+    }
+  },
+  "routines": {
+    "upper-body": {
+      "name": "Bovenlichaam geopend",
+      "focus": "Borst, schouders, middenrug",
+      "desc": "Laat de spanning los van bureauwerk en telefoongebruik",
+      "stretches": {
+        "Doorway Chest Stretch": {
+          "name": "Deuropening Borst Stretch",
+          "desc": "Ga in de deuropening staan, plaats de onderarmen op het frame, leun naar voren om de borstkas te strekken."
+        },
+        "Shoulder Rolls": {
+          "name": "Schouderrollen",
+          "desc": "Rol de schouders naar achteren in grote cirkels, 10 herhalingen."
+        },
+        "Thoracic Rotation": {
+          "name": "Thoracale rotatie",
+          "desc": "Draai op handen en knieën het bovenlichaam heen en weer en open de borst."
+        },
+        "Neck Stretch": {
+          "name": "Nek stretch",
+          "desc": "Kantel het hoofd voorzichtig naar elke kant en houd het 30 seconden per kant vast."
+        },
+        "Tricep Stretch": {
+          "name": "Triceps-stretch",
+          "desc": "Reik uw arm boven uw hoofd, buig de elleboog en trek voorzichtig met de andere hand."
+        }
+      }
+    },
+    "lower-body": {
+      "name": "Onderlichaam loslaten",
+      "focus": "Hamstrings, bilspieren, heupbuigers",
+      "desc": "Diepe rekoefeningen voor strakke benen en heupen vanuit het zitten",
+      "stretches": {
+        "Pigeon Pose": {
+          "name": "Duif pose",
+          "desc": "Breng één been gebogen naar voren, strek het achterbeen recht en laat de heupen naar beneden zakken."
+        },
+        "Hamstring Stretch": {
+          "name": "Hamstring-strekking",
+          "desc": "Ga zitten met één been gestrekt, reik naar de tenen, houd de rug recht."
+        },
+        "Hip Flexor Lunge": {
+          "name": "Heupflexor Lunge",
+          "desc": "Valpositie, duw de heupen naar voren om rek in de voorste heup te voelen."
+        },
+        "Glute Stretch": {
+          "name": "Glute stretch",
+          "desc": "Liggend op de rug, kruis de enkel over de tegenovergestelde knie en trek naar de borst."
+        },
+        "Calf Stretch": {
+          "name": "Kuit stretch",
+          "desc": "Stap naar voren tijdens de uitval, houd de hiel naar beneden om de kuit te strekken."
+        }
+      }
+    },
+    "full-body": {
+      "name": "Volledige lichaamsstroom",
+      "focus": "Totaal lichaamsonderhoud",
+      "desc": "Volledige flexibiliteitsroutine van top tot teen",
+      "stretches": {
+        "Cat-Cow": {
+          "name": "Kat-koe",
+          "desc": "Op handen en knieën afwisselend gebogen en afgeronde wervelkolom."
+        },
+        "Downward Dog": {
+          "name": "Neerwaartse hond",
+          "desc": "Handen en voeten geplant, heupen hoog en vormen een omgekeerde V."
+        },
+        "Child's Pose": {
+          "name": "Kinderhouding",
+          "desc": "Knieën wijd, leun achterover op de hielen, armen naar voren gestrekt."
+        },
+        "Seated Twist": {
+          "name": "Zittende draai",
+          "desc": "Zit met gekruiste benen, draai de romp naar elke kant, hand achter de rug."
+        },
+        "Forward Fold": {
+          "name": "Voorwaarts vouwen",
+          "desc": "Staand, scharnierend op de heupen, reik naar de tenen, laat het hoofd hangen."
+        },
+        "Hip Circles": {
+          "name": "Heupcirkels",
+          "desc": "Handen op de heupen, maak grote cirkels met de heupen in beide richtingen."
+        },
+        "Arm Circles": {
+          "name": "Armcirkels",
+          "desc": "Strek de armen wijd uit, maak grote cirkels naar voren en vervolgens naar achteren."
+        }
+      }
+    },
+    "dynamic-warmup": {
+      "name": "Dynamische warming-up",
+      "focus": "Activering vóór de training",
+      "desc": "Bereid je lichaam voor op het sporten",
+      "stretches": {
+        "Leg Swings": {
+          "name": "Beenzwaaien",
+          "desc": "Houd de muur vast, zwaai het been naar voren en naar achteren en vervolgens van links naar rechts."
+        },
+        "Arm Circles": {
+          "name": "Armcirkels",
+          "desc": "Kleine tot grote cirkels, vooruit en achteruit."
+        },
+        "Torso Twists": {
+          "name": "Torso-draaiingen",
+          "desc": "Draai het bovenlichaam heen en weer met de armen los."
+        },
+        "Walking Lunges": {
+          "name": "Lopende lunges",
+          "desc": "Stap naar voren in de uitval, wissel de benen af terwijl je vooruit beweegt."
+        },
+        "High Knees": {
+          "name": "Hoge knieën",
+          "desc": "Marcheer op zijn plaats en breng de knieën op heuphoogte."
+        }
+      }
+    }
+  },
+  "benefits": {
+    "title": "Waarom dagelijks stretchen belangrijk is",
+    "items": [
+      "Vermindert het letselrisico tot 50%",
+      "Verbetert de atletische prestaties",
+      "Verlicht spierspanning en stress",
+      "Verbetert de bloedcirculatie"
+    ]
+  },
+  "tests": {
+    "status": {
+      "title": "Uw mobiliteitsstatus",
+      "based_on": "Gebaseerd op {{count}} testresultaten",
+      "complete_below": "Voer onderstaande tests uit",
+      "score_label": "Score: {{punten}}/6 punten (geslaagd=2, gedeeltelijk=1, werk nodig=0)",
+      "elite": "Elite-mobiliteit",
+      "good": "Goede mobiliteit",
+      "limited": "Beperkte mobiliteit",
+      "not_tested": "Niet getest"
+    },
+    "items": {
+      "sit-reach": {
+        "name": "Zit- en reiktest",
+        "desc": "Zit met de benen recht, reik naar de tenen",
+        "pass": "Kan tenen aanraken of passeren",
+        "fail": "Meer dan 15 cm van de tenen"
+      },
+      "shoulder-pass": {
+        "name": "Schouderdoorgang",
+        "desc": "Houd een band/stok vast, hef de armen boven en achter de rug",
+        "pass": "Kan er vlot doorheen",
+        "fail": "Kan de beweging niet voltooien"
+      },
+      "deep-squat": {
+        "name": "Diepe squat-hold",
+        "desc": "Hurk neer met de hielen plat en houd deze 30 seconden vast",
+        "pass": "Kan jaren '30 vasthouden, hakken naar beneden",
+        "fail": "Hakken heffen op of kunnen niet vasthouden"
+      }
+    },
+    "tips": {
+      "title": "Testtips",
+      "list": [
+        "Voer tests uit na een lichte warming-up, niet koud",
+        "Test elke 2-4 weken opnieuw om de voortgang te volgen",
+        "Concentreer u op gebieden die werk nodig hebben door gericht te strekken",
+        "Raadpleeg een professional bij aanhoudende beperkingen"
+      ]
+    },
+    "actions": {
+      "pass": "✓ Pass",
+      "partial": "~ Gedeeltelijk",
+      "fail": "✗ Heeft werk nodig"
+    }
+  },
+  "log": {
+    "title": "Herstelsessie loggen",
+    "duration": "Duur (minuten)",
+    "focus_areas": "Aandachtsgebieden (selecteer alles wat van toepassing is)",
+    "soreness_label": "Pijn vóór de sessie: {{level}}/10",
+    "no_pain": "1 - Geen pijn",
+    "moderate": "5 - Matig",
+    "very_sore": "10 - Zeer pijnlijk",
+    "submit": "🧘Logsessie",
+    "heatmap": {
+      "title": "Herstel-hittekaart",
+      "legend": "Paarse stippen markeren dagen met herstelsessies"
+    },
+    "badge": {
+      "title": "Blessurebestendig!",
+      "desc": "Je hebt deze week {{count}} herstelsessies voltooid!"
+    },
+    "stats": {
+      "total": "Totaal aantal minuten",
+      "this_week": "Deze week"
+    },
+    "recent": "Recente sessies",
+    "areas": {
+      "Neck": "Nek",
+      "Shoulders": "Schouders",
+      "Back": "Terug",
+      "Hips": "Heupen",
+      "Legs": "Benen",
+      "Full Body": "Volledig lichaam"
+    }
+  },
+  "soreness": "Pijn:",
+  "m": "m",
+  "recent_sessions": "Recente sessies",
+  "this_week": "Deze week",
+  "total_minutes": "Totaal aantal minuten",
+  "recovery_sessions_this_week": "herstelsessies deze week!",
+  "you_ve_completed": "Je hebt voltooid",
+  "injury_proof": "Blessurebestendig!",
+  "purple_dots_mark_days_with_recovery_sess": "Paarse stippen markeren dagen met herstelsessies",
+  "recovery_heatmap": "Herstel-hittekaart",
+  "log_session": "🧘Logsessie",
+  "10_very_sore": "10 - Zeer pijnlijk",
+  "5_moderate": "5 - Matig",
+  "1_no_pain": "1 - Geen pijn",
+  "soreness_before_session": "Pijn vóór de sessie:",
+  "focus_areas_select_all_that_apply": "Aandachtsgebieden (selecteer alles wat van toepassing is)",
+  "duration_minutes": "Duur (minuten)",
+  "log_recovery_session": "Herstelsessie loggen",
+  "consult_a_professional_for_persistent_li": "• Raadpleeg een professional bij aanhoudende beperkingen",
+  "focus_on_areas_that_need_work_with_targe": "• Concentreer u op gebieden die werk nodig hebben door gericht te stretchen",
+  "retest_every_2_4_weeks_to_track_progress": "• Test elke 2-4 weken opnieuw om de voortgang bij te houden",
+  "perform_tests_after_a_light_warm_up_not_": "• Voer tests uit na een lichte warming-up, niet koud",
+  "testing_tips": "Testtips",
+  "needs_work": "✗ Heeft werk nodig",
+  "partial": "~ Gedeeltelijk",
+  "pass": "✓ Pass",
+  "6_points_pass_2_partial_1_needs_work_0": "/6 punten (geslaagd=2, gedeeltelijk=1, werk nodig=0)",
+  "score": "Score:",
+  "your_mobility_status": "Uw mobiliteitsstatus",
+  "enhances_blood_circulation": "Verbetert de bloedcirculatie",
+  "relieves_muscle_tension_and_stress": "Verlicht spierspanning en stress",
+  "improves_athletic_performance": "Verbetert de atletische prestaties",
+  "reduces_injury_risk_by_up_to_50": "Vermindert het letselrisico tot 50%",
+  "why_daily_stretching_matters": "Waarom dagelijks stretchen belangrijk is",
+  "min_routine": "-Min-routine",
+  "start": "Begin",
+  "min": "min",
+  "remember_to_switch_sides_when_the_timer_": "💡 Vergeet niet om van kant te wisselen wanneer de timer afloopt",
+  "cancel": "Annuleer",
+  "skip": "Overslaan",
+  "pause": "Pauze",
+  "resume": "Hervatten",
+  "s": "s",
+  "of": "van",
+  "stretch": "Strek",
+  "done": "Klaar",
+  "save_session": "Sessie opslaan",
+  "10_much_better": "10 - Veel beter",
+  "5_same": "5 - Hetzelfde",
+  "1_worse": "1 - Erger",
+  "feel_better_rate_your_improvement": "Voel je je beter? Beoordeel uw verbetering:",
+  "great_job_completing": "Geweldige klus afgerond",
+  "routine_complete": "Routine voltooid!",
+  "min_total": "min totaal):",
+  "stretches": "Rekt (",
+  "recovery_log": "Herstellogboek",
+  "mobility_tests": "Mobiliteitstesten",
+  "daily_stretches": "Dagelijkse rekoefeningen",
+  "improve_range_of_motion_and_prevent_inju": "Verbeter het bewegingsbereik en voorkom blessures",
+  "flexibility_mobility": "Flexibiliteit & Mobiliteit",
+  "back_to_dashboard": "Terug naar Dashboard",
+  "march_in_place_bringing_knees_to_hip_hei": "Marcheer op zijn plaats en breng de knieën op heuphoogte.",
+  "high_knees": "Hoge knieën",
+  "step_forward_into_lunge_alternate_legs_w": "Stap naar voren in de uitval, wissel de benen af terwijl je vooruit beweegt.",
+  "walking_lunges": "Lopende lunges",
+  "rotate_upper_body_side_to_side_with_arms": "Draai het bovenlichaam heen en weer met de armen los.",
+  "torso_twists": "Torso-draaiingen",
+  "small_to_large_circles_forward_and_backw": "Kleine tot grote cirkels, vooruit en achteruit.",
+  "arm_circles": "Armcirkels",
+  "hold_wall_swing_leg_forward_and_back_the": "Houd de muur vast, zwaai het been naar voren en naar achteren en vervolgens van links naar rechts.",
+  "leg_swings": "Beenzwaaien",
+  "from_purple_500_to_pink_500": "van-paars-500 tot-roze-500",
+  "prepare_your_body_before_exercise": "Bereid je lichaam voor op het sporten",
+  "pre_workout_activation": "Activering vóór de training",
+  "dynamic_warm_up": "Dynamische warming-up",
+  "extend_arms_wide_make_large_circles_forw": "Strek de armen wijd uit, maak grote cirkels naar voren en vervolgens naar achteren.",
+  "hands_on_hips_make_large_circles_with_hi": "Handen op de heupen, maak grote cirkels met de heupen in beide richtingen.",
+  "hip_circles": "Heupcirkels",
+  "standing_hinge_at_hips_reach_toward_toes": "Staand, scharnierend op de heupen, reik naar de tenen, laat het hoofd hangen.",
+  "forward_fold": "Voorwaarts vouwen",
+  "sit_cross_legged_rotate_torso_to_each_si": "Zit met gekruiste benen, draai de romp naar elke kant, hand achter de rug.",
+  "seated_twist": "Zittende draai",
+  "knees_wide_sit_back_on_heels_arms_extend": "Knieën wijd, leun achterover op de hielen, armen naar voren gestrekt.",
+  "child_s_pose": "Kinderhouding",
+  "hands_and_feet_planted_hips_high_forming": "Handen en voeten geplant, heupen hoog en vormen een omgekeerde V.",
+  "downward_dog": "Neerwaartse hond",
+  "on_hands_and_knees_alternate_arching_and": "Op handen en knieën afwisselend gebogen en afgeronde wervelkolom.",
+  "cat_cow": "Kat-koe",
+  "from_indigo_400_to_purple_500": "van-indigo-400 tot-paars-500",
+  "complete_head_to_toe_flexibility_routine": "Volledige flexibiliteitsroutine van top tot teen",
+  "total_body_maintenance": "Totaal lichaamsonderhoud",
+  "full_body_flow": "Volledige lichaamsstroom",
+  "step_forward_in_lunge_keep_back_heel_dow": "Stap naar voren tijdens de uitval, houd de hiel naar beneden om de kuit te strekken.",
+  "calf_stretch": "Kuit stretch",
+  "lying_on_back_cross_ankle_over_opposite_": "Liggend op de rug, kruis de enkel over de tegenovergestelde knie en trek naar de borst.",
+  "glute_stretch": "Glute stretch",
+  "lunge_position_push_hips_forward_to_feel": "Valpositie, duw de heupen naar voren om rek in de voorste heup te voelen.",
+  "hip_flexor_lunge": "Heupflexor Lunge",
+  "sit_with_one_leg_extended_reach_toward_t": "Ga zitten met één been gestrekt, reik naar de tenen, houd de rug recht.",
+  "hamstring_stretch": "Hamstring-strekking",
+  "bring_one_leg_forward_bent_extend_back_l": "Breng één been gebogen naar voren, strek het achterbeen recht en laat de heupen naar beneden zakken.",
+  "pigeon_pose": "Duif pose",
+  "from_purple_400_to_violet_500": "van-paars-400 tot-violet-500",
+  "deep_stretches_for_tight_legs_and_hips_f": "Diepe rekoefeningen voor strakke benen en heupen vanuit het zitten",
+  "hamstrings_glutes_hip_flexors": "Hamstrings, bilspieren, heupbuigers",
+  "lower_body_release": "Onderlichaam loslaten",
+  "reach_arm_overhead_bend_elbow_gently_pul": "Reik uw arm boven uw hoofd, buig de elleboog en trek voorzichtig met de andere hand.",
+  "tricep_stretch": "Triceps-stretch",
+  "gently_tilt_head_to_each_side_holding_fo": "Kantel het hoofd voorzichtig naar elke kant en houd het 30 seconden per kant vast.",
+  "neck_stretch": "Nek stretch",
+  "on_hands_and_knees_rotate_upper_body_sid": "Draai op handen en knieën het bovenlichaam heen en weer en open de borst.",
+  "thoracic_rotation": "Thoracale rotatie",
+  "roll_shoulders_backward_in_large_circles": "Rol de schouders naar achteren in grote cirkels, 10 herhalingen.",
+  "shoulder_rolls": "Schouderrollen",
+  "stand_in_doorway_place_forearms_on_frame": "Ga in de deuropening staan, plaats de onderarmen op het frame, leun naar voren om de borstkas te strekken.",
+  "doorway_chest_stretch": "Deuropening Borst Stretch",
+  "from_violet_400_to_purple_500": "van-violet-400 tot-paars-500",
+  "release_tension_from_desk_work_and_phone": "Laat de spanning los van bureauwerk en telefoongebruik",
+  "chest_shoulders_mid_back": "Borst, schouders, middenrug",
+  "upper_body_open": "Bovenlichaam geopend",
+  "heels_lift_or_cannot_hold": "Hakken heffen op of kunnen niet vasthouden",
+  "can_hold_30s_heels_down": "Kan jaren '30 vasthouden, hakken naar beneden",
+  "squat_down_with_heels_flat_hold_for_30_s": "Hurk neer met de hielen plat en houd deze 30 seconden vast",
+  "deep_squat_hold": "Diepe squat-hold",
+  "cannot_complete_motion": "Kan de beweging niet voltooien",
+  "can_pass_through_smoothly": "Kan er vlot doorheen",
+  "shoulder_pass_through": "Schouderdoorgang",
+  "more_than_6_inches_from_toes": "Meer dan 15 cm van de tenen",
+  "can_touch_or_pass_toes": "Kan tenen aanraken of passeren",
+  "sit_with_legs_straight_reach_toward_toes": "Zit met de benen recht, reik naar de tenen",
+  "sit_reach_test": "Zit- en reiktest",
+  "full_body": "Volledig lichaam",
+  "legs": "Benen",
+  "hips": "Heupen",
+  "back": "Terug",
+  "shoulders": "Schouders",
+  "neck": "Nek",
+  "elite_mobility": "Elite-mobiliteit",
+  "good_mobility": "Goede mobiliteit",
+  "limited_mobility": "Beperkte mobiliteit"
+}

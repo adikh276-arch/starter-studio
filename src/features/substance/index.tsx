@@ -1,15 +1,20 @@
 import { Wine } from "lucide-react";
-import { createVerticalFeature } from "../_shared/createFeature";
-import { substanceSubApps } from "./data/subApps";
+import type { FeatureModule } from "../registry";
+import Landing from "./pages/Landing";
+import SubstancePage from "./pages/SubstancePage";
 
-export const substanceFeature = createVerticalFeature({
+export const substanceFeature: FeatureModule = {
   id: "substance",
   label: "Substance Use Self-Care",
   description: "Substance-specific recovery support and tracking",
-  hubPath: "/substance",
-  routePrefix: "/substance",
-  icon: Wine,
-  categoryOrder: ["substances", "tools", "trackers"],
-  categoryTitles: { substances: "By substance", tools: "Tools", trackers: "Trackers" },
-  subApps: substanceSubApps,
-});
+  entryPath: "/substance",
+  routes: [
+    { path: "/substance", element: <Landing />, entry: true },
+    { path: "/substance/:slug", element: <SubstancePage /> },
+    { path: "/substance/:slug/tracker/:trackerId", element: <SubstancePage /> },
+    { path: "/substance/:slug/tool/:toolId", element: <SubstancePage /> },
+    { path: "/substance/:slug/tool/:toolId/:contentId", element: <SubstancePage /> },
+    { path: "/substance/:slug/tool/:toolId/:contentId/:substep", element: <SubstancePage /> },
+    { path: "/substance/:slug/onboarding/:step", element: <SubstancePage /> },
+  ],
+};

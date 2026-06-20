@@ -1,0 +1,82 @@
+{
+  "header": {
+    "title": "셀프케어 자료",
+    "subtitle": "건강 여정을 위한 도구와 지침을 살펴보세요"
+  },
+  "sections": {
+    "tips": "팁",
+    "support": "건강 관련 지원을 찾아보세요",
+    "trackers": "추적기",
+    "resources": "자원",
+    "understanding": "이해"
+  },
+  "common": {
+    "back": "뒤쪽에",
+    "back_to": "돌아가기",
+    "chapter": "장",
+    "min_read": "최소 읽기",
+    "sections": "sections",
+    "keep_exploring": "계속 탐색해 보세요",
+    "more_on": "더 보기",
+    "browse_more": "이 주제와 관련된 추적 도구, 기사, 팁 및 이야기를 찾아보세요.",
+    "words": "words",
+    "curated_by": "큐레이터:",
+    "the": "그만큼",
+    "library": "도서관",
+    "up_next": "다음 영상",
+    "back_to_top": "맨 위로 돌아가기",
+    "curated_for": "엄선된 콘텐츠",
+    "featured_read": "추천 읽을거리",
+    "read_article": "기사를 읽어보세요",
+    "issue_no": "문제 번호",
+    "article": "기사",
+    "practices": "practices",
+    "practice": "관행",
+    "community_story": "커뮤니티 스토리",
+    "misconception_no": "오해 1번.",
+    "the_myth": "신화",
+    "the_truth": "진실"
+  },
+  "resource_taglines": {
+    "articles": "정성껏 작성되고 전문가의 검토를 거친 장문의 글입니다.",
+    "tips": "일상에 쉽게 녹여낼 수 있는 작고 실용적인 변화들.",
+    "stories": "이 길을 걸어본 사람들의 솔직한 경험담.",
+    "myths": "흔히 잘못 알려진 사실들을 증거를 통해 바로잡습니다."
+  },
+  "resource_eyebrows": {
+    "articles": "도서관",
+    "tips": "매일 연습",
+    "stories": "그들의 이야기",
+    "myths": "진실을 밝히자면"
+  },
+  "resources": {
+    "articles": "조항",
+    "tips": "팁",
+    "stories": "이야기들",
+    "myths": "신화"
+  },
+  "modules": {
+    "pcos": "다낭성 난소 증후군",
+    "reproductive-health": "생식 건강",
+    "medical-conditions": "의학적 질환",
+    "nutrition-weight": "영양 및 체중",
+    "pregnancy-postpartum": "임신 및 산후 관리",
+    "mental-health": "정신 건강",
+    "fertility": "비옥",
+    "menopause": "폐경기"
+  },
+  "tips": {
+    "hair-skin": "모발 및 피부",
+    "food": "음식",
+    "weight-loss": "체중 감량",
+    "pms": "월경전 증후군"
+  },
+  "trackers": {
+    "energy": "에너지",
+    "sleep": "수면",
+    "self_care": "자기 관리",
+    "bmi": "BMI",
+    "physical_activity": "신체 활동",
+    "mood": "기분"
+  }
+}

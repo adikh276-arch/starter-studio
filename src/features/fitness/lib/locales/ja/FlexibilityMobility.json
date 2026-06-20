@@ -1,0 +1,379 @@
+{
+  "header": {
+    "title": "柔軟性と機動性",
+    "subtitle": "可動域を改善し、怪我を予防します",
+    "back": "ダッシュボードに戻る"
+  },
+  "tabs": {
+    "stretches": "毎日のストレッチ",
+    "tests": "モビリティテスト",
+    "log": "回復ログ"
+  },
+  "player": {
+    "stretch": "ストレッチ {{current}}/{{total}}",
+    "resume": "再開",
+    "pause": "一時停止",
+    "skip": "スキップ",
+    "cancel": "キャンセル",
+    "bilateral_hint": "💡 タイマーが終了したら、サイドを切り替えることを忘れないでください",
+    "preview": {
+      "stretches_count": "{{count}} ストレッチ（合計 {{duration}} 分）:",
+      "start": "{{duration}}分のルーチンを開始",
+      "cancel": "キャンセル"
+    },
+    "complete": {
+      "title": "ルーティン完了！",
+      "desc": "{{name}} の完成、素晴らしい仕事でした!",
+      "rate_label": "気分が良くなりますか？改善点を評価してください: {{評価}}/10",
+      "worse": "さらに悪い",
+      "same": "同じ",
+      "much_better": "はるかに優れています",
+      "save": "セッションの保存",
+      "done": "完了"
+    }
+  },
+  "routines": {
+    "upper-body": {
+      "name": "上半身を開く",
+      "focus": "胸、肩、背中中央部",
+      "desc": "デスクワークや電話の使用から緊張を解放します。",
+      "stretches": {
+        "Doorway Chest Stretch": {
+          "name": "玄関胸のストレッチ",
+          "desc": "出入り口に立って、前腕をフレームの上に置き、前かがみになって胸が伸びるのを感じます。"
+        },
+        "Shoulder Rolls": {
+          "name": "ショルダーロール",
+          "desc": "肩を後ろに大きく円を描くように回し、10回繰り返します。"
+        },
+        "Thoracic Rotation": {
+          "name": "胸椎の回転",
+          "desc": "手と膝をついて上半身を左右に回転させ、胸を開きます。"
+        },
+        "Neck Stretch": {
+          "name": "首のストレッチ",
+          "desc": "頭を両側にゆっくりと傾け、片側あたり 30 秒間保持します。"
+        },
+        "Tricep Stretch": {
+          "name": "上腕三頭筋のストレッチ",
+          "desc": "腕を頭上に伸ばし、肘を曲げ、もう一方の手で軽く引っ張ります。"
+        }
+      }
+    },
+    "lower-body": {
+      "name": "下半身リリース",
+      "focus": "ハムストリングス、臀部、股関節屈筋",
+      "desc": "���った状態から引き締まった脚とヒップを実現する深いストレッチ",
+      "stretches": {
+        "Pigeon Pose": {
+          "name": "鳩のポーズ",
+          "desc": "片脚を前に曲げ、後ろ脚をまっすぐに伸ばし、腰を沈めます。"
+        },
+        "Hamstring Stretch": {
+          "name": "ハムストリングのストレッチ",
+          "desc": "片足を伸ばして座り、つま先に手を伸ばし、背中をまっすぐに保ちます。"
+        },
+        "Hip Flexor Lunge": {
+          "name": "股関節屈筋ランジ",
+          "desc": "ランジの姿勢で、腰を前に押し出して、股関節の前側が伸びるのを感じます。"
+        },
+        "Glute Stretch": {
+          "name": "臀部のストレッチ",
+          "desc": "仰向けに寝て、足首を反対側の膝の上で交差させ、胸に向かって引き寄せます。"
+        },
+        "Calf Stretch": {
+          "name": "ふくらはぎのストレッチ",
+          "desc": "ランジで前に踏み出し、後ろのかかとを下げてふくらはぎを伸ばします。"
+        }
+      }
+    },
+    "full-body": {
+      "name": "全身の流れ",
+      "focus": "トータルボディメンテナンス",
+      "desc": "頭からつま先までの完全な柔軟性ルーチン",
+      "stretches": {
+        "Cat-Cow": {
+          "name": "猫と牛",
+          "desc": "手と膝の上で、背骨を交互にアーチ状にし、丸めます。"
+        },
+        "Downward Dog": {
+          "name": "ダウンワードドッグ",
+          "desc": "手と足を床に置き、腰を高くし、逆Vの字を作ります。"
+        },
+        "Child's Pose": {
+          "name": "子供のポーズ",
+          "desc": "膝を大きく開き、かかとをついて座り、腕を前に伸ばします。"
+        },
+        "Seated Twist": {
+          "name": "シーテッドツイスト",
+          "desc": "あぐらをかいて座り、胴体を両側に回転させ、手を後ろに置きます。"
+        },
+        "Forward Fold": {
+          "name": "前折り",
+          "desc": "立ち、腰でヒンジを付け、つま先に手を伸ばし、頭を垂れます。"
+        },
+        "Hip Circles": {
+          "name": "ヒップサークル",
+          "desc": "手を腰に当て、腰で両方向に大きな円を描きます。"
+        },
+        "Arm Circles": {
+          "name": "アームサークル",
+          "desc": "腕を大きく伸ばし、前方、後方に大きく円を描きます。"
+        }
+      }
+    },
+    "dynamic-warmup": {
+      "name": "ダイナミックウォームアップ",
+      "focus": "ワークアウト前のアクティベーション",
+      "desc": "運動前に体の準備をする",
+      "stretches": {
+        "Leg Swings": {
+          "name": "レッグスイング",
+          "desc": "壁を持ち、脚を前後に振り、次に左右に振ります。"
+        },
+        "Arm Circles": {
+          "name": "アームサークル",
+          "desc": "小さな円から大きな円まで、前後に。"
+        },
+        "Torso Twists": {
+          "name": "胴体ツイスト",
+          "desc": "腕を緩めた状態で上半身を左右に回転させます。"
+        },
+        "Walking Lunges": {
+          "name": "ウォーキングランジ",
+          "desc": "前に踏み出してランジし、脚を交互に動かしながら前に進みます。"
+        },
+        "High Knees": {
+          "name": "ハイニー",
+          "desc": "膝を腰の高さまで持って所定の位置で行進します。"
+        }
+      }
+    }
+  },
+  "benefits": {
+    "title": "毎日のストレッチが重要な理由",
+    "items": [
+      "怪我のリスクを最大50%軽減",
+      "運動パフォーマンスを向上させる",
+      "筋肉の緊張やストレスを和らげます",
+      "血液循環を促進します"
+    ]
+  },
+  "tests": {
+    "status": {
+      "title": "あなたのモビリティステータス",
+      "based_on": "{{count}} 個のテスト結果に基づく",
+      "complete_below": "以下のテストを完了してください",
+      "score_label": "スコア: {{points}}/6 ポイント (合格 = 2、部分 = 1、要課題 = 0)",
+      "elite": "エリートモビリティ",
+      "good": "優れた機動性",
+      "limited": "可動性の制限",
+      "not_tested": "未テスト"
+    },
+    "items": {
+      "sit-reach": {
+        "name": "シット＆リーチテスト",
+        "desc": "脚をまっすぐにして座り、つま先に手を伸ばします",
+        "pass": "足の指に触れたり通過したりできる",
+        "fail": "つま先から6インチ以上"
+      },
+      "shoulder-pass": {
+        "name": "ショルダーパススルー",
+        "desc": "バンド/スティックを持ち、腕を頭上と背中の後ろに上げます",
+        "pass": "スムーズに通過できる",
+        "fail": "モーションを完了できません"
+      },
+      "deep-squat": {
+        "name": "ディープスクワットホールド",
+        "desc": "かかとを平らにしてしゃがみ、30秒間保持します",
+        "pass": "かかとを下ろしたまま30秒を保持できる",
+        "fail": "かかとが浮いてしまう、またはホールドできない"
+      }
+    },
+    "tips": {
+      "title": "テストのヒント",
+      "list": [
+        "冷間ではなく軽いウォームアップ後にテストを実行してください",
+        "進行状況を追跡するために 2 ～ 4 週間ごとに再テストします",
+        "ターゲットを絞ったストレッチで、作業が必要な領域に焦点を当てます。",
+        "永続的な制限については専門家に相談してください"
+      ]
+    },
+    "actions": {
+      "pass": "✓ パス",
+      "partial": "～部分的",
+      "fail": "✗ 作業が必要です"
+    }
+  },
+  "log": {
+    "title": "ログリカバリセッション",
+    "duration": "継続時間 (分)",
+    "focus_areas": "重点分野 (該当するものをすべて選択してください)",
+    "soreness_label": "セッション前の痛み: {{level}}/10",
+    "no_pain": "1 - 痛みなし",
+    "moderate": "5 - 中程度",
+    "very_sore": "10 - とても痛い",
+    "submit": "🧘 セッションをログに記録する",
+    "heatmap": {
+      "title": "回復ヒートマップ",
+      "legend": "紫色の点は回復セッションのある日を示します"
+    },
+    "badge": {
+      "title": "怪我の証拠！",
+      "desc": "今週は {{count}} 回のリカバリ セッションを完了しました。"
+    },
+    "stats": {
+      "total": "合計分",
+      "this_week": "今週"
+    },
+    "recent": "最近のセッション",
+    "areas": {
+      "Neck": "ネック",
+      "Shoulders": "肩",
+      "Back": "戻る",
+      "Hips": "ヒップ",
+      "Legs": "脚",
+      "Full Body": "フルボディ"
+    }
+  },
+  "soreness": "痛み:",
+  "m": "メートル",
+  "recent_sessions": "最近のセッション",
+  "this_week": "今週",
+  "total_minutes": "合計分",
+  "recovery_sessions_this_week": "今週はリカバリーセッション！",
+  "you_ve_completed": "完了しました",
+  "injury_proof": "怪我の証拠！",
+  "purple_dots_mark_days_with_recovery_sess": "紫色の点は回復セッションのある日を示します",
+  "recovery_heatmap": "回復ヒートマップ",
+  "log_session": "🧘 セッションをログに記録する",
+  "10_very_sore": "10 - とても痛い",
+  "5_moderate": "5 - 中程度",
+  "1_no_pain": "1 - 痛みなし",
+  "soreness_before_session": "セッション前の痛み:",
+  "focus_areas_select_all_that_apply": "重点分野 (該当するものをすべて選択してください)",
+  "duration_minutes": "継続時間 (分)",
+  "log_recovery_session": "ログリカバリセッション",
+  "consult_a_professional_for_persistent_li": "• 永続的な制限については専門家に相談してください",
+  "focus_on_areas_that_need_work_with_targe": "• ターゲットを絞ったストレッチで、作業が必要な領域に焦点を当てます。",
+  "retest_every_2_4_weeks_to_track_progress": "• 進行状況を追跡するために 2 ～ 4 週間ごとに再テストします。",
+  "perform_tests_after_a_light_warm_up_not_": "• 冷却後ではなく、軽いウォームアップ後にテストを実行してください。",
+  "testing_tips": "テストのヒント",
+  "needs_work": "✗ 作業が必要です",
+  "partial": "～部分的",
+  "pass": "✓ パス",
+  "6_points_pass_2_partial_1_needs_work_0": "/6 点 (合格 = 2、部分 = 1、要作業 = 0)",
+  "score": "スコア:",
+  "your_mobility_status": "あなたのモビリティステータス",
+  "enhances_blood_circulation": "血液循環を促進します",
+  "relieves_muscle_tension_and_stress": "筋肉の緊張やストレスを和らげます",
+  "improves_athletic_performance": "運動パフォーマンスを向上させる",
+  "reduces_injury_risk_by_up_to_50": "怪我のリスクを最大50%軽減",
+  "why_daily_stretching_matters": "毎日のストレッチが重要な理由",
+  "min_routine": "-ミニルーティン",
+  "start": "スタート",
+  "min": "分",
+  "remember_to_switch_sides_when_the_timer_": "💡 タイマーが終了したら、サイドを切り替えることを忘れないでください",
+  "cancel": "キャンセル",
+  "skip": "スキップ",
+  "pause": "一時停止",
+  "resume": "再開",
+  "s": "s",
+  "of": "の",
+  "stretch": "ストレッチ",
+  "done": "完了",
+  "save_session": "セッションの保存",
+  "10_much_better": "10 - ずっと良くなりました",
+  "5_same": "5 - 同じ",
+  "1_worse": "1 - 最悪",
+  "feel_better_rate_your_improvement": "気分が良くなりますか？改善点を評価してください:",
+  "great_job_completing": "素晴らしい仕事が完了しました",
+  "routine_complete": "ルーティン完了！",
+  "min_total": "最小合計):",
+  "stretches": "ストレッチ（",
+  "recovery_log": "回復ログ",
+  "mobility_tests": "モビリティテスト",
+  "daily_stretches": "毎日のストレッチ",
+  "improve_range_of_motion_and_prevent_inju": "可動域を改善し、怪我を予防します",
+  "flexibility_mobility": "柔軟性と機動性",
+  "back_to_dashboard": "ダッシュボードに戻る",
+  "march_in_place_bringing_knees_to_hip_hei": "膝を腰の高さまで持って所定の位置で行進します。",
+  "high_knees": "ハイニー",
+  "step_forward_into_lunge_alternate_legs_w": "前に踏み出してランジし、脚を交互に動かしながら前に進みます。",
+  "walking_lunges": "ウォーキングランジ",
+  "rotate_upper_body_side_to_side_with_arms": "腕を緩めた状態で上半身を左右に回転させます。",
+  "torso_twists": "胴体ツイスト",
+  "small_to_large_circles_forward_and_backw": "小さな円から大きな円まで、前後に。",
+  "arm_circles": "アームサークル",
+  "hold_wall_swing_leg_forward_and_back_the": "壁を持ち、脚を前後に振り、次に左右に振ります。",
+  "leg_swings": "レッグスイング",
+  "from_purple_500_to_pink_500": "パープル-500からピンク-500まで",
+  "prepare_your_body_before_exercise": "運動前に体の準備をする",
+  "pre_workout_activation": "ワークアウト前のアクティベーション",
+  "dynamic_warm_up": "ダイナミックウォームアップ",
+  "extend_arms_wide_make_large_circles_forw": "腕を大きく伸ばし、前方、後方に大きく円を描きます。",
+  "hands_on_hips_make_large_circles_with_hi": "手を腰に当て、腰で両方向に大きな円を描きます。",
+  "hip_circles": "ヒップサークル",
+  "standing_hinge_at_hips_reach_toward_toes": "立ち、腰でヒンジを付け、つま先に手を伸ばし、頭を垂れます。",
+  "forward_fold": "前折り",
+  "sit_cross_legged_rotate_torso_to_each_si": "あぐらをかいて座り、胴体を両側に回転させ、手を後ろに置きます。",
+  "seated_twist": "シーテッドツイスト",
+  "knees_wide_sit_back_on_heels_arms_extend": "膝を大きく開き、かかとをついて座り、腕を前に伸ばします。",
+  "child_s_pose": "子供のポーズ",
+  "hands_and_feet_planted_hips_high_forming": "手と足を床に置き、腰を高くし、逆Vの字を作ります。",
+  "downward_dog": "ダウンワードドッグ",
+  "on_hands_and_knees_alternate_arching_and": "手と膝の上で、背骨を交互にアーチ状にし、丸めます。",
+  "cat_cow": "猫と牛",
+  "from_indigo_400_to_purple_500": "インディゴ-400からパープル-500まで",
+  "complete_head_to_toe_flexibility_routine": "頭からつま先までの完全な柔軟性ルーチン",
+  "total_body_maintenance": "トータルボディメンテナンス",
+  "full_body_flow": "全身の流れ",
+  "step_forward_in_lunge_keep_back_heel_dow": "ランジで前に踏み出し、後ろのかかとを下げてふくらはぎを伸ばします。",
+  "calf_stretch": "ふくらはぎのストレッチ",
+  "lying_on_back_cross_ankle_over_opposite_": "仰向けに寝て、足首を反対側の膝の上で交差させ、胸に向かって引き寄せます。",
+  "glute_stretch": "臀部のストレッチ",
+  "lunge_position_push_hips_forward_to_feel": "ランジの姿勢で、腰を前に押し出して、股関節の前側が伸びるのを感じます。",
+  "hip_flexor_lunge": "股関節屈筋ランジ",
+  "sit_with_one_leg_extended_reach_toward_t": "片足を伸ばして座り、つま先に手を伸ばし、背中をまっすぐに保ちます。",
+  "hamstring_stretch": "ハムストリングのストレッチ",
+  "bring_one_leg_forward_bent_extend_back_l": "片脚を前に曲げ、後ろ脚をまっすぐに伸ばし、腰を沈めます。",
+  "pigeon_pose": "鳩のポーズ",
+  "from_purple_400_to_violet_500": "紫-400から紫-500まで",
+  "deep_stretches_for_tight_legs_and_hips_f": "座った状態から引き締まった脚とヒップを実現する深いストレッチ",
+  "hamstrings_glutes_hip_flexors": "ハムストリングス、臀部、股関節屈筋",
+  "lower_body_release": "下半身リリース",
+  "reach_arm_overhead_bend_elbow_gently_pul": "腕を頭上に伸ばし、肘を曲げ、もう一方の手で軽く引っ張ります。",
+  "tricep_stretch": "上腕三頭筋のストレッチ",
+  "gently_tilt_head_to_each_side_holding_fo": "頭を両側にゆっくりと傾け、片側あたり 30 秒間保持します。",
+  "neck_stretch": "首のストレッチ",
+  "on_hands_and_knees_rotate_upper_body_sid": "手と膝をついて上半身を左右に回転させ、胸を開きます。",
+  "thoracic_rotation": "胸椎の回転",
+  "roll_shoulders_backward_in_large_circles": "肩を後ろに大きく円を描くように回し、10回繰り返します。",
+  "shoulder_rolls": "ショルダーロール",
+  "stand_in_doorway_place_forearms_on_frame": "出入り口に立って、前腕をフレームの上に置き、前かがみになって胸が伸びるのを感じます。",
+  "doorway_chest_stretch": "玄関胸のストレッチ",
+  "from_violet_400_to_purple_500": "紫-400から紫-500まで",
+  "release_tension_from_desk_work_and_phone": "デスクワークや電話の使用から緊張を解放します。",
+  "chest_shoulders_mid_back": "胸、肩、背中中央部",
+  "upper_body_open": "上半身を開く",
+  "heels_lift_or_cannot_hold": "かかとが浮いてしまう、またはホールドできない",
+  "can_hold_30s_heels_down": "かかとを下ろしたまま30秒を保持できる",
+  "squat_down_with_heels_flat_hold_for_30_s": "かかとを平らにしてしゃがみ、30秒間保持します",
+  "deep_squat_hold": "ディープスクワットホールド",
+  "cannot_complete_motion": "モーションを完了できません",
+  "can_pass_through_smoothly": "スムーズに通過できる",
+  "shoulder_pass_through": "ショルダーパススルー",
+  "more_than_6_inches_from_toes": "つま先から6インチ以上",
+  "can_touch_or_pass_toes": "足の指に触れたり通過したりできる",
+  "sit_with_legs_straight_reach_toward_toes": "脚をまっすぐにして座り、つま先に手を伸ばします",
+  "sit_reach_test": "シット＆リーチテスト",
+  "full_body": "フルボディ",
+  "legs": "脚",
+  "hips": "ヒップ",
+  "back": "戻る",
+  "shoulders": "肩",
+  "neck": "ネック",
+  "elite_mobility": "エリートモビリティ",
+  "good_mobility": "優れた機動性",
+  "limited_mobility": "可動性の制限"
+}

@@ -1,6 +1,6 @@
 import { useState, useCallback } from "react";
-import { StandardCompletionModal } from "../../../../_shared/StandardCompletionModal";
-import { ActivityHistoryDrawer } from "../../../../_shared/ActivityHistoryDrawer";
+import { StandardCompletionModal } from "@/components/StandardCompletionModal";
+import { ActivityHistoryDrawer } from "@/components/ActivityHistoryDrawer";
 import { toast } from "sonner";
 import { ArrowLeft, ChevronLeft } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -61,7 +61,13 @@ const RitualCostCalculator = () => {
     else if (screen === "complete") setScreen("reveal");
   };
 
-  const handleExit = () => { window.history.back(); };
+  const handleExit = () => {
+    if (window.parent !== window) {
+      window.history.back();
+    } else {
+      window.history.back();
+    }
+  };
 
   return (
     <div className="w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 relative font-sans theme-ritual-cost bg-transparent">

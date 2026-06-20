@@ -1,0 +1,206 @@
+{
+  "food": {
+    "items": {
+      "0": {
+        "detail": "Lentils, spinach, pumpkin seeds, and lean meats restore energy through your cycle.",
+        "subtitle": "Helps reduce PMS fatigue & weakness",
+        "title": "Eat Iron & Zinc-Rich Foods"
+      },
+      "1": {
+        "detail": "Dairy, fortified plant milks, and leafy greens give your bones long-term protection.",
+        "subtitle": "Supports bones & reduces PMS symptoms",
+        "title": "Boost Calcium Intake"
+      },
+      "2": {
+        "detail": "Processed sugar spikes inflammation, a quiet driver of cramps and low moods.",
+        "subtitle": "Reduces inflammation & mood swings",
+        "title": "Avoid Sugar & Fried Foods"
+      },
+      "3": {
+        "detail": "Lower sodium = less water retention, especially in the days before your period.",
+        "subtitle": "Helps prevent bloating",
+        "title": "Cut Down on Salt"
+      },
+      "4": {
+        "detail": "Both can disrupt sleep and worsen PMS. Try swapping one cup for herbal tea.",
+        "subtitle": "Keeps hormones balanced",
+        "title": "Limit Caffeine & Alcohol"
+      },
+      "5": {
+        "detail": "Salmon, walnuts, and flaxseed help calm inflammation and steady moods.",
+        "subtitle": "Supports hormones & reduces cramps",
+        "title": "Add Omega-3 Fatty Acids"
+      },
+      "6": {
+        "detail": "Eating every 3–4 hours keeps blood sugar, and energy, steady.",
+        "subtitle": "Reduces nausea & acidity",
+        "title": "Eat Smaller, Frequent Meals"
+      },
+      "7": {
+        "detail": "Eggs, fish, beans, and Greek yogurt help muscles, hormones, and satiety.",
+        "subtitle": "Supports growth & recovery",
+        "title": "Choose High-Quality Protein"
+      },
+      "8": {
+        "detail": "Avocado, olive oil, and nuts are essential, fat is fuel for your hormones.",
+        "subtitle": "Supports hormones & glowing skin",
+        "title": "Increase Healthy Fats"
+      }
+    },
+    "subtitle": "Learn smart nutrition tips to support your overall wellness.",
+    "title": "Food"
+  },
+  "hair-skin": {
+    "items": {
+      "0": {
+        "detail": "Match your cleanser to your skin type, gentle gels for oily skin, creamy formulas for dry skin.",
+        "subtitle": "Pick the right cleanser for your skin",
+        "title": "Choose Your Face Wash Smartly"
+      },
+      "1": {
+        "detail": "Cleansing at night clears the day's pollutants so your skin can repair while you sleep.",
+        "subtitle": "Remove dirt & makeup before bed",
+        "title": "Go for Cleansers at Night"
+      },
+      "2": {
+        "detail": "SPF 30+ every morning is the single best anti-aging habit you can build.",
+        "subtitle": "Daily sun protection is essential",
+        "title": "Hold Onto Sunscreens"
+      },
+      "3": {
+        "detail": "Vitamin C in the morning helps neutralize free radicals from sun and pollution.",
+        "subtitle": "Protect skin from damage",
+        "title": "Go for Antioxidants"
+      },
+      "4": {
+        "detail": "A retinoid or peptide cream at night supports collagen and cell turnover.",
+        "subtitle": "Reparer huden mens du sover",
+        "title": "Night Care Routine"
+      },
+      "5": {
+        "detail": "Use a chemical exfoliant 1–2x weekly, skip harsh scrubs that cause micro-tears.",
+        "subtitle": "Exfoliate gently, not harshly",
+        "title": "Exfoliation Is Important"
+      },
+      "6": {
+        "detail": "Balsamen forsegler neglebåndet, holder på fuktigheten og reduserer brudd.",
+        "subtitle": "Viktig etter hver vask",
+        "title": "Plei håret ditt"
+      },
+      "7": {
+        "detail": "En trimming hver 8.–12. uke holder tuppene sunne og utveksten tykkere.",
+        "subtitle": "Prevent split ends",
+        "title": "Trim håret regelmessig"
+      },
+      "8": {
+        "detail": "Kortisol utløser kviser og håravfall. Søvn, pust og pauser teller.",
+        "subtitle": "Stress påvirker hud og hår",
+        "title": "Relax and De-Stress"
+      }
+    },
+    "subtitle": "Oppdag enkle tips for sunt hår og glødende hud.",
+    "title": "Hår og hud"
+  },
+  "pms": {
+    "items": {
+      "0": {
+        "detail": "Helmat med jevnt protein og komplekse karbohydrater lindrer symptomene gjennom hele syklusen.",
+        "subtitle": "Støtter hormoner og reduserer tretthet",
+        "title": "Følg et balansert, næringsrikt kosthold"
+      },
+      "1": {
+        "detail": "Selv en 20-minutters spasertur frigjør endorfiner som stille motvirker PMS-lave nivåer.",
+        "subtitle": "Øker humøret og lindrer kramper",
+        "title": "Tren regelmessig"
+      },
+      "2": {
+        "detail": "Stress forsterker alle PMS-symptomer. Pustearbeid og hvile er ikke noe man bør forhandle om.",
+        "subtitle": "Reduserer emosjonelle symptomer",
+        "title": "Håndter stress effektivt"
+      },
+      "3": {
+        "detail": "Motintuitivt, men sant, mer vann betyr mindre væskeansamling.",
+        "subtitle": "Reduserer oppblåsthet og ubehag",
+        "title": "Hold deg godt hydrert"
+      },
+      "4": {
+        "detail": "Sikt på 7–9 timer, spesielt i lutealfasen når søvnen ofte lider.",
+        "subtitle": "Forbedrer humør og energi",
+        "title": "Få tilstrekkelig søvn"
+      },
+      "5": {
+        "detail": "Begge forverrer angst, ømme bryster og forstyrret søvn før mensen.",
+        "subtitle": "Forebygger søvn- og humørproblemer",
+        "title": "Begrens koffein og alkohol"
+      },
+      "6": {
+        "detail": "Magnesium, B6 og vitamin D har solide bevis, snakk med legen din først.",
+        "subtitle": "Hjelper mot kramper og tretthet",
+        "title": "Ta essensielle kosttilskudd"
+      },
+      "7": {
+        "detail": "En varmepute på nedre del av magen kan matche reseptfrie smertestillende midler mot kramper.",
+        "subtitle": "Lindrer kramper naturlig",
+        "title": "Bruk varmeterapi for smertelindring"
+      },
+      "8": {
+        "detail": "Bær, fet fisk, gurkemeie og bladgrønnsaker beroliger betennelsen bak kramper.",
+        "subtitle": "Bidrar til å redusere PMS-smerter",
+        "title": "Inkluder betennelsesdempende matvarer"
+      }
+    },
+    "subtitle": "Finn effektive måter å håndtere PMS-symptomer på og føl deg bedre hver måned.",
+    "title": "PMS"
+  },
+  "weight-loss": {
+    "items": {
+      "0": {
+        "detail": "Bytt ut hvitt brød og bakverk med fullkorn for å holde blodsukkeret stabilt.",
+        "subtitle": "Forhindrer sukkertopper og fettøkning",
+        "title": "Kutt ned på raffinerte karbohydrater"
+      },
+      "1": {
+        "detail": "En håndflatestor porsjon til hvert måltid reduserer søtsug og beskytter muskler.",
+        "subtitle": "Holder deg mett og øker stoffskiftet",
+        "title": "Spis mer protein"
+      },
+      "2": {
+        "detail": "Ofte maskerer tørst seg som sult, start hvert måltid med et glass vann.",
+        "subtitle": "Støtter fettforbrenning og reduserer sultfølelse",
+        "title": "Drikk mer vann"
+      },
+      "3": {
+        "detail": "To styrkeøkter i uken endrer kroppssammensetningen mer enn endeløs kondisjonstrening.",
+        "subtitle": "Bygger muskler og forbrenner flere kalorier",
+        "title": "Legg til motstandstrening"
+      },
+      "4": {
+        "detail": "Bland jevne turer med korte utbrudd med høyere intensitet for hjertehelsen.",
+        "subtitle": "Forbrenner kalorier og forbedrer kondisjonen",
+        "title": "Gjør mer kondisjonstrening"
+      },
+      "5": {
+        "detail": "Sikt på 25–30 g daglig fra grønnsaker, belgfrukter, frukt og fullkorn.",
+        "subtitle": "Holder deg mett lenger",
+        "title": "Fyll opp med fiber"
+      },
+      "6": {
+        "detail": "Helmat inneholder næringsstoffer, mens bearbeidet mat inneholder stort sett ekstra næringsstoffer du ikke trenger.",
+        "subtitle": "Kutter tomme kalorier",
+        "title": "Begrens bearbeidet mat og sukker"
+      },
+      "7": {
+        "detail": "Ro ned farten, ingen skjermer, hjernen din trenger ~20 minutter på å registrere metthetsfølelse.",
+        "subtitle": "Forhindrer overspising",
+        "title": "Øv deg på bevisst spising"
+      },
+      "8": {
+        "detail": "Mindre enn 7 timer presser ghrelin opp og viljestyrken ned. Søvn er et vektverktøy.",
+        "subtitle": "Balanserer sulthormonene",
+        "title": "Få nok søvn"
+      }
+    },
+    "subtitle": "Få praktiske tips for sunn og bærekraftig vektkontroll.",
+    "title": "Vekttap"
+  }
+}

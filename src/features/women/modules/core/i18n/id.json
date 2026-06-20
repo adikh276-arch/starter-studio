@@ -1,0 +1,82 @@
+{
+  "header": {
+    "title": "Sumber Daya Perawatan Diri",
+    "subtitle": "Jelajahi berbagai alat dan panduan untuk perjalanan kesehatan Anda."
+  },
+  "sections": {
+    "tips": "Tips",
+    "support": "Temukan dukungan untuk kesehatan Anda",
+    "trackers": "Pelacak",
+    "resources": "Sumber daya",
+    "understanding": "Pemahaman"
+  },
+  "common": {
+    "back": "Kembali",
+    "back_to": "Kembali ke",
+    "chapter": "Bab",
+    "min_read": "bacaan singkat",
+    "sections": "sections",
+    "keep_exploring": "Teruslah menjelajah",
+    "more_on": "Selengkapnya tentang",
+    "browse_more": "Telusuri pelacak, artikel, kiat, dan kisah yang dikurasi untuk topik ini.",
+    "words": "words",
+    "curated_by": "Dikurasi oleh",
+    "the": "Itu",
+    "library": "Perpustakaan",
+    "up_next": "Selanjutnya",
+    "back_to_top": "Kembali ke atas",
+    "curated_for": "Dikurasi untuk",
+    "featured_read": "Bacaan Unggulan",
+    "read_article": "Bacalah artikelnya.",
+    "issue_no": "Nomor Edisi",
+    "article": "Artikel",
+    "practices": "practices",
+    "practice": "Praktik",
+    "community_story": "Kisah Komunitas",
+    "misconception_no": "Kesalahpahaman No.",
+    "the_myth": "Mitos",
+    "the_truth": "Kebenaran"
+  },
+  "resource_taglines": {
+    "articles": "Artikel panjang, ditulis dengan cermat dan ditinjau oleh para ahli.",
+    "tips": "Perubahan kecil dan praktis yang dapat Anda terapkan dalam keseharian Anda.",
+    "stories": "Refleksi jujur dari orang-orang yang telah menempuh jalan ini.",
+    "myths": "Kesalahpahaman umum, dikoreksi secara halus dengan bukti."
+  },
+  "resource_eyebrows": {
+    "articles": "Perpustakaan",
+    "tips": "Praktik Harian",
+    "stories": "Menurut Kata-Kata Mereka",
+    "myths": "Meluruskan Masalah"
+  },
+  "resources": {
+    "articles": "Artikel",
+    "tips": "Tips",
+    "stories": "Cerita",
+    "myths": "Mitos"
+  },
+  "modules": {
+    "pcos": "PCOS",
+    "reproductive-health": "Kesehatan Reproduksi",
+    "medical-conditions": "Kondisi Medis",
+    "nutrition-weight": "Nutrisi & Berat Badan",
+    "pregnancy-postpartum": "Kehamilan & Pasca Persalinan",
+    "mental-health": "Kesehatan Mental",
+    "fertility": "Kesuburan",
+    "menopause": "Mati haid"
+  },
+  "tips": {
+    "hair-skin": "Rambut & Kulit",
+    "food": "Makanan",
+    "weight-loss": "Penurunan Berat Badan",
+    "pms": "PMS"
+  },
+  "trackers": {
+    "energy": "Energi",
+    "sleep": "Tidur",
+    "self_care": "Perawatan Diri",
+    "bmi": "BMI",
+    "physical_activity": "Aktivitas Fisik",
+    "mood": "Suasana Hati"
+  }
+}

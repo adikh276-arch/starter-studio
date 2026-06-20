@@ -1,0 +1,82 @@
+{
+  "header": {
+    "title": "Resurser för egenvård",
+    "subtitle": "Utforska verktyg och vägledning för din välbefinnanderesa"
+  },
+  "sections": {
+    "tips": "Tips",
+    "support": "Hitta stöd för din hälsa",
+    "trackers": "Spårare",
+    "resources": "Resurser",
+    "understanding": "Understanding"
+  },
+  "common": {
+    "back": "Tillbaka",
+    "back_to": "Tillbaka till",
+    "chapter": "Kapitel",
+    "min_read": "min läsning",
+    "sections": "sections",
+    "keep_exploring": "Fortsätt utforska",
+    "more_on": "Mer om",
+    "browse_more": "Bläddra bland spårare, artiklar, tips och berättelser som har utarbetats för detta ämne.",
+    "words": "words",
+    "curated_by": "Kuraterad av",
+    "the": "De",
+    "library": "Bibliotek",
+    "up_next": "Härnäst",
+    "back_to_top": "Tillbaka till toppen",
+    "curated_for": "Kuraterad för",
+    "featured_read": "Utvald läsning",
+    "read_article": "Läs artikeln",
+    "issue_no": "Utgåva nr.",
+    "article": "Artikel",
+    "practices": "practices",
+    "practice": "Öva",
+    "community_story": "Samhällsberättelse",
+    "misconception_no": "Missuppfattning nr.",
+    "the_myth": "Myten",
+    "the_truth": "Sanningen"
+  },
+  "resource_taglines": {
+    "articles": "Långformatsläsning, skriven med omsorg och granskad av experter.",
+    "tips": "Små, praktiska skift som du kan integrera i din vardag.",
+    "stories": "Ärliga reflektioner från människor som har vandrat den här vägen.",
+    "myths": "Vanliga missuppfattningar, försiktigt korrigerade med bevis."
+  },
+  "resource_eyebrows": {
+    "articles": "Biblioteket",
+    "tips": "Daglig övning",
+    "stories": "Med deras ord",
+    "myths": "Att ställa det rakt ut"
+  },
+  "resources": {
+    "articles": "Artiklar",
+    "tips": "Tips",
+    "stories": "Berättelser",
+    "myths": "Myter"
+  },
+  "modules": {
+    "pcos": "PCOS",
+    "reproductive-health": "Reproduktiv hälsa",
+    "medical-conditions": "Medicinska tillstånd",
+    "nutrition-weight": "Näring och vikt",
+    "pregnancy-postpartum": "Graviditet och efterförlossning",
+    "mental-health": "Psykisk hälsa",
+    "fertility": "Fertilitet",
+    "menopause": "Klimakteriet"
+  },
+  "tips": {
+    "hair-skin": "Hår och hud",
+    "food": "Mat",
+    "weight-loss": "Viktminskning",
+    "pms": "PMS"
+  },
+  "trackers": {
+    "energy": "Energy",
+    "sleep": "Sleep",
+    "self_care": "Self Care",
+    "bmi": "BMI",
+    "physical_activity": "Physical Activity",
+    "mood": "Mood"
+  }
+}

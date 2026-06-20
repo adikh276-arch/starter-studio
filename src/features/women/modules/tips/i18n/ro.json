@@ -1,0 +1,206 @@
+{
+  "food": {
+    "items": {
+      "0": {
+        "detail": "Lintea, spanacul, semințele de dovleac și carnea slabă îți restabilesc energia pe parcursul ciclului menstrual.",
+        "subtitle": "Ajută la reducerea oboselii și slăbiciunii asociate sindromului premenstrual",
+        "title": "Consumați alimente bogate în fier și zinc"
+      },
+      "1": {
+        "detail": "Lactatele, laptele vegetal fortificat și legumele cu frunze verzi oferă oaselor tale protecție pe termen lung.",
+        "subtitle": "Susține oasele și reduce simptomele sindromului premenstrual",
+        "title": "Creșteți aportul de calciu"
+      },
+      "2": {
+        "detail": "Zahărul procesat accelerează inflamația, fiind un factor discret al crampelor și al stării de spirit proaste.",
+        "subtitle": "Reduce inflamația și schimbările de dispoziție",
+        "title": "Evitați zahărul și alimentele prăjite"
+      },
+      "3": {
+        "detail": "Sodiu mai scăzut = retenție mai redusă de apă, mai ales în zilele dinaintea menstruației.",
+        "subtitle": "Ajută la prevenirea balonării",
+        "title": "Reduceți consumul de sare"
+      },
+      "4": {
+        "detail": "Ambele pot perturba somnul și pot agrava sindromul premenstrual. Încearcă să înlocuiești o cană cu un ceai din plante.",
+        "subtitle": "Menține echilibrul hormonal",
+        "title": "Limitați cofeina și alcoolul"
+      },
+      "5": {
+        "detail": "Somonul, nucile și semințele de in ajută la calmarea inflamației și la echilibrarea dispoziției.",
+        "subtitle": "Susține hormonii și reduce crampele",
+        "title": "Adăugați acizi grași Omega-3"
+      },
+      "6": {
+        "detail": "Mâncatul la fiecare 3-4 ore menține glicemia și energia la un nivel constant.",
+        "subtitle": "Reduce greața și aciditatea",
+        "title": "Mănâncă mese mai mici și mai frecvente"
+      },
+      "7": {
+        "detail": "Ouăle, peștele, fasolea și iaurtul grecesc ajută la dezvoltarea mușchilor, a hormonilor și la creșterea senzației de sațietate.",
+        "subtitle": "Susține creșterea și recuperarea",
+        "title": "Alegeți proteine de înaltă calitate"
+      },
+      "8": {
+        "detail": "Avocado, uleiul de măsline și nucile sunt esențiale, grăsimea este combustibil pentru hormonii tăi.",
+        "subtitle": "Susține hormonii și o piele strălucitoare",
+        "title": "Creșteți grăsimile sănătoase"
+      }
+    },
+    "subtitle": "Învață sfaturi inteligente de nutriție pentru a-ți susține starea generală de bine.",
+    "title": "Mâncare"
+  },
+  "hair-skin": {
+    "items": {
+      "0": {
+        "detail": "Potrivește demachiantul în funcție de tipul tău de ten, geluri delicate pentru ten gras, formule cremoase pentru ten uscat.",
+        "subtitle": "Alege demachiantul potrivit pentru pielea ta",
+        "title": "Alege-ți cu înțelepciune gelul de față"
+      },
+      "1": {
+        "detail": "Curățarea nocturnă elimină poluanții din timpul zilei, astfel încât pielea ta se poate repara în timp ce dormi.",
+        "subtitle": "Îndepărtează murdăria și machiajul înainte de culcare",
+        "title": "Folosește produse de curățare noaptea"
+      },
+      "2": {
+        "detail": "O cremă cu SPF 30+ în fiecare dimineață este cel mai bun obicei anti-îmbătrânire pe care îl poți construi.",
+        "subtitle": "Protecția solară zilnică este esențială",
+        "title": "Păstrați-vă cremele de protecție solară"
+      },
+      "3": {
+        "detail": "Vitamina C dimineața ajută la neutralizarea radicalilor liberi proveniți de la soare și poluare.",
+        "subtitle": "Protejați pielea de deteriorare",
+        "title": "Optează pentru antioxidanți"
+      },
+      "4": {
+        "detail": "O cremă cu retinoizi sau peptide aplicată noaptea susține regenerarea colagenului și a celulelor.",
+        "subtitle": "Repară pielea în timp ce dormi",
+        "title": "Rutina de îngrijire nocturnă"
+      },
+      "5": {
+        "detail": "Folosește un exfoliant chimic de 1-2 ori pe săptămână, renunță la exfolianții agresivi care provoacă micro-rupturi.",
+        "subtitle": "Exfoliați ușor, nu dur",
+        "title": "Exfolierea este importantă"
+      },
+      "6": {
+        "detail": "Balsamul sigilează cuticula, reținând umiditatea și reducând ruperea.",
+        "subtitle": "Esențial după fiecare spălare",
+        "title": "Balsam de păr"
+      },
+      "7": {
+        "detail": "O tundere la fiecare 8-12 săptămâni menține vârfurile sănătoase și creșterea arată mai densă.",
+        "subtitle": "Preveniți vârfurile despicate",
+        "title": "Tunde-ți părul în mod regulat"
+      },
+      "8": {
+        "detail": "Cortizolul declanșează erupții și căderea părului. Somnul, respirația și pauzele, toate contează.",
+        "subtitle": "Stresul afectează pielea și părul",
+        "title": "Relaxează-te și destresează-te"
+      }
+    },
+    "subtitle": "Descoperă sfaturi simple pentru un păr sănătos și o piele strălucitoare.",
+    "title": "Păr și piele"
+  },
+  "pms": {
+    "items": {
+      "0": {
+        "detail": "Alimentele integrale cu proteine constante și carbohidrați complecși ameliorează simptomele pe parcursul ciclului.",
+        "subtitle": "Susține hormonii și reduce oboseala",
+        "title": "Urmați o dietă echilibrată, bogată în nutrienți"
+      },
+      "1": {
+        "detail": "Chiar și o plimbare de 20 de minute eliberează endorfine care contracarează în liniște perioadele de scădere a nivelului premenstrual.",
+        "subtitle": "Îmbunătățește starea de spirit și ameliorează crampele",
+        "title": "Faceți exerciții fizice în mod regulat"
+      },
+      "2": {
+        "detail": "Stresul amplifică fiecare simptom al sindromului premenstrual. Respirația și odihna nu sunt negociabile.",
+        "subtitle": "Reduce simptomele emoționale",
+        "title": "Gestionați eficient stresul"
+      },
+      "3": {
+        "detail": "Contrariu intuitiv, dar adevărat, mai multă apă înseamnă mai puțină retenție de apă.",
+        "subtitle": "Reduce balonarea și disconfortul",
+        "title": "Mențineți-vă bine hidratați"
+      },
+      "4": {
+        "detail": "Țintește 7-9 ore, în special în faza luteală, când somnul are de suferit adesea.",
+        "subtitle": "Îmbunătățește starea de spirit și energia",
+        "title": "Dormiți suficient"
+      },
+      "5": {
+        "detail": "Ambele agravează anxietatea, sensibilitatea sânilor și perturbarea somnului înainte de menstruație.",
+        "subtitle": "Previne problemele de somn și dispoziție",
+        "title": "Limitați cofeina și alcoolul"
+      },
+      "6": {
+        "detail": "Există dovezi solide despre magneziul, vitamina B6 și vitamina D, discutați mai întâi cu medicul dumneavoastră.",
+        "subtitle": "Ajută la crampe și oboseală",
+        "title": "Luați suplimente esențiale"
+      },
+      "7": {
+        "detail": "O pernă încălzitoare pe partea inferioară a abdomenului se poate potrivi cu analgezicele fără prescripție medicală pentru crampe.",
+        "subtitle": "Ameliorează crampele în mod natural",
+        "title": "Folosește terapia cu căldură pentru ameliorarea durerii"
+      },
+      "8": {
+        "detail": "Fructele de pădure, peștele gras, turmericul și legumele cu frunze verzi calmează inflamația din spatele crampelor.",
+        "subtitle": "Ajută la reducerea durerilor din sindromul premenstrual",
+        "title": "Includeți alimente antiinflamatoare"
+      }
+    },
+    "subtitle": "Găsește modalități eficiente de a gestiona simptomele PMS și de a te simți mai bine în fiecare lună.",
+    "title": "PMS"
+  },
+  "weight-loss": {
+    "items": {
+      "0": {
+        "detail": "Înlocuiți pâinea și produsele de patiserie albe cu cereale integrale pentru a menține glicemia stabilă.",
+        "subtitle": "Previne vârfurile de zahăr și acumularea de grăsime",
+        "title": "Reduceți consumul de carbohidrați rafinați"
+      },
+      "1": {
+        "detail": "O porție de mărimea palmei la fiecare masă reduce poftele și protejează mușchii.",
+        "subtitle": "Te menține sătul și stimulează metabolismul",
+        "title": "Consumați mai multe proteine"
+      },
+      "2": {
+        "detail": "Adesea, setea se maschează sub formă de foame, așa că începeți fiecare masă cu un pahar cu apă.",
+        "subtitle": "Susține arderea grăsimilor și reduce foamea",
+        "title": "Bea mai multă apă"
+      },
+      "3": {
+        "detail": "Două sesiuni de forță pe săptămână schimbă compoziția corporală mai mult decât cardio nesfârșit.",
+        "subtitle": "Construiește mușchi și arde mai multe calorii",
+        "title": "Adăugați antrenament de rezistență"
+      },
+      "4": {
+        "detail": "Combinați plimbările regulate cu sesiuni scurte de intensitate mai mare pentru sănătatea inimii.",
+        "subtitle": "Arde calorii și îmbunătățește condiția fizică",
+        "title": "Faceți mai mult cardio"
+      },
+      "5": {
+        "detail": "Consumați zilnic 25-30 g din legume, leguminoase, fructe și cereale integrale.",
+        "subtitle": "Te menține sătul pentru mai mult timp",
+        "title": "Savurați fibrele"
+      },
+      "6": {
+        "detail": "Alimentele integrale conțin nutrienți; alimentele procesate conțin în mare parte suplimente de care nu ai nevoie.",
+        "subtitle": "Reduce caloriile goale",
+        "title": "Limitați alimentele procesate și zahărul"
+      },
+      "7": {
+        "detail": "Încetinește ritmul, fără ecrane, creierul tău are nevoie de aproximativ 20 de minute ca să se simtă sătul.",
+        "subtitle": "Previne supraalimentarea",
+        "title": "Practicați mâncatul conștient"
+      },
+      "8": {
+        "detail": "Mai puțin de 7 ore cresc nivelul de grelină și reduc voința. Somnul este un instrument pentru creșterea greutății.",
+        "subtitle": "Echilibrează hormonii foamei",
+        "title": "Dormiți suficient"
+      }
+    },
+    "subtitle": "Obțineți sfaturi practice pentru o gestionare sănătoasă și sustenabilă a greutății.",
+    "title": "Pierdere în greutate"
+  }
+}

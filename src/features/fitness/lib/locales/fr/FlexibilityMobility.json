@@ -1,0 +1,379 @@
+{
+  "header": {
+    "title": "Flexibilité et mobilité",
+    "subtitle": "Améliorer l’amplitude des mouvements et prévenir les blessures",
+    "back": "Retour au tableau de bord"
+  },
+  "tabs": {
+    "stretches": "Étirements quotidiens",
+    "tests": "Tests de mobilité",
+    "log": "Journal de récupération"
+  },
+  "player": {
+    "stretch": "Étirement {{actuel}} sur {{total}}",
+    "resume": "CV",
+    "pause": "Pause",
+    "skip": "Sauter",
+    "cancel": "Annuler",
+    "bilateral_hint": "💡 N'oubliez pas de changer de côté à la fin du chronomètre",
+    "preview": {
+      "stretches_count": "{{count}} étirements ({{duration}} min au total) :",
+      "start": "Démarrer la routine {{duration}}-Min",
+      "cancel": "Annuler"
+    },
+    "complete": {
+      "title": "Routine terminée !",
+      "desc": "Excellent travail pour terminer {{name}} !",
+      "rate_label": "Vous vous sentez mieux ? Évaluez votre amélioration : {{rating}}/10",
+      "worse": "Pire",
+      "same": "Idem",
+      "much_better": "Beaucoup mieux",
+      "save": "Enregistrer la session",
+      "done": "Terminé"
+    }
+  },
+  "routines": {
+    "upper-body": {
+      "name": "Haut du corps ouvert",
+      "focus": "Poitrine, épaules, milieu du dos",
+      "desc": "Libérez les tensions liées au travail de bureau et à l'utilisation du téléphone",
+      "stretches": {
+        "Doorway Chest Stretch": {
+          "name": "Étirement de la poitrine à la porte",
+          "desc": "Tenez-vous dans l’embrasure de la porte, placez les avant-bras sur le cadre, penchez-vous en avant pour sentir l’étirement de la poitrine."
+        },
+        "Shoulder Rolls": {
+          "name": "Rouleaux d'épaules",
+          "desc": "Faites rouler les épaules vers l’arrière en grands cercles, 10 répétitions."
+        },
+        "Thoracic Rotation": {
+          "name": "Rotation thoracique",
+          "desc": "Sur les mains et les genoux, faites pivoter le haut du corps d’un côté à l’autre, en ouvrant la poitrine."
+        },
+        "Neck Stretch": {
+          "name": "Étirement du cou",
+          "desc": "Inclinez doucement la tête de chaque côté, en maintenant la position pendant 30 secondes de chaque côté."
+        },
+        "Tricep Stretch": {
+          "name": "Étirement des triceps",
+          "desc": "Atteignez le bras au-dessus de votre tête, pliez le coude, tirez doucement avec l'autre main."
+        }
+      }
+    },
+    "lower-body": {
+      "name": "Libération du bas du corps",
+      "focus": "Ischio-jambiers, fessiers, fléchisseurs de hanche",
+      "desc": "Étirements profonds pour les jambes et les hanches tendues en position assise",
+      "stretches": {
+        "Pigeon Pose": {
+          "name": "Posture du pigeon",
+          "desc": "Amenez une jambe pliée vers l'avant, étendez la jambe arrière droite, abaissez les hanches."
+        },
+        "Hamstring Stretch": {
+          "name": "Étirement des ischio-jambiers",
+          "desc": "Asseyez-vous avec une jambe tendue, tendez la main vers les orteils, gardez le dos droit."
+        },
+        "Hip Flexor Lunge": {
+          "name": "Fente fléchisseur de hanche",
+          "desc": "Position de fente, poussez les hanches vers l’avant pour sentir l’étirement de la hanche avant."
+        },
+        "Glute Stretch": {
+          "name": "Étirement des fessiers",
+          "desc": "Allongé sur le dos, croisez la cheville sur le genou opposé, tirez vers la poitrine."
+        },
+        "Calf Stretch": {
+          "name": "Étirement des mollets",
+          "desc": "Avancez en fente, gardez le talon arrière baissé pour étirer le mollet."
+        }
+      }
+    },
+    "full-body": {
+      "name": "Flux corporel complet",
+      "focus": "Entretien total du corps",
+      "desc": "Routine complète de flexibilité de la tête aux pieds",
+      "stretches": {
+        "Cat-Cow": {
+          "name": "Chat-Vache",
+          "desc": "Sur les mains et les genoux, colonne vertébrale alternativement cambrée et arrondie."
+        },
+        "Downward Dog": {
+          "name": "Chien vers le bas",
+          "desc": "Mains et pieds plantés, hanches hautes, formant un V inversé."
+        },
+        "Child's Pose": {
+          "name": "Pose de l'enfant",
+          "desc": "Genoux écartés, asseyez-vous sur les talons, bras tendus vers l’avant."
+        },
+        "Seated Twist": {
+          "name": "Torsion assise",
+          "desc": "Asseyez-vous les jambes croisées, faites pivoter le torse de chaque côté, la main derrière le dos."
+        },
+        "Forward Fold": {
+          "name": "Pliage vers l'avant",
+          "desc": "Debout, articulé au niveau des hanches, tendez la main vers les orteils, laissez pendre la tête."
+        },
+        "Hip Circles": {
+          "name": "Cercles de hanche",
+          "desc": "Mains sur les hanches, faites de grands cercles avec les hanches dans les deux sens."
+        },
+        "Arm Circles": {
+          "name": "Cercles de bras",
+          "desc": "Étendez largement les bras, faites de grands cercles vers l’avant puis vers l’arrière."
+        }
+      }
+    },
+    "dynamic-warmup": {
+      "name": "Échauffement dynamique",
+      "focus": "Activation avant l'entraînement",
+      "desc": "Préparez votre corps avant l'exercice",
+      "stretches": {
+        "Leg Swings": {
+          "name": "Balançoires des jambes",
+          "desc": "Tenez le mur, balancez la jambe vers l’avant et vers l’arrière, puis d’un côté à l’autre."
+        },
+        "Arm Circles": {
+          "name": "Cercles de bras",
+          "desc": "Petits à grands cercles, en avant et en arrière."
+        },
+        "Torso Twists": {
+          "name": "Torsions du torse",
+          "desc": "Faites pivoter le haut du corps d’un côté à l’autre avec les bras relâchés."
+        },
+        "Walking Lunges": {
+          "name": "Fentes de marche",
+          "desc": "Avancez en fente, alternez les jambes tout en avançant."
+        },
+        "High Knees": {
+          "name": "Genoux hauts",
+          "desc": "Marchez sur place en ramenant les genoux à la hauteur des hanches."
+        }
+      }
+    }
+  },
+  "benefits": {
+    "title": "Pourquoi les étirements quotidiens sont importants",
+    "items": [
+      "Réduit le risque de blessure jusqu'à 50 %",
+      "Améliore les performances sportives",
+      "Soulage les tensions musculaires et le stress",
+      "Améliore la circulation sanguine"
+    ]
+  },
+  "tests": {
+    "status": {
+      "title": "Votre statut de mobilité",
+      "based_on": "Basé sur {{count}} résultats de tests",
+      "complete_below": "Terminez les tests ci-dessous",
+      "score_label": "Score : {{points}}/6 points (Réussite=2, Partiel=1, Travaux nécessaires=0)",
+      "elite": "Mobilité d'élite",
+      "good": "Bonne mobilité",
+      "limited": "Mobilité limitée",
+      "not_tested": "Non testé"
+    },
+    "items": {
+      "sit-reach": {
+        "name": "Test assis et atteint",
+        "desc": "Asseyez-vous avec les jambes tendues, tendez la main vers les orteils",
+        "pass": "Peut toucher ou passer les orteils",
+        "fail": "À plus de 6 pouces des orteils"
+      },
+      "shoulder-pass": {
+        "name": "Passage d'épaule",
+        "desc": "Tenez un bandeau/un bâton, levez les bras au-dessus et derrière le dos.",
+        "pass": "Peut passer en douceur",
+        "fail": "Impossible de terminer le mouvement"
+      },
+      "deep-squat": {
+        "name": "Prise de squat profond",
+        "desc": "Accroupissez-vous avec les talons à plat, maintenez pendant 30 secondes",
+        "pass": "Peut contenir 30 secondes, talons baissés",
+        "fail": "Les talons se soulèvent ou ne peuvent pas tenir"
+      }
+    },
+    "tips": {
+      "title": "Conseils de test",
+      "list": [
+        "Effectuer les tests après un léger échauffement, pas à froid",
+        "Réessayez toutes les 2 à 4 semaines pour suivre les progrès",
+        "Concentrez-vous sur les zones qui nécessitent un travail avec des étirements ciblés",
+        "Consulter un professionnel pour les limitations persistantes"
+      ]
+    },
+    "actions": {
+      "pass": "✓ Passer",
+      "partial": "~ Partiel",
+      "fail": "✗ A besoin de travail"
+    }
+  },
+  "log": {
+    "title": "Session de récupération de journal",
+    "duration": "Durée (minutes)",
+    "focus_areas": "Domaines d'intervention (sélectionnez toutes les réponses applicables)",
+    "soreness_label": "Douleur avant la séance : {{level}}/10",
+    "no_pain": "1 - Pas de douleur",
+    "moderate": "5 - Modéré",
+    "very_sore": "10 – Très douloureux",
+    "submit": "🧘 Session de journalisation",
+    "heatmap": {
+      "title": "Carte thermique de récupération",
+      "legend": "Des points violets marquent les jours de séances de récupération"
+    },
+    "badge": {
+      "title": "Preuve de blessure !",
+      "desc": "Vous avez effectué {{count}} séances de récupération cette semaine !"
+    },
+    "stats": {
+      "total": "Minutes totales",
+      "this_week": "Cette semaine"
+    },
+    "recent": "Séances récentes",
+    "areas": {
+      "Neck": "Cou",
+      "Shoulders": "Épaules",
+      "Back": "Retour",
+      "Hips": "Hanches",
+      "Legs": "Jambes",
+      "Full Body": "Corps entier"
+    }
+  },
+  "soreness": "Douleur :",
+  "m": "m",
+  "recent_sessions": "Séances récentes",
+  "this_week": "Cette semaine",
+  "total_minutes": "Minutes totales",
+  "recovery_sessions_this_week": "séances de récupération cette semaine !",
+  "you_ve_completed": "Vous avez terminé",
+  "injury_proof": "Preuve de blessure !",
+  "purple_dots_mark_days_with_recovery_sess": "Des points violets marquent les jours de séances de récupération",
+  "recovery_heatmap": "Carte thermique de récupération",
+  "log_session": "🧘 Session de journalisation",
+  "10_very_sore": "10 – Très douloureux",
+  "5_moderate": "5 - Modéré",
+  "1_no_pain": "1 - Pas de douleur",
+  "soreness_before_session": "Douleur avant la séance :",
+  "focus_areas_select_all_that_apply": "Domaines d'intervention (sélectionnez toutes les réponses applicables)",
+  "duration_minutes": "Durée (minutes)",
+  "log_recovery_session": "Session de récupération de journal",
+  "consult_a_professional_for_persistent_li": "• Consultez un professionnel en cas de limitations persistantes",
+  "focus_on_areas_that_need_work_with_targe": "• Concentrez-vous sur les zones qui nécessitent un travail avec des étirements ciblés.",
+  "retest_every_2_4_weeks_to_track_progress": "• Refaites le test toutes les 2 à 4 semaines pour suivre les progrès",
+  "perform_tests_after_a_light_warm_up_not_": "• Effectuer des tests après un léger échauffement, pas à froid",
+  "testing_tips": "Conseils de test",
+  "needs_work": "✗ A besoin de travail",
+  "partial": "~ Partiel",
+  "pass": "✓ Passer",
+  "6_points_pass_2_partial_1_needs_work_0": "/6 points (Réussite=2, Partiel=1, Travaux nécessaires=0)",
+  "score": "Note :",
+  "your_mobility_status": "Votre statut de mobilité",
+  "enhances_blood_circulation": "Améliore la circulation sanguine",
+  "relieves_muscle_tension_and_stress": "Soulage les tensions musculaires et le stress",
+  "improves_athletic_performance": "Améliore les performances sportives",
+  "reduces_injury_risk_by_up_to_50": "Réduit le risque de blessure jusqu'à 50 %",
+  "why_daily_stretching_matters": "Pourquoi les étirements quotidiens sont importants",
+  "min_routine": "-Min Routine",
+  "start": "Commencer",
+  "min": "min",
+  "remember_to_switch_sides_when_the_timer_": "💡 N'oubliez pas de changer de côté à la fin du chronomètre",
+  "cancel": "Annuler",
+  "skip": "Sauter",
+  "pause": "Pause",
+  "resume": "CV",
+  "s": "s",
+  "of": "de",
+  "stretch": "Étirer",
+  "done": "Terminé",
+  "save_session": "Enregistrer la session",
+  "10_much_better": "10 - Beaucoup mieux",
+  "5_same": "5 - Idem",
+  "1_worse": "1 - Pire",
+  "feel_better_rate_your_improvement": "Vous vous sentez mieux ? Évaluez votre amélioration :",
+  "great_job_completing": "Excellent travail terminé",
+  "routine_complete": "Routine terminée !",
+  "min_total": "total minimum) :",
+  "stretches": "Étirements (",
+  "recovery_log": "Journal de récupération",
+  "mobility_tests": "Tests de mobilité",
+  "daily_stretches": "Étirements quotidiens",
+  "improve_range_of_motion_and_prevent_inju": "Améliorer l’amplitude des mouvements et prévenir les blessures",
+  "flexibility_mobility": "Flexibilité et mobilité",
+  "back_to_dashboard": "Retour au tableau de bord",
+  "march_in_place_bringing_knees_to_hip_hei": "Marchez sur place en ramenant les genoux à la hauteur des hanches.",
+  "high_knees": "Genoux hauts",
+  "step_forward_into_lunge_alternate_legs_w": "Avancez en fente, alternez les jambes tout en avançant.",
+  "walking_lunges": "Fentes de marche",
+  "rotate_upper_body_side_to_side_with_arms": "Faites pivoter le haut du corps d’un côté à l’autre avec les bras relâchés.",
+  "torso_twists": "Torsions du torse",
+  "small_to_large_circles_forward_and_backw": "Petits à grands cercles, en avant et en arrière.",
+  "arm_circles": "Cercles de bras",
+  "hold_wall_swing_leg_forward_and_back_the": "Tenez le mur, balancez la jambe vers l’avant et vers l’arrière, puis d’un côté à l’autre.",
+  "leg_swings": "Balançoires des jambes",
+  "from_purple_500_to_pink_500": "du-violet-500 au-rose-500",
+  "prepare_your_body_before_exercise": "Préparez votre corps avant l'exercice",
+  "pre_workout_activation": "Activation avant l'entraînement",
+  "dynamic_warm_up": "Échauffement dynamique",
+  "extend_arms_wide_make_large_circles_forw": "Étendez largement les bras, faites de grands cercles vers l’avant puis vers l’arrière.",
+  "hands_on_hips_make_large_circles_with_hi": "Mains sur les hanches, faites de grands cercles avec les hanches dans les deux sens.",
+  "hip_circles": "Cercles de hanche",
+  "standing_hinge_at_hips_reach_toward_toes": "Debout, articulé au niveau des hanches, tendez la main vers les orteils, laissez pendre la tête.",
+  "forward_fold": "Pliage vers l'avant",
+  "sit_cross_legged_rotate_torso_to_each_si": "Asseyez-vous les jambes croisées, faites pivoter le torse de chaque côté, la main derrière le dos.",
+  "seated_twist": "Torsion assise",
+  "knees_wide_sit_back_on_heels_arms_extend": "Genoux écartés, asseyez-vous sur les talons, bras tendus vers l’avant.",
+  "child_s_pose": "Pose de l'enfant",
+  "hands_and_feet_planted_hips_high_forming": "Mains et pieds plantés, hanches hautes, formant un V inversé.",
+  "downward_dog": "Chien vers le bas",
+  "on_hands_and_knees_alternate_arching_and": "Sur les mains et les genoux, colonne vertébrale alternativement cambrée et arrondie.",
+  "cat_cow": "Chat-Vache",
+  "from_indigo_400_to_purple_500": "de-indigo-400 à-violet-500",
+  "complete_head_to_toe_flexibility_routine": "Routine complète de flexibilité de la tête aux pieds",
+  "total_body_maintenance": "Entretien total du corps",
+  "full_body_flow": "Flux corporel complet",
+  "step_forward_in_lunge_keep_back_heel_dow": "Avancez en fente, gardez le talon arrière baissé pour étirer le mollet.",
+  "calf_stretch": "Étirement des mollets",
+  "lying_on_back_cross_ankle_over_opposite_": "Allongé sur le dos, croisez la cheville sur le genou opposé, tirez vers la poitrine.",
+  "glute_stretch": "Étirement des fessiers",
+  "lunge_position_push_hips_forward_to_feel": "Position de fente, poussez les hanches vers l’avant pour sentir l’étirement de la hanche avant.",
+  "hip_flexor_lunge": "Fente fléchisseur de hanche",
+  "sit_with_one_leg_extended_reach_toward_t": "Asseyez-vous avec une jambe tendue, tendez la main vers les orteils, gardez le dos droit.",
+  "hamstring_stretch": "Étirement des ischio-jambiers",
+  "bring_one_leg_forward_bent_extend_back_l": "Amenez une jambe pliée vers l'avant, étendez la jambe arrière droite, abaissez les hanches.",
+  "pigeon_pose": "Posture du pigeon",
+  "from_purple_400_to_violet_500": "du-violet-400 au-violet-500",
+  "deep_stretches_for_tight_legs_and_hips_f": "Étirements profonds pour les jambes et les hanches tendues en position assise",
+  "hamstrings_glutes_hip_flexors": "Ischio-jambiers, fessiers, fléchisseurs de hanche",
+  "lower_body_release": "Libération du bas du corps",
+  "reach_arm_overhead_bend_elbow_gently_pul": "Atteignez le bras au-dessus de votre tête, pliez le coude, tirez doucement avec l'autre main.",
+  "tricep_stretch": "Étirement des triceps",
+  "gently_tilt_head_to_each_side_holding_fo": "Inclinez doucement la tête de chaque côté, en maintenant la position pendant 30 secondes de chaque côté.",
+  "neck_stretch": "Étirement du cou",
+  "on_hands_and_knees_rotate_upper_body_sid": "Sur les mains et les genoux, faites pivoter le haut du corps d’un côté à l’autre, en ouvrant la poitrine.",
+  "thoracic_rotation": "Rotation thoracique",
+  "roll_shoulders_backward_in_large_circles": "Faites rouler les épaules vers l’arrière en grands cercles, 10 répétitions.",
+  "shoulder_rolls": "Rouleaux d'épaules",
+  "stand_in_doorway_place_forearms_on_frame": "Tenez-vous dans l’embrasure de la porte, placez les avant-bras sur le cadre, penchez-vous en avant pour sentir l’étirement de la poitrine.",
+  "doorway_chest_stretch": "Étirement de la poitrine à la porte",
+  "from_violet_400_to_purple_500": "du-violet-400 au-violet-500",
+  "release_tension_from_desk_work_and_phone": "Libérez les tensions liées au travail de bureau et à l'utilisation du téléphone",
+  "chest_shoulders_mid_back": "Poitrine, épaules, milieu du dos",
+  "upper_body_open": "Haut du corps ouvert",
+  "heels_lift_or_cannot_hold": "Les talons se soulèvent ou ne peuvent pas tenir",
+  "can_hold_30s_heels_down": "Peut contenir 30 secondes, talons baissés",
+  "squat_down_with_heels_flat_hold_for_30_s": "Accroupissez-vous avec les talons à plat, maintenez pendant 30 secondes",
+  "deep_squat_hold": "Prise de squat profond",
+  "cannot_complete_motion": "Impossible de terminer le mouvement",
+  "can_pass_through_smoothly": "Peut passer en douceur",
+  "shoulder_pass_through": "Passage d'épaule",
+  "more_than_6_inches_from_toes": "À plus de 6 pouces des orteils",
+  "can_touch_or_pass_toes": "Peut toucher ou passer les orteils",
+  "sit_with_legs_straight_reach_toward_toes": "Asseyez-vous avec les jambes tendues, tendez la main vers les orteils",
+  "sit_reach_test": "Test assis et atteint",
+  "full_body": "Corps entier",
+  "legs": "Jambes",
+  "hips": "Hanches",
+  "back": "Retour",
+  "shoulders": "Épaules",
+  "neck": "Cou",
+  "elite_mobility": "Mobilité d'élite",
+  "good_mobility": "Bonne mobilité",
+  "limited_mobility": "Mobilité limitée"
+}

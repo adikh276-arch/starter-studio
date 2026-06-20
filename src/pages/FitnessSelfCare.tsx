@@ -14,6 +14,7 @@ export function FitnessSelfCare() {
       icon: Dumbbell,
       color: "#FF6B35",
       bgColor: "#FFF4F0",
+      to: "/fitness/homeworkoutsguide"
     },
     {
       title: "Videos",
@@ -21,6 +22,7 @@ export function FitnessSelfCare() {
       icon: Play,
       color: "#9333EA",
       bgColor: "#F3E8FF",
+      to: "/fitness/hiitcardioguide"
     },
     {
       title: "Q & A",
@@ -28,6 +30,7 @@ export function FitnessSelfCare() {
       icon: FileText,
       color: "#13B5B1",
       bgColor: "#E0F7FF",
+      to: "/fitness/posturecorrectionguide"
     },
     {
       title: "Quick Tips",
@@ -35,6 +38,7 @@ export function FitnessSelfCare() {
       icon: Award,
       color: "#10B981",
       bgColor: "#ECFDF5",
+      to: "/fitness/weightlossguide"
     },
   ];
 
@@ -45,6 +49,7 @@ export function FitnessSelfCare() {
       icon: Heart,
       iconColor: "#0B2545",
       iconBg: "#E3F2FD",
+      to: "/fitness/bmicalculator"
     },
     {
       title: "Diet Plan",
@@ -52,6 +57,7 @@ export function FitnessSelfCare() {
       icon: Apple,
       iconColor: "#0B2545",
       iconBg: "#E3F2FD",
+      to: "/fitness/macrocalculator"
     },
   ];
 
@@ -129,6 +135,7 @@ export function FitnessSelfCare() {
                       variants={item}
                       whileHover={{ y: -4, scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
+                      onClick={() => card.to && navigate(card.to)}
                       className="bg-white rounded-2xl p-5 md:p-6 flex flex-col items-center text-center border border-[#E5EAF0] hover:border-[#13B5B1]/30 hover:shadow-lg transition-all group"
                     >
                       <div
@@ -169,6 +176,7 @@ export function FitnessSelfCare() {
                       variants={item}
                       whileHover={{ x: 4 }}
                       whileTap={{ scale: 0.98 }}
+                      onClick={() => resource.to && navigate(resource.to)}
                       className="w-full bg-white rounded-2xl p-5 flex items-center gap-4 border border-[#E5EAF0] hover:border-[#13B5B1]/30 hover:shadow-md transition-all group text-left"
                     >
                       <div
@@ -208,6 +216,7 @@ export function FitnessSelfCare() {
                     <motion.button
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
+                      onClick={() => navigate('/fitness/macroeducationmodule')}
                       className="bg-white text-[#0B2545] px-6 py-3 rounded-xl font-semibold text-sm hover:shadow-lg transition-all"
                     >
                       Start Your Journey
