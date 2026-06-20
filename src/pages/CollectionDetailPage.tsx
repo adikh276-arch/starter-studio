@@ -5,13 +5,11 @@ import { motion } from "motion/react";
 import { ImageWithFallback } from "@/components/figma/ImageWithFallback";
 import { DarkSidebar } from "@/components/DarkSidebar";
 import { MobileNav } from "@/components/MobileNav";
-import Slider from "react-slick";
 import meditationThumb from "figma:asset/df7c6ecf7eaa8aeb924cfeda9cfbe2e7536f022e.png";
 
 export function CollectionDetailPage() {
   const navigate = useNavigate();
   const { collectionId } = useParams();
-  const sliderRef = React.useRef<Slider>(null);
 
   // Mock data for collections
   const collections = {

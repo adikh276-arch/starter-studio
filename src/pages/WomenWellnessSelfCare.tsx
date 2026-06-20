@@ -2,9 +2,7 @@ import { useNavigate } from "react-router";
 import { motion, AnimatePresence } from "motion/react";
 import { Sidebar } from "@/components/Sidebar";
 import { MobileNav } from "@/components/MobileNav";
-import { ChevronLeft, MessageCircle } from "lucide-react";
-import { GiFemale, GiMeditation } from "react-icons/gi";
-import { FaBaby, FaBrain, FaAppleAlt, FaBabyCarriage, FaNotesMedical, FaSeedling, FaUserClock } from "react-icons/fa";
+import { Apple, Baby, Brain, ChevronLeft, ClipboardList, Flower2, MessageCircle, Sprout, UserCheck, Venus } from "lucide-react";
 
 interface TopicCard {
   id: string;
@@ -16,14 +14,14 @@ interface TopicCard {
 }
 
 const topicCards: TopicCard[] = [
-  { id: "pcos", icon: GiFemale, label: "PCOS", bgColor: "bg-[#FCE7F3]", iconColor: "text-[#EC4899]", circleBg: "bg-[#FBCFE8]" },
-  { id: "reproductive-health", icon: FaBaby, label: "Reproductive Health", bgColor: "bg-[#F3E8FF]", iconColor: "text-[#A855F7]", circleBg: "bg-[#E9D5FF]" },
-  { id: "mental-health", icon: FaBrain, label: "Mental Health", bgColor: "bg-[#E0F2FE]", iconColor: "text-[#0EA5E9]", circleBg: "bg-[#BAE6FD]" },
-  { id: "nutrition-weight", icon: FaAppleAlt, label: "Nutrition & Weight", bgColor: "bg-[#FFF4ED]", iconColor: "text-[#FB923C]", circleBg: "bg-[#FED7AA]" },
-  { id: "pregnancy-postpartum", icon: FaBabyCarriage, label: "Pregnancy & Postpartum", bgColor: "bg-[#DCFCE7]", iconColor: "text-[#22C55E]", circleBg: "bg-[#BBF7D0]" },
-  { id: "medical-conditions", icon: FaNotesMedical, label: "Medical Conditions", bgColor: "bg-[#F1F4F8]", iconColor: "text-[#64748B]", circleBg: "bg-[#E5EAF0]" },
-  { id: "fertility", icon: FaSeedling, label: "Fertility", bgColor: "bg-[#FCE7F3]", iconColor: "text-[#EC4899]", circleBg: "bg-[#FBCFE8]" },
-  { id: "menopause", icon: FaUserClock, label: "Menopause", bgColor: "bg-[#CCFBF1]", iconColor: "text-[#14B8A6]", circleBg: "bg-[#99F6E4]" },
+  { id: "pcos", icon: Venus, label: "PCOS", bgColor: "bg-[#FCE7F3]", iconColor: "text-[#EC4899]", circleBg: "bg-[#FBCFE8]" },
+  { id: "reproductive-health", icon: Baby, label: "Reproductive Health", bgColor: "bg-[#F3E8FF]", iconColor: "text-[#A855F7]", circleBg: "bg-[#E9D5FF]" },
+  { id: "mental-health", icon: Brain, label: "Mental Health", bgColor: "bg-[#E0F2FE]", iconColor: "text-[#0EA5E9]", circleBg: "bg-[#BAE6FD]" },
+  { id: "nutrition-weight", icon: Apple, label: "Nutrition & Weight", bgColor: "bg-[#FFF4ED]", iconColor: "text-[#FB923C]", circleBg: "bg-[#FED7AA]" },
+  { id: "pregnancy-postpartum", icon: Baby, label: "Pregnancy & Postpartum", bgColor: "bg-[#DCFCE7]", iconColor: "text-[#22C55E]", circleBg: "bg-[#BBF7D0]" },
+  { id: "medical-conditions", icon: ClipboardList, label: "Medical Conditions", bgColor: "bg-[#F1F4F8]", iconColor: "text-[#64748B]", circleBg: "bg-[#E5EAF0]" },
+  { id: "fertility", icon: Sprout, label: "Fertility", bgColor: "bg-[#FCE7F3]", iconColor: "text-[#EC4899]", circleBg: "bg-[#FBCFE8]" },
+  { id: "menopause", icon: UserCheck, label: "Menopause", bgColor: "bg-[#CCFBF1]", iconColor: "text-[#14B8A6]", circleBg: "bg-[#99F6E4]" },
 ];
 
 export function WomenWellnessSelfCare() {

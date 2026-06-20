@@ -1,8 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { X, Camera, Mic, CheckCircle2, Circle } from "lucide-react";
-import { FaChair } from "react-icons/fa";
-import { GiRolledCloth } from "react-icons/gi";
+import { Armchair, Camera, CheckCircle2, Circle, Layers, Mic, X } from "lucide-react";
 
 interface QuickStartModalProps {
   isOpen: boolean;
@@ -241,7 +239,7 @@ export function QuickStartModal({ isOpen, onClose, planTitle, planColor }: Quick
                     {hasMatChecked && <CheckCircle2 size={14} className="text-white" strokeWidth={3} />}
                   </div>
                   <div className="w-6 h-6 bg-gray-100 rounded flex items-center justify-center">
-                    <GiRolledCloth size={14} className="text-gray-600" />
+                    <Layers size={14} className="text-gray-600" />
                   </div>
                   <span className="text-sm text-[#0f172b]">Mat</span>
                 </div>
@@ -257,7 +255,7 @@ export function QuickStartModal({ isOpen, onClose, planTitle, planColor }: Quick
                     {hasChairChecked && <CheckCircle2 size={14} className="text-white" strokeWidth={3} />}
                   </div>
                   <div className="w-6 h-6 bg-gray-100 rounded flex items-center justify-center">
-                    <FaChair size={14} className="text-gray-600" />
+                    <Armchair size={14} className="text-gray-600" />
                   </div>
                   <span className="text-sm text-[#0f172b]">Chair</span>
                 </div>

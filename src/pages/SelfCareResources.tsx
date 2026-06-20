@@ -3,41 +3,7 @@ import { useNavigate } from "react-router";
 import { motion, AnimatePresence } from "motion/react";
 import { Sidebar } from "@/components/Sidebar";
 import { MobileNav } from "@/components/MobileNav";
-import {
-  ChevronLeft,
-  MessageCircle,
-  BookOpen,
-  Video,
-  FileText,
-  Heart,
-  Shield,
-  ChevronRight,
-  ChevronDown,
-  CloudRain,
-  Brain,
-  Zap,
-  Users,
-  Briefcase,
-  Moon,
-  Baby,
-  Flame,
-  Frown,
-  HeartPulse,
-  Sparkles,
-  UtensilsCrossed,
-  RefreshCw,
-  Waves,
-  RotateCcw,
-  Star,
-  FolderTree,
-  Mail,
-  Smile,
-  Wind,
-  Compass
-} from "lucide-react";
-import { PiHandsPrayingFill } from "react-icons/pi";
-import { FaBaby } from "react-icons/fa";
-import { BsEmojiTear } from "react-icons/bs";
+import { Baby, BookOpen, Brain, Briefcase, ChevronDown, ChevronLeft, ChevronRight, CloudRain, Compass, FileText, Flame, FolderTree, Frown, HandHeart, Heart, HeartPulse, Mail, MessageCircle, Moon, RefreshCw, RotateCcw, Shield, Smile, Sparkles, Star, Users, UtensilsCrossed, Video, Waves, Wind, Zap } from "lucide-react";
 
 interface MoodOption {
   emoji: string;
@@ -80,9 +46,9 @@ const topicCards: TopicCard[] = [
   { id: "parenting", icon: Baby, label: "Parenting", bgColor: "#FCE7F3", iconColor: "#EC4899", url: "https://app-mantra.com/therapy/parenting/" },
   { id: "anger", icon: Flame, label: "Anger", bgColor: "#FFF0EB", iconColor: "#F97316", url: "https://app-mantra.com/therapy/anger/" },
   { id: "grief", icon: Frown, label: "Grief", bgColor: "#F1F4F8", iconColor: "#475569", url: "https://app-mantra.com/therapy/grief/" },
-  { id: "ptsd", icon: BsEmojiTear, label: "PTSD", bgColor: "#E6FAF5", iconColor: "#14B8A6", url: "https://app-mantra.com/therapy/ptsd/" },
-  { id: "acceptance", icon: PiHandsPrayingFill, label: "Acceptance", bgColor: "#E0F7FA", iconColor: "#00BCD4", url: "https://app-mantra.com/therapy/acceptance/" },
-  { id: "postpartum", icon: FaBaby, label: "Postpartum", bgColor: "#F5E6FF", iconColor: "#B794F4", url: "https://app-mantra.com/therapy/postpartum/?" },
+  { id: "ptsd", icon: Frown, label: "PTSD", bgColor: "#E6FAF5", iconColor: "#14B8A6", url: "https://app-mantra.com/therapy/ptsd/" },
+  { id: "acceptance", icon: HandHeart, label: "Acceptance", bgColor: "#E0F7FA", iconColor: "#00BCD4", url: "https://app-mantra.com/therapy/acceptance/" },
+  { id: "postpartum", icon: Baby, label: "Postpartum", bgColor: "#F5E6FF", iconColor: "#B794F4", url: "https://app-mantra.com/therapy/postpartum/?" },
   { id: "self-esteem", icon: Sparkles, label: "Self Esteem", bgColor: "#F0E7FF", iconColor: "#A78BFA", url: "https://app-mantra.com/therapy/sexuality/" },
   { id: "eating-disorder", icon: UtensilsCrossed, label: "Eating Disorder", bgColor: "#F7FEE7", iconColor: "#84CC16", url: "https://app-mantra.com/therapy/eating-disorder/" },
   { id: "ocd", icon: RefreshCw, label: "OCD", bgColor: "#DBEAFE", iconColor: "#3B82F6" },
