@@ -5,11 +5,16 @@ import { motion } from "motion/react";
 import { ImageWithFallback } from "@/components/figma/ImageWithFallback";
 import { DarkSidebar } from "@/components/DarkSidebar";
 import { MobileNav } from "@/components/MobileNav";
-import Slider from "react-slick";
+
 
 export function BrowseByGoalDetail() {
   const navigate = useNavigate();
-  const sliderRef = React.useRef<Slider>(null);
+  const scrollerRef = React.useRef<HTMLDivElement>(null);
+  const scrollBy = (dir: 1 | -1) => {
+    const el = scrollerRef.current;
+    if (!el) return;
+    el.scrollBy({ left: dir * (el.clientWidth * 0.8), behavior: "smooth" });
+  };
 
   const firstNights = [
     {
@@ -126,48 +131,7 @@ export function BrowseByGoalDetail() {
     }
   ];
 
-  // Carousel custom arrows
-  const NextArrow = (props: any) => {
-    const { onClick } = props;
-    return (
-      <button
-        onClick={onClick}
-        className="w-9 h-9 rounded-full bg-[#1a2744] border border-[#313D57] flex items-center justify-center text-white hover:bg-[#313D57] transition-colors shadow-lg"
-      >
-        <ChevronRight size={18} />
-      </button>
-    );
-  };
 
-  const PrevArrow = (props: any) => {
-    const { onClick } = props;
-    return (
-      <button
-        onClick={onClick}
-        className="w-9 h-9 rounded-full bg-[#1a2744] border border-[#313D57] flex items-center justify-center text-white hover:bg-[#313D57] transition-colors shadow-lg mr-2"
-      >
-        <ChevronLeft size={18} />
-      </button>
-    );
-  };
-
-  const carouselSettings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    arrows: false,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        }
-      }
-    ]
-  };
 
   return (
     <div className="flex min-h-screen bg-[#0a1628]">
@@ -223,13 +187,13 @@ export function BrowseByGoalDetail() {
               </div>
               <div className="flex items-center gap-0">
                 <button
-                  onClick={() => sliderRef.current?.slickPrev()}
+                  onClick={() => scrollBy(-1)}
                   className="w-9 h-9 rounded-full bg-[#1a2744] border border-[#313D57] flex items-center justify-center text-white hover:bg-[#313D57] transition-colors shadow-lg mr-2"
                 >
                   <ChevronLeft size={18} />
                 </button>
                 <button
-                  onClick={() => sliderRef.current?.slickNext()}
+                  onClick={() => scrollBy(1)}
                   className="w-9 h-9 rounded-full bg-[#1a2744] border border-[#313D57] flex items-center justify-center text-white hover:bg-[#313D57] transition-colors shadow-lg"
                 >
                   <ChevronRight size={18} />
@@ -238,9 +202,12 @@ export function BrowseByGoalDetail() {
             </div>
 
             <div className="relative carousel-container">
-              <Slider ref={sliderRef} {...carouselSettings}>
+              <div
+                ref={scrollerRef}
+                className="flex gap-3 md:gap-4 overflow-x-auto scrollbar-hide snap-x snap-mandatory -mx-2 px-2 scroll-smooth"
+              >
                 {firstNights.map((night, i) => (
-                  <div key={i} className="px-2">
+                  <div key={i} className="snap-start flex-shrink-0 w-[calc(50%-0.5rem)] md:w-[calc(25%-0.75rem)]">
                     <motion.button
                       onClick={() => navigate('/meditation-detail/1')}
                       whileHover={{ y: -4 }}
@@ -274,7 +241,7 @@ export function BrowseByGoalDetail() {
                     </motion.button>
                   </div>
                 ))}
-              </Slider>
+              </div>
             </div>
           </motion.div>
 
