@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { ArrowLeft, RotateCcw, ArrowRight, Check, ChevronLeft } from "lucide-react";
-import { StandardCompletionModal } from "@/components/StandardCompletionModal";
-import { ActivityHistoryDrawer } from "@/components/ActivityHistoryDrawer";
-import { getStoredUserId } from "@/lib/auth";
+import { StandardCompletionModal } from "../../_shared/StandardCompletionModal";
+import { ActivityHistoryDrawer } from "../../_shared/ActivityHistoryDrawer";
+import { getStoredUserId } from "../../_shared/auth";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
 type Step = "selection" | "reflect1" | "reflect2" | "reflect3";
@@ -105,13 +105,7 @@ const Index = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-4">
             <button
-              onClick={() => {
-                if (window.parent !== window) {
-                   window.parent.postMessage({ action: 'exit' }, 'https://web.mantracare.com');
-                } else {
-                   window.location.href = 'https://web.mantracare.com';
-                }
-               }}
+              onClick={() => window.history.back()}
               className="p-2 rounded-full hover:bg-slate-100 transition-colors text-slate-500"
             >
               <ArrowLeft size={20} />
