@@ -8,6 +8,7 @@ import { useState } from "react";
 import { SwitchExpertModal } from "@/components/modals/SwitchExpertModal";
 import { RateProviderModal } from "@/components/modals/RateProviderModal";
 import { ReportProviderModal } from "@/components/modals/ReportProviderModal";
+import { EmojiIcon } from "@/lib/emoji-icon";
 
 export function ProviderProfile() {
   const navigate = useNavigate();
