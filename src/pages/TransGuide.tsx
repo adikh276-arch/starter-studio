@@ -14,12 +14,12 @@ interface InteractiveTool {
 }
 
 const interactiveTools: InteractiveTool[] = [
-  { id: "joy-pride", icon: Sparkles, label: "Joy and Pride", bgColor: "linear-gradient(135deg, #F59E0B 0%, #D97706 100%)", link: "https://platform.mantracare.com/joy-pride-trans/" },
-  { id: "coming-out", icon: Users, label: "Coming Out", bgColor: "linear-gradient(135deg, #3B82F6 0%, #2563EB 100%)", link: "https://platform.mantracare.com/trans-coming-out/" },
-  { id: "mental-health", icon: Heart, label: "Mental Health", bgColor: "linear-gradient(135deg, #10B981 0%, #059669 100%)", link: "https://platform.mantracare.com/trans-and-mental-health/" },
-  { id: "talk-to-family", icon: User, label: "Talk to Your Family", bgColor: "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)", link: "https://platform.mantracare.com/bi-family-friends-convo/" },
-  { id: "dealing-dysphoria", icon: Smile, label: "Dealing With Dysphoria", bgColor: "linear-gradient(135deg, #EC4899 0%, #DB2777 100%)", link: "https://platform.mantracare.com/dealing-with-dysphoria/" },
-  { id: "medical-transition", icon: BookOpen, label: "Navigating Medical Transition", bgColor: "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)", link: "https://platform.mantracare.com/medical-transition/" },
+  { id: "joy-pride", icon: Sparkles, label: "Joy and Pride", bgColor: "linear-gradient(135deg, #F59E0B 0%, #D97706 100%)", link: "/lgbtq/joy-pride-trans" },
+  { id: "coming-out", icon: Users, label: "Coming Out", bgColor: "linear-gradient(135deg, #3B82F6 0%, #2563EB 100%)", link: "/lgbtq/trans-coming-out" },
+  { id: "mental-health", icon: Heart, label: "Mental Health", bgColor: "linear-gradient(135deg, #10B981 0%, #059669 100%)", link: "/lgbtq/trans-and-mental-health" },
+  { id: "talk-to-family", icon: User, label: "Talk to Your Family", bgColor: "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)", link: "/lgbtq/bi-family-friends-convo" },
+  { id: "dealing-dysphoria", icon: Smile, label: "Dealing With Dysphoria", bgColor: "linear-gradient(135deg, #EC4899 0%, #DB2777 100%)", link: "/lgbtq/dealing-with-dysphoria" },
+  { id: "medical-transition", icon: BookOpen, label: "Navigating Medical Transition", bgColor: "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)", link: "/lgbtq/medical-transition" },
 ];
 
 interface Tip {
@@ -106,11 +106,7 @@ export function TransGuide() {
 
   const handleToolClick = (link: string | null) => {
     if (link) {
-      if (link.startsWith('http')) {
-        window.open(link, '_blank');
-      } else {
-        navigate(link);
-      }
+      navigate(link);
     }
   };
 

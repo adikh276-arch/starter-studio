@@ -14,12 +14,12 @@ interface InteractiveTool {
 }
 
 const interactiveTools: InteractiveTool[] = [
-  { id: "affirmations", icon: Sparkles, label: "Affirmations", bgColor: "linear-gradient(135deg, #F59E0B 0%, #D97706 100%)", link: "https://platform.mantracare.com/bi-identity-affirmations/" },
-  { id: "mental-health", icon: BookOpen, label: "Bisexuality and Mental Health", bgColor: "linear-gradient(135deg, #3B82F6 0%, #2563EB 100%)", link: "https://platform.mantracare.com/bi-mental-health/" },
-  { id: "coming-out-practice", icon: Users, label: "Coming Out Practice", bgColor: "linear-gradient(135deg, #10B981 0%, #059669 100%)", link: "https://platform.mantracare.com/bi-coming-out/" },
-  { id: "talk-to-family", icon: User, label: "Talk to Your Family", bgColor: "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)", link: "https://platform.mantracare.com/bi-family-friends-convo/" },
-  { id: "handle-reactions", icon: Heart, label: "Handle Reactions of Others", bgColor: "linear-gradient(135deg, #EC4899 0%, #DB2777 100%)", link: "https://platform.mantracare.com/when-they-react/" },
-  { id: "confidence-mirror", icon: Smile, label: "Confidence Mirror", bgColor: "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)", link: "https://platform.mantracare.com/confidence-mirror/" },
+  { id: "affirmations", icon: Sparkles, label: "Affirmations", bgColor: "linear-gradient(135deg, #F59E0B 0%, #D97706 100%)", link: "/lgbtq/bi-identity-affirmations" },
+  { id: "mental-health", icon: BookOpen, label: "Bisexuality and Mental Health", bgColor: "linear-gradient(135deg, #3B82F6 0%, #2563EB 100%)", link: "/lgbtq/bi-mental-health" },
+  { id: "coming-out-practice", icon: Users, label: "Coming Out Practice", bgColor: "linear-gradient(135deg, #10B981 0%, #059669 100%)", link: "/lgbtq/bi-coming-out" },
+  { id: "talk-to-family", icon: User, label: "Talk to Your Family", bgColor: "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)", link: "/lgbtq/bi-family-friends-convo" },
+  { id: "handle-reactions", icon: Heart, label: "Handle Reactions of Others", bgColor: "linear-gradient(135deg, #EC4899 0%, #DB2777 100%)", link: "/lgbtq/content/when-they-react" },
+  { id: "confidence-mirror", icon: Smile, label: "Confidence Mirror", bgColor: "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)", link: "/lgbtq/content/confidence-mirror" },
 ];
 
 interface Tip {
@@ -106,11 +106,7 @@ export function BisexualGuide() {
 
   const handleToolClick = (link: string | null) => {
     if (link) {
-      if (link.startsWith('http')) {
-        window.open(link, '_blank');
-      } else {
-        navigate(link);
-      }
+      navigate(link);
     }
   };
 
