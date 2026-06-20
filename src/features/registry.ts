@@ -41,11 +41,14 @@ export interface FeatureModule {
   trackers?: FeatureTracker[];
 }
 
+import { coachingFeature } from "./coaching";
+
 /**
  * Verticals register themselves here as they get ported in Phase B.
- * Empty for now – Phase A just establishes the contract.
  */
-export const featureRegistry: FeatureModule[] = [];
+export const featureRegistry: FeatureModule[] = [
+  coachingFeature,
+];
 
 export function getFeatureRoutes(): FeatureRoute[] {
   return featureRegistry.flatMap((f) => f.routes);
