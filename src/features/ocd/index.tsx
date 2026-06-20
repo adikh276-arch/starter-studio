@@ -14,6 +14,10 @@ const pageMap: Record<string, () => Promise<{ default: React.ComponentType }>> =
   mood_tracker: () => import("./activities/mood_tracker"),
   vibe_tracker: () => import("./activities/vibe_tracker"),
   gratitude_logs: () => import("./activities/gratitude_logs"),
+  ocd_moments: () => import("./activities/ocd_moments"),
+  trigger_map: () => import("./activities/trigger_map"),
+  ritual_cost: () => import("./activities/ritual_cost"),
+  daily_life: () => import("./activities/daily_life"),
 };
 
 const overrideRoutes = Object.entries(pageMap).map(([id, loader]) => {
