@@ -1,0 +1,82 @@
+{
+  "header": {
+    "title": "Ressources pour prendre soin de soi",
+    "subtitle": "Explorez des outils et des conseils pour votre parcours de bien-être"
+  },
+  "sections": {
+    "tips": "Conseils",
+    "support": "Trouvez du soutien pour votre santé",
+    "trackers": "Traqueurs",
+    "resources": "Ressources",
+    "understanding": "Compréhension"
+  },
+  "common": {
+    "back": "Dos",
+    "back_to": "Retour à",
+    "chapter": "Chapitre",
+    "min_read": "lecture minimale",
+    "sections": "sections",
+    "keep_exploring": "Continuez à explorer",
+    "more_on": "Plus d'informations",
+    "browse_more": "Parcourez les outils de suivi, les articles, les conseils et les témoignages sélectionnés sur ce sujet.",
+    "words": "words",
+    "curated_by": "Sélectionné par",
+    "the": "Le",
+    "library": "Bibliothèque",
+    "up_next": "À suivre",
+    "back_to_top": "Retour en haut de page",
+    "curated_for": "Sélectionné pour",
+    "featured_read": "Article en vedette",
+    "read_article": "Lisez l'article",
+    "issue_no": "Numéro du numéro",
+    "article": "Article",
+    "practices": "practices",
+    "practice": "Pratique",
+    "community_story": "Histoire de la communauté",
+    "misconception_no": "Idée fausse n°",
+    "the_myth": "Le mythe",
+    "the_truth": "La vérité"
+  },
+  "resource_taglines": {
+    "articles": "Des articles de fond, rédigés avec soin et relus par des experts.",
+    "tips": "De petits changements pratiques que vous pouvez intégrer à votre journée.",
+    "stories": "Réflexions sincères de personnes ayant emprunté ce chemin.",
+    "myths": "Idées fausses courantes, corrigées en douceur par des preuves."
+  },
+  "resource_eyebrows": {
+    "articles": "La bibliothèque",
+    "tips": "Pratique quotidienne",
+    "stories": "Leurs mots",
+    "myths": "Remettre les choses au clair"
+  },
+  "resources": {
+    "articles": "Articles",
+    "tips": "Conseils",
+    "stories": "Histoires",
+    "myths": "Mythes"
+  },
+  "modules": {
+    "pcos": "SOPK",
+    "reproductive-health": "Santé reproductive",
+    "medical-conditions": "Affections médicales",
+    "nutrition-weight": "Nutrition et poids",
+    "pregnancy-postpartum": "Grossesse et post-partum",
+    "mental-health": "Santé mentale",
+    "fertility": "Fécondité",
+    "menopause": "Ménopause"
+  },
+  "tips": {
+    "hair-skin": "Cheveux et peau",
+    "food": "Nourriture",
+    "weight-loss": "Perte de poids",
+    "pms": "SPM"
+  },
+  "trackers": {
+    "energy": "Énergie",
+    "sleep": "Sommeil",
+    "self_care": "Autosoins",
+    "bmi": "IMC",
+    "physical_activity": "Activité physique",
+    "mood": "Humeur"
+  }
+}

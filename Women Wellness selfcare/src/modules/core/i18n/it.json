@@ -1,0 +1,82 @@
+{
+  "header": {
+    "title": "Risorse per la cura di sé",
+    "subtitle": "Scopri strumenti e consigli per il tuo percorso di benessere."
+  },
+  "sections": {
+    "tips": "Suggerimenti",
+    "support": "Trova supporto per la tua salute",
+    "trackers": "Tracciatori",
+    "resources": "Risorse",
+    "understanding": "Comprensione"
+  },
+  "common": {
+    "back": "Indietro",
+    "back_to": "Torna a",
+    "chapter": "Capitolo",
+    "min_read": "lettura minima",
+    "sections": "sections",
+    "keep_exploring": "Continua a esplorare",
+    "more_on": "Maggiori informazioni",
+    "browse_more": "Esplora tracker, articoli, suggerimenti e storie selezionati su questo argomento.",
+    "words": "words",
+    "curated_by": "A cura di",
+    "the": "IL",
+    "library": "Biblioteca",
+    "up_next": "A seguire",
+    "back_to_top": "Torna all'inizio",
+    "curated_for": "Selezionato per",
+    "featured_read": "Lettura in primo piano",
+    "read_article": "Leggi l'articolo",
+    "issue_no": "Numero di fascicolo",
+    "article": "Articolo",
+    "practices": "practices",
+    "practice": "Pratica",
+    "community_story": "Storia della comunità",
+    "misconception_no": "Idea sbagliata n.",
+    "the_myth": "Il mito",
+    "the_truth": "La verità"
+  },
+  "resource_taglines": {
+    "articles": "Articoli approfonditi, scritti con cura e revisionati da esperti.",
+    "tips": "Piccoli cambiamenti pratici da integrare nella tua giornata.",
+    "stories": "Riflessioni sincere di persone che hanno percorso questa strada.",
+    "myths": "Idee sbagliate comuni, corrette con delicatezza e con prove concrete."
+  },
+  "resource_eyebrows": {
+    "articles": "La biblioteca",
+    "tips": "Pratica quotidiana",
+    "stories": "Nelle loro parole",
+    "myths": "Chiariamo la questione"
+  },
+  "resources": {
+    "articles": "Articoli",
+    "tips": "Suggerimenti",
+    "stories": "Abiti",
+    "myths": "Miti"
+  },
+  "modules": {
+    "pcos": "PCOS",
+    "reproductive-health": "Salute riproduttiva",
+    "medical-conditions": "Condizioni mediche",
+    "nutrition-weight": "Nutrizione e peso",
+    "pregnancy-postpartum": "Gravidanza e post-parto",
+    "mental-health": "Salute mentale",
+    "fertility": "Fertilità",
+    "menopause": "Menopausa"
+  },
+  "tips": {
+    "hair-skin": "Capelli e pelle",
+    "food": "Cibo",
+    "weight-loss": "perdita di peso",
+    "pms": "Sindrome premestruale"
+  },
+  "trackers": {
+    "energy": "Energia",
+    "sleep": "Sonno",
+    "self_care": "Cura di sé",
+    "bmi": "IMC",
+    "physical_activity": "Attività fisica",
+    "mood": "Umore"
+  }
+}

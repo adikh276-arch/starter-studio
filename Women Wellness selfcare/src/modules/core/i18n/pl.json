@@ -1,0 +1,82 @@
+{
+  "header": {
+    "title": "Zasoby do samoopieki",
+    "subtitle": "Poznaj narzędzia i wskazówki dotyczące Twojej podróży ku dobremu samopoczuciu"
+  },
+  "sections": {
+    "tips": "Porady",
+    "support": "Znajdź wsparcie dla swojego zdrowia",
+    "trackers": "Trackery",
+    "resources": "Zasoby",
+    "understanding": "Understanding"
+  },
+  "common": {
+    "back": "Z powrotem",
+    "back_to": "Powrót do",
+    "chapter": "Rozdział",
+    "min_read": "min czytania",
+    "sections": "sections",
+    "keep_exploring": "Kontynuuj eksplorację",
+    "more_on": "Więcej na temat",
+    "browse_more": "Przeglądaj trackery, artykuły, porady i historie zebrane na ten temat.",
+    "words": "words",
+    "curated_by": "Wyselekcjonowane przez",
+    "the": "Ten",
+    "library": "Biblioteka",
+    "up_next": "Dalej",
+    "back_to_top": "Powrót na górę",
+    "curated_for": "Wyselekcjonowane dla",
+    "featured_read": "Polecane do przeczytania",
+    "read_article": "Przeczytaj artykuł",
+    "issue_no": "Numer wydania",
+    "article": "Artykuł",
+    "practices": "practices",
+    "practice": "Praktyka",
+    "community_story": "Historia społeczności",
+    "misconception_no": "Nieporozumienie nr.",
+    "the_myth": "Mit",
+    "the_truth": "Prawda"
+  },
+  "resource_taglines": {
+    "articles": "Obszerne teksty, pisane ze starannością i recenzowane przez ekspertów.",
+    "tips": "Małe, praktyczne zmiany, które możesz wprowadzić do swojego dnia.",
+    "stories": "Szczere refleksje osób, które przeszły tę drogę.",
+    "myths": "Powszechne błędne przekonania, delikatnie sprostowane dowodami."
+  },
+  "resource_eyebrows": {
+    "articles": "Biblioteka",
+    "tips": "Codzienna praktyka",
+    "stories": "Ich słowami",
+    "myths": "Ustawianie tego prosto"
+  },
+  "resources": {
+    "articles": "Artykuły",
+    "tips": "Porady",
+    "stories": "Historie",
+    "myths": "Mity"
+  },
+  "modules": {
+    "pcos": "PCOS",
+    "reproductive-health": "Zdrowie reprodukcyjne",
+    "medical-conditions": "Stany chorobowe",
+    "nutrition-weight": "Odżywianie i waga",
+    "pregnancy-postpartum": "Ciąża i połóg",
+    "mental-health": "Zdrowie psychiczne",
+    "fertility": "Płodność",
+    "menopause": "Klimakterium"
+  },
+  "tips": {
+    "hair-skin": "Włosy i skóra",
+    "food": "Żywność",
+    "weight-loss": "Utrata wagi",
+    "pms": "PMS"
+  },
+  "trackers": {
+    "energy": "Energy",
+    "sleep": "Sleep",
+    "self_care": "Self Care",
+    "bmi": "BMI",
+    "physical_activity": "Physical Activity",
+    "mood": "Mood"
+  }
+}

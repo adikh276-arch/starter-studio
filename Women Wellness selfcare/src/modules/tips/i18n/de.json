@@ -1,0 +1,206 @@
+{
+  "food": {
+    "items": {
+      "0": {
+        "detail": "Linsen, Spinat, Kürbiskerne und mageres Fleisch liefern Ihnen während Ihres Zyklus neue Energie.",
+        "subtitle": "Hilft dabei, PMS-bedingte Müdigkeit und Schwäche zu reduzieren.",
+        "title": "Iss eisen- und zinkreiche Lebensmittel"
+      },
+      "1": {
+        "detail": "Milchprodukte, angereicherte Pflanzenmilch und grünes Blattgemüse bieten Ihren Knochen langfristigen Schutz.",
+        "subtitle": "Stärkt die Knochen und lindert PMS-Symptome",
+        "title": "Erhöhen Sie die Kalziumzufuhr"
+      },
+      "2": {
+        "detail": "Verarbeiteter Zucker treibt Entzündungen in die Höhe, die oft unbemerkt zu Krämpfen und Niedergeschlagenheit führen.",
+        "subtitle": "Reduziert Entzündungen und Stimmungsschwankungen",
+        "title": "Vermeiden Sie Zucker und frittierte Speisen."
+      },
+      "3": {
+        "detail": "Weniger Natrium bedeutet weniger Wassereinlagerungen, insbesondere in den Tagen vor der Periode.",
+        "subtitle": "Hilft, Blähungen vorzubeugen",
+        "title": "Reduzieren Sie den Salzkonsum"
+      },
+      "4": {
+        "detail": "Beides kann den Schlaf stören und PMS verschlimmern. Versuchen Sie, eine Tasse Tee durch Kräutertee zu ersetzen.",
+        "subtitle": "Hält den Hormonhaushalt im Gleichgewicht",
+        "title": "Begrenzen Sie Koffein und Alkohol."
+      },
+      "5": {
+        "detail": "Lachs, Walnüsse und Leinsamen helfen, Entzündungen zu lindern und die Stimmung zu stabilisieren.",
+        "subtitle": "Unterstützt den Hormonhaushalt und lindert Krämpfe.",
+        "title": "Omega-3-Fettsäuren hinzufügen"
+      },
+      "6": {
+        "detail": "Eine Mahlzeit alle 3–4 Stunden hält den Blutzuckerspiegel und das Energieniveau konstant.",
+        "subtitle": "Lindert Übelkeit und Sodbrennen",
+        "title": "Kleinere, häufigere Mahlzeiten essen"
+      },
+      "7": {
+        "detail": "Eier, Fisch, Bohnen und griechischer Joghurt unterstützen Muskeln, Hormonhaushalt und das Sättigungsgefühl.",
+        "subtitle": "Unterstützt Wachstum und Erholung",
+        "title": "Hochwertiges Protein wählen"
+      },
+      "8": {
+        "detail": "Avocado, Olivenöl und Nüsse sind unerlässlich, Fett ist Treibstoff für Ihre Hormone.",
+        "subtitle": "Unterstützt den Hormonhaushalt und sorgt für strahlende Haut",
+        "title": "Erhöhen Sie den Anteil gesunder Fette"
+      }
+    },
+    "subtitle": "Lernen Sie clevere Ernährungstipps kennen, die Ihr allgemeines Wohlbefinden fördern.",
+    "title": "Essen"
+  },
+  "hair-skin": {
+    "items": {
+      "0": {
+        "detail": "Wählen Sie Ihr Reinigungsprodukt passend zu Ihrem Hauttyp: sanfte Gele für fettige Haut, cremige Formeln für trockene Haut.",
+        "subtitle": "Wählen Sie das richtige Reinigungsprodukt für Ihre Haut",
+        "title": "Wähle dein Gesichtsreinigungsmittel mit Bedacht"
+      },
+      "1": {
+        "detail": "Die abendliche Reinigung entfernt die Schadstoffe des Tages, sodass sich Ihre Haut im Schlaf regenerieren kann.",
+        "subtitle": "Vor dem Schlafengehen Schmutz und Make-up entfernen.",
+        "title": "Verwenden Sie Reinigungsmittel abends."
+      },
+      "2": {
+        "detail": "Jeden Morgen Sonnenschutzmittel mit mindestens Lichtschutzfaktor aufzutragen, ist die beste Anti-Aging-Gewohnheit, die man sich aneignen kann.",
+        "subtitle": "Täglicher Sonnenschutz ist unerlässlich.",
+        "title": "Sonnenschutzmittel aufbewahren"
+      },
+      "3": {
+        "detail": "Vitamin C am Morgen hilft, freie Radikale aus Sonne und Umweltverschmutzung zu neutralisieren.",
+        "subtitle": "Schütze die Haut vor Schäden",
+        "title": "Greifen Sie zu Antioxidantien"
+      },
+      "4": {
+        "detail": "Eine Retinoid- oder Peptidcreme, die abends angewendet wird, unterstützt die Kollagenbildung und die Zellerneuerung.",
+        "subtitle": "Regeneriere deine Haut im Schlaf",
+        "title": "Nachtpflegeroutine"
+      },
+      "5": {
+        "detail": "Verwenden Sie 1-2 Mal wöchentlich ein chemisches Peeling, verzichten Sie auf aggressive Peelings, die Mikroverletzungen verursachen.",
+        "subtitle": "Sanft peelen, nicht kräftig.",
+        "title": "Peeling ist wichtig"
+      },
+      "6": {
+        "detail": "Die Spülung versiegelt die Schuppenschicht, schließt die Feuchtigkeit ein und reduziert Haarbruch.",
+        "subtitle": "Unverzichtbar nach jeder Wäsche",
+        "title": "Pflegen Sie Ihr Haar"
+      },
+      "7": {
+        "detail": "Ein Spitzenschneiden alle 8–12 Wochen sorgt für gesunde Spitzen und ein dichteres Wachstum.",
+        "subtitle": "Verhindert Spliss",
+        "title": "Haare regelmäßig schneiden"
+      },
+      "8": {
+        "detail": "Cortisol löst Hautunreinheiten und Haarausfall aus. Schlaf, Atmung und Pausen spielen eine wichtige Rolle.",
+        "subtitle": "Stress wirkt sich auf Haut und Haare aus",
+        "title": "Entspannen und Stress abbauen"
+      }
+    },
+    "subtitle": "Entdecken Sie einfache Tipps für gesundes Haar und strahlende Haut.",
+    "title": "Haare & Haut"
+  },
+  "pms": {
+    "items": {
+      "0": {
+        "detail": "Vollwertige Lebensmittel mit einem gleichmäßigen Anteil an Proteinen und komplexen Kohlenhydraten lindern die Symptome während des gesamten Zyklus.",
+        "subtitle": "Unterstützt den Hormonhaushalt und reduziert Müdigkeit",
+        "title": "Befolgen Sie eine ausgewogene, nährstoffreiche Ernährung."
+      },
+      "1": {
+        "detail": "Schon ein 20-minütiger Spaziergang setzt Endorphine frei, die auf subtile Weise PMS-bedingte Stimmungstiefs ausgleichen.",
+        "subtitle": "Verbessert die Stimmung und lindert Krämpfe",
+        "title": "Regelmäßig Sport treiben"
+      },
+      "2": {
+        "detail": "Stress verstärkt jedes PMS-Symptom. Atemübungen und Ruhe sind unerlässlich.",
+        "subtitle": "Reduziert emotionale Symptome",
+        "title": "Stress effektiv bewältigen"
+      },
+      "3": {
+        "detail": "Es mag kontraintuitiv klingen, ist aber wahr: Mehr Wasser bedeutet weniger Wassereinlagerung.",
+        "subtitle": "Reduziert Blähungen und Beschwerden",
+        "title": "Bleiben Sie ausreichend hydriert."
+      },
+      "4": {
+        "detail": "Streben Sie 7–9 Stunden Schlaf an, insbesondere in der Lutealphase, wenn der Schlaf oft beeinträchtigt ist.",
+        "subtitle": "Verbessert Stimmung und Energie",
+        "title": "Sorgen Sie für ausreichend Schlaf."
+      },
+      "5": {
+        "detail": "Beides verschlimmert Angstzustände, Brustspannen und Schlafstörungen vor der Periode.",
+        "subtitle": "Beugt Schlaf- und Stimmungsproblemen vor",
+        "title": "Begrenzen Sie Koffein und Alkohol."
+      },
+      "6": {
+        "detail": "Für Magnesium, Vitamin B6 und Vitamin D gibt es solide wissenschaftliche Belege; sprechen Sie aber vorher mit Ihrem Arzt.",
+        "subtitle": "Hilft bei Krämpfen und Müdigkeit.",
+        "title": "Nehmen Sie essentielle Nahrungsergänzungsmittel ein."
+      },
+      "7": {
+        "detail": "Eine Wärmflasche oder ein Heizkissen auf dem Unterbauch kann bei Krämpfen die gleiche Wirkung wie rezeptfreie Schmerzmittel haben.",
+        "subtitle": "Lindert Krämpfe auf natürliche Weise",
+        "title": "Nutzen Sie Wärmetherapie zur Schmerzlinderung"
+      },
+      "8": {
+        "detail": "Beeren, fetter Fisch, Kurkuma und Blattgemüse lindern die Entzündungen, die Krämpfen zugrunde liegen.",
+        "subtitle": "Hilft, PMS-Schmerzen zu lindern",
+        "title": "Nehmen Sie entzündungshemmende Lebensmittel zu sich."
+      }
+    },
+    "subtitle": "Finden Sie effektive Wege, um PMS-Symptome zu lindern und sich jeden Monat besser zu fühlen.",
+    "title": "PMS"
+  },
+  "weight-loss": {
+    "items": {
+      "0": {
+        "detail": "Um den Blutzuckerspiegel stabil zu halten, sollten Sie Weißbrot und Gebäck durch Vollkornprodukte ersetzen.",
+        "subtitle": "Verhindert Blutzuckerspitzen und Gewichtszunahme",
+        "title": "Reduzieren Sie den Konsum von raffinierten Kohlenhydraten"
+      },
+      "1": {
+        "detail": "Eine handtellergroße Portion zu jeder Mahlzeit reduziert Heißhungerattacken und schützt die Muskulatur.",
+        "subtitle": "Hält satt und kurbelt den Stoffwechsel an",
+        "title": "Iss mehr Eiweiß"
+      },
+      "2": {
+        "detail": "Oft wird Durst mit Hunger verwechselt; beginnen Sie daher jede Mahlzeit mit einem Glas Wasser.",
+        "subtitle": "Unterstützt die Fettverbrennung und reduziert das Hungergefühl",
+        "title": "Trink mehr Wasser"
+      },
+      "3": {
+        "detail": "Zwei Krafttrainingseinheiten pro Woche verändern die Körperzusammensetzung stärker als endloses Ausdauertraining.",
+        "subtitle": "Baut Muskeln auf und verbrennt mehr Kalorien",
+        "title": "Widerstandstraining hinzufügen"
+      },
+      "4": {
+        "detail": "Für die Herzgesundheit sollten Sie gleichmäßige Spaziergänge mit kurzen, intensiveren Belastungsphasen kombinieren.",
+        "subtitle": "Verbrennt Kalorien und verbessert die Fitness",
+        "title": "Mehr Ausdauertraining"
+      },
+      "5": {
+        "detail": "Streben Sie täglich 25–30 g aus Gemüse, Hülsenfrüchten, Obst und Vollkornprodukten an.",
+        "subtitle": "Hält länger satt",
+        "title": "Ballaststoffreich essen"
+      },
+      "6": {
+        "detail": "Vollwertige Lebensmittel enthalten Nährstoffe; verarbeitete Lebensmittel enthalten meist unnötige Zusatzstoffe.",
+        "subtitle": "Reduziert leere Kalorien",
+        "title": "Begrenzen Sie den Konsum von verarbeiteten Lebensmitteln und Zucker."
+      },
+      "7": {
+        "detail": "Entschleunige, keine Bildschirme, dein Gehirn braucht etwa 20 Minuten, um Sättigung zu registrieren.",
+        "subtitle": "Verhindert übermäßiges Essen",
+        "title": "Praktiziere Achtsamkeitsessen"
+      },
+      "8": {
+        "detail": "Weniger als 7 Stunden Schlaf erhöhen den Ghrelinspiegel und senken die Willenskraft. Schlaf ist ein Mittel zur Gewichtsreduktion.",
+        "subtitle": "Gleicht die Hungerhormone aus",
+        "title": "Sorgen Sie für ausreichend Schlaf."
+      }
+    },
+    "subtitle": "Erhalten Sie praktische Tipps für ein gesundes und nachhaltiges Gewichtsmanagement.",
+    "title": "Gewichtsverlust"
+  }
+}

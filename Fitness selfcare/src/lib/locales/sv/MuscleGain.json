@@ -1,0 +1,253 @@
+{
+  "nav": {
+    "back": "Tillbaka till instrumentpanelen"
+  },
+  "header": {
+    "title": "Guide till muskeltillväxt",
+    "subtitle": "Vetenskapsbaserad metod för att bygga muskler och styrka"
+  },
+  "tabs": {
+    "plan": "Tillväxtplanen",
+    "metrics": "Logg för kroppsstatistik",
+    "habits": "Hypertrofivanor"
+  },
+  "plan": {
+    "pillars": {
+      "caloric": {
+        "title": "Kaloriöverskott",
+        "value": "TDEE + 250 till 500 kcal",
+        "desc": "Din kropp behöver extra energi för att bygga ny muskelvävnad. För lite och du växer inte; för mycket och du lägger på dig onödigt fett. Sikta på 250-500 kcal över din totala dagliga energiförbrukning (TDEE)."
+      },
+      "protein": {
+        "title": "Proteinsyntes",
+        "value": "1,8 g till 2,2 g per kg",
+        "desc": "Protein är musklernas byggsten. Forskning visar att 1,8–2,2 g protein per kilogram kroppsvikt maximerar muskelproteinsyntes och återhämtning."
+      },
+      "overload": {
+        "title": "Progressiv överbelastning",
+        "value": "Veckovis progression",
+        "desc": "Muskler växer som svar på ökande krav. Varje vecka, sikta på att öka vikten, antalet repetitioner eller set. Spåra din totala volym (set × repetitioner × vikt) för att säkerställa en konsekvent progression."
+      }
+    },
+    "mealTiming": {
+      "title": "Måltidstider för muskeltillväxt",
+      "subtitle": "Även om det totala dagliga intaget är viktigast, kan strategisk timing optimera prestation och återhämtning:",
+      "preWorkoutLong": {
+        "time": "2–3 timmar innan",
+        "title": "Före träning",
+        "desc": "Balanserad måltid med kolhydrater och protein"
+      },
+      "preWorkoutCarbs": {
+        "time": "30-60 minuter innan",
+        "title": "Kolhydrater före träning",
+        "desc": "Snabba kolhydrater för energi (banan, riskakor)"
+      },
+      "training": {
+        "time": "Under",
+        "title": "Utbildning",
+        "desc": "Vätskebalans + valfria kolhydrater under träning"
+      },
+      "postWorkout": {
+        "time": "Inom 2 timmar",
+        "title": "Protein efter träning",
+        "desc": "30-40 g protein + kolhydrater för återhämtning"
+      },
+      "eveningProtein": {
+        "time": "Före sänggåendet",
+        "title": "Kvällsprotein",
+        "desc": "Kasein eller långsamt smältande protein"
+      }
+    },
+    "principles": {
+      "title": "Viktiga principer för framgång",
+      "p1": {
+        "title": "Konsekvens överträffar perfektion:",
+        "desc": "Att missa ett träningspass eller en måltid kommer inte att döda vinster, men inkonsekvens gör det."
+      },
+      "p2": {
+        "title": "Sömn är anabolt:",
+        "desc": "Sikta på 7–9 timmar per natt för optimal återhämtning och frisättning av tillväxthormon."
+      },
+      "p3": {
+        "title": "Spåra din volym:",
+        "desc": "Det som mäts förbättras – logga dina lyft för att säkerställa progressiv överbelastning"
+      },
+      "p4": {
+        "title": "Tålamod krävs:",
+        "desc": "Naturlig muskeltillväxt är 0,5-1 kg per månad för nybörjare, långsammare för avancerade lyftare"
+      }
+    }
+  },
+  "metrics": {
+    "strength": {
+      "totalVolume": "Total veckovolym",
+      "volumeTarget": "Volymmål för {{weight}}kg kroppsmassa",
+      "kgLifted": "kg lyfta",
+      "goal": "av {{goal}}kg mål",
+      "awayFromTarget": "Du är {{gap}} kg ifrån din målvikts arbetskapacitet",
+      "setTarget": "Ställ in din målvikt nedan för att se ditt volymmål",
+      "statusLabels": {
+        "setTarget": "Ställ in målvikt",
+        "building": "Byggnadsgrund",
+        "growth": "Tillväxtzon",
+        "hit": "Målkapacitetsträff"
+      }
+    },
+    "form": {
+      "title": "Mått på stockkroppen",
+      "currentWeight": "Nuvarande vikt (kg)",
+      "targetWeight": "Målvikt (kg) *",
+      "targetWeightHint": "Ställer in volymmål",
+      "chest": "Bröst (tum)",
+      "chestHint": "Mät vid bröstvårtlinjen",
+      "waist": "Midja (tum)",
+      "waistHint": "På navelnivå",
+      "bicepR": "Höger biceps (tum)",
+      "bicepRHint": "Böjd, bredaste delen",
+      "bicepL": "Vänster biceps (tum)",
+      "bicepLHint": "Frivillig",
+      "thigh": "Lår (tum)",
+      "thighHint": "Bredaste delen",
+      "submit": "Loggmätningar",
+      "success": "Mätvärden har loggats!",
+      "placeholders": {
+        "weight": "t.ex. 75",
+        "targetWeight": "t.ex. 85",
+        "chest": "t.ex. 40",
+        "waist": "Valfritt",
+        "bicep": "t.ex. 15",
+        "bicepL": "Samma som höger",
+        "thigh": "Valfritt"
+      }
+    },
+    "volume": {
+      "title": "Volymkalkylator",
+      "exercise": "Utöva",
+      "sets": "Set",
+      "reps": "Representanter",
+      "weight": "Vikt (kg)",
+      "totalVolume": "Total volym",
+      "remaining": "Återstående för mål",
+      "recentLifts": "Senaste lyften",
+      "submit": "Loggvolym",
+      "logged": "{{lift}} loggad: {{volume}}kg total volym!",
+      "placeholders": {
+        "sets": "t.ex. 4",
+        "reps": "t.ex. 8",
+        "weight": "t.ex. 80"
+      }
+    },
+    "chart": {
+      "title": "Framstegsdiagram",
+      "weight": "Vikt (kg)",
+      "chest": "Bröst (tum)",
+      "bicep": "Biceps (tum)"
+    },
+    "noData": "Inga mätningar loggade än. Börja spåra för att se dina framsteg!"
+  },
+  "habits": {
+    "title": "Dagens hypertrofivavanor",
+    "subtitle": "Bocka av varje vana när du fullbordar den",
+    "items": {
+      "surplus": {
+        "title": "Kaloriöverskott Met",
+        "desc": "Nå ditt kalorimål idag"
+      },
+      "protein": {
+        "title": "Proteinmål uppnått",
+        "desc": "1,8–2,2 g per kg kroppsvikt"
+      },
+      "creatine": {
+        "title": "Kreatin intaget",
+        "desc": "3–5 g dagligen för förbättrad prestation"
+      },
+      "sleep": {
+        "title": "Kvalitetssömn",
+        "desc": "7–9 timmar för optimal återhämtning"
+      },
+      "trained": {
+        "title": "Tränade idag",
+        "desc": "Avslutade ditt träningspass"
+      }
+    },
+    "recovery": {
+      "title": "Återställningsstatus",
+      "good": "Återställningsoptimerad",
+      "goodDesc": "Bra jobbat med sömn och protein! Dina muskler återhämtar sig optimalt.",
+      "improve": "Plats för förbättring",
+      "improveDesc": "Fokusera på sömn och att nå ditt proteinmål för bättre återhämtning."
+    },
+    "calendar": {
+      "title": "30-dagars vanesvit",
+      "tooltip": "Dag {{day}}: {{count}}/5 vanor",
+      "legend": {
+        "perfect": "Perfekt (5/5)",
+        "partial": "Partiell",
+        "none": "Ofullständig"
+      }
+    }
+  },
+  "essentials": {
+    "title": "Hypertrofi Essentials",
+    "tips": {
+      "rest": {
+        "title": "Muskler byggs upp under vila:",
+        "desc": "Sömn och näring är när tillväxt sker, inte i gymmet"
+      },
+      "protein": {
+        "title": "Proteintiming spelar mindre roll än totalt:",
+        "desc": "Fokusera på att nå ditt dagliga mål, timing är sekundär"
+      },
+      "track": {
+        "title": "Spåra allt:",
+        "desc": "Vikt, mått och volym - data visar framsteg som du inte kan se i spegeln"
+      },
+      "creatine": {
+        "title": "Kreatin är bevisat:",
+        "desc": "3-5g dagligen ökar styrkan och mager massa utan biverkningar för de flesta"
+      }
+    }
+  },
+  "exercises": {
+    "squat": "Squat",
+    "deadlift": "Marklyft",
+    "benchPress": "Bänkpress",
+    "overheadPress": "Overheadpress",
+    "barbellRow": "Skivstångsraden",
+    "pullUp": "Dra upp",
+    "chinUp": "Haka upp",
+    "latPulldown": "Lat Pulldown",
+    "seatedCableRow": "Sittande kabelrad",
+    "dumbbellRow": "Hantelrad",
+    "romanianDeadlift": "Rumänsk marklyft",
+    "hipThrust": "Hip Thrust",
+    "lunge": "Utfall",
+    "bulgarianSplitSquat": "Bulgarian Split Squat",
+    "legPress": "Benpress",
+    "legExtension": "Benförlängning",
+    "legCurl": "Ben Curl",
+    "calfRaise": "Kalvhöjning",
+    "gluteBridge": "Glute Bridge",
+    "pushUp": "Tryck upp",
+    "inclineDumbbellPress": "Incline Hantel Press",
+    "dips": "Dips",
+    "chestFly": "Bröstfluga",
+    "lateralRaise": "Lateral höjning",
+    "rearDeltFly": "Bakre Delt Fly",
+    "facePull": "Face Pull",
+    "bicepCurl": "Bicep Curl",
+    "hammerCurl": "Hammer Curl",
+    "tricepPushdown": "Triceps Pushdown",
+    "skullCrusher": "Skull Crusher",
+    "plank": "Planka",
+    "hangingLegRaise": "Hängande benhöjning",
+    "russianTwist": "Rysk twist",
+    "farmerCarry": "Farmer Carry",
+    "shrug": "Rycka på axlarna",
+    "arnoldPress": "Arnold Press",
+    "frontSquat": "Front Squat",
+    "sumoDeadlift": "Sumo marklyft",
+    "gobletSquat": "Goblet Squat",
+    "stepUp": "Stega upp"
+  }
+}

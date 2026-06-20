@@ -1,0 +1,206 @@
+{
+  "food": {
+    "items": {
+      "0": {
+        "detail": "Lentils, spinach, pumpkin seeds, and lean meats restore energy through your cycle.",
+        "subtitle": "Helps reduce PMS fatigue & weakness",
+        "title": "Eat Iron & Zinc-Rich Foods"
+      },
+      "1": {
+        "detail": "Dairy, fortified plant milks, and leafy greens give your bones long-term protection.",
+        "subtitle": "Supports bones & reduces PMS symptoms",
+        "title": "Boost Calcium Intake"
+      },
+      "2": {
+        "detail": "Processed sugar spikes inflammation, a quiet driver of cramps and low moods.",
+        "subtitle": "Reduces inflammation & mood swings",
+        "title": "Avoid Sugar & Fried Foods"
+      },
+      "3": {
+        "detail": "Lower sodium = less water retention, especially in the days before your period.",
+        "subtitle": "Helps prevent bloating",
+        "title": "Cut Down on Salt"
+      },
+      "4": {
+        "detail": "Both can disrupt sleep and worsen PMS. Try swapping one cup for herbal tea.",
+        "subtitle": "Keeps hormones balanced",
+        "title": "Limit Caffeine & Alcohol"
+      },
+      "5": {
+        "detail": "Salmon, walnuts, and flaxseed help calm inflammation and steady moods.",
+        "subtitle": "Supports hormones & reduces cramps",
+        "title": "Add Omega-3 Fatty Acids"
+      },
+      "6": {
+        "detail": "Eating every 3–4 hours keeps blood sugar, and energy, steady.",
+        "subtitle": "Reduces nausea & acidity",
+        "title": "Eat Smaller, Frequent Meals"
+      },
+      "7": {
+        "detail": "Eggs, fish, beans, and Greek yogurt help muscles, hormones, and satiety.",
+        "subtitle": "Supports growth & recovery",
+        "title": "Choose High-Quality Protein"
+      },
+      "8": {
+        "detail": "Avocado, olive oil, and nuts are essential, fat is fuel for your hormones.",
+        "subtitle": "Supports hormones & glowing skin",
+        "title": "Increase Healthy Fats"
+      }
+    },
+    "subtitle": "Learn smart nutrition tips to support your overall wellness.",
+    "title": "Food"
+  },
+  "hair-skin": {
+    "items": {
+      "0": {
+        "detail": "Match your cleanser to your skin type, gentle gels for oily skin, creamy formulas for dry skin.",
+        "subtitle": "Pick the right cleanser for your skin",
+        "title": "Choose Your Face Wash Smartly"
+      },
+      "1": {
+        "detail": "Cleansing at night clears the day's pollutants so your skin can repair while you sleep.",
+        "subtitle": "Remove dirt & makeup before bed",
+        "title": "Go for Cleansers at Night"
+      },
+      "2": {
+        "detail": "SPF 30+ every morning is the single best anti-aging habit you can build.",
+        "subtitle": "Daily sun protection is essential",
+        "title": "Hold Onto Sunscreens"
+      },
+      "3": {
+        "detail": "Vitamin C in the morning helps neutralize free radicals from sun and pollution.",
+        "subtitle": "Protect skin from damage",
+        "title": "Go for Antioxidants"
+      },
+      "4": {
+        "detail": "A retinoid or peptide cream at night supports collagen and cell turnover.",
+        "subtitle": "Repair skin while you sleep",
+        "title": "Night Care Routine"
+      },
+      "5": {
+        "detail": "Use a chemical exfoliant 1–2x weekly, skip harsh scrubs that cause micro-tears.",
+        "subtitle": "Exfoliate gently, not harshly",
+        "title": "Exfoliation Is Important"
+      },
+      "6": {
+        "detail": "Conditioner seals the cuticle, locking in moisture and reducing breakage.",
+        "subtitle": "Essential after every wash",
+        "title": "Condition Your Hair"
+      },
+      "7": {
+        "detail": "A trim every 8–12 weeks keeps ends healthy and growth looking thicker.",
+        "subtitle": "Prevent split ends",
+        "title": "Trim Your Hair Regularly"
+      },
+      "8": {
+        "detail": "Cortisol triggers breakouts and shedding. Sleep, breath, and breaks all count.",
+        "subtitle": "Stress impacts skin & hair",
+        "title": "Relax and De-Stress"
+      }
+    },
+    "subtitle": "Discover simple tips for healthy hair and glowing skin.",
+    "title": "Hair & Skin"
+  },
+  "pms": {
+    "items": {
+      "0": {
+        "detail": "Whole foods with steady protein and complex carbs ease symptoms across the cycle.",
+        "subtitle": "Supports hormones & reduces fatigue",
+        "title": "Follow a Balanced, Nutrient-Rich Diet"
+      },
+      "1": {
+        "detail": "Even a 20-minute walk releases endorphins that quietly counter PMS lows.",
+        "subtitle": "Boost mood & eases cramps",
+        "title": "Exercise Regularly"
+      },
+      "2": {
+        "detail": "Stress amplifies every PMS symptom. Breathwork and rest are non-negotiable.",
+        "subtitle": "Reduces emotional symptoms",
+        "title": "Manage Stress Effectively"
+      },
+      "3": {
+        "detail": "Counterintuitive but true, more water means less water retention.",
+        "subtitle": "Reduces bloating & discomfort",
+        "title": "Stay Well Hydrated"
+      },
+      "4": {
+        "detail": "Aim for 7–9 hours, especially in the luteal phase when sleep often suffers.",
+        "subtitle": "Improves mood & energy",
+        "title": "Get Sufficient Sleep"
+      },
+      "5": {
+        "detail": "Both worsen anxiety, breast tenderness, and disrupted sleep before your period.",
+        "subtitle": "Prevents sleep & mood issues",
+        "title": "Limit Caffeine & Alcohol"
+      },
+      "6": {
+        "detail": "Magnesium, B6, and vitamin D have solid evidence, talk to your clinician first.",
+        "subtitle": "Helps with cramps & fatigue",
+        "title": "Take Essential Supplements"
+      },
+      "7": {
+        "detail": "A heating pad on the lower belly can match over-the-counter pain relievers for cramps.",
+        "subtitle": "Eases cramps naturally",
+        "title": "Use Heat Therapy for Pain Relief"
+      },
+      "8": {
+        "detail": "Berries, fatty fish, turmeric, and leafy greens calm the inflammation behind cramps.",
+        "subtitle": "Helps reduce PMS pain",
+        "title": "Include Anti-Inflammatory Foods"
+      }
+    },
+    "subtitle": "Find effective ways to manage PMS symptoms and feel better each month.",
+    "title": "PMS"
+  },
+  "weight-loss": {
+    "items": {
+      "0": {
+        "detail": "Swap white bread and pastries for whole grains to keep blood sugar steady.",
+        "subtitle": "Prevents sugar spikes & fat gain",
+        "title": "Cut Down on Refined Carbs"
+      },
+      "1": {
+        "detail": "A palm-sized portion at every meal reduces cravings and protects muscle.",
+        "subtitle": "Keeps you full & boosts metabolism",
+        "title": "Eat More Protein"
+      },
+      "2": {
+        "detail": "Often, thirst masquerades as hunger, start each meal with a glass of water.",
+        "subtitle": "Supports fat burning & reduces hunger",
+        "title": "Drink More Water"
+      },
+      "3": {
+        "detail": "Two strength sessions a week change body composition more than endless cardio.",
+        "subtitle": "Builds muscle & burns more calories",
+        "title": "Add Resistance Training"
+      },
+      "4": {
+        "detail": "Mix steady walks with short bursts of higher intensity for heart health.",
+        "subtitle": "Burns calories & improves fitness",
+        "title": "Do More Cardio"
+      },
+      "5": {
+        "detail": "Aim for 25–30g daily from veggies, legumes, fruit, and whole grains.",
+        "subtitle": "Keeps you full for longer",
+        "title": "Fill Up on Fiber"
+      },
+      "6": {
+        "detail": "Whole foods carry nutrients; processed foods carry mostly extras you don't need.",
+        "subtitle": "Cuts empty calories",
+        "title": "Limit Processed Foods & Sugar"
+      },
+      "7": {
+        "detail": "Slow down, no screens, your brain needs ~20 minutes to register fullness.",
+        "subtitle": "Prevents overeating",
+        "title": "Practice Mindful Eating"
+      },
+      "8": {
+        "detail": "Less than 7 hours pushes ghrelin up and willpower down. Sleep is a weight tool.",
+        "subtitle": "Balances hunger hormones",
+        "title": "Get Enough Sleep"
+      }
+    },
+    "subtitle": "Get practical tips for healthy and sustainable weight management.",
+    "title": "Weight Loss"
+  }
+}

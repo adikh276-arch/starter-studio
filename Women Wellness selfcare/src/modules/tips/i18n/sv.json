@@ -1,0 +1,206 @@
+{
+  "food": {
+    "items": {
+      "0": {
+        "detail": "Linser, spenat, pumpafrön och magert kött återställer energi genom din cykel.",
+        "subtitle": "Hjälper till att minska PMS-trötthet och svaghet",
+        "title": "Ät järn- och zinkrika livsmedel"
+      },
+      "1": {
+        "detail": "Mejeriprodukter, berikade växtmjölkprodukter och bladgrönsaker ger dina ben ett långsiktigt skydd.",
+        "subtitle": "Stödjer skelettet och minskar PMS-symtom",
+        "title": "Öka kalciumintaget"
+      },
+      "2": {
+        "detail": "Bearbetat socker ökar inflammation, en tyst drivkraft för kramper och nedstämdhet.",
+        "subtitle": "Minskar inflammation och humörsvängningar",
+        "title": "Undvik socker och stekt mat"
+      },
+      "3": {
+        "detail": "Lägre natrium = mindre vätskeretention, särskilt dagarna före mens.",
+        "subtitle": "Hjälper till att förhindra uppblåsthet",
+        "title": "Minska saltpåslaget"
+      },
+      "4": {
+        "detail": "Båda kan störa sömnen och förvärra PMS. Försök att byta ut en kopp mot örtte.",
+        "subtitle": "Håller hormonerna i balans",
+        "title": "Begränsa koffein och alkohol"
+      },
+      "5": {
+        "detail": "Lax, valnötter och linfrön hjälper till att lugna inflammation och stabilisera humöret.",
+        "subtitle": "Stödjer hormoner och minskar kramper",
+        "title": "Tillsätt omega-3-fettsyror"
+      },
+      "6": {
+        "detail": "Att äta var 3–4:e timme håller blodsockret och energin stabil.",
+        "subtitle": "Minskar illamående och surhet",
+        "title": "Ät mindre, tätare måltider"
+      },
+      "7": {
+        "detail": "Ägg, fisk, bönor och grekisk yoghurt hjälper muskler, hormoner och mättnadskänsla.",
+        "subtitle": "Stödjer tillväxt och återhämtning",
+        "title": "Välj högkvalitativt protein"
+      },
+      "8": {
+        "detail": "Avokado, olivolja och nötter är viktiga, fett är bränsle för dina hormoner.",
+        "subtitle": "Stödjer hormoner och strålande hud",
+        "title": "Öka hälsosamma fetter"
+      }
+    },
+    "subtitle": "Lär dig smarta kosttips för att stödja ditt allmänna välbefinnande.",
+    "title": "Mat"
+  },
+  "hair-skin": {
+    "items": {
+      "0": {
+        "detail": "Matcha din rengöring efter din hudtyp, milda geler för fet hud, krämiga formler för torr hud.",
+        "subtitle": "Välj rätt rengöringsmedel för din hud",
+        "title": "Välj din ansiktstvätt smart"
+      },
+      "1": {
+        "detail": "Rengöring på natten rengör dagens föroreningar så att din hud kan reparera sig medan du sover.",
+        "subtitle": "Ta bort smuts och smink före sänggåendet",
+        "title": "Använd rengöringsmedel på natten"
+      },
+      "2": {
+        "detail": "SPF 30+ varje morgon är den absolut bästa anti-aging-vanan du kan bygga upp.",
+        "subtitle": "Dagligt solskydd är viktigt",
+        "title": "Håll fast vid solskyddsmedel"
+      },
+      "3": {
+        "detail": "C-vitamin på morgonen hjälper till att neutralisera fria radikaler från sol och föroreningar.",
+        "subtitle": "Skydda huden mot skador",
+        "title": "Satsa på antioxidanter"
+      },
+      "4": {
+        "detail": "En retinoid- eller peptidkräm på natten stödjer kollagen och cellomsättning.",
+        "subtitle": "Reparera huden medan du sover",
+        "title": "Nattvårdsrutin"
+      },
+      "5": {
+        "detail": "Använd en kemisk exfoliering 1–2 gånger i veckan, hoppa över starka skrubber som orsakar mikrorisp.",
+        "subtitle": "Exfoliera försiktigt, inte hårt",
+        "title": "Exfoliering är viktigt"
+      },
+      "6": {
+        "detail": "Balsam förseglar nagelbanden, låser in fukten och minskar risken för att håret ska brytas.",
+        "subtitle": "Viktigt efter varje tvätt",
+        "title": "Konditionera ditt hår"
+      },
+      "7": {
+        "detail": "En trimning var 8–12:e vecka håller topparna friska och utväxten tjockare.",
+        "subtitle": "Förhindra kluvna toppar",
+        "title": "Trimma håret regelbundet"
+      },
+      "8": {
+        "detail": "Kortisol utlöser utbrott och håravfall. Sömn, andning och rashguards räknas alla.",
+        "subtitle": "Stress påverkar hud och hår",
+        "title": "Slappna av och stressa av"
+      }
+    },
+    "subtitle": "Upptäck enkla tips för friskt hår och strålande hud.",
+    "title": "Hår och hud"
+  },
+  "pms": {
+    "items": {
+      "0": {
+        "detail": "Hela livsmedel med stabilt protein och komplexa kolhydrater lindrar symtomen under hela cykeln.",
+        "subtitle": "Stödjer hormoner och minskar trötthet",
+        "title": "Följ en balanserad, näringsrik kost"
+      },
+      "1": {
+        "detail": "Även en 20-minuters promenad frigör endorfiner som tyst motverkar PMS-låg nivåer.",
+        "subtitle": "Ökar humöret och lindrar kramper",
+        "title": "Träna regelbundet"
+      },
+      "2": {
+        "detail": "Stress förstärker alla PMS-symtom. Andning och vila är inte förhandlingsbara.",
+        "subtitle": "Minskar känslomässiga symtom",
+        "title": "Hantera stress effektivt"
+      },
+      "3": {
+        "detail": "Motintuitivt men sant, mer vatten innebär mindre vätskeretention.",
+        "subtitle": "Minskar uppblåsthet och obehag",
+        "title": "Håll dig välhydrerad"
+      },
+      "4": {
+        "detail": "Sikta på 7–9 timmar, särskilt i lutealfasen då sömnen ofta blir lidande.",
+        "subtitle": "Förbättrar humör och energi",
+        "title": "Få tillräckligt med sömn"
+      },
+      "5": {
+        "detail": "Båda förvärrar ångest, ömhet i brösten och störd sömn före mensen.",
+        "subtitle": "Förebygger sömn- och humörproblem",
+        "title": "Begränsa koffein och alkohol"
+      },
+      "6": {
+        "detail": "Magnesium, B6 och vitamin D har starka bevis, tala med din läkare först.",
+        "subtitle": "Hjälper mot kramper och trötthet",
+        "title": "Ta viktiga kosttillskott"
+      },
+      "7": {
+        "detail": "En värmedyna på nedre delen av magen kan matcha receptfria smärtstillande medel mot kramper.",
+        "subtitle": "Lindrar kramper naturligt",
+        "title": "Använd värmeterapi för smärtlindring"
+      },
+      "8": {
+        "detail": "Bär, fet fisk, gurkmeja och bladgrönsaker lugnar inflammationen bakom kramper.",
+        "subtitle": "Hjälper till att minska PMS-smärta",
+        "title": "Inkludera antiinflammatoriska livsmedel"
+      }
+    },
+    "subtitle": "Hitta effektiva sätt att hantera PMS-symtom och må bättre varje månad.",
+    "title": "PMS"
+  },
+  "weight-loss": {
+    "items": {
+      "0": {
+        "detail": "Byt ut vitt bröd och bakverk mot fullkorn för att hålla blodsockret stabilt.",
+        "subtitle": "Förhindrar sockertoppar och fettuppgång",
+        "title": "Minska intaget av raffinerade kolhydrater"
+      },
+      "1": {
+        "detail": "En handflatstor portion vid varje måltid minskar suget och skyddar musklerna.",
+        "subtitle": "Håller dig mätt och ökar ämnesomsättningen",
+        "title": "Ät mer protein"
+      },
+      "2": {
+        "detail": "Ofta maskerar törst sig som hunger, börja varje måltid med ett glas vatten.",
+        "subtitle": "Stödjer fettförbränning och minskar hunger",
+        "title": "Drick mer vatten"
+      },
+      "3": {
+        "detail": "Två styrkepass i veckan förändrar kroppssammansättningen mer än oändlig konditionsträning.",
+        "subtitle": "Bygger muskler och förbränner fler kalorier",
+        "title": "Lägg till styrketräning"
+      },
+      "4": {
+        "detail": "Blanda stadiga promenader med korta utbrott med högre intensitet för hjärthälsan.",
+        "subtitle": "Förbränner kalorier och förbättrar konditionen",
+        "title": "Gör mer konditionsträning"
+      },
+      "5": {
+        "detail": "Sikta på 25–30 g dagligen från grönsaker, baljväxter, frukt och fullkorn.",
+        "subtitle": "Håller dig mätt längre",
+        "title": "Fyll på med fiber"
+      },
+      "6": {
+        "detail": "Hela livsmedel innehåller näringsämnen; processade livsmedel innehåller oftast extra näringsämnen som du inte behöver.",
+        "subtitle": "Minskar tomma kalorier",
+        "title": "Begränsa bearbetade livsmedel och socker"
+      },
+      "7": {
+        "detail": "Sakta ner, inga skärmar, din hjärna behöver ~20 minuter för att registrera mättnad.",
+        "subtitle": "Förhindrar överätning",
+        "title": "Öva medveten ätning"
+      },
+      "8": {
+        "detail": "Mindre än 7 timmar ökar ghrelinnivåerna och minskar viljestyrkan. Sömn är ett viktverktyg.",
+        "subtitle": "Balanserar hungerhormonerna",
+        "title": "Get Enough Sleep"
+      }
+    },
+    "subtitle": "Get practical tips for healthy and sustainable weight management.",
+    "title": "Weight Loss"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "header": {
+    "title": "Πόροι Αυτοφροντίδας",
+    "subtitle": "Εξερευνήστε εργαλεία και οδηγίες για το ταξίδι σας στην ευεξία"
+  },
+  "sections": {
+    "tips": "Συμβουλές",
+    "support": "Βρείτε υποστήριξη για την υγεία σας",
+    "trackers": "Ιχνηλάτες",
+    "resources": "Πόροι",
+    "understanding": "Understanding"
+  },
+  "common": {
+    "back": "Πίσω",
+    "back_to": "Πίσω στο",
+    "chapter": "Κεφάλαιο",
+    "min_read": "λεπτά ανάγνωσης",
+    "sections": "sections",
+    "keep_exploring": "Συνεχίστε την εξερεύνηση",
+    "more_on": "Περισσότερα για",
+    "browse_more": "Περιηγηθείτε σε ιχνηλάτες, άρθρα, συμβουλές και ιστορίες που έχουν επιμεληθεί για αυτό το θέμα.",
+    "words": "words",
+    "curated_by": "Επιμέλεια από",
+    "the": "Ο",
+    "library": "Βιβλιοθήκη",
+    "up_next": "Επόμενο",
+    "back_to_top": "Επιστροφή στην κορυφή",
+    "curated_for": "Επιμελημένο για",
+    "featured_read": "Προτεινόμενα Ανάγνωσμα",
+    "read_article": "Διαβάστε το άρθρο",
+    "issue_no": "Τεύχος αριθ.",
+    "article": "Αρθρο",
+    "practices": "practices",
+    "practice": "Πρακτική",
+    "community_story": "Ιστορία της Κοινότητας",
+    "misconception_no": "Παρανόηση Αρ.",
+    "the_myth": "Ο Μύθος",
+    "the_truth": "Η Αλήθεια"
+  },
+  "resource_taglines": {
+    "articles": "Εκτενές κείμενο, γραμμένο με προσοχή και ελεγμένο από ειδικούς.",
+    "tips": "Μικρές, πρακτικές αλλαγές που μπορείτε να ενσωματώσετε στην ημέρα σας.",
+    "stories": "Ειλικρινείς σκέψεις από ανθρώπους που έχουν περπατήσει σε αυτό το μονοπάτι.",
+    "myths": "Συνήθεις παρανοήσεις, διορθωμένες με ήπια στοιχεία."
+  },
+  "resource_eyebrows": {
+    "articles": "Η Βιβλιοθήκη",
+    "tips": "Καθημερινή Πρακτική",
+    "stories": "Με τα λόγια τους",
+    "myths": "Θέτοντας το θέμα στα ίσια"
+  },
+  "resources": {
+    "articles": "Άρθρα",
+    "tips": "Συμβουλές",
+    "stories": "Ιστορίες",
+    "myths": "Μύθοι"
+  },
+  "modules": {
+    "pcos": "Σύνδρομο πολυκυστικών ωοθηκών (PCOS)",
+    "reproductive-health": "Αναπαραγωγική Υγεία",
+    "medical-conditions": "Ιατρικές Παθήσεις",
+    "nutrition-weight": "Διατροφή & Βάρος",
+    "pregnancy-postpartum": "Εγκυμοσύνη & Μετά τον τοκετό",
+    "mental-health": "Ψυχική Υγεία",
+    "fertility": "Γονιμότητα",
+    "menopause": "Εμμηνόπαυση"
+  },
+  "tips": {
+    "hair-skin": "Μαλλιά & Δέρμα",
+    "food": "Τροφή",
+    "weight-loss": "Απώλεια βάρους",
+    "pms": "Προεμμηνορροϊκό σύνδρομο"
+  },
+  "trackers": {
+    "energy": "Energy",
+    "sleep": "Sleep",
+    "self_care": "Self Care",
+    "bmi": "BMI",
+    "physical_activity": "Physical Activity",
+    "mood": "Mood"
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "index": {
+    "tagline": "Zhluboka se nadechni 🌿",
+    "title": "Zvládejte svůj stres",
+    "description": "Jednoduché denní návyky, které vám pomohou cítit se klidněji a mít větší kontrolu.",
+    "sectionTitle": "Denní tipy na uvolnění stresu"
+  },
+  "tip": {
+    "sleep": {
+      "title": "Dopřejte si klidný spánek",
+      "description": "Snažte se spát 7–9 hodin každou noc. Snažte se spát a vstávat každý den ve stejnou dobu.",
+      "why": "Spánek pomáhá mozku a tělu zotavit se a snižuje hladinu stresových hormonů.",
+      "do": {
+        "0": "Udržujte pevný spánkový režim",
+        "1": "Vyhýbejte se obrazovkám hodinu před spaním",
+        "2": "Udržujte místnost chladnou a tmavou",
+        "3": "Vyhýbejte se kofeinu po 16. hodině"
+      },
+      "button": "Nastavte připomínku spánku"
+    },
+    "breathing": {
+      "title": "Procvičujte hluboké dýchání",
+      "description": "Věnujte pár minut soustředění na svůj dech. Pomalé dýchání snižuje úzkost.",
+      "why": "Pomalé dýchání aktivuje relaxační reakci vašeho těla.",
+      "do": {
+        "0": "Nadechněte se na 4 sekundy",
+        "1": "Držte 4 sekundy",
+        "2": "Vydechni na 4 sekundy",
+        "3": "Opakujte 1 minutu"
+      }
+    },
+    "exercise": {
+      "title": "Pohybujte tělem",
+      "description": "Lehká chůze nebo protahování pomáhá uvolnit stres a zlepšit náladu.",
+      "why": "Cvičení uvolňuje endorfiny a zlepšuje náladu.",
+      "do": {
+        "0": "15 minut chůze",
+        "1": "Lehké protahování",
+        "2": "Krátká lekce jógy",
+        "3": "Rychlé domácí cvičení"
+      }
+    },
+    "caffeine": {
+      "title": "Omezte kofein a cukr",
+      "description": "Příliš mnoho kofeinu a cukru může zvýšit úzkost a narušit spánek.",
+      "why": "Příliš mnoho kofeinu a cukru zvyšuje úzkost a problémy se spánkem.",
+      "do": {
+        "0": "Nahraďte jednu kávu bylinným čajem",
+        "1": "Pij víc vody",
+        "2": "Omezte sladké svačiny",
+        "3": "Vyhýbejte se kofeinu pozdě během dne"
+      }
+    },
+    "planning": {
+      "title": "Naplánujte si den",
+      "description": "Rozdělte velké úkoly na menší kroky, abyste se vyhnuli pocitu zahlcení.",
+      "why": "Plánování snižuje mentální nepořádek a přetížení.",
+      "do": {
+        "0": "Napiš 3 hlavní úkoly",
+        "1": "Rozdělte úkoly na malé kroky",
+        "2": "Soustřeďte se vždy na jeden úkol",
+        "3": "Dělejte si krátké přestávky"
+      }
+    }
+  },
+  "detail": {
+    "back": "Zpět",
+    "notFound": "Tip nenalezen.",
+    "whyTitle": "Proč to pomáhá",
+    "doTitle": "Co můžeš udělat",
+    "reminderSet": "Sada připomínek! 🌙"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Jejda! Stránka nenalezena",
+    "return": "Návrat domů"
+  },
+  "mood": {
+    "title": "Jak se dnes cítíš?",
+    "great": "Skvělé",
+    "okay": "Dobře",
+    "stressed": "Stresovaný",
+    "overwhelmed": "Přetížení"
+  },
+  "breathing": {
+    "inhale": "Nadechni se...",
+    "hold": "Drž...",
+    "exhale": "Vydechni...",
+    "pause": "Pauza",
+    "resume": "Životopis"
+  },
+  "common": {
+    "get_started": "Get Started",
+    "start_over": "Začít znovu",
+    "finish_exit": "Dokončit a ukončit",
+    "well_done": "Well Done!",
+    "completion_message": "You've successfully completed this activity. Take a moment to appreciate your progress.",
+    "time_to_complete": "Čas na dokončení",
+    "back": "Back",
+    "next": "Next",
+    "save": "Save",
+    "loading": "Loading...",
+    "share": "Podíl",
+    "share_progress": "Sdílet pokrok",
+    "inspire_others": "Inspirujte ostatní ještě dnes",
+    "share_text": "Tuto aktivitu {{activityName}} jsem dělal/a v TherapyMantra a opravdu si ji užívám. Můžete to dělat i vy, stačí kliknout na odkaz na aplikaci pro Android {{androidUrl}} nebo aplikaci pro iOS {{iosUrl}}.",
+    "this_activity": "tato aktivita",
+    "copied": "Zkopírováno!",
+    "copy_message": "Kopírovat zprávu",
+    "yes": "Yes",
+    "no": "No",
+    "date": "Date",
+    "continue": "Continue",
+    "step_of": "Step {{current}} of {{total}}",
+    "round_of": "Round {{current}} of {{total}}",
+    "phase_label": "Phase",
+    "rounds_selector": "{{count}} Rounds",
+    "instruction_ready": "Set your rounds and tap play to begin",
+    "instruction_running": "Follow the circle to regulate your breath"
+  },
+  "app_title": "Úleva od stresu",
+  "app_description": "Úleva od stresu",
+  "more": "Více",
+  "breadcrumb": "strouhanka",
+  "previous_slide": "Předchozí snímek",
+  "next_slide": "Další snímek",
+  "close": "Blízko",
+  "previous": "Předchozí",
+  "more_pages": "Více stránek",
+  "pagination": "stránkování",
+  "go_to_previous_page": "Přejít na předchozí stránku",
+  "go_to_next_page": "Přejít na další stránku",
+  "toggle_sidebar": "Přepnout postranní panel",
+  "breathing_guide": "Průvodce dýcháním",
+  "phase_label": "Phase",
+  "instruction_ready": "Set your rounds and tap play to begin",
+  "instruction_running": "Follow the circle to regulate your breath",
+  "round_x_of_y": "Round {{current}} of {{total}}",
+  "rounds_selector": "{{count}} Rounds",
+  "yes": "Yes",
+  "no": "No",
+  "date": "Date",
+  "continue": "Continue",
+  "Inhale…": "Nadechni se...",
+  "Hold…": "Drž...",
+  "Exhale…": "Vydechni...",
+  "breathing_instruction": "Následujte kruh pro regulaci",
+  "Resume": "Životopis",
+  "Pause": "Pauza",
+  "lang": "dlouhý",
+  "Grounding": "Duševní uvolnění stresu",
+  "stay_present": "Tipy na uvolnění stresu",
+  "Choose any target strategy below to explore why it helps and how you can apply it daily": {
+    "": "Vyberte si jakoukoli cílovou strategii níže a zjistěte, proč pomáhá a jak ji můžete denně aplikovat."
+  },
+  "wellness_tip": "DENNÍ STRATEGIE STRESU"
+}

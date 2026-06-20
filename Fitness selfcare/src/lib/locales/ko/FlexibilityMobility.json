@@ -1,0 +1,379 @@
+{
+  "header": {
+    "title": "유연성 & 가동성",
+    "subtitle": "가동 범위를 넓히고 부상을 예방하세요",
+    "back": "대시보드로 돌아가기"
+  },
+  "tabs": {
+    "stretches": "매일 스트레칭",
+    "tests": "가동성 테스트",
+    "log": "회복 로그"
+  },
+  "player": {
+    "stretch": "스트레칭 {{current}} / {{total}}",
+    "resume": "다시 시작",
+    "pause": "일시 정지",
+    "skip": "건너뛰기",
+    "cancel": "취소",
+    "bilateral_hint": "💡 타이머가 끝나면 반대쪽도 진행해 주세요",
+    "preview": {
+      "stretches_count": "{{count}}개 스트레칭 (총 {{duration}}분):",
+      "start": "{{duration}}분 루틴 시작하기",
+      "cancel": "취소"
+    },
+    "complete": {
+      "title": "루틴 완료!",
+      "desc": "{{name}} 루틴을 완료했습니다. 참 잘하셨습니다!",
+      "rate_label": "몸이 가벼워지셨나요? 개선 정도 평가: {{rating}}/10",
+      "worse": "더 안 좋음",
+      "same": "비슷함",
+      "much_better": "훨씬 개운함",
+      "save": "세션 저장하기",
+      "done": "완료"
+    }
+  },
+  "routines": {
+    "upper-body": {
+      "name": "상체 열기",
+      "focus": "가슴, 어깨, 등 중간",
+      "desc": "데스크 업무와 스마트폰 사용으로 인한 긴장을 풀어줍니다",
+      "stretches": {
+        "Doorway Chest Stretch": {
+          "name": "문틀 가슴 스트레칭",
+          "desc": "문틀에 서서 팔뚝을 대고 앞으로 기대어 가슴이 늘어나는 것을 느낍니다."
+        },
+        "Shoulder Rolls": {
+          "name": "어깨 돌리기",
+          "desc": "어깨를 뒤로 크게 원을 그리며 돌립니다. (10회)"
+        },
+        "Thoracic Rotation": {
+          "name": "흉추 회전 운동",
+          "desc": "네발기기 자세에서 상체를 양옆으로 회전하며 가슴을 엽니다."
+        },
+        "Neck Stretch": {
+          "name": "목 스트레칭",
+          "desc": "머리를 양옆으로 부드럽게 기울여 좌우 각각 30초 동안 유지합니다."
+        },
+        "Tricep Stretch": {
+          "name": "삼두근 스트레칭",
+          "desc": "한쪽 팔을 머리 뒤로 넘겨 팔꿈치를 굽히고 반대쪽 손으로 살짝 당겨줍니다."
+        }
+      }
+    },
+    "lower-body": {
+      "name": "하체 이완",
+      "focus": "햄스트링, 둔근, 고관절 굴곡근",
+      "desc": "장시간 앉아 있어 뭉친 다리와 골반을 깊게 스트레칭합니다",
+      "stretches": {
+        "Pigeon Pose": {
+          "name": "비둘기 자세",
+          "desc": "한쪽 다리를 앞으로 접어 두고 반대쪽 다리는 뒤로 곧게 뻗어 골반을 낮춥니다."
+        },
+        "Hamstring Stretch": {
+          "name": "햄스트링 스트레칭",
+          "desc": "자리에 앉아 한쪽 다리를 뻗고 등을 곧게 편 상태에서 발끝을 향해 숙입니다."
+        },
+        "Hip Flexor Lunge": {
+          "name": "고관절 굴곡근 런지",
+          "desc": "런지 자세에서 골반을 앞으로 밀어 앞쪽 허벅지와 골반 라인의 자극을 느낍니다."
+        },
+        "Glute Stretch": {
+          "name": "둔근(엉덩이) 스트레칭",
+          "desc": "천장을 보고 누워 한쪽 발목을 반대쪽 무릎 위에 올리고 가슴 쪽으로 당깁니다."
+        },
+        "Calf Stretch": {
+          "name": "종아리 스트레칭",
+          "desc": "앞으로 런지 스텝을 딛고 뒤쪽 발뒤꿈치를 바닥에 밀착시켜 종아리를 늘려줍니다."
+        }
+      }
+    },
+    "full-body": {
+      "name": "전신 흐름",
+      "focus": "전신 관리",
+      "desc": "머리부터 발끝까지 전신 유연성을 길러주는 종합 루틴",
+      "stretches": {
+        "Cat-Cow": {
+          "name": "캣카우 자세",
+          "desc": "네발기기 자세에서 척추를 위아래로 둥글게 말고 아치형으로 만드는 것을 반복합니다."
+        },
+        "Downward Dog": {
+          "name": "견상 자세 (다운독)",
+          "desc": "손 and 발을 바닥에 대고 엉덩이를 높이 들어 올려 역V자 모양을 만듭니다."
+        },
+        "Child's Pose": {
+          "name": "아기 자세",
+          "desc": "무릎을 넓게 벌리고 발뒤꿈치에 엉덩이를 대고 앉아 팔을 앞으로 길게 뻗습니다."
+        },
+        "Seated Twist": {
+          "name": "앉아서 몸통 비틀기",
+          "desc": "가부좌 자세로 앉아 몸통을 양옆으로 회전하고 손은 엉덩이 뒤를 짚습니다."
+        },
+        "Forward Fold": {
+          "name": "서서 상체 숙이기",
+          "desc": "서서 골반을 힌지하여 상체를 앞으로 숙이고 머리를 편안하게 떨어뜨립니다."
+        },
+        "Hip Circles": {
+          "name": "골반 돌리기",
+          "desc": "양손을 골반에 얹고 골반으로 큰 원을 좌우 방향으로 그립니다."
+        },
+        "Arm Circles": {
+          "name": "팔 돌리기",
+          "desc": "양팔을 넓게 벌리고 앞으로 크게 원을 그린 뒤 뒤로도 돌립니다."
+        }
+      }
+    },
+    "dynamic-warmup": {
+      "name": "동적 웜업",
+      "focus": "운동 전 활성화",
+      "desc": "본 운동 시작 전에 몸을 준비시킵니다",
+      "stretches": {
+        "Leg Swings": {
+          "name": "다리 흔들기",
+          "desc": "벽을 잡고 한쪽 다리를 앞뒤로 흔든 다음, 좌우로도 흔듭니다."
+        },
+        "Arm Circles": {
+          "name": "팔 돌리기",
+          "desc": "작은 원부터 큰 원까지 앞뒤로 돌려줍니다."
+        },
+        "Torso Twists": {
+          "name": "상체 비틀기",
+          "desc": "팔을 힘없이 푼 채 상체를 양옆으로 회전합니다."
+        },
+        "Walking Lunges": {
+          "name": "워킹 런지",
+          "desc": "앞으로 걸어가며 런지 자세를 번갈아 취합니다."
+        },
+        "High Knees": {
+          "name": "제자리 무릎 높이 올리기",
+          "desc": "제자리에서 무릎을 골반 높이까지 올리며 걷습니다."
+        }
+      }
+    }
+  },
+  "benefits": {
+    "title": "매일 스트레칭해야 하는 이유",
+    "items": [
+      "부상 위험을 최대 50%까지 감소",
+      "운동 수행 능력 향상",
+      "근육 긴장 완화 및 스트레스 해소",
+      "혈액 순환 촉진"
+    ]
+  },
+  "tests": {
+    "status": {
+      "title": "나의 가동성 상태",
+      "based_on": "{{count}}개의 테스트 결과 기준",
+      "complete_below": "아래의 테스트를 완료하세요",
+      "score_label": "점수: {{points}}/6 점 (통과=2, 일부 통과=1, 개선 필요=0)",
+      "elite": "엘리트 가동성",
+      "good": "좋은 가동성",
+      "limited": "제한된 가동성",
+      "not_tested": "테스트 안 함"
+    },
+    "items": {
+      "sit-reach": {
+        "name": "앉아 앞으로 굽히기 테스트",
+        "desc": "다리를 곧게 펴고 앉아 손을 발끝 쪽으로 뻗습니다",
+        "pass": "발끝에 닿거나 발끝을 넘길 수 있음",
+        "fail": "발끝에서 15cm 이상 떨어져 있음"
+      },
+      "shoulder-pass": {
+        "name": "어깨 회전 가동성 테스트",
+        "desc": "밴드나 막대를 잡고 팔을 머리 위로 들어 올려 등 뒤로 넘깁니다",
+        "pass": "부드럽게 넘길 수 있음",
+        "fail": "동작을 완료할 수 없음"
+      },
+      "deep-squat": {
+        "name": "딥 스쿼트 홀드",
+        "desc": "발꿈치를 바닥에 완전히 붙인 채 주저앉아 30초 동안 유지합니다",
+        "pass": "발꿈치를 떼지 않고 30초 버틸 수 있음",
+        "fail": "발꿈치가 뜨거나 자세를 유지할 수 없음"
+      }
+    },
+    "tips": {
+      "title": "테스트 팁",
+      "list": [
+        "근육이 굳어있을 때 하지 말고 가벼운 웜업 후에 테스트하세요",
+        "2-4주마다 재테스트하여 진행 상황을 추적하세요",
+        "개선이 필요한 부위에 초점을 맞춰 맞춤형 스트레칭을 해주세요",
+        "지속적인 제한 증상이 있는 경우 전문가와 상담하세요"
+      ]
+    },
+    "actions": {
+      "pass": "✓ 통과",
+      "partial": "~ 일부 통과",
+      "fail": "✗ 개선 필요"
+    }
+  },
+  "log": {
+    "title": "회복 세션 기록",
+    "duration": "진행 시간 (분)",
+    "focus_areas": "집중 부위 (해당하는 항목 모두 선택)",
+    "soreness_label": "진행 전 통증/결림 수준: {{level}}/10",
+    "no_pain": "1 - 통증 없음",
+    "moderate": "5 - 보통",
+    "very_sore": "10 - 심한 결림",
+    "submit": "🧘 세션 기록하기",
+    "heatmap": {
+      "title": "회복 히트맵",
+      "legend": "보라색 점은 회복 운동을 완료한 날을 나타냅니다"
+    },
+    "badge": {
+      "title": "부상 방지 완료!",
+      "desc": "이번 주에 {{count}}번의 회복 세션을 완료했습니다!"
+    },
+    "stats": {
+      "total": "총 진행 시간",
+      "this_week": "이번 주"
+    },
+    "recent": "최근 세션 기록",
+    "areas": {
+      "Neck": "목",
+      "Shoulders": "어깨",
+      "Back": "등/허리",
+      "Hips": "골반/고관절",
+      "Legs": "다리",
+      "Full Body": "전신"
+    }
+  },
+  "soreness": "통증:",
+  "m": "엠",
+  "recent_sessions": "최근 세션",
+  "this_week": "이번 주",
+  "total_minutes": "총 시간(분)",
+  "recovery_sessions_this_week": "이번주 회복세션!",
+  "you_ve_completed": "완료하셨습니다.",
+  "injury_proof": "부상 방지!",
+  "purple_dots_mark_days_with_recovery_sess": "보라색 점은 복구 세션이 있는 날을 표시합니다.",
+  "recovery_heatmap": "복구 히트맵",
+  "log_session": "🧘 로그 세션",
+  "10_very_sore": "10 - 매우 아프다",
+  "5_moderate": "5 - 보통",
+  "1_no_pain": "1 - 고통 없음",
+  "soreness_before_session": "세션 전 통증:",
+  "focus_areas_select_all_that_apply": "중점 분야(해당하는 항목 모두 선택)",
+  "duration_minutes": "기간(분)",
+  "log_recovery_session": "로그 복구 세션",
+  "consult_a_professional_for_persistent_li": "• 지속적인 제한 사항은 전문가에게 문의하세요.",
+  "focus_on_areas_that_need_work_with_targe": "• 목표 스트레칭을 통해 운동이 필요한 부위에 집중",
+  "retest_every_2_4_weeks_to_track_progress": "• 2~4주마다 다시 테스트��여 진행 상황을 추적합니다.",
+  "perform_tests_after_a_light_warm_up_not_": "• 찬물이 아닌 가벼운 워밍업 후 테스트 수행",
+  "testing_tips": "테스트 팁",
+  "needs_work": "✗ 작업 필요",
+  "partial": "~ 일부",
+  "pass": "✓ 합격",
+  "6_points_pass_2_partial_1_needs_work_0": "/6점(통과=2, 부분=1, 작업 필요=0)",
+  "score": "점수:",
+  "your_mobility_status": "귀하의 이동성 상태",
+  "enhances_blood_circulation": "혈액 순환을 향상시킵니다.",
+  "relieves_muscle_tension_and_stress": "근육의 긴장과 스트레스를 풀어줍니다.",
+  "improves_athletic_performance": "운동 능력 향상",
+  "reduces_injury_risk_by_up_to_50": "부상 위험을 최대 50%까지 감소시킵니다.",
+  "why_daily_stretching_matters": "매일 스트레칭이 중요한 이유",
+  "min_routine": "-최소 루틴",
+  "start": "시작",
+  "min": "분",
+  "remember_to_switch_sides_when_the_timer_": "💡 타이머가 끝나면 사이드를 바꾸는 것을 잊지 마세요",
+  "cancel": "취소",
+  "skip": "건너뛰기",
+  "pause": "일시중지",
+  "resume": "이력서",
+  "s": "초",
+  "of": "의",
+  "stretch": "스트레칭",
+  "done": "완료",
+  "save_session": "세션 저장",
+  "10_much_better": "10 - 훨씬 나아졌습니다",
+  "5_same": "5 - 동일",
+  "1_worse": "1 - 나쁨",
+  "feel_better_rate_your_improvement": "기분이 나아졌나요? 개선 사항을 평가해 주세요.",
+  "great_job_completing": "훌륭한 작업 완료",
+  "routine_complete": "루틴 완료!",
+  "min_total": "최소 총계):",
+  "stretches": "스트레칭(",
+  "recovery_log": "복구 로그",
+  "mobility_tests": "이동성 테스트",
+  "daily_stretches": "매일 스트레칭",
+  "improve_range_of_motion_and_prevent_inju": "운동 범위를 개선하고 부상을 예방합니다.",
+  "flexibility_mobility": "유연성 및 이동성",
+  "back_to_dashboard": "대시보드로 돌아가기",
+  "march_in_place_bringing_knees_to_hip_hei": "제자리에서 행진하여 무릎을 엉덩이 높이까지 가져옵니다.",
+  "high_knees": "높은 무릎",
+  "step_forward_into_lunge_alternate_legs_w": "앞으로 나아가면서 다리를 번갈아 가며 런지 자세를 취하세요.",
+  "walking_lunges": "워킹 런지",
+  "rotate_upper_body_side_to_side_with_arms": "팔을 느슨하게 한 채 상체를 좌우로 회전합니다.",
+  "torso_twists": "몸통 비틀기",
+  "small_to_large_circles_forward_and_backw": "작은 원부터 큰 원까지, 앞뒤로.",
+  "arm_circles": "팔 서클",
+  "hold_wall_swing_leg_forward_and_back_the": "벽을 잡고 다리를 앞뒤로 흔든 다음 좌우로 흔듭니다.",
+  "leg_swings": "다리 스윙",
+  "from_purple_500_to_pink_500": "-보라색-500에서-핑크-500까지",
+  "prepare_your_body_before_exercise": "운동 전 몸을 준비하세요",
+  "pre_workout_activation": "운동 전 활성화",
+  "dynamic_warm_up": "다이나믹 워밍업",
+  "extend_arms_wide_make_large_circles_forw": "팔을 넓게 벌리고 앞으로 큰 원을 그린 다음 뒤로 크게 원을 그립니다.",
+  "hands_on_hips_make_large_circles_with_hi": "엉덩이에 손을 얹고 엉덩이를 양쪽 방향으로 크게 원을 그리세요.",
+  "hip_circles": "엉덩이 서클",
+  "standing_hinge_at_hips_reach_toward_toes": "���서 엉덩이를 젖히고 발가락 쪽으로 손을 뻗고 머리를 늘어뜨립니다.",
+  "forward_fold": "앞으로 접기",
+  "sit_cross_legged_rotate_torso_to_each_si": "다리를 꼬고 앉아 몸통을 양쪽으로 돌리고 손을 등 뒤에 둡니다.",
+  "seated_twist": "시트 트위스트",
+  "knees_wide_sit_back_on_heels_arms_extend": "무릎을 넓게 벌리고 발뒤꿈치에 기대어 앉아 팔을 앞으로 뻗습니다.",
+  "child_s_pose": "아이의 포즈",
+  "hands_and_feet_planted_hips_high_forming": "손과 발은 꼿꼿이 세우고 엉덩이는 높게 세워 역V자 형태를 이룬다.",
+  "downward_dog": "하향 개",
+  "on_hands_and_knees_alternate_arching_and": "손과 무릎에서는 척추가 번갈아 아치 모양을 이루고 둥글게 됩니다.",
+  "cat_cow": "고양이소",
+  "from_indigo_400_to_purple_500": "인디고-400부터 퍼플-500까지",
+  "complete_head_to_toe_flexibility_routine": "머리부터 발끝까지 유연성 루틴을 완성하세요",
+  "total_body_maintenance": "전신관리",
+  "full_body_flow": "전신 흐름",
+  "step_forward_in_lunge_keep_back_heel_dow": "런지 자세로 앞으로 나아가면서 뒷꿈치를 아래로 유지하여 종아리를 스트레칭하세요.",
+  "calf_stretch": "종아리 스트레칭",
+  "lying_on_back_cross_ankle_over_opposite_": "등을 대고 누워 반대쪽 무릎 위로 발목을 교차시킨 후 가슴 쪽으로 당깁니다.",
+  "glute_stretch": "둔근 스트레칭",
+  "lunge_position_push_hips_forward_to_feel": "런지 자세로 엉덩이를 앞으로 밀어서 엉덩이 앞쪽이 늘어나는 것을 느껴보세요.",
+  "hip_flexor_lunge": "고관절 굴곡근 런지",
+  "sit_with_one_leg_extended_reach_toward_t": "한쪽 다리를 쭉 뻗고 앉아 발가락 쪽으로 손을 뻗고 등을 곧게 유지합니다.",
+  "hamstring_stretch": "햄스트링 스트레칭",
+  "bring_one_leg_forward_bent_extend_back_l": "한쪽 다리를 구부려 앞으로 가져오고, 뒤쪽 다리를 똑바로 펴고, 엉덩이를 아래로 내립니다.",
+  "pigeon_pose": "비둘기 자세",
+  "from_purple_400_to_violet_500": "보라색-400에서 보라색-500까지",
+  "deep_stretches_for_tight_legs_and_hips_f": "앉아 있을 때 뭉친 다리와 엉덩이를 위한 깊은 스트레칭",
+  "hamstrings_glutes_hip_flexors": "햄스트링, 둔근, 고관절 굴근",
+  "lower_body_release": "하체 릴리스",
+  "reach_arm_overhead_bend_elbow_gently_pul": "팔을 머리 위로 뻗어 팔꿈치를 구부린 후 다른 손으로 부드럽게 당깁니다.",
+  "tricep_stretch": "삼두근 스트레칭",
+  "gently_tilt_head_to_each_side_holding_fo": "머리를 양쪽으로 가볍게 기울이고 한쪽당 30초 동안 유지합니다.",
+  "neck_stretch": "목 스트레칭",
+  "on_hands_and_knees_rotate_upper_body_sid": "손과 무릎으로 상체를 좌우로 회전하여 가슴을 엽니다.",
+  "thoracic_rotation": "흉부 회전",
+  "roll_shoulders_backward_in_large_circles": "큰 원을 그리며 어깨를 뒤로 굴립니다(10회).",
+  "shoulder_rolls": "숄더 롤",
+  "stand_in_doorway_place_forearms_on_frame": "출입구에 서서 팔뚝을 프레임에 대고 앞으로 몸을 기울여 가슴이 늘어나는 것을 느껴보세요.",
+  "doorway_chest_stretch": "출입구 가슴 스트레칭",
+  "from_violet_400_to_purple_500": "-보라색-400에서-보라색-500으로",
+  "release_tension_from_desk_work_and_phone": "사무직과 전화 사용으로 인한 긴장을 풀어보세요",
+  "chest_shoulders_mid_back": "가슴, 어깨, 등 중앙",
+  "upper_body_open": "상체 오픈",
+  "heels_lift_or_cannot_hold": "발뒤꿈치가 들리거나 지탱할 수 없음",
+  "can_hold_30s_heels_down": "30대도 가능, 힐을 아래로 내리기",
+  "squat_down_with_heels_flat_hold_for_30_s": "발뒤꿈치를 펴고 스쿼트 자세를 취하고 30초간 유지합니다.",
+  "deep_squat_hold": "딥 스쿼트 홀드",
+  "cannot_complete_motion": "모션을 완료할 수 없습니다.",
+  "can_pass_through_smoothly": "원활하게 통과할 수 있음",
+  "shoulder_pass_through": "어깨 통과",
+  "more_than_6_inches_from_toes": "발가락에서 6인치 이상",
+  "can_touch_or_pass_toes": "발가락을 만지거나 지나갈 수 있음",
+  "sit_with_legs_straight_reach_toward_toes": "다리를 곧게 펴고 앉아 발가락 쪽으로 손을 뻗는다",
+  "sit_reach_test": "앉아서 뻗기 테스트",
+  "full_body": "전신",
+  "legs": "다리",
+  "hips": "엉덩이",
+  "back": "뒤로",
+  "shoulders": "어깨",
+  "neck": "목",
+  "elite_mobility": "엘리트 모빌리티",
+  "good_mobility": "좋은 이동성",
+  "limited_mobility": "제한된 이동성"
+}

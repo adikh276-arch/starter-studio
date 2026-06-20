@@ -1,0 +1,82 @@
+{
+  "header": {
+    "title": "Sumber Penjagaan Diri",
+    "subtitle": "Terokai alatan dan panduan untuk perjalanan kesejahteraan anda"
+  },
+  "sections": {
+    "tips": "Petua",
+    "support": "Cari sokongan untuk kesihatan anda",
+    "trackers": "Penjejak",
+    "resources": "Sumber",
+    "understanding": "Understanding"
+  },
+  "common": {
+    "back": "Kembali",
+    "back_to": "Kembali ke",
+    "chapter": "Bab",
+    "min_read": "min baca",
+    "sections": "sections",
+    "keep_exploring": "Teruskan meneroka",
+    "more_on": "Lebih lanjut mengenai",
+    "browse_more": "Layari penjejak, artikel, petua dan cerita yang dipilih untuk topik ini.",
+    "words": "words",
+    "curated_by": "Dikurasi oleh",
+    "the": "Yang",
+    "library": "Perpustakaan",
+    "up_next": "Seterusnya",
+    "back_to_top": "Kembali ke atas",
+    "curated_for": "Dikurasi untuk",
+    "featured_read": "Bacaan Pilihan",
+    "read_article": "Baca artikel itu",
+    "issue_no": "Isu No.",
+    "article": "Artikel",
+    "practices": "practices",
+    "practice": "Latihan",
+    "community_story": "Kisah Komuniti",
+    "misconception_no": "Salah Tanggapan No.",
+    "the_myth": "Mitos itu",
+    "the_truth": "Kebenaran"
+  },
+  "resource_taglines": {
+    "articles": "Bacaan bentuk panjang, ditulis dengan teliti dan disemak oleh pakar.",
+    "tips": "Syif kecil dan praktikal yang boleh anda sertakan dalam hari anda.",
+    "stories": "Renungan ikhlas daripada mereka yang telah melalui jalan ini.",
+    "myths": "Salah tanggapan umum, diperbetulkan dengan teliti menggunakan bukti."
+  },
+  "resource_eyebrows": {
+    "articles": "Perpustakaan",
+    "tips": "Amalan Harian",
+    "stories": "Dalam Kata-kata Mereka",
+    "myths": "Menetapkannya Lurus"
+  },
+  "resources": {
+    "articles": "Artikel",
+    "tips": "Petua",
+    "stories": "Cerita",
+    "myths": "Mitos"
+  },
+  "modules": {
+    "pcos": "PCOS",
+    "reproductive-health": "Kesihatan Reproduktif",
+    "medical-conditions": "Keadaan Perubatan",
+    "nutrition-weight": "Pemakanan & Berat Badan",
+    "pregnancy-postpartum": "Kehamilan & Selepas Bersalin",
+    "mental-health": "Kesihatan Mental",
+    "fertility": "Kesuburan",
+    "menopause": "Menopaus"
+  },
+  "tips": {
+    "hair-skin": "Rambut & Kulit",
+    "food": "Makanan",
+    "weight-loss": "Penurunan Berat Badan",
+    "pms": "PMS"
+  },
+  "trackers": {
+    "energy": "Energy",
+    "sleep": "Sleep",
+    "self_care": "Self Care",
+    "bmi": "BMI",
+    "physical_activity": "Physical Activity",
+    "mood": "Mood"
+  }
+}

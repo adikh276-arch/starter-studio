@@ -1,0 +1,82 @@
+{
+  "header": {
+    "title": "Öz Bakım Kaynakları",
+    "subtitle": "Sağlıklı yaşam yolculuğunuz için araçları ve rehberleri keşfedin."
+  },
+  "sections": {
+    "tips": "İpuçları",
+    "support": "Sağlığınız için destek bulun.",
+    "trackers": "İzleyiciler",
+    "resources": "Kaynaklar",
+    "understanding": "Anlayış"
+  },
+  "common": {
+    "back": "Geri",
+    "back_to": "Geri dön",
+    "chapter": "Bölüm",
+    "min_read": "dakika okuma",
+    "sections": "sections",
+    "keep_exploring": "Keşfetmeye devam edin",
+    "more_on": "Daha fazlası için",
+    "browse_more": "Bu konuyla ilgili derlenmiş takip araçlarına, makalelere, ipuçlarına ve hikayelere göz atın.",
+    "words": "words",
+    "curated_by": "Küratörlüğünü yapan:",
+    "the": "O",
+    "library": "Kütüphane",
+    "up_next": "Sıradaki",
+    "back_to_top": "Sayfanın başına dön",
+    "curated_for": "Özenle seçilmiştir",
+    "featured_read": "Öne Çıkan Okuma",
+    "read_article": "Makaleyi okuyun",
+    "issue_no": "Sayı No.",
+    "article": "Madde",
+    "practices": "practices",
+    "practice": "Pratik",
+    "community_story": "Topluluk Hikayesi",
+    "misconception_no": "Yanlış Anlama No.",
+    "the_myth": "Efsane",
+    "the_truth": "Doğrusu"
+  },
+  "resource_taglines": {
+    "articles": "Özenle yazılmış ve uzmanlar tarafından incelenmiş uzun metinler.",
+    "tips": "Günlük rutininize kolayca dahil edebileceğiniz küçük, pratik değişiklikler.",
+    "stories": "Bu yoldan geçmiş kişilerin dürüst düşünceleri.",
+    "myths": "Yaygın yanlış anlamalar, kanıtlarla nazikçe düzeltiliyor."
+  },
+  "resource_eyebrows": {
+    "articles": "Kütüphane",
+    "tips": "Günlük Uygulama",
+    "stories": "Onların Sözleriyle",
+    "myths": "Doğruyu Söylemek"
+  },
+  "resources": {
+    "articles": "Makaleler",
+    "tips": "İpuçları",
+    "stories": "Hikayeler",
+    "myths": "Mitler"
+  },
+  "modules": {
+    "pcos": "PCOS",
+    "reproductive-health": "Üreme Sağlığı",
+    "medical-conditions": "Tıbbi Durumlar",
+    "nutrition-weight": "Beslenme ve Kilo",
+    "pregnancy-postpartum": "Gebelik ve Doğum Sonrası",
+    "mental-health": "Ruh Sağlığı",
+    "fertility": "Doğurganlık",
+    "menopause": "Menopoz"
+  },
+  "tips": {
+    "hair-skin": "Saç ve Cilt",
+    "food": "Yiyecek",
+    "weight-loss": "Kilo Verme",
+    "pms": "PMS"
+  },
+  "trackers": {
+    "energy": "Enerji",
+    "sleep": "Uyku",
+    "self_care": "Öz Bakım",
+    "bmi": "VKİ",
+    "physical_activity": "Fiziksel Aktivite",
+    "mood": "Ruh Hali"
+  }
+}

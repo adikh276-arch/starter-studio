@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 30% 98%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 330 75% 65%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 25% 96%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 220 20% 95%;
+    --muted-foreground: 220 10% 45%;
+
+    --accent: 270 60% 92%;
+    --accent-foreground: 270 50% 30%;
+
+    --destructive: 0 75% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 20% 91%;
+    --input: 220 20% 91%;
+    --ring: 330 75% 65%;
+
+    --radius: 1rem;
+
+    /* Tip card gradients */
+    --tip-teal: linear-gradient(135deg, hsl(180 55% 55%), hsl(185 60% 45%));
+    --tip-orange: linear-gradient(135deg, hsl(35 95% 60%), hsl(28 95% 55%));
+    --tip-pink: linear-gradient(135deg, hsl(335 80% 70%), hsl(330 75% 60%));
+    --tip-purple: linear-gradient(135deg, hsl(265 70% 65%), hsl(258 70% 58%));
+
+    /* Soft pastel surfaces */
+    --pastel-pink: 340 80% 96%;
+    --pastel-pink-fg: 335 70% 55%;
+    --pastel-lilac: 270 70% 96%;
+    --pastel-lilac-fg: 268 55% 55%;
+    --pastel-slate: 220 20% 95%;
+    --pastel-slate-fg: 220 15% 45%;
+    --pastel-peach: 25 95% 94%;
+    --pastel-peach-fg: 22 85% 55%;
+    --pastel-mint: 150 55% 92%;
+    --pastel-mint-fg: 155 45% 38%;
+    --pastel-blue: 210 90% 95%;
+    --pastel-blue-fg: 215 75% 55%;
+    --pastel-yellow: 45 95% 92%;
+    --pastel-yellow-fg: 38 85% 50%;
+    --pastel-rose: 355 85% 95%;
+    --pastel-rose-fg: 350 70% 55%;
+
+    --shadow-soft: 0 4px 20px -8px hsl(220 40% 30% / 0.12);
+    --shadow-card: 0 8px 30px -12px hsl(220 40% 30% / 0.18);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "cv11", "ss01";
+  }
+}
+@layer utilities {
+  .animate-in {
+    animation-duration: 0.6s;
+    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+    animation-fill-mode: forwards;
+  }
+  
+  .fade-in {
+    opacity: 0;
+    animation-name: fadeIn;
+  }
+  
+  .slide-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation-name: slideUp;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .stagger-1 { animation-delay: 0.1s; }
+  .stagger-2 { animation-delay: 0.2s; }
+  .stagger-3 { animation-delay: 0.3s; }
+  .stagger-4 { animation-delay: 0.4s; }
+}

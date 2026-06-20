@@ -1,0 +1,379 @@
+{
+  "header": {
+    "title": "Flexibility & Mobility",
+    "subtitle": "Improve range of motion and prevent injuries",
+    "back": "Back to Dashboard"
+  },
+  "tabs": {
+    "stretches": "Daily Stretches",
+    "tests": "Mobility Tests",
+    "log": "Recovery Log"
+  },
+  "player": {
+    "stretch": "Stretch {{current}} of {{total}}",
+    "resume": "Resume",
+    "pause": "Pause",
+    "skip": "Skip",
+    "cancel": "Cancel",
+    "bilateral_hint": "💡 Remember to switch sides when the timer ends",
+    "preview": {
+      "stretches_count": "{{count}} Stretches ({{duration}} min total):",
+      "start": "Start {{duration}}-Min Routine",
+      "cancel": "Cancel"
+    },
+    "complete": {
+      "title": "Routine Complete!",
+      "desc": "Great job completing {{name}}!",
+      "rate_label": "Feel Better? Rate your improvement: {{rating}}/10",
+      "worse": "Worse",
+      "same": "Same",
+      "much_better": "Much Better",
+      "save": "Save Session",
+      "done": "Done"
+    }
+  },
+  "routines": {
+    "upper-body": {
+      "name": "Upper Body Open",
+      "focus": "Chest, Shoulders, Mid-Back",
+      "desc": "Release tension from desk work and phone use",
+      "stretches": {
+        "Doorway Chest Stretch": {
+          "name": "Doorway Chest Stretch",
+          "desc": "Stand in doorway, place forearms on frame, lean forward to feel chest stretch."
+        },
+        "Shoulder Rolls": {
+          "name": "Shoulder Rolls",
+          "desc": "Roll shoulders backward in large circles, 10 reps."
+        },
+        "Thoracic Rotation": {
+          "name": "Thoracic Rotation",
+          "desc": "On hands and knees, rotate upper body side to side, opening chest."
+        },
+        "Neck Stretch": {
+          "name": "Neck Stretch",
+          "desc": "Gently tilt head to each side, holding for 30 seconds per side."
+        },
+        "Tricep Stretch": {
+          "name": "Tricep Stretch",
+          "desc": "Reach arm overhead, bend elbow, gently pull with other hand."
+        }
+      }
+    },
+    "lower-body": {
+      "name": "Lower Body Release",
+      "focus": "Hamstrings, Glutes, Hip Flexors",
+      "desc": "Deep stretches for tight legs and hips from sitting",
+      "stretches": {
+        "Pigeon Pose": {
+          "name": "Pigeon Pose",
+          "desc": "Bring one leg forward bent, extend back leg straight, sink hips down."
+        },
+        "Hamstring Stretch": {
+          "name": "Hamstring Stretch",
+          "desc": "Sit with one leg extended, reach toward toes, keep back straight."
+        },
+        "Hip Flexor Lunge": {
+          "name": "Hip Flexor Lunge",
+          "desc": "Lunge position, push hips forward to feel stretch in front hip."
+        },
+        "Glute Stretch": {
+          "name": "Glute Stretch",
+          "desc": "Lying on back, cross ankle over opposite knee, pull toward chest."
+        },
+        "Calf Stretch": {
+          "name": "Calf Stretch",
+          "desc": "Step forward in lunge, keep back heel down to stretch calf."
+        }
+      }
+    },
+    "full-body": {
+      "name": "Full Body Flow",
+      "focus": "Total Body Maintenance",
+      "desc": "Complete head-to-toe flexibility routine",
+      "stretches": {
+        "Cat-Cow": {
+          "name": "Cat-Cow",
+          "desc": "On hands and knees, alternate arching and rounding spine."
+        },
+        "Downward Dog": {
+          "name": "Downward Dog",
+          "desc": "Hands and feet planted, hips high, forming an inverted V."
+        },
+        "Child's Pose": {
+          "name": "Child's Pose",
+          "desc": "Knees wide, sit back on heels, arms extended forward."
+        },
+        "Seated Twist": {
+          "name": "Seated Twist",
+          "desc": "Sit cross-legged, rotate torso to each side, hand behind back."
+        },
+        "Forward Fold": {
+          "name": "Forward Fold",
+          "desc": "Standing, hinge at hips, reach toward toes, let head hang."
+        },
+        "Hip Circles": {
+          "name": "Hip Circles",
+          "desc": "Hands on hips, make large circles with hips in both directions."
+        },
+        "Arm Circles": {
+          "name": "Arm Circles",
+          "desc": "Extend arms wide, make large circles forward then backward."
+        }
+      }
+    },
+    "dynamic-warmup": {
+      "name": "Dynamic Warm-up",
+      "focus": "Pre-Workout Activation",
+      "desc": "Prepare your body before exercise",
+      "stretches": {
+        "Leg Swings": {
+          "name": "Leg Swings",
+          "desc": "Hold wall, swing leg forward and back, then side to side."
+        },
+        "Arm Circles": {
+          "name": "Arm Circles",
+          "desc": "Small to large circles, forward and backward."
+        },
+        "Torso Twists": {
+          "name": "Torso Twists",
+          "desc": "Rotate upper body side to side with arms loose."
+        },
+        "Walking Lunges": {
+          "name": "Walking Lunges",
+          "desc": "Step forward into lunge, alternate legs while moving forward."
+        },
+        "High Knees": {
+          "name": "High Knees",
+          "desc": "March in place bringing knees to hip height."
+        }
+      }
+    }
+  },
+  "benefits": {
+    "title": "Why Daily Stretching Matters",
+    "items": [
+      "Reduces injury risk by up to 50%",
+      "Improves athletic performance",
+      "Relieves muscle tension and stress",
+      "Enhances blood circulation"
+    ]
+  },
+  "tests": {
+    "status": {
+      "title": "Your Mobility Status",
+      "based_on": "Based on {{count}} test results",
+      "complete_below": "Complete tests below",
+      "score_label": "Score: {{points}}/6 points (Pass=2, Partial=1, Needs Work=0)",
+      "elite": "Elite Mobility",
+      "good": "Good Mobility",
+      "limited": "Limited Mobility",
+      "not_tested": "Not Tested"
+    },
+    "items": {
+      "sit-reach": {
+        "name": "Sit & Reach Test",
+        "desc": "Sit with legs straight, reach toward toes",
+        "pass": "Can touch or pass toes",
+        "fail": "More than 6 inches from toes"
+      },
+      "shoulder-pass": {
+        "name": "Shoulder Pass-Through",
+        "desc": "Hold a band/stick, raise arms overhead and behind back",
+        "pass": "Can pass through smoothly",
+        "fail": "Cannot complete motion"
+      },
+      "deep-squat": {
+        "name": "Deep Squat Hold",
+        "desc": "Squat down with heels flat, hold for 30 seconds",
+        "pass": "Can hold 30s, heels down",
+        "fail": "Heels lift or cannot hold"
+      }
+    },
+    "tips": {
+      "title": "Testing Tips",
+      "list": [
+        "Perform tests after a light warm-up, not cold",
+        "Retest every 2-4 weeks to track progress",
+        "Focus on areas that need work with targeted stretching",
+        "Consult a professional for persistent limitations"
+      ]
+    },
+    "actions": {
+      "pass": "✓ Pass",
+      "partial": "~ Partial",
+      "fail": "✗ Needs Work"
+    }
+  },
+  "log": {
+    "title": "Log Recovery Session",
+    "duration": "Duration (minutes)",
+    "focus_areas": "Focus Areas (select all that apply)",
+    "soreness_label": "Soreness Before Session: {{level}}/10",
+    "no_pain": "1 - No Pain",
+    "moderate": "5 - Moderate",
+    "very_sore": "10 - Very Sore",
+    "submit": "🧘 Log Session",
+    "heatmap": {
+      "title": "Recovery Heatmap",
+      "legend": "Purple dots mark days with recovery sessions"
+    },
+    "badge": {
+      "title": "Injury Proof!",
+      "desc": "You've completed {{count}} recovery sessions this week!"
+    },
+    "stats": {
+      "total": "Total Minutes",
+      "this_week": "This Week"
+    },
+    "recent": "Recent Sessions",
+    "areas": {
+      "Neck": "Neck",
+      "Shoulders": "Shoulders",
+      "Back": "Back",
+      "Hips": "Hips",
+      "Legs": "Legs",
+      "Full Body": "Full Body"
+    }
+  },
+  "soreness": "Soreness:",
+  "m": "m",
+  "recent_sessions": "Recent Sessions",
+  "this_week": "This Week",
+  "total_minutes": "Total Minutes",
+  "recovery_sessions_this_week": "recovery sessions this week!",
+  "you_ve_completed": "You've completed",
+  "injury_proof": "Injury Proof!",
+  "purple_dots_mark_days_with_recovery_sess": "Purple dots mark days with recovery sessions",
+  "recovery_heatmap": "Recovery Heatmap",
+  "log_session": "🧘 Log Session",
+  "10_very_sore": "10 - Very Sore",
+  "5_moderate": "5 - Moderate",
+  "1_no_pain": "1 - No Pain",
+  "soreness_before_session": "Soreness Before Session:",
+  "focus_areas_select_all_that_apply": "Focus Areas (select all that apply)",
+  "duration_minutes": "Duration (minutes)",
+  "log_recovery_session": "Log Recovery Session",
+  "consult_a_professional_for_persistent_li": "• Consult a professional for persistent limitations",
+  "focus_on_areas_that_need_work_with_targe": "• Focus on areas that need work with targeted stretching",
+  "retest_every_2_4_weeks_to_track_progress": "• Retest every 2-4 weeks to track progress",
+  "perform_tests_after_a_light_warm_up_not_": "• Perform tests after a light warm-up, not cold",
+  "testing_tips": "Testing Tips",
+  "needs_work": "✗ Needs Work",
+  "partial": "~ Partial",
+  "pass": "✓ Pass",
+  "6_points_pass_2_partial_1_needs_work_0": "/6 points (Pass=2, Partial=1, Needs Work=0)",
+  "score": "Score:",
+  "your_mobility_status": "Your Mobility Status",
+  "enhances_blood_circulation": "Enhances blood circulation",
+  "relieves_muscle_tension_and_stress": "Relieves muscle tension and stress",
+  "improves_athletic_performance": "Improves athletic performance",
+  "reduces_injury_risk_by_up_to_50": "Reduces injury risk by up to 50%",
+  "why_daily_stretching_matters": "Why Daily Stretching Matters",
+  "min_routine": "-Min Routine",
+  "start": "Start",
+  "min": "min",
+  "remember_to_switch_sides_when_the_timer_": "💡 Remember to switch sides when the timer ends",
+  "cancel": "Cancel",
+  "skip": "Skip",
+  "pause": "Pause",
+  "resume": "Resume",
+  "s": "s",
+  "of": "of",
+  "stretch": "Stretch",
+  "done": "Done",
+  "save_session": "Save Session",
+  "10_much_better": "10 - Much Better",
+  "5_same": "5 - Same",
+  "1_worse": "1 - Worse",
+  "feel_better_rate_your_improvement": "Feel Better? Rate your improvement:",
+  "great_job_completing": "Great job completing",
+  "routine_complete": "Routine Complete!",
+  "min_total": "min total):",
+  "stretches": "Stretches (",
+  "recovery_log": "Recovery Log",
+  "mobility_tests": "Mobility Tests",
+  "daily_stretches": "Daily Stretches",
+  "improve_range_of_motion_and_prevent_inju": "Improve range of motion and prevent injuries",
+  "flexibility_mobility": "Flexibility & Mobility",
+  "back_to_dashboard": "Back to Dashboard",
+  "march_in_place_bringing_knees_to_hip_hei": "March in place bringing knees to hip height.",
+  "high_knees": "High Knees",
+  "step_forward_into_lunge_alternate_legs_w": "Step forward into lunge, alternate legs while moving forward.",
+  "walking_lunges": "Walking Lunges",
+  "rotate_upper_body_side_to_side_with_arms": "Rotate upper body side to side with arms loose.",
+  "torso_twists": "Torso Twists",
+  "small_to_large_circles_forward_and_backw": "Small to large circles, forward and backward.",
+  "arm_circles": "Arm Circles",
+  "hold_wall_swing_leg_forward_and_back_the": "Hold wall, swing leg forward and back, then side to side.",
+  "leg_swings": "Leg Swings",
+  "from_purple_500_to_pink_500": "from-purple-500 to-pink-500",
+  "prepare_your_body_before_exercise": "Prepare your body before exercise",
+  "pre_workout_activation": "Pre-Workout Activation",
+  "dynamic_warm_up": "Dynamic Warm-up",
+  "extend_arms_wide_make_large_circles_forw": "Extend arms wide, make large circles forward then backward.",
+  "hands_on_hips_make_large_circles_with_hi": "Hands on hips, make large circles with hips in both directions.",
+  "hip_circles": "Hip Circles",
+  "standing_hinge_at_hips_reach_toward_toes": "Standing, hinge at hips, reach toward toes, let head hang.",
+  "forward_fold": "Forward Fold",
+  "sit_cross_legged_rotate_torso_to_each_si": "Sit cross-legged, rotate torso to each side, hand behind back.",
+  "seated_twist": "Seated Twist",
+  "knees_wide_sit_back_on_heels_arms_extend": "Knees wide, sit back on heels, arms extended forward.",
+  "child_s_pose": "Child's Pose",
+  "hands_and_feet_planted_hips_high_forming": "Hands and feet planted, hips high, forming an inverted V.",
+  "downward_dog": "Downward Dog",
+  "on_hands_and_knees_alternate_arching_and": "On hands and knees, alternate arching and rounding spine.",
+  "cat_cow": "Cat-Cow",
+  "from_indigo_400_to_purple_500": "from-indigo-400 to-purple-500",
+  "complete_head_to_toe_flexibility_routine": "Complete head-to-toe flexibility routine",
+  "total_body_maintenance": "Total Body Maintenance",
+  "full_body_flow": "Full Body Flow",
+  "step_forward_in_lunge_keep_back_heel_dow": "Step forward in lunge, keep back heel down to stretch calf.",
+  "calf_stretch": "Calf Stretch",
+  "lying_on_back_cross_ankle_over_opposite_": "Lying on back, cross ankle over opposite knee, pull toward chest.",
+  "glute_stretch": "Glute Stretch",
+  "lunge_position_push_hips_forward_to_feel": "Lunge position, push hips forward to feel stretch in front hip.",
+  "hip_flexor_lunge": "Hip Flexor Lunge",
+  "sit_with_one_leg_extended_reach_toward_t": "Sit with one leg extended, reach toward toes, keep back straight.",
+  "hamstring_stretch": "Hamstring Stretch",
+  "bring_one_leg_forward_bent_extend_back_l": "Bring one leg forward bent, extend back leg straight, sink hips down.",
+  "pigeon_pose": "Pigeon Pose",
+  "from_purple_400_to_violet_500": "from-purple-400 to-violet-500",
+  "deep_stretches_for_tight_legs_and_hips_f": "Deep stretches for tight legs and hips from sitting",
+  "hamstrings_glutes_hip_flexors": "Hamstrings, Glutes, Hip Flexors",
+  "lower_body_release": "Lower Body Release",
+  "reach_arm_overhead_bend_elbow_gently_pul": "Reach arm overhead, bend elbow, gently pull with other hand.",
+  "tricep_stretch": "Tricep Stretch",
+  "gently_tilt_head_to_each_side_holding_fo": "Gently tilt head to each side, holding for 30 seconds per side.",
+  "neck_stretch": "Neck Stretch",
+  "on_hands_and_knees_rotate_upper_body_sid": "On hands and knees, rotate upper body side to side, opening chest.",
+  "thoracic_rotation": "Thoracic Rotation",
+  "roll_shoulders_backward_in_large_circles": "Roll shoulders backward in large circles, 10 reps.",
+  "shoulder_rolls": "Shoulder Rolls",
+  "stand_in_doorway_place_forearms_on_frame": "Stand in doorway, place forearms on frame, lean forward to feel chest stretch.",
+  "doorway_chest_stretch": "Doorway Chest Stretch",
+  "from_violet_400_to_purple_500": "from-violet-400 to-purple-500",
+  "release_tension_from_desk_work_and_phone": "Release tension from desk work and phone use",
+  "chest_shoulders_mid_back": "Chest, Shoulders, Mid-Back",
+  "upper_body_open": "Upper Body Open",
+  "heels_lift_or_cannot_hold": "Heels lift or cannot hold",
+  "can_hold_30s_heels_down": "Can hold 30s, heels down",
+  "squat_down_with_heels_flat_hold_for_30_s": "Squat down with heels flat, hold for 30 seconds",
+  "deep_squat_hold": "Deep Squat Hold",
+  "cannot_complete_motion": "Cannot complete motion",
+  "can_pass_through_smoothly": "Can pass through smoothly",
+  "shoulder_pass_through": "Shoulder Pass-Through",
+  "more_than_6_inches_from_toes": "More than 6 inches from toes",
+  "can_touch_or_pass_toes": "Can touch or pass toes",
+  "sit_with_legs_straight_reach_toward_toes": "Sit with legs straight, reach toward toes",
+  "sit_reach_test": "Sit & Reach Test",
+  "full_body": "Full Body",
+  "legs": "Legs",
+  "hips": "Hips",
+  "back": "Back",
+  "shoulders": "Shoulders",
+  "neck": "Neck",
+  "elite_mobility": "Elite Mobility",
+  "good_mobility": "Good Mobility",
+  "limited_mobility": "Limited Mobility"
+}

@@ -1,0 +1,82 @@
+{
+  "header": {
+    "title": "Ресурси для самодопомоги",
+    "subtitle": "Ознайомтеся з інструментами та порадами для вашого оздоровчого шляху"
+  },
+  "sections": {
+    "tips": "Поради",
+    "support": "Знайдіть підтримку для свого здоров'я",
+    "trackers": "Трекери",
+    "resources": "Ресурси",
+    "understanding": "Understanding"
+  },
+  "common": {
+    "back": "Назад",
+    "back_to": "Назад до",
+    "chapter": "Розділ",
+    "min_read": "хвилина читання",
+    "sections": "sections",
+    "keep_exploring": "Продовжуйте досліджувати",
+    "more_on": "Більше про",
+    "browse_more": "Перегляньте трекери, статті, поради та історії, підібрані на цю тему.",
+    "words": "words",
+    "curated_by": "Куратор",
+    "the": "The",
+    "library": "Бібліотека",
+    "up_next": "Далі",
+    "back_to_top": "На початок сторінки",
+    "curated_for": "Куратор для",
+    "featured_read": "Рекомендовані статті",
+    "read_article": "Прочитайте статтю",
+    "issue_no": "Номер випуску",
+    "article": "Стаття",
+    "practices": "practices",
+    "practice": "Практика",
+    "community_story": "Історія спільноти",
+    "misconception_no": "Помилка №",
+    "the_myth": "Міф",
+    "the_truth": "Правда"
+  },
+  "resource_taglines": {
+    "articles": "Довгі тексти для читання, написані з ретельністю та рецензовані експертами.",
+    "tips": "Невеликі, практичні зміни, які ви можете включити у свій розпорядок дня.",
+    "stories": "Щирі роздуми людей, які пройшли цей шлях.",
+    "myths": "Поширені помилки, м’яко виправлені доказами."
+  },
+  "resource_eyebrows": {
+    "articles": "Бібліотека",
+    "tips": "Щоденна практика",
+    "stories": "Їхніми словами",
+    "myths": "Виправлення"
+  },
+  "resources": {
+    "articles": "Статті",
+    "tips": "Поради",
+    "stories": "Історії",
+    "myths": "Міфи"
+  },
+  "modules": {
+    "pcos": "СПКЯ",
+    "reproductive-health": "Репродуктивне здоров'я",
+    "medical-conditions": "Медичні стани",
+    "nutrition-weight": "Харчування та вага",
+    "pregnancy-postpartum": "Вагітність та післяпологовий період",
+    "mental-health": "Психічне здоров'я",
+    "fertility": "Плідність",
+    "menopause": "Менопауза"
+  },
+  "tips": {
+    "hair-skin": "Волосся та шкіра",
+    "food": "Їжа",
+    "weight-loss": "Втрата ваги",
+    "pms": "ПМС"
+  },
+  "trackers": {
+    "energy": "Energy",
+    "sleep": "Sleep",
+    "self_care": "Self Care",
+    "bmi": "BMI",
+    "physical_activity": "Physical Activity",
+    "mood": "Mood"
+  }
+}
