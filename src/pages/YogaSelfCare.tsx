@@ -5,6 +5,7 @@ import { Sidebar } from "@/components/Sidebar";
 import { MobileNav } from "@/components/MobileNav";
 import { ChevronLeft, MessageCircle, BookOpen, Video, FileText, Heart, Shield, ChevronRight, ChevronDown, Sparkles, Target, Award, Crown, Clock, Timer, Activity, Music, Moon, Sunrise, Headphones } from "lucide-react";
 import { ImageWithFallback } from "@/components/figma/ImageWithFallback";
+import { EmojiIcon } from "@/lib/emoji-icon";
 
 interface MoodOption {
   emoji: string;
@@ -168,7 +169,7 @@ export function YogaSelfCare() {
                         <span className={`text-2xl font-bold ${color.number}`}>
                           0{index + 1}
                         </span>
-                        <IconComponent size={24} className={color.icon} strokeWidth={2} />
+                        <IconComponent size={24} className=<EmojiIcon emoji={color.icon} size={22} /> strokeWidth={2} />
                       </div>
                       
                       {/* Bottom Section: Label */}

@@ -7,6 +7,7 @@ import { MobileNav } from "@/components/MobileNav";
 import { MobileAppModal } from "@/components/modals/MobileAppModal";
 import { ImageWithFallback } from "@/components/figma/ImageWithFallback";
 import ocdCtaImage from "figma:asset/db1e749f8f0e51fd6bed6aac17a276ea49c074c0.png";
+import { EmojiIcon } from "@/lib/emoji-icon";
 
 export function OCDPage() {
   const navigate = useNavigate();
@@ -123,7 +124,7 @@ export function OCDPage() {
                   <ChevronLeft size={24} />
                 </button>
                 <div className="w-9 h-9 rounded-xl flex items-center justify-center shadow-md text-lg flex-shrink-0" style={{ backgroundColor: service.color }}>
-                  {service.icon}
+                  <EmojiIcon emoji={service.icon} size={22} />
                 </div>
                 <h1 className="text-xl md:text-2xl text-[#020817]">{service.name}</h1>
               </div>
@@ -256,7 +257,7 @@ export function OCDPage() {
                         <div 
                           className={`w-11 h-11 rounded-2xl flex items-center justify-center flex-shrink-0 ${config.iconBg}`}
                         >
-                          {config.icon}
+                          <EmojiIcon emoji={config.icon} size={22} />
                         </div>
 
                         {/* Content */}

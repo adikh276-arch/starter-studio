@@ -19,6 +19,7 @@ import {
 } from "lucide-react";
 import { Sidebar } from "@/components/Sidebar";
 import { MobileNav } from "@/components/MobileNav";
+import { EmojiIcon } from "@/lib/emoji-icon";
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 interface Order {
@@ -169,7 +170,7 @@ function SubscriptionCard({ sub, index }: { sub: Subscription; index: number }) 
         <div className="flex items-start gap-3">
           {/* Type badge */}
           <div className={`w-10 h-10 ${typeCfg.bg} rounded-xl flex items-center justify-center flex-shrink-0 text-lg shadow-sm`}>
-            {typeCfg.icon}
+            <EmojiIcon emoji={typeCfg.icon} size={22} />
           </div>
 
           {/* Title + meta */}

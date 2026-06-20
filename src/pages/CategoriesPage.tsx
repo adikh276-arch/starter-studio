@@ -4,6 +4,7 @@ import { ChevronLeft, Circle, Moon, Waves, Coffee, Heart, Music, Sparkles, Mic, 
 import { motion } from "motion/react";
 import { DarkSidebar } from "@/components/DarkSidebar";
 import { MobileNav } from "@/components/MobileNav";
+import { EmojiIcon } from "@/lib/emoji-icon";
 
 export function CategoriesPage() {
   const navigate = useNavigate();
@@ -145,7 +146,7 @@ export function CategoriesPage() {
                 <ChevronLeft size={24} />
               </button>
               <div className="w-9 h-9 rounded-xl flex items-center justify-center shadow-md text-lg flex-shrink-0 bg-[#F59E0B]">
-                🧘
+                <EmojiIcon emoji="🧘" size={18} />
               </div>
               <h1 className="text-xl md:text-2xl text-white">Categories</h1>
             </div>

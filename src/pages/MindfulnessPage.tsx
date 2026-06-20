@@ -7,6 +7,7 @@ import { DarkSidebar } from "@/components/DarkSidebar";
 import { MobileNav } from "@/components/MobileNav";
 import { MobileAppModal } from "@/components/modals/MobileAppModal";
 import meditationInstructor from "figma:asset/47db5590b60a149044811969902735d9f1d5d598.png";
+import { EmojiIcon } from "@/lib/emoji-icon";
 
 export function MindfulnessPage() {
   const navigate = useNavigate();
@@ -119,7 +120,7 @@ export function MindfulnessPage() {
                   <ChevronLeft size={24} />
                 </button>
                 <div className="w-9 h-9 rounded-xl flex items-center justify-center shadow-md text-lg flex-shrink-0" style={{ backgroundColor: service.color }}>
-                  {service.icon}
+                  <EmojiIcon emoji={service.icon} size={22} />
                 </div>
                 <h1 className="text-xl md:text-2xl text-white">{service.name}</h1>
               </div>
@@ -303,7 +304,7 @@ export function MindfulnessPage() {
                     <div 
                       className={`w-14 h-14 rounded-[18px] flex items-center justify-center flex-shrink-0 shadow-md ${config.iconBg}`}
                     >
-                      {config.icon}
+                      <EmojiIcon emoji={config.icon} size={22} />
                     </div>
 
                     {/* Content */}

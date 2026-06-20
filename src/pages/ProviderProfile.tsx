@@ -8,6 +8,7 @@ import { useState } from "react";
 import { SwitchExpertModal } from "@/components/modals/SwitchExpertModal";
 import { RateProviderModal } from "@/components/modals/RateProviderModal";
 import { ReportProviderModal } from "@/components/modals/ReportProviderModal";
+import { EmojiIcon } from "@/lib/emoji-icon";
 
 export function ProviderProfile() {
   const navigate = useNavigate();
@@ -382,7 +383,7 @@ function Section({ title, icon, children }: { title: string; icon: string; child
       className="bg-white rounded-2xl p-6 mb-4 shadow-sm"
     >
       <h2 className="text-sm font-semibold text-[#043570] mb-4 flex items-center gap-2">
-        <span>{icon}</span>
+        <EmojiIcon emoji={icon} size={16} className="text-[#043570]" />
         {title}
       </h2>
       {children}
@@ -400,7 +401,7 @@ function InfoRow({ icon, label, value }: { icon: string; label: string; value: s
       className="bg-white rounded-2xl p-6 mb-4 shadow-sm"
     >
       <div className="flex items-center gap-2">
-        <span>{icon}</span>
+        <EmojiIcon emoji={icon} size={16} className="text-[#043570]" />
         <span className="text-sm font-semibold text-[#043570]">{label}:</span>
         <span className="text-sm text-[#64748B]">{value}</span>
       </div>
