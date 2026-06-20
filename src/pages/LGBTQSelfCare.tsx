@@ -29,28 +29,28 @@ interface GuideCard {
 }
 
 const resources: ResourceCard[] = [
-  { id: "assessments", icon: CheckSquare, label: "Assessments", bgColor: "linear-gradient(135deg, #FF6B6B 0%, #EE5A6F 100%)", link: "https://lgbtqiacounseling.com/assessments/" },
-  { id: "stories", icon: BookOpen, label: "Stories", bgColor: "linear-gradient(135deg, #4A90E2 0%, #357ABD 100%)", link: "https://platform.mantracare.com/lgbtq_stories/" },
-  { id: "identity", icon: Compass, label: "Identity Exploration", bgColor: "linear-gradient(135deg, #A855F7 0%, #9333EA 100%)", link: "https://web.mantracare.com/app/identity_exploration" },
-  { id: "tips", icon: Lightbulb, label: "Tips", bgColor: "linear-gradient(135deg, #F59E0B 0%, #D97706 100%)", link: "/lgbtq-tips" },
-  { id: "myths", icon: Info, label: "Myths & Facts", bgColor: "linear-gradient(135deg, #EC4899 0%, #DB2777 100%)", link: "/lgbtq-myths-facts" },
-  { id: "articles", icon: FileText, label: "Articles", bgColor: "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)", link: "/lgbtq-articles" },
+  { id: "assessments", icon: CheckSquare, label: "Assessments", bgColor: "linear-gradient(135deg, #FF6B6B 0%, #EE5A6F 100%)", link: "/lgbtq/lgbtq-assessments" },
+  { id: "stories", icon: BookOpen, label: "Stories", bgColor: "linear-gradient(135deg, #4A90E2 0%, #357ABD 100%)", link: "/lgbtq/stories" },
+  { id: "identity", icon: Compass, label: "Identity Exploration", bgColor: "linear-gradient(135deg, #A855F7 0%, #9333EA 100%)", link: "/lgbtq/identity-exploration" },
+  { id: "tips", icon: Lightbulb, label: "Tips", bgColor: "linear-gradient(135deg, #F59E0B 0%, #D97706 100%)", link: "/lgbtq/lgbtq-tips" },
+  { id: "myths", icon: Info, label: "Myths & Facts", bgColor: "linear-gradient(135deg, #EC4899 0%, #DB2777 100%)", link: "/lgbtq/lgbtq-myths-facts" },
+  { id: "articles", icon: FileText, label: "Articles", bgColor: "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)", link: "/lgbtq/lgbtq-articles" },
 ];
 
 const trackers: TrackerCard[] = [
-  { id: "identity-journey", icon: Target, label: "Identity Journey", bgColor: "linear-gradient(135deg, #A855F7 0%, #9333EA 100%)", link: "https://web.mantracare.com/app/identity_journey" },
-  { id: "daily-care", icon: HeartPulse, label: "Daily Care", bgColor: "linear-gradient(135deg, #EC4899 0%, #DB2777 100%)", link: "https://web.mantracare.com/app/daily_self_care_tracker" },
-  { id: "mood", icon: Smile, label: "Mood", bgColor: "linear-gradient(135deg, #F59E0B 0%, #D97706 100%)", link: "https://web.mantracare.com/app/mood_tracker" },
-  { id: "sleep", icon: Moon, label: "Sleep", bgColor: "linear-gradient(135deg, #3B82F6 0%, #2563EB 100%)", link: "https://web.mantracare.com/app/sleep_tracker" },
-  { id: "gratitude", icon: Sparkles, label: "Gratitude", bgColor: "linear-gradient(135deg, #10B981 0%, #059669 100%)", link: "https://web.mantracare.com/app/gratitude_tracker" },
-  { id: "vibe", icon: Activity, label: "Vibe", bgColor: "linear-gradient(135deg, #F97316 0%, #EA580C 100%)", link: "https://web.mantracare.com/app/vibe_tracker" },
+  { id: "identity-journey", icon: Target, label: "Identity Journey", bgColor: "linear-gradient(135deg, #A855F7 0%, #9333EA 100%)", link: "/lgbtq/identity-journey" },
+  { id: "daily-care", icon: HeartPulse, label: "Daily Care", bgColor: "linear-gradient(135deg, #EC4899 0%, #DB2777 100%)", link: "/lgbtq/daily-care" },
+  { id: "mood", icon: Smile, label: "Mood", bgColor: "linear-gradient(135deg, #F59E0B 0%, #D97706 100%)", link: "/lgbtq/mood-tracker" },
+  { id: "sleep", icon: Moon, label: "Sleep", bgColor: "linear-gradient(135deg, #3B82F6 0%, #2563EB 100%)", link: "/lgbtq/sleep-tracker" },
+  { id: "gratitude", icon: Sparkles, label: "Gratitude", bgColor: "linear-gradient(135deg, #10B981 0%, #059669 100%)", link: "/lgbtq/gratitude-tracker" },
+  { id: "vibe", icon: Activity, label: "Vibe", bgColor: "linear-gradient(135deg, #F97316 0%, #EA580C 100%)", link: "/lgbtq/vibe-tracker" },
 ];
 
 const guides: GuideCard[] = [
-  { id: "lesbian", icon: Heart, label: "Lesbian", bgColor: "linear-gradient(135deg, #EC4899 0%, #DB2777 100%)", link: "/lesbian-guide" },
-  { id: "gay", icon: Users2, label: "Gay", bgColor: "linear-gradient(135deg, #3B82F6 0%, #2563EB 100%)", link: "/gay-guide" },
-  { id: "bisexual", icon: Star, label: "Bi-sexual", bgColor: "linear-gradient(135deg, #A855F7 0%, #9333EA 100%)", link: "/bisexual-guide" },
-  { id: "trans", icon: Shield, label: "Trans", bgColor: "linear-gradient(135deg, #10B981 0%, #059669 100%)", link: "/trans-guide" },
+  { id: "lesbian", icon: Heart, label: "Lesbian", bgColor: "linear-gradient(135deg, #EC4899 0%, #DB2777 100%)", link: "/lgbtq/lesbian-guide" },
+  { id: "gay", icon: Users2, label: "Gay", bgColor: "linear-gradient(135deg, #3B82F6 0%, #2563EB 100%)", link: "/lgbtq/gay-guide" },
+  { id: "bisexual", icon: Star, label: "Bi-sexual", bgColor: "linear-gradient(135deg, #A855F7 0%, #9333EA 100%)", link: "/lgbtq/bisexual-guide" },
+  { id: "trans", icon: Shield, label: "Trans", bgColor: "linear-gradient(135deg, #10B981 0%, #059669 100%)", link: "/lgbtq/trans-guide" },
 ];
 
 export function LGBTQSelfCare() {
@@ -58,11 +58,7 @@ export function LGBTQSelfCare() {
 
   const handleCardClick = (link: string | null) => {
     if (link) {
-      if (link.startsWith('http')) {
-        window.open(link, '_blank');
-      } else {
-        navigate(link);
-      }
+      navigate(link);
     }
   };
 
