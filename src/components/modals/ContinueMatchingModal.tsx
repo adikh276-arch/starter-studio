@@ -13,7 +13,7 @@ const intakeTasks = [
     title: "How TherapyMantra Works?",
     description: "Watch this short video to see how TherapyMantra can support your mental well-being!",
     icon: Play,
-    iconColor: "text-[#00c0ff]",
+    iconColor: "text-[#13B5B1]",
     bgColor: "bg-[#E0F2FE]",
   },
   {
@@ -21,7 +21,7 @@ const intakeTasks = [
     title: "How to Book & Join a Session",
     description: "Learn how to easily book and join a session in just a few simple steps.",
     icon: Calendar,
-    iconColor: "text-[#00c0ff]",
+    iconColor: "text-[#13B5B1]",
     bgColor: "bg-[#E0F2FE]",
   },
   {
@@ -29,7 +29,7 @@ const intakeTasks = [
     title: "How can Therapy Help?",
     description: "Therapy offers a safe space to understand your thoughts and emotions, build healthy coping strategies",
     icon: MessageCircle,
-    iconColor: "text-[#00c0ff]",
+    iconColor: "text-[#13B5B1]",
     bgColor: "bg-[#E0F2FE]",
   },
   {
@@ -37,7 +37,7 @@ const intakeTasks = [
     title: "Create Your Personalized Wellbeing Plan",
     description: "Get a personalized mental well-being plan tailored to your goals and needs.",
     icon: ClipboardList,
-    iconColor: "text-[#00c0ff]",
+    iconColor: "text-[#13B5B1]",
     bgColor: "bg-[#E0F2FE]",
   },
 ];
@@ -81,18 +81,18 @@ export function ContinueMatchingModal({ isOpen, onClose }: ContinueMatchingModal
                 {/* Icon with underline */}
                 <div className="flex justify-center mb-8">
                   <div className="flex flex-col items-center">
-                    <Sparkles size={32} className="text-[#00c0ff] mb-2" />
-                    <div className="w-12 h-1 bg-[#00c0ff] rounded-full" />
+                    <Sparkles size={32} className="text-[#13B5B1] mb-2" />
+                    <div className="w-12 h-1 bg-[#13B5B1] rounded-full" />
                   </div>
                 </div>
 
                 {/* Title */}
-                <h2 className="text-center text-2xl font-semibold text-[#043570] mb-3">
+                <h2 className="text-center text-2xl font-semibold text-[#0B2545] mb-3">
                   While we're matching you with an expert, we recommend exploring these:
                 </h2>
 
                 {/* Subtitle Message */}
-                <p className="text-center text-sm text-[#00c0ff] mb-8 font-medium">
+                <p className="text-center text-sm text-[#13B5B1] mb-8 font-medium">
                   Complete the intake tasks in the meanwhile
                 </p>
 
@@ -104,16 +104,16 @@ export function ContinueMatchingModal({ isOpen, onClose }: ContinueMatchingModal
                       initial={{ opacity: 0, x: -20 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: index * 0.1 }}
-                      className="w-full flex items-center gap-4 p-4 bg-white rounded-xl hover:shadow-md transition-all text-left border-l-4 border-[#00c0ff] group"
+                      className="w-full flex items-center gap-4 p-4 bg-white rounded-xl hover:shadow-md transition-all text-left border-l-4 border-[#13B5B1] group"
                     >
                       {/* Icon */}
                       <div className="w-12 h-12 bg-[#E0F2FE] rounded-full flex items-center justify-center flex-shrink-0">
-                        <task.icon size={24} className="text-[#00c0ff]" />
+                        <task.icon size={24} className="text-[#13B5B1]" />
                       </div>
 
                       {/* Content */}
                       <div className="flex-1">
-                        <h3 className="text-base font-semibold text-[#00c0ff] mb-2">
+                        <h3 className="text-base font-semibold text-[#13B5B1] mb-2">
                           {task.title}
                         </h3>
                         <p className="text-sm text-[#64748B] leading-relaxed">
@@ -122,7 +122,7 @@ export function ContinueMatchingModal({ isOpen, onClose }: ContinueMatchingModal
                       </div>
 
                       {/* Arrow */}
-                      <ChevronRight size={20} className="text-[#CBD5E1] group-hover:text-[#00c0ff] transition-colors flex-shrink-0" />
+                      <ChevronRight size={20} className="text-[#CBD5E1] group-hover:text-[#13B5B1] transition-colors flex-shrink-0" />
                     </motion.button>
                   ))}
                 </div>
@@ -134,7 +134,7 @@ export function ContinueMatchingModal({ isOpen, onClose }: ContinueMatchingModal
                       onClose();
                       navigate('/tasks');
                     }}
-                    className="flex items-center gap-2 text-sm font-medium text-[#00c0ff] hover:text-[#0284c7] transition-colors"
+                    className="flex items-center gap-2 text-sm font-medium text-[#13B5B1] hover:text-[#0284c7] transition-colors"
                   >
                     <span>View All</span>
                     <ChevronRight size={16} />

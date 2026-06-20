@@ -113,12 +113,12 @@ export function YogaSelfCare() {
             <div className="flex items-center gap-3 mb-2">
               <button
                 onClick={() => navigate(-1)}
-                className="flex items-center justify-center text-[#64748B] hover:text-[#043570] transition-colors"
+                className="flex items-center justify-center text-[#64748B] hover:text-[#0B2545] transition-colors"
               >
                 <ChevronLeft size={20} />
               </button>
-              <div className="w-10 h-10 bg-[#F1F5F9] rounded-md flex items-center justify-center flex-shrink-0">
-                <MessageCircle size={20} className="text-[#1E293B]" strokeWidth={2} />
+              <div className="w-10 h-10 bg-[#F1F4F8] rounded-md flex items-center justify-center flex-shrink-0">
+                <MessageCircle size={20} className="text-[#0F172A]" strokeWidth={2} />
               </div>
               <div>
                 <h1 className="text-2xl text-[#0f172b] font-medium">Self-Care Resources</h1>
@@ -132,7 +132,7 @@ export function YogaSelfCare() {
           {/* Choose Your Yoga Level */}
           <div className="mb-10">
             <div className="flex items-center justify-between mb-5">
-              <h2 className="text-xl font-semibold text-[#043570]">Choose Your Yoga Level</h2>
+              <h2 className="text-xl font-semibold text-[#0B2545]">Choose Your Yoga Level</h2>
             </div>
 
             <motion.div
@@ -146,9 +146,9 @@ export function YogaSelfCare() {
                   const IconComponent = level.icon;
                   const colors = [
                     { number: "text-[#7DD9FF]", icon: "text-[#7DD9FF]", border: "border-[#E5E7EB]", bg: "bg-white", line: "bg-[#E5E7EB]" },
-                    { number: "text-[#00c0ff]", icon: "text-[#00c0ff]", border: "border-[#E5E7EB]", bg: "bg-white", line: "bg-[#E5E7EB]" },
+                    { number: "text-[#13B5B1]", icon: "text-[#13B5B1]", border: "border-[#E5E7EB]", bg: "bg-white", line: "bg-[#E5E7EB]" },
                     { number: "text-[#0277A3]", icon: "text-[#0277A3]", border: "border-[#E5E7EB]", bg: "bg-white", line: "bg-[#E5E7EB]" },
-                    { number: "text-[#043570]", icon: "text-[#043570]", border: "border-[#E5E7EB]", bg: "bg-white", line: "bg-[#E5E7EB]" },
+                    { number: "text-[#0B2545]", icon: "text-[#0B2545]", border: "border-[#E5E7EB]", bg: "bg-white", line: "bg-[#E5E7EB]" },
                   ];
                   const color = colors[index % colors.length];
                   
@@ -187,7 +187,7 @@ export function YogaSelfCare() {
           {/* Categories */}
           <div className="mb-10">
             <div className="flex items-center justify-between mb-5">
-              <h2 className="text-xl font-semibold text-[#043570]">Categories</h2>
+              <h2 className="text-xl font-semibold text-[#0B2545]">Categories</h2>
             </div>
 
             <motion.div
@@ -221,7 +221,7 @@ export function YogaSelfCare() {
                       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
                       
                       {/* Hover Overlay */}
-                      <div className="absolute inset-0 bg-[#043570]/0 group-hover:bg-[#043570]/10 transition-colors"></div>
+                      <div className="absolute inset-0 bg-[#0B2545]/0 group-hover:bg-[#0B2545]/10 transition-colors"></div>
                       
                       {/* Text Content */}
                       <div className="absolute inset-0 flex items-end p-5">
@@ -239,7 +239,7 @@ export function YogaSelfCare() {
           {/* Duration */}
           <div className="mb-10">
             <div className="flex items-center justify-between mb-5">
-              <h2 className="text-xl font-semibold text-[#043570]">Duration</h2>
+              <h2 className="text-xl font-semibold text-[#0B2545]">Duration</h2>
             </div>
 
             <motion.div
@@ -262,12 +262,12 @@ export function YogaSelfCare() {
                       onClick={() => {
                         console.log(`Navigate to ${duration.id}`);
                       }}
-                      className="bg-white rounded-2xl px-4 py-3.5 hover:shadow-lg shadow-sm transition-all flex items-center gap-3 border border-[#E2E8F0]"
+                      className="bg-white rounded-2xl px-4 py-3.5 hover:shadow-lg shadow-sm transition-all flex items-center gap-3 border border-[#E5EAF0]"
                     >
                       <div className="w-10 h-10 bg-[#E0F2FE] rounded-full flex items-center justify-center flex-shrink-0">
                         <IconComponent size={20} className="text-[#0284c7]" strokeWidth={2.5} />
                       </div>
-                      <span className="text-[#043570] font-medium text-sm whitespace-nowrap">{duration.label}</span>
+                      <span className="text-[#0B2545] font-medium text-sm whitespace-nowrap">{duration.label}</span>
                     </motion.button>
                   );
                 })}
@@ -278,10 +278,10 @@ export function YogaSelfCare() {
           {/* Mindfulness Section */}
           <div className="mb-10">
             <div className="flex items-center justify-between mb-5">
-              <h2 className="text-xl font-semibold text-[#043570]">Mindfulness</h2>
+              <h2 className="text-xl font-semibold text-[#0B2545]">Mindfulness</h2>
               <button
                 onClick={() => navigate("/service/meditation")}
-                className="flex items-center gap-1 text-sm text-[#00c0ff] hover:text-[#0284c7] font-semibold transition-colors group"
+                className="flex items-center gap-1 text-sm text-[#13B5B1] hover:text-[#0284c7] font-semibold transition-colors group"
               >
                 Explore
                 <ChevronRight size={16} className="group-hover:translate-x-1 transition-transform" />
@@ -308,13 +308,13 @@ export function YogaSelfCare() {
                         navigate("/service/meditation");
                       }
                     }}
-                    className="bg-white rounded-2xl p-6 hover:shadow-2xl shadow-md transition-all text-center group border border-[#E2E8F0]/50 relative overflow-hidden"
+                    className="bg-white rounded-2xl p-6 hover:shadow-2xl shadow-md transition-all text-center group border border-[#E5EAF0]/50 relative overflow-hidden"
                   >
-                    <div className="absolute inset-0 bg-gradient-to-br from-[#00c0ff]/0 to-[#00c0ff]/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div className="absolute inset-0 bg-gradient-to-br from-[#13B5B1]/0 to-[#13B5B1]/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                     <div className="w-16 h-16 bg-[#E0F2FE] rounded-2xl flex items-center justify-center mb-4 mx-auto transition-all group-hover:scale-110 group-hover:rotate-3 relative z-10">
                       <IconComponent size={28} className="text-[#0284c7]" strokeWidth={2.5} />
                     </div>
-                    <h3 className="text-[#043570] font-semibold text-sm mb-1 relative z-10">{card.label}</h3>
+                    <h3 className="text-[#0B2545] font-semibold text-sm mb-1 relative z-10">{card.label}</h3>
                     <p className="text-[#64748B] text-xs relative z-10">{card.subtitle}</p>
                   </motion.button>
                 );

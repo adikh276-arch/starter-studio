@@ -56,7 +56,7 @@ const topicCards: TopicCard[] = [
   { id: "mental-health", icon: Heart, label: "Mental Health", bgColor: "bg-[#DBEAFE]", iconColor: "text-[#3B82F6]" },
   { id: "transform", icon: TrendingUp, label: "Transform", bgColor: "bg-[#FCE7F3]", iconColor: "text-[#EC4899]" },
   { id: "communicate", icon: Users, label: "Communicate", bgColor: "bg-[#FFF4ED]", iconColor: "text-[#FB923C]" },
-  { id: "organization", icon: Briefcase, label: "Organization", bgColor: "bg-[#F1F5F9]", iconColor: "text-[#64748B]" },
+  { id: "organization", icon: Briefcase, label: "Organization", bgColor: "bg-[#F1F4F8]", iconColor: "text-[#64748B]" },
   { id: "creativity", icon: Lightbulb, label: "Creativity", bgColor: "bg-[#FEF3C7]", iconColor: "text-[#F59E0B]" },
   { id: "employee", icon: Users, label: "Employee", bgColor: "bg-[#CCFBF1]", iconColor: "text-[#14B8A6]" },
   { id: "corporate", icon: Briefcase, label: "Corporate", bgColor: "bg-[#E0F2FE]", iconColor: "text-[#0EA5E9]" },
@@ -105,12 +105,12 @@ export function CoachingAreas() {
             <div className="flex items-center gap-3 mb-2">
               <button
                 onClick={() => navigate(-1)}
-                className="flex items-center justify-center text-[#64748B] hover:text-[#043570] transition-colors"
+                className="flex items-center justify-center text-[#64748B] hover:text-[#0B2545] transition-colors"
               >
                 <ChevronLeft size={20} />
               </button>
-              <div className="w-10 h-10 bg-[#F1F5F9] rounded-md flex items-center justify-center flex-shrink-0">
-                <Target size={20} className="text-[#1E293B]" strokeWidth={2} />
+              <div className="w-10 h-10 bg-[#F1F4F8] rounded-md flex items-center justify-center flex-shrink-0">
+                <Target size={20} className="text-[#0F172A]" strokeWidth={2} />
               </div>
               <div>
                 <h1 className="text-2xl text-[#0f172b] font-medium">Select Coaching Area</h1>
@@ -181,7 +181,7 @@ export function CoachingAreas() {
                       onClick={() => {
                         console.log(`Navigate to ${topic.id}`);
                       }}
-                      className="bg-white border border-[#E2E8F0] rounded-2xl p-5 hover:border-[#3B82F6]/40 hover:shadow-lg transition-all text-center group"
+                      className="bg-white border border-[#E5EAF0] rounded-2xl p-5 hover:border-[#3B82F6]/40 hover:shadow-lg transition-all text-center group"
                     >
                       <div className={`w-16 h-16 ${topic.bgColor} rounded-3xl flex items-center justify-center mb-3 mx-auto transition-all group-hover:scale-110`}>
                         <IconComponent size={28} className={topic.iconColor} strokeWidth={2} />

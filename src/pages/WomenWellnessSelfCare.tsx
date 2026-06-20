@@ -21,7 +21,7 @@ const topicCards: TopicCard[] = [
   { id: "mental-health", icon: FaBrain, label: "Mental Health", bgColor: "bg-[#E0F2FE]", iconColor: "text-[#0EA5E9]", circleBg: "bg-[#BAE6FD]" },
   { id: "nutrition-weight", icon: FaAppleAlt, label: "Nutrition & Weight", bgColor: "bg-[#FFF4ED]", iconColor: "text-[#FB923C]", circleBg: "bg-[#FED7AA]" },
   { id: "pregnancy-postpartum", icon: FaBabyCarriage, label: "Pregnancy & Postpartum", bgColor: "bg-[#DCFCE7]", iconColor: "text-[#22C55E]", circleBg: "bg-[#BBF7D0]" },
-  { id: "medical-conditions", icon: FaNotesMedical, label: "Medical Conditions", bgColor: "bg-[#F1F5F9]", iconColor: "text-[#64748B]", circleBg: "bg-[#E2E8F0]" },
+  { id: "medical-conditions", icon: FaNotesMedical, label: "Medical Conditions", bgColor: "bg-[#F1F4F8]", iconColor: "text-[#64748B]", circleBg: "bg-[#E5EAF0]" },
   { id: "fertility", icon: FaSeedling, label: "Fertility", bgColor: "bg-[#FCE7F3]", iconColor: "text-[#EC4899]", circleBg: "bg-[#FBCFE8]" },
   { id: "menopause", icon: FaUserClock, label: "Menopause", bgColor: "bg-[#CCFBF1]", iconColor: "text-[#14B8A6]", circleBg: "bg-[#99F6E4]" },
 ];
@@ -60,12 +60,12 @@ export function WomenWellnessSelfCare() {
             <div className="flex items-center gap-3 mb-2">
               <button
                 onClick={() => navigate(-1)}
-                className="flex items-center justify-center text-[#64748B] hover:text-[#043570] transition-colors"
+                className="flex items-center justify-center text-[#64748B] hover:text-[#0B2545] transition-colors"
               >
                 <ChevronLeft size={20} />
               </button>
-              <div className="w-10 h-10 bg-[#F1F5F9] rounded-md flex items-center justify-center flex-shrink-0">
-                <MessageCircle size={20} className="text-[#1E293B]" strokeWidth={2} />
+              <div className="w-10 h-10 bg-[#F1F4F8] rounded-md flex items-center justify-center flex-shrink-0">
+                <MessageCircle size={20} className="text-[#0F172A]" strokeWidth={2} />
               </div>
               <div>
                 <h1 className="text-2xl text-[#0f172b] font-medium">Self-Care Resources</h1>
@@ -99,7 +99,7 @@ export function WomenWellnessSelfCare() {
                       onClick={() => {
                         console.log(`Navigate to ${topic.id}`);
                       }}
-                      className="bg-white border border-[#E2E8F0] rounded-2xl p-4 hover:border-[#3B82F6]/40 hover:shadow-lg transition-all text-center group"
+                      className="bg-white border border-[#E5EAF0] rounded-2xl p-4 hover:border-[#3B82F6]/40 hover:shadow-lg transition-all text-center group"
                     >
                       <div className={`w-full aspect-square ${topic.bgColor} rounded-2xl flex items-center justify-center mb-3 relative`}>
                         <div className={`w-16 h-16 rounded-full ${topic.circleBg} flex items-center justify-center transition-all group-hover:scale-110`}>

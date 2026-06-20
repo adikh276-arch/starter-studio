@@ -12,14 +12,14 @@ import { Button } from "@/components/ui/button";
 
 // ─── Brand ───────────────────────────────────────────────────────────────────
 const B = {
-  primary:     "#2D9CDB",
+  primary:     "#13B5B1",
   primaryDark: "#1E88C7",
   primaryBg:   "#EBF5FB",
-  primarySoft: "#f3faff",
-  bg:          "#F6F8FB",
+  primarySoft: "#F1F7F7",
+  bg:          "#F7F8FA",
   white:       "#ffffff",
-  border:      "#e2e8f0",
-  text:        "#1e293b",
+  border:      "#E5EAF0",
+  text:        "#0F172A",
   muted:       "#64748b",
   subtle:      "#94a3b8",
 };
@@ -230,9 +230,9 @@ const docTypeIcon: Record<DocType, React.ComponentType<{ className?: string; sty
 };
 
 const docTypeColor: Record<DocType, { color: string; bg: string; border: string }> = {
-  "Prescription":         { color: "#2D9CDB", bg: "#EBF5FB", border: "#BFDFEF" },
+  "Prescription":         { color: "#13B5B1", bg: "#EBF5FB", border: "#BFDFEF" },
   "Lab Report":           { color: "#B45309", bg: "#FEF3C7", border: "#FDE68A" },
-  "Therapy Notes":        { color: "#475569", bg: "#F1F5F9", border: "#CBD5E1" },
+  "Therapy Notes":        { color: "#475569", bg: "#F1F4F8", border: "#CBD5E1" },
   "Consultation Summary": { color: "#0E7490", bg: "#ECFEFF", border: "#A5F3FC" },
   "Imaging":              { color: "#374151", bg: "#F3F4F6", border: "#D1D5DB" },
   "Invoice":              { color: "#B91C1C", bg: "#FEF2F2", border: "#FECACA" },
@@ -251,7 +251,7 @@ function docSummary(docs: HealthDoc[]) {
 function PrescriptionThumbnail({ doc }: { doc: HealthDoc }) {
   const meds = doc.preview?.medicines || [];
   return (
-    <div className="w-full h-full bg-white rounded-lg overflow-hidden flex flex-col" style={{ border: "1px solid #e2e8f0" }}>
+    <div className="w-full h-full bg-white rounded-lg overflow-hidden flex flex-col" style={{ border: "1px solid #E5EAF0" }}>
       {/* Header */}
       <div className="px-2.5 py-2 flex items-center justify-between flex-shrink-0" style={{ backgroundColor: B.primary }}>
         <div>
@@ -291,7 +291,7 @@ function PrescriptionThumbnail({ doc }: { doc: HealthDoc }) {
 function LabThumbnail({ doc }: { doc: HealthDoc }) {
   const findings = doc.preview?.findings || [];
   return (
-    <div className="w-full h-full bg-white rounded-lg overflow-hidden flex flex-col" style={{ border: "1px solid #e2e8f0" }}>
+    <div className="w-full h-full bg-white rounded-lg overflow-hidden flex flex-col" style={{ border: "1px solid #E5EAF0" }}>
       <div className="px-2.5 py-2 flex-shrink-0" style={{ backgroundColor: "#FFFBEB", borderBottom: "1px solid #FDE68A" }}>
         <div className="text-[8px] font-bold text-amber-800">{doc.preview?.lab || "Diagnostic Lab"}</div>
         <div className="text-[6px] text-amber-600 mt-0.5">{doc.preview?.testName || "Lab Report"}</div>

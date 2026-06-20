@@ -56,10 +56,10 @@ export function InsuranceNotFoundModal({
           {/* Header */}
           <div className="flex items-center justify-between px-6 py-5 border-b border-slate-200">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-[#f3faff] flex items-center justify-center">
-                <AlertCircle size={22} className="text-[#043570]" />
+              <div className="w-10 h-10 rounded-full bg-[#F1F7F7] flex items-center justify-center">
+                <AlertCircle size={22} className="text-[#0B2545]" />
               </div>
-              <h2 className="text-lg font-semibold text-[#043570]">
+              <h2 className="text-lg font-semibold text-[#0B2545]">
                 Insurance Verification Issue
               </h2>
             </div>
@@ -75,7 +75,7 @@ export function InsuranceNotFoundModal({
           <div className="px-6 py-6 space-y-5">
             {/* Main Message */}
             <div className="text-center">
-              <h3 className="text-xl font-semibold text-[#043570] mb-2">
+              <h3 className="text-xl font-semibold text-[#0B2545] mb-2">
                 We're having trouble finding your insurance
               </h3>
               <p className="text-sm text-slate-600">
@@ -96,7 +96,7 @@ export function InsuranceNotFoundModal({
                     <div className="flex items-start gap-2">
                       <span className="text-xs text-slate-600 min-w-[80px]">Insurance</span>
                       <div className="flex-1">
-                        <p className="text-sm font-medium text-[#043570]">
+                        <p className="text-sm font-medium text-[#0B2545]">
                           {insuranceData.carrier}
                         </p>
                         <div className="flex items-center gap-1 mt-1">
@@ -113,27 +113,27 @@ export function InsuranceNotFoundModal({
             </div>
 
             {/* Information Review */}
-            <div className="space-y-3 bg-[#f3faff]/50 rounded-xl p-4 border border-[#043570]/10">
-              <p className="text-xs font-medium text-[#043570] uppercase tracking-wide mb-3">
+            <div className="space-y-3 bg-[#F1F7F7]/50 rounded-xl p-4 border border-[#0B2545]/10">
+              <p className="text-xs font-medium text-[#0B2545] uppercase tracking-wide mb-3">
                 Information Provided
               </p>
               
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <p className="text-xs text-slate-600 mb-1">Name</p>
-                  <p className="text-sm font-medium text-[#043570]">
+                  <p className="text-sm font-medium text-[#0B2545]">
                     {insuranceData.name}
                   </p>
                 </div>
                 <div>
                   <p className="text-xs text-slate-600 mb-1">Date of birth</p>
-                  <p className="text-sm font-medium text-[#043570]">
+                  <p className="text-sm font-medium text-[#0B2545]">
                     {insuranceData.dateOfBirth}
                   </p>
                 </div>
                 <div>
                   <p className="text-xs text-slate-600 mb-1">Location</p>
-                  <p className="text-sm font-medium text-[#043570]">
+                  <p className="text-sm font-medium text-[#0B2545]">
                     {insuranceData.location}
                   </p>
                 </div>
@@ -142,7 +142,7 @@ export function InsuranceNotFoundModal({
                     Member/Subscriber ID
                     <Info size={12} className="text-slate-400" />
                   </p>
-                  <p className="text-sm font-medium text-[#043570]">
+                  <p className="text-sm font-medium text-[#0B2545]">
                     {insuranceData.memberId}
                   </p>
                 </div>
@@ -153,7 +153,7 @@ export function InsuranceNotFoundModal({
             <div className="bg-slate-50 rounded-lg p-3 border border-slate-200">
               <p className="text-xs text-slate-700 text-center leading-relaxed">
                 If you're in a life-threatening situation,{" "}
-                <span className="font-medium text-[#043570]">don't use this app</span> — call{" "}
+                <span className="font-medium text-[#0B2545]">don't use this app</span> — call{" "}
                 <a href="tel:988" className="text-[#2563EB] font-medium hover:underline">
                   988
                 </a>{" "}
@@ -168,13 +168,13 @@ export function InsuranceNotFoundModal({
             <div className="space-y-3 pt-2">
               <button
                 onClick={handleEditInfo}
-                className="w-full py-3 px-4 bg-gradient-to-r from-[#043570] to-[#00c0ff] hover:from-[#032a56] hover:to-[#00a8e0] text-white rounded-xl transition-all font-medium shadow-md hover:shadow-lg"
+                className="w-full py-3 px-4 bg-gradient-to-r from-[#0B2545] to-[#13B5B1] hover:from-[#032a56] hover:to-[#00a8e0] text-white rounded-xl transition-all font-medium shadow-md hover:shadow-lg"
               >
                 Edit Info
               </button>
               <button
                 onClick={handleContinue}
-                className="w-full py-3 px-4 text-[#2563EB] hover:text-[#043570] font-medium transition-colors"
+                className="w-full py-3 px-4 text-[#2563EB] hover:text-[#0B2545] font-medium transition-colors"
               >
                 Continue with this information
               </button>

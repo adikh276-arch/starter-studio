@@ -94,12 +94,12 @@ export function FinancialWellnessSelfCare() {
             <div className="flex items-center gap-3 mb-2">
               <button
                 onClick={() => navigate(-1)}
-                className="flex items-center justify-center text-[#64748B] hover:text-[#043570] transition-colors"
+                className="flex items-center justify-center text-[#64748B] hover:text-[#0B2545] transition-colors"
               >
                 <ChevronLeft size={20} />
               </button>
-              <div className="w-10 h-10 bg-[#F1F5F9] rounded-md flex items-center justify-center flex-shrink-0">
-                <DollarSign size={20} className="text-[#1E293B]" strokeWidth={2} />
+              <div className="w-10 h-10 bg-[#F1F4F8] rounded-md flex items-center justify-center flex-shrink-0">
+                <DollarSign size={20} className="text-[#0F172A]" strokeWidth={2} />
               </div>
               <div>
                 <h1 className="text-2xl text-[#0f172b] font-medium">Financial Wellness Resources</h1>
@@ -150,7 +150,7 @@ export function FinancialWellnessSelfCare() {
           {/* Choose Your Financial Tools */}
           <div className="mb-10">
             <div className="flex items-center justify-between mb-5">
-              <h2 className="text-xl font-semibold text-[#043570]">Financial Calculators</h2>
+              <h2 className="text-xl font-semibold text-[#0B2545]">Financial Calculators</h2>
             </div>
 
             <motion.div
@@ -164,9 +164,9 @@ export function FinancialWellnessSelfCare() {
                   const IconComponent = level.icon;
                   const colors = [
                     { number: "text-[#7DD9FF]", icon: "text-[#7DD9FF]", border: "border-[#E5E7EB]", bg: "bg-white", line: "bg-[#E5E7EB]" },
-                    { number: "text-[#00c0ff]", icon: "text-[#00c0ff]", border: "border-[#E5E7EB]", bg: "bg-white", line: "bg-[#E5E7EB]" },
+                    { number: "text-[#13B5B1]", icon: "text-[#13B5B1]", border: "border-[#E5E7EB]", bg: "bg-white", line: "bg-[#E5E7EB]" },
                     { number: "text-[#0277A3]", icon: "text-[#0277A3]", border: "border-[#E5E7EB]", bg: "bg-white", line: "bg-[#E5E7EB]" },
-                    { number: "text-[#043570]", icon: "text-[#043570]", border: "border-[#E5E7EB]", bg: "bg-white", line: "bg-[#E5E7EB]" },
+                    { number: "text-[#0B2545]", icon: "text-[#0B2545]", border: "border-[#E5E7EB]", bg: "bg-white", line: "bg-[#E5E7EB]" },
                   ];
                   const color = colors[index % colors.length];
                   
@@ -205,7 +205,7 @@ export function FinancialWellnessSelfCare() {
           {/* Categories */}
           <div className="mb-10">
             <div className="flex items-center justify-between mb-5">
-              <h2 className="text-xl font-semibold text-[#043570]">Resources</h2>
+              <h2 className="text-xl font-semibold text-[#0B2545]">Resources</h2>
             </div>
 
             <motion.div
@@ -239,7 +239,7 @@ export function FinancialWellnessSelfCare() {
                       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
                       
                       {/* Hover Overlay */}
-                      <div className="absolute inset-0 bg-[#043570]/0 group-hover:bg-[#043570]/10 transition-colors"></div>
+                      <div className="absolute inset-0 bg-[#0B2545]/0 group-hover:bg-[#0B2545]/10 transition-colors"></div>
                       
                       {/* Text Content */}
                       <div className="absolute inset-0 flex items-end p-5">

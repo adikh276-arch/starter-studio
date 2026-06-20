@@ -717,13 +717,13 @@ export function CareTeam() {
       <div className="flex-1 flex flex-col min-w-0">
         <main className="flex-1 flex">
           {/* Left Panel - Experts & Messages */}
-          <div className={`${showExpertsList ? 'flex' : 'hidden md:flex'} w-full md:w-72 lg:w-80 xl:w-96 bg-white border-r border-[#E2ECF5] flex-col pt-[60px] md:pt-0 h-screen overflow-hidden`}>
+          <div className={`${showExpertsList ? 'flex' : 'hidden md:flex'} w-full md:w-72 lg:w-80 xl:w-96 bg-white border-r border-[#E5EAF0] flex-col pt-[60px] md:pt-0 h-screen overflow-hidden`}>
             {/* Header */}
             <div className="p-4 flex-shrink-0">
               <div className="flex items-center justify-between mb-3">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-[#F1F5F9] rounded-md flex items-center justify-center flex-shrink-0">
-                    <MessageCircle size={20} className="text-[#1E293B]" strokeWidth={2} />
+                  <div className="w-10 h-10 bg-[#F1F4F8] rounded-md flex items-center justify-center flex-shrink-0">
+                    <MessageCircle size={20} className="text-[#0F172A]" strokeWidth={2} />
                   </div>
                   <div>
                     <h1 className="text-2xl text-[#0f172b] font-medium">Care Team</h1>
@@ -739,7 +739,7 @@ export function CareTeam() {
                   placeholder="Search conversations..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full pl-9 pr-3 py-2 bg-[#f3faff] border border-[#E2ECF5] rounded-lg text-sm text-[#020817] placeholder-[#64748B] focus:outline-none focus:ring-2 focus:ring-[#00c0ff] focus:border-transparent"
+                  className="w-full pl-9 pr-3 py-2 bg-[#F1F7F7] border border-[#E5EAF0] rounded-lg text-sm text-[#0F172A] placeholder-[#64748B] focus:outline-none focus:ring-2 focus:ring-[#13B5B1] focus:border-transparent"
                 />
               </div>
               
@@ -749,26 +749,26 @@ export function CareTeam() {
                   onClick={() => setActiveTab("active")}
                   className={`flex-1 py-2 px-3 text-sm transition-all relative ${
                     activeTab === "active"
-                      ? "text-[#00c0ff]"
+                      ? "text-[#13B5B1]"
                       : "text-[#94a3b8]"
                   }`}
                 >
                   ACTIVE
                   {activeTab === "active" && (
-                    <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#00c0ff] rounded-full"></span>
+                    <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#13B5B1] rounded-full"></span>
                   )}
                 </button>
                 <button
                   onClick={() => setActiveTab("inactive")}
                   className={`flex-1 py-2 px-3 text-sm transition-all relative ${
                     activeTab === "inactive"
-                      ? "text-[#00c0ff]"
+                      ? "text-[#13B5B1]"
                       : "text-[#94a3b8]"
                   }`}
                 >
                   INACTIVE
                   {activeTab === "inactive" && (
-                    <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#00c0ff] rounded-full"></span>
+                    <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#13B5B1] rounded-full"></span>
                   )}
                 </button>
               </div>
@@ -785,9 +785,9 @@ export function CareTeam() {
                     const isUnread = expertMessage?.unread || false;
                     
                     // Compute classNames outside JSX to avoid template literal issues
-                    const nameClassName = isUnread ? 'text-sm truncate font-semibold text-[#020817]' : 'text-sm truncate font-medium text-[#020817]';
-                    const roleClassName = isUnread ? 'text-xs text-[#043570] font-medium' : 'text-xs text-[#64748B]';
-                    const messageClassName = isUnread ? 'text-xs truncate text-[#043570] font-medium' : 'text-xs truncate text-[#64748B]';
+                    const nameClassName = isUnread ? 'text-sm truncate font-semibold text-[#0F172A]' : 'text-sm truncate font-medium text-[#0F172A]';
+                    const roleClassName = isUnread ? 'text-xs text-[#0B2545] font-medium' : 'text-xs text-[#64748B]';
+                    const messageClassName = isUnread ? 'text-xs truncate text-[#0B2545] font-medium' : 'text-xs truncate text-[#64748B]';
                     
                     return (
                       <motion.button
@@ -797,10 +797,10 @@ export function CareTeam() {
                         onClick={() => handleExpertClick(expert)}
                         className={`w-full flex items-start gap-3 p-3 rounded-xl transition-all ${
                           selectedExpert?.id === expert.id
-                            ? "bg-[#f3faff] border-2 border-[#00c0ff]"
+                            ? "bg-[#F1F7F7] border-2 border-[#13B5B1]"
                             : expertMessage?.unread
-                            ? "bg-[#f3faff] border-2 border-transparent"
-                            : "hover:bg-[#f3faff] border-2 border-transparent"
+                            ? "bg-[#F1F7F7] border-2 border-transparent"
+                            : "hover:bg-[#F1F7F7] border-2 border-transparent"
                         }`}
                       >
                         <div className="relative flex-shrink-0">
@@ -824,8 +824,8 @@ export function CareTeam() {
                                 <span className="text-[10px] text-[#10B981] font-medium">Finding the Right Provider</span>
                               </div>
                             ) : expert.id === "8" ? (
-                              <div className="flex items-center gap-1 px-2 py-1 bg-[#f3faff] border border-[#8FD9F6] rounded-full flex-shrink-0">
-                                <span className="text-[10px] text-[#00c0ff] font-medium">Get Started &gt;</span>
+                              <div className="flex items-center gap-1 px-2 py-1 bg-[#F1F7F7] border border-[#8FD9F6] rounded-full flex-shrink-0">
+                                <span className="text-[10px] text-[#13B5B1] font-medium">Get Started &gt;</span>
                               </div>
                             ) : hasMessage && expertMessage ? (
                               <span className="text-[10px] text-[#64748B] font-normal flex-shrink-0">{expertMessage.timestamp}</span>
@@ -865,7 +865,7 @@ export function CareTeam() {
                           )}
                         </div>
                         {expertMessage?.unread && (
-                          <div className="w-2 h-2 bg-[#00c0ff] rounded-full flex-shrink-0 mt-1.5"></div>
+                          <div className="w-2 h-2 bg-[#13B5B1] rounded-full flex-shrink-0 mt-1.5"></div>
                         )}
                       </motion.button>
                     );
@@ -880,12 +880,12 @@ export function CareTeam() {
             {selectedExpert ? (
               <>
                 {/* Chat Header */}
-                <div className="bg-white border-b border-[#E2ECF5] px-4 md:px-6 py-4 flex-shrink-0">
+                <div className="bg-white border-b border-[#E5EAF0] px-4 md:px-6 py-4 flex-shrink-0">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-3">
                       <button
                         onClick={handleBack}
-                        className="md:hidden w-9 h-9 rounded-xl flex items-center justify-center transition-colors flex-shrink-0 text-[#64748B] hover:text-[#020817] hover:bg-[#f3faff]"
+                        className="md:hidden w-9 h-9 rounded-xl flex items-center justify-center transition-colors flex-shrink-0 text-[#64748B] hover:text-[#0F172A] hover:bg-[#F1F7F7]"
                       >
                         <ChevronLeft size={24} />
                       </button>
@@ -906,8 +906,8 @@ export function CareTeam() {
                           }`}></div>
                         </div>
                         <div className="text-left">
-                          <h3 className="text-sm font-semibold text-[#020817] group-hover:text-[#00c0ff] transition-colors">{selectedExpert.name}</h3>
-                          <p className="text-xs text-[#64748B] group-hover:text-[#043570] transition-colors">
+                          <h3 className="text-sm font-semibold text-[#0F172A] group-hover:text-[#13B5B1] transition-colors">{selectedExpert.name}</h3>
+                          <p className="text-xs text-[#64748B] group-hover:text-[#0B2545] transition-colors">
                             {selectedExpert.status === "online" ? "Online" : `Last seen ${selectedExpert.lastSeen}`}
                           </p>
                         </div>
@@ -920,11 +920,11 @@ export function CareTeam() {
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             onClick={() => setShowScheduleModal(true)}
-                            className="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-[#f3faff] text-[#64748B] hover:text-[#043570] transition-colors relative group"
+                            className="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-[#F1F7F7] text-[#64748B] hover:text-[#0B2545] transition-colors relative group"
                             title="Book Appointment"
                           >
                             <Calendar size={18} />
-                            <span className="absolute bottom-full mb-2 hidden group-hover:block bg-[#020817] text-white text-xs px-2 py-1 rounded whitespace-nowrap">
+                            <span className="absolute bottom-full mb-2 hidden group-hover:block bg-[#0F172A] text-white text-xs px-2 py-1 rounded whitespace-nowrap">
                               Book Appointment
                             </span>
                           </motion.button>
@@ -936,11 +936,11 @@ export function CareTeam() {
                               setShowBuyPlanModal(true);
                               setBuyPlanType("normal");
                             }}
-                            className="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-[#f3faff] text-[#64748B] hover:text-[#043570] transition-colors relative group"
+                            className="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-[#F1F7F7] text-[#64748B] hover:text-[#0B2545] transition-colors relative group"
                             title="Buy Plan"
                           >
                             <ShoppingCart size={18} />
-                            <span className="absolute bottom-full mb-2 hidden group-hover:block bg-[#020817] text-white text-xs px-2 py-1 rounded whitespace-nowrap">
+                            <span className="absolute bottom-full mb-2 hidden group-hover:block bg-[#0F172A] text-white text-xs px-2 py-1 rounded whitespace-nowrap">
                               Buy Plan
                             </span>
                           </motion.button>
@@ -949,7 +949,7 @@ export function CareTeam() {
                               whileHover={{ scale: 1.05 }}
                               whileTap={{ scale: 0.95 }}
                               onClick={() => setShowOptionsMenu(!showOptionsMenu)}
-                              className="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-[#f3faff] text-[#64748B] hover:text-[#043570] transition-colors"
+                              className="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-[#F1F7F7] text-[#64748B] hover:text-[#0B2545] transition-colors"
                             >
                               <MoreVertical size={18} />
                             </motion.button>
@@ -970,14 +970,14 @@ export function CareTeam() {
                                 animate={{ opacity: 1, y: 0 }}
                                 exit={{ opacity: 0, y: -10 }}
                                 transition={{ duration: 0.2 }}
-                                className="absolute right-0 top-full mt-2 w-56 bg-white rounded-xl shadow-lg border border-[#E2ECF5] overflow-hidden z-50"
+                                className="absolute right-0 top-full mt-2 w-56 bg-white rounded-xl shadow-lg border border-[#E5EAF0] overflow-hidden z-50"
                               >
                                 <button
                                   onClick={() => {
                                     setShowOptionsMenu(false);
                                     setShowScheduleModal(true);
                                   }}
-                                  className="w-full px-4 py-3 text-left text-sm text-[#020817] hover:bg-[#f3faff] transition-colors flex items-center gap-3"
+                                  className="w-full px-4 py-3 text-left text-sm text-[#0F172A] hover:bg-[#F1F7F7] transition-colors flex items-center gap-3"
                                 >
                                   <Calendar size={16} className="text-[#64748B]" />
                                   Schedule Appointment
@@ -987,7 +987,7 @@ export function CareTeam() {
                                     setShowOptionsMenu(false);
                                     navigate(`/appointments?provider=${encodeURIComponent(selectedExpert.name)}`);
                                   }}
-                                  className="w-full px-4 py-3 text-left text-sm text-[#020817] hover:bg-[#f3faff] transition-colors flex items-center gap-3 border-t border-[#E2ECF5]"
+                                  className="w-full px-4 py-3 text-left text-sm text-[#0F172A] hover:bg-[#F1F7F7] transition-colors flex items-center gap-3 border-t border-[#E5EAF0]"
                                 >
                                   <Clock size={16} className="text-[#64748B]" />
                                   Sessions
@@ -997,7 +997,7 @@ export function CareTeam() {
                                     setShowOptionsMenu(false);
                                     setShowSwitchFeedbackModal(true);
                                   }}
-                                  className="w-full px-4 py-3 text-left text-sm text-[#020817] hover:bg-[#f3faff] transition-colors flex items-center gap-3 border-t border-[#E2ECF5]"
+                                  className="w-full px-4 py-3 text-left text-sm text-[#0F172A] hover:bg-[#F1F7F7] transition-colors flex items-center gap-3 border-t border-[#E5EAF0]"
                                 >
                                   <RefreshCw size={16} className="text-[#64748B]" />
                                   Switch {selectedExpert.role}
@@ -1007,7 +1007,7 @@ export function CareTeam() {
                                     setShowOptionsMenu(false);
                                     setShowReportProviderModal(true);
                                   }}
-                                  className="w-full px-4 py-3 text-left text-sm text-[#EF4444] hover:bg-[#FEF2F2] transition-colors flex items-center gap-3 border-t border-[#E2ECF5]"
+                                  className="w-full px-4 py-3 text-left text-sm text-[#EF4444] hover:bg-[#FEF2F2] transition-colors flex items-center gap-3 border-t border-[#E5EAF0]"
                                 >
                                   <AlertCircle size={16} className="text-[#EF4444]" />
                                   Report Provider
@@ -1028,7 +1028,7 @@ export function CareTeam() {
                   <div className="max-w-4xl mx-auto">
                     {/* Date Divider */}
                     <div className="flex items-center justify-center mb-6">
-                      <span className="text-xs text-[#64748B] bg-white px-3 py-1 rounded-full border border-[#E2ECF5]">
+                      <span className="text-xs text-[#64748B] bg-white px-3 py-1 rounded-full border border-[#E5EAF0]">
                         Today
                       </span>
                     </div>
@@ -1043,8 +1043,8 @@ export function CareTeam() {
                           className="w-8 h-8 rounded-full object-cover flex-shrink-0"
                         />
                         <div className="flex-1">
-                          <div className="bg-white rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm border border-[#E2ECF5] max-w-md">
-                            <p className="text-sm text-[#020817]">
+                          <div className="bg-white rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm border border-[#E5EAF0] max-w-md">
+                            <p className="text-sm text-[#0F172A]">
                               How can I help?
                             </p>
                           </div>
@@ -1058,7 +1058,7 @@ export function CareTeam() {
                           U
                         </div>
                         <div className="flex-1 flex flex-col items-end">
-                          <div className="bg-[#043570] rounded-2xl rounded-tr-sm px-4 py-3 shadow-sm max-w-md">
+                          <div className="bg-[#0B2545] rounded-2xl rounded-tr-sm px-4 py-3 shadow-sm max-w-md">
                             <p className="text-sm text-white">
                               Hi, I've just finished my session. I'd like to share some things I'm feeling today. Lately, I've been feeling anxious & stressed a lot CONSTANTLY.
                             </p>
@@ -1075,8 +1075,8 @@ export function CareTeam() {
                           className="w-8 h-8 rounded-full object-cover flex-shrink-0"
                         />
                         <div className="flex-1">
-                          <div className="bg-white rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm border border-[#E2ECF5] max-w-md">
-                            <p className="text-sm text-[#020817]">
+                          <div className="bg-white rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm border border-[#E5EAF0] max-w-md">
+                            <p className="text-sm text-[#0F172A]">
                               I'm sorry to hear that you're feeling this way. It's completely understandable to feel like this when so much is going on. Let's talk this through together.
                             </p>
                           </div>
@@ -1090,7 +1090,7 @@ export function CareTeam() {
                           U
                         </div>
                         <div className="flex-1 flex flex-col items-end">
-                          <div className="bg-[#043570] rounded-2xl rounded-tr-sm px-4 py-3 shadow-sm max-w-md">
+                          <div className="bg-[#0B2545] rounded-2xl rounded-tr-sm px-4 py-3 shadow-sm max-w-md">
                             <p className="text-sm text-white">
                               At my job, my manager put me through a lot last year. I know that it's the nature of the job, maybe I wasn't cut out for it or maybe I just couldn't cope. I feel trapped here now.
                             </p>
@@ -1107,11 +1107,11 @@ export function CareTeam() {
                           className="w-8 h-8 rounded-full object-cover flex-shrink-0"
                         />
                         <div className="flex-1">
-                          <div className="bg-white rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm border border-[#E2ECF5] max-w-md">
-                            <p className="text-sm text-[#020817] mb-3">
+                          <div className="bg-white rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm border border-[#E5EAF0] max-w-md">
+                            <p className="text-sm text-[#0F172A] mb-3">
                               I'm here to help navigate those feelings - you're not alone in this. It's really hard when you care so much about what you do but feel trapped at the same time.
                             </p>
-                            <p className="text-sm text-[#020817]">
+                            <p className="text-sm text-[#0F172A]">
                               Let's explore this together and see if we can find some ways to cope with the stress and anxiety you're experiencing.
                             </p>
                           </div>
@@ -1127,15 +1127,15 @@ export function CareTeam() {
                           className="w-8 h-8 rounded-full object-cover flex-shrink-0"
                         />
                         <div className="flex-1">
-                          <div className="bg-white rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm border border-[#E2ECF5] max-w-md">
-                            <p className="text-sm text-[#020817] mb-3">
+                          <div className="bg-white rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm border border-[#E5EAF0] max-w-md">
+                            <p className="text-sm text-[#0F172A] mb-3">
                               I'm sensing that you're not feeling like your "GentleSelfish" self. Can you tell me more about what you're going through? What's been triggering these anxious thoughts lately?
                             </p>
                             <div className="flex gap-2 mt-3">
-                              <button className="px-3 py-1.5 bg-[#f3faff] text-[#043570] text-xs rounded-full border border-[#E2ECF5] hover:bg-[#043570] hover:text-white transition-colors">
+                              <button className="px-3 py-1.5 bg-[#F1F7F7] text-[#0B2545] text-xs rounded-full border border-[#E5EAF0] hover:bg-[#0B2545] hover:text-white transition-colors">
                                 Work stress
                               </button>
-                              <button className="px-3 py-1.5 bg-[#f3faff] text-[#043570] text-xs rounded-full border border-[#E2ECF5] hover:bg-[#043570] hover:text-white transition-colors">
+                              <button className="px-3 py-1.5 bg-[#F1F7F7] text-[#0B2545] text-xs rounded-full border border-[#E5EAF0] hover:bg-[#0B2545] hover:text-white transition-colors">
                                 Feeling trapped
                               </button>
                             </div>
@@ -1150,7 +1150,7 @@ export function CareTeam() {
                           U
                         </div>
                         <div className="flex-1 flex flex-col items-end">
-                          <div className="bg-[#043570] rounded-2xl rounded-tr-sm px-4 py-3 shadow-sm max-w-md">
+                          <div className="bg-[#0B2545] rounded-2xl rounded-tr-sm px-4 py-3 shadow-sm max-w-md">
                             <p className="text-sm text-white">
                               I'm feeling that anxiety in a lot of different areas of my life. It's not just the work, it's relationships too. I feel like I'm not enough for a lot of people.
                             </p>
@@ -1167,8 +1167,8 @@ export function CareTeam() {
                           className="w-8 h-8 rounded-full object-cover flex-shrink-0"
                         />
                         <div className="flex-1">
-                          <div className="bg-white rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm border border-[#E2ECF5] max-w-md">
-                            <p className="text-sm text-[#020817]">
+                          <div className="bg-white rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm border border-[#E5EAF0] max-w-md">
+                            <p className="text-sm text-[#0F172A]">
                               I'm so sorry. I can imagine experiencing some major and minor stressors across different areas. Anxiety can be so exhausting. Can you tell me a little bit more about the areas you're feeling this way in?
                             </p>
                           </div>
@@ -1184,11 +1184,11 @@ export function CareTeam() {
                           className="w-8 h-8 rounded-full object-cover flex-shrink-0"
                         />
                         <div className="flex-1">
-                          <div className="bg-white rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm border border-[#E2ECF5] max-w-md">
-                            <p className="text-sm text-[#020817] mb-3">
+                          <div className="bg-white rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm border border-[#E5EAF0] max-w-md">
+                            <p className="text-sm text-[#0F172A] mb-3">
                               Here are some common areas & themes in daily living when it comes to how to balance everyone's needs:
                             </p>
-                            <ul className="text-sm text-[#020817] space-y-2 ml-4 list-disc">
+                            <ul className="text-sm text-[#0F172A] space-y-2 ml-4 list-disc">
                               <li>
                                 <strong>Work & Career:</strong> Perhaps you find it difficult to say no to extra projects or overtime, even when you're already stretched thin.
                               </li>
@@ -1213,7 +1213,7 @@ export function CareTeam() {
                           U
                         </div>
                         <div className="flex-1 flex flex-col items-end">
-                          <div className="bg-[#043570] rounded-2xl rounded-tr-sm px-4 py-3 shadow-sm max-w-md">
+                          <div className="bg-[#0B2545] rounded-2xl rounded-tr-sm px-4 py-3 shadow-sm max-w-md">
                             <p className="text-sm text-white">
                               Yes, a lot of those felt really true for me. Especially the "GentleSelfish" part. How do we work on saying "no" without guilt and feeling guilt-free about doing things that you enjoy? I tend to feel guilt easily.
                             </p>
@@ -1230,11 +1230,11 @@ export function CareTeam() {
                           className="w-8 h-8 rounded-full object-cover flex-shrink-0"
                         />
                         <div className="flex-1">
-                          <div className="bg-white rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm border border-[#E2ECF5] max-w-md">
-                            <p className="text-sm text-[#020817] mb-3">
+                          <div className="bg-white rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm border border-[#E5EAF0] max-w-md">
+                            <p className="text-sm text-[#0F172A] mb-3">
                               That's a beautiful goal you've identified - and an absolutely valuable one! While it may seem counterintuitive, prioritizing your own needs & well-being actually makes you MORE effective in caring for others, not less.
                             </p>
-                            <p className="text-sm text-[#020817]">
+                            <p className="text-sm text-[#0F172A]">
                               Would you like to explore strategies to help with this?
                             </p>
                           </div>
@@ -1248,7 +1248,7 @@ export function CareTeam() {
                           U
                         </div>
                         <div className="flex-1 flex flex-col items-end">
-                          <div className="bg-[#043570] rounded-2xl rounded-tr-sm px-4 py-3 shadow-sm max-w-md">
+                          <div className="bg-[#0B2545] rounded-2xl rounded-tr-sm px-4 py-3 shadow-sm max-w-md">
                             <p className="text-sm text-white">
                               I think what I've realized - aside from the fact that I don't know who I'm becoming. I don't know who I am anymore. I only know what I was or I guess what everyone wanted me to be. Do you understand what I'm trying to say?
                             </p>
@@ -1265,11 +1265,11 @@ export function CareTeam() {
                           className="w-8 h-8 rounded-full object-cover flex-shrink-0"
                         />
                         <div className="flex-1">
-                          <div className="bg-white rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm border border-[#E2ECF5] max-w-md">
-                            <p className="text-sm text-[#020817] mb-3">
+                          <div className="bg-white rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm border border-[#E5EAF0] max-w-md">
+                            <p className="text-sm text-[#0F172A] mb-3">
                               I think I can now fully hear what you're saying. You want to feel like you're creating a sense of self that aligns with YOUR needs. Not a needs of other people towards you but your real needs, and maybe slowly discover who you are.
                             </p>
-                            <p className="text-sm text-[#020817]">
+                            <p className="text-sm text-[#0F172A]">
                               Very very strongly: this journey to me is less about finding a "perfect" self, but rather being more AUTHENTIC & GENTLE with who you are becoming. You're very strong for identifying this.
                             </p>
                           </div>
@@ -1285,15 +1285,15 @@ export function CareTeam() {
                           className="w-8 h-8 rounded-full object-cover flex-shrink-0"
                         />
                         <div className="flex-1">
-                          <div className="bg-white rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm border border-[#E2ECF5] max-w-md">
-                            <p className="text-sm text-[#020817] mb-3">
+                          <div className="bg-white rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm border border-[#E5EAF0] max-w-md">
+                            <p className="text-sm text-[#0F172A] mb-3">
                               I've noticed a really great tool that you haven't yet tried on Mantra - it's called "GentleSelfish" and I really think you'd like what it has to offer. You're working on saying "no", managing guilt and creating space for self care. So the tool is designed to help with EXACTLY some issues you've just mentioned.
                             </p>
                             <div className="flex gap-2 mt-3">
-                              <button className="px-4 py-2 bg-[#043570] text-white text-sm rounded-lg hover:bg-[#032656] transition-colors">
+                              <button className="px-4 py-2 bg-[#0B2545] text-white text-sm rounded-lg hover:bg-[#032656] transition-colors">
                                 Try it
                               </button>
-                              <button className="px-4 py-2 bg-[#f3faff] text-[#043570] text-sm rounded-lg border border-[#E2ECF5] hover:bg-white transition-colors">
+                              <button className="px-4 py-2 bg-[#F1F7F7] text-[#0B2545] text-sm rounded-lg border border-[#E5EAF0] hover:bg-white transition-colors">
                                 Maybe later
                               </button>
                             </div>
@@ -1308,7 +1308,7 @@ export function CareTeam() {
                           U
                         </div>
                         <div className="flex-1 flex flex-col items-end">
-                          <div className="bg-[#043570] rounded-2xl rounded-tr-sm px-4 py-3 shadow-sm max-w-md">
+                          <div className="bg-[#0B2545] rounded-2xl rounded-tr-sm px-4 py-3 shadow-sm max-w-md">
                             <p className="text-sm text-white">
                               Let's do this. I'm excited about your plan. I'll work through these tools and update you after a couple of weeks. Is that okay?
                             </p>
@@ -1325,8 +1325,8 @@ export function CareTeam() {
                           className="w-8 h-8 rounded-full object-cover flex-shrink-0"
                         />
                         <div className="flex-1">
-                          <div className="bg-white rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm border border-[#E2ECF5] max-w-md">
-                            <p className="text-sm text-[#020817]">
+                          <div className="bg-white rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm border border-[#E5EAF0] max-w-md">
+                            <p className="text-sm text-[#0F172A]">
                               I'm so glad you're excited about your plan. I know that you haven't met yourself yet but when you do, you're going to ABSOLUTELY LOVE this person. Very very strongly: this journey to me is less about finding a "perfect" self, but rather just being more AUTHENTIC & GENTLE with who you are becoming.
                             </p>
                           </div>
@@ -1340,7 +1340,7 @@ export function CareTeam() {
                           U
                         </div>
                         <div className="flex-1 flex flex-col items-end">
-                          <div className="bg-[#043570] rounded-2xl rounded-tr-sm px-4 py-3 shadow-sm max-w-md">
+                          <div className="bg-[#0B2545] rounded-2xl rounded-tr-sm px-4 py-3 shadow-sm max-w-md">
                             <p className="text-sm text-white">
                               It's also nice to just share today's feeling. I think I've never really had space to explore these thoughts or ideas before. All I ever get is judgement, and I just need to release some of that, and I guess that's what I just did.
                             </p>
@@ -1357,11 +1357,11 @@ export function CareTeam() {
                           className="w-8 h-8 rounded-full object-cover flex-shrink-0"
                         />
                         <div className="flex-1">
-                          <div className="bg-white rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm border border-[#E2ECF5] max-w-md">
-                            <p className="text-sm text-[#020817] mb-3">
+                          <div className="bg-white rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm border border-[#E5EAF0] max-w-md">
+                            <p className="text-sm text-[#0F172A] mb-3">
                               I'm so glad you feel like you've found your space to talk about your feelings without fear of judgment. Your space is sacred, and I really really appreciate you using this space in this special way.
                             </p>
-                            <p className="text-sm text-[#020817]">
+                            <p className="text-sm text-[#0F172A]">
                               If you again feel like sharing your space, you know where to find me - right here on our very special pages.
                             </p>
                           </div>
@@ -1377,15 +1377,15 @@ export function CareTeam() {
                           className="w-8 h-8 rounded-full object-cover flex-shrink-0"
                         />
                         <div className="flex-1">
-                          <div className="bg-white rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm border border-[#E2ECF5] max-w-md">
-                            <p className="text-sm text-[#020817] mb-3">
+                          <div className="bg-white rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm border border-[#E5EAF0] max-w-md">
+                            <p className="text-sm text-[#0F172A] mb-3">
                               Is there anything else I can help you with today?
                             </p>
                             <div className="flex flex-wrap gap-2 mt-3">
-                              <button className="px-3 py-1.5 bg-[#f3faff] text-[#043570] text-xs rounded-full border border-[#E2ECF5] hover:bg-[#043570] hover:text-white transition-colors">
+                              <button className="px-3 py-1.5 bg-[#F1F7F7] text-[#0B2545] text-xs rounded-full border border-[#E5EAF0] hover:bg-[#0B2545] hover:text-white transition-colors">
                                 Managing depression & suicidal thoughts
                               </button>
-                              <button className="px-3 py-1.5 bg-[#f3faff] text-[#043570] text-xs rounded-full border border-[#E2ECF5] hover:bg-[#043570] hover:text-white transition-colors">
+                              <button className="px-3 py-1.5 bg-[#F1F7F7] text-[#0B2545] text-xs rounded-full border border-[#E5EAF0] hover:bg-[#0B2545] hover:text-white transition-colors">
                                 Something else
                               </button>
                             </div>
@@ -1398,13 +1398,13 @@ export function CareTeam() {
                 </div>
 
                 {/* Message Input */}
-                <div className="bg-white border-t border-[#E2ECF5] p-4 md:p-6 flex-shrink-0">
+                <div className="bg-white border-t border-[#E5EAF0] p-4 md:p-6 flex-shrink-0">
                   <div className="max-w-4xl mx-auto">
                     <div className="flex items-end gap-3">
                       <motion.button
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="w-10 h-10 flex items-center justify-center rounded-lg hover:bg-[#f3faff] text-[#64748B] hover:text-[#043570] transition-colors flex-shrink-0"
+                        className="w-10 h-10 flex items-center justify-center rounded-lg hover:bg-[#F1F7F7] text-[#64748B] hover:text-[#0B2545] transition-colors flex-shrink-0"
                       >
                         <Paperclip size={20} />
                       </motion.button>
@@ -1414,7 +1414,7 @@ export function CareTeam() {
                           onChange={(e) => setMessageInput(e.target.value)}
                           placeholder="Type your message..."
                           rows={1}
-                          className="w-full px-4 py-3 bg-[#f3faff] border border-[#E2ECF5] rounded-xl text-sm text-[#020817] placeholder-[#64748B] focus:outline-none focus:ring-2 focus:ring-[#00c0ff] focus:border-transparent resize-none"
+                          className="w-full px-4 py-3 bg-[#F1F7F7] border border-[#E5EAF0] rounded-xl text-sm text-[#0F172A] placeholder-[#64748B] focus:outline-none focus:ring-2 focus:ring-[#13B5B1] focus:border-transparent resize-none"
                           style={{ minHeight: "44px", maxHeight: "120px" }}
                         />
                       </div>
@@ -1422,7 +1422,7 @@ export function CareTeam() {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                         disabled={!messageInput.trim()}
-                        className="w-10 h-10 flex items-center justify-center rounded-lg bg-[#043570] text-white hover:bg-[#032656] transition-colors flex-shrink-0 disabled:opacity-50 disabled:cursor-not-allowed"
+                        className="w-10 h-10 flex items-center justify-center rounded-lg bg-[#0B2545] text-white hover:bg-[#032656] transition-colors flex-shrink-0 disabled:opacity-50 disabled:cursor-not-allowed"
                       >
                         <Send size={18} />
                       </motion.button>
@@ -1431,7 +1431,7 @@ export function CareTeam() {
                           whileHover={{ scale: 1.05 }}
                           whileTap={{ scale: 0.95 }}
                           onClick={() => setShowSpeechModal(true)}
-                          className="w-10 h-10 flex items-center justify-center rounded-lg hover:bg-[#f3faff] text-[#64748B] hover:text-[#043570] transition-colors flex-shrink-0"
+                          className="w-10 h-10 flex items-center justify-center rounded-lg hover:bg-[#F1F7F7] text-[#64748B] hover:text-[#0B2545] transition-colors flex-shrink-0"
                         >
                           <Radio size={20} />
                         </motion.button>
@@ -1448,11 +1448,11 @@ export function CareTeam() {
                     initial={{ scale: 0.9, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
                     transition={{ duration: 0.3 }}
-                    className="w-16 h-16 bg-[#f3faff] rounded-2xl flex items-center justify-center mx-auto mb-4"
+                    className="w-16 h-16 bg-[#F1F7F7] rounded-2xl flex items-center justify-center mx-auto mb-4"
                   >
-                    <MessageCircle className="text-[#00c0ff]" size={32} />
+                    <MessageCircle className="text-[#13B5B1]" size={32} />
                   </motion.div>
-                  <h3 className="text-lg font-semibold text-[#020817] mb-2">Welcome to Care Team</h3>
+                  <h3 className="text-lg font-semibold text-[#0F172A] mb-2">Welcome to Care Team</h3>
                   <p className="text-sm text-[#64748B] mb-6">
                     Select a conversation from the sidebar to start chatting, or wait for new messages to appear
                   </p>
@@ -1460,7 +1460,7 @@ export function CareTeam() {
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                     onClick={() => setShowExpertsList(true)}
-                    className="md:hidden bg-[#043570] text-white px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-[#032656] transition-colors"
+                    className="md:hidden bg-[#0B2545] text-white px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-[#032656] transition-colors"
                   >
                     View Experts
                   </motion.button>
@@ -1575,10 +1575,10 @@ export function CareTeam() {
             >
               {/* Header */}
               <div className="flex items-center justify-between mb-4">
-                <h3 className="text-lg font-semibold text-[#020817]">Filter by Professional Type</h3>
+                <h3 className="text-lg font-semibold text-[#0F172A]">Filter by Professional Type</h3>
                 <button
                   onClick={() => setShowFilterModal(false)}
-                  className="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-[#f3faff] text-[#64748B] hover:text-[#043570] transition-colors"
+                  className="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-[#F1F7F7] text-[#64748B] hover:text-[#0B2545] transition-colors"
                 >
                   <X size={18} />
                 </button>
@@ -1608,8 +1608,8 @@ export function CareTeam() {
                       }}
                       className={`flex flex-col items-center justify-center gap-2 p-4 rounded-xl border-2 transition-all ${
                         isSelected
-                          ? "border-[#00c0ff] bg-[#f3faff] shadow-md"
-                          : "border-[#E2ECF5] bg-white hover:border-[#00c0ff]/30 hover:bg-[#f3faff]/30"
+                          ? "border-[#13B5B1] bg-[#F1F7F7] shadow-md"
+                          : "border-[#E5EAF0] bg-white hover:border-[#13B5B1]/30 hover:bg-[#F1F7F7]/30"
                       }`}
                     >
                       <div
@@ -1622,13 +1622,13 @@ export function CareTeam() {
                           strokeWidth={2}
                         />
                       </div>
-                      <span className={`text-sm font-medium ${isSelected ? "text-[#043570]" : "text-[#64748B]"}`}>
+                      <span className={`text-sm font-medium ${isSelected ? "text-[#0B2545]" : "text-[#64748B]"}`}>
                         {filter.name}
                       </span>
                       {isSelected && (
                         <motion.div
                           layoutId="selectedIndicator"
-                          className="w-2 h-2 rounded-full bg-[#00c0ff]"
+                          className="w-2 h-2 rounded-full bg-[#13B5B1]"
                         />
                       )}
                     </motion.button>
@@ -1664,21 +1664,21 @@ export function CareTeam() {
               {/* Close Button */}
               <button
                 onClick={() => setShowSpeechModal(false)}
-                className="absolute top-4 right-4 w-8 h-8 rounded-lg flex items-center justify-center hover:bg-[#f3faff] text-[#64748B] hover:text-[#043570] transition-colors"
+                className="absolute top-4 right-4 w-8 h-8 rounded-lg flex items-center justify-center hover:bg-[#F1F7F7] text-[#64748B] hover:text-[#0B2545] transition-colors"
               >
                 <X size={18} />
               </button>
 
               {/* Icon */}
               <div className="flex justify-center mb-4">
-                <div className="w-16 h-16 rounded-full bg-[#f3faff] flex items-center justify-center">
-                  <Radio size={32} className="text-[#00c0ff]" />
+                <div className="w-16 h-16 rounded-full bg-[#F1F7F7] flex items-center justify-center">
+                  <Radio size={32} className="text-[#13B5B1]" />
                 </div>
               </div>
 
               {/* Content */}
               <div className="text-center">
-                <h3 className="text-xl font-semibold text-[#020817] mb-2">Voice Input</h3>
+                <h3 className="text-xl font-semibold text-[#0F172A] mb-2">Voice Input</h3>
                 <p className="text-sm text-[#64748B] mb-6">
                   This feature is available in the mobile app. Download the Mantra app to use voice messaging and speech-to-text capabilities.
                 </p>
@@ -1732,7 +1732,7 @@ export function CareTeam() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="fixed top-4 right-4 bg-[#1E293B] rounded-lg shadow-2xl z-[60] overflow-hidden"
+            className="fixed top-4 right-4 bg-[#0F172A] rounded-lg shadow-2xl z-[60] overflow-hidden"
           >
             <div className="px-4 py-3 max-w-[90vw] overflow-x-auto">
               <div className="flex items-center gap-2 min-w-max">

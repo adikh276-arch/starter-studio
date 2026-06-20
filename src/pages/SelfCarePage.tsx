@@ -347,7 +347,7 @@ export function SelfCarePage() {
               <motion.button
                 whileHover={{ scale: 1.02, y: -2 }}
                 whileTap={{ scale: 0.98 }}
-                className="w-full relative overflow-hidden bg-gradient-to-br from-[#1a2744] to-[#0f172a] border-2 border-[#1E293B]/50 rounded-2xl px-5 py-5 flex items-center justify-between shadow-lg hover:shadow-2xl transition-all duration-300 group"
+                className="w-full relative overflow-hidden bg-gradient-to-br from-[#1a2744] to-[#0f172a] border-2 border-[#0F172A]/50 rounded-2xl px-5 py-5 flex items-center justify-between shadow-lg hover:shadow-2xl transition-all duration-300 group"
               >
                 {/* Animated gradient overlay */}
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>

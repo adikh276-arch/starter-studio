@@ -119,14 +119,14 @@ export function OCDPage() {
                 {/* Back Arrow */}
                 <button
                   onClick={() => navigate("/dashboard")}
-                  className="w-9 h-9 rounded-xl flex items-center justify-center transition-colors flex-shrink-0 text-[#64748B] hover:bg-[#f3faff]"
+                  className="w-9 h-9 rounded-xl flex items-center justify-center transition-colors flex-shrink-0 text-[#64748B] hover:bg-[#F1F7F7]"
                 >
                   <ChevronLeft size={24} />
                 </button>
                 <div className="w-9 h-9 rounded-xl flex items-center justify-center shadow-md text-lg flex-shrink-0" style={{ backgroundColor: service.color }}>
                   <EmojiIcon emoji={service.icon} size={22} />
                 </div>
-                <h1 className="text-xl md:text-2xl text-[#020817]">{service.name}</h1>
+                <h1 className="text-xl md:text-2xl text-[#0F172A]">{service.name}</h1>
               </div>
               <p className="text-xs md:text-sm leading-relaxed max-w-xl text-[#64748B] pl-[54px]">{service.description}</p>
             </motion.div>
@@ -181,7 +181,7 @@ export function OCDPage() {
                           <Star className="text-white" size={24} strokeWidth={2} />
                         </div>
                         <div className="text-left">
-                          <h3 className="font-semibold text-base mb-0.5 text-[#020817]">
+                          <h3 className="font-semibold text-base mb-0.5 text-[#0F172A]">
                             Today's Plan
                           </h3>
                           <p className="text-xs md:text-sm text-[#64748B]">
@@ -239,7 +239,7 @@ export function OCDPage() {
                         {/* Checkbox */}
                         <div 
                           className={`w-5 h-5 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-colors ${
-                            isCompleted ? 'bg-[#00c0ff] border-[#00c0ff]' : 'border-[#E5E7EB]'
+                            isCompleted ? 'bg-[#13B5B1] border-[#13B5B1]' : 'border-[#E5E7EB]'
                           }`}
                         >
                           {isCompleted && (
@@ -306,16 +306,16 @@ export function OCDPage() {
                   className="w-full bg-white border border-slate-200 rounded-2xl px-5 py-5 flex items-center justify-between shadow-sm hover:shadow-md transition-all group"
                 >
                   <div className="flex items-center gap-4">
-                    <div className="w-14 h-14 bg-[#FF9F43] rounded-2xl flex items-center justify-center flex-shrink-0">
+                    <div className="w-14 h-14 bg-[#FF8A4C] rounded-2xl flex items-center justify-center flex-shrink-0">
                       <Sparkles className="text-white" size={24} strokeWidth={2} />
                     </div>
                     <div className="text-left">
-                      <h4 className="text-base font-semibold text-[#020817]">Self Care Resources</h4>
+                      <h4 className="text-base font-semibold text-[#0F172A]">Self Care Resources</h4>
                       <p className="text-xs mt-1 text-[#64748B]">Mindfulness & guided sessions</p>
                     </div>
                   </div>
-                  <div className="w-10 h-10 bg-[#FF9F43]/10 rounded-[14px] flex items-center justify-center flex-shrink-0">
-                    <ArrowRight className="text-[#FF9F43] group-hover:translate-x-1 transition-transform" size={20} strokeWidth={2} />
+                  <div className="w-10 h-10 bg-[#FF8A4C]/10 rounded-[14px] flex items-center justify-center flex-shrink-0">
+                    <ArrowRight className="text-[#FF8A4C] group-hover:translate-x-1 transition-transform" size={20} strokeWidth={2} />
                   </div>
                 </motion.button>
               </div>
@@ -329,8 +329,8 @@ export function OCDPage() {
               transition={{ duration: 0.5, delay: 0.3 }}
             >
               <div className="mb-5 md:mb-6">
-                <h2 className="text-sm md:text-base flex items-center gap-2 mb-1 text-[#020817]">
-                  <Sparkles className="text-[#00c0ff]" size={16} />
+                <h2 className="text-sm md:text-base flex items-center gap-2 mb-1 text-[#0F172A]">
+                  <Sparkles className="text-[#13B5B1]" size={16} />
                   Quick Tools
                 </h2>
                 <p className="text-xs text-[#64748B]">
@@ -341,12 +341,12 @@ export function OCDPage() {
               {/* Mobile: 3×2 grid | Desktop: 6-column single row */}
               <div className="grid grid-cols-3 md:grid-cols-6 gap-4 md:gap-6">
                 {[
-                  { label: "Log OCD Moments", Icon: FileText, grad: "#F39C12", link: "https://web.mantracare.com/app/ocd_moments", external: true },
-                  { label: "Journal", Icon: BookOpen, grad: "#3498DB", link: "/journal", external: false },
-                  { label: "OCD in Daily Life", Icon: Calendar, grad: "#FF9F43", link: "https://web.mantracare.com/app/daily_life", external: true },
+                  { label: "Log OCD Moments", Icon: FileText, grad: "#E0A82E", link: "https://web.mantracare.com/app/ocd_moments", external: true },
+                  { label: "Journal", Icon: BookOpen, grad: "#0B2545", link: "/journal", external: false },
+                  { label: "OCD in Daily Life", Icon: Calendar, grad: "#FF8A4C", link: "https://web.mantracare.com/app/daily_life", external: true },
                   { label: "Mood Tracker", Icon: Heart, grad: "#E74C3C", link: "https://web.mantracare.com/app/mood_tracker", external: true },
-                  { label: "Energy Check", Icon: Battery, grad: "#9B59B6", link: "https://web.mantracare.com/app/energy_tracker", external: true },
-                  { label: "OCD Assessment", Icon: CheckCircle, grad: "#27AE60", link: "https://app.mantracare.org/ocd-test/", external: true },
+                  { label: "Energy Check", Icon: Battery, grad: "#13B5B1", link: "https://web.mantracare.com/app/energy_tracker", external: true },
+                  { label: "OCD Assessment", Icon: CheckCircle, grad: "#16A371", link: "https://app.mantracare.org/ocd-test/", external: true },
                 ].map((tool, i) => (
                   <motion.button
                     key={tool.label}
@@ -370,7 +370,7 @@ export function OCDPage() {
                     >
                       <tool.Icon className="text-white" size={28} strokeWidth={2} />
                     </div>
-                    <p className="text-xs font-medium text-[#020817]">{tool.label}</p>
+                    <p className="text-xs font-medium text-[#0F172A]">{tool.label}</p>
                   </motion.button>
                 ))}
               </div>
@@ -381,11 +381,11 @@ export function OCDPage() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="bg-gradient-to-br from-white via-[#F8FCFF] to-[#F3FAFF] rounded-2xl p-6 md:p-8 shadow-lg border border-[#E2E8F0] relative overflow-hidden group hover:shadow-xl transition-shadow duration-300 mb-6 md:mb-8"
+              className="bg-gradient-to-br from-white via-[#F8FCFF] to-[#F1F7F7] rounded-2xl p-6 md:p-8 shadow-lg border border-[#E5EAF0] relative overflow-hidden group hover:shadow-xl transition-shadow duration-300 mb-6 md:mb-8"
             >
               {/* Decorative elements */}
-              <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-[#00c0ff]/10 to-transparent rounded-full blur-3xl pointer-events-none"></div>
-              <div className="absolute bottom-0 left-0 w-48 h-48 bg-gradient-to-tr from-[#043570]/5 to-transparent rounded-full blur-2xl pointer-events-none"></div>
+              <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-[#13B5B1]/10 to-transparent rounded-full blur-3xl pointer-events-none"></div>
+              <div className="absolute bottom-0 left-0 w-48 h-48 bg-gradient-to-tr from-[#0B2545]/5 to-transparent rounded-full blur-2xl pointer-events-none"></div>
 
               {/* Blue wave decoration at bottom right */}
               <div className="absolute bottom-0 right-0 w-48 h-40 opacity-100 pointer-events-none">
@@ -394,12 +394,12 @@ export function OCDPage() {
                   <path d="M24 160C24 160 60 114 96 114C132 114 168 78 168 78L192 102V160H24Z" fill="url(#wave2)" fillOpacity="0.4"/>
                   <defs>
                     <linearGradient id="wave1" x1="0" y1="0" x2="192" y2="160" gradientUnits="userSpaceOnUse">
-                      <stop stopColor="#00c0ff" stopOpacity="0.2"/>
+                      <stop stopColor="#13B5B1" stopOpacity="0.2"/>
                       <stop offset="1" stopColor="#0EA5E9" stopOpacity="0.1"/>
                     </linearGradient>
                     <linearGradient id="wave2" x1="24" y1="78" x2="192" y2="160" gradientUnits="userSpaceOnUse">
-                      <stop stopColor="#043570" stopOpacity="0.15"/>
-                      <stop offset="1" stopColor="#043570" stopOpacity="0.05"/>
+                      <stop stopColor="#0B2545" stopOpacity="0.15"/>
+                      <stop offset="1" stopColor="#0B2545" stopOpacity="0.05"/>
                     </linearGradient>
                   </defs>
                 </svg>
@@ -408,13 +408,13 @@ export function OCDPage() {
               <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-2">
                 <div className="flex-1 space-y-4">
                   {/* Badge */}
-                  <div className="inline-flex items-center gap-2 bg-[#00c0ff]/10 text-[#043570] border-[#00c0ff]/20 px-3 py-1.5 rounded-full text-xs font-semibold border">
-                    <Sparkles size={14} className="text-[#00c0ff]" />
+                  <div className="inline-flex items-center gap-2 bg-[#13B5B1]/10 text-[#0B2545] border-[#13B5B1]/20 px-3 py-1.5 rounded-full text-xs font-semibold border">
+                    <Sparkles size={14} className="text-[#13B5B1]" />
                     OCD Specialists
                   </div>
 
                   {/* Heading */}
-                  <h3 className="text-[#020817] text-2xl md:text-3xl font-bold leading-tight">
+                  <h3 className="text-[#0F172A] text-2xl md:text-3xl font-bold leading-tight">
                     Connect with OCD specialists from the comfort of home
                   </h3>
 
@@ -428,7 +428,7 @@ export function OCDPage() {
                     <div className="flex items-center gap-2">
                       <div className="flex -space-x-2">
                         {[1, 2, 3].map((i) => (
-                          <div key={i} className="w-8 h-8 rounded-full bg-gradient-to-br from-[#00c0ff] to-[#0EA5E9] border-2 border-white flex items-center justify-center">
+                          <div key={i} className="w-8 h-8 rounded-full bg-gradient-to-br from-[#13B5B1] to-[#0EA5E9] border-2 border-white flex items-center justify-center">
                             <Users size={14} className="text-white" />
                           </div>
                         ))}
@@ -439,7 +439,7 @@ export function OCDPage() {
                     </div>
                     <div className="flex items-center gap-1.5">
                       <Star size={16} className="text-[#FFA500] fill-[#FFA500]" />
-                      <span className="text-sm font-semibold text-[#020817]">4.9</span>
+                      <span className="text-sm font-semibold text-[#0F172A]">4.9</span>
                       <span className="text-xs text-[#64748B]">
                         (1.2k reviews)
                       </span>
@@ -452,7 +452,7 @@ export function OCDPage() {
                       whileHover={{ scale: 1.02, y: -2 }}
                       whileTap={{ scale: 0.98 }}
                       onClick={() => navigate("/plans")}
-                      className="inline-flex items-center gap-2 bg-gradient-to-r from-[#00c0ff] to-[#0EA5E9] text-white px-8 py-3.5 rounded-xl font-semibold text-sm shadow-lg hover:shadow-xl transition-all"
+                      className="inline-flex items-center gap-2 bg-gradient-to-r from-[#13B5B1] to-[#0EA5E9] text-white px-8 py-3.5 rounded-xl font-semibold text-sm shadow-lg hover:shadow-xl transition-all"
                     >
                       Explore Plans
                       <ArrowRight size={18} strokeWidth={2.5} />
@@ -463,10 +463,10 @@ export function OCDPage() {
                 {/* Profile Image with decoration */}
                 <div className="hidden md:block flex-shrink-0 relative mx-auto w-auto md:w-64">
                   {/* Glow effect */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#00c0ff] to-[#0EA5E9] rounded-full blur-xl opacity-20 group-hover:opacity-30 transition-opacity"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#13B5B1] to-[#0EA5E9] rounded-full blur-xl opacity-20 group-hover:opacity-30 transition-opacity"></div>
 
                   {/* Image container */}
-                  <div className="relative w-36 h-36 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-white shadow-2xl ring-4 ring-[#00c0ff]/20">
+                  <div className="relative w-36 h-36 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-white shadow-2xl ring-4 ring-[#13B5B1]/20">
                     <ImageWithFallback
                       src={ocdCtaImage}
                       alt="OCD Treatment"

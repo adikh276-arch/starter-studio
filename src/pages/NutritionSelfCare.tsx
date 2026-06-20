@@ -26,7 +26,7 @@ export function NutritionSelfCare() {
       title: "Q & A",
       subtitle: "Get answers from dietitians",
       icon: FileText,
-      color: "#00c0ff",
+      color: "#13B5B1",
       bgColor: "#E0F7FF",
     },
     {
@@ -43,14 +43,14 @@ export function NutritionSelfCare() {
       title: "Understanding Nutrition",
       subtitle: "Learn the fundamentals of healthy eating and balanced diet",
       icon: Heart,
-      iconColor: "#043570",
+      iconColor: "#0B2545",
       iconBg: "#E3F2FD",
     },
     {
       title: "Diet Chart",
       subtitle: "Personalized meal plans tailored to your health goals",
       icon: Apple,
-      iconColor: "#043570",
+      iconColor: "#0B2545",
       iconBg: "#E3F2FD",
     },
   ];
@@ -86,12 +86,12 @@ export function NutritionSelfCare() {
             <div className="flex items-center gap-3 mb-2">
               <button
                 onClick={() => navigate(-1)}
-                className="flex items-center justify-center text-[#64748B] hover:text-[#043570] transition-colors"
+                className="flex items-center justify-center text-[#64748B] hover:text-[#0B2545] transition-colors"
               >
                 <ChevronLeft size={20} />
               </button>
-              <div className="w-10 h-10 bg-[#F1F5F9] rounded-md flex items-center justify-center flex-shrink-0">
-                <Salad size={20} className="text-[#1E293B]" strokeWidth={2} />
+              <div className="w-10 h-10 bg-[#F1F4F8] rounded-md flex items-center justify-center flex-shrink-0">
+                <Salad size={20} className="text-[#0F172A]" strokeWidth={2} />
               </div>
               <div>
                 <h1 className="text-2xl text-[#0f172b] font-medium">Self Care</h1>
@@ -112,7 +112,7 @@ export function NutritionSelfCare() {
               className="mb-8"
             >
               <div className="mb-4">
-                <h2 className="text-xl font-semibold text-[#043570]">Explore</h2>
+                <h2 className="text-xl font-semibold text-[#0B2545]">Explore</h2>
               </div>
 
               <motion.div
@@ -129,7 +129,7 @@ export function NutritionSelfCare() {
                       variants={item}
                       whileHover={{ y: -4, scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
-                      className="bg-white rounded-2xl p-5 md:p-6 flex flex-col items-center text-center border border-[#E2E8F0] hover:border-[#00c0ff]/30 hover:shadow-lg transition-all group"
+                      className="bg-white rounded-2xl p-5 md:p-6 flex flex-col items-center text-center border border-[#E5EAF0] hover:border-[#13B5B1]/30 hover:shadow-lg transition-all group"
                     >
                       <div
                         className="w-16 h-16 md:w-20 md:h-20 rounded-2xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110"
@@ -137,7 +137,7 @@ export function NutritionSelfCare() {
                       >
                         <Icon size={32} style={{ color: card.color }} strokeWidth={2} />
                       </div>
-                      <h3 className="font-semibold text-[#043570] mb-1 text-sm md:text-base">{card.title}</h3>
+                      <h3 className="font-semibold text-[#0B2545] mb-1 text-sm md:text-base">{card.title}</h3>
                       <p className="text-xs text-[#64748B]">{card.subtitle}</p>
                     </motion.button>
                   );
@@ -152,7 +152,7 @@ export function NutritionSelfCare() {
               transition={{ duration: 0.4, delay: 0.2 }}
             >
               <div className="mb-4">
-                <h2 className="text-xl font-semibold text-[#043570]">Resources</h2>
+                <h2 className="text-xl font-semibold text-[#0B2545]">Resources</h2>
               </div>
 
               <motion.div
@@ -169,7 +169,7 @@ export function NutritionSelfCare() {
                       variants={item}
                       whileHover={{ x: 4 }}
                       whileTap={{ scale: 0.98 }}
-                      className="w-full bg-white rounded-2xl p-5 flex items-center gap-4 border border-[#E2E8F0] hover:border-[#00c0ff]/30 hover:shadow-md transition-all group text-left"
+                      className="w-full bg-white rounded-2xl p-5 flex items-center gap-4 border border-[#E5EAF0] hover:border-[#13B5B1]/30 hover:shadow-md transition-all group text-left"
                     >
                       <div
                         className="w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0 transition-transform group-hover:scale-110"
@@ -178,12 +178,12 @@ export function NutritionSelfCare() {
                         <Icon size={24} style={{ color: resource.iconColor }} strokeWidth={2} />
                       </div>
                       <div className="flex-1 min-w-0">
-                        <h3 className="font-semibold text-[#043570] mb-1 text-sm md:text-base">{resource.title}</h3>
+                        <h3 className="font-semibold text-[#0B2545] mb-1 text-sm md:text-base">{resource.title}</h3>
                         <p className="text-xs text-[#64748B] line-clamp-1">{resource.subtitle}</p>
                       </div>
                       <ChevronRight
                         size={20}
-                        className="text-[#64748B] group-hover:text-[#00c0ff] group-hover:translate-x-1 transition-all flex-shrink-0"
+                        className="text-[#64748B] group-hover:text-[#13B5B1] group-hover:translate-x-1 transition-all flex-shrink-0"
                       />
                     </motion.button>
                   );
@@ -198,7 +198,7 @@ export function NutritionSelfCare() {
               transition={{ duration: 0.4, delay: 0.4 }}
               className="mt-8"
             >
-              <div className="bg-gradient-to-br from-[#043570] to-[#065a9e] rounded-2xl p-6 md:p-8 text-white shadow-lg">
+              <div className="bg-gradient-to-br from-[#0B2545] to-[#065a9e] rounded-2xl p-6 md:p-8 text-white shadow-lg">
                 <div className="flex items-start justify-between">
                   <div className="flex-1">
                     <h3 className="text-xl md:text-2xl font-semibold mb-2">Ready to Transform Your Health?</h3>
@@ -208,7 +208,7 @@ export function NutritionSelfCare() {
                     <motion.button
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
-                      className="bg-white text-[#043570] px-6 py-3 rounded-xl font-semibold text-sm hover:shadow-lg transition-all"
+                      className="bg-white text-[#0B2545] px-6 py-3 rounded-xl font-semibold text-sm hover:shadow-lg transition-all"
                     >
                       Start Your Journey
                     </motion.button>

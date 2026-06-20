@@ -75,11 +75,11 @@ const topicCards: TopicCard[] = [
   { id: "stress", icon: Zap, label: "Stress", bgColor: "#FFF4E5", iconColor: "#FFB347", url: "https://app-mantra.com/therapy/stress/?" },
   { id: "adolescent", icon: Users, label: "Adolescent", bgColor: "#E8F8F5", iconColor: "#34D399", url: "https://app-mantra.com/therapy/adolescent/" },
   { id: "relationship", icon: Heart, label: "Relationship", bgColor: "#FFEBF0", iconColor: "#FF6B9D", url: "https://app-mantra.com/therapy/relationship/?" },
-  { id: "workplace", icon: Briefcase, label: "Workplace", bgColor: "#F1F5F9", iconColor: "#64748B", url: "https://app-mantra.com/therapy/workplace" },
+  { id: "workplace", icon: Briefcase, label: "Workplace", bgColor: "#F1F4F8", iconColor: "#64748B", url: "https://app-mantra.com/therapy/workplace" },
   { id: "sleep", icon: Moon, label: "Sleep", bgColor: "#EDE9FE", iconColor: "#8B5CF6", url: "https://app-mantra.com/therapy/sleep/" },
   { id: "parenting", icon: Baby, label: "Parenting", bgColor: "#FCE7F3", iconColor: "#EC4899", url: "https://app-mantra.com/therapy/parenting/" },
   { id: "anger", icon: Flame, label: "Anger", bgColor: "#FFF0EB", iconColor: "#F97316", url: "https://app-mantra.com/therapy/anger/" },
-  { id: "grief", icon: Frown, label: "Grief", bgColor: "#F1F5F9", iconColor: "#475569", url: "https://app-mantra.com/therapy/grief/" },
+  { id: "grief", icon: Frown, label: "Grief", bgColor: "#F1F4F8", iconColor: "#475569", url: "https://app-mantra.com/therapy/grief/" },
   { id: "ptsd", icon: BsEmojiTear, label: "PTSD", bgColor: "#E6FAF5", iconColor: "#14B8A6", url: "https://app-mantra.com/therapy/ptsd/" },
   { id: "acceptance", icon: PiHandsPrayingFill, label: "Acceptance", bgColor: "#E0F7FA", iconColor: "#00BCD4", url: "https://app-mantra.com/therapy/acceptance/" },
   { id: "postpartum", icon: FaBaby, label: "Postpartum", bgColor: "#F5E6FF", iconColor: "#B794F4", url: "https://app-mantra.com/therapy/postpartum/?" },
@@ -139,12 +139,12 @@ export function SelfCareResources() {
             <div className="flex items-center gap-3 mb-2">
               <button
                 onClick={() => navigate(-1)}
-                className="flex items-center justify-center text-[#64748B] hover:text-[#043570] transition-colors"
+                className="flex items-center justify-center text-[#64748B] hover:text-[#0B2545] transition-colors"
               >
                 <ChevronLeft size={20} />
               </button>
-              <div className="w-10 h-10 bg-[#F1F5F9] rounded-md flex items-center justify-center flex-shrink-0">
-                <MessageCircle size={20} className="text-[#1E293B]" strokeWidth={2} />
+              <div className="w-10 h-10 bg-[#F1F4F8] rounded-md flex items-center justify-center flex-shrink-0">
+                <MessageCircle size={20} className="text-[#0F172A]" strokeWidth={2} />
               </div>
               <div>
                 <h1 className="text-2xl text-[#0f172b] font-medium">Self-Care Resources</h1>
@@ -219,7 +219,7 @@ export function SelfCareResources() {
                           console.log(`Navigate to ${topic.id}`);
                         }
                       }}
-                      className="bg-white border border-[#E2E8F0] rounded-2xl p-6 hover:shadow-md transition-all text-center"
+                      className="bg-white border border-[#E5EAF0] rounded-2xl p-6 hover:shadow-md transition-all text-center"
                     >
                       <div
                         className="w-16 h-16 rounded-2xl flex items-center justify-center mb-4 mx-auto"
@@ -227,7 +227,7 @@ export function SelfCareResources() {
                       >
                         <IconComponent size={28} style={{ color: topic.iconColor }} />
                       </div>
-                      <h3 className="text-[#1E293B] font-medium text-base">{topic.label}</h3>
+                      <h3 className="text-[#0F172A] font-medium text-base">{topic.label}</h3>
                     </motion.button>
                   );
                 })}

@@ -163,12 +163,12 @@ export function ContaminationOCDPage() {
             <div className="flex items-center gap-4 mb-2">
               <button
                 onClick={() => navigate(-1)}
-                className="flex items-center justify-center w-9 h-9 rounded-lg text-[#64748B] hover:text-[#043570] hover:bg-white/80 transition-all"
+                className="flex items-center justify-center w-9 h-9 rounded-lg text-[#64748B] hover:text-[#0B2545] hover:bg-white/80 transition-all"
               >
                 <ChevronLeft size={20} strokeWidth={2.5} />
               </button>
               <div>
-                <h1 className="text-2xl font-bold text-[#020817]">Contamination OCD</h1>
+                <h1 className="text-2xl font-bold text-[#0F172A]">Contamination OCD</h1>
                 <p className="text-sm text-[#64748B]">Resources and tools for managing Contamination OCD</p>
               </div>
             </div>
@@ -190,7 +190,7 @@ export function ContaminationOCDPage() {
                   <Lightbulb size={28} className="text-white" strokeWidth={2} />
                 </div>
                 <div className="text-left">
-                  <h3 className="text-lg font-semibold text-[#020817]">Tips</h3>
+                  <h3 className="text-lg font-semibold text-[#0F172A]">Tips</h3>
                   <p className="text-sm text-[#64748B]">Practical strategies for recovery</p>
                 </div>
               </div>
@@ -226,7 +226,7 @@ export function ContaminationOCDPage() {
                             {tip.id}
                           </div>
                           <div className="flex-1">
-                            <h4 className="text-sm font-semibold text-[#020817] mb-1">
+                            <h4 className="text-sm font-semibold text-[#0F172A] mb-1">
                               {tip.title}
                             </h4>
                             <p className="text-xs text-[#64748B]">
@@ -258,7 +258,7 @@ export function ContaminationOCDPage() {
                   <FileText size={28} className="text-white" strokeWidth={2} />
                 </div>
                 <div className="text-left">
-                  <h3 className="text-lg font-semibold text-[#020817]">Articles</h3>
+                  <h3 className="text-lg font-semibold text-[#0F172A]">Articles</h3>
                   <p className="text-sm text-[#64748B]">Research and expert insights</p>
                 </div>
               </div>
@@ -294,7 +294,7 @@ export function ContaminationOCDPage() {
                             {article.id}
                           </div>
                           <div className="flex-1">
-                            <h4 className="text-sm font-semibold text-[#020817] mb-1">
+                            <h4 className="text-sm font-semibold text-[#0F172A] mb-1">
                               {article.title}
                             </h4>
                             <p className="text-xs text-[#6366F1]">
@@ -322,7 +322,7 @@ export function ContaminationOCDPage() {
                   <TrendingUp size={24} className="text-white" strokeWidth={2} />
                 </div>
                 <div>
-                  <h2 className="text-lg font-semibold text-[#020817]">Interactive Tools</h2>
+                  <h2 className="text-lg font-semibold text-[#0F172A]">Interactive Tools</h2>
                   <p className="text-sm text-[#64748B]">Tools for tracking and understanding</p>
                 </div>
               </div>
@@ -350,7 +350,7 @@ export function ContaminationOCDPage() {
                   >
                     <tool.icon size={28} style={{ color: tool.iconColor }} strokeWidth={2} />
                   </div>
-                  <p className="text-sm font-medium text-[#020817] text-center">
+                  <p className="text-sm font-medium text-[#0F172A] text-center">
                     {tool.label}
                   </p>
                 </motion.button>

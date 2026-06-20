@@ -42,30 +42,30 @@ export function AppointmentDeclinedModal({ isOpen, onClose, appointmentDetails }
               <AlertTriangle size={32} className="text-[#EF4444]" />
             </motion.div>
             
-            <h2 className="text-2xl font-bold text-[#1E293B] mb-2">Appointment Declined</h2>
+            <h2 className="text-2xl font-bold text-[#0F172A] mb-2">Appointment Declined</h2>
             <p className="text-[#64748B] text-sm">The appointment has been declined</p>
           </div>
 
           {/* Content */}
           <div className="px-6 py-6">
             {appointmentDetails && (
-              <div className="bg-[#FAFBFC] border border-[#E2E8F0] rounded-2xl px-4 py-4 mb-6">
+              <div className="bg-[#FAFBFC] border border-[#E5EAF0] rounded-2xl px-4 py-4 mb-6">
                 <div className="space-y-2">
                   <div className="flex justify-between items-start">
                     <span className="text-xs font-medium text-[#64748B]">Service</span>
-                    <span className="text-sm text-[#1E293B] font-semibold">{appointmentDetails.serviceName}</span>
+                    <span className="text-sm text-[#0F172A] font-semibold">{appointmentDetails.serviceName}</span>
                   </div>
                   <div className="flex justify-between items-start">
                     <span className="text-xs font-medium text-[#64748B]">Provider</span>
-                    <span className="text-sm text-[#1E293B]">{appointmentDetails.expertName}</span>
+                    <span className="text-sm text-[#0F172A]">{appointmentDetails.expertName}</span>
                   </div>
                   <div className="flex justify-between items-start">
                     <span className="text-xs font-medium text-[#64748B]">Date</span>
-                    <span className="text-sm text-[#1E293B]">{appointmentDetails.date}</span>
+                    <span className="text-sm text-[#0F172A]">{appointmentDetails.date}</span>
                   </div>
                   <div className="flex justify-between items-start">
                     <span className="text-xs font-medium text-[#64748B]">Time</span>
-                    <span className="text-sm text-[#1E293B]">{appointmentDetails.time}</span>
+                    <span className="text-sm text-[#0F172A]">{appointmentDetails.time}</span>
                   </div>
                 </div>
               </div>

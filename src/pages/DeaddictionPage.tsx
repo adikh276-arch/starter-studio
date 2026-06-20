@@ -51,20 +51,20 @@ export function DeaddictionPage() {
     ],
     trackers: [
       { label: "Consumption Tracker", iconKey: "assessment", grad: "#E74C3C", link: "https://web.mantracare.com/app/consumption_tracker" },
-      { label: "Smoking Craving", iconKey: "craving", grad: "#3498DB", link: "https://web.mantracare.com/app/smoke_craving_tracker" },
-      { label: "Withdrawal", iconKey: "withdrawal", grad: "#9B59B6", link: "https://web.mantracare.com/app/withdrawal_tracker" },
+      { label: "Smoking Craving", iconKey: "craving", grad: "#0B2545", link: "https://web.mantracare.com/app/smoke_craving_tracker" },
+      { label: "Withdrawal", iconKey: "withdrawal", grad: "#13B5B1", link: "https://web.mantracare.com/app/withdrawal_tracker" },
       { label: "Urge Watcher", iconKey: "watch", grad: "#F97316", link: "https://web.mantracare.com/app/urge-watcher" },
-      { label: "Smoking Index", iconKey: "index", grad: "#F39C12", link: "https://web.mantracare.com/app/smoking-index/" },
-      { label: "Mood", iconKey: "mood", grad: "#FF9F43", link: "https://web.mantracare.com/app/mood_tracker/" },
+      { label: "Smoking Index", iconKey: "index", grad: "#E0A82E", link: "https://web.mantracare.com/app/smoking-index/" },
+      { label: "Mood", iconKey: "mood", grad: "#FF8A4C", link: "https://web.mantracare.com/app/mood_tracker/" },
     ],
   };
 
   const t = {
     bg: "bg-[#F9FAFB]",
     cardBg: "bg-white",
-    headingText: "text-[#020817]",
+    headingText: "text-[#0F172A]",
     subText: "text-[#64748B]",
-    seeAllBtn: "text-[#00c0ff] hover:bg-[#00c0ff]/5",
+    seeAllBtn: "text-[#13B5B1] hover:bg-[#13B5B1]/5",
   };
 
   const container = {
@@ -104,7 +104,7 @@ export function DeaddictionPage() {
               {/* Back Button */}
               <button
                 onClick={() => navigate("/dashboard")}
-                className="flex-shrink-0 w-8 h-8 flex items-center justify-center text-[#64748B] hover:text-[#020817] transition-colors mt-1"
+                className="flex-shrink-0 w-8 h-8 flex items-center justify-center text-[#64748B] hover:text-[#0F172A] transition-colors mt-1"
               >
                 <ArrowRight className="rotate-180" size={20} />
               </button>
@@ -152,12 +152,12 @@ export function DeaddictionPage() {
                   brain: {
                     Icon: Library,
                     cardBg: "bg-white border border-slate-200",
-                    iconBg: "bg-[#FF9F43]/10",
-                    iconColor: "text-[#FF9F43]",
-                    titleColor: "text-[#020817]",
+                    iconBg: "bg-[#FF8A4C]/10",
+                    iconColor: "text-[#FF8A4C]",
+                    titleColor: "text-[#0F172A]",
                     subColor: "text-[#64748B]",
-                    arrowColor: "text-[#020817]",
-                    arrowBg: "bg-[#FF9F43]/10",
+                    arrowColor: "text-[#0F172A]",
+                    arrowBg: "bg-[#FF8A4C]/10",
                   },
                 };
 
@@ -316,7 +316,7 @@ export function DeaddictionPage() {
                         >
                           {/* Checkbox */}
                           <div
-                            className={`w-5 h-5 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-colors ${isCompleted ? 'bg-[#00c0ff] border-[#00c0ff]' : 'border-[#E5E7EB]'
+                            className={`w-5 h-5 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-colors ${isCompleted ? 'bg-[#13B5B1] border-[#13B5B1]' : 'border-[#E5E7EB]'
                               }`}
                           >
                             {isCompleted && (
@@ -387,7 +387,7 @@ export function DeaddictionPage() {
               <div className="flex items-center justify-between">
                 <div>
                   <h2 className={`text-[22px] flex items-center gap-2 mb-1 ${t.headingText}`}>
-                    <Sparkles className="text-[#00c0ff]" size={16} />
+                    <Sparkles className="text-[#13B5B1]" size={16} />
                     Substances
                   </h2>
                   <p className={`text-sm ${t.subText}`}>
@@ -553,10 +553,10 @@ export function DeaddictionPage() {
                     {/* Self Care Section */}
                     <div>
                       <div className="flex items-center gap-2 mb-3 px-2">
-                        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#00c0ff]/10 to-[#00c0ff]/5 flex items-center justify-center">
-                          <Heart className="text-[#00c0ff]" size={16} strokeWidth={2.5} />
+                        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#13B5B1]/10 to-[#13B5B1]/5 flex items-center justify-center">
+                          <Heart className="text-[#13B5B1]" size={16} strokeWidth={2.5} />
                         </div>
-                        <h3 className="text-base font-semibold text-[#020817]">
+                        <h3 className="text-base font-semibold text-[#0F172A]">
                           Self Care
                         </h3>
                       </div>
@@ -584,7 +584,7 @@ export function DeaddictionPage() {
                           >
                             <tracker.Icon className="text-white" size={20} strokeWidth={2.5} />
                           </div>
-                          <span className="text-sm font-medium text-[#020817]">{tracker.label}</span>
+                          <span className="text-sm font-medium text-[#0F172A]">{tracker.label}</span>
                         </motion.button>
                       ))}
                     </div>
@@ -593,10 +593,10 @@ export function DeaddictionPage() {
                     {/* Trackers Section */}
                     <div>
                       <div className="flex items-center gap-2 mb-3 px-2">
-                        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#00c0ff]/10 to-[#00c0ff]/5 flex items-center justify-center">
-                          <BarChart3 className="text-[#00c0ff]" size={16} strokeWidth={2.5} />
+                        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#13B5B1]/10 to-[#13B5B1]/5 flex items-center justify-center">
+                          <BarChart3 className="text-[#13B5B1]" size={16} strokeWidth={2.5} />
                         </div>
-                        <h3 className="text-base font-semibold text-[#020817]">
+                        <h3 className="text-base font-semibold text-[#0F172A]">
                           Trackers
                         </h3>
                       </div>
@@ -624,7 +624,7 @@ export function DeaddictionPage() {
                           >
                             <tracker.Icon className="text-white" size={20} strokeWidth={2.5} />
                           </div>
-                          <span className="text-sm font-medium text-[#020817]">{tracker.label}</span>
+                          <span className="text-sm font-medium text-[#0F172A]">{tracker.label}</span>
                         </motion.button>
                       ))}
                     </div>
@@ -637,10 +637,10 @@ export function DeaddictionPage() {
                     {/* Self Care Section */}
                     <div>
                       <div className="flex items-center gap-2 mb-3 px-2">
-                        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#00c0ff]/10 to-[#00c0ff]/5 flex items-center justify-center">
-                          <Heart className="text-[#00c0ff]" size={16} strokeWidth={2.5} />
+                        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#13B5B1]/10 to-[#13B5B1]/5 flex items-center justify-center">
+                          <Heart className="text-[#13B5B1]" size={16} strokeWidth={2.5} />
                         </div>
-                        <h3 className="text-base font-semibold text-[#020817]">
+                        <h3 className="text-base font-semibold text-[#0F172A]">
                           Self Care
                         </h3>
                       </div>
@@ -668,7 +668,7 @@ export function DeaddictionPage() {
                           >
                             <tracker.Icon className="text-white" size={20} strokeWidth={2.5} />
                           </div>
-                          <span className="text-sm font-medium text-[#020817]">{tracker.label}</span>
+                          <span className="text-sm font-medium text-[#0F172A]">{tracker.label}</span>
                         </motion.button>
                       ))}
                     </div>
@@ -677,10 +677,10 @@ export function DeaddictionPage() {
                     {/* Trackers Section */}
                     <div>
                       <div className="flex items-center gap-2 mb-3 px-2">
-                        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#00c0ff]/10 to-[#00c0ff]/5 flex items-center justify-center">
-                          <BarChart3 className="text-[#00c0ff]" size={16} strokeWidth={2.5} />
+                        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#13B5B1]/10 to-[#13B5B1]/5 flex items-center justify-center">
+                          <BarChart3 className="text-[#13B5B1]" size={16} strokeWidth={2.5} />
                         </div>
-                        <h3 className="text-base font-semibold text-[#020817]">
+                        <h3 className="text-base font-semibold text-[#0F172A]">
                           Trackers
                         </h3>
                       </div>
@@ -708,7 +708,7 @@ export function DeaddictionPage() {
                           >
                             <tracker.Icon className="text-white" size={20} strokeWidth={2.5} />
                           </div>
-                          <span className="text-sm font-medium text-[#020817]">{tracker.label}</span>
+                          <span className="text-sm font-medium text-[#0F172A]">{tracker.label}</span>
                         </motion.button>
                       ))}
                     </div>
@@ -721,10 +721,10 @@ export function DeaddictionPage() {
                     {/* Self Care Section */}
                     <div>
                       <div className="flex items-center gap-2 mb-3 px-2">
-                        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#00c0ff]/10 to-[#00c0ff]/5 flex items-center justify-center">
-                          <Heart className="text-[#00c0ff]" size={16} strokeWidth={2.5} />
+                        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#13B5B1]/10 to-[#13B5B1]/5 flex items-center justify-center">
+                          <Heart className="text-[#13B5B1]" size={16} strokeWidth={2.5} />
                         </div>
-                        <h3 className="text-base font-semibold text-[#020817]">
+                        <h3 className="text-base font-semibold text-[#0F172A]">
                           Self Care
                         </h3>
                       </div>
@@ -752,7 +752,7 @@ export function DeaddictionPage() {
                           >
                             <tracker.Icon className="text-white" size={20} strokeWidth={2.5} />
                           </div>
-                          <span className="text-sm font-medium text-[#020817]">{tracker.label}</span>
+                          <span className="text-sm font-medium text-[#0F172A]">{tracker.label}</span>
                         </motion.button>
                       ))}
                     </div>
@@ -761,10 +761,10 @@ export function DeaddictionPage() {
                     {/* Trackers Section */}
                     <div>
                       <div className="flex items-center gap-2 mb-3 px-2">
-                        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#00c0ff]/10 to-[#00c0ff]/5 flex items-center justify-center">
-                          <BarChart3 className="text-[#00c0ff]" size={16} strokeWidth={2.5} />
+                        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#13B5B1]/10 to-[#13B5B1]/5 flex items-center justify-center">
+                          <BarChart3 className="text-[#13B5B1]" size={16} strokeWidth={2.5} />
                         </div>
-                        <h3 className="text-base font-semibold text-[#020817]">
+                        <h3 className="text-base font-semibold text-[#0F172A]">
                           Trackers
                         </h3>
                       </div>
@@ -792,7 +792,7 @@ export function DeaddictionPage() {
                           >
                             <tracker.Icon className="text-white" size={20} strokeWidth={2.5} />
                           </div>
-                          <span className="text-sm font-medium text-[#020817]">{tracker.label}</span>
+                          <span className="text-sm font-medium text-[#0F172A]">{tracker.label}</span>
                         </motion.button>
                       ))}
                     </div>
@@ -805,10 +805,10 @@ export function DeaddictionPage() {
                     {/* Self Care Section */}
                     <div>
                       <div className="flex items-center gap-2 mb-3 px-2">
-                        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#00c0ff]/10 to-[#00c0ff]/5 flex items-center justify-center">
-                          <Heart className="text-[#00c0ff]" size={16} strokeWidth={2.5} />
+                        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#13B5B1]/10 to-[#13B5B1]/5 flex items-center justify-center">
+                          <Heart className="text-[#13B5B1]" size={16} strokeWidth={2.5} />
                         </div>
-                        <h3 className="text-base font-semibold text-[#020817]">
+                        <h3 className="text-base font-semibold text-[#0F172A]">
                           Self Care
                         </h3>
                       </div>
@@ -836,7 +836,7 @@ export function DeaddictionPage() {
                           >
                             <tracker.Icon className="text-white" size={20} strokeWidth={2.5} />
                           </div>
-                          <span className="text-sm font-medium text-[#020817]">{tracker.label}</span>
+                          <span className="text-sm font-medium text-[#0F172A]">{tracker.label}</span>
                         </motion.button>
                       ))}
                     </div>
@@ -845,10 +845,10 @@ export function DeaddictionPage() {
                     {/* Trackers Section */}
                     <div>
                       <div className="flex items-center gap-2 mb-3 px-2">
-                        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#00c0ff]/10 to-[#00c0ff]/5 flex items-center justify-center">
-                          <BarChart3 className="text-[#00c0ff]" size={16} strokeWidth={2.5} />
+                        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#13B5B1]/10 to-[#13B5B1]/5 flex items-center justify-center">
+                          <BarChart3 className="text-[#13B5B1]" size={16} strokeWidth={2.5} />
                         </div>
-                        <h3 className="text-base font-semibold text-[#020817]">
+                        <h3 className="text-base font-semibold text-[#0F172A]">
                           Trackers
                         </h3>
                       </div>
@@ -876,7 +876,7 @@ export function DeaddictionPage() {
                           >
                             <tracker.Icon className="text-white" size={20} strokeWidth={2.5} />
                           </div>
-                          <span className="text-sm font-medium text-[#020817]">{tracker.label}</span>
+                          <span className="text-sm font-medium text-[#0F172A]">{tracker.label}</span>
                         </motion.button>
                       ))}
                     </div>
@@ -889,10 +889,10 @@ export function DeaddictionPage() {
                     {/* Self Care Section */}
                     <div>
                       <div className="flex items-center gap-2 mb-3 px-2">
-                        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#00c0ff]/10 to-[#00c0ff]/5 flex items-center justify-center">
-                          <Heart className="text-[#00c0ff]" size={16} strokeWidth={2.5} />
+                        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#13B5B1]/10 to-[#13B5B1]/5 flex items-center justify-center">
+                          <Heart className="text-[#13B5B1]" size={16} strokeWidth={2.5} />
                         </div>
-                        <h3 className="text-base font-semibold text-[#020817]">
+                        <h3 className="text-base font-semibold text-[#0F172A]">
                           Self Care
                         </h3>
                       </div>
@@ -920,7 +920,7 @@ export function DeaddictionPage() {
                           >
                             <tracker.Icon className="text-white" size={20} strokeWidth={2.5} />
                           </div>
-                          <span className="text-sm font-medium text-[#020817]">{tracker.label}</span>
+                          <span className="text-sm font-medium text-[#0F172A]">{tracker.label}</span>
                         </motion.button>
                       ))}
                     </div>
@@ -929,10 +929,10 @@ export function DeaddictionPage() {
                     {/* Trackers Section */}
                     <div>
                       <div className="flex items-center gap-2 mb-3 px-2">
-                        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#00c0ff]/10 to-[#00c0ff]/5 flex items-center justify-center">
-                          <BarChart3 className="text-[#00c0ff]" size={16} strokeWidth={2.5} />
+                        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#13B5B1]/10 to-[#13B5B1]/5 flex items-center justify-center">
+                          <BarChart3 className="text-[#13B5B1]" size={16} strokeWidth={2.5} />
                         </div>
-                        <h3 className="text-base font-semibold text-[#020817]">
+                        <h3 className="text-base font-semibold text-[#0F172A]">
                           Trackers
                         </h3>
                       </div>
@@ -960,7 +960,7 @@ export function DeaddictionPage() {
                           >
                             <tracker.Icon className="text-white" size={20} strokeWidth={2.5} />
                           </div>
-                          <span className="text-sm font-medium text-[#020817]">{tracker.label}</span>
+                          <span className="text-sm font-medium text-[#0F172A]">{tracker.label}</span>
                         </motion.button>
                       ))}
                     </div>
@@ -973,10 +973,10 @@ export function DeaddictionPage() {
                     {/* Self Care Section */}
                     <div>
                       <div className="flex items-center gap-2 mb-3 px-2">
-                        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#00c0ff]/10 to-[#00c0ff]/5 flex items-center justify-center">
-                          <Heart className="text-[#00c0ff]" size={16} strokeWidth={2.5} />
+                        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#13B5B1]/10 to-[#13B5B1]/5 flex items-center justify-center">
+                          <Heart className="text-[#13B5B1]" size={16} strokeWidth={2.5} />
                         </div>
-                        <h3 className="text-base font-semibold text-[#020817]">
+                        <h3 className="text-base font-semibold text-[#0F172A]">
                           Self Care
                         </h3>
                       </div>
@@ -1004,7 +1004,7 @@ export function DeaddictionPage() {
                           >
                             <tracker.Icon className="text-white" size={20} strokeWidth={2.5} />
                           </div>
-                          <span className="text-sm font-medium text-[#020817]">{tracker.label}</span>
+                          <span className="text-sm font-medium text-[#0F172A]">{tracker.label}</span>
                         </motion.button>
                       ))}
                     </div>
@@ -1013,10 +1013,10 @@ export function DeaddictionPage() {
                     {/* Trackers Section */}
                     <div>
                       <div className="flex items-center gap-2 mb-3 px-2">
-                        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#00c0ff]/10 to-[#00c0ff]/5 flex items-center justify-center">
-                          <BarChart3 className="text-[#00c0ff]" size={16} strokeWidth={2.5} />
+                        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#13B5B1]/10 to-[#13B5B1]/5 flex items-center justify-center">
+                          <BarChart3 className="text-[#13B5B1]" size={16} strokeWidth={2.5} />
                         </div>
-                        <h3 className="text-base font-semibold text-[#020817]">
+                        <h3 className="text-base font-semibold text-[#0F172A]">
                           Trackers
                         </h3>
                       </div>
@@ -1044,7 +1044,7 @@ export function DeaddictionPage() {
                           >
                             <tracker.Icon className="text-white" size={20} strokeWidth={2.5} />
                           </div>
-                          <span className="text-sm font-medium text-[#020817]">{tracker.label}</span>
+                          <span className="text-sm font-medium text-[#0F172A]">{tracker.label}</span>
                         </motion.button>
                       ))}
                     </div>
@@ -1057,10 +1057,10 @@ export function DeaddictionPage() {
                     {/* Self Care Section */}
                     <div>
                       <div className="flex items-center gap-2 mb-3 px-2">
-                        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#00c0ff]/10 to-[#00c0ff]/5 flex items-center justify-center">
-                          <Heart className="text-[#00c0ff]" size={16} strokeWidth={2.5} />
+                        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#13B5B1]/10 to-[#13B5B1]/5 flex items-center justify-center">
+                          <Heart className="text-[#13B5B1]" size={16} strokeWidth={2.5} />
                         </div>
-                        <h3 className="text-base font-semibold text-[#020817]">
+                        <h3 className="text-base font-semibold text-[#0F172A]">
                           Self Care
                         </h3>
                       </div>
@@ -1088,7 +1088,7 @@ export function DeaddictionPage() {
                           >
                             <tracker.Icon className="text-white" size={20} strokeWidth={2.5} />
                           </div>
-                          <span className="text-sm font-medium text-[#020817]">{tracker.label}</span>
+                          <span className="text-sm font-medium text-[#0F172A]">{tracker.label}</span>
                         </motion.button>
                       ))}
                     </div>
@@ -1097,10 +1097,10 @@ export function DeaddictionPage() {
                     {/* Trackers Section */}
                     <div>
                       <div className="flex items-center gap-2 mb-3 px-2">
-                        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#00c0ff]/10 to-[#00c0ff]/5 flex items-center justify-center">
-                          <BarChart3 className="text-[#00c0ff]" size={16} strokeWidth={2.5} />
+                        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#13B5B1]/10 to-[#13B5B1]/5 flex items-center justify-center">
+                          <BarChart3 className="text-[#13B5B1]" size={16} strokeWidth={2.5} />
                         </div>
-                        <h3 className="text-base font-semibold text-[#020817]">
+                        <h3 className="text-base font-semibold text-[#0F172A]">
                           Trackers
                         </h3>
                       </div>
@@ -1128,7 +1128,7 @@ export function DeaddictionPage() {
                           >
                             <tracker.Icon className="text-white" size={20} strokeWidth={2.5} />
                           </div>
-                          <span className="text-sm font-medium text-[#020817]">{tracker.label}</span>
+                          <span className="text-sm font-medium text-[#0F172A]">{tracker.label}</span>
                         </motion.button>
                       ))}
                     </div>
@@ -1141,10 +1141,10 @@ export function DeaddictionPage() {
                     {/* Self Care Section */}
                     <div>
                       <div className="flex items-center gap-2 mb-3 px-2">
-                        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#00c0ff]/10 to-[#00c0ff]/5 flex items-center justify-center">
-                          <Heart className="text-[#00c0ff]" size={16} strokeWidth={2.5} />
+                        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#13B5B1]/10 to-[#13B5B1]/5 flex items-center justify-center">
+                          <Heart className="text-[#13B5B1]" size={16} strokeWidth={2.5} />
                         </div>
-                        <h3 className="text-base font-semibold text-[#020817]">
+                        <h3 className="text-base font-semibold text-[#0F172A]">
                           Self Care
                         </h3>
                       </div>
@@ -1172,7 +1172,7 @@ export function DeaddictionPage() {
                           >
                             <tracker.Icon className="text-white" size={20} strokeWidth={2.5} />
                           </div>
-                          <span className="text-sm font-medium text-[#020817]">{tracker.label}</span>
+                          <span className="text-sm font-medium text-[#0F172A]">{tracker.label}</span>
                         </motion.button>
                       ))}
                     </div>
@@ -1181,10 +1181,10 @@ export function DeaddictionPage() {
                     {/* Trackers Section */}
                     <div>
                       <div className="flex items-center gap-2 mb-3 px-2">
-                        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#00c0ff]/10 to-[#00c0ff]/5 flex items-center justify-center">
-                          <BarChart3 className="text-[#00c0ff]" size={16} strokeWidth={2.5} />
+                        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#13B5B1]/10 to-[#13B5B1]/5 flex items-center justify-center">
+                          <BarChart3 className="text-[#13B5B1]" size={16} strokeWidth={2.5} />
                         </div>
-                        <h3 className="text-base font-semibold text-[#020817]">
+                        <h3 className="text-base font-semibold text-[#0F172A]">
                           Trackers
                         </h3>
                       </div>
@@ -1212,7 +1212,7 @@ export function DeaddictionPage() {
                           >
                             <tracker.Icon className="text-white" size={20} strokeWidth={2.5} />
                           </div>
-                          <span className="text-sm font-medium text-[#020817]">{tracker.label}</span>
+                          <span className="text-sm font-medium text-[#0F172A]">{tracker.label}</span>
                         </motion.button>
                       ))}
                     </div>
@@ -1228,11 +1228,11 @@ export function DeaddictionPage() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
-            className="bg-gradient-to-br from-white via-[#F8FCFF] to-[#F3FAFF] rounded-2xl p-6 md:p-8 shadow-lg border border-[#E2E8F0] relative overflow-hidden group hover:shadow-xl transition-shadow duration-300"
+            className="bg-gradient-to-br from-white via-[#F8FCFF] to-[#F1F7F7] rounded-2xl p-6 md:p-8 shadow-lg border border-[#E5EAF0] relative overflow-hidden group hover:shadow-xl transition-shadow duration-300"
           >
             {/* Decorative elements */}
-            <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-[#00c0ff]/10 to-transparent rounded-full blur-3xl pointer-events-none"></div>
-            <div className="absolute bottom-0 left-0 w-48 h-48 bg-gradient-to-tr from-[#043570]/5 to-transparent rounded-full blur-2xl pointer-events-none"></div>
+            <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-[#13B5B1]/10 to-transparent rounded-full blur-3xl pointer-events-none"></div>
+            <div className="absolute bottom-0 left-0 w-48 h-48 bg-gradient-to-tr from-[#0B2545]/5 to-transparent rounded-full blur-2xl pointer-events-none"></div>
 
             {/* Blue wave decoration at bottom right */}
             <div className="absolute bottom-0 right-0 w-48 h-40 opacity-100 pointer-events-none">
@@ -1241,12 +1241,12 @@ export function DeaddictionPage() {
                 <path d="M24 160C24 160 60 114 96 114C132 114 168 78 168 78L192 102V160H24Z" fill="url(#wave2)" fillOpacity="0.4" />
                 <defs>
                   <linearGradient id="wave1" x1="0" y1="0" x2="192" y2="160" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#00c0ff" stopOpacity="0.2" />
+                    <stop stopColor="#13B5B1" stopOpacity="0.2" />
                     <stop offset="1" stopColor="#0EA5E9" stopOpacity="0.1" />
                   </linearGradient>
                   <linearGradient id="wave2" x1="24" y1="78" x2="192" y2="160" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#043570" stopOpacity="0.15" />
-                    <stop offset="1" stopColor="#043570" stopOpacity="0.05" />
+                    <stop stopColor="#0B2545" stopOpacity="0.15" />
+                    <stop offset="1" stopColor="#0B2545" stopOpacity="0.05" />
                   </linearGradient>
                 </defs>
               </svg>
@@ -1254,13 +1254,13 @@ export function DeaddictionPage() {
 
             <div className="relative z-10 flex flex-col items-start gap-4">
               {/* Badge */}
-              <div className="inline-flex items-center gap-2 bg-[#00c0ff]/10 text-[#043570] border-[#00c0ff]/20 px-3 py-1.5 rounded-full text-xs font-semibold border">
-                <Sparkles size={14} className="text-[#00c0ff]" />
+              <div className="inline-flex items-center gap-2 bg-[#13B5B1]/10 text-[#0B2545] border-[#13B5B1]/20 px-3 py-1.5 rounded-full text-xs font-semibold border">
+                <Sparkles size={14} className="text-[#13B5B1]" />
                 Professional Recovery Support
               </div>
 
               {/* Heading */}
-              <h3 className="text-[#020817] text-2xl md:text-3xl font-bold leading-tight">
+              <h3 className="text-[#0F172A] text-2xl md:text-3xl font-bold leading-tight">
                 Start Your Recovery Journey Today
               </h3>
 
@@ -1275,7 +1275,7 @@ export function DeaddictionPage() {
                   whileHover={{ scale: 1.02, y: -2 }}
                   whileTap={{ scale: 0.98 }}
                   onClick={() => navigate("/plans")}
-                  className="inline-flex items-center gap-2 bg-gradient-to-r from-[#00c0ff] to-[#0EA5E9] text-white px-8 py-3.5 rounded-xl font-semibold text-sm shadow-lg hover:shadow-xl transition-all"
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-[#13B5B1] to-[#0EA5E9] text-white px-8 py-3.5 rounded-xl font-semibold text-sm shadow-lg hover:shadow-xl transition-all"
                 >
                   Get Started
                   <ArrowRight size={18} strokeWidth={2.5} />

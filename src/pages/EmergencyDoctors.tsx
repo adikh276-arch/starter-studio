@@ -52,7 +52,7 @@ export function EmergencyDoctors() {
             <div className="flex items-center gap-3 mb-2">
               <button
                 onClick={() => navigate(-1)}
-                className="flex items-center justify-center text-[#64748B] hover:text-[#043570] transition-colors"
+                className="flex items-center justify-center text-[#64748B] hover:text-[#0B2545] transition-colors"
               >
                 <ChevronLeft size={20} />
               </button>
@@ -82,7 +82,7 @@ export function EmergencyDoctors() {
               <div className="w-20 h-20 bg-[#DBEAFE] rounded-full flex items-center justify-center mx-auto mb-4">
                 <Stethoscope size={36} className="text-[#2563EB]" strokeWidth={2} />
               </div>
-              <h2 className="text-2xl font-semibold text-[#043570] mb-2">
+              <h2 className="text-2xl font-semibold text-[#0B2545] mb-2">
                 Emergency Medical Support
               </h2>
               <p className="text-[#64748B]">
@@ -92,17 +92,17 @@ export function EmergencyDoctors() {
 
             {/* Region Selector */}
             <div className="mb-6">
-              <label className="block text-sm font-medium text-[#043570] mb-2">
+              <label className="block text-sm font-medium text-[#0B2545] mb-2">
                 Your Region
               </label>
               <div className="relative">
                 <button
                   onClick={() => setShowRegionDropdown(!showRegionDropdown)}
-                  className="w-full flex items-center justify-between px-4 py-3 bg-[#f3faff] border border-slate-200 rounded-xl hover:bg-[#EFF6FF] transition-colors"
+                  className="w-full flex items-center justify-between px-4 py-3 bg-[#F1F7F7] border border-slate-200 rounded-xl hover:bg-[#EFF6FF] transition-colors"
                 >
                   <div className="flex items-center gap-3">
                     <span className="text-2xl">{currentRegion.flag}</span>
-                    <span className="text-[#043570] font-medium">{currentRegion.name}</span>
+                    <span className="text-[#0B2545] font-medium">{currentRegion.name}</span>
                   </div>
                   <ChevronDown
                     size={20}
@@ -129,12 +129,12 @@ export function EmergencyDoctors() {
                             setShowRegionDropdown(false);
                             setCopied(false);
                           }}
-                          className={`w-full flex items-center gap-3 px-4 py-3 hover:bg-[#f3faff] transition-colors ${
-                            region.code === selectedRegion ? "bg-[#f3faff]" : ""
+                          className={`w-full flex items-center gap-3 px-4 py-3 hover:bg-[#F1F7F7] transition-colors ${
+                            region.code === selectedRegion ? "bg-[#F1F7F7]" : ""
                           }`}
                         >
                           <span className="text-2xl">{region.flag}</span>
-                          <span className="text-[#043570] font-medium">{region.name}</span>
+                          <span className="text-[#0B2545] font-medium">{region.name}</span>
                         </button>
                       ))}
                     </motion.div>
@@ -144,7 +144,7 @@ export function EmergencyDoctors() {
             </div>
 
             {/* Phone Number Display */}
-            <div className="bg-[#f3faff] rounded-xl p-6 mb-6">
+            <div className="bg-[#F1F7F7] rounded-xl p-6 mb-6">
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-sm text-[#64748B] mb-1">Emergency Doctor Line</p>
@@ -167,7 +167,7 @@ export function EmergencyDoctors() {
                   ) : (
                     <>
                       <Copy size={18} className="text-[#64748B]" />
-                      <span className="text-sm font-medium text-[#043570]">Copy</span>
+                      <span className="text-sm font-medium text-[#0B2545]">Copy</span>
                     </>
                   )}
                 </button>
@@ -194,7 +194,7 @@ export function EmergencyDoctors() {
             <div className="flex items-start gap-3">
               <AlertCircle size={20} className="text-[#EF4444] flex-shrink-0 mt-0.5" />
               <div>
-                <p className="text-sm font-medium text-[#043570] mb-1">
+                <p className="text-sm font-medium text-[#0B2545] mb-1">
                   Life-Threatening Medical Emergency
                 </p>
                 <p className="text-sm text-[#64748B]">
@@ -216,7 +216,7 @@ export function EmergencyDoctors() {
               <div className="w-12 h-12 bg-[#DBEAFE] rounded-xl flex items-center justify-center mb-3">
                 <Clock size={24} className="text-[#2563EB]" />
               </div>
-              <h3 className="font-semibold text-[#043570] mb-1">24/7 Available</h3>
+              <h3 className="font-semibold text-[#0B2545] mb-1">24/7 Available</h3>
               <p className="text-sm text-[#64748B]">
                 Licensed doctors available round the clock
               </p>
@@ -231,7 +231,7 @@ export function EmergencyDoctors() {
               <div className="w-12 h-12 bg-[#D1FAE5] rounded-xl flex items-center justify-center mb-3">
                 <Shield size={24} className="text-[#10B981]" />
               </div>
-              <h3 className="font-semibold text-[#043570] mb-1">Verified Doctors</h3>
+              <h3 className="font-semibold text-[#0B2545] mb-1">Verified Doctors</h3>
               <p className="text-sm text-[#64748B]">
                 All doctors are licensed and verified medical professionals
               </p>
@@ -246,7 +246,7 @@ export function EmergencyDoctors() {
               <div className="w-12 h-12 bg-[#FEE2E2] rounded-xl flex items-center justify-center mb-3">
                 <Globe size={24} className="text-[#EF4444]" />
               </div>
-              <h3 className="font-semibold text-[#043570] mb-1">Global Coverage</h3>
+              <h3 className="font-semibold text-[#0B2545] mb-1">Global Coverage</h3>
               <p className="text-sm text-[#64748B]">
                 Medical support available across multiple regions
               </p>
@@ -261,7 +261,7 @@ export function EmergencyDoctors() {
               transition={{ duration: 0.3, delay: 0.35 }}
               className="bg-white rounded-2xl shadow-sm border border-slate-200 p-6"
             >
-              <h3 className="font-semibold text-[#043570] mb-4">When to Call</h3>
+              <h3 className="font-semibold text-[#0B2545] mb-4">When to Call</h3>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <div className="w-1.5 h-1.5 bg-[#2563EB] rounded-full mt-2 flex-shrink-0"></div>
@@ -296,7 +296,7 @@ export function EmergencyDoctors() {
               transition={{ duration: 0.3, delay: 0.4 }}
               className="bg-white rounded-2xl shadow-sm border border-slate-200 p-6"
             >
-              <h3 className="font-semibold text-[#043570] mb-4">How to Use / Guidelines</h3>
+              <h3 className="font-semibold text-[#0B2545] mb-4">How to Use / Guidelines</h3>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <div className="w-1.5 h-1.5 bg-[#2563EB] rounded-full mt-2 flex-shrink-0"></div>
@@ -331,7 +331,7 @@ export function EmergencyDoctors() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3, delay: 0.45 }}
-            className="bg-gradient-to-br from-[#f3faff] to-[#EFF6FF] rounded-2xl shadow-sm border border-[#BFDBFE] p-6 mt-4 relative overflow-hidden"
+            className="bg-gradient-to-br from-[#F1F7F7] to-[#EFF6FF] rounded-2xl shadow-sm border border-[#BFDBFE] p-6 mt-4 relative overflow-hidden"
           >
             {/* Decorative background element */}
             <div className="absolute top-0 right-0 w-32 h-32 bg-[#2563EB] opacity-5 rounded-full -mr-16 -mt-16"></div>
@@ -342,7 +342,7 @@ export function EmergencyDoctors() {
                   <Calendar size={24} className="text-[#2563EB]" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-semibold text-[#043570] mb-2">For routine consultations:</h3>
+                  <h3 className="font-semibold text-[#0B2545] mb-2">For routine consultations:</h3>
                   <p className="text-sm text-[#64748B] mb-4">
                     Book scheduled teleconsultation appointments with specialists for non-urgent medical concerns and follow-ups
                   </p>

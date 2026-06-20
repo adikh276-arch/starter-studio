@@ -36,15 +36,15 @@ export function Sidebar() {
     <motion.div
       animate={{ width: collapsed ? 64 : 256 }}
       transition={{ duration: 0.25, ease: "easeInOut" }}
-      className="hidden md:flex bg-white border-r border-[#E2ECF5] flex-col h-screen overflow-y-auto overflow-x-hidden sticky top-0 flex-shrink-0"
+      className="hidden md:flex bg-white border-r border-[#E5EAF0] flex-col h-screen overflow-y-auto overflow-x-hidden sticky top-0 flex-shrink-0"
     >
       {/* Logo + Hamburger */}
-      <div className="p-3 border-b border-[#E2ECF5] flex items-center gap-2 min-h-[60px]">
+      <div className="p-3 border-b border-[#E5EAF0] flex items-center gap-2 min-h-[60px]">
         <motion.button
           whileHover={{ scale: 1.08 }}
           whileTap={{ scale: 0.92 }}
           onClick={() => setCollapsed((c) => !c)}
-          className={`w-8 h-8 rounded-lg flex items-center justify-center text-[#64748B] hover:bg-[#E6F4FF] hover:text-[#020817] transition-colors flex-shrink-0 ${collapsed ? "mx-auto" : ""}`}
+          className={`w-8 h-8 rounded-lg flex items-center justify-center text-[#64748B] hover:bg-[#E6F8F7] hover:text-[#0F172A] transition-colors flex-shrink-0 ${collapsed ? "mx-auto" : ""}`}
           title={collapsed ? "Expand sidebar" : "Collapse sidebar"}
         >
           <Menu size={18} />
@@ -82,7 +82,7 @@ export function Sidebar() {
         </div>
 
         {/* Divider */}
-        <div className="my-3 border-t border-[#E2ECF5] mx-2"></div>
+        <div className="my-3 border-t border-[#E5EAF0] mx-2"></div>
 
         {/* Invite Friend */}
         <NavItem
@@ -95,7 +95,7 @@ export function Sidebar() {
         />
 
         {/* Divider */}
-        <div className="my-3 border-t border-[#E2ECF5] mx-2"></div>
+        <div className="my-3 border-t border-[#E5EAF0] mx-2"></div>
 
         {/* Share Feedback & Support */}
         <div className="space-y-0.5">
@@ -117,14 +117,14 @@ export function Sidebar() {
       </nav>
 
       {/* Bottom Section - User Profile */}
-      <div className="p-2 border-t border-[#E2ECF5]">
+      <div className="p-2 border-t border-[#E5EAF0]">
         <div className="relative">
           <motion.button
             whileTap={{ scale: 0.98 }}
             onClick={() => setDropdownOpen(!dropdownOpen)}
-            className={`w-full flex items-center rounded-xl transition-all py-2 ${collapsed ? "justify-center px-0" : "gap-3 px-3"} text-[#64748B] hover:bg-slate-100 hover:text-[#020817]`}
+            className={`w-full flex items-center rounded-xl transition-all py-2 ${collapsed ? "justify-center px-0" : "gap-3 px-3"} text-[#64748B] hover:bg-slate-100 hover:text-[#0F172A]`}
           >
-            <div className="w-8 h-8 bg-[#2D9CDB] rounded-full flex items-center justify-center text-white font-semibold text-sm flex-shrink-0">
+            <div className="w-8 h-8 bg-[#13B5B1] rounded-full flex items-center justify-center text-white font-semibold text-sm flex-shrink-0">
               {userName.charAt(0).toUpperCase()}
             </div>
             <AnimatePresence>
@@ -144,9 +144,9 @@ export function Sidebar() {
 
           {/* Tooltip when collapsed */}
           {collapsed && (
-            <div className="absolute left-full ml-2 top-1/2 -translate-y-1/2 bg-[#1E293B] text-white text-xs rounded-lg px-2.5 py-1.5 whitespace-nowrap opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-150 z-50 shadow-lg">
+            <div className="absolute left-full ml-2 top-1/2 -translate-y-1/2 bg-[#0F172A] text-white text-xs rounded-lg px-2.5 py-1.5 whitespace-nowrap opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-150 z-50 shadow-lg">
               {userName}
-              <div className="absolute right-full top-1/2 -translate-y-1/2 border-4 border-transparent border-r-[#1E293B]"></div>
+              <div className="absolute right-full top-1/2 -translate-y-1/2 border-4 border-transparent border-r-[#0F172A]"></div>
             </div>
           )}
 
@@ -158,10 +158,10 @@ export function Sidebar() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
                 transition={{ duration: 0.18 }}
-                className="absolute bottom-full left-2 right-2 mb-2 bg-white border border-[#E2ECF5] rounded-xl shadow-lg overflow-hidden"
+                className="absolute bottom-full left-2 right-2 mb-2 bg-white border border-[#E5EAF0] rounded-xl shadow-lg overflow-hidden"
               >
                 <button
-                  className="w-full flex items-center gap-3 px-3 py-2.5 text-[#64748B] hover:bg-[#F8FAFC] hover:text-[#020817] transition-colors text-left"
+                  className="w-full flex items-center gap-3 px-3 py-2.5 text-[#64748B] hover:bg-[#F8FAFC] hover:text-[#0F172A] transition-colors text-left"
                   onClick={() => {
                     setDropdownOpen(false);
                     navigate("/profile");
@@ -170,7 +170,7 @@ export function Sidebar() {
                   <UserCircle size={18} />
                   <span className="text-sm font-medium">Profile</span>
                 </button>
-                <div className="border-t border-[#E2ECF5]"></div>
+                <div className="border-t border-[#E5EAF0]"></div>
                 <button
                   className="w-full flex items-center gap-3 px-3 py-2.5 text-red-500 hover:bg-red-50 hover:text-red-600 transition-colors text-left"
                   onClick={() => {
@@ -211,8 +211,8 @@ function NavItem({ icon: Icon, label, collapsed, active, onClick, colorClass }: 
           colorClass
             ? colorClass
             : active
-            ? "bg-[#00c0ff] text-white"
-            : "text-[#64748B] hover:bg-[#00c0ff] hover:text-white"
+            ? "bg-[#13B5B1] text-white"
+            : "text-[#64748B] hover:bg-[#13B5B1] hover:text-white"
         }`}
       >
         <Icon size={20} className="flex-shrink-0" />
@@ -233,9 +233,9 @@ function NavItem({ icon: Icon, label, collapsed, active, onClick, colorClass }: 
 
       {/* Tooltip when collapsed */}
       {collapsed && (
-        <div className="absolute left-full ml-2 top-1/2 -translate-y-1/2 bg-[#1E293B] text-white text-xs rounded-lg px-2.5 py-1.5 whitespace-nowrap opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-150 z-50 shadow-lg">
+        <div className="absolute left-full ml-2 top-1/2 -translate-y-1/2 bg-[#0F172A] text-white text-xs rounded-lg px-2.5 py-1.5 whitespace-nowrap opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-150 z-50 shadow-lg">
           {label}
-          <div className="absolute right-full top-1/2 -translate-y-1/2 border-4 border-transparent border-r-[#1E293B]"></div>
+          <div className="absolute right-full top-1/2 -translate-y-1/2 border-4 border-transparent border-r-[#0F172A]"></div>
         </div>
       )}
     </div>

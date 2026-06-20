@@ -77,7 +77,7 @@ export function PrescriptionRefill() {
             <div className="flex items-center gap-3 mb-2">
               <button
                 onClick={() => navigate(-1)}
-                className="flex items-center justify-center text-[#64748B] hover:text-[#043570] transition-colors"
+                className="flex items-center justify-center text-[#64748B] hover:text-[#0B2545] transition-colors"
               >
                 <ChevronLeft size={20} />
               </button>
@@ -113,7 +113,7 @@ export function PrescriptionRefill() {
                   <div className="w-16 h-16 bg-[#D1FAE5] rounded-full flex items-center justify-center mx-auto mb-4">
                     <CheckCircle2 size={32} className="text-[#10B981]" />
                   </div>
-                  <h3 className="text-xl font-semibold text-[#043570] mb-2">
+                  <h3 className="text-xl font-semibold text-[#0B2545] mb-2">
                     Request Submitted!
                   </h3>
                   <p className="text-[#64748B]">
@@ -133,7 +133,7 @@ export function PrescriptionRefill() {
           >
             {/* Upload Previous Prescription */}
             <div className="mb-8">
-              <h3 className="text-lg font-semibold text-[#043570] mb-4">
+              <h3 className="text-lg font-semibold text-[#0B2545] mb-4">
                 Upload Previous Prescription (Optional)
               </h3>
               <div className="relative">
@@ -146,10 +146,10 @@ export function PrescriptionRefill() {
                 />
                 <label
                   htmlFor="prescription-upload"
-                  className="flex items-center justify-center gap-3 px-6 py-8 bg-[#f3faff] border-2 border-dashed border-[#BFDBFE] rounded-xl cursor-pointer hover:bg-[#EFF6FF] transition-colors"
+                  className="flex items-center justify-center gap-3 px-6 py-8 bg-[#F1F7F7] border-2 border-dashed border-[#BFDBFE] rounded-xl cursor-pointer hover:bg-[#EFF6FF] transition-colors"
                 >
                   <Upload size={24} className="text-[#2563EB]" />
-                  <span className="text-[#043570] font-medium">
+                  <span className="text-[#0B2545] font-medium">
                     {uploadedFile ? uploadedFile.name : "Click to upload prescription image or PDF"}
                   </span>
                 </label>
@@ -166,14 +166,14 @@ export function PrescriptionRefill() {
 
             {/* Add Medications */}
             <div className="mb-8">
-              <h3 className="text-lg font-semibold text-[#043570] mb-4">
+              <h3 className="text-lg font-semibold text-[#0B2545] mb-4">
                 Add Medications
               </h3>
               
               {/* Input Fields */}
               <div className="grid md:grid-cols-2 gap-4 mb-4">
                 <div>
-                  <label className="block text-sm font-medium text-[#043570] mb-2">
+                  <label className="block text-sm font-medium text-[#0B2545] mb-2">
                     Medication Name
                   </label>
                   <input
@@ -181,12 +181,12 @@ export function PrescriptionRefill() {
                     value={medicationName}
                     onChange={(e) => setMedicationName(e.target.value)}
                     placeholder="e.g., Lisinopril"
-                    className="w-full px-4 py-3 bg-[#f3faff] border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#2563EB] focus:border-transparent text-[#043570]"
+                    className="w-full px-4 py-3 bg-[#F1F7F7] border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#2563EB] focus:border-transparent text-[#0B2545]"
                     onKeyPress={(e) => e.key === 'Enter' && addMedication()}
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-[#043570] mb-2">
+                  <label className="block text-sm font-medium text-[#0B2545] mb-2">
                     Dosage & Frequency
                   </label>
                   <input
@@ -194,7 +194,7 @@ export function PrescriptionRefill() {
                     value={dosage}
                     onChange={(e) => setDosage(e.target.value)}
                     placeholder="e.g., 10mg once daily"
-                    className="w-full px-4 py-3 bg-[#f3faff] border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#2563EB] focus:border-transparent text-[#043570]"
+                    className="w-full px-4 py-3 bg-[#F1F7F7] border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#2563EB] focus:border-transparent text-[#0B2545]"
                     onKeyPress={(e) => e.key === 'Enter' && addMedication()}
                   />
                 </div>
@@ -212,7 +212,7 @@ export function PrescriptionRefill() {
               {/* Medications List */}
               {medications.length > 0 && (
                 <div className="mt-6 space-y-3">
-                  <h4 className="text-sm font-semibold text-[#043570]">
+                  <h4 className="text-sm font-semibold text-[#0B2545]">
                     Medications to Refill ({medications.length})
                   </h4>
                   <AnimatePresence>
@@ -222,14 +222,14 @@ export function PrescriptionRefill() {
                         initial={{ opacity: 0, x: -10 }}
                         animate={{ opacity: 1, x: 0 }}
                         exit={{ opacity: 0, x: -10 }}
-                        className="flex items-center justify-between p-4 bg-[#f3faff] border border-slate-200 rounded-xl"
+                        className="flex items-center justify-between p-4 bg-[#F1F7F7] border border-slate-200 rounded-xl"
                       >
                         <div className="flex items-center gap-3">
                           <div className="w-8 h-8 bg-[#FEF3C7] rounded-lg flex items-center justify-center">
                             <Pill size={16} className="text-[#F59E0B]" />
                           </div>
                           <div>
-                            <p className="font-medium text-[#043570]">{med.name}</p>
+                            <p className="font-medium text-[#0B2545]">{med.name}</p>
                             <p className="text-sm text-[#64748B]">{med.dosage}</p>
                           </div>
                         </div>
@@ -248,7 +248,7 @@ export function PrescriptionRefill() {
 
             {/* Additional Notes */}
             <div className="mb-6">
-              <label className="block text-sm font-medium text-[#043570] mb-2">
+              <label className="block text-sm font-medium text-[#0B2545] mb-2">
                 Additional Notes (Optional)
               </label>
               <textarea
@@ -256,7 +256,7 @@ export function PrescriptionRefill() {
                 onChange={(e) => setAdditionalNotes(e.target.value)}
                 placeholder="Any special instructions or information for the pharmacist..."
                 rows={4}
-                className="w-full px-4 py-3 bg-[#f3faff] border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#2563EB] focus:border-transparent text-[#043570] resize-none"
+                className="w-full px-4 py-3 bg-[#F1F7F7] border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#2563EB] focus:border-transparent text-[#0B2545] resize-none"
               />
             </div>
 
@@ -282,7 +282,7 @@ export function PrescriptionRefill() {
               <div className="w-12 h-12 bg-[#DBEAFE] rounded-xl flex items-center justify-center mb-3">
                 <Clock size={24} className="text-[#2563EB]" />
               </div>
-              <h3 className="font-semibold text-[#043570] mb-1">Quick Processing</h3>
+              <h3 className="font-semibold text-[#0B2545] mb-1">Quick Processing</h3>
               <p className="text-sm text-[#64748B]">
                 Most refill requests processed within 24 hours
               </p>
@@ -297,7 +297,7 @@ export function PrescriptionRefill() {
               <div className="w-12 h-12 bg-[#D1FAE5] rounded-xl flex items-center justify-center mb-3">
                 <Shield size={24} className="text-[#10B981]" />
               </div>
-              <h3 className="font-semibold text-[#043570] mb-1">Secure & Safe</h3>
+              <h3 className="font-semibold text-[#0B2545] mb-1">Secure & Safe</h3>
               <p className="text-sm text-[#64748B]">
                 All prescriptions verified by licensed pharmacists
               </p>
@@ -312,7 +312,7 @@ export function PrescriptionRefill() {
               <div className="w-12 h-12 bg-[#FEE2E2] rounded-xl flex items-center justify-center mb-3">
                 <FileText size={24} className="text-[#EF4444]" />
               </div>
-              <h3 className="font-semibold text-[#043570] mb-1">Easy Tracking</h3>
+              <h3 className="font-semibold text-[#0B2545] mb-1">Easy Tracking</h3>
               <p className="text-sm text-[#64748B]">
                 Get notified when your prescription is ready
               </p>
@@ -326,40 +326,40 @@ export function PrescriptionRefill() {
             transition={{ duration: 0.3, delay: 0.35 }}
             className="bg-white rounded-2xl shadow-sm border border-slate-200 p-6"
           >
-            <h3 className="font-semibold text-[#043570] mb-6">How It Works</h3>
+            <h3 className="font-semibold text-[#0B2545] mb-6">How It Works</h3>
             <div className="grid md:grid-cols-4 gap-6">
               <div className="text-center">
-                <div className="w-12 h-12 bg-[#f3faff] text-[#2563EB] rounded-full flex items-center justify-center mx-auto mb-3 font-bold text-lg">
+                <div className="w-12 h-12 bg-[#F1F7F7] text-[#2563EB] rounded-full flex items-center justify-center mx-auto mb-3 font-bold text-lg">
                   1
                 </div>
-                <h4 className="font-medium text-[#043570] mb-2">Add Medications</h4>
+                <h4 className="font-medium text-[#0B2545] mb-2">Add Medications</h4>
                 <p className="text-sm text-[#64748B]">
                   List all medications you need refilled
                 </p>
               </div>
               <div className="text-center">
-                <div className="w-12 h-12 bg-[#f3faff] text-[#2563EB] rounded-full flex items-center justify-center mx-auto mb-3 font-bold text-lg">
+                <div className="w-12 h-12 bg-[#F1F7F7] text-[#2563EB] rounded-full flex items-center justify-center mx-auto mb-3 font-bold text-lg">
                   2
                 </div>
-                <h4 className="font-medium text-[#043570] mb-2">Submit Request</h4>
+                <h4 className="font-medium text-[#0B2545] mb-2">Submit Request</h4>
                 <p className="text-sm text-[#64748B]">
                   Send your refill request to our pharmacy
                 </p>
               </div>
               <div className="text-center">
-                <div className="w-12 h-12 bg-[#f3faff] text-[#2563EB] rounded-full flex items-center justify-center mx-auto mb-3 font-bold text-lg">
+                <div className="w-12 h-12 bg-[#F1F7F7] text-[#2563EB] rounded-full flex items-center justify-center mx-auto mb-3 font-bold text-lg">
                   3
                 </div>
-                <h4 className="font-medium text-[#043570] mb-2">Verification</h4>
+                <h4 className="font-medium text-[#0B2545] mb-2">Verification</h4>
                 <p className="text-sm text-[#64748B]">
                   Pharmacist reviews and approves your request
                 </p>
               </div>
               <div className="text-center">
-                <div className="w-12 h-12 bg-[#f3faff] text-[#2563EB] rounded-full flex items-center justify-center mx-auto mb-3 font-bold text-lg">
+                <div className="w-12 h-12 bg-[#F1F7F7] text-[#2563EB] rounded-full flex items-center justify-center mx-auto mb-3 font-bold text-lg">
                   4
                 </div>
-                <h4 className="font-medium text-[#043570] mb-2">Pick Up</h4>
+                <h4 className="font-medium text-[#0B2545] mb-2">Pick Up</h4>
                 <p className="text-sm text-[#64748B]">
                   Get notified when ready for pickup or delivery
                 </p>
@@ -377,7 +377,7 @@ export function PrescriptionRefill() {
             <div className="flex items-start gap-3">
               <FileText size={20} className="text-[#EF4444] flex-shrink-0 mt-0.5" />
               <div>
-                <p className="text-sm font-medium text-[#043570] mb-1">
+                <p className="text-sm font-medium text-[#0B2545] mb-1">
                   Important Note
                 </p>
                 <p className="text-sm text-[#64748B]">

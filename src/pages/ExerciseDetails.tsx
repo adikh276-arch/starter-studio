@@ -76,7 +76,7 @@ export function ExerciseDetails() {
   };
 
   return (
-    <div className="flex h-screen overflow-hidden bg-[#F6F8FB]">
+    <div className="flex h-screen overflow-hidden bg-[#F7F8FA]">
       <Sidebar />
       
       <div className="flex-1 flex flex-col min-w-0">
@@ -85,7 +85,7 @@ export function ExerciseDetails() {
             {/* Back Button */}
             <button
               onClick={() => navigate("/exercise-plans")}
-              className="flex items-center gap-2 text-[#043570] mb-6 hover:opacity-70 transition-opacity"
+              className="flex items-center gap-2 text-[#0B2545] mb-6 hover:opacity-70 transition-opacity"
             >
               <ChevronLeft size={20} />
               <span className="font-medium">Back</span>
@@ -142,11 +142,11 @@ export function ExerciseDetails() {
 
               {/* Stats */}
               <div className="grid grid-cols-2 gap-4 mb-6">
-                <div className="bg-[#F6F8FB] rounded-2xl px-6 py-6 text-center">
+                <div className="bg-[#F7F8FA] rounded-2xl px-6 py-6 text-center">
                   <div className="text-4xl font-bold text-blue-500">{exercise.reps}</div>
                   <div className="text-xs text-[#64748B] uppercase tracking-wide mt-1">Reps</div>
                 </div>
-                <div className="bg-[#F6F8FB] rounded-2xl px-6 py-6 text-center">
+                <div className="bg-[#F7F8FA] rounded-2xl px-6 py-6 text-center">
                   <div className="text-4xl font-bold text-blue-500">{exercise.duration}</div>
                   <div className="text-xs text-[#64748B] uppercase tracking-wide mt-1">Duration</div>
                 </div>
@@ -279,7 +279,7 @@ export function ExerciseDetails() {
                           <stop offset="95%" stopColor="#10B981" stopOpacity={0}/>
                         </linearGradient>
                       </defs>
-                      <CartesianGrid strokeDasharray="3 3" stroke="#E2E8F0" />
+                      <CartesianGrid strokeDasharray="3 3" stroke="#E5EAF0" />
                       <XAxis dataKey="date" tick={{ fill: '#64748B', fontSize: 12 }} />
                       <YAxis tick={{ fill: '#64748B', fontSize: 12 }} />
                       <Tooltip />

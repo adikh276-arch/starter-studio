@@ -72,7 +72,7 @@ export function SignUp() {
   };
 
   return (
-    <div className="min-h-screen bg-[#F6F8FB] flex items-center justify-center p-4 relative overflow-hidden">
+    <div className="min-h-screen bg-[#F7F8FA] flex items-center justify-center p-4 relative overflow-hidden">
       {/* Subtle background pattern */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-30">
         <div className="absolute -left-32 top-1/4 w-96 h-96 bg-[#E8F4FD] rounded-full blur-3xl"></div>
@@ -89,12 +89,12 @@ export function SignUp() {
         <div className="flex items-center gap-2 md:gap-3">
           <div className="relative">
             <svg width="36" height="36" viewBox="0 0 40 40" fill="none" className="md:w-10 md:h-10">
-              <circle cx="20" cy="20" r="20" fill="#1E293B"/>
+              <circle cx="20" cy="20" r="20" fill="#0F172A"/>
               <path d="M15 15C15 12.7909 16.7909 11 19 11C21.2091 11 23 12.7909 23 15V20C23 22.2091 21.2091 24 19 24C16.7909 24 15 22.2091 15 20V15Z" fill="white"/>
               <path d="M25 20C25 17.7909 23.2091 16 21 16C18.7909 16 17 17.7909 17 20V25C17 27.2091 18.7909 29 21 29C23.2091 29 25 27.2091 25 25V20Z" fill="white" fillOpacity="0.8"/>
             </svg>
           </div>
-          <span className="text-xl md:text-2xl text-[#020817]">MantraCare</span>
+          <span className="text-xl md:text-2xl text-[#0F172A]">MantraCare</span>
         </div>
       </motion.div>
 
@@ -106,7 +106,7 @@ export function SignUp() {
         transition={{ duration: 0.5, delay: 0.2 }}
       >
         <div className="text-center mb-6 md:mb-8">
-          <h2 className="text-xl md:text-2xl text-[#020817] mb-2">Create Account</h2>
+          <h2 className="text-xl md:text-2xl text-[#0F172A] mb-2">Create Account</h2>
           <p className="text-[#64748B] text-sm">Join your wellness journey</p>
         </div>
         
@@ -119,7 +119,7 @@ export function SignUp() {
               value={formData.name}
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
               required
-              className="h-11 pl-10 bg-white border-[#E2ECF5] text-sm focus:border-[#2D9CDB] focus:ring-[#E8F4FD]"
+              className="h-11 pl-10 bg-white border-[#E5EAF0] text-sm focus:border-[#13B5B1] focus:ring-[#E8F4FD]"
             />
           </div>
           
@@ -131,12 +131,12 @@ export function SignUp() {
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
               required
-              className="h-11 pl-10 bg-white border-[#E2ECF5] text-sm focus:border-[#2D9CDB] focus:ring-[#E8F4FD]"
+              className="h-11 pl-10 bg-white border-[#E5EAF0] text-sm focus:border-[#13B5B1] focus:ring-[#E8F4FD]"
             />
           </div>
           
           <div className="flex gap-2">
-            <div className="flex items-center gap-1.5 px-3 border border-[#E2ECF5] rounded-lg bg-[#F6F8FB] min-w-[72px] h-11">
+            <div className="flex items-center gap-1.5 px-3 border border-[#E5EAF0] rounded-lg bg-[#F7F8FA] min-w-[72px] h-11">
               <span className="text-base"><EmojiIcon emoji="🇮🇳" size={18} /></span>
               <span className="text-xs text-[#64748B]">+91</span>
             </div>
@@ -148,7 +148,7 @@ export function SignUp() {
                 value={formData.phone}
                 onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                 required
-                className="h-11 pl-10 bg-white border-[#E2ECF5] text-sm focus:border-[#2D9CDB] focus:ring-[#E8F4FD]"
+                className="h-11 pl-10 bg-white border-[#E5EAF0] text-sm focus:border-[#13B5B1] focus:ring-[#E8F4FD]"
               />
             </div>
           </div>
@@ -161,12 +161,12 @@ export function SignUp() {
               value={formData.password}
               onChange={(e) => setFormData({ ...formData, password: e.target.value })}
               required
-              className="h-11 pl-10 pr-10 bg-white border-[#E2ECF5] text-sm focus:border-[#2D9CDB] focus:ring-[#E8F4FD]"
+              className="h-11 pl-10 pr-10 bg-white border-[#E5EAF0] text-sm focus:border-[#13B5B1] focus:ring-[#E8F4FD]"
             />
             <button
               type="button"
               onClick={() => setShowPassword(!showPassword)}
-              className="absolute right-3 top-1/2 -translate-y-1/2 text-[#E2ECF5] hover:text-[#64748B] transition-colors"
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-[#E5EAF0] hover:text-[#64748B] transition-colors"
             >
               {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
             </button>
@@ -183,14 +183,14 @@ export function SignUp() {
               placeholder="Invite Code (Optional)"
               value={formData.inviteCode}
               onChange={(e) => setFormData({ ...formData, inviteCode: e.target.value })}
-              className="h-11 bg-white border-[#E2ECF5] text-sm"
+              className="h-11 bg-white border-[#E5EAF0] text-sm"
             />
           </motion.div>
           
           <button
             type="button"
             onClick={() => setShowInviteCode(!showInviteCode)}
-            className="text-xs md:text-sm text-[#2D9CDB] hover:text-[#1E293B] transition-colors flex items-center gap-1 ml-auto"
+            className="text-xs md:text-sm text-[#13B5B1] hover:text-[#0F172A] transition-colors flex items-center gap-1 ml-auto"
           >
             {showInviteCode ? "Hide" : "Have"} an Invite Code?
           </button>
@@ -200,7 +200,7 @@ export function SignUp() {
             disabled={isLoading}
             whileHover={{ scale: 1.02, y: -2 }}
             whileTap={{ scale: 0.98 }}
-            className="w-full h-11 md:h-12 bg-[#2D9CDB] hover:shadow-lg hover:shadow-[#2D9CDB]/30 text-white rounded-xl transition-all font-semibold disabled:opacity-60 disabled:cursor-not-allowed text-sm"
+            className="w-full h-11 md:h-12 bg-[#13B5B1] hover:shadow-lg hover:shadow-[#13B5B1]/30 text-white rounded-xl transition-all font-semibold disabled:opacity-60 disabled:cursor-not-allowed text-sm"
           >
             {isLoading ? (
               <motion.div
@@ -222,9 +222,9 @@ export function SignUp() {
         </form>
 
         <div className="my-5 md:my-6 flex items-center">
-          <div className="flex-1 h-px bg-[#E2ECF5]"></div>
+          <div className="flex-1 h-px bg-[#E5EAF0]"></div>
           <span className="px-4 text-xs md:text-sm text-[#64748B]">or continue with</span>
-          <div className="flex-1 h-px bg-[#E2ECF5]"></div>
+          <div className="flex-1 h-px bg-[#E5EAF0]"></div>
         </div>
 
         <motion.button
@@ -232,7 +232,7 @@ export function SignUp() {
           disabled={isLoading}
           whileHover={{ scale: 1.02, y: -1 }}
           whileTap={{ scale: 0.98 }}
-          className="w-full h-11 md:h-12 flex items-center justify-center gap-3 bg-white border-2 border-[#E2ECF5] rounded-xl hover:border-[#2D9CDB] hover:bg-[#F6F8FB] hover:shadow-md transition-all font-medium disabled:opacity-60 disabled:cursor-not-allowed text-sm"
+          className="w-full h-11 md:h-12 flex items-center justify-center gap-3 bg-white border-2 border-[#E5EAF0] rounded-xl hover:border-[#13B5B1] hover:bg-[#F7F8FA] hover:shadow-md transition-all font-medium disabled:opacity-60 disabled:cursor-not-allowed text-sm"
         >
           <svg width="18" height="18" viewBox="0 0 24 24">
             <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
@@ -240,7 +240,7 @@ export function SignUp() {
             <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
             <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
           </svg>
-          <span className="text-[#020817]">Continue with Google</span>
+          <span className="text-[#0F172A]">Continue with Google</span>
         </motion.button>
 
         <p className="text-center text-xs md:text-sm text-[#64748B] mt-5 md:mt-6">
@@ -249,7 +249,7 @@ export function SignUp() {
             onClick={handleSignIn}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="text-[#0D9488] hover:text-[#1E293B] font-semibold transition-colors"
+            className="text-[#0D9488] hover:text-[#0F172A] font-semibold transition-colors"
           >
             Sign In
           </motion.button>
@@ -272,7 +272,7 @@ export function SignUp() {
               <span>HIPAA Compliant</span>
             </div>
             <div className="flex items-center gap-1">
-              <Check className="text-[#27AE60]" size={11} />
+              <Check className="text-[#16A371]" size={11} />
               <span>Encrypted</span>
             </div>
           </div>

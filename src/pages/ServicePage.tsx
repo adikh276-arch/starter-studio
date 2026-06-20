@@ -76,12 +76,12 @@ const serviceDetails: Record<string, {
       { title: "Daily Gratitude Journal", type: "Activity", points: "10 Points", icon: "✍️", duration: "5 min", completed: false }
     ],
     quickTools: [
-      { label: "Journal",            Icon: BookOpen,  grad: "#F39C12", link: "/journal" },
+      { label: "Journal",            Icon: BookOpen,  grad: "#E0A82E", link: "/journal" },
       { label: "Selfcare Tracker",   Icon: Heart,     grad: "#E74C3C", link: "https://web.mantracare.com/app/daily_self_care_tracker/" },
-      { label: "Daily Life",         Icon: Calendar,  grad: "#3498DB", link: "https://web.mantracare.com/app/daily_life/" },
-      { label: "Mood Tracker",       Icon: Smile,     grad: "#FF9F43", link: "https://web.mantracare.com/app/mood_tracker/" },
-      { label: "Energy Check",       Icon: Zap,       grad: "#27AE60", link: "https://web.mantracare.com/app/energy_tracker" },
-      { label: "Meditation",         Icon: Wind,      grad: "#9B59B6", link: "/service/meditation" },
+      { label: "Daily Life",         Icon: Calendar,  grad: "#0B2545", link: "https://web.mantracare.com/app/daily_life/" },
+      { label: "Mood Tracker",       Icon: Smile,     grad: "#FF8A4C", link: "https://web.mantracare.com/app/mood_tracker/" },
+      { label: "Energy Check",       Icon: Zap,       grad: "#16A371", link: "https://web.mantracare.com/app/energy_tracker" },
+      { label: "Meditation",         Icon: Wind,      grad: "#13B5B1", link: "/service/meditation" },
     ]
   },
   "lgbtq": {
@@ -117,11 +117,11 @@ const serviceDetails: Record<string, {
     ],
     quickTools: [
       { label: "AI Role Play",      Icon: Users2,    grad: "#E74C3C", link: "https://web.mantracare.com/app/ai-role-play" },
-      { label: "Assessment",         Icon: ClipboardCheck, grad: "#3498DB", link: "https://pridemantra.com/get-started/" },
-      { label: "Pride Spectrum",     Icon: Sparkles,  grad: "#FF9F43", link: "https://web.mantracare.com/app/identity_spectrum" },
-      { label: "Journal",            Icon: BookOpen,  grad: "#F39C12", link: "/journal" },
+      { label: "Assessment",         Icon: ClipboardCheck, grad: "#0B2545", link: "https://pridemantra.com/get-started/" },
+      { label: "Pride Spectrum",     Icon: Sparkles,  grad: "#FF8A4C", link: "https://web.mantracare.com/app/identity_spectrum" },
+      { label: "Journal",            Icon: BookOpen,  grad: "#E0A82E", link: "/journal" },
       { label: "Identity Journey",   Icon: Route,     grad: "#8B5CF6", link: "https://web.mantracare.com/app/identity_journey" },
-      { label: "Mindfulness",        Icon: Wind,      grad: "#9B59B6", link: "/service/meditation" },
+      { label: "Mindfulness",        Icon: Wind,      grad: "#13B5B1", link: "/service/meditation" },
     ]
   },
   "diabetes": {
@@ -156,11 +156,11 @@ const serviceDetails: Record<string, {
       { title: "Academy (Wordpress)",  subtitle: "Learn everything you need to know",    iconType: "brain"   },
     ],
     quickTools: [
-      { label: "Glucose", Icon: Box, grad: "#F39C12", link: null },
-      { label: "Weight", Icon: Weight, grad: "#3498DB", link: null },
-      { label: "Blood Pressure", Icon: Gauge, grad: "#FF9F43", link: null },
-      { label: "Calories", Icon: Utensils, grad: "#27AE60", link: null },
-      { label: "What to Eat?", Icon: UtensilsCrossed, grad: "#9B59B6", link: "https://app.mantracare.org/glycemic-load/" },
+      { label: "Glucose", Icon: Box, grad: "#E0A82E", link: null },
+      { label: "Weight", Icon: Weight, grad: "#0B2545", link: null },
+      { label: "Blood Pressure", Icon: Gauge, grad: "#FF8A4C", link: null },
+      { label: "Calories", Icon: Utensils, grad: "#16A371", link: null },
+      { label: "What to Eat?", Icon: UtensilsCrossed, grad: "#13B5B1", link: "https://app.mantracare.org/glycemic-load/" },
       { label: "Videos", Icon: PlayCircle, grad: "#E74C3C", link: "https://app.mantracare.org/video/" },
     ],
   },
@@ -273,19 +273,19 @@ const serviceDetails: Record<string, {
       { title: "Coaching Areas (Wordpress)",           subtitle: "Explore coaching areas in career, executive, leadership, finance, and more.",               iconType: "coachbook" },
     ],
     quickTools: [
-      { label: "360° Skill Profiling",         Icon: BookOpen,  grad: "#F39C12", link: "https://app.mantracare.org/360-degree-form/" },
-      { label: "Assessment",      Icon: BarChart3, grad: "#3498DB", link: "https://app.mantracare.com/coachapp/assessments/" },
-      { label: "Academy",         Icon: Library,   grad: "#FF9F43", link: "https://web.mantracare.com/app/mantracoach_academy/" },
-      { label: "My Journey",       Icon: Route,     grad: "#27AE60", link: null },
-      { label: "AI Role Plays",   Icon: Target,    grad: "#9B59B6", link: "https://web.mantracare.com/app/roleplay-mantra/" },
+      { label: "360° Skill Profiling",         Icon: BookOpen,  grad: "#E0A82E", link: "https://app.mantracare.org/360-degree-form/" },
+      { label: "Assessment",      Icon: BarChart3, grad: "#0B2545", link: "https://app.mantracare.com/coachapp/assessments/" },
+      { label: "Academy",         Icon: Library,   grad: "#FF8A4C", link: "https://web.mantracare.com/app/mantracoach_academy/" },
+      { label: "My Journey",       Icon: Route,     grad: "#16A371", link: null },
+      { label: "AI Role Plays",   Icon: Target,    grad: "#13B5B1", link: "https://web.mantracare.com/app/roleplay-mantra/" },
       { label: "Vision Board",    Icon: Sparkles,  grad: "#E74C3C", link: "https://app.mantracare.org/coachapp/improvement-canvas/" },
     ],
     trackers: [
-      { label: "Daily Focus Tracker", iconKey: "assessment", grad: "#F39C12", link: "https://web.mantracare.com/app/performance_focus/" },
-      { label: "Emotional Regulation", iconKey: "mood", grad: "#3498DB", link: "https://web.mantracare.com/app/emotional_regulation/" },
-      { label: "Goal Momentum", iconKey: "energy", grad: "#FF9F43", link: "https://web.mantracare.com/app/goal_momentum/" },
-      { label: "Confidence Check-in", iconKey: "heartbeat", grad: "#27AE60", link: "https://web.mantracare.com/app/confidence_identity/" },
-      { label: "Coaching Integration", iconKey: "watch", grad: "#9B59B6", link: "https://web.mantracare.com/app/coaching_integration/" },
+      { label: "Daily Focus Tracker", iconKey: "assessment", grad: "#E0A82E", link: "https://web.mantracare.com/app/performance_focus/" },
+      { label: "Emotional Regulation", iconKey: "mood", grad: "#0B2545", link: "https://web.mantracare.com/app/emotional_regulation/" },
+      { label: "Goal Momentum", iconKey: "energy", grad: "#FF8A4C", link: "https://web.mantracare.com/app/goal_momentum/" },
+      { label: "Confidence Check-in", iconKey: "heartbeat", grad: "#16A371", link: "https://web.mantracare.com/app/confidence_identity/" },
+      { label: "Coaching Integration", iconKey: "watch", grad: "#13B5B1", link: "https://web.mantracare.com/app/coaching_integration/" },
       { label: "Journal", iconKey: "journal", grad: "#E74C3C", link: "/journal" },
     ],
   },
@@ -321,12 +321,12 @@ const serviceDetails: Record<string, {
       { title: "Academy (Wordpress)",  subtitle: "Learn everything you need to know",    iconType: "brain"   },
     ],
     trackers: [
-      { label: "Blood Pressure", iconKey: "blood-pressure", grad: "#FF9F43" },
-      { label: "Weight", iconKey: "weight", grad: "#3498DB" },
-      { label: "Heart Rate", iconKey: "heart-rate", grad: "#9B59B6", link: "https://platform.mantracare.com/heartbeat/" },
-      { label: "Calories", iconKey: "calories", grad: "#27AE60" },
+      { label: "Blood Pressure", iconKey: "blood-pressure", grad: "#FF8A4C" },
+      { label: "Weight", iconKey: "weight", grad: "#0B2545" },
+      { label: "Heart Rate", iconKey: "heart-rate", grad: "#13B5B1", link: "https://platform.mantracare.com/heartbeat/" },
+      { label: "Calories", iconKey: "calories", grad: "#16A371" },
       { label: "Cholesterol", iconKey: "cholesterol", grad: "#E74C3C" },
-      { label: "Water", iconKey: "water", grad: "#3498DB" },
+      { label: "Water", iconKey: "water", grad: "#0B2545" },
     ],
   },
   "fitness": {
@@ -357,12 +357,12 @@ const serviceDetails: Record<string, {
       { title: "Introduction to Mantra Platform",      type: "Video", points: "5 Points",  icon: "▶️", duration: "8 min",  completed: false },
     ],
     trackers: [
-      { label: "Calories", iconKey: "calories", grad: "#27AE60" },
+      { label: "Calories", iconKey: "calories", grad: "#16A371" },
       { label: "Weight", iconKey: "weight", grad: "#E74C3C" },
-      { label: "Water", iconKey: "water", grad: "#3498DB" },
-      { label: "Sleep", iconKey: "sleep", grad: "#9B59B6", link: "https://web.mantracare.com/app/sleep_tracker/" },
+      { label: "Water", iconKey: "water", grad: "#0B2545" },
+      { label: "Sleep", iconKey: "sleep", grad: "#13B5B1", link: "https://web.mantracare.com/app/sleep_tracker/" },
       { label: "Heartbeat", iconKey: "heartbeat", grad: "#F97316", link: "https://platform.mantracare.com/heartbeat/" },
-      { label: "BMI", iconKey: "bmi", grad: "#F39C12", link: "https://web.mantracare.com/app/bmi-calculator-new/" },
+      { label: "BMI", iconKey: "bmi", grad: "#E0A82E", link: "https://web.mantracare.com/app/bmi-calculator-new/" },
     ],
     featureLinks: [
       { title: "Talk to a Fitness Instructor", subtitle: "Talk to your fitness coach",        iconType: "chat"    },
@@ -397,12 +397,12 @@ const serviceDetails: Record<string, {
       { title: "Introduction to Mantra Platform",      type: "Video", points: "5 Points",  icon: "▶️", duration: "8 min",  completed: false },
     ],
     trackers: [
-      { label: "Calories", iconKey: "calories", grad: "#27AE60" },
+      { label: "Calories", iconKey: "calories", grad: "#16A371" },
       { label: "Weight", iconKey: "weight", grad: "#E74C3C" },
-      { label: "Water", iconKey: "water", grad: "#3498DB" },
-      { label: "Sleep", iconKey: "sleep", grad: "#9B59B6", link: "https://web.mantracare.com/app/sleep_tracker/" },
+      { label: "Water", iconKey: "water", grad: "#0B2545" },
+      { label: "Sleep", iconKey: "sleep", grad: "#13B5B1", link: "https://web.mantracare.com/app/sleep_tracker/" },
       { label: "Heartbeat", iconKey: "heartbeat", grad: "#F97316", link: "https://platform.mantracare.com/heartbeat/" },
-      { label: "BMI", iconKey: "bmi", grad: "#F39C12", link: "https://web.mantracare.com/app/bmi-calculator-new/" },
+      { label: "BMI", iconKey: "bmi", grad: "#E0A82E", link: "https://web.mantracare.com/app/bmi-calculator-new/" },
     ],
     featureLinks: [
       { title: "Talk to a Dietitian", subtitle: "Talk to your nutrition coach",        iconType: "chat"    },
@@ -480,11 +480,11 @@ const serviceDetails: Record<string, {
       { title: "Self Care Resources (Wordpress)", subtitle: "Mindfulness & guided sessions", iconType: "selfcare", link: "/yoga-self-care" },
     ],
     quickTools: [
-      { label: "Journal", Icon: BookOpen, grad: "#F39C12", link: "/journal" },
-      { label: "Water Tracker", Icon: GlassWater, grad: "#3498DB", link: null },
-      { label: "Mood Tracker", Icon: Heart, grad: "#FF9F43", link: "https://web.mantracare.com/app/mood_tracker/" },
-      { label: "Meditation", Icon: Wind, grad: "#27AE60", link: "/service/meditation" },
-      { label: "Breathwork", Icon: Wind, grad: "#9B59B6", link: "https://web.mantracare.com/app/breadth-pacer/" },
+      { label: "Journal", Icon: BookOpen, grad: "#E0A82E", link: "/journal" },
+      { label: "Water Tracker", Icon: GlassWater, grad: "#0B2545", link: null },
+      { label: "Mood Tracker", Icon: Heart, grad: "#FF8A4C", link: "https://web.mantracare.com/app/mood_tracker/" },
+      { label: "Meditation", Icon: Wind, grad: "#16A371", link: "/service/meditation" },
+      { label: "Breathwork", Icon: Wind, grad: "#13B5B1", link: "https://web.mantracare.com/app/breadth-pacer/" },
       { label: "Physical Activity Log", Icon: Activity, grad: "#E74C3C", link: "https://platform.mantracare.com/joyful-motion-log/" },
     ],
   },
@@ -578,11 +578,11 @@ const serviceDetails: Record<string, {
       { title: "Self Care (Wordpress)",  subtitle: "Learn healthy financial habits and planning",    iconType: "brain"   },
     ],
     quickTools: [
-      { label: "Journal",         Icon: BookOpen,  grad: "#F39C12", link: "/journal" },
-      { label: "Assessment",      Icon: BarChart3, grad: "#3498DB", link: null },
-      { label: "Academy",         Icon: Library,   grad: "#FF9F43", link: null },
-      { label: "Workshops",       Icon: Video,     grad: "#27AE60", link: null },
-      { label: "SWOT Analysis",   Icon: Target,    grad: "#9B59B6", link: null },
+      { label: "Journal",         Icon: BookOpen,  grad: "#E0A82E", link: "/journal" },
+      { label: "Assessment",      Icon: BarChart3, grad: "#0B2545", link: null },
+      { label: "Academy",         Icon: Library,   grad: "#FF8A4C", link: null },
+      { label: "Workshops",       Icon: Video,     grad: "#16A371", link: null },
+      { label: "SWOT Analysis",   Icon: Target,    grad: "#13B5B1", link: null },
       { label: "Vision Board",    Icon: Sparkles,  grad: "#E74C3C", link: null },
     ],
   },
@@ -618,11 +618,11 @@ const serviceDetails: Record<string, {
       { title: "Self Care (Wordpress)",  subtitle: "Learn healthy financial habits and planning",    iconType: "brain"   },
     ],
     quickTools: [
-      { label: "Journal",         Icon: BookOpen,  grad: "#F39C12", link: "/journal" },
-      { label: "SIP Calculator",      Icon: BarChart3, grad: "#3498DB", link: "https://forms.mantracare.org/sip-calculator/" },
-      { label: "EMI Calculator",         Icon: Library,   grad: "#FF9F43", link: "https://forms.mantracare.org/emi-calculator/" },
-      { label: "FD Calculator",       Icon: Video,     grad: "#27AE60", link: "https://forms.mantracare.org/fd-calculator/" },
-      { label: "Home Loan EMI",   Icon: Target,    grad: "#9B59B6", link: "https://forms.mantracare.org/home-loan-emi-calculator/" },
+      { label: "Journal",         Icon: BookOpen,  grad: "#E0A82E", link: "/journal" },
+      { label: "SIP Calculator",      Icon: BarChart3, grad: "#0B2545", link: "https://forms.mantracare.org/sip-calculator/" },
+      { label: "EMI Calculator",         Icon: Library,   grad: "#FF8A4C", link: "https://forms.mantracare.org/emi-calculator/" },
+      { label: "FD Calculator",       Icon: Video,     grad: "#16A371", link: "https://forms.mantracare.org/fd-calculator/" },
+      { label: "Home Loan EMI",   Icon: Target,    grad: "#13B5B1", link: "https://forms.mantracare.org/home-loan-emi-calculator/" },
       { label: "Personal Loan EMI",    Icon: Sparkles,  grad: "#E74C3C", link: "https://forms.mantracare.org/personal-loan-emi-calculator/" },
     ],
   },
@@ -724,12 +724,12 @@ const serviceDetails: Record<string, {
       { title: "Book Health Check", subtitle: "Schedule your comprehensive health screening", iconType: "chat" },
     ],
     trackers: [
-      { label: "Glucose", iconKey: "glucose", grad: "#F39C12" },
+      { label: "Glucose", iconKey: "glucose", grad: "#E0A82E" },
       { label: "Weight", iconKey: "weight", grad: "#E74C3C" },
-      { label: "Blood Pressure", iconKey: "blood-pressure", grad: "#FF9F43" },
-      { label: "Heart Rate", iconKey: "heart-rate", grad: "#9B59B6" },
+      { label: "Blood Pressure", iconKey: "blood-pressure", grad: "#FF8A4C" },
+      { label: "Heart Rate", iconKey: "heart-rate", grad: "#13B5B1" },
       { label: "Cholesterol", iconKey: "cholesterol", grad: "#E74C3C" },
-      { label: "BMI", iconKey: "bmi", grad: "#F39C12" },
+      { label: "BMI", iconKey: "bmi", grad: "#E0A82E" },
     ],
     specialties: [
       { name: "Health Checks", Icon: Stethoscope, grad: "#3B82F6", link: "/health-checks-packages" },
@@ -794,29 +794,29 @@ export function ServicePage() {
   const isPurple = serviceId === "lgbtq";
 
   const t = {
-    pageBg:       isDark ? "bg-[#0d1629]"                     : isPurple ? "bg-[#F9F6FE]" : "bg-[#F6F8FB]",
-    cardBg:       isDark ? "bg-[#162040] border-white/10"      : isPurple ? "bg-white border-[#F3E1FD] shadow-sm" : "bg-white border-[#E2ECF5] shadow-sm",
-    headingText:  isDark ? "text-white"                        : isPurple ? "text-[#020817]" : "text-[#020817]",
+    pageBg:       isDark ? "bg-[#0d1629]"                     : isPurple ? "bg-[#F9F6FE]" : "bg-[#F7F8FA]",
+    cardBg:       isDark ? "bg-[#162040] border-white/10"      : isPurple ? "bg-white border-[#F3E1FD] shadow-sm" : "bg-white border-[#E5EAF0] shadow-sm",
+    headingText:  isDark ? "text-white"                        : isPurple ? "text-[#0F172A]" : "text-[#0F172A]",
     subText:      isDark ? "text-slate-400"                    : isPurple ? "text-[#64748B]" : "text-[#64748B]",
-    mutedText:    isDark ? "text-slate-500"                    : isPurple ? "text-[#F3E1FD]" : "text-[#E2ECF5]",
-    backText:     isDark ? "text-slate-400 hover:text-white"   : isPurple ? "text-[#64748B] hover:text-[#020817]" : "text-[#64748B] hover:text-[#020817]",
+    mutedText:    isDark ? "text-slate-500"                    : isPurple ? "text-[#F3E1FD]" : "text-[#E5EAF0]",
+    backText:     isDark ? "text-slate-400 hover:text-white"   : isPurple ? "text-[#64748B] hover:text-[#0F172A]" : "text-[#64748B] hover:text-[#0F172A]",
     progressBg:   isDark ? "bg-white/10"                       : isPurple ? "bg-[#F3E1FD]" : "bg-[#E8F4FD]",
-    taskDone:     isDark ? "bg-white/10 border-2 border-white/20"                : isPurple ? "bg-[#F3E1FD] border-2 border-[#F3E1FD]" : "bg-[#E8F4FD] border-2 border-[#E2ECF5]",
-    taskTodo:     isDark ? "bg-white/5 border-2 border-white/8 hover:border-white/15 hover:bg-white/8" : isPurple ? "bg-white border-2 border-[#F3E1FD] hover:border-[#EE4F84] hover:shadow-sm" : "bg-white border-2 border-[#E2ECF5] hover:border-[#2D9CDB] hover:shadow-sm",
-    taskLine:     isDark ? "bg-white/10"                       : isPurple ? "bg-[#F3E1FD]" : "bg-[#E2ECF5]",
-    taskLineDone: isDark ? "bg-white/40"                       : isPurple ? "bg-[#BE51F5]" : "bg-[#27AE60]",
-    checkboxTodo: isDark ? "border-white/25 group-hover:border-white/45" : isPurple ? "border-[#F3E1FD] group-hover:border-[#BE51F5]" : "border-[#E2ECF5] group-hover:border-[#27AE60]",
-    iconTodo:     isDark ? "bg-white/8 border-2 border-white/12"  : isPurple ? "bg-[#F3E1FD] border-2 border-[#F3E1FD]" : "bg-[#F6F8FB] border-2 border-[#E2ECF5]",
+    taskDone:     isDark ? "bg-white/10 border-2 border-white/20"                : isPurple ? "bg-[#F3E1FD] border-2 border-[#F3E1FD]" : "bg-[#E8F4FD] border-2 border-[#E5EAF0]",
+    taskTodo:     isDark ? "bg-white/5 border-2 border-white/8 hover:border-white/15 hover:bg-white/8" : isPurple ? "bg-white border-2 border-[#F3E1FD] hover:border-[#EE4F84] hover:shadow-sm" : "bg-white border-2 border-[#E5EAF0] hover:border-[#13B5B1] hover:shadow-sm",
+    taskLine:     isDark ? "bg-white/10"                       : isPurple ? "bg-[#F3E1FD]" : "bg-[#E5EAF0]",
+    taskLineDone: isDark ? "bg-white/40"                       : isPurple ? "bg-[#BE51F5]" : "bg-[#16A371]",
+    checkboxTodo: isDark ? "border-white/25 group-hover:border-white/45" : isPurple ? "border-[#F3E1FD] group-hover:border-[#BE51F5]" : "border-[#E5EAF0] group-hover:border-[#16A371]",
+    iconTodo:     isDark ? "bg-white/8 border-2 border-white/12"  : isPurple ? "bg-[#F3E1FD] border-2 border-[#F3E1FD]" : "bg-[#F7F8FA] border-2 border-[#E5EAF0]",
     iconDone:     isDark ? "bg-white/10 border-2 border-white/20"  : isPurple ? "bg-[#F3E1FD] border-2 border-[#EE4F84]" : "bg-[#D5F5E3] border-2 border-[#A9DFBF]",
-    taskTypeTodo: isDark ? "bg-white/10 text-white/70"          : isPurple ? "bg-[#F3E1FD] text-[#BE51F5] border border-[#F3E1FD]" : "bg-[#E8F4FD] text-[#1E293B] border border-[#E2ECF5]",
-    taskTypeDone: isDark ? "bg-white/20 text-white"              : isPurple ? "bg-[#BE51F5] text-white" : "bg-[#1E293B] text-white",
-    arrowTodo:    isDark ? "text-white/20 group-hover:text-white/50 group-hover:translate-x-1" : isPurple ? "text-[#F3E1FD] group-hover:text-[#EE4F84] group-hover:translate-x-1" : "text-[#E2ECF5] group-hover:text-[#2D9CDB] group-hover:translate-x-1",
-    arrowDone:    isDark ? "text-white/60"                     : isPurple ? "text-[#BE51F5]" : "text-[#27AE60]",
-    viewAllBtn:   isDark ? "text-white/60 hover:text-white hover:bg-white/5" : isPurple ? "text-[#EE4F84] hover:text-[#BE51F5] hover:bg-[#F3E1FD]" : "text-[#2D9CDB] hover:text-[#1E293B] hover:bg-[#E8F4FD]",
-    sectionHdr:   isDark ? "text-white"                        : isPurple ? "text-[#020817]" : "text-[#020817]",
-    seeAllBtn:    isDark ? "text-white/60 hover:text-white hover:bg-white/5"  : isPurple ? "text-[#EE4F84] hover:text-[#BE51F5] hover:bg-[#F3E1FD]" : "text-[#2D9CDB] hover:text-[#1E293B] hover:bg-[#E8F4FD]",
+    taskTypeTodo: isDark ? "bg-white/10 text-white/70"          : isPurple ? "bg-[#F3E1FD] text-[#BE51F5] border border-[#F3E1FD]" : "bg-[#E8F4FD] text-[#0F172A] border border-[#E5EAF0]",
+    taskTypeDone: isDark ? "bg-white/20 text-white"              : isPurple ? "bg-[#BE51F5] text-white" : "bg-[#0F172A] text-white",
+    arrowTodo:    isDark ? "text-white/20 group-hover:text-white/50 group-hover:translate-x-1" : isPurple ? "text-[#F3E1FD] group-hover:text-[#EE4F84] group-hover:translate-x-1" : "text-[#E5EAF0] group-hover:text-[#13B5B1] group-hover:translate-x-1",
+    arrowDone:    isDark ? "text-white/60"                     : isPurple ? "text-[#BE51F5]" : "text-[#16A371]",
+    viewAllBtn:   isDark ? "text-white/60 hover:text-white hover:bg-white/5" : isPurple ? "text-[#EE4F84] hover:text-[#BE51F5] hover:bg-[#F3E1FD]" : "text-[#13B5B1] hover:text-[#0F172A] hover:bg-[#E8F4FD]",
+    sectionHdr:   isDark ? "text-white"                        : isPurple ? "text-[#0F172A]" : "text-[#0F172A]",
+    seeAllBtn:    isDark ? "text-white/60 hover:text-white hover:bg-white/5"  : isPurple ? "text-[#EE4F84] hover:text-[#BE51F5] hover:bg-[#F3E1FD]" : "text-[#13B5B1] hover:text-[#0F172A] hover:bg-[#E8F4FD]",
     taskCount:    isDark ? "text-slate-300"                    : isPurple ? "text-[#64748B]" : "text-[#64748B]",
-    dotDivider:   isDark ? "text-white/20"                     : isPurple ? "text-[#F3E1FD]" : "text-[#E2ECF5]",
+    dotDivider:   isDark ? "text-white/20"                     : isPurple ? "text-[#F3E1FD]" : "text-[#E5EAF0]",
     clockText:    isDark ? "text-slate-400"                    : isPurple ? "text-[#BE51F5]/70" : "text-[#64748B]",
   };
 
@@ -875,7 +875,7 @@ export function ServicePage() {
             {/* Back Arrow */}
             <button
               onClick={() => navigate(-1)}
-              className={`w-9 h-9 rounded-xl flex items-center justify-center transition-colors flex-shrink-0 ${t.backText} hover:bg-[#f3faff]`}
+              className={`w-9 h-9 rounded-xl flex items-center justify-center transition-colors flex-shrink-0 ${t.backText} hover:bg-[#F1F7F7]`}
             >
               <ChevronLeft size={24} />
             </button>
@@ -897,7 +897,7 @@ export function ServicePage() {
           >
             <div className="mb-6 md:mb-8">
               <h2 className={`text-lg flex items-center gap-2 mb-1 ${t.headingText}`}>
-                <Sparkles className={isPurple ? "text-[#EE4F84]" : "text-[#00c0ff]"} size={16} />
+                <Sparkles className={isPurple ? "text-[#EE4F84]" : "text-[#13B5B1]"} size={16} />
                 Trackers
               </h2>
               <p className={`text-sm ${t.subText}`}>
@@ -979,14 +979,14 @@ export function ServicePage() {
           <div className="flex items-center justify-between mb-3 md:mb-4">
             <div>
               <h2 className={`text-sm md:text-base flex items-center gap-2 mb-1 ${t.headingText}`}>
-                <Calendar className={isPurple ? "text-[#EE4F84]" : "text-[#00c0ff]"} size={16} />
+                <Calendar className={isPurple ? "text-[#EE4F84]" : "text-[#13B5B1]"} size={16} />
                 Today's Plan
               </h2>
               <p className={`text-xs ${t.subText}`}>Complete your daily wellness activities</p>
             </div>
             <button 
               onClick={() => navigate(`/tasks?service=${encodeURIComponent(service.name)}`)}
-              className={`text-xs flex items-center gap-1 px-2 py-1.5 rounded-lg transition-colors ${isPurple ? "text-[#EE4F84] hover:text-[#BE51F5] hover:bg-[#F3E1FD]" : "text-[#00c0ff] hover:text-[#043570] hover:bg-[#f3faff]"}`}
+              className={`text-xs flex items-center gap-1 px-2 py-1.5 rounded-lg transition-colors ${isPurple ? "text-[#EE4F84] hover:text-[#BE51F5] hover:bg-[#F3E1FD]" : "text-[#13B5B1] hover:text-[#0B2545] hover:bg-[#F1F7F7]"}`}
             >
               View All
               <ChevronRight size={14} />
@@ -1085,7 +1085,7 @@ export function ServicePage() {
                   {/* Checkbox */}
                   <div 
                     className={`w-5 h-5 md:w-6 md:h-6 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-colors ${
-                      isCompleted ? 'bg-[#00c0ff] border-[#00c0ff]' : `${isDark ? 'border-white/25' : 'border-[#D1D5DB]'}`
+                      isCompleted ? 'bg-[#13B5B1] border-[#13B5B1]' : `${isDark ? 'border-white/25' : 'border-[#D1D5DB]'}`
                     }`}
                   >
                     {isCompleted && (
@@ -1128,8 +1128,8 @@ export function ServicePage() {
                         </>
                       )}
                       <span className={`hidden sm:inline ${isDark ? 'text-white/30' : 'text-[#D1D5DB]'}`}>•</span>
-                      <span className="text-[#27AE60] flex items-center gap-1 font-medium">
-                        <Award size={13} className="text-[#27AE60]" />
+                      <span className="text-[#16A371] flex items-center gap-1 font-medium">
+                        <Award size={13} className="text-[#16A371]" />
                         {pathway.points}
                       </span>
                     </div>
@@ -1157,7 +1157,7 @@ export function ServicePage() {
           >
             <div className="mb-6 md:mb-8">
               <h2 className={`text-lg flex items-center gap-2 mb-1 ${t.headingText}`}>
-                <Sparkles className={isPurple ? "text-[#EE4F84]" : "text-[#00c0ff]"} size={16} />
+                <Sparkles className={isPurple ? "text-[#EE4F84]" : "text-[#13B5B1]"} size={16} />
                 Trackers
               </h2>
               <p className={`text-sm ${t.subText}`}>
@@ -1290,7 +1290,7 @@ export function ServicePage() {
                 const iconMap = {
                   chat: {
                     Icon: MessageCircle,
-                    grad: "#00C0FF",
+                    grad: "#13B5B1",
                     iconBg: "bg-white/20 backdrop-blur-sm",
                     iconColor: "text-white",
                     cardBg: isPurple ? "bg-gradient-to-r from-[#BE51F5] to-[#EE4F84]" : "bg-gradient-to-r from-[#0EA5E9] to-[#06B6D4]",
@@ -1306,63 +1306,63 @@ export function ServicePage() {
                   },
                   brain: {
                     Icon: Library,
-                    grad: "#FF9F43",
-                    iconBg: "bg-[#FF9F43]",
+                    grad: "#FF8A4C",
+                    iconBg: "bg-[#FF8A4C]",
                     iconColor: "text-white",
                     cardBg: isDark ? "bg-[#1a2744]" : "bg-white",
-                    border: isDark ? "border-[#1E293B]/25" : "border-slate-200",
-                    titleColor: isDark ? "text-white" : "text-[#020817]",
+                    border: isDark ? "border-[#0F172A]/25" : "border-slate-200",
+                    titleColor: isDark ? "text-white" : "text-[#0F172A]",
                     subColor: isDark ? "text-slate-400" : "text-[#64748B]",
-                    arrowColor: "text-[#FF9F43]",
-                    arrowBg: "bg-[#FF9F43]/10",
+                    arrowColor: "text-[#FF8A4C]",
+                    arrowBg: "bg-[#FF8A4C]/10",
                     shadowColor: "hover:shadow-md",
                     badge: "Learn",
-                    badgeBg: isDark ? "bg-[#1E293B]/50 text-slate-300 border border-[#9B59B6]/30" : "bg-[#F3EEFF] text-[#9B59B6] border border-[#E8DCFF]",
+                    badgeBg: isDark ? "bg-[#0F172A]/50 text-slate-300 border border-[#13B5B1]/30" : "bg-[#F3EEFF] text-[#13B5B1] border border-[#E8DCFF]",
                     shimmer: false,
                   },
                   tracker: {
                     Icon: Activity,
-                    grad: "#27AE60",
-                    iconBg: isDark ? "bg-[#1E293B]/50" : "bg-[#D5F5E3]",
-                    iconColor: isDark ? "text-slate-300" : "text-[#27AE60]",
+                    grad: "#16A371",
+                    iconBg: isDark ? "bg-[#0F172A]/50" : "bg-[#D5F5E3]",
+                    iconColor: isDark ? "text-slate-300" : "text-[#16A371]",
                     cardBg: isDark ? "bg-[#1a2744]" : "bg-white",
                     border: isDark ? "border-white/10" : "border-[#A9DFBF]",
-                    titleColor: isDark ? "text-white" : "text-[#020817]",
+                    titleColor: isDark ? "text-white" : "text-[#0F172A]",
                     subColor: isDark ? "text-slate-400" : "text-[#64748B]",
-                    arrowColor: isDark ? "text-slate-300" : "text-[#27AE60]",
+                    arrowColor: isDark ? "text-slate-300" : "text-[#16A371]",
                     shadowColor: isDark ? "hover:shadow-none" : "hover:shadow-md",
                     badge: "Track",
-                    badgeBg: isDark ? "bg-[#1E293B]/50 text-slate-300 border border-[#27AE60]/30" : "bg-[#D5F5E3] text-[#27AE60] border border-[#A9DFBF]",
+                    badgeBg: isDark ? "bg-[#0F172A]/50 text-slate-300 border border-[#16A371]/30" : "bg-[#D5F5E3] text-[#16A371] border border-[#A9DFBF]",
                     shimmer: false,
                   },
                   video: {
                     Icon: Play,
-                    grad: "#FF9F43",
-                    iconBg: isDark ? "bg-[#1E293B]/50" : "bg-[#FFF4E8]",
-                    iconColor: isDark ? "text-slate-300" : "text-[#FF9F43]",
+                    grad: "#FF8A4C",
+                    iconBg: isDark ? "bg-[#0F172A]/50" : "bg-[#FFF4E8]",
+                    iconColor: isDark ? "text-slate-300" : "text-[#FF8A4C]",
                     cardBg: isDark ? "bg-[#1a2744]" : "bg-white",
                     border: isDark ? "border-white/10" : "border-[#FFE5CC]",
-                    titleColor: isDark ? "text-white" : "text-[#020817]",
+                    titleColor: isDark ? "text-white" : "text-[#0F172A]",
                     subColor: isDark ? "text-slate-400" : "text-[#64748B]",
-                    arrowColor: isDark ? "text-slate-300" : "text-[#FF9F43]",
+                    arrowColor: isDark ? "text-slate-300" : "text-[#FF8A4C]",
                     shadowColor: isDark ? "hover:shadow-none" : "hover:shadow-md",
                     badge: "Watch",
-                    badgeBg: isDark ? "bg-[#1E293B]/50 text-slate-300 border border-[#FF9F43]/30" : "bg-[#FFF4E8] text-[#FF9F43] border border-[#FFE5CC]",
+                    badgeBg: isDark ? "bg-[#0F172A]/50 text-slate-300 border border-[#FF8A4C]/30" : "bg-[#FFF4E8] text-[#FF8A4C] border border-[#FFE5CC]",
                     shimmer: false,
                   },
                   book: {
                     Icon: BookOpen,
-                    grad: "#27AE60",
-                    iconBg: isDark ? "bg-[#1E293B]/50" : "bg-[#D5F5E3]",
-                    iconColor: isDark ? "text-slate-300" : "text-[#27AE60]",
+                    grad: "#16A371",
+                    iconBg: isDark ? "bg-[#0F172A]/50" : "bg-[#D5F5E3]",
+                    iconColor: isDark ? "text-slate-300" : "text-[#16A371]",
                     cardBg: isDark ? "bg-[#1a2744]" : "bg-white",
                     border: isDark ? "border-white/10" : "border-[#A9DFBF]",
-                    titleColor: isDark ? "text-white" : "text-[#020817]",
+                    titleColor: isDark ? "text-white" : "text-[#0F172A]",
                     subColor: isDark ? "text-slate-400" : "text-[#64748B]",
-                    arrowColor: isDark ? "text-slate-300" : "text-[#27AE60]",
+                    arrowColor: isDark ? "text-slate-300" : "text-[#16A371]",
                     shadowColor: isDark ? "hover:shadow-none" : "hover:shadow-md",
                     badge: "Read",
-                    badgeBg: isDark ? "bg-[#1E293B]/50 text-slate-300 border border-[#27AE60]/30" : "bg-[#D5F5E3] text-[#27AE60] border border-[#A9DFBF]",
+                    badgeBg: isDark ? "bg-[#0F172A]/50 text-slate-300 border border-[#16A371]/30" : "bg-[#D5F5E3] text-[#16A371] border border-[#A9DFBF]",
                     shimmer: false,
                   },
                   selfcare: {
@@ -1371,46 +1371,46 @@ export function ServicePage() {
                     iconBg: isPurple ? "bg-[#EE4F84]" : "bg-[#2563EB]",
                     iconColor: "text-white",
                     cardBg: isDark ? "bg-[#1a2744]" : "bg-white",
-                    border: isDark ? "border-[#1E293B]/25" : "border-slate-200",
-                    titleColor: isDark ? "text-white" : "text-[#020817]",
+                    border: isDark ? "border-[#0F172A]/25" : "border-slate-200",
+                    titleColor: isDark ? "text-white" : "text-[#0F172A]",
                     subColor: isDark ? "text-slate-400" : "text-[#64748B]",
                     arrowColor: isDark ? "text-[#2563EB]" : isPurple ? "text-[#EE4F84]" : "text-[#2563EB]",
                     arrowBg: isDark ? "bg-[#2563EB]/10" : isPurple ? "bg-[#EE4F84]/10" : "bg-[#2563EB]/10",
                     shadowColor: isDark ? "hover:shadow-none" : "hover:shadow-md",
                     badge: "Explore",
-                    badgeBg: isDark ? "bg-[#1E293B]/50 text-slate-300 border border-[#2563EB]/30" : "bg-[#DBEAFE] text-[#2563EB] border border-[#BFDBFE]",
+                    badgeBg: isDark ? "bg-[#0F172A]/50 text-slate-300 border border-[#2563EB]/30" : "bg-[#DBEAFE] text-[#2563EB] border border-[#BFDBFE]",
                     shimmer: false,
                   },
                   pain: {
                     Icon: Star,
-                    grad: "#FF9F43",
-                    iconBg: "bg-[#FF9F43]",
+                    grad: "#FF8A4C",
+                    iconBg: "bg-[#FF8A4C]",
                     iconColor: "text-white",
                     cardBg: isDark ? "bg-[#1a2744]" : "bg-white",
-                    border: isDark ? "border-[#1E293B]/25" : "border-slate-200",
-                    titleColor: isDark ? "text-white" : "text-[#020817]",
+                    border: isDark ? "border-[#0F172A]/25" : "border-slate-200",
+                    titleColor: isDark ? "text-white" : "text-[#0F172A]",
                     subColor: isDark ? "text-slate-400" : "text-[#64748B]",
-                    arrowColor: "text-[#FF9F43]",
-                    arrowBg: "bg-[#FF9F43]/10",
+                    arrowColor: "text-[#FF8A4C]",
+                    arrowBg: "bg-[#FF8A4C]/10",
                     shadowColor: "hover:shadow-md",
                     badge: "Pain",
-                    badgeBg: isDark ? "bg-[#1E293B]/50 text-slate-300 border border-[#FF9F43]/30" : "bg-[#FFF4E8] text-[#FF9F43] border border-[#FFE5CC]",
+                    badgeBg: isDark ? "bg-[#0F172A]/50 text-slate-300 border border-[#FF8A4C]/30" : "bg-[#FFF4E8] text-[#FF8A4C] border border-[#FFE5CC]",
                     shimmer: false,
                   },
                   coachbook: {
                     Icon: BookOpen,
-                    grad: "#9B59B6",
-                    iconBg: "bg-[#9B59B6]",
+                    grad: "#13B5B1",
+                    iconBg: "bg-[#13B5B1]",
                     iconColor: "text-white",
                     cardBg: isDark ? "bg-[#1a2744]" : "bg-white",
-                    border: isDark ? "border-[#1E293B]/25" : "border-slate-200",
-                    titleColor: isDark ? "text-white" : "text-[#020817]",
+                    border: isDark ? "border-[#0F172A]/25" : "border-slate-200",
+                    titleColor: isDark ? "text-white" : "text-[#0F172A]",
                     subColor: isDark ? "text-slate-400" : "text-[#64748B]",
-                    arrowColor: "text-[#9B59B6]",
-                    arrowBg: "bg-[#9B59B6]/10",
+                    arrowColor: "text-[#13B5B1]",
+                    arrowBg: "bg-[#13B5B1]/10",
                     shadowColor: "hover:shadow-md",
                     badge: "Explore",
-                    badgeBg: isDark ? "bg-[#1E293B]/50 text-slate-300 border border-[#9B59B6]/30" : "bg-[#F3EEFF] text-[#9B59B6] border border-[#E8DCFF]",
+                    badgeBg: isDark ? "bg-[#0F172A]/50 text-slate-300 border border-[#13B5B1]/30" : "bg-[#F3EEFF] text-[#13B5B1] border border-[#E8DCFF]",
                     shimmer: false,
                   },
                   diagnostics: {
@@ -1419,14 +1419,14 @@ export function ServicePage() {
                     iconBg: "bg-[#3B82F6]",
                     iconColor: "text-white",
                     cardBg: isDark ? "bg-[#1a2744]" : "bg-white",
-                    border: isDark ? "border-[#1E293B]/25" : "border-slate-200",
-                    titleColor: isDark ? "text-white" : "text-[#020817]",
+                    border: isDark ? "border-[#0F172A]/25" : "border-slate-200",
+                    titleColor: isDark ? "text-white" : "text-[#0F172A]",
                     subColor: isDark ? "text-slate-400" : "text-[#64748B]",
                     arrowColor: "text-[#3B82F6]",
                     arrowBg: "bg-[#3B82F6]/10",
                     shadowColor: "hover:shadow-md",
                     badge: "Tests",
-                    badgeBg: isDark ? "bg-[#1E293B]/50 text-slate-300 border border-[#3B82F6]/30" : "bg-[#DBEAFE] text-[#3B82F6] border border-[#BFDBFE]",
+                    badgeBg: isDark ? "bg-[#0F172A]/50 text-slate-300 border border-[#3B82F6]/30" : "bg-[#DBEAFE] text-[#3B82F6] border border-[#BFDBFE]",
                     shimmer: false,
                   },
                   pharmacy: {
@@ -1435,14 +1435,14 @@ export function ServicePage() {
                     iconBg: "bg-[#F97316]",
                     iconColor: "text-white",
                     cardBg: isDark ? "bg-[#1a2744]" : "bg-white",
-                    border: isDark ? "border-[#1E293B]/25" : "border-slate-200",
-                    titleColor: isDark ? "text-white" : "text-[#020817]",
+                    border: isDark ? "border-[#0F172A]/25" : "border-slate-200",
+                    titleColor: isDark ? "text-white" : "text-[#0F172A]",
                     subColor: isDark ? "text-slate-400" : "text-[#64748B]",
                     arrowColor: "text-[#F97316]",
                     arrowBg: "bg-[#F97316]/10",
                     shadowColor: "hover:shadow-md",
                     badge: "Pharmacy",
-                    badgeBg: isDark ? "bg-[#1E293B]/50 text-slate-300 border border-[#F97316]/30" : "bg-[#FFEDD5] text-[#F97316] border border-[#FED7AA]",
+                    badgeBg: isDark ? "bg-[#0F172A]/50 text-slate-300 border border-[#F97316]/30" : "bg-[#FFEDD5] text-[#F97316] border border-[#FED7AA]",
                     shimmer: false,
                   },
                 };
@@ -1513,7 +1513,7 @@ export function ServicePage() {
                         )}
                         {/* Live pulse for chat */}
                         {link.iconType === "chat" && false && (
-                          <span className="absolute -top-1 -right-1 w-3 h-3 bg-[#5CAA82] rounded-full border-2 border-[#1E293B] animate-pulse shadow shadow-[#5CAA82]/50" />
+                          <span className="absolute -top-1 -right-1 w-3 h-3 bg-[#5CAA82] rounded-full border-2 border-[#0F172A] animate-pulse shadow shadow-[#5CAA82]/50" />
                         )}
                       </div>
 
@@ -1655,7 +1655,7 @@ export function ServicePage() {
                                 >
                                   <div 
                                     className={`w-5 h-5 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-colors ${
-                                      isCompleted ? 'bg-[#00c0ff] border-[#00c0ff]' : 'border-[#E5E7EB]'
+                                      isCompleted ? 'bg-[#13B5B1] border-[#13B5B1]' : 'border-[#E5E7EB]'
                                     }`}
                                   >
                                     {isCompleted && (
@@ -1696,8 +1696,8 @@ export function ServicePage() {
                                         </>
                                       )}
                                       <span className="text-[#D1D5DB]">•</span>
-                                      <span className="text-[#27AE60] flex items-center gap-1">
-                                        <Award size={12} className="text-[#27AE60]" />
+                                      <span className="text-[#16A371] flex items-center gap-1">
+                                        <Award size={12} className="text-[#16A371]" />
                                         {pathway.points}
                                       </span>
                                     </div>
@@ -1841,7 +1841,7 @@ export function ServicePage() {
                           >
                             <div 
                               className={`w-5 h-5 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-colors ${
-                                isCompleted ? 'bg-[#00c0ff] border-[#00c0ff]' : `${isDark ? 'border-white/25' : 'border-[#E5E7EB]'}`
+                                isCompleted ? 'bg-[#13B5B1] border-[#13B5B1]' : `${isDark ? 'border-white/25' : 'border-[#E5E7EB]'}`
                               }`}
                             >
                               {isCompleted && (
@@ -2023,7 +2023,7 @@ export function ServicePage() {
                                 >
                                   <div 
                                     className={`w-5 h-5 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-colors ${
-                                      isCompleted ? 'bg-[#00c0ff] border-[#00c0ff]' : `${isDark ? 'border-white/25' : 'border-[#E5E7EB]'}`
+                                      isCompleted ? 'bg-[#13B5B1] border-[#13B5B1]' : `${isDark ? 'border-white/25' : 'border-[#E5E7EB]'}`
                                     }`}
                                   >
                                     {isCompleted && (
@@ -2209,7 +2209,7 @@ export function ServicePage() {
                             {/* Checkbox */}
                             <div 
                               className={`w-5 h-5 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-colors ${
-                                isCompleted ? 'bg-[#00c0ff] border-[#00c0ff]' : `${isDark ? 'border-white/25' : 'border-[#E5E7EB]'}`
+                                isCompleted ? 'bg-[#13B5B1] border-[#13B5B1]' : `${isDark ? 'border-white/25' : 'border-[#E5E7EB]'}`
                               }`}
                             >
                               {isCompleted && (
@@ -2398,7 +2398,7 @@ export function ServicePage() {
                             {/* Checkbox */}
                             <div 
                               className={`w-5 h-5 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-colors ${
-                                isCompleted ? 'bg-[#00c0ff] border-[#00c0ff]' : `${isDark ? 'border-white/25' : 'border-[#E5E7EB]'}`
+                                isCompleted ? 'bg-[#13B5B1] border-[#13B5B1]' : `${isDark ? 'border-white/25' : 'border-[#E5E7EB]'}`
                               }`}
                             >
                               {isCompleted && (
@@ -2587,7 +2587,7 @@ export function ServicePage() {
                             {/* Checkbox */}
                             <div 
                               className={`w-5 h-5 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-colors ${
-                                isCompleted ? 'bg-[#00c0ff] border-[#00c0ff]' : `${isDark ? 'border-white/25' : 'border-[#E5E7EB]'}`
+                                isCompleted ? 'bg-[#13B5B1] border-[#13B5B1]' : `${isDark ? 'border-white/25' : 'border-[#E5E7EB]'}`
                               }`}
                             >
                               {isCompleted && (
@@ -2776,7 +2776,7 @@ export function ServicePage() {
                             {/* Checkbox */}
                             <div 
                               className={`w-5 h-5 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-colors ${
-                                isCompleted ? 'bg-[#00c0ff] border-[#00c0ff]' : `${isDark ? 'border-white/25' : 'border-[#E5E7EB]'}`
+                                isCompleted ? 'bg-[#13B5B1] border-[#13B5B1]' : `${isDark ? 'border-white/25' : 'border-[#E5E7EB]'}`
                               }`}
                             >
                               {isCompleted && (
@@ -2965,7 +2965,7 @@ export function ServicePage() {
                             {/* Checkbox */}
                             <div 
                               className={`w-5 h-5 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-colors ${
-                                isCompleted ? 'bg-[#00c0ff] border-[#00c0ff]' : `${isDark ? 'border-white/25' : 'border-[#E5E7EB]'}`
+                                isCompleted ? 'bg-[#13B5B1] border-[#13B5B1]' : `${isDark ? 'border-white/25' : 'border-[#E5E7EB]'}`
                               }`}
                             >
                               {isCompleted && (
@@ -3154,7 +3154,7 @@ export function ServicePage() {
                             {/* Checkbox */}
                             <div 
                               className={`w-5 h-5 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-colors ${
-                                isCompleted ? 'bg-[#00c0ff] border-[#00c0ff]' : `${isDark ? 'border-white/25' : 'border-[#E5E7EB]'}`
+                                isCompleted ? 'bg-[#13B5B1] border-[#13B5B1]' : `${isDark ? 'border-white/25' : 'border-[#E5E7EB]'}`
                               }`}
                             >
                               {isCompleted && (
@@ -3339,7 +3339,7 @@ export function ServicePage() {
                           >
                             <div 
                               className={`w-5 h-5 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-colors ${
-                                isCompleted ? 'bg-[#00c0ff] border-[#00c0ff]' : `${isDark ? 'border-white/25' : 'border-[#E5E7EB]'}`
+                                isCompleted ? 'bg-[#13B5B1] border-[#13B5B1]' : `${isDark ? 'border-white/25' : 'border-[#E5E7EB]'}`
                               }`}
                             >
                               {isCompleted && (
@@ -3409,7 +3409,7 @@ export function ServicePage() {
                   whileHover={{ scale: 1.02, y: -2 }}
                   whileTap={{ scale: 0.98 }}
                   onClick={() => navigate("/care-team")}
-                  className={`w-full relative overflow-hidden ${isDark ? "bg-gradient-to-br from-[#1a2744] to-[#0f172a] border-[#1E293B]/50" : "bg-gradient-to-r from-[#0EA5E9] to-[#06B6D4]"} border-2 border-transparent rounded-2xl px-5 py-5 flex items-center justify-between shadow-lg hover:shadow-2xl transition-all duration-300 group`}
+                  className={`w-full relative overflow-hidden ${isDark ? "bg-gradient-to-br from-[#1a2744] to-[#0f172a] border-[#0F172A]/50" : "bg-gradient-to-r from-[#0EA5E9] to-[#06B6D4]"} border-2 border-transparent rounded-2xl px-5 py-5 flex items-center justify-between shadow-lg hover:shadow-2xl transition-all duration-300 group`}
                 >
                   {/* Animated gradient overlay */}
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
@@ -3558,7 +3558,7 @@ export function ServicePage() {
                           {/* Checkbox */}
                           <div 
                             className={`w-5 h-5 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-colors ${
-                              isCompleted ? 'bg-[#00c0ff] border-[#00c0ff]' : `${isDark ? 'border-white/25' : 'border-[#E5E7EB]'}`
+                              isCompleted ? 'bg-[#13B5B1] border-[#13B5B1]' : `${isDark ? 'border-white/25' : 'border-[#E5E7EB]'}`
                             }`}
                           >
                             {isCompleted && (
@@ -3743,7 +3743,7 @@ export function ServicePage() {
                               >
                                 <div 
                                   className={`w-5 h-5 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-colors ${
-                                    isCompleted ? 'bg-[#00c0ff] border-[#00c0ff]' : `${isDark ? 'border-white/25' : 'border-[#E5E7EB]'}`
+                                    isCompleted ? 'bg-[#13B5B1] border-[#13B5B1]' : `${isDark ? 'border-white/25' : 'border-[#E5E7EB]'}`
                                   }`}
                                 >
                                   {isCompleted && (
@@ -3808,10 +3808,10 @@ export function ServicePage() {
                       navigate("/self-care");
                     }
                   }}
-                  className={`w-full ${isDark ? "bg-[#1a2744] border-[#1E293B]/25" : "bg-white border-slate-200"} border rounded-2xl px-5 py-5 flex items-center justify-between shadow-sm hover:shadow-md transition-all group`}
+                  className={`w-full ${isDark ? "bg-[#1a2744] border-[#0F172A]/25" : "bg-white border-slate-200"} border rounded-2xl px-5 py-5 flex items-center justify-between shadow-sm hover:shadow-md transition-all group`}
                 >
                   <div className="flex items-center gap-4">
-                    <div className="w-14 h-14 bg-[#FF9F43] rounded-2xl flex items-center justify-center flex-shrink-0">
+                    <div className="w-14 h-14 bg-[#FF8A4C] rounded-2xl flex items-center justify-center flex-shrink-0">
                       <Sparkles className="text-white" size={24} strokeWidth={2} />
                     </div>
                     <div className="text-left">
@@ -3819,8 +3819,8 @@ export function ServicePage() {
                       <p className={`text-xs mt-1 ${t.subText}`}>Mindfulness & guided sessions</p>
                     </div>
                   </div>
-                  <div className="w-10 h-10 bg-[#FF9F43]/10 rounded-[14px] flex items-center justify-center flex-shrink-0">
-                    <ArrowRight className={`${isDark ? "text-[#FF9F43]" : "text-[#FF9F43]"} group-hover:translate-x-1 transition-transform`} size={20} strokeWidth={2} />
+                  <div className="w-10 h-10 bg-[#FF8A4C]/10 rounded-[14px] flex items-center justify-center flex-shrink-0">
+                    <ArrowRight className={`${isDark ? "text-[#FF8A4C]" : "text-[#FF8A4C]"} group-hover:translate-x-1 transition-transform`} size={20} strokeWidth={2} />
                   </div>
                 </motion.button>
               </div>
@@ -3838,7 +3838,7 @@ export function ServicePage() {
           >
             <div className="mb-5">
               <h2 className={`text-base md:text-lg flex items-center gap-2 mb-1 ${t.headingText}`}>
-                <Sparkles className="text-[#00c0ff]" size={18} />
+                <Sparkles className="text-[#13B5B1]" size={18} />
                 Quick Tools
               </h2>
               <p className={`text-xs md:text-sm ${t.subText}`}>
@@ -3896,7 +3896,7 @@ export function ServicePage() {
           >
             <div className="mb-6 md:mb-8">
               <h2 className={`text-lg flex items-center gap-2 mb-1 ${t.headingText}`}>
-                <Sparkles className={isPurple ? "text-[#EE4F84]" : "text-[#00c0ff]"} size={16} />
+                <Sparkles className={isPurple ? "text-[#EE4F84]" : "text-[#13B5B1]"} size={16} />
                 Quick Tools
               </h2>
               <p className={`text-sm ${t.subText}`}>
@@ -3949,7 +3949,7 @@ export function ServicePage() {
           >
             <div className="mb-6 md:mb-8">
               <h2 className={`text-lg flex items-center gap-2 mb-1 ${t.headingText}`}>
-                <Sparkles className={isPurple ? "text-[#EE4F84]" : "text-[#00c0ff]"} size={16} />
+                <Sparkles className={isPurple ? "text-[#EE4F84]" : "text-[#13B5B1]"} size={16} />
                 Trackers
               </h2>
               <p className={`text-sm ${t.subText}`}>
@@ -4055,10 +4055,10 @@ export function ServicePage() {
                     initial={{ opacity: 0, y: 12 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3, delay: 0.28 + i * 0.06 }}
-                    className={`${isDark ? "bg-[#1A2744] hover:bg-[#1f3060]" : "bg-[#EEF4FF] hover:bg-[#E2ECF5]"} rounded-2xl py-6 px-3 flex flex-col items-center gap-3 transition-all group`}
+                    className={`${isDark ? "bg-[#1A2744] hover:bg-[#1f3060]" : "bg-[#EEF4FF] hover:bg-[#E5EAF0]"} rounded-2xl py-6 px-3 flex flex-col items-center gap-3 transition-all group`}
                   >
-                    <Icon size={26} className={`${isDark ? "text-white" : "text-[#1E293B]"} group-hover:scale-110 transition-transform duration-200`} strokeWidth={1.5} />
-                    <span className={`text-xs md:text-sm text-center leading-tight ${isDark ? "text-white" : "text-[#020817]"}`}>{cat.name}</span>
+                    <Icon size={26} className={`${isDark ? "text-white" : "text-[#0F172A]"} group-hover:scale-110 transition-transform duration-200`} strokeWidth={1.5} />
+                    <span className={`text-xs md:text-sm text-center leading-tight ${isDark ? "text-white" : "text-[#0F172A]"}`}>{cat.name}</span>
                   </motion.button>
                 );
               })}
@@ -4091,7 +4091,7 @@ export function ServicePage() {
                   transition={{ duration: 0.35, delay: 0.32 + i * 0.1 }}
                   className="flex flex-col items-center gap-2.5 group"
                 >
-                  <div className={`w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-2 ${isDark ? "border-white/20 group-hover:border-white/50" : "border-[#E2E8F0] group-hover:border-[#0D9488]"} shadow-lg transition-all`}>
+                  <div className={`w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-2 ${isDark ? "border-white/20 group-hover:border-white/50" : "border-[#E5EAF0] group-hover:border-[#0D9488]"} shadow-lg transition-all`}>
                     <ImageWithFallback
                       src={fav.image}
                       alt={fav.title}
@@ -4236,7 +4236,7 @@ export function ServicePage() {
                   {/* Checkbox */}
                   <div 
                     className={`w-5 h-5 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-colors ${
-                      isCompleted ? 'bg-[#00c0ff] border-[#00c0ff]' : `${isDark ? 'border-white/25' : 'border-[#E5E7EB]'}`
+                      isCompleted ? 'bg-[#13B5B1] border-[#13B5B1]' : `${isDark ? 'border-white/25' : 'border-[#E5E7EB]'}`
                     }`}
                   >
                     {isCompleted && (
@@ -4308,7 +4308,7 @@ export function ServicePage() {
             {/* Section Header */}
             <div className="mb-5">
               <div className="flex items-center gap-2 mb-1">
-                <Activity className={isPurple ? "text-[#EE4F84]" : "text-[#00c0ff]"} size={18} strokeWidth={2.5} />
+                <Activity className={isPurple ? "text-[#EE4F84]" : "text-[#13B5B1]"} size={18} strokeWidth={2.5} />
                 <h2 className={`text-lg font-semibold ${t.headingText}`}>
                   Recommended Exercise Plans
                 </h2>
@@ -4345,7 +4345,7 @@ export function ServicePage() {
                       <span className={`inline-flex items-center gap-1 text-xs ${t.subText}`}>
                         <Clock size={12} /> 14 mins
                       </span>
-                      <span className="text-[#E2E8F0]">•</span>
+                      <span className="text-[#E5EAF0]">•</span>
                       <span className={`inline-flex items-center gap-1 text-xs ${t.subText}`}>
                         <Calendar size={12} /> 3x week
                       </span>
@@ -4401,7 +4401,7 @@ export function ServicePage() {
                       <span className={`inline-flex items-center gap-1 text-xs ${t.subText}`}>
                         <Clock size={12} /> 8 mins
                       </span>
-                      <span className="text-[#E2E8F0]">•</span>
+                      <span className="text-[#E5EAF0]">•</span>
                       <span className={`inline-flex items-center gap-1 text-xs ${t.subText}`}>
                         <Calendar size={12} /> Daily
                       </span>
@@ -4457,7 +4457,7 @@ export function ServicePage() {
                       <span className={`inline-flex items-center gap-1 text-xs ${t.subText}`}>
                         <Clock size={12} /> 12 mins
                       </span>
-                      <span className="text-[#E2E8F0]">•</span>
+                      <span className="text-[#E5EAF0]">•</span>
                       <span className={`inline-flex items-center gap-1 text-xs ${t.subText}`}>
                         <Calendar size={12} /> 3x week
                       </span>
@@ -4487,7 +4487,7 @@ export function ServicePage() {
               transition={{ delay: 0.6 }}
               whileHover={{ x: 4 }}
               onClick={() => navigate("/exercise-plans")}
-              className={`${isPurple ? "text-[#EE4F84] hover:text-[#BE51F5]" : "text-[#00c0ff] hover:text-[#0284c7]"} font-semibold text-sm mt-5 flex items-center gap-2 mx-auto group`}
+              className={`${isPurple ? "text-[#EE4F84] hover:text-[#BE51F5]" : "text-[#13B5B1] hover:text-[#0284c7]"} font-semibold text-sm mt-5 flex items-center gap-2 mx-auto group`}
             >
               View All Exercise Plans 
               <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
@@ -4620,7 +4620,7 @@ export function ServicePage() {
                 >
                   <div 
                     className={`w-5 h-5 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-colors ${
-                      isCompleted ? 'bg-[#00c0ff] border-[#00c0ff]' : `${isDark ? 'border-white/25' : 'border-[#E5E7EB]'}`
+                      isCompleted ? 'bg-[#13B5B1] border-[#13B5B1]' : `${isDark ? 'border-white/25' : 'border-[#E5E7EB]'}`
                     }`}
                   >
                     {isCompleted && (
@@ -4686,13 +4686,13 @@ export function ServicePage() {
             transition={{ duration: 0.5, delay: 0.3 }}
           >
             {/* Decorative Background Elements */}
-            <div className="absolute top-0 right-0 w-40 h-40 rounded-full blur-3xl opacity-5" style={{ background: isPurple ? '#EE4F84' : '#00c0ff' }} />
+            <div className="absolute top-0 right-0 w-40 h-40 rounded-full blur-3xl opacity-5" style={{ background: isPurple ? '#EE4F84' : '#13B5B1' }} />
             <div className="absolute bottom-0 left-0 w-32 h-32 rounded-full blur-3xl opacity-5" style={{ background: isPurple ? '#BE51F5' : '#2563EB' }} />
             
             <div className="relative z-10 mb-8 md:mb-10">
               <div className="flex items-center gap-3 mb-2.5">
-                <div className={`w-10 h-10 rounded-xl flex items-center justify-center ${isPurple ? 'bg-[#EE4F84]/10' : 'bg-[#00c0ff]/10'}`}>
-                  <Sparkles className={isPurple ? "text-[#EE4F84]" : "text-[#00c0ff]"} size={20} strokeWidth={2.5} />
+                <div className={`w-10 h-10 rounded-xl flex items-center justify-center ${isPurple ? 'bg-[#EE4F84]/10' : 'bg-[#13B5B1]/10'}`}>
+                  <Sparkles className={isPurple ? "text-[#EE4F84]" : "text-[#13B5B1]"} size={20} strokeWidth={2.5} />
                 </div>
                 <h2 className={`text-2xl font-bold ${t.headingText}`}>
                   {service.trackers ? "Trackers" : "Quick Tools"}
@@ -4803,11 +4803,11 @@ export function ServicePage() {
               ) : (
                 // Render default Quick Tools
                 [
-                  { label: "Journal",      Icon: BookOpen, grad: "#F39C12", link: "/journal" },
-                  { label: "Assessment",   Icon: BarChart3, grad: "#3498DB", link: "https://content.mantracare.com/en/therapyapp/assessments/?lang=en" },
-                  { label: "Mood Tracker", Icon: Heart,    grad: "#FF9F43", link: "https://web.mantracare.com/app/mood_tracker/" },
-                  { label: "Mindfulness",   Icon: Wind,     grad: "#27AE60", link: "/service/meditation" },
-                  { label: "AI Stress Tracker",        Icon: Moon,     grad: "#9B59B6", link: "https://platform.mantracare.com/stress-face/" },
+                  { label: "Journal",      Icon: BookOpen, grad: "#E0A82E", link: "/journal" },
+                  { label: "Assessment",   Icon: BarChart3, grad: "#0B2545", link: "https://content.mantracare.com/en/therapyapp/assessments/?lang=en" },
+                  { label: "Mood Tracker", Icon: Heart,    grad: "#FF8A4C", link: "https://web.mantracare.com/app/mood_tracker/" },
+                  { label: "Mindfulness",   Icon: Wind,     grad: "#16A371", link: "/service/meditation" },
+                  { label: "AI Stress Tracker",        Icon: Moon,     grad: "#13B5B1", link: "https://platform.mantracare.com/stress-face/" },
                   { label: "Affirmations", Icon: Sparkles, grad: "#E74C3C", link: "https://platform.mantracare.com/affirmations/?lang=en" },
                 ].map((tool, i) => (
                   <motion.button
@@ -4855,7 +4855,7 @@ export function ServicePage() {
               <div className="flex items-center justify-between mb-4">
                 <div>
                   <h2 className={`text-[24px] font-semibold flex items-center gap-2.5 mb-2 ${t.headingText}`}>
-                    <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#00c0ff] to-[#0099ff] flex items-center justify-center shadow-md">
+                    <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#13B5B1] to-[#0099ff] flex items-center justify-center shadow-md">
                       <Sparkles className="text-white" size={18} strokeWidth={2.5} />
                     </div>
                     Substances
@@ -4882,7 +4882,7 @@ export function ServicePage() {
                     >
                       {/* Header */}
                       <div className="bg-gradient-to-r from-blue-50 to-cyan-50 px-4 py-3 border-b border-blue-100">
-                        <h4 className="text-sm font-semibold text-[#043570]">Select Programs</h4>
+                        <h4 className="text-sm font-semibold text-[#0B2545]">Select Programs</h4>
                         <p className="text-xs text-[#64748B] mt-0.5">{visiblePrograms.length} of 8 selected</p>
                       </div>
 
@@ -4919,7 +4919,7 @@ export function ServicePage() {
                               </div>
 
                               {/* Label */}
-                              <span className="flex-1 text-left text-sm font-medium text-[#043570]">
+                              <span className="flex-1 text-left text-sm font-medium text-[#0B2545]">
                                 {program.label}
                               </span>
 
@@ -5060,7 +5060,7 @@ export function ServicePage() {
               >
                 <div className="mb-5">
                   <h2 className={`text-base md:text-lg flex items-center gap-2 mb-1 ${t.headingText}`}>
-                    <Sparkles className={isPurple ? "text-[#EE4F84]" : "text-[#00c0ff]"} size={18} />
+                    <Sparkles className={isPurple ? "text-[#EE4F84]" : "text-[#13B5B1]"} size={18} />
                     Quick Tools
                   </h2>
                   <p className={`text-xs md:text-sm ${t.subText}`}>
@@ -5117,7 +5117,7 @@ export function ServicePage() {
               >
                 <div className="mb-6 md:mb-8">
                   <h2 className={`text-lg flex items-center gap-2 mb-1 ${t.headingText}`}>
-                    <Sparkles className={isPurple ? "text-[#EE4F84]" : "text-[#00c0ff]"} size={16} />
+                    <Sparkles className={isPurple ? "text-[#EE4F84]" : "text-[#13B5B1]"} size={16} />
                     Trackers
                   </h2>
                   <p className={`text-sm ${t.subText}`}>
@@ -5274,7 +5274,7 @@ export function ServicePage() {
                   </div>
                   
                   {/* Text */}
-                  <p className="text-sm font-medium text-[#043570] text-left leading-tight">
+                  <p className="text-sm font-medium text-[#0B2545] text-left leading-tight">
                     {specialty.name}
                   </p>
                 </motion.button>
@@ -5293,7 +5293,7 @@ export function ServicePage() {
           >
             <div className="mb-6 md:mb-8">
               <h2 className={`text-lg flex items-center gap-2 mb-1 ${t.headingText}`}>
-                <Sparkles className={isPurple ? "text-[#EE4F84]" : "text-[#00c0ff]"} size={16} />
+                <Sparkles className={isPurple ? "text-[#EE4F84]" : "text-[#13B5B1]"} size={16} />
                 Quick Links
               </h2>
               <p className={`text-sm ${t.subText}`}>
@@ -5352,7 +5352,7 @@ export function ServicePage() {
           >
             <div className="mb-6 md:mb-8">
               <h2 className={`text-lg flex items-center gap-2 mb-1 ${t.headingText}`}>
-                <Sparkles className={isPurple ? "text-[#EE4F84]" : "text-[#00c0ff]"} size={16} />
+                <Sparkles className={isPurple ? "text-[#EE4F84]" : "text-[#13B5B1]"} size={16} />
                 Trackers
               </h2>
               <p className={`text-sm ${t.subText}`}>
@@ -5434,14 +5434,14 @@ export function ServicePage() {
             <div className="mb-5">
               <div className="flex items-center justify-between mb-1">
                 <div className="flex items-center gap-2">
-                  <Activity className={isPurple ? "text-[#EE4F84]" : "text-[#00c0ff]"} size={18} strokeWidth={2.5} />
+                  <Activity className={isPurple ? "text-[#EE4F84]" : "text-[#13B5B1]"} size={18} strokeWidth={2.5} />
                   <h2 className={`text-lg font-semibold ${t.headingText}`}>
                     Areas of Pain
                   </h2>
                 </div>
                 <button
                   onClick={() => setShowAllPainAreas(!showAllPainAreas)}
-                  className={`${isPurple ? "text-[#EE4F84] hover:text-[#BE51F5]" : "text-[#00c0ff] hover:text-[#0284c7]"} font-semibold text-sm flex items-center gap-1 transition-colors`}
+                  className={`${isPurple ? "text-[#EE4F84] hover:text-[#BE51F5]" : "text-[#13B5B1] hover:text-[#0284c7]"} font-semibold text-sm flex items-center gap-1 transition-colors`}
                 >
                   {showAllPainAreas ? (
                     <>
@@ -5486,10 +5486,10 @@ export function ServicePage() {
                   transition={{ duration: 0.3, delay: 0.1 + index * 0.02 }}
                   whileHover={{ scale: 1.05, y: -4 }}
                   whileTap={{ scale: 0.95 }}
-                  className={`${t.cardBg} border ${t.border} rounded-xl md:rounded-2xl p-3 md:p-4 hover:border-[#00c0ff]/40 hover:shadow-lg transition-all group`}
+                  className={`${t.cardBg} border ${t.border} rounded-xl md:rounded-2xl p-3 md:p-4 hover:border-[#13B5B1]/40 hover:shadow-lg transition-all group`}
                 >
                   {/* Pain Image */}
-                  <div className="w-full aspect-square bg-gradient-to-br from-[#f3faff] to-[#E0F2FE] rounded-lg md:rounded-xl flex items-center justify-center mb-2 md:mb-3 group-hover:from-[#E0F2FE] group-hover:to-[#BAE6FD] transition-all overflow-hidden">
+                  <div className="w-full aspect-square bg-gradient-to-br from-[#F1F7F7] to-[#E0F2FE] rounded-lg md:rounded-xl flex items-center justify-center mb-2 md:mb-3 group-hover:from-[#E0F2FE] group-hover:to-[#BAE6FD] transition-all overflow-hidden">
                     <img 
                       src={area.imageUrl} 
                       alt={area.name} 
@@ -5513,11 +5513,11 @@ export function ServicePage() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
-            className="bg-gradient-to-br from-white via-[#F8FCFF] to-[#F3FAFF] rounded-2xl p-6 md:p-8 shadow-lg border border-[#E2E8F0] relative overflow-hidden group hover:shadow-xl transition-shadow duration-300"
+            className="bg-gradient-to-br from-white via-[#F8FCFF] to-[#F1F7F7] rounded-2xl p-6 md:p-8 shadow-lg border border-[#E5EAF0] relative overflow-hidden group hover:shadow-xl transition-shadow duration-300"
           >
             {/* Decorative elements */}
-            <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-[#00c0ff]/10 to-transparent rounded-full blur-3xl pointer-events-none"></div>
-            <div className="absolute bottom-0 left-0 w-48 h-48 bg-gradient-to-tr from-[#043570]/5 to-transparent rounded-full blur-2xl pointer-events-none"></div>
+            <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-[#13B5B1]/10 to-transparent rounded-full blur-3xl pointer-events-none"></div>
+            <div className="absolute bottom-0 left-0 w-48 h-48 bg-gradient-to-tr from-[#0B2545]/5 to-transparent rounded-full blur-2xl pointer-events-none"></div>
             
             {/* Blue wave decoration at bottom right */}
             <div className="absolute bottom-0 right-0 w-48 h-40 opacity-100 pointer-events-none">
@@ -5526,12 +5526,12 @@ export function ServicePage() {
                 <path d="M24 160C24 160 60 114 96 114C132 114 168 78 168 78L192 102V160H24Z" fill={serviceId === "lgbtq" ? "url(#wave2-pink)" : "url(#wave2)"} fillOpacity="0.4"/>
                 <defs>
                   <linearGradient id="wave1" x1="0" y1="0" x2="192" y2="160" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#00c0ff" stopOpacity="0.2"/>
+                    <stop stopColor="#13B5B1" stopOpacity="0.2"/>
                     <stop offset="1" stopColor="#0EA5E9" stopOpacity="0.1"/>
                   </linearGradient>
                   <linearGradient id="wave2" x1="24" y1="78" x2="192" y2="160" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#043570" stopOpacity="0.15"/>
-                    <stop offset="1" stopColor="#043570" stopOpacity="0.05"/>
+                    <stop stopColor="#0B2545" stopOpacity="0.15"/>
+                    <stop offset="1" stopColor="#0B2545" stopOpacity="0.05"/>
                   </linearGradient>
                   <linearGradient id="wave1-pink" x1="0" y1="0" x2="192" y2="160" gradientUnits="userSpaceOnUse">
                     <stop stopColor="#EE4F84" stopOpacity="0.2"/>
@@ -5548,13 +5548,13 @@ export function ServicePage() {
             <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-2">
               <div className="flex-1 space-y-4">
                 {/* Badge */}
-                <div className={`inline-flex items-center gap-2 ${isPurple ? "bg-[#EE4F84]/10 text-[#BE51F5] border-[#EE4F84]/20" : "bg-[#00c0ff]/10 text-[#043570] border-[#00c0ff]/20"} px-3 py-1.5 rounded-full text-xs font-semibold border`}>
-                  <Sparkles size={14} className={isPurple ? "text-[#EE4F84]" : "text-[#00c0ff]"} />
+                <div className={`inline-flex items-center gap-2 ${isPurple ? "bg-[#EE4F84]/10 text-[#BE51F5] border-[#EE4F84]/20" : "bg-[#13B5B1]/10 text-[#0B2545] border-[#13B5B1]/20"} px-3 py-1.5 rounded-full text-xs font-semibold border`}>
+                  <Sparkles size={14} className={isPurple ? "text-[#EE4F84]" : "text-[#13B5B1]"} />
                   {serviceId === "emotional-wellbeing" ? "Licensed Professionals" : serviceId === "women-wellness" ? "Women Health Experts" : serviceId === "coach" ? "Certified Coaches" : serviceId === "hypertension" ? "Hypertension Specialists" : serviceId === "fitness" ? "Certified Fitness Trainers" : serviceId === "nutrition" ? "Certified Nutritionists" : serviceId === "yoga" ? "Certified Yoga Instructors" : serviceId === "substance-use" ? "Addiction Specialists" : serviceId === "quit-smoking" ? "Tobacco Cessation Experts" : serviceId === "financial-wellness" ? "Certified Financial Advisors" : serviceId === "lgbtq" ? "LGBTQ-Affirming Professionals" : serviceId === "health-checks" ? "Certified Health Professionals" : serviceId === "meditation" ? "Certified Mindfulness Instructors" : serviceId === "physiotherapy" ? "Licensed Physiotherapists" : "Certified Specialists"}
                 </div>
 
                 {/* Heading */}
-                <h3 className={`${isPurple && serviceId !== "lgbtq" ? "text-[#BE51F5]" : "text-[#020817]"} text-2xl md:text-3xl font-bold leading-tight`}>
+                <h3 className={`${isPurple && serviceId !== "lgbtq" ? "text-[#BE51F5]" : "text-[#0F172A]"} text-2xl md:text-3xl font-bold leading-tight`}>
                   {serviceId === "emotional-wellbeing" 
                     ? "Ready to prioritize your mental health?" 
                     : serviceId === "women-wellness"
@@ -5628,7 +5628,7 @@ export function ServicePage() {
                   <div className="flex items-center gap-2">
                     <div className="flex -space-x-2">
                       {[1, 2, 3].map((i) => (
-                        <div key={i} className="w-8 h-8 rounded-full bg-gradient-to-br from-[#00c0ff] to-[#0EA5E9] border-2 border-white flex items-center justify-center">
+                        <div key={i} className="w-8 h-8 rounded-full bg-gradient-to-br from-[#13B5B1] to-[#0EA5E9] border-2 border-white flex items-center justify-center">
                           <Users size={14} className="text-white" />
                         </div>
                       ))}
@@ -5639,7 +5639,7 @@ export function ServicePage() {
                   </div>
                   <div className="flex items-center gap-1.5">
                     <Star size={16} className="text-[#FFA500] fill-[#FFA500]" />
-                    <span className={`text-sm font-semibold ${isPurple && serviceId !== "lgbtq" ? "text-[#BE51F5]" : "text-[#020817]"}`}>4.9</span>
+                    <span className={`text-sm font-semibold ${isPurple && serviceId !== "lgbtq" ? "text-[#BE51F5]" : "text-[#0F172A]"}`}>4.9</span>
                     <span className={`text-xs ${isPurple && serviceId !== "lgbtq" ? "text-[#BE51F5]/70" : "text-[#64748B]"}`}>
                       {serviceId === "emotional-wellbeing" ? "(2.5k reviews)" : serviceId === "women-wellness" ? "(2.1k reviews)" : serviceId === "coach" ? "(1.5k reviews)" : serviceId === "hypertension" ? "(1.9k reviews)" : serviceId === "fitness" ? "(2.3k reviews)" : serviceId === "nutrition" ? "(2.4k reviews)" : serviceId === "yoga" ? "(2.7k reviews)" : serviceId === "substance-use" ? "(1.4k reviews)" : serviceId === "quit-smoking" ? "(1.6k reviews)" : serviceId === "financial-wellness" ? "(1.3k reviews)" : serviceId === "lgbtq" ? "(2.2k reviews)" : serviceId === "health-checks" ? "(2.6k reviews)" : serviceId === "meditation" ? "(2.8k reviews)" : serviceId === "physiotherapy" ? "(2.0k reviews)" : "(1.8k reviews)"}
                     </span>
@@ -5652,7 +5652,7 @@ export function ServicePage() {
                     whileHover={{ scale: 1.02, y: -2 }}
                     whileTap={{ scale: 0.98 }}
                     onClick={() => navigate("/plans")}
-                    className={`inline-flex items-center gap-2 ${isPurple ? "bg-gradient-to-r from-[#BE51F5] to-[#EE4F84]" : "bg-gradient-to-r from-[#00c0ff] to-[#0EA5E9]"} text-white px-8 py-3.5 rounded-xl font-semibold text-sm shadow-lg hover:shadow-xl transition-all`}
+                    className={`inline-flex items-center gap-2 ${isPurple ? "bg-gradient-to-r from-[#BE51F5] to-[#EE4F84]" : "bg-gradient-to-r from-[#13B5B1] to-[#0EA5E9]"} text-white px-8 py-3.5 rounded-xl font-semibold text-sm shadow-lg hover:shadow-xl transition-all`}
                   >
                     Explore Plans
                     <ArrowRight size={18} strokeWidth={2.5} />
@@ -5663,10 +5663,10 @@ export function ServicePage() {
               {/* Profile Image with decoration */}
               <div className="hidden md:block flex-shrink-0 relative mx-auto w-auto md:w-64">
                 {/* Glow effect */}
-                <div className={`absolute inset-0 ${isPurple ? "bg-gradient-to-br from-[#BE51F5] to-[#EE4F84]" : "bg-gradient-to-br from-[#00c0ff] to-[#0EA5E9]"} rounded-full blur-xl opacity-20 group-hover:opacity-30 transition-opacity`}></div>
+                <div className={`absolute inset-0 ${isPurple ? "bg-gradient-to-br from-[#BE51F5] to-[#EE4F84]" : "bg-gradient-to-br from-[#13B5B1] to-[#0EA5E9]"} rounded-full blur-xl opacity-20 group-hover:opacity-30 transition-opacity`}></div>
                 
                 {/* Image container */}
-                <div className={`relative w-36 h-36 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-white shadow-2xl ring-4 ${serviceId === "lgbtq" ? "ring-[#EE4F84]/20" : "ring-[#00c0ff]/20"}`}>
+                <div className={`relative w-36 h-36 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-white shadow-2xl ring-4 ${serviceId === "lgbtq" ? "ring-[#EE4F84]/20" : "ring-[#13B5B1]/20"}`}>
                   <ImageWithFallback
                     src={serviceId === "emotional-wellbeing"
                       ? ctaImage
@@ -5716,10 +5716,10 @@ export function ServicePage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="relative overflow-hidden bg-[#f3faff] border-2 border-[#00c0ff]/30 rounded-3xl p-8 shadow-lg group hover:shadow-xl transition-all mt-6"
+              className="relative overflow-hidden bg-[#F1F7F7] border-2 border-[#13B5B1]/30 rounded-3xl p-8 shadow-lg group hover:shadow-xl transition-all mt-6"
             >
               {/* Decorative background elements */}
-              <div className="absolute -top-10 -right-10 w-40 h-40 bg-[#00c0ff]/10 rounded-full blur-3xl"></div>
+              <div className="absolute -top-10 -right-10 w-40 h-40 bg-[#13B5B1]/10 rounded-full blur-3xl"></div>
               <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-[#0EA5E9]/10 rounded-full blur-2xl"></div>
 
               {/* Blue wave decoration at bottom right */}
@@ -5729,12 +5729,12 @@ export function ServicePage() {
                   <path d="M24 160C24 160 60 114 96 114C132 114 168 78 168 78L192 102V160H24Z" fill="url(#wave2-corporate)" fillOpacity="0.4"/>
                   <defs>
                     <linearGradient id="wave1-corporate" x1="0" y1="0" x2="192" y2="160" gradientUnits="userSpaceOnUse">
-                      <stop stopColor="#00c0ff" stopOpacity="0.2"/>
+                      <stop stopColor="#13B5B1" stopOpacity="0.2"/>
                       <stop offset="1" stopColor="#0EA5E9" stopOpacity="0.1"/>
                     </linearGradient>
                     <linearGradient id="wave2-corporate" x1="24" y1="78" x2="192" y2="160" gradientUnits="userSpaceOnUse">
-                      <stop stopColor="#043570" stopOpacity="0.15"/>
-                      <stop offset="1" stopColor="#043570" stopOpacity="0.05"/>
+                      <stop stopColor="#0B2545" stopOpacity="0.15"/>
+                      <stop offset="1" stopColor="#0B2545" stopOpacity="0.05"/>
                     </linearGradient>
                   </defs>
                 </svg>
@@ -5744,13 +5744,13 @@ export function ServicePage() {
               <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
                 <div className="flex-1 space-y-3">
                   {/* Heading */}
-                  <h3 className="text-[#043570] text-2xl md:text-3xl font-bold leading-tight">
+                  <h3 className="text-[#0B2545] text-2xl md:text-3xl font-bold leading-tight">
                     Upgrade to Complete Wellness Care
                   </h3>
 
                   {/* Description */}
-                  <p className="text-[#043570]/70 text-sm md:text-base max-w-lg leading-relaxed">
-                    Enjoy therapy, nutrition, doctor consultations, fitness, and chronic care in one seamless plan. Get an exclusive <span className="font-bold text-[#00c0ff]">20% corporate discount</span> with Mantra Wellness Plans.
+                  <p className="text-[#0B2545]/70 text-sm md:text-base max-w-lg leading-relaxed">
+                    Enjoy therapy, nutrition, doctor consultations, fitness, and chronic care in one seamless plan. Get an exclusive <span className="font-bold text-[#13B5B1]">20% corporate discount</span> with Mantra Wellness Plans.
                   </p>
                 </div>
 
@@ -5761,7 +5761,7 @@ export function ServicePage() {
                     whileHover={{ scale: 1.02, y: -2 }}
                     whileTap={{ scale: 0.98 }}
                     onClick={() => navigate("/plans")}
-                    className="inline-flex items-center gap-2 bg-[#043570] text-white px-8 py-3.5 rounded-xl font-semibold text-sm shadow-lg hover:shadow-xl transition-all"
+                    className="inline-flex items-center gap-2 bg-[#0B2545] text-white px-8 py-3.5 rounded-xl font-semibold text-sm shadow-lg hover:shadow-xl transition-all"
                   >
                     Explore Plans
                     <ArrowRight size={18} strokeWidth={2.5} />

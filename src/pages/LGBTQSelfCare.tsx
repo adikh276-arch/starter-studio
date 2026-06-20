@@ -93,7 +93,7 @@ export function LGBTQSelfCare() {
             <div className="relative">
               <div className="absolute -left-2 top-0 w-1 h-14 bg-gradient-to-b from-[#EC4899] via-[#A855F7] to-[#3B82F6] rounded-full"></div>
               <div className="pl-5">
-                <h1 className="text-3xl md:text-4xl font-bold text-[#020817] mb-2 bg-gradient-to-r from-[#EC4899] to-[#A855F7] bg-clip-text text-transparent">
+                <h1 className="text-3xl md:text-4xl font-bold text-[#0F172A] mb-2 bg-gradient-to-r from-[#EC4899] to-[#A855F7] bg-clip-text text-transparent">
                   LGBTQ+ Self-Care
                 </h1>
                 <p className="text-[#64748B] text-base md:text-lg">
@@ -115,7 +115,7 @@ export function LGBTQSelfCare() {
                 <Sparkles className="text-white" size={20} strokeWidth={2} />
               </div>
               <div>
-                <h2 className="text-xl font-bold text-[#020817]">Resources</h2>
+                <h2 className="text-xl font-bold text-[#0F172A]">Resources</h2>
                 <p className="text-[#64748B] text-xs">Essential tools and information</p>
               </div>
             </div>
@@ -145,7 +145,7 @@ export function LGBTQSelfCare() {
                     >
                       <IconComponent className="text-white" size={22} strokeWidth={2.5} />
                     </div>
-                    <span className="text-xs font-bold text-[#020817] text-center leading-tight relative z-10">
+                    <span className="text-xs font-bold text-[#0F172A] text-center leading-tight relative z-10">
                       {resource.label}
                     </span>
                   </motion.button>
@@ -166,7 +166,7 @@ export function LGBTQSelfCare() {
                 <Activity className="text-white" size={20} strokeWidth={2} />
               </div>
               <div>
-                <h2 className="text-xl font-bold text-[#020817]">Trackers</h2>
+                <h2 className="text-xl font-bold text-[#0F172A]">Trackers</h2>
                 <p className="text-[#64748B] text-xs">Monitor your wellness journey</p>
               </div>
             </div>
@@ -196,7 +196,7 @@ export function LGBTQSelfCare() {
                     >
                       <IconComponent className="text-white" size={22} strokeWidth={2.5} />
                     </div>
-                    <span className="text-xs font-bold text-[#020817] text-center leading-tight relative z-10">
+                    <span className="text-xs font-bold text-[#0F172A] text-center leading-tight relative z-10">
                       {tracker.label}
                     </span>
                   </motion.button>
@@ -217,7 +217,7 @@ export function LGBTQSelfCare() {
                 <Heart className="text-white" size={20} strokeWidth={2} />
               </div>
               <div>
-                <h2 className="text-xl font-bold text-[#020817]">Wellness Guides</h2>
+                <h2 className="text-xl font-bold text-[#0F172A]">Wellness Guides</h2>
                 <p className="text-[#64748B] text-xs">Identity-specific support and resources</p>
               </div>
             </div>
@@ -247,7 +247,7 @@ export function LGBTQSelfCare() {
                     >
                       <IconComponent className="text-white" size={28} strokeWidth={2.5} />
                     </div>
-                    <span className="text-sm font-bold text-[#020817] text-center leading-tight relative z-10">
+                    <span className="text-sm font-bold text-[#0F172A] text-center leading-tight relative z-10">
                       {guide.label}
                     </span>
                     <div className="w-full h-0.5 rounded-full relative z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"

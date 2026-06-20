@@ -84,12 +84,12 @@ const TYPE_ICONS: Record<TaskType, React.ElementType> = {
 };
 
 const TYPE_COLORS: Record<TaskType, { iconBg: string; badgeBg: string; badgeText: string; iconColor: string }> = {
-  Video:      { iconBg: "bg-[#DBEAFE]", badgeBg: "bg-[#f3faff]", badgeText: "text-[#00c0ff]", iconColor: "text-[#2563EB]" },
-  Article:    { iconBg: "bg-[#E0E7FF]", badgeBg: "bg-[#f3faff]", badgeText: "text-[#00c0ff]", iconColor: "text-[#6366F1]" },
-  Tracker:    { iconBg: "bg-[#D1FAE5]", badgeBg: "bg-[#f3faff]", badgeText: "text-[#00c0ff]", iconColor: "text-[#10B981]" },
-  Assessment: { iconBg: "bg-[#FEF3C7]", badgeBg: "bg-[#f3faff]", badgeText: "text-[#00c0ff]", iconColor: "text-[#F59E0B]" },
-  Activity:   { iconBg: "bg-[#FED7AA]", badgeBg: "bg-[#f3faff]", badgeText: "text-[#00c0ff]", iconColor: "text-[#F97316]" },
-  Audio:      { iconBg: "bg-[#DDD6FE]", badgeBg: "bg-[#f3faff]", badgeText: "text-[#00c0ff]", iconColor: "text-[#8B5CF6]" },
+  Video:      { iconBg: "bg-[#DBEAFE]", badgeBg: "bg-[#F1F7F7]", badgeText: "text-[#13B5B1]", iconColor: "text-[#2563EB]" },
+  Article:    { iconBg: "bg-[#E0E7FF]", badgeBg: "bg-[#F1F7F7]", badgeText: "text-[#13B5B1]", iconColor: "text-[#6366F1]" },
+  Tracker:    { iconBg: "bg-[#D1FAE5]", badgeBg: "bg-[#F1F7F7]", badgeText: "text-[#13B5B1]", iconColor: "text-[#10B981]" },
+  Assessment: { iconBg: "bg-[#FEF3C7]", badgeBg: "bg-[#F1F7F7]", badgeText: "text-[#13B5B1]", iconColor: "text-[#F59E0B]" },
+  Activity:   { iconBg: "bg-[#FED7AA]", badgeBg: "bg-[#F1F7F7]", badgeText: "text-[#13B5B1]", iconColor: "text-[#F97316]" },
+  Audio:      { iconBg: "bg-[#DDD6FE]", badgeBg: "bg-[#F1F7F7]", badgeText: "text-[#13B5B1]", iconColor: "text-[#8B5CF6]" },
 };
 
 const FILTERS: FilterKey[] = ["All", "Video", "Article", "Audio", "Tracker", "Assessment", "Activity"];
@@ -206,15 +206,15 @@ export function TasksPage() {
             className="mb-6 md:mb-8"
           >
             <div className="flex items-center gap-3 mb-2">
-              <div className="w-10 h-10 bg-[#F1F5F9] rounded-md flex items-center justify-center flex-shrink-0">
-                <CheckCircle2 size={20} className="text-[#1E293B]" strokeWidth={2} />
+              <div className="w-10 h-10 bg-[#F1F4F8] rounded-md flex items-center justify-center flex-shrink-0">
+                <CheckCircle2 size={20} className="text-[#0F172A]" strokeWidth={2} />
               </div>
               <div className="flex-1">
                 <h1 className="text-2xl text-[#0f172b] font-medium">Tasks</h1>
                 <p className="text-sm text-[#62748e] font-normal">Track your daily wellness tasks & earn points</p>
               </div>
-              <div className="hidden md:flex items-center gap-2 bg-white border border-[#00c0ff]/30 rounded-xl px-3 py-2 text-sm text-[#043570] shadow-sm cursor-pointer hover:border-[#00c0ff] transition-colors" onClick={() => setShowServicesModal(true)}>
-                <CalendarDays size={15} className="text-[#00c0ff]" />
+              <div className="hidden md:flex items-center gap-2 bg-white border border-[#13B5B1]/30 rounded-xl px-3 py-2 text-sm text-[#0B2545] shadow-sm cursor-pointer hover:border-[#13B5B1] transition-colors" onClick={() => setShowServicesModal(true)}>
+                <CalendarDays size={15} className="text-[#13B5B1]" />
                 <span>{selectedService || "All Services"}</span>
                 <ChevronDown size={14} />
               </div>
@@ -226,23 +226,23 @@ export function TasksPage() {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.45, delay: 0.2 }}
-            className="bg-white border border-[#00c0ff]/20 rounded-2xl p-4 md:p-6 mb-5 md:mb-6 shadow-sm"
+            className="bg-white border border-[#13B5B1]/20 rounded-2xl p-4 md:p-6 mb-5 md:mb-6 shadow-sm"
           >
             <div className="flex items-center justify-between mb-3">
               <div className="flex items-center gap-2.5">
-                <div className="w-8 h-8 bg-[#f3faff] rounded-xl flex items-center justify-center">
-                  <Target size={16} className="text-[#00c0ff]" />
+                <div className="w-8 h-8 bg-[#F1F7F7] rounded-xl flex items-center justify-center">
+                  <Target size={16} className="text-[#13B5B1]" />
                 </div>
                 <div>
-                  <p className="text-[#043570] text-sm font-semibold">Focus Area</p>
+                  <p className="text-[#0B2545] text-sm font-semibold">Focus Area</p>
                   <p className="text-[#64748B] text-xs">Select the key concern areas for you</p>
                 </div>
               </div>
               <button
                 onClick={() => setShowFocusModal(true)}
-                className="w-8 h-8 bg-[#f3faff] rounded-xl flex items-center justify-center hover:bg-[#00c0ff]/10 transition-colors"
+                className="w-8 h-8 bg-[#F1F7F7] rounded-xl flex items-center justify-center hover:bg-[#13B5B1]/10 transition-colors"
               >
-                <Pencil size={14} className="text-[#00c0ff]" />
+                <Pencil size={14} className="text-[#13B5B1]" />
               </button>
             </div>
             <div className="flex flex-wrap gap-2">
@@ -250,7 +250,7 @@ export function TasksPage() {
                 selectedFocus.map((area) => (
                   <div
                     key={area}
-                    className="px-3 py-1 rounded-full text-xs border border-[#00c0ff] bg-[#f3faff] text-[#00c0ff] shadow-sm"
+                    className="px-3 py-1 rounded-full text-xs border border-[#13B5B1] bg-[#F1F7F7] text-[#13B5B1] shadow-sm"
                   >
                     {area}
                   </div>
@@ -266,25 +266,25 @@ export function TasksPage() {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.45, delay: 0.22 }}
-            className="bg-white border border-[#00c0ff]/20 rounded-2xl shadow-sm mb-5 md:mb-6 overflow-hidden"
+            className="bg-white border border-[#13B5B1]/20 rounded-2xl shadow-sm mb-5 md:mb-6 overflow-hidden"
           >
             {/* Header */}
             <button
               onClick={() => setPlanExpanded((e) => !e)}
-              className="w-full flex items-center justify-between px-4 md:px-6 py-4 md:py-5 hover:bg-[#f3faff]/50 transition-colors"
+              className="w-full flex items-center justify-between px-4 md:px-6 py-4 md:py-5 hover:bg-[#F1F7F7]/50 transition-colors"
             >
               <div className="flex items-center gap-2.5">
-                <div className="w-8 h-8 bg-[#f3faff] rounded-xl flex items-center justify-center">
-                  <CalendarDays size={16} className="text-[#00c0ff]" />
+                <div className="w-8 h-8 bg-[#F1F7F7] rounded-xl flex items-center justify-center">
+                  <CalendarDays size={16} className="text-[#13B5B1]" />
                 </div>
                 <div className="text-left">
-                  <p className="text-[#043570] text-sm font-semibold">Today's Tasks</p>
+                  <p className="text-[#0B2545] text-sm font-semibold">Today's Tasks</p>
                   <p className="text-[#64748B] text-xs">Take just a few minutes each day to prioritise your health and wellness.</p>
                 </div>
               </div>
               <div className="flex items-center gap-2 flex-shrink-0 ml-3">
                 <span className="text-xs text-[#64748B] hidden sm:block">{completedToday}/{totalToday} done</span>
-                {planExpanded ? <ChevronUp size={16} className="text-[#00c0ff]" /> : <ChevronDown size={16} className="text-[#00c0ff]" />}
+                {planExpanded ? <ChevronUp size={16} className="text-[#13B5B1]" /> : <ChevronDown size={16} className="text-[#13B5B1]" />}
               </div>
             </button>
 
@@ -298,7 +298,7 @@ export function TasksPage() {
                   className="overflow-hidden"
                 >
                   {/* Task list */}
-                  <div className="px-4 md:px-6 pb-5 pt-3 space-y-2 border-t border-[#00c0ff]/20">
+                  <div className="px-4 md:px-6 pb-5 pt-3 space-y-2 border-t border-[#13B5B1]/20">
                     <AnimatePresence>
                       {todayTasks.map((task, idx) => (
                         <TaskRow
@@ -312,13 +312,13 @@ export function TasksPage() {
                       ))}
                     </AnimatePresence>
                     {todayTasks.length === 0 && (
-                      <div className="text-center py-8 text-[#E2E8F0] text-sm">No tasks for today.</div>
+                      <div className="text-center py-8 text-[#E5EAF0] text-sm">No tasks for today.</div>
                     )}
                   </div>
 
                   {/* View More */}
-                  <div className="border-t border-[#E2E8F0] px-4 md:px-6 py-3 flex justify-center">
-                    <button className="text-[#2563EB] text-sm hover:text-[#1E293B] flex items-center gap-1 hover:underline transition-colors">
+                  <div className="border-t border-[#E5EAF0] px-4 md:px-6 py-3 flex justify-center">
+                    <button className="text-[#2563EB] text-sm hover:text-[#0F172A] flex items-center gap-1 hover:underline transition-colors">
                       View More <ChevronRight size={14} />
                     </button>
                   </div>
@@ -332,22 +332,22 @@ export function TasksPage() {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.45, delay: 0.24 }}
-            className="bg-white border border-[#00c0ff]/20 rounded-2xl p-4 md:p-6 mb-5 md:mb-6 shadow-sm"
+            className="bg-white border border-[#13B5B1]/20 rounded-2xl p-4 md:p-6 mb-5 md:mb-6 shadow-sm"
           >
             <div className="flex items-center justify-between gap-3 mb-4">
               <div className="flex items-center gap-2.5">
-                <div className="w-8 h-8 bg-[#f3faff] rounded-xl flex items-center justify-center">
-                  <TrendingUp size={16} className="text-[#00c0ff]" />
+                <div className="w-8 h-8 bg-[#F1F7F7] rounded-xl flex items-center justify-center">
+                  <TrendingUp size={16} className="text-[#13B5B1]" />
                 </div>
                 <div>
-                  <p className="text-[#043570] text-sm font-semibold">Activity Stats</p>
+                  <p className="text-[#0B2545] text-sm font-semibold">Activity Stats</p>
                   <p className="text-[#64748B] text-xs">Complete daily activity to get more reward points.</p>
                 </div>
               </div>
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="flex items-center gap-2 bg-[#00c0ff] hover:bg-[#043570] text-white text-sm px-4 py-2 rounded-lg shadow-sm transition-colors flex-shrink-0"
+                className="flex items-center gap-2 bg-[#13B5B1] hover:bg-[#0B2545] text-white text-sm px-4 py-2 rounded-lg shadow-sm transition-colors flex-shrink-0"
               >
                 <Star size={16} />
                 <span className="hidden sm:inline">Redeem</span>
@@ -355,9 +355,9 @@ export function TasksPage() {
             </div>
             <div className="grid grid-cols-3 gap-3">
               {[
-                { label: "Completed", value: activityCompleted, color: "text-[#043570]", bg: "bg-[#f3faff] border-[#00c0ff]/30", iconBg: "bg-[#043570]", icon: CheckCircle2 },
-                { label: "Today",     value: `${completedToday}/${totalToday}`, color: "text-[#043570]", bg: "bg-[#f3faff] border-[#00c0ff]/30", iconBg: "bg-[#00c0ff]", icon: Zap },
-                { label: "Points",    value: totalPoints, color: "text-[#043570]", bg: "bg-[#f3faff] border-[#00c0ff]/30", iconBg: "bg-[#00c0ff]", icon: Star },
+                { label: "Completed", value: activityCompleted, color: "text-[#0B2545]", bg: "bg-[#F1F7F7] border-[#13B5B1]/30", iconBg: "bg-[#0B2545]", icon: CheckCircle2 },
+                { label: "Today",     value: `${completedToday}/${totalToday}`, color: "text-[#0B2545]", bg: "bg-[#F1F7F7] border-[#13B5B1]/30", iconBg: "bg-[#13B5B1]", icon: Zap },
+                { label: "Points",    value: totalPoints, color: "text-[#0B2545]", bg: "bg-[#F1F7F7] border-[#13B5B1]/30", iconBg: "bg-[#13B5B1]", icon: Star },
               ].map((s) => (
                 <div key={s.label} className={`relative border rounded-xl p-3 overflow-hidden ${s.bg}`}>
                   <div className={`absolute -top-4 -right-4 w-14 h-14 rounded-full ${s.bg.split(" ")[0]} opacity-60`} />
@@ -380,32 +380,32 @@ export function TasksPage() {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.45, delay: 0.3 }}
-            className="bg-white border border-[#00c0ff]/20 rounded-2xl shadow-sm mb-5 md:mb-6 overflow-hidden"
+            className="bg-white border border-[#13B5B1]/20 rounded-2xl shadow-sm mb-5 md:mb-6 overflow-hidden"
           >
-            <div className="px-4 md:px-6 py-4 md:py-5 border-b border-[#00c0ff]/20">
+            <div className="px-4 md:px-6 py-4 md:py-5 border-b border-[#13B5B1]/20">
               <div className="flex items-center gap-2.5">
-                <div className="w-8 h-8 bg-[#f3faff] rounded-xl flex items-center justify-center">
-                  <Flame size={16} className="text-[#00c0ff]" />
+                <div className="w-8 h-8 bg-[#F1F7F7] rounded-xl flex items-center justify-center">
+                  <Flame size={16} className="text-[#13B5B1]" />
                 </div>
                 <div>
-                  <p className="text-[#043570] text-sm font-semibold">Your Journey So Far</p>
+                  <p className="text-[#0B2545] text-sm font-semibold">Your Journey So Far</p>
                   <p className="text-[#64748B] text-xs">Completed activity following pathway.</p>
                 </div>
               </div>
             </div>
 
-            <div className="divide-y divide-[#00c0ff]/10">
+            <div className="divide-y divide-[#13B5B1]/10">
               {pagedJourney.map((task, idx) => (
                 <JourneyRow key={task.id} task={task} index={idx} />
               ))}
             </div>
 
             {/* Pagination */}
-            <div className="px-4 md:px-6 py-3 flex items-center justify-center gap-3 border-t border-[#00c0ff]/20">
+            <div className="px-4 md:px-6 py-3 flex items-center justify-center gap-3 border-t border-[#13B5B1]/20">
               <button
                 onClick={() => setJourneyPage((p) => Math.max(1, p - 1))}
                 disabled={journeyPage === 1}
-                className="text-xs text-[#64748B] hover:text-[#00c0ff] disabled:opacity-40 disabled:cursor-not-allowed px-3 py-1.5 rounded-lg hover:bg-[#f3faff] transition-colors"
+                className="text-xs text-[#64748B] hover:text-[#13B5B1] disabled:opacity-40 disabled:cursor-not-allowed px-3 py-1.5 rounded-lg hover:bg-[#F1F7F7] transition-colors"
               >
                 Prev
               </button>
@@ -415,7 +415,7 @@ export function TasksPage() {
               <button
                 onClick={() => setJourneyPage((p) => Math.min(journeyPages, p + 1))}
                 disabled={journeyPage === journeyPages}
-                className="text-xs text-[#64748B] hover:text-[#00c0ff] disabled:opacity-40 disabled:cursor-not-allowed px-3 py-1.5 rounded-lg hover:bg-[#f3faff] transition-colors"
+                className="text-xs text-[#64748B] hover:text-[#13B5B1] disabled:opacity-40 disabled:cursor-not-allowed px-3 py-1.5 rounded-lg hover:bg-[#F1F7F7] transition-colors"
               >
                 Next
               </button>
@@ -528,7 +528,7 @@ function TaskRow({
 
       {/* Content */}
       <div className="flex-1 min-w-0">
-        <p className={`text-sm font-medium ${isDone ? "line-through text-[#94A3B8]" : "text-[#1E293B]"}`}>
+        <p className={`text-sm font-medium ${isDone ? "line-through text-[#94A3B8]" : "text-[#0F172A]"}`}>
           {task.title}
         </p>
         <div className="flex items-center gap-2 mt-1 flex-wrap">
@@ -570,11 +570,11 @@ function JourneyRow({ task, index }: { task: Task; index: number }) {
       className="flex items-center justify-between px-4 md:px-6 py-3 hover:bg-[#F8FAFC] transition-colors group cursor-pointer"
     >
       <div className="flex items-center gap-3 min-w-0">
-        <div className="w-7 h-7 bg-[#F1F5F9] rounded-full flex items-center justify-center flex-shrink-0">
+        <div className="w-7 h-7 bg-[#F1F4F8] rounded-full flex items-center justify-center flex-shrink-0">
           <CheckCircle2 size={14} className="text-[#0D9488]" />
         </div>
         <div className="min-w-0">
-          <p className="text-[#020817] text-sm hover:text-[#2563EB] truncate group-hover:underline transition-colors">
+          <p className="text-[#0F172A] text-sm hover:text-[#2563EB] truncate group-hover:underline transition-colors">
             {task.title}
           </p>
           <p className="text-[#64748B]/50 text-xs mt-0.5">{task.date}</p>
@@ -588,7 +588,7 @@ function JourneyRow({ task, index }: { task: Task; index: number }) {
             {task.type}
           </p>
         </div>
-        <ChevronRight size={14} className="text-[#E2E8F0] group-hover:text-[#64748B] group-hover:translate-x-0.5 transition-all" />
+        <ChevronRight size={14} className="text-[#E5EAF0] group-hover:text-[#64748B] group-hover:translate-x-0.5 transition-all" />
       </div>
     </motion.div>
   );

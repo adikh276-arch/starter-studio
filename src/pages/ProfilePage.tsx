@@ -80,7 +80,7 @@ function InputField({
     <div className={`relative flex items-center border rounded-xl transition-all ${
       disabled || readOnly
         ? "bg-slate-50 border-slate-200"
-        : "bg-[#F8FAFC] border-slate-200 focus-within:border-[#043570] focus-within:ring-2 focus-within:ring-[#f3faff]"
+        : "bg-[#F8FAFC] border-slate-200 focus-within:border-[#0B2545] focus-within:ring-2 focus-within:ring-[#F1F7F7]"
     }`}>
       {Icon && <Icon size={14} className="absolute left-3 text-slate-400 flex-shrink-0" />}
       <input
@@ -113,7 +113,7 @@ function SelectField({
   options: string[];
 }) {
   return (
-    <div className="relative flex items-center border border-[#E2ECF5] rounded-xl bg-white focus-within:border-[#043570] focus-within:ring-2 focus-within:ring-[#f3faff] transition-all">
+    <div className="relative flex items-center border border-[#E5EAF0] rounded-xl bg-white focus-within:border-[#0B2545] focus-within:ring-2 focus-within:ring-[#F1F7F7] transition-all">
       {Icon && <Icon size={14} className="absolute left-3 text-slate-400" />}
       <select
         value={value}
@@ -229,7 +229,7 @@ export function ProfilePage() {
             className="flex items-start justify-between mb-6"
           >
             <div>
-              <h1 className="text-xl md:text-2xl text-[#020817]">Profile Settings</h1>
+              <h1 className="text-xl md:text-2xl text-[#0F172A]">Profile Settings</h1>
               <p className="text-[#64748B] text-sm mt-0.5">Manage your personal information and preferences</p>
             </div>
             <button
@@ -254,7 +254,7 @@ export function ProfilePage() {
               <div className="bg-white border border-slate-200 rounded-2xl p-4 flex flex-col items-center gap-3 shadow-sm">
                 {/* Avatar */}
                 <div className="relative group">
-                  <div className="w-20 h-20 rounded-full overflow-hidden ring-4 ring-white shadow-md bg-[#043570] flex items-center justify-center">
+                  <div className="w-20 h-20 rounded-full overflow-hidden ring-4 ring-white shadow-md bg-[#0B2545] flex items-center justify-center">
                     {avatar ? (
                       <img src={avatar} alt="avatar" className="w-full h-full object-cover" />
                     ) : (
@@ -269,7 +269,7 @@ export function ProfilePage() {
                     <Camera size={18} className="text-white" />
                   </button>
                   {/* Online dot */}
-                  <span className="absolute bottom-0 right-0 w-3.5 h-3.5 bg-[#00c0ff] border-2 border-white rounded-full" />
+                  <span className="absolute bottom-0 right-0 w-3.5 h-3.5 bg-[#13B5B1] border-2 border-white rounded-full" />
                 </div>
                 <input ref={fileRef} type="file" accept="image/*" className="hidden" onChange={handleAvatarChange} />
 
@@ -280,7 +280,7 @@ export function ProfilePage() {
                 <div className="w-full flex gap-2">
                   <button
                     onClick={() => fileRef.current?.click()}
-                    className="flex-1 py-2 rounded-lg bg-[#043570] hover:bg-[#00c0ff] text-white text-[11px] font-medium transition-colors flex items-center justify-center gap-1.5"
+                    className="flex-1 py-2 rounded-lg bg-[#0B2545] hover:bg-[#13B5B1] text-white text-[11px] font-medium transition-colors flex items-center justify-center gap-1.5"
                   >
                     <Camera size={12} />
                     Upload
@@ -299,7 +299,7 @@ export function ProfilePage() {
               </div>
 
               {/* Quick stats */}
-              <div className="bg-white border border-[#E2E8F0] rounded-2xl p-3.5 space-y-2.5">
+              <div className="bg-white border border-[#E5EAF0] rounded-2xl p-3.5 space-y-2.5">
                 <p className="text-[10px] text-[#64748B] uppercase tracking-wide font-medium">Account Info</p>
                 {[
                   { icon: Mail,   label: "Email",    value: email,   mono: true },
@@ -313,21 +313,21 @@ export function ProfilePage() {
                     </div>
                     <div className="min-w-0 flex-1">
                       <p className="text-[9px] text-[#94A3B8] uppercase tracking-wide">{row.label}</p>
-                      <p className={`text-[11px] text-[#020817] truncate ${row.mono ? "font-mono" : ""}`}>{row.value}</p>
+                      <p className={`text-[11px] text-[#0F172A] truncate ${row.mono ? "font-mono" : ""}`}>{row.value}</p>
                     </div>
                   </div>
                 ))}
               </div>
 
               {/* ── Invite Code Box ── */}
-              <div className="bg-white border border-[#E2E8F0] rounded-2xl p-4">
+              <div className="bg-white border border-[#E5EAF0] rounded-2xl p-4">
                 {/* Header */}
                 <div className="flex items-start gap-2.5 mb-3">
                   <div className="w-8 h-8 rounded-lg bg-[#F8FAFC] flex items-center justify-center flex-shrink-0">
                     <Building2 size={14} className="text-[#64748B]" />
                   </div>
                   <div>
-                    <p className="text-[#020817] text-[13px] font-medium">Got a corporate invite code?</p>
+                    <p className="text-[#0F172A] text-[13px] font-medium">Got a corporate invite code?</p>
                     <p className="text-[#64748B] text-[11px] mt-0.5">Enter your organization's code.</p>
                   </div>
                 </div>
@@ -340,7 +340,7 @@ export function ProfilePage() {
                   placeholder="Enter invite code"
                   maxLength={12}
                   onKeyDown={e => e.key === "Enter" && handleInviteSubmit()}
-                  className="w-full px-3 py-2 text-[12px] border border-[#E2E8F0] rounded-lg bg-[#F8FAFC] focus:outline-none focus:ring-2 focus:ring-[#2563EB]/20 focus:border-[#2563EB] focus:bg-white transition-all placeholder:text-[#CBD5E1] tracking-wide font-mono text-[#020817] mb-2.5"
+                  className="w-full px-3 py-2 text-[12px] border border-[#E5EAF0] rounded-lg bg-[#F8FAFC] focus:outline-none focus:ring-2 focus:ring-[#2563EB]/20 focus:border-[#2563EB] focus:bg-white transition-all placeholder:text-[#CBD5E1] tracking-wide font-mono text-[#0F172A] mb-2.5"
                 />
 
                 {/* Submit button */}
@@ -385,8 +385,8 @@ export function ProfilePage() {
               className="flex-1 min-w-0"
             >
               {/* Tabs */}
-              <div className="bg-white border border-[#E2E8F0] rounded-2xl overflow-hidden">
-                <div className="flex border-b border-[#E2E8F0]">
+              <div className="bg-white border border-[#E5EAF0] rounded-2xl overflow-hidden">
+                <div className="flex border-b border-[#E5EAF0]">
                   {tabs.map(tab => (
                     <button
                       key={tab.id}
@@ -394,7 +394,7 @@ export function ProfilePage() {
                       className={`flex-1 flex items-center justify-center gap-2 py-3.5 text-[12px] transition-colors relative ${
                         activeTab === tab.id
                           ? "text-[#2563EB] bg-[#DBEAFE]"
-                          : "text-[#64748B] hover:text-[#020817] hover:bg-[#F8FAFC]"
+                          : "text-[#64748B] hover:text-[#0F172A] hover:bg-[#F8FAFC]"
                       }`}
                     >
                       <tab.icon size={14} />
@@ -422,7 +422,7 @@ export function ProfilePage() {
                       {/* Section header */}
                       <div className="flex items-center justify-between mb-5">
                         <div>
-                          <h2 className="text-[#020817]">Profile Information</h2>
+                          <h2 className="text-[#0F172A]">Profile Information</h2>
                           <p className="text-[#64748B] text-[12px] mt-0.5">Update your account details and preferences</p>
                         </div>
                         <button
@@ -430,7 +430,7 @@ export function ProfilePage() {
                           className={`flex items-center gap-1.5 text-[12px] px-3 py-1.5 rounded-xl border transition-colors ${
                             editMode
                               ? "border-red-200 text-red-500 hover:bg-red-50"
-                              : "border-[#E2E8F0] text-[#2563EB] hover:bg-[#DBEAFE]"
+                              : "border-[#E5EAF0] text-[#2563EB] hover:bg-[#DBEAFE]"
                           }`}
                         >
                           {editMode ? <><X size={12} /> Cancel</> : <><Pencil size={12} /> Edit</>}
@@ -440,8 +440,8 @@ export function ProfilePage() {
                       {/* ── Personal Information ── */}
                       <div className="mb-6">
                         <div className="flex items-center gap-2 mb-4">
-                          <div className="w-5 h-5 rounded-md bg-[#F1F5F9] flex items-center justify-center">
-                            <User size={11} className="text-[#1E293B]" />
+                          <div className="w-5 h-5 rounded-md bg-[#F1F4F8] flex items-center justify-center">
+                            <User size={11} className="text-[#0F172A]" />
                           </div>
                           <span className="text-[11px] font-semibold text-[#64748B] uppercase tracking-wider">Personal Information</span>
                         </div>
@@ -504,8 +504,8 @@ export function ProfilePage() {
                       {/* ── Preferences ── */}
                       <div className="mb-6">
                         <div className="flex items-center gap-2 mb-4">
-                          <div className="w-5 h-5 rounded-md bg-[#F1F5F9] flex items-center justify-center">
-                            <Globe size={11} className="text-[#1E293B]" />
+                          <div className="w-5 h-5 rounded-md bg-[#F1F4F8] flex items-center justify-center">
+                            <Globe size={11} className="text-[#0F172A]" />
                           </div>
                           <span className="text-[11px] font-semibold text-[#64748B] uppercase tracking-wider">Preferences</span>
                         </div>
@@ -560,7 +560,7 @@ export function ProfilePage() {
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: 8 }}
                             transition={{ duration: 0.2 }}
-                            className="flex items-center gap-3 pt-2 border-t border-[#E2E8F0]"
+                            className="flex items-center gap-3 pt-2 border-t border-[#E5EAF0]"
                           >
                             <button
                               onClick={handleSave}
@@ -571,7 +571,7 @@ export function ProfilePage() {
                             </button>
                             <button
                               onClick={() => setEditMode(false)}
-                              className="text-[12px] text-[#64748B] hover:text-[#020817] px-4 py-2.5 rounded-xl hover:bg-[#F1F5F9] transition-colors"
+                              className="text-[12px] text-[#64748B] hover:text-[#0F172A] px-4 py-2.5 rounded-xl hover:bg-[#F1F4F8] transition-colors"
                             >
                               Discard
                             </button>
@@ -607,7 +607,7 @@ export function ProfilePage() {
                       className="p-5"
                     >
                       <div className="mb-5">
-                        <h2 className="text-[#020817] font-semibold">Security Settings</h2>
+                        <h2 className="text-[#0F172A] font-semibold">Security Settings</h2>
                         <p className="text-[#64748B] text-[12px] mt-0.5">Manage your password and account security</p>
                       </div>
 
@@ -616,26 +616,26 @@ export function ProfilePage() {
                         <div className="border border-slate-200 rounded-2xl p-4 bg-white">
                           <div className="flex items-center justify-between mb-3">
                             <div className="flex items-center gap-2.5">
-                              <div className="w-8 h-8 rounded-xl bg-[#F1F5F9] flex items-center justify-center">
-                                <Lock size={14} className="text-[#1E293B]" />
+                              <div className="w-8 h-8 rounded-xl bg-[#F1F4F8] flex items-center justify-center">
+                                <Lock size={14} className="text-[#0F172A]" />
                               </div>
                               <div>
-                                <p className="text-[13px] text-[#020817]">Password</p>
+                                <p className="text-[13px] text-[#0F172A]">Password</p>
                                 <p className="text-[11px] text-[#64748B]">Last changed 3 months ago</p>
                               </div>
                             </div>
-                            <button className="text-[12px] text-[#22C55E] hover:text-[#1E293B] border border-[#E2E8F0] hover:border-[#22C55E] hover:bg-[#F1F5F9] px-3 py-1.5 rounded-xl transition-colors">
+                            <button className="text-[12px] text-[#22C55E] hover:text-[#0F172A] border border-[#E5EAF0] hover:border-[#22C55E] hover:bg-[#F1F4F8] px-3 py-1.5 rounded-xl transition-colors">
                               Change
                             </button>
                           </div>
                           <div className="flex gap-3">
                             <div className="flex-1">
                               <label className="text-[11px] text-[#64748B] mb-1 block">Current Password</label>
-                              <input type="password" placeholder="••••••••" className="w-full border border-[#E2E8F0] rounded-xl px-3 py-2 text-[13px] text-[#020817] bg-white focus:outline-none focus:ring-2 focus:ring-[#F1F5F9] focus:border-[#22C55E] placeholder:text-[#E2E8F0]" />
+                              <input type="password" placeholder="••••••••" className="w-full border border-[#E5EAF0] rounded-xl px-3 py-2 text-[13px] text-[#0F172A] bg-white focus:outline-none focus:ring-2 focus:ring-[#F1F4F8] focus:border-[#22C55E] placeholder:text-[#E5EAF0]" />
                             </div>
                             <div className="flex-1">
                               <label className="text-[11px] text-[#64748B] mb-1 block">New Password</label>
-                              <input type="password" placeholder="••••••••" className="w-full border border-[#E2E8F0] rounded-xl px-3 py-2 text-[13px] text-[#020817] bg-white focus:outline-none focus:ring-2 focus:ring-[#F1F5F9] focus:border-[#22C55E] placeholder:text-[#E2E8F0]" />
+                              <input type="password" placeholder="••••••••" className="w-full border border-[#E5EAF0] rounded-xl px-3 py-2 text-[13px] text-[#0F172A] bg-white focus:outline-none focus:ring-2 focus:ring-[#F1F4F8] focus:border-[#22C55E] placeholder:text-[#E5EAF0]" />
                             </div>
                           </div>
                         </div>
@@ -643,11 +643,11 @@ export function ProfilePage() {
                         {/* 2FA */}
                         <div className="border border-slate-200 rounded-2xl p-4 bg-white flex items-center justify-between">
                           <div className="flex items-center gap-2.5">
-                            <div className="w-8 h-8 rounded-xl bg-[#F1F5F9] flex items-center justify-center">
+                            <div className="w-8 h-8 rounded-xl bg-[#F1F4F8] flex items-center justify-center">
                               <Shield size={14} className="text-[#22C55E]" />
                             </div>
                             <div>
-                              <p className="text-[13px] text-[#020817]">Two-Factor Authentication</p>
+                              <p className="text-[13px] text-[#0F172A]">Two-Factor Authentication</p>
                               <p className="text-[11px] text-[#64748B]">Add an extra layer of security</p>
                             </div>
                           </div>
@@ -662,11 +662,11 @@ export function ProfilePage() {
                         {/* Active sessions */}
                         <div className="border border-slate-200 rounded-2xl p-4 bg-white">
                           <div className="flex items-center gap-2.5 mb-3">
-                            <div className="w-8 h-8 rounded-xl bg-[#F1F5F9] flex items-center justify-center">
-                              <Globe size={14} className="text-[#1E293B]" />
+                            <div className="w-8 h-8 rounded-xl bg-[#F1F4F8] flex items-center justify-center">
+                              <Globe size={14} className="text-[#0F172A]" />
                             </div>
                             <div>
-                              <p className="text-[13px] text-[#020817]">Active Sessions</p>
+                              <p className="text-[13px] text-[#0F172A]">Active Sessions</p>
                               <p className="text-[11px] text-[#64748B]">Devices currently signed in</p>
                             </div>
                           </div>
@@ -676,14 +676,14 @@ export function ProfilePage() {
                           ].map((s, i) => (
                             <div key={i} className={`flex items-center justify-between py-2.5 ${i < 1 ? "border-b border-slate-100" : ""}`}>
                               <div>
-                                <p className="text-[12px] text-[#020817] flex items-center gap-1.5">
+                                <p className="text-[12px] text-[#0F172A] flex items-center gap-1.5">
                                   {s.device}
                                   {s.current && <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-[#DBEAFE] text-[#2563EB]">Current</span>}
                                 </p>
                                 <p className="text-[11px] text-[#64748B]">{s.location} · {s.time}</p>
                               </div>
                               {!s.current && (
-                                <button className="text-[11px] text-[#64748B] hover:text-[#1E293B] font-medium hover:underline transition-colors">
+                                <button className="text-[11px] text-[#64748B] hover:text-[#0F172A] font-medium hover:underline transition-colors">
                                   Revoke
                                 </button>
                               )}
@@ -724,7 +724,7 @@ export function ProfilePage() {
                       className="p-5"
                     >
                       <div className="mb-5">
-                        <h2 className="text-[#020817]">Notification Preferences</h2>
+                        <h2 className="text-[#0F172A]">Notification Preferences</h2>
                         <p className="text-[#64748B] text-[12px] mt-0.5">Choose what updates you'd like to receive</p>
                       </div>
 
@@ -741,7 +741,7 @@ export function ProfilePage() {
                         ))}
                       </div>
 
-                      <div className="mt-5 pt-4 border-t border-[#E2E8F0] flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+                      <div className="mt-5 pt-4 border-t border-[#E5EAF0] flex flex-col md:flex-row md:items-center md:justify-between gap-3">
                         <p className="text-[12px] text-[#64748B]">Notification delivery via Email & Push</p>
                         <button className="flex items-center justify-center gap-2 bg-[#2563EB] hover:bg-[#1D4ED8] text-white text-[12px] font-medium px-4 py-2 rounded-xl transition-colors w-full md:w-auto">
                           <Save size={12} />
@@ -764,14 +764,14 @@ export function ProfilePage() {
 function NotifRow({ label, desc, defaultOn }: { label: string; desc: string; defaultOn: boolean }) {
   const [on, setOn] = useState(defaultOn);
   return (
-    <div className="flex items-center justify-between border border-[#E2E8F0] rounded-2xl px-4 py-3.5 hover:bg-[#F8FAFC] transition-colors bg-white">
+    <div className="flex items-center justify-between border border-[#E5EAF0] rounded-2xl px-4 py-3.5 hover:bg-[#F8FAFC] transition-colors bg-white">
       <div>
-        <p className="text-[13px] text-[#020817]">{label}</p>
+        <p className="text-[13px] text-[#0F172A]">{label}</p>
         <p className="text-[11px] text-[#64748B] mt-0.5">{desc}</p>
       </div>
       <button
         onClick={() => setOn(v => !v)}
-        className={`relative w-11 h-6 rounded-full transition-colors flex-shrink-0 ${on ? "bg-[#22C55E]" : "bg-[#E2E8F0]"}`}
+        className={`relative w-11 h-6 rounded-full transition-colors flex-shrink-0 ${on ? "bg-[#22C55E]" : "bg-[#E5EAF0]"}`}
       >
         <motion.div
           animate={{ x: on ? 20 : 2 }}

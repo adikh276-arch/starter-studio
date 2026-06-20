@@ -128,7 +128,7 @@ export function DailyProgramPage() {
                   </p>
                 </div>
                 <div className="text-right">
-                  <div className="text-[#00c0ff] text-2xl font-bold">
+                  <div className="text-[#13B5B1] text-2xl font-bold">
                     {programItems
                       .filter(item => item.completed)
                       .reduce((sum, item) => sum + item.points, 0)}
@@ -163,7 +163,7 @@ export function DailyProgramPage() {
                       }}
                       className={`w-5 h-5 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-all ${
                         item.completed
-                          ? 'border-[#00c0ff] bg-[#00c0ff]'
+                          ? 'border-[#13B5B1] bg-[#13B5B1]'
                           : 'border-slate-500 hover:border-slate-400'
                       }`}
                     >

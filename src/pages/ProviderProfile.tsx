@@ -65,11 +65,11 @@ export function ProviderProfile() {
             <div className="flex items-center gap-3 mb-4">
               <button
                 onClick={() => navigate(-1)}
-                className="w-9 h-9 rounded-xl flex items-center justify-center transition-colors flex-shrink-0 text-[#64748B] hover:text-[#020817] hover:bg-white"
+                className="w-9 h-9 rounded-xl flex items-center justify-center transition-colors flex-shrink-0 text-[#64748B] hover:text-[#0F172A] hover:bg-white"
               >
                 <ChevronLeft size={24} />
               </button>
-              <h1 className="text-2xl font-bold text-[#043570]">Provider Profile</h1>
+              <h1 className="text-2xl font-bold text-[#0B2545]">Provider Profile</h1>
             </div>
 
             {/* Provider Card */}
@@ -87,35 +87,35 @@ export function ProviderProfile() {
                 />
                 <div className="flex-1">
                   <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-1">
-                    <h1 className="text-xl font-bold text-[#043570]">{provider.name}</h1>
+                    <h1 className="text-xl font-bold text-[#0B2545]">{provider.name}</h1>
                     
                     {/* Minimized Action Buttons */}
                     <div className="flex items-center gap-2 flex-shrink-0">
                       <button
                         onClick={() => setShowSwitchModal(true)}
-                        className="flex items-center gap-1.5 px-3 py-1.5 bg-[#f3faff] hover:bg-[#E2ECF5] border border-[#E2ECF5] rounded-lg transition-colors"
+                        className="flex items-center gap-1.5 px-3 py-1.5 bg-[#F1F7F7] hover:bg-[#E5EAF0] border border-[#E5EAF0] rounded-lg transition-colors"
                         title="Switch"
                       >
-                        <RefreshCw size={14} className="text-[#043570]" />
-                        <span className="text-xs font-medium text-[#043570]">Switch</span>
+                        <RefreshCw size={14} className="text-[#0B2545]" />
+                        <span className="text-xs font-medium text-[#0B2545]">Switch</span>
                       </button>
                       
                       <button
                         onClick={() => setShowRatingModal(true)}
-                        className="flex items-center gap-1.5 px-3 py-1.5 bg-[#f3faff] hover:bg-[#E2ECF5] border border-[#E2ECF5] rounded-lg transition-colors"
+                        className="flex items-center gap-1.5 px-3 py-1.5 bg-[#F1F7F7] hover:bg-[#E5EAF0] border border-[#E5EAF0] rounded-lg transition-colors"
                         title="Rate"
                       >
-                        <Star size={14} className="text-[#043570]" />
-                        <span className="text-xs font-medium text-[#043570]">Rate</span>
+                        <Star size={14} className="text-[#0B2545]" />
+                        <span className="text-xs font-medium text-[#0B2545]">Rate</span>
                       </button>
                       
                       <button
                         onClick={() => setShowReportModal(true)}
-                        className="flex items-center gap-1.5 px-3 py-1.5 bg-[#f3faff] hover:bg-[#E2ECF5] border border-[#E2ECF5] rounded-lg transition-colors"
+                        className="flex items-center gap-1.5 px-3 py-1.5 bg-[#F1F7F7] hover:bg-[#E5EAF0] border border-[#E5EAF0] rounded-lg transition-colors"
                         title="Report"
                       >
-                        <AlertCircle size={14} className="text-[#043570]" />
-                        <span className="text-xs font-medium text-[#043570]">Report</span>
+                        <AlertCircle size={14} className="text-[#0B2545]" />
+                        <span className="text-xs font-medium text-[#0B2545]">Report</span>
                       </button>
                     </div>
                   </div>
@@ -129,7 +129,7 @@ export function ProviderProfile() {
                     </div>
                   </div>
                   <div className="flex items-center gap-1.5 text-xs text-[#64748B]">
-                    <MapPin size={14} className="text-[#00c0ff]" />
+                    <MapPin size={14} className="text-[#13B5B1]" />
                     <span>{provider.location}</span>
                   </div>
                 </div>
@@ -145,7 +145,7 @@ export function ProviderProfile() {
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.2, delay: i * 0.03 }}
-                    className="px-3 py-1.5 bg-[#f3faff] text-[#043570] rounded-lg text-xs font-medium border border-[#E2ECF5]"
+                    className="px-3 py-1.5 bg-[#F1F7F7] text-[#0B2545] rounded-lg text-xs font-medium border border-[#E5EAF0]"
                   >
                     {spec}
                   </motion.span>
@@ -167,10 +167,10 @@ export function ProviderProfile() {
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3, delay: i * 0.05 }}
-                    className="aspect-video bg-gradient-to-br from-[#f3faff] to-[#E2ECF5] rounded-xl flex items-center justify-center cursor-pointer hover:scale-105 transition-transform"
+                    className="aspect-video bg-gradient-to-br from-[#F1F7F7] to-[#E5EAF0] rounded-xl flex items-center justify-center cursor-pointer hover:scale-105 transition-transform"
                   >
                     <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md">
-                      <div className="w-0 h-0 border-t-[6px] border-t-transparent border-l-[10px] border-l-[#043570] border-b-[6px] border-b-transparent ml-1"></div>
+                      <div className="w-0 h-0 border-t-[6px] border-t-transparent border-l-[10px] border-l-[#0B2545] border-b-[6px] border-b-transparent ml-1"></div>
                     </div>
                   </motion.div>
                 ))}
@@ -201,7 +201,7 @@ export function ProviderProfile() {
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.2, delay: i * 0.02 }}
-                    className="px-3 py-1.5 bg-[#f3faff] text-[#043570] rounded-lg text-xs font-medium border border-[#E2ECF5]"
+                    className="px-3 py-1.5 bg-[#F1F7F7] text-[#0B2545] rounded-lg text-xs font-medium border border-[#E5EAF0]"
                   >
                     {ins}
                   </motion.span>
@@ -214,7 +214,7 @@ export function ProviderProfile() {
               <div className="space-y-2">
                 {provider.timings.map((timing) => (
                   <div key={timing.day} className="flex items-center gap-3">
-                    <span className="text-xs font-medium text-[#043570] w-10">{timing.day}:</span>
+                    <span className="text-xs font-medium text-[#0B2545] w-10">{timing.day}:</span>
                     <div className="flex flex-wrap gap-2">
                       {timing.slots.length > 0 ? (
                         timing.slots.map((slot, i) => (
@@ -238,7 +238,7 @@ export function ProviderProfile() {
             {/* Availability */}
             <Section title="Availability" icon="📅">
               <div className="mb-4">
-                <button className="text-sm text-[#00c0ff] hover:text-[#043570] font-medium">
+                <button className="text-sm text-[#13B5B1] hover:text-[#0B2545] font-medium">
                   Choose the date
                 </button>
               </div>
@@ -254,8 +254,8 @@ export function ProviderProfile() {
                       <button
                         className={`w-full aspect-square rounded-lg text-sm font-medium transition-colors ${
                           isSelected
-                            ? "bg-[#00c0ff] text-white"
-                            : "bg-[#f3faff] text-[#043570] hover:bg-[#E2ECF5]"
+                            ? "bg-[#13B5B1] text-white"
+                            : "bg-[#F1F7F7] text-[#0B2545] hover:bg-[#E5EAF0]"
                         }`}
                       >
                         {dates[i]}
@@ -269,12 +269,12 @@ export function ProviderProfile() {
 
               {/* Available Times */}
               <div className="space-y-2">
-                <h4 className="text-sm font-semibold text-[#043570] mb-2">Available time slots:</h4>
+                <h4 className="text-sm font-semibold text-[#0B2545] mb-2">Available time slots:</h4>
                 <div className="grid grid-cols-3 gap-2">
                   {provider.availableSlots.map((slot, i) => (
                     <button
                       key={i}
-                      className="px-3 py-2 bg-[#f3faff] hover:bg-[#00c0ff] hover:text-white text-[#043570] rounded-lg text-xs font-medium border border-[#E2ECF5] transition-colors"
+                      className="px-3 py-2 bg-[#F1F7F7] hover:bg-[#13B5B1] hover:text-white text-[#0B2545] rounded-lg text-xs font-medium border border-[#E5EAF0] transition-colors"
                     >
                       {slot}
                     </button>
@@ -285,9 +285,9 @@ export function ProviderProfile() {
 
             {/* Location */}
             <Section title="Location" icon="📍">
-              <div className="bg-[#E2ECF5] rounded-xl overflow-hidden h-48 flex items-center justify-center">
+              <div className="bg-[#E5EAF0] rounded-xl overflow-hidden h-48 flex items-center justify-center">
                 <div className="text-center">
-                  <MapPin size={32} className="text-[#00c0ff] mx-auto mb-2" />
+                  <MapPin size={32} className="text-[#13B5B1] mx-auto mb-2" />
                   <p className="text-sm text-[#64748B]">{provider.location}</p>
                 </div>
               </div>
@@ -301,7 +301,7 @@ export function ProviderProfile() {
                     <Star key={i} size={16} className="fill-[#F59E0B] text-[#F59E0B]" />
                   ))}
                 </div>
-                <span className="text-sm font-semibold text-[#043570]">{provider.rating}</span>
+                <span className="text-sm font-semibold text-[#0B2545]">{provider.rating}</span>
                 <span className="text-xs text-[#64748B]">({provider.reviews} reviews)</span>
               </div>
 
@@ -324,10 +324,10 @@ export function ProviderProfile() {
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3, delay: i * 0.1 }}
-                    className="pb-4 border-b border-[#E2ECF5] last:border-b-0"
+                    className="pb-4 border-b border-[#E5EAF0] last:border-b-0"
                   >
                     <div className="flex items-center gap-2 mb-2">
-                      <span className="text-sm font-semibold text-[#043570]">{review.name}</span>
+                      <span className="text-sm font-semibold text-[#0B2545]">{review.name}</span>
                       <span className="text-xs text-[#64748B]">{review.date}</span>
                     </div>
                     <p className="text-sm text-[#64748B] leading-relaxed">{review.text}</p>
@@ -382,8 +382,8 @@ function Section({ title, icon, children }: { title: string; icon: string; child
       transition={{ duration: 0.3 }}
       className="bg-white rounded-2xl p-6 mb-4 shadow-sm"
     >
-      <h2 className="text-sm font-semibold text-[#043570] mb-4 flex items-center gap-2">
-        <EmojiIcon emoji={icon} size={16} className="text-[#043570]" />
+      <h2 className="text-sm font-semibold text-[#0B2545] mb-4 flex items-center gap-2">
+        <EmojiIcon emoji={icon} size={16} className="text-[#0B2545]" />
         {title}
       </h2>
       {children}
@@ -401,8 +401,8 @@ function InfoRow({ icon, label, value }: { icon: string; label: string; value: s
       className="bg-white rounded-2xl p-6 mb-4 shadow-sm"
     >
       <div className="flex items-center gap-2">
-        <EmojiIcon emoji={icon} size={16} className="text-[#043570]" />
-        <span className="text-sm font-semibold text-[#043570]">{label}:</span>
+        <EmojiIcon emoji={icon} size={16} className="text-[#0B2545]" />
+        <span className="text-sm font-semibold text-[#0B2545]">{label}:</span>
         <span className="text-sm text-[#64748B]">{value}</span>
       </div>
     </motion.div>

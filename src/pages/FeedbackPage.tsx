@@ -21,11 +21,11 @@ const CATEGORIES: Category[] = [
 ];
 
 const RATINGS: RatingLabel[] = [
-  { icon: Star, label: "Poor",      color: "text-[#64748B]",  bg: "bg-[#F8FAFC] border-[#E2E8F0]"  },
-  { icon: Star, label: "Fair",      color: "text-[#64748B]",  bg: "bg-[#F8FAFC] border-[#E2E8F0]"  },
-  { icon: Star, label: "Good",      color: "text-[#0D9488]",  bg: "bg-[#F1F5F9] border-[#E2E8F0]"  },
-  { icon: Star, label: "Very Good", color: "text-[#0D9488]",  bg: "bg-[#F1F5F9] border-[#E2E8F0]"  },
-  { icon: Star, label: "Excellent", color: "text-[#1E293B]",  bg: "bg-[#F1F5F9] border-[#E2E8F0]"  },
+  { icon: Star, label: "Poor",      color: "text-[#64748B]",  bg: "bg-[#F8FAFC] border-[#E5EAF0]"  },
+  { icon: Star, label: "Fair",      color: "text-[#64748B]",  bg: "bg-[#F8FAFC] border-[#E5EAF0]"  },
+  { icon: Star, label: "Good",      color: "text-[#0D9488]",  bg: "bg-[#F1F4F8] border-[#E5EAF0]"  },
+  { icon: Star, label: "Very Good", color: "text-[#0D9488]",  bg: "bg-[#F1F4F8] border-[#E5EAF0]"  },
+  { icon: Star, label: "Excellent", color: "text-[#0F172A]",  bg: "bg-[#F1F4F8] border-[#E5EAF0]"  },
 ];
 
 function StarRow({ value, onChange }: { value: number; onChange: (v: number) => void }) {
@@ -47,7 +47,7 @@ function StarRow({ value, onChange }: { value: number; onChange: (v: number) => 
             className={`transition-colors ${
               n <= (hovered || value)
                 ? "fill-[#0D9488] text-[#0D9488]"
-                : "text-[#E2E8F0] fill-[#F8FAFC]"
+                : "text-[#E5EAF0] fill-[#F8FAFC]"
             }`}
           />
         </motion.button>
@@ -103,8 +103,8 @@ export function FeedbackPage() {
             transition={{ duration: 0.35 }}
             className="flex items-center gap-3 mb-8"
           >
-            <div className="w-10 h-10 rounded-xl bg-[#F1F5F9] flex items-center justify-center">
-              <Lightbulb size={20} className="text-[#1E293B]" />
+            <div className="w-10 h-10 rounded-xl bg-[#F1F4F8] flex items-center justify-center">
+              <Lightbulb size={20} className="text-[#0F172A]" />
             </div>
             <div>
               <h1 className="text-xl md:text-2xl text-slate-900">Share Feedback</h1>
@@ -126,7 +126,7 @@ export function FeedbackPage() {
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
                   transition={{ type: "spring", stiffness: 260, damping: 20, delay: 0.1 }}
-                  className="w-20 h-20 rounded-full bg-[#F1F5F9] flex items-center justify-center mb-5"
+                  className="w-20 h-20 rounded-full bg-[#F1F4F8] flex items-center justify-center mb-5"
                 >
                   <CheckCircle2 size={40} className="text-[#0D9488]" />
                 </motion.div>
@@ -170,7 +170,7 @@ export function FeedbackPage() {
                                 <button key={cat.id} type="button"
                                   onClick={() => { setCategory(cat.id); setCatOpen(false); }}
                                   className={`w-full px-4 py-2.5 text-left text-sm transition-colors ${
-                                    category === cat.id ? "bg-[#F1F5F9] text-[#1E293B] font-medium" : "text-[#64748B] hover:bg-[#F8FAFC]"
+                                    category === cat.id ? "bg-[#F1F4F8] text-[#0F172A] font-medium" : "text-[#64748B] hover:bg-[#F8FAFC]"
                                   }`}
                                 >
                                   {cat.label}
@@ -201,7 +201,7 @@ export function FeedbackPage() {
                       <textarea
                         value={message} onChange={e => setMessage(e.target.value)} rows={5}
                         placeholder="Share your experience, suggestions, or anything you'd like us to know..."
-                        className="w-full border border-[#E2E8F0] rounded-xl px-4 py-3 text-sm text-[#020817] placeholder-[#E2E8F0] resize-none focus:outline-none focus:ring-2 focus:ring-[#F1F5F9] focus:border-[#0D9488] transition-all bg-[#F8FAFC]"
+                        className="w-full border border-[#E5EAF0] rounded-xl px-4 py-3 text-sm text-[#0F172A] placeholder-[#E5EAF0] resize-none focus:outline-none focus:ring-2 focus:ring-[#F1F4F8] focus:border-[#0D9488] transition-all bg-[#F8FAFC]"
                       />
                       <div className="flex items-center justify-between mt-2">
                         <button type="button" className="flex items-center gap-1.5 text-xs text-slate-400 hover:text-slate-600 transition-colors">
@@ -213,13 +213,13 @@ export function FeedbackPage() {
 
                     {/* Info */}
                     <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3, delay: 0.11 }}
-                      className="rounded-2xl p-4 border border-[#E2E8F0]"
-                      style={{ background: "linear-gradient(135deg,#F8FAFC 0%,#F1F5F9 100%)" }}
+                      className="rounded-2xl p-4 border border-[#E5EAF0]"
+                      style={{ background: "linear-gradient(135deg,#F8FAFC 0%,#F1F4F8 100%)" }}
                     >
                       <div className="flex items-start gap-2.5">
                         <Lightbulb size={16} className="text-[#0D9488] flex-shrink-0 mt-0.5" />
                         <div>
-                          <p className="text-[#1E293B] text-xs font-medium mb-1">Your feedback matters</p>
+                          <p className="text-[#0F172A] text-xs font-medium mb-1">Your feedback matters</p>
                           <p className="text-[#64748B] text-xs leading-relaxed">Every response is personally reviewed by our product team and helps shape the future of MantraCare.</p>
                         </div>
                       </div>
@@ -229,7 +229,7 @@ export function FeedbackPage() {
                     <motion.button type="submit" disabled={!canSubmit || submitting}
                       whileHover={canSubmit ? { scale: 1.02 } : {}} whileTap={canSubmit ? { scale: 0.97 } : {}}
                       className={`w-full flex items-center justify-center gap-2 py-3 rounded-xl text-sm font-medium transition-all ${
-                        canSubmit ? "bg-[#0F172A] hover:bg-[#1E293B] text-white shadow-sm" : "bg-[#CBD5E1] text-[#64748B] cursor-not-allowed"
+                        canSubmit ? "bg-[#0F172A] hover:bg-[#0F172A] text-white shadow-sm" : "bg-[#CBD5E1] text-[#64748B] cursor-not-allowed"
                       }`}
                     >
                       {submitting ? (

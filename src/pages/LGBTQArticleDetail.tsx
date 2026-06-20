@@ -556,7 +556,7 @@ export function LGBTQArticleDetail() {
             whileHover={{ x: -4 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => navigate(-1)}
-            className="flex items-center justify-center w-10 h-10 rounded-xl bg-white/80 backdrop-blur-sm text-[#64748B] hover:text-[#020817] hover:bg-white transition-all shadow-sm hover:shadow-md border border-gray-100 mb-8"
+            className="flex items-center justify-center w-10 h-10 rounded-xl bg-white/80 backdrop-blur-sm text-[#64748B] hover:text-[#0F172A] hover:bg-white transition-all shadow-sm hover:shadow-md border border-gray-100 mb-8"
           >
             <ChevronLeft size={20} strokeWidth={2.5} />
           </motion.button>
@@ -574,7 +574,7 @@ export function LGBTQArticleDetail() {
             </span>
 
             {/* Title */}
-            <h1 className="text-4xl md:text-5xl font-bold text-[#020817] mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#0F172A] mb-6 leading-tight">
               {article.title}
             </h1>
 
@@ -584,7 +584,7 @@ export function LGBTQArticleDetail() {
                 <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#8B5CF6] to-[#EC4899] flex items-center justify-center text-white font-bold text-sm">
                   {article.author.split(' ').map(n => n[0]).join('')}
                 </div>
-                <span className="font-medium text-[#020817]">{article.author}</span>
+                <span className="font-medium text-[#0F172A]">{article.author}</span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock size={16} className="text-[#94A3B8]" />
@@ -634,7 +634,7 @@ export function LGBTQArticleDetail() {
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.5 + index * 0.05 }}
-                    className="text-3xl font-bold text-[#020817] mt-12 mb-6 pb-3 border-b-2 border-[#8B5CF6]/20"
+                    className="text-3xl font-bold text-[#0F172A] mt-12 mb-6 pb-3 border-b-2 border-[#8B5CF6]/20"
                   >
                     {block.text}
                   </motion.h2>

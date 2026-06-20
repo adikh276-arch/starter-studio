@@ -124,12 +124,12 @@ export function Journal() {
                 <div className="flex items-center gap-3">
                   <button
                     onClick={() => navigate(-1)}
-                    className="flex items-center justify-center text-[#64748B] hover:text-[#043570] transition-colors"
+                    className="flex items-center justify-center text-[#64748B] hover:text-[#0B2545] transition-colors"
                   >
                     <ChevronLeft size={20} />
                   </button>
-                  <div className="w-10 h-10 bg-[#F1F5F9] rounded-md flex items-center justify-center flex-shrink-0">
-                    <Edit2 size={20} className="text-[#1E293B]" strokeWidth={2} />
+                  <div className="w-10 h-10 bg-[#F1F4F8] rounded-md flex items-center justify-center flex-shrink-0">
+                    <Edit2 size={20} className="text-[#0F172A]" strokeWidth={2} />
                   </div>
                   <div className="flex-1">
                     <h1 className="text-2xl text-[#0f172b] font-medium">Journal</h1>
@@ -142,7 +142,7 @@ export function Journal() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   onClick={() => navigate("/journal-new")}
-                  className="flex items-center gap-2 px-4 py-2.5 bg-[#043570] text-white rounded-xl hover:bg-[#032656] transition-colors shadow-lg shadow-[#043570]/20"
+                  className="flex items-center gap-2 px-4 py-2.5 bg-[#0B2545] text-white rounded-xl hover:bg-[#032656] transition-colors shadow-lg shadow-[#0B2545]/20"
                 >
                   <Plus size={18} />
                   <span className="hidden sm:inline font-medium text-sm">New Entry</span>
@@ -159,7 +159,7 @@ export function Journal() {
                     placeholder="Search your journal entries..."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    className="w-full pl-12 pr-4 py-3 bg-white border border-[#E2ECF5] rounded-xl text-sm text-[#020817] placeholder:text-[#94A3B8] focus:outline-none focus:ring-2 focus:ring-[#00c0ff] focus:border-transparent"
+                    className="w-full pl-12 pr-4 py-3 bg-white border border-[#E5EAF0] rounded-xl text-sm text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:ring-2 focus:ring-[#13B5B1] focus:border-transparent"
                   />
                 </div>
 
@@ -168,8 +168,8 @@ export function Journal() {
                   onClick={() => setShowFilters(!showFilters)}
                   className={`flex items-center gap-2 px-4 py-3 rounded-xl border transition-all ${
                     showFilters
-                      ? "bg-[#043570] text-white border-[#043570]"
-                      : "bg-white text-[#64748B] border-[#E2ECF5] hover:border-[#00c0ff]"
+                      ? "bg-[#0B2545] text-white border-[#0B2545]"
+                      : "bg-white text-[#64748B] border-[#E5EAF0] hover:border-[#13B5B1]"
                   }`}
                 >
                   <Filter size={20} />
@@ -191,7 +191,7 @@ export function Journal() {
                     transition={{ duration: 0.2 }}
                     className="overflow-hidden"
                   >
-                    <div className="bg-white border border-[#E2ECF5] rounded-xl p-4 mb-6">
+                    <div className="bg-white border border-[#E5EAF0] rounded-xl p-4 mb-6">
                       <label className="block text-sm font-medium text-[#64748B] mb-3">
                         Filter by mood:
                       </label>
@@ -200,8 +200,8 @@ export function Journal() {
                           onClick={() => setSelectedMood(null)}
                           className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
                             selectedMood === null
-                              ? "bg-[#043570] text-white"
-                              : "bg-[#f3faff] text-[#64748B] hover:bg-[#E2ECF5]"
+                              ? "bg-[#0B2545] text-white"
+                              : "bg-[#F1F7F7] text-[#64748B] hover:bg-[#E5EAF0]"
                           }`}
                         >
                           All Moods
@@ -212,8 +212,8 @@ export function Journal() {
                             onClick={() => setSelectedMood(key)}
                             className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all ${
                               selectedMood === key
-                                ? "bg-[#043570] text-white"
-                                : "bg-[#f3faff] text-[#64748B] hover:bg-[#E2ECF5]"
+                                ? "bg-[#0B2545] text-white"
+                                : "bg-[#F1F7F7] text-[#64748B] hover:bg-[#E5EAF0]"
                             }`}
                           >
                             <Icon size={16} style={{ color: selectedMood === key ? "white" : color }} />
@@ -230,11 +230,11 @@ export function Journal() {
             {/* Journal Entries */}
             <div className="space-y-3">
               {filteredEntries.length === 0 ? (
-                <div className="bg-white rounded-xl border border-[#E2ECF5] p-12 text-center">
-                  <div className="w-20 h-20 bg-[#f3faff] rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Edit2 size={32} className="text-[#00c0ff]" />
+                <div className="bg-white rounded-xl border border-[#E5EAF0] p-12 text-center">
+                  <div className="w-20 h-20 bg-[#F1F7F7] rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Edit2 size={32} className="text-[#13B5B1]" />
                   </div>
-                  <h3 className="text-xl font-semibold text-[#020817] mb-2">No entries found</h3>
+                  <h3 className="text-xl font-semibold text-[#0F172A] mb-2">No entries found</h3>
                   <p className="text-[#64748B] mb-6">
                     {searchQuery || selectedMood
                       ? "Try adjusting your search or filters"
@@ -242,7 +242,7 @@ export function Journal() {
                   </p>
                   <button
                     onClick={() => navigate("/journal-new")}
-                    className="px-6 py-3 bg-[#043570] text-white rounded-xl hover:bg-[#032656] transition-colors font-medium inline-flex items-center gap-2"
+                    className="px-6 py-3 bg-[#0B2545] text-white rounded-xl hover:bg-[#032656] transition-colors font-medium inline-flex items-center gap-2"
                   >
                     <Plus size={20} />
                     Write Your First Entry
@@ -260,7 +260,7 @@ export function Journal() {
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: index * 0.05 }}
-                      className="bg-white rounded-xl border border-[#E2ECF5] hover:border-[#00c0ff] transition-all overflow-hidden group cursor-pointer"
+                      className="bg-white rounded-xl border border-[#E5EAF0] hover:border-[#13B5B1] transition-all overflow-hidden group cursor-pointer"
                       onClick={() => navigate(`/journal/${entry.id}`)}
                     >
                       <div className="p-5">
@@ -268,7 +268,7 @@ export function Journal() {
                         <div className="flex items-start gap-4">
                           {/* Date Badge */}
                           <div className="flex-shrink-0">
-                            <div className="bg-[#00c0ff] text-white rounded-lg px-3 py-2 text-center min-w-[56px]">
+                            <div className="bg-[#13B5B1] text-white rounded-lg px-3 py-2 text-center min-w-[56px]">
                               <div className="text-[10px] font-semibold uppercase tracking-wide">
                                 {entry.date.toLocaleDateString("en-US", { month: "short" })}
                               </div>
@@ -282,7 +282,7 @@ export function Journal() {
                           <div className="flex-1 min-w-0">
                             {/* Title and Metadata on Same Line */}
                             <div className="flex items-center justify-between gap-4 mb-2">
-                              <h3 className="text-base font-semibold text-[#020817] truncate">
+                              <h3 className="text-base font-semibold text-[#0F172A] truncate">
                                 {entry.title}
                               </h3>
                               
@@ -325,7 +325,7 @@ export function Journal() {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               onClick={() => navigate("/journal-new")}
-              className="md:hidden fixed bottom-20 right-6 w-14 h-14 bg-[#043570] text-white rounded-full shadow-xl shadow-[#043570]/30 flex items-center justify-center z-40"
+              className="md:hidden fixed bottom-20 right-6 w-14 h-14 bg-[#0B2545] text-white rounded-full shadow-xl shadow-[#0B2545]/30 flex items-center justify-center z-40"
             >
               <Plus size={24} />
             </motion.button>

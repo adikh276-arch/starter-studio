@@ -117,12 +117,12 @@ export function HealthOCDPage() {
             <div className="flex items-center gap-4 mb-2">
               <button
                 onClick={() => navigate(-1)}
-                className="flex items-center justify-center w-9 h-9 rounded-lg text-[#64748B] hover:text-[#043570] hover:bg-white/80 transition-all"
+                className="flex items-center justify-center w-9 h-9 rounded-lg text-[#64748B] hover:text-[#0B2545] hover:bg-white/80 transition-all"
               >
                 <ChevronLeft size={20} strokeWidth={2.5} />
               </button>
               <div>
-                <h1 className="text-2xl font-bold text-[#020817]">Health OCD</h1>
+                <h1 className="text-2xl font-bold text-[#0F172A]">Health OCD</h1>
                 <p className="text-sm text-[#64748B]">Resources and tools for managing Health OCD</p>
               </div>
             </div>
@@ -144,7 +144,7 @@ export function HealthOCDPage() {
                   <Lightbulb size={28} className="text-white" strokeWidth={2} />
                 </div>
                 <div className="text-left">
-                  <h3 className="text-lg font-semibold text-[#020817]">Tips</h3>
+                  <h3 className="text-lg font-semibold text-[#0F172A]">Tips</h3>
                   <p className="text-sm text-[#64748B]">Daily wisdom for your wellbeing</p>
                 </div>
               </div>
@@ -167,7 +167,7 @@ export function HealthOCDPage() {
                   <div className="p-5 space-y-3">
                     <div className="space-y-4">
                       <div className="bg-[#F0F4FF] border border-[#C7D7FE] rounded-xl p-4">
-                        <h4 className="text-sm font-semibold text-[#020817] mb-2">
+                        <h4 className="text-sm font-semibold text-[#0F172A] mb-2">
                           1. Recognize Reassurance-Seeking Behavior
                         </h4>
                         <p className="text-xs text-[#64748B]">
@@ -176,7 +176,7 @@ export function HealthOCDPage() {
                       </div>
 
                       <div className="bg-[#F0F4FF] border border-[#C7D7FE] rounded-xl p-4">
-                        <h4 className="text-sm font-semibold text-[#020817] mb-2">
+                        <h4 className="text-sm font-semibold text-[#0F172A] mb-2">
                           2. Practice "Maybe" Thinking
                         </h4>
                         <p className="text-xs text-[#64748B]">
@@ -185,7 +185,7 @@ export function HealthOCDPage() {
                       </div>
 
                       <div className="bg-[#F0F4FF] border border-[#C7D7FE] rounded-xl p-4">
-                        <h4 className="text-sm font-semibold text-[#020817] mb-2">
+                        <h4 className="text-sm font-semibold text-[#0F172A] mb-2">
                           3. Delay Checking and Googling
                         </h4>
                         <p className="text-xs text-[#64748B]">
@@ -194,7 +194,7 @@ export function HealthOCDPage() {
                       </div>
 
                       <div className="bg-[#F0F4FF] border border-[#C7D7FE] rounded-xl p-4">
-                        <h4 className="text-sm font-semibold text-[#020817] mb-2">
+                        <h4 className="text-sm font-semibold text-[#0F172A] mb-2">
                           4. Label Thoughts as OCD
                         </h4>
                         <p className="text-xs text-[#64748B]">
@@ -203,7 +203,7 @@ export function HealthOCDPage() {
                       </div>
 
                       <div className="bg-[#F0F4FF] border border-[#C7D7FE] rounded-xl p-4">
-                        <h4 className="text-sm font-semibold text-[#020817] mb-2">
+                        <h4 className="text-sm font-semibold text-[#0F172A] mb-2">
                           5. Engage in Valued Activities
                         </h4>
                         <p className="text-xs text-[#64748B]">
@@ -233,7 +233,7 @@ export function HealthOCDPage() {
                   <ImageIcon size={28} className="text-white" strokeWidth={2} />
                 </div>
                 <div className="text-left">
-                  <h3 className="text-lg font-semibold text-[#020817]">Myths</h3>
+                  <h3 className="text-lg font-semibold text-[#0F172A]">Myths</h3>
                   <p className="text-sm text-[#64748B]">Debunking harmful stereotypes</p>
                 </div>
               </div>
@@ -264,7 +264,7 @@ export function HealthOCDPage() {
                             {myth.id}
                           </div>
                           <div className="flex-1">
-                            <h4 className="text-sm font-semibold text-[#020817] mb-1">
+                            <h4 className="text-sm font-semibold text-[#0F172A] mb-1">
                               {myth.title}
                             </h4>
                             <p className="text-xs text-[#64748B]">
@@ -292,7 +292,7 @@ export function HealthOCDPage() {
                   <Shield size={24} className="text-white" strokeWidth={2} />
                 </div>
                 <div>
-                  <h2 className="text-lg font-semibold text-[#020817]">Interactive Tools</h2>
+                  <h2 className="text-lg font-semibold text-[#0F172A]">Interactive Tools</h2>
                   <p className="text-sm text-[#64748B]">Exercises for recovery and wellness</p>
                 </div>
               </div>
@@ -318,7 +318,7 @@ export function HealthOCDPage() {
                   >
                     <tool.icon size={28} style={{ color: tool.iconColor }} strokeWidth={2} />
                   </div>
-                  <p className="text-sm font-medium text-[#020817] text-center">
+                  <p className="text-sm font-medium text-[#0F172A] text-center">
                     {tool.label}
                   </p>
                 </motion.button>

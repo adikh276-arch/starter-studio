@@ -370,7 +370,7 @@ export function MindfulnessSelfCare() {
                 onClick={() => navigate('/daily-program/1')}
                 whileHover={{ scale: 1.02, y: -2 }}
                 whileTap={{ scale: 0.98 }}
-                className="w-full relative overflow-hidden bg-gradient-to-br from-[#1a2744] to-[#0f172a] border-2 border-[#1E293B]/50 rounded-2xl px-5 py-5 flex items-center justify-between shadow-lg hover:shadow-2xl transition-all duration-300 group"
+                className="w-full relative overflow-hidden bg-gradient-to-br from-[#1a2744] to-[#0f172a] border-2 border-[#0F172A]/50 rounded-2xl px-5 py-5 flex items-center justify-between shadow-lg hover:shadow-2xl transition-all duration-300 group"
               >
                 {/* Animated gradient overlay */}
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
@@ -445,7 +445,7 @@ export function MindfulnessSelfCare() {
                     initial={{ opacity: 0, y: 12 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3, delay: 0.45 + i * 0.08 }}
-                    className="bg-[#1A2744] hover:bg-[#1f3060] rounded-2xl overflow-hidden transition-all group text-left shadow-lg hover:shadow-xl border border-[#1E293B]/30"
+                    className="bg-[#1A2744] hover:bg-[#1f3060] rounded-2xl overflow-hidden transition-all group text-left shadow-lg hover:shadow-xl border border-[#0F172A]/30"
                     onClick={() => navigate('/meditation-detail/1')}
                   >
                     {/* Image Container */}
@@ -462,7 +462,7 @@ export function MindfulnessSelfCare() {
                       {/* Play button overlay */}
                       <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center shadow-xl">
-                          <Play size={20} className="text-[#043570] ml-0.5" fill="currentColor" />
+                          <Play size={20} className="text-[#0B2545] ml-0.5" fill="currentColor" />
                         </div>
                       </div>
 
@@ -486,7 +486,7 @@ export function MindfulnessSelfCare() {
                         {favorite.title}
                       </h4>
                       <div className="flex items-center gap-1.5 flex-wrap">
-                        <span className="px-2 py-0.5 rounded-full text-[10px] md:text-xs font-medium bg-[#00c0ff]/15 text-[#00c0ff] border border-[#00c0ff]/25">
+                        <span className="px-2 py-0.5 rounded-full text-[10px] md:text-xs font-medium bg-[#13B5B1]/15 text-[#13B5B1] border border-[#13B5B1]/25">
                           {favorite.type}
                         </span>
                         <span className="text-[10px] md:text-xs text-slate-400">

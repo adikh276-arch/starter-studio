@@ -121,7 +121,7 @@ export function LGBTQArticles() {
             whileHover={{ x: -4 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => navigate(-1)}
-            className="flex items-center justify-center w-10 h-10 rounded-xl bg-white/80 backdrop-blur-sm text-[#64748B] hover:text-[#020817] hover:bg-white transition-all shadow-sm hover:shadow-md border border-gray-100 mb-6"
+            className="flex items-center justify-center w-10 h-10 rounded-xl bg-white/80 backdrop-blur-sm text-[#64748B] hover:text-[#0F172A] hover:bg-white transition-all shadow-sm hover:shadow-md border border-gray-100 mb-6"
           >
             <ChevronLeft size={20} strokeWidth={2.5} />
           </motion.button>
@@ -133,7 +133,7 @@ export function LGBTQArticles() {
             transition={{ delay: 0.1 }}
             className="mb-10"
           >
-            <h1 className="text-4xl md:text-5xl font-bold text-[#020817] mb-4 bg-gradient-to-r from-[#8B5CF6] to-[#EC4899] bg-clip-text text-transparent">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#0F172A] mb-4 bg-gradient-to-r from-[#8B5CF6] to-[#EC4899] bg-clip-text text-transparent">
               Articles
             </h1>
             <p className="text-[#64748B] text-lg md:text-xl">
@@ -189,7 +189,7 @@ export function LGBTQArticles() {
             transition={{ delay: 0.3 }}
             className="mb-8"
           >
-            <h2 className="text-2xl md:text-3xl font-bold text-[#020817] flex items-center gap-3">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#0F172A] flex items-center gap-3">
               More to Read
               <span className="text-base font-normal text-[#94A3B8]">({articles.length} articles)</span>
             </h2>
@@ -219,7 +219,7 @@ export function LGBTQArticles() {
                     </span>
                   </div>
 
-                  <h3 className="text-xl font-bold text-[#020817] leading-tight group-hover:text-[#8B5CF6] transition-colors">
+                  <h3 className="text-xl font-bold text-[#0F172A] leading-tight group-hover:text-[#8B5CF6] transition-colors">
                     {article.title}
                   </h3>
 

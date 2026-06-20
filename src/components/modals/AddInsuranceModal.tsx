@@ -153,7 +153,7 @@ export function AddInsuranceModal({ isOpen, onClose }: AddInsuranceModalProps) {
               className="relative bg-white rounded-2xl shadow-2xl w-full max-w-[640px] overflow-hidden"
             >
               {/* Header */}
-              <div className="px-6 py-5 border-b border-slate-200 bg-gradient-to-r from-[#043570] to-[#00c0ff]">
+              <div className="px-6 py-5 border-b border-slate-200 bg-gradient-to-r from-[#0B2545] to-[#13B5B1]">
                 <div className="flex items-center justify-between">
                   <h2 className="text-lg font-semibold text-white">
                     Edit Insurance Coverage
@@ -228,12 +228,12 @@ export function AddInsuranceModal({ isOpen, onClose }: AddInsuranceModalProps) {
                         <div className="relative">
                           <button
                             onClick={() => setShowStateDropdown(!showStateDropdown)}
-                            className="w-full px-4 py-3.5 bg-[#f3faff] border-2 border-[#00c0ff]/30 rounded-xl text-left flex items-center justify-between hover:border-[#00c0ff] transition-all group"
+                            className="w-full px-4 py-3.5 bg-[#F1F7F7] border-2 border-[#13B5B1]/30 rounded-xl text-left flex items-center justify-between hover:border-[#13B5B1] transition-all group"
                           >
-                            <span className="text-[#043570] font-medium">{state || "Select state"}</span>
+                            <span className="text-[#0B2545] font-medium">{state || "Select state"}</span>
                             <ChevronDown
                               size={18}
-                              className={`text-[#00c0ff] transition-transform duration-300 ${
+                              className={`text-[#13B5B1] transition-transform duration-300 ${
                                 showStateDropdown ? "rotate-180" : ""
                               }`}
                             />
@@ -246,7 +246,7 @@ export function AddInsuranceModal({ isOpen, onClose }: AddInsuranceModalProps) {
                                 animate={{ opacity: 1, height: "auto" }}
                                 exit={{ opacity: 0, height: 0 }}
                                 transition={{ duration: 0.3 }}
-                                className="absolute top-full left-0 right-0 mt-2 bg-white border-2 border-[#00c0ff]/30 rounded-xl shadow-xl overflow-hidden z-10"
+                                className="absolute top-full left-0 right-0 mt-2 bg-white border-2 border-[#13B5B1]/30 rounded-xl shadow-xl overflow-hidden z-10"
                               >
                                 <div className="max-h-[250px] overflow-y-auto">
                                   {US_STATES.map((stateOption, index) => (
@@ -261,13 +261,13 @@ export function AddInsuranceModal({ isOpen, onClose }: AddInsuranceModalProps) {
                                       }}
                                       className={`w-full px-4 py-3 text-left transition-all flex items-center justify-between group ${
                                         stateOption === state
-                                          ? "bg-[#043570] text-white"
-                                          : "text-[#043570] hover:bg-[#f3faff]"
+                                          ? "bg-[#0B2545] text-white"
+                                          : "text-[#0B2545] hover:bg-[#F1F7F7]"
                                       }`}
                                     >
                                       <span className="font-medium">{stateOption}</span>
                                       {stateOption === state && (
-                                        <Check size={18} className="text-[#00c0ff]" />
+                                        <Check size={18} className="text-[#13B5B1]" />
                                       )}
                                     </motion.button>
                                   ))}
@@ -286,12 +286,12 @@ export function AddInsuranceModal({ isOpen, onClose }: AddInsuranceModalProps) {
                         <div className="relative">
                           <button
                             onClick={() => setShowCarrierDropdown(!showCarrierDropdown)}
-                            className="w-full px-4 py-3.5 bg-[#f3faff] border-2 border-[#00c0ff]/30 rounded-xl text-left flex items-center justify-between hover:border-[#00c0ff] transition-all group"
+                            className="w-full px-4 py-3.5 bg-[#F1F7F7] border-2 border-[#13B5B1]/30 rounded-xl text-left flex items-center justify-between hover:border-[#13B5B1] transition-all group"
                           >
-                            <span className="text-[#043570] font-medium">{carrier}</span>
+                            <span className="text-[#0B2545] font-medium">{carrier}</span>
                             <ChevronDown
                               size={18}
-                              className={`text-[#00c0ff] transition-transform duration-300 ${
+                              className={`text-[#13B5B1] transition-transform duration-300 ${
                                 showCarrierDropdown ? "rotate-180" : ""
                               }`}
                             />
@@ -304,7 +304,7 @@ export function AddInsuranceModal({ isOpen, onClose }: AddInsuranceModalProps) {
                                 animate={{ opacity: 1, height: "auto" }}
                                 exit={{ opacity: 0, height: 0 }}
                                 transition={{ duration: 0.3 }}
-                                className="mt-2 bg-white border-2 border-[#00c0ff]/30 rounded-xl shadow-xl overflow-hidden"
+                                className="mt-2 bg-white border-2 border-[#13B5B1]/30 rounded-xl shadow-xl overflow-hidden"
                               >
                                 <div className="max-h-[400px] overflow-y-auto">
                                   {INSURANCE_CARRIERS.map((carrierOption, index) => (
@@ -316,13 +316,13 @@ export function AddInsuranceModal({ isOpen, onClose }: AddInsuranceModalProps) {
                                       onClick={() => handleCarrierSelect(carrierOption)}
                                       className={`w-full px-4 py-3.5 text-left transition-all flex items-center justify-between group ${
                                         carrierOption === carrier
-                                          ? "bg-[#043570] text-white"
-                                          : "text-[#043570] hover:bg-[#f3faff]"
+                                          ? "bg-[#0B2545] text-white"
+                                          : "text-[#0B2545] hover:bg-[#F1F7F7]"
                                       }`}
                                     >
                                       <span className="font-medium">{carrierOption}</span>
                                       {carrierOption === carrier && (
-                                        <Check size={18} className="text-[#00c0ff]" />
+                                        <Check size={18} className="text-[#13B5B1]" />
                                       )}
                                     </motion.button>
                                   ))}
@@ -511,7 +511,7 @@ export function AddInsuranceModal({ isOpen, onClose }: AddInsuranceModalProps) {
                       <div className="pt-4">
                         <button
                           onClick={() => setStep(3)}
-                          className="w-full py-3 px-4 bg-[#00c0ff] hover:bg-[#043570] text-white rounded-lg transition-colors font-medium"
+                          className="w-full py-3 px-4 bg-[#13B5B1] hover:bg-[#0B2545] text-white rounded-lg transition-colors font-medium"
                         >
                           Continue
                         </button>
@@ -547,7 +547,7 @@ export function AddInsuranceModal({ isOpen, onClose }: AddInsuranceModalProps) {
                         </label>
                         <div
                           onClick={() => frontInputRef.current?.click()}
-                          className="border-2 border-dashed border-slate-300 rounded-lg px-6 py-12 flex flex-col items-center justify-center cursor-pointer hover:border-[#00c0ff] hover:bg-[#f3faff] transition-colors"
+                          className="border-2 border-dashed border-slate-300 rounded-lg px-6 py-12 flex flex-col items-center justify-center cursor-pointer hover:border-[#13B5B1] hover:bg-[#F1F7F7] transition-colors"
                         >
                           {frontCardFile ? (
                             <div className="text-center">
@@ -564,7 +564,7 @@ export function AddInsuranceModal({ isOpen, onClose }: AddInsuranceModalProps) {
                               <Upload size={32} className="text-slate-400 mb-3" />
                               <p className="text-sm text-slate-900 text-center">
                                 Drag and drop a file or{" "}
-                                <span className="text-[#00c0ff] font-medium">
+                                <span className="text-[#13B5B1] font-medium">
                                   browse your device
                                 </span>
                               </p>
@@ -593,7 +593,7 @@ export function AddInsuranceModal({ isOpen, onClose }: AddInsuranceModalProps) {
                         </label>
                         <div
                           onClick={() => backInputRef.current?.click()}
-                          className="border-2 border-dashed border-slate-300 rounded-lg px-6 py-12 flex flex-col items-center justify-center cursor-pointer hover:border-[#00c0ff] hover:bg-[#f3faff] transition-colors"
+                          className="border-2 border-dashed border-slate-300 rounded-lg px-6 py-12 flex flex-col items-center justify-center cursor-pointer hover:border-[#13B5B1] hover:bg-[#F1F7F7] transition-colors"
                         >
                           {backCardFile ? (
                             <div className="text-center">
@@ -610,7 +610,7 @@ export function AddInsuranceModal({ isOpen, onClose }: AddInsuranceModalProps) {
                               <Upload size={32} className="text-slate-400 mb-3" />
                               <p className="text-sm text-slate-900 text-center">
                                 Drag and drop a file or{" "}
-                                <span className="text-[#00c0ff] font-medium">
+                                <span className="text-[#13B5B1] font-medium">
                                   browse your device
                                 </span>
                               </p>
@@ -642,7 +642,7 @@ export function AddInsuranceModal({ isOpen, onClose }: AddInsuranceModalProps) {
                         </button>
                         <button
                           onClick={handleSaveChanges}
-                          className="px-6 py-2.5 bg-[#00c0ff] hover:bg-[#043570] text-white rounded-lg transition-colors font-medium"
+                          className="px-6 py-2.5 bg-[#13B5B1] hover:bg-[#0B2545] text-white rounded-lg transition-colors font-medium"
                         >
                           Save changes
                         </button>

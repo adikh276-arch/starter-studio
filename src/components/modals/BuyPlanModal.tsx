@@ -39,7 +39,7 @@ export function BuyPlanModal({
         return (
           <>
             <p className="text-[#64748B] mb-4">
-              Hi {userName}, You have <span className="font-semibold text-[#020817]">0</span> {serviceName} session remaining.{" "}
+              Hi {userName}, You have <span className="font-semibold text-[#0F172A]">0</span> {serviceName} session remaining.{" "}
               <button
                 onClick={() => {
                   if (onShowSessionDetails) {
@@ -47,7 +47,7 @@ export function BuyPlanModal({
                     onShowSessionDetails();
                   }
                 }}
-                className="text-[#00c0ff] hover:text-[#043570] font-medium inline-flex items-center gap-0.5 transition-colors"
+                className="text-[#13B5B1] hover:text-[#0B2545] font-medium inline-flex items-center gap-0.5 transition-colors"
               >
                 Details
                 <ChevronRight size={16} className="mt-0.5" />
@@ -57,14 +57,14 @@ export function BuyPlanModal({
             
             {/* Buttons side by side with "or" in between */}
             <div className="flex items-center gap-3">
-              <button className="flex-1 bg-[#00c0ff] hover:bg-[#00a8e0] text-white py-2 rounded-xl font-medium transition-colors flex items-center justify-center gap-2 border border-[#00c0ff]">
+              <button className="flex-1 bg-[#13B5B1] hover:bg-[#00a8e0] text-white py-2 rounded-xl font-medium transition-colors flex items-center justify-center gap-2 border border-[#13B5B1]">
                 <Gift size={18} />
                 {serviceName} Plans
               </button>
               
               <span className="text-sm text-[#64748B] font-medium">or</span>
               
-              <button className="flex-1 bg-[#F8FAFC] hover:bg-[#F1F5F9] text-[#64748B] py-2 rounded-xl font-medium border border-[#E2E8F0] transition-colors">
+              <button className="flex-1 bg-[#F8FAFC] hover:bg-[#F1F4F8] text-[#64748B] py-2 rounded-xl font-medium border border-[#E5EAF0] transition-colors">
                 All Plans
               </button>
             </div>
@@ -75,7 +75,7 @@ export function BuyPlanModal({
         return (
           <>
             <p className="text-[#64748B] mb-4">
-              Hi {userName}, You have <span className="font-semibold text-[#020817]">0</span> {serviceName} session remaining.{" "}
+              Hi {userName}, You have <span className="font-semibold text-[#0F172A]">0</span> {serviceName} session remaining.{" "}
               <button
                 onClick={() => {
                   if (onShowSessionDetails) {
@@ -83,7 +83,7 @@ export function BuyPlanModal({
                     onShowSessionDetails();
                   }
                 }}
-                className="text-[#00c0ff] hover:text-[#043570] font-medium inline-flex items-center gap-0.5 transition-colors"
+                className="text-[#13B5B1] hover:text-[#0B2545] font-medium inline-flex items-center gap-0.5 transition-colors"
               >
                 Details
                 <ChevronRight size={16} className="mt-0.5" />
@@ -93,14 +93,14 @@ export function BuyPlanModal({
             
             {/* Buttons side by side with "or" in between */}
             <div className="flex items-center gap-3">
-              <button className="flex-1 bg-[#00c0ff] hover:bg-[#00a8e0] text-white py-2 rounded-xl font-medium transition-colors flex items-center justify-center gap-2 border border-[#00c0ff]">
+              <button className="flex-1 bg-[#13B5B1] hover:bg-[#00a8e0] text-white py-2 rounded-xl font-medium transition-colors flex items-center justify-center gap-2 border border-[#13B5B1]">
                 <Gift size={18} />
                 {serviceName} Plans
               </button>
               
               <span className="text-sm text-[#64748B] font-medium">or</span>
               
-              <button className="flex-1 bg-[#F8FAFC] hover:bg-[#F1F5F9] text-[#64748B] py-2 rounded-xl font-medium border border-[#E2E8F0] transition-colors">
+              <button className="flex-1 bg-[#F8FAFC] hover:bg-[#F1F4F8] text-[#64748B] py-2 rounded-xl font-medium border border-[#E5EAF0] transition-colors">
                 All Plans
               </button>
             </div>
@@ -116,14 +116,14 @@ export function BuyPlanModal({
             
             {/* Buttons side by side with "or" in between */}
             <div className="flex items-center gap-3">
-              <button className="flex-1 bg-[#00c0ff] hover:bg-[#00a8e0] text-white py-2 rounded-xl font-medium transition-colors flex items-center justify-center gap-2 border border-[#00c0ff]">
+              <button className="flex-1 bg-[#13B5B1] hover:bg-[#00a8e0] text-white py-2 rounded-xl font-medium transition-colors flex items-center justify-center gap-2 border border-[#13B5B1]">
                 <Gift size={18} />
                 {serviceName} Plans
               </button>
               
               <span className="text-sm text-[#64748B] font-medium">or</span>
               
-              <button className="flex-1 bg-[#F8FAFC] hover:bg-[#F1F5F9] text-[#64748B] py-2 rounded-xl font-medium border border-[#E2E8F0] transition-colors">
+              <button className="flex-1 bg-[#F8FAFC] hover:bg-[#F1F4F8] text-[#64748B] py-2 rounded-xl font-medium border border-[#E5EAF0] transition-colors">
                 All Plans
               </button>
             </div>
@@ -137,12 +137,12 @@ export function BuyPlanModal({
               Hi {userName}! You have an active Mantra in-house therapy plan.
             </p>
             <p className="text-[#64748B] mb-4">
-              Choosing <span className="font-semibold text-[#020817]">{providerName} (external provider)</span> will:
+              Choosing <span className="font-semibold text-[#0F172A]">{providerName} (external provider)</span> will:
             </p>
             <ul className="text-[#64748B] mb-4 space-y-2 ml-1">
               <li className="flex items-start gap-2">
                 <span className="mt-1">•</span>
-                <span>Replace <span className="font-semibold text-[#020817]">Aheesha</span>, your current therapist</span>
+                <span>Replace <span className="font-semibold text-[#0F172A]">Aheesha</span>, your current therapist</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-1">•</span>
@@ -155,13 +155,13 @@ export function BuyPlanModal({
             
             {/* Buttons stacked with "or" in between */}
             <div className="flex flex-col items-center gap-2">
-              <button className="w-full bg-[#00c0ff] hover:bg-[#00a8e0] text-white py-2 rounded-xl font-medium transition-colors border border-[#00c0ff]">
+              <button className="w-full bg-[#13B5B1] hover:bg-[#00a8e0] text-white py-2 rounded-xl font-medium transition-colors border border-[#13B5B1]">
                 No, I will consume Mantra sessions first (recommended)
               </button>
               
               <span className="text-sm text-[#64748B] font-medium">or</span>
               
-              <button className="w-full bg-[#F8FAFC] hover:bg-[#F1F5F9] text-[#64748B] py-2 rounded-xl font-medium border border-[#E2E8F0] transition-colors">
+              <button className="w-full bg-[#F8FAFC] hover:bg-[#F1F4F8] text-[#64748B] py-2 rounded-xl font-medium border border-[#E5EAF0] transition-colors">
                 Yes, I want to proceed with the new provider
               </button>
             </div>
@@ -172,15 +172,15 @@ export function BuyPlanModal({
         return (
           <>
             <p className="text-[#64748B] mb-4">
-              Hi {userName}! You have an active plan with <span className="font-semibold text-[#020817]">{providerName} (external provider)</span>.
+              Hi {userName}! You have an active plan with <span className="font-semibold text-[#0F172A]">{providerName} (external provider)</span>.
             </p>
             <p className="text-[#64748B] mb-4">
-              Choosing <span className="font-semibold text-[#020817]">Aheesha (Mantra In-house provider)</span> will:
+              Choosing <span className="font-semibold text-[#0F172A]">Aheesha (Mantra In-house provider)</span> will:
             </p>
             <ul className="text-[#64748B] mb-4 space-y-2 ml-1">
               <li className="flex items-start gap-2">
                 <span className="mt-1">•</span>
-                <span>Replace <span className="font-semibold text-[#020817]">{providerName}</span>, your current therapist</span>
+                <span>Replace <span className="font-semibold text-[#0F172A]">{providerName}</span>, your current therapist</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-1">•</span>
@@ -193,13 +193,13 @@ export function BuyPlanModal({
             
             {/* Buttons stacked with "or" in between */}
             <div className="flex flex-col items-center gap-2">
-              <button className="w-full bg-[#00c0ff] hover:bg-[#00a8e0] text-white py-2 rounded-xl font-medium transition-colors border border-[#00c0ff]">
+              <button className="w-full bg-[#13B5B1] hover:bg-[#00a8e0] text-white py-2 rounded-xl font-medium transition-colors border border-[#13B5B1]">
                 Use {providerName}'s sessions first (recommended)
               </button>
               
               <span className="text-sm text-[#64748B] font-medium">or</span>
               
-              <button className="w-full bg-[#F8FAFC] hover:bg-[#F1F5F9] text-[#64748B] py-2 rounded-xl font-medium border border-[#E2E8F0] transition-colors">
+              <button className="w-full bg-[#F8FAFC] hover:bg-[#F1F4F8] text-[#64748B] py-2 rounded-xl font-medium border border-[#E5EAF0] transition-colors">
                 Proceed with Aheesha
               </button>
             </div>
@@ -213,12 +213,12 @@ export function BuyPlanModal({
               Hi {userName}! You have an active Mantra in-house therapy plan.
             </p>
             <p className="text-[#64748B] mb-4">
-              Choosing <span className="font-semibold text-[#020817]">{providerName} (external provider)</span> will:
+              Choosing <span className="font-semibold text-[#0F172A]">{providerName} (external provider)</span> will:
             </p>
             <ul className="text-[#64748B] mb-4 space-y-2 ml-1">
               <li className="flex items-start gap-2">
                 <span className="mt-1">•</span>
-                <span>Replace <span className="font-semibold text-[#020817]">Aheesha</span>, your current therapist</span>
+                <span>Replace <span className="font-semibold text-[#0F172A]">Aheesha</span>, your current therapist</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-1">•</span>
@@ -231,13 +231,13 @@ export function BuyPlanModal({
             
             {/* Buttons stacked with "or" in between */}
             <div className="flex flex-col items-center gap-2">
-              <button className="w-full bg-[#00c0ff] hover:bg-[#00a8e0] text-white py-2 rounded-xl font-medium transition-colors border border-[#00c0ff]">
+              <button className="w-full bg-[#13B5B1] hover:bg-[#00a8e0] text-white py-2 rounded-xl font-medium transition-colors border border-[#13B5B1]">
                 No, I will consume Mantra sessions first (recommended)
               </button>
               
               <span className="text-sm text-[#64748B] font-medium">or</span>
               
-              <button className="w-full bg-[#F8FAFC] hover:bg-[#F1F5F9] text-[#64748B] py-2 rounded-xl font-medium border border-[#E2E8F0] transition-colors">
+              <button className="w-full bg-[#F8FAFC] hover:bg-[#F1F4F8] text-[#64748B] py-2 rounded-xl font-medium border border-[#E5EAF0] transition-colors">
                 Yes, I want to proceed with the new provider
               </button>
             </div>
@@ -248,15 +248,15 @@ export function BuyPlanModal({
         return (
           <>
             <p className="text-[#64748B] mb-4">
-              Hi {userName}! You have an active plan with <span className="font-semibold text-[#020817]">{providerName} (external provider)</span>.
+              Hi {userName}! You have an active plan with <span className="font-semibold text-[#0F172A]">{providerName} (external provider)</span>.
             </p>
             <p className="text-[#64748B] mb-4">
-              Choosing <span className="font-semibold text-[#020817]">Aheesha (Mantra In-house provider)</span> will:
+              Choosing <span className="font-semibold text-[#0F172A]">Aheesha (Mantra In-house provider)</span> will:
             </p>
             <ul className="text-[#64748B] mb-4 space-y-2 ml-1">
               <li className="flex items-start gap-2">
                 <span className="mt-1">•</span>
-                <span>Replace <span className="font-semibold text-[#020817]">{providerName}</span>, your current therapist</span>
+                <span>Replace <span className="font-semibold text-[#0F172A]">{providerName}</span>, your current therapist</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-1">•</span>
@@ -269,13 +269,13 @@ export function BuyPlanModal({
             
             {/* Buttons stacked with "or" in between */}
             <div className="flex flex-col items-center gap-2">
-              <button className="w-full bg-[#00c0ff] hover:bg-[#00a8e0] text-white py-2 rounded-xl font-medium transition-colors border border-[#00c0ff]">
+              <button className="w-full bg-[#13B5B1] hover:bg-[#00a8e0] text-white py-2 rounded-xl font-medium transition-colors border border-[#13B5B1]">
                 Use {providerName}'s sessions first (recommended)
               </button>
               
               <span className="text-sm text-[#64748B] font-medium">or</span>
               
-              <button className="w-full bg-[#F8FAFC] hover:bg-[#F1F5F9] text-[#64748B] py-2 rounded-xl font-medium border border-[#E2E8F0] transition-colors">
+              <button className="w-full bg-[#F8FAFC] hover:bg-[#F1F4F8] text-[#64748B] py-2 rounded-xl font-medium border border-[#E5EAF0] transition-colors">
                 Proceed with Aheesha
               </button>
             </div>

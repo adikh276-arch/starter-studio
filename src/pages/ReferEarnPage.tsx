@@ -169,7 +169,7 @@ function ReferPanel({ tab, copied, onCopy, service, onServiceChange, onOpenShare
         <p className="text-slate-800 text-sm mb-4">How it Works?</p>
         <div className="relative">
           {/* Vertical connector line */}
-          <div className="absolute left-[11px] top-5 bottom-5 w-px bg-[#E2E8F0] z-0" />
+          <div className="absolute left-[11px] top-5 bottom-5 w-px bg-[#E5EAF0] z-0" />
           <div className="space-y-4 relative z-10">
             {tab.steps.map((step, i) => (
               <div key={i} className="flex items-start gap-3">
@@ -234,7 +234,7 @@ function ReferPanel({ tab, copied, onCopy, service, onServiceChange, onOpenShare
                       <button
                         key={opt}
                         onClick={() => { onServiceChange(opt); setDropOpen(false); }}
-                        className={`w-full px-4 py-2.5 text-left text-sm transition-colors ${opt === service ? "bg-[#F1F5F9] text-[#1E293B] font-medium" : "text-[#64748B] hover:bg-[#F8FAFC]"}`}
+                        className={`w-full px-4 py-2.5 text-left text-sm transition-colors ${opt === service ? "bg-[#F1F4F8] text-[#0F172A] font-medium" : "text-[#64748B] hover:bg-[#F8FAFC]"}`}
                       >
                         {opt}
                       </button>
@@ -382,8 +382,8 @@ export function ReferEarnPage() {
             transition={{ duration: 0.35 }}
             className="flex items-center gap-3 mb-6"
           >
-            <div className="w-9 h-9 rounded-xl bg-[#F1F5F9] flex items-center justify-center">
-              <Gift size={18} className="text-[#1E293B]" />
+            <div className="w-9 h-9 rounded-xl bg-[#F1F4F8] flex items-center justify-center">
+              <Gift size={18} className="text-[#0F172A]" />
             </div>
             <div>
               <h1 className="text-xl md:text-2xl text-slate-900">Invite a Friend</h1>
@@ -404,8 +404,8 @@ export function ReferEarnPage() {
                 onClick={() => setActiveTab(tab.id)}
                 className={`relative flex items-center gap-2 px-4 py-3 text-sm transition-colors whitespace-nowrap ${
                   activeTab === tab.id
-                    ? "text-[#1E293B]"
-                    : "text-[#64748B] hover:text-[#020817]"
+                    ? "text-[#0F172A]"
+                    : "text-[#64748B] hover:text-[#0F172A]"
                 }`}
               >
                 <tab.icon size={14} />

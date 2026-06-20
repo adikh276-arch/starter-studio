@@ -220,15 +220,15 @@ export function PlansPage() {
             >
               <button
                 onClick={() => navigate(-1)}
-                className="flex items-center gap-2 text-[#64748B] hover:text-[#043570] mb-4 transition-colors"
+                className="flex items-center gap-2 text-[#64748B] hover:text-[#0B2545] mb-4 transition-colors"
               >
                 <ArrowLeft size={20} />
                 <span className="text-sm font-medium">Back to Dashboard</span>
               </button>
 
               <div className="flex items-center gap-3 mb-2">
-                <div className="w-10 h-10 bg-[#F1F5F9] rounded-md flex items-center justify-center flex-shrink-0 self-center">
-                  <Package size={20} className="text-[#1E293B]" strokeWidth={2} />
+                <div className="w-10 h-10 bg-[#F1F4F8] rounded-md flex items-center justify-center flex-shrink-0 self-center">
+                  <Package size={20} className="text-[#0F172A]" strokeWidth={2} />
                 </div>
                 <div>
                   <h1 className="text-2xl text-[#0f172b] font-medium">Wellness Programs</h1>
@@ -290,7 +290,7 @@ export function PlansPage() {
 
                           {/* Content */}
                           <div className="flex-1 text-left">
-                            <h3 className="text-sm font-semibold text-[#0F172A] mb-0.5 group-hover:text-[#00c0ff] transition-colors">
+                            <h3 className="text-sm font-semibold text-[#0F172A] mb-0.5 group-hover:text-[#13B5B1] transition-colors">
                               {program.name}
                             </h3>
                             <p className="text-xs text-[#64748B] leading-relaxed">

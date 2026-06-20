@@ -338,8 +338,8 @@ export function Dashboard() {
             transition={{ duration: 0.4 }}
           >
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-[#F1F5F9] rounded-md flex items-center justify-center flex-shrink-0">
-                <User size={20} className="text-[#1E293B]" strokeWidth={2} />
+              <div className="w-10 h-10 bg-[#F1F4F8] rounded-md flex items-center justify-center flex-shrink-0">
+                <User size={20} className="text-[#0F172A]" strokeWidth={2} />
               </div>
               <div>
                 <h1 className="text-2xl text-[#0f172b] font-medium">
@@ -362,19 +362,19 @@ export function Dashboard() {
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.98 }}
               onClick={() => navigate("/care-team")}
-              className="bg-[#F5FBFF] border-2 border-[#D6EEFF] rounded-2xl p-5 flex items-center justify-between hover:border-[#2D9CDB] hover:shadow-xl hover:shadow-[#2D9CDB]/10 transition-all cursor-pointer group"
+              className="bg-[#F5FBFF] border-2 border-[#D6EEFF] rounded-2xl p-5 flex items-center justify-between hover:border-[#13B5B1] hover:shadow-xl hover:shadow-[#13B5B1]/10 transition-all cursor-pointer group"
             >
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-[#2D9CDB] rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#2D9CDB]/20 group-hover:scale-110 transition-transform">
+                <div className="w-12 h-12 bg-[#13B5B1] rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#13B5B1]/20 group-hover:scale-110 transition-transform">
                   <MessageCircle className="text-white" size={20} />
                 </div>
                 <div>
-                  <h3 className="text-[#020817] font-semibold mb-1 text-base">Talk to Care Team</h3>
+                  <h3 className="text-[#0F172A] font-semibold mb-1 text-base">Talk to Care Team</h3>
                   <p className="text-sm text-[#64748B]">Connect with an expert via video or chat</p>
                 </div>
               </div>
               <div className="w-10 h-10 bg-white rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:bg-[#F0F9FF] transition-colors">
-                <ArrowRight size={18} className="text-[#2D9CDB]" />
+                <ArrowRight size={18} className="text-[#13B5B1]" />
               </div>
             </motion.div>
 
@@ -399,7 +399,7 @@ export function Dashboard() {
                       <Star className="text-white" size={24} strokeWidth={2} />
                     </div>
                     <div className="text-left">
-                      <h3 className="font-semibold text-base mb-0.5 text-[#020817]">
+                      <h3 className="font-semibold text-base mb-0.5 text-[#0F172A]">
                         Today's Plan
                       </h3>
                       <p className="text-xs md:text-sm text-[#64748B]">
@@ -510,7 +510,7 @@ export function Dashboard() {
                     {/* Checkbox */}
                     <div 
                       className={`w-5 h-5 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-colors ${
-                        isCompleted ? 'bg-[#00c0ff] border-[#00c0ff]' : 'border-[#E5E7EB]'
+                        isCompleted ? 'bg-[#13B5B1] border-[#13B5B1]' : 'border-[#E5E7EB]'
                       }`}
                     >
                       {isCompleted && (
@@ -572,7 +572,7 @@ export function Dashboard() {
               <div className="px-5 md:px-6 pb-4 flex justify-end">
                 <button 
                   onClick={() => navigate('/tasks')}
-                  className="text-[#00c0ff] hover:text-[#043570] font-medium text-sm flex items-center gap-1 transition-colors"
+                  className="text-[#13B5B1] hover:text-[#0B2545] font-medium text-sm flex items-center gap-1 transition-colors"
                 >
                   Edit Plan
                   <ChevronRight size={16} />
@@ -585,7 +585,7 @@ export function Dashboard() {
             {!hideUpcomingAppointment && (
             <motion.div 
               variants={item}
-              className="bg-white border border-[#E2E8F0] rounded-2xl p-5 hover:border-[#00c0ff]/30 hover:shadow-sm transition-all group"
+              className="bg-white border border-[#E5EAF0] rounded-2xl p-5 hover:border-[#13B5B1]/30 hover:shadow-sm transition-all group"
             >
               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                 <div className="flex items-center gap-4 flex-1 min-w-0">
@@ -637,7 +637,7 @@ export function Dashboard() {
             {!hideConfirmAppointment && (
             <motion.div 
               variants={item}
-              className="bg-white border border-[#E2E8F0] rounded-2xl p-5 hover:border-[#00c0ff]/30 hover:shadow-sm transition-all group"
+              className="bg-white border border-[#E5EAF0] rounded-2xl p-5 hover:border-[#13B5B1]/30 hover:shadow-sm transition-all group"
             >
               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                 <div className="flex items-center gap-4 flex-1 min-w-0">
@@ -699,7 +699,7 @@ export function Dashboard() {
             {!hidePendingAppointment && (
             <motion.div 
               variants={item}
-              className="bg-white border border-[#E2E8F0] rounded-2xl p-5 hover:border-[#00c0ff]/30 hover:shadow-sm transition-all group"
+              className="bg-white border border-[#E5EAF0] rounded-2xl p-5 hover:border-[#13B5B1]/30 hover:shadow-sm transition-all group"
             >
               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                 <div className="flex items-center gap-4 flex-1 min-w-0">
@@ -761,7 +761,7 @@ export function Dashboard() {
 
           {/* Your Services Section */}
           <div className="mb-8">
-            <h2 className="text-xl font-semibold text-[#020817] mb-4 px-0">Your Services</h2>
+            <h2 className="text-xl font-semibold text-[#0F172A] mb-4 px-0">Your Services</h2>
             <motion.div 
               className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4"
               variants={container}
@@ -775,7 +775,7 @@ export function Dashboard() {
                   whileHover={{ y: -4 }}
                   whileTap={{ scale: 0.98 }}
                   onClick={() => handleServiceClick(service.id)}
-                  className="relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all cursor-pointer group border-2 border-transparent hover:border-[#00c0ff] h-44"
+                  className="relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all cursor-pointer group border-2 border-transparent hover:border-[#13B5B1] h-44"
                 >
                   {/* Image Background */}
                   <ImageWithFallback
@@ -796,7 +796,7 @@ export function Dashboard() {
                   
                   {/* Arrow button on hover */}
                   <div className="absolute top-4 right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity shadow-md">
-                    <ChevronRight size={20} className="text-[#020817]" />
+                    <ChevronRight size={20} className="text-[#0F172A]" />
                   </div>
                 </motion.div>
               ))}
@@ -808,11 +808,11 @@ export function Dashboard() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
-            className="bg-gradient-to-br from-white via-[#F8FCFF] to-[#F3FAFF] rounded-2xl p-6 md:p-8 shadow-lg border border-[#E2E8F0] relative overflow-hidden group hover:shadow-xl transition-shadow duration-300 mb-6"
+            className="bg-gradient-to-br from-white via-[#F8FCFF] to-[#F1F7F7] rounded-2xl p-6 md:p-8 shadow-lg border border-[#E5EAF0] relative overflow-hidden group hover:shadow-xl transition-shadow duration-300 mb-6"
           >
             {/* Decorative elements */}
-            <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-[#00c0ff]/10 to-transparent rounded-full blur-3xl pointer-events-none"></div>
-            <div className="absolute bottom-0 left-0 w-48 h-48 bg-gradient-to-tr from-[#043570]/5 to-transparent rounded-full blur-2xl pointer-events-none"></div>
+            <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-[#13B5B1]/10 to-transparent rounded-full blur-3xl pointer-events-none"></div>
+            <div className="absolute bottom-0 left-0 w-48 h-48 bg-gradient-to-tr from-[#0B2545]/5 to-transparent rounded-full blur-2xl pointer-events-none"></div>
             
             {/* Blue wave decoration at bottom right */}
             <div className="absolute bottom-0 right-0 w-48 h-40 opacity-100 pointer-events-none">
@@ -821,12 +821,12 @@ export function Dashboard() {
                 <path d="M24 160C24 160 60 114 96 114C132 114 168 78 168 78L192 102V160H24Z" fill="url(#wave2-home)" fillOpacity="0.4"/>
                 <defs>
                   <linearGradient id="wave1-home" x1="0" y1="0" x2="192" y2="160" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#00c0ff" stopOpacity="0.2"/>
+                    <stop stopColor="#13B5B1" stopOpacity="0.2"/>
                     <stop offset="1" stopColor="#0EA5E9" stopOpacity="0.1"/>
                   </linearGradient>
                   <linearGradient id="wave2-home" x1="24" y1="78" x2="192" y2="160" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#043570" stopOpacity="0.15"/>
-                    <stop offset="1" stopColor="#043570" stopOpacity="0.05"/>
+                    <stop stopColor="#0B2545" stopOpacity="0.15"/>
+                    <stop offset="1" stopColor="#0B2545" stopOpacity="0.05"/>
                   </linearGradient>
                 </defs>
               </svg>
@@ -835,13 +835,13 @@ export function Dashboard() {
             <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-2">
               <div className="flex-1 space-y-4">
                 {/* Badge */}
-                <div className="inline-flex items-center gap-2 bg-[#00c0ff]/10 text-[#043570] border-[#00c0ff]/20 px-3 py-1.5 rounded-full text-xs font-semibold border">
-                  <Sparkles size={14} className="text-[#00c0ff]" />
+                <div className="inline-flex items-center gap-2 bg-[#13B5B1]/10 text-[#0B2545] border-[#13B5B1]/20 px-3 py-1.5 rounded-full text-xs font-semibold border">
+                  <Sparkles size={14} className="text-[#13B5B1]" />
                   Support Mental Health
                 </div>
 
                 {/* Heading */}
-                <h3 className="text-[#020817] text-2xl md:text-3xl font-bold leading-tight">
+                <h3 className="text-[#0F172A] text-2xl md:text-3xl font-bold leading-tight">
                   Be the Reason Someone Feels Better Tomorrow
                 </h3>
 
@@ -855,7 +855,7 @@ export function Dashboard() {
                   <div className="flex items-center gap-2">
                     <div className="flex -space-x-2">
                       {[1, 2, 3].map((i) => (
-                        <div key={i} className="w-8 h-8 rounded-full bg-gradient-to-br from-[#00c0ff] to-[#0EA5E9] border-2 border-white flex items-center justify-center">
+                        <div key={i} className="w-8 h-8 rounded-full bg-gradient-to-br from-[#13B5B1] to-[#0EA5E9] border-2 border-white flex items-center justify-center">
                           <Users size={14} className="text-white" />
                         </div>
                       ))}
@@ -874,7 +874,7 @@ export function Dashboard() {
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.02, y: -2 }}
                     whileTap={{ scale: 0.98 }}
-                    className="inline-flex items-center gap-2 bg-gradient-to-r from-[#00c0ff] to-[#0EA5E9] text-white px-8 py-3.5 rounded-xl font-semibold text-sm shadow-lg hover:shadow-xl transition-all"
+                    className="inline-flex items-center gap-2 bg-gradient-to-r from-[#13B5B1] to-[#0EA5E9] text-white px-8 py-3.5 rounded-xl font-semibold text-sm shadow-lg hover:shadow-xl transition-all"
                   >
                     Donate Now
                     <ArrowRight size={18} strokeWidth={2.5} />
@@ -885,10 +885,10 @@ export function Dashboard() {
               {/* Profile Image with decoration */}
               <div className="hidden md:block flex-shrink-0 relative mx-auto w-auto md:w-64">
                 {/* Glow effect */}
-                <div className="absolute inset-0 bg-gradient-to-br from-[#00c0ff] to-[#0EA5E9] rounded-full blur-xl opacity-20 group-hover:opacity-30 transition-opacity"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-[#13B5B1] to-[#0EA5E9] rounded-full blur-xl opacity-20 group-hover:opacity-30 transition-opacity"></div>
                 
                 {/* Image container */}
-                <div className="relative w-36 h-36 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-white shadow-2xl ring-4 ring-[#00c0ff]/20">
+                <div className="relative w-36 h-36 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-white shadow-2xl ring-4 ring-[#13B5B1]/20">
                   <ImageWithFallback
                     src={ctaDonationImage}
                     alt="Supporting Mental Health"
@@ -904,11 +904,11 @@ export function Dashboard() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="relative overflow-hidden bg-[#f3faff] border-2 border-[#00c0ff]/30 rounded-3xl p-8 shadow-lg group hover:shadow-xl transition-all mb-6"
+            className="relative overflow-hidden bg-[#F1F7F7] border-2 border-[#13B5B1]/30 rounded-3xl p-8 shadow-lg group hover:shadow-xl transition-all mb-6"
           >
             {/* Decorative background elements */}
-            <div className="absolute -top-10 -right-10 w-40 h-40 bg-[#00c0ff]/10 rounded-full blur-3xl"></div>
-            <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-[#043570]/5 rounded-full blur-2xl"></div>
+            <div className="absolute -top-10 -right-10 w-40 h-40 bg-[#13B5B1]/10 rounded-full blur-3xl"></div>
+            <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-[#0B2545]/5 rounded-full blur-2xl"></div>
             
             {/* Blue wave decoration at bottom right */}
             <div className="absolute bottom-0 right-0 w-48 h-40 opacity-100 pointer-events-none">
@@ -917,12 +917,12 @@ export function Dashboard() {
                 <path d="M24 160C24 160 60 114 96 114C132 114 168 78 168 78L192 102V160H24Z" fill="url(#wave2-corporate)" fillOpacity="0.4"/>
                 <defs>
                   <linearGradient id="wave1-corporate" x1="0" y1="0" x2="192" y2="160" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#00c0ff" stopOpacity="0.2"/>
+                    <stop stopColor="#13B5B1" stopOpacity="0.2"/>
                     <stop offset="1" stopColor="#0EA5E9" stopOpacity="0.1"/>
                   </linearGradient>
                   <linearGradient id="wave2-corporate" x1="24" y1="78" x2="192" y2="160" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#043570" stopOpacity="0.15"/>
-                    <stop offset="1" stopColor="#043570" stopOpacity="0.05"/>
+                    <stop stopColor="#0B2545" stopOpacity="0.15"/>
+                    <stop offset="1" stopColor="#0B2545" stopOpacity="0.05"/>
                   </linearGradient>
                 </defs>
               </svg>
@@ -932,13 +932,13 @@ export function Dashboard() {
             <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
               <div className="flex-1 space-y-3">
                 {/* Heading */}
-                <h3 className="text-[#043570] text-2xl md:text-3xl font-bold leading-tight">
+                <h3 className="text-[#0B2545] text-2xl md:text-3xl font-bold leading-tight">
                   Upgrade to Complete Wellness Care
                 </h3>
 
                 {/* Description */}
-                <p className="text-[#043570]/70 text-sm md:text-base max-w-lg leading-relaxed">
-                  Enjoy therapy, nutrition, doctor consultations, fitness, and chronic care in one seamless plan. Get an exclusive <span className="font-bold text-[#00c0ff]">20% corporate discount</span> with Mantra Wellness Plans.
+                <p className="text-[#0B2545]/70 text-sm md:text-base max-w-lg leading-relaxed">
+                  Enjoy therapy, nutrition, doctor consultations, fitness, and chronic care in one seamless plan. Get an exclusive <span className="font-bold text-[#13B5B1]">20% corporate discount</span> with Mantra Wellness Plans.
                 </p>
               </div>
 
@@ -949,7 +949,7 @@ export function Dashboard() {
                   whileHover={{ scale: 1.02, y: -2 }}
                   whileTap={{ scale: 0.98 }}
                   onClick={() => setShowBuyPlanModal(true)}
-                  className="inline-flex items-center gap-2 bg-[#043570] text-white px-8 py-3.5 rounded-xl font-semibold text-sm shadow-lg hover:shadow-xl transition-all"
+                  className="inline-flex items-center gap-2 bg-[#0B2545] text-white px-8 py-3.5 rounded-xl font-semibold text-sm shadow-lg hover:shadow-xl transition-all"
                 >
                   Explore Plans
                   <ArrowRight size={18} strokeWidth={2.5} />
@@ -962,11 +962,11 @@ export function Dashboard() {
           <div className="bg-[#E8F4FD] border-2 border-[#C5E2F7] rounded-2xl px-4 md:px-6 py-4 shadow-sm mb-8">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
               <div className="flex items-center gap-4 flex-1">
-                <div className="w-12 h-12 bg-[#2D9CDB] rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#2D9CDB]/20">
+                <div className="w-12 h-12 bg-[#13B5B1] rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#13B5B1]/20">
                   <Smartphone className="text-white" size={20} />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-[#020817] font-semibold text-sm mb-0.5">
+                  <h3 className="text-[#0F172A] font-semibold text-sm mb-0.5">
                     App is better
                   </h3>
                   <p className="text-[#64748B] text-xs">
@@ -1013,18 +1013,18 @@ export function Dashboard() {
               <div className="flex items-center gap-2 md:gap-4">
                 <span>© 2026 Mantra</span>
                 <span className="hidden md:inline">•</span>
-                <a href="https://content.mantracare.com/privacy-policy/" target="_blank" rel="noopener noreferrer" className="hover:text-[#020817] transition-colors text-[12px]">Privacy Policy</a>
+                <a href="https://content.mantracare.com/privacy-policy/" target="_blank" rel="noopener noreferrer" className="hover:text-[#0F172A] transition-colors text-[12px]">Privacy Policy</a>
                 <span className="hidden md:inline">•</span>
-                <a href="https://content.mantracare.com/terms-conditions-1/" target="_blank" rel="noopener noreferrer" className="hover:text-[#020817] transition-colors text-[12px]">Terms of Service</a>
+                <a href="https://content.mantracare.com/terms-conditions-1/" target="_blank" rel="noopener noreferrer" className="hover:text-[#0F172A] transition-colors text-[12px]">Terms of Service</a>
                 <span className="hidden md:inline">•</span>
-                <a href="https://content.mantracare.com/refund-policy/" target="_blank" rel="noopener noreferrer" className="hover:text-[#020817] transition-colors text-[12px]">Refund Policy</a>
+                <a href="https://content.mantracare.com/refund-policy/" target="_blank" rel="noopener noreferrer" className="hover:text-[#0F172A] transition-colors text-[12px]">Refund Policy</a>
               </div>
 
               {/* Right side - Language selector */}
               <div className="relative">
                 <button
                   onClick={() => setShowLanguageDropdown(!showLanguageDropdown)}
-                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg hover:bg-[#F1F5F9] transition-colors"
+                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg hover:bg-[#F1F4F8] transition-colors"
                 >
                   <Globe size={14} className="text-[#64748B]" />
                   <span className="text-[12px] text-[#64748B]">English</span>
@@ -1033,7 +1033,7 @@ export function Dashboard() {
 
                 {/* Language Dropdown */}
                 {showLanguageDropdown && (
-                  <div className="absolute bottom-full right-0 mb-2 bg-white border border-[#E2E8F0] rounded-lg shadow-lg py-2 min-w-[160px] z-50">
+                  <div className="absolute bottom-full right-0 mb-2 bg-white border border-[#E5EAF0] rounded-lg shadow-lg py-2 min-w-[160px] z-50">
                     {['English', 'Spanish', 'French', 'German', 'Italian', 'Portuguese', 'Chinese', 'Japanese', 'Korean', 'Hindi'].map((language) => (
                       <button
                         key={language}

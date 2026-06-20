@@ -209,7 +209,7 @@ export function RateProviderModal({
                                 className={`transition-colors ${
                                   isActive
                                     ? "text-[#F59E0B] fill-[#F59E0B]"
-                                    : "text-[#E2E8F0] fill-[#E2E8F0]"
+                                    : "text-[#E5EAF0] fill-[#E5EAF0]"
                                 }`}
                               />
                             </motion.button>
@@ -223,7 +223,7 @@ export function RateProviderModal({
                         onChange={(e) => setFeedback(e.target.value)}
                         placeholder="Write something nice about your provider"
                         rows={4}
-                        className="w-full px-4 py-3 border border-[#E2E8F0] rounded-xl text-sm text-[#0F172A] placeholder-[#94A3B8] focus:outline-none focus:border-[#2563EB] focus:ring-2 focus:ring-[#DBEAFE] transition-all resize-none"
+                        className="w-full px-4 py-3 border border-[#E5EAF0] rounded-xl text-sm text-[#0F172A] placeholder-[#94A3B8] focus:outline-none focus:border-[#2563EB] focus:ring-2 focus:ring-[#DBEAFE] transition-all resize-none"
                       />
                     </motion.div>
                   )}
@@ -235,13 +235,13 @@ export function RateProviderModal({
                 <div className="flex items-center justify-end gap-3 px-6 py-4 bg-slate-50 border-t border-slate-200">
                   <button
                     onClick={handleCancel}
-                    className="px-6 py-2.5 text-sm font-medium text-[#0F172A] border border-[#E2E8F0] rounded-xl hover:bg-white hover:border-[#CBD5E1] transition-all"
+                    className="px-6 py-2.5 text-sm font-medium text-[#0F172A] border border-[#E5EAF0] rounded-xl hover:bg-white hover:border-[#CBD5E1] transition-all"
                   >
                     Cancel
                   </button>
                   <button
                     onClick={handleSubmit}
-                    className="px-6 py-2.5 text-sm font-medium text-white bg-[#043570] rounded-xl hover:bg-[#032852] transition-all"
+                    className="px-6 py-2.5 text-sm font-medium text-white bg-[#0B2545] rounded-xl hover:bg-[#032852] transition-all"
                   >
                     Submit
                   </button>

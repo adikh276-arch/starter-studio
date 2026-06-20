@@ -102,7 +102,7 @@ export function DepressionPage() {
             <div className="flex items-center gap-3 mb-2">
               <button
                 onClick={() => navigate(-1)}
-                className="flex items-center justify-center text-[#64748B] hover:text-[#043570] transition-colors"
+                className="flex items-center justify-center text-[#64748B] hover:text-[#0B2545] transition-colors"
               >
                 <ChevronLeft size={20} />
               </button>
@@ -127,7 +127,7 @@ export function DepressionPage() {
           >
             <button
               onClick={() => window.open("https://app.mantracare.com/therapy/depression/depr-guided-series/", "_blank")}
-              className="w-full bg-white border border-[#E2E8F0] rounded-xl p-4 hover:shadow-md transition-all flex items-center justify-between group"
+              className="w-full bg-white border border-[#E5EAF0] rounded-xl p-4 hover:shadow-md transition-all flex items-center justify-between group"
             >
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-[#EFF6FF] rounded-lg flex items-center justify-center flex-shrink-0">
@@ -138,7 +138,7 @@ export function DepressionPage() {
                   <p className="text-sm text-[#62748e]">Step-by-step guided program</p>
                 </div>
               </div>
-              <ChevronRight size={20} className="text-[#94A3B8] group-hover:text-[#043570] transition-colors" />
+              <ChevronRight size={20} className="text-[#94A3B8] group-hover:text-[#0B2545] transition-colors" />
             </button>
           </motion.div>
 
@@ -161,7 +161,7 @@ export function DepressionPage() {
                     whileHover={{ y: -2 }}
                     whileTap={{ scale: 0.98 }}
                     onClick={() => window.open(exercise.url, "_blank")}
-                    className="bg-white border border-[#E2E8F0] rounded-xl p-6 hover:shadow-md transition-all text-left"
+                    className="bg-white border border-[#E5EAF0] rounded-xl p-6 hover:shadow-md transition-all text-left"
                   >
                     <div
                       className="w-12 h-12 rounded-lg flex items-center justify-center mb-4"
@@ -169,7 +169,7 @@ export function DepressionPage() {
                     >
                       <IconComponent size={24} style={{ color: exercise.iconColor }} strokeWidth={2} />
                     </div>
-                    <h3 className="text-[#1E293B] text-sm">{exercise.label}</h3>
+                    <h3 className="text-[#0F172A] text-sm">{exercise.label}</h3>
                   </motion.button>
                 );
               })}
@@ -195,7 +195,7 @@ export function DepressionPage() {
                     whileHover={{ y: -2 }}
                     whileTap={{ scale: 0.98 }}
                     onClick={() => window.open(todo.url, "_blank")}
-                    className="bg-white border border-[#E2E8F0] rounded-xl p-6 hover:shadow-md transition-all text-left"
+                    className="bg-white border border-[#E5EAF0] rounded-xl p-6 hover:shadow-md transition-all text-left"
                   >
                     <div
                       className="w-12 h-12 rounded-lg flex items-center justify-center mb-4"
@@ -203,7 +203,7 @@ export function DepressionPage() {
                     >
                       <IconComponent size={24} style={{ color: todo.iconColor }} strokeWidth={2} />
                     </div>
-                    <h3 className="text-[#1E293B] text-sm">{todo.label}</h3>
+                    <h3 className="text-[#0F172A] text-sm">{todo.label}</h3>
                   </motion.button>
                 );
               })}
@@ -229,7 +229,7 @@ export function DepressionPage() {
                     whileHover={{ y: -2 }}
                     whileTap={{ scale: 0.98 }}
                     onClick={() => window.open(resource.url, "_blank")}
-                    className="w-full bg-white border border-[#E2E8F0] rounded-xl p-4 hover:shadow-md transition-all flex items-center justify-between group"
+                    className="w-full bg-white border border-[#E5EAF0] rounded-xl p-4 hover:shadow-md transition-all flex items-center justify-between group"
                   >
                     <div className="flex items-center gap-4">
                       <div
@@ -238,9 +238,9 @@ export function DepressionPage() {
                       >
                         <IconComponent size={24} style={{ color: resource.iconColor }} strokeWidth={2} />
                       </div>
-                      <h3 className="text-[#1E293B]">{resource.label}</h3>
+                      <h3 className="text-[#0F172A]">{resource.label}</h3>
                     </div>
-                    <ChevronRight size={20} className="text-[#94A3B8] group-hover:text-[#043570] transition-colors" />
+                    <ChevronRight size={20} className="text-[#94A3B8] group-hover:text-[#0B2545] transition-colors" />
                   </motion.button>
                 );
               })}

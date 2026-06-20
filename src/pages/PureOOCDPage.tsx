@@ -163,7 +163,7 @@ export function PureOOCDPage() {
           >
             <button
               onClick={() => navigate(-1)}
-              className="flex items-center gap-2 text-[#64748B] hover:text-[#043570] mb-4 transition-colors"
+              className="flex items-center gap-2 text-[#64748B] hover:text-[#0B2545] mb-4 transition-colors"
             >
               <ChevronLeft size={20} strokeWidth={2.5} />
               <span className="text-sm font-medium">Back</span>
@@ -175,7 +175,7 @@ export function PureOOCDPage() {
                 </svg>
               </div>
               <div>
-                <h1 className="text-3xl font-bold text-[#020817]">Pure O OCD</h1>
+                <h1 className="text-3xl font-bold text-[#0F172A]">Pure O OCD</h1>
                 <p className="text-sm text-[#64748B] mt-1">Articles, stories, and interactive tools</p>
               </div>
             </div>
@@ -197,7 +197,7 @@ export function PureOOCDPage() {
                   <FileText size={28} className="text-white" strokeWidth={2} />
                 </div>
                 <div className="text-left">
-                  <h3 className="text-lg font-semibold text-[#020817]">Articles</h3>
+                  <h3 className="text-lg font-semibold text-[#0F172A]">Articles</h3>
                   <p className="text-sm text-[#64748B]">Research and expert perspectives</p>
                 </div>
               </div>
@@ -234,7 +234,7 @@ export function PureOOCDPage() {
                               {article.id}
                             </div>
                             <div className="flex-1">
-                              <h4 className="text-sm font-semibold text-[#020817] mb-1">
+                              <h4 className="text-sm font-semibold text-[#0F172A] mb-1">
                                 {article.title}
                               </h4>
                               <p className="text-xs text-[#3B82F6]">
@@ -271,7 +271,7 @@ export function PureOOCDPage() {
                   <Users size={28} className="text-white" strokeWidth={2} />
                 </div>
                 <div className="text-left">
-                  <h3 className="text-lg font-semibold text-[#020817]">Real Stories</h3>
+                  <h3 className="text-lg font-semibold text-[#0F172A]">Real Stories</h3>
                   <p className="text-sm text-[#64748B]">Personal experiences and recovery journeys</p>
                 </div>
               </div>
@@ -308,7 +308,7 @@ export function PureOOCDPage() {
                               {story.id}
                             </div>
                             <div className="flex-1">
-                              <h4 className="text-sm font-semibold text-[#020817] mb-1">
+                              <h4 className="text-sm font-semibold text-[#0F172A] mb-1">
                                 {story.title}
                               </h4>
                               <p className="text-xs text-[#EC4899]">
@@ -341,7 +341,7 @@ export function PureOOCDPage() {
                 <Wrench size={28} className="text-white" strokeWidth={2} />
               </div>
               <div className="text-left">
-                <h3 className="text-lg font-semibold text-[#020817]">Interactive Tools</h3>
+                <h3 className="text-lg font-semibold text-[#0F172A]">Interactive Tools</h3>
                 <p className="text-sm text-[#64748B]">Tools for managing mental compulsions</p>
               </div>
             </div>
@@ -367,7 +367,7 @@ export function PureOOCDPage() {
                       >
                         <Icon size={24} className="text-white" strokeWidth={2} />
                       </div>
-                      <span className="text-sm font-semibold text-[#020817]">
+                      <span className="text-sm font-semibold text-[#0F172A]">
                         {tool.label}
                       </span>
                     </div>

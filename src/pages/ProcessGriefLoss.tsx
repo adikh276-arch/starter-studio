@@ -33,11 +33,11 @@ export function ProcessGriefLoss() {
                 whileHover={{ x: -4 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => navigate(-1)}
-                className="flex items-center justify-center w-10 h-10 rounded-xl bg-white/80 backdrop-blur-sm text-[#64748B] hover:text-[#020817] hover:bg-white transition-all shadow-sm hover:shadow-md border border-gray-100"
+                className="flex items-center justify-center w-10 h-10 rounded-xl bg-white/80 backdrop-blur-sm text-[#64748B] hover:text-[#0F172A] hover:bg-white transition-all shadow-sm hover:shadow-md border border-gray-100"
               >
                 <ChevronLeft size={20} strokeWidth={2.5} />
               </motion.button>
-              <h1 className="text-3xl md:text-4xl text-[#1E293B] font-bold tracking-tight">
+              <h1 className="text-3xl md:text-4xl text-[#0F172A] font-bold tracking-tight">
                 Process Grief & Loss
               </h1>
             </div>
@@ -53,7 +53,7 @@ export function ProcessGriefLoss() {
             transition={{ delay: 0.1 }}
             className="mb-8 md:mb-10"
           >
-            <h2 className="text-xl md:text-2xl font-bold text-[#1E293B] mb-4">
+            <h2 className="text-xl md:text-2xl font-bold text-[#0F172A] mb-4">
               Why It Helps
             </h2>
             <p className="text-[#64748B] text-base md:text-lg leading-relaxed">
@@ -68,7 +68,7 @@ export function ProcessGriefLoss() {
             transition={{ delay: 0.2 }}
             className="mb-8"
           >
-            <h2 className="text-xl md:text-2xl font-bold text-[#1E293B] mb-6">
+            <h2 className="text-xl md:text-2xl font-bold text-[#0F172A] mb-6">
               What You Can Do
             </h2>
 
@@ -88,7 +88,7 @@ export function ProcessGriefLoss() {
 
                   {/* Text */}
                   <div className="flex-1 pt-2">
-                    <p className="text-[#1E293B] text-base md:text-lg leading-relaxed">
+                    <p className="text-[#0F172A] text-base md:text-lg leading-relaxed">
                       {step}
                     </p>
                   </div>

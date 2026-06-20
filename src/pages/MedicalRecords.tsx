@@ -133,7 +133,7 @@ export function MedicalRecords() {
             <div className="flex items-center gap-3 mb-2">
               <button
                 onClick={() => navigate(-1)}
-                className="flex items-center justify-center text-[#64748B] hover:text-[#043570] transition-colors"
+                className="flex items-center justify-center text-[#64748B] hover:text-[#0B2545] transition-colors"
               >
                 <ChevronLeft size={20} />
               </button>
@@ -167,7 +167,7 @@ export function MedicalRecords() {
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   placeholder="Search by patient, doctor, or condition..."
-                  className="w-full pl-12 pr-4 py-3 bg-[#f3faff] border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#2563EB] focus:border-transparent text-[#043570]"
+                  className="w-full pl-12 pr-4 py-3 bg-[#F1F7F7] border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#2563EB] focus:border-transparent text-[#0B2545]"
                 />
               </div>
 
@@ -177,7 +177,7 @@ export function MedicalRecords() {
                 <select
                   value={selectedType}
                   onChange={(e) => setSelectedType(e.target.value)}
-                  className="w-full md:w-56 pl-12 pr-4 py-3 bg-[#f3faff] border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#2563EB] focus:border-transparent text-[#043570] appearance-none cursor-pointer"
+                  className="w-full md:w-56 pl-12 pr-4 py-3 bg-[#F1F7F7] border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#2563EB] focus:border-transparent text-[#0B2545] appearance-none cursor-pointer"
                 >
                   <option value="all">All Records</option>
                   <option value="consultation">Consultations</option>
@@ -222,7 +222,7 @@ export function MedicalRecords() {
                             <img
                               src={record.avatar}
                               alt={record.patientName}
-                              className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover border-4 border-[#f3faff]"
+                              className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover border-4 border-[#F1F7F7]"
                             />
                             <div 
                               className="absolute -bottom-1 -right-1 w-8 h-8 rounded-full flex items-center justify-center shadow-md"
@@ -237,7 +237,7 @@ export function MedicalRecords() {
                         <div className="flex-1 min-w-0">
                           <div className="flex items-start justify-between gap-4 mb-3">
                             <div>
-                              <h3 className="text-xl font-semibold text-[#043570] mb-1">
+                              <h3 className="text-xl font-semibold text-[#0B2545] mb-1">
                                 {record.patientName}
                               </h3>
                               <p className="text-sm text-[#64748B] mb-2">
@@ -256,8 +256,8 @@ export function MedicalRecords() {
                           </div>
 
                           {/* Complaint */}
-                          <div className="bg-[#f3faff] rounded-xl p-3 mb-4">
-                            <p className="text-sm font-medium text-[#043570] mb-1">Complaint:</p>
+                          <div className="bg-[#F1F7F7] rounded-xl p-3 mb-4">
+                            <p className="text-sm font-medium text-[#0B2545] mb-1">Complaint:</p>
                             <p className="text-sm text-[#64748B] line-clamp-2">{record.complaint}</p>
                           </div>
 
@@ -265,15 +265,15 @@ export function MedicalRecords() {
                           <div className="flex flex-wrap items-center gap-4 text-sm">
                             <div className="flex items-center gap-2">
                               <User size={16} className="text-[#64748B]" />
-                              <span className="text-[#043570] font-medium">{record.gender}, {record.age} yrs</span>
+                              <span className="text-[#0B2545] font-medium">{record.gender}, {record.age} yrs</span>
                             </div>
                             <div className="flex items-center gap-2">
                               <Weight size={16} className="text-[#64748B]" />
-                              <span className="text-[#043570] font-medium">{record.weight}</span>
+                              <span className="text-[#0B2545] font-medium">{record.weight}</span>
                             </div>
                             <div className="flex items-center gap-2">
                               <Calendar size={16} className="text-[#64748B]" />
-                              <span className="text-[#043570] font-medium">
+                              <span className="text-[#0B2545] font-medium">
                                 {new Date(record.date).toLocaleDateString('en-US', { 
                                   year: 'numeric', 
                                   month: 'short', 
@@ -291,7 +291,7 @@ export function MedicalRecords() {
                           <Eye size={18} />
                           <span>View Details</span>
                         </button>
-                        <button className="flex items-center justify-center gap-2 px-4 py-2.5 bg-[#f3faff] text-[#2563EB] border border-[#2563EB] rounded-xl hover:bg-[#EFF6FF] transition-colors font-medium">
+                        <button className="flex items-center justify-center gap-2 px-4 py-2.5 bg-[#F1F7F7] text-[#2563EB] border border-[#2563EB] rounded-xl hover:bg-[#EFF6FF] transition-colors font-medium">
                           <Download size={18} />
                           <span className="hidden md:inline">Download</span>
                         </button>

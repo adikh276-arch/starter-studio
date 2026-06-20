@@ -168,7 +168,7 @@ export function CategoriesPage() {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Search categories..."
-              className="w-full pl-11 pr-10 py-3 md:py-3.5 bg-[#1a2744] border border-[#1E293B]/30 rounded-2xl text-sm md:text-base text-white placeholder:text-slate-400 focus:outline-none focus:border-[#00c0ff] focus:ring-2 focus:ring-[#00c0ff]/20 transition-all"
+              className="w-full pl-11 pr-10 py-3 md:py-3.5 bg-[#1a2744] border border-[#0F172A]/30 rounded-2xl text-sm md:text-base text-white placeholder:text-slate-400 focus:outline-none focus:border-[#13B5B1] focus:ring-2 focus:ring-[#13B5B1]/20 transition-all"
             />
             {searchQuery && (
               <button
@@ -192,7 +192,7 @@ export function CategoriesPage() {
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.3 }}
-                className="bg-[#1a2744] rounded-2xl p-8 md:p-12 border border-[#1E293B]/30 text-center"
+                className="bg-[#1a2744] rounded-2xl p-8 md:p-12 border border-[#0F172A]/30 text-center"
               >
                 <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#313D57] flex items-center justify-center">
                   <Search size={28} className="text-slate-400" />
@@ -213,7 +213,7 @@ export function CategoriesPage() {
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.4 + catIdx * 0.1 }}
-                    className="bg-[#1a2744] rounded-2xl p-4 md:p-5 border border-[#1E293B]/30"
+                    className="bg-[#1a2744] rounded-2xl p-4 md:p-5 border border-[#0F172A]/30"
                   >
                     <div className="flex items-center gap-3 mb-4">
                       <div 

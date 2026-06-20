@@ -162,7 +162,7 @@ export function BookSessionModal({
           className="relative w-full max-w-5xl bg-white rounded-2xl shadow-2xl overflow-hidden"
         >
           {/* Header */}
-          <div className="relative bg-gradient-to-r from-[#043570] to-[#2563EB] px-6 py-5">
+          <div className="relative bg-gradient-to-r from-[#0B2545] to-[#2563EB] px-6 py-5">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center backdrop-blur-sm">
@@ -236,7 +236,7 @@ export function BookSessionModal({
                       </p>
                       <button
                         onClick={handleAddInsuranceClick}
-                        className="inline-flex items-center gap-2 bg-[#043570] hover:bg-[#2563EB] text-white text-sm px-4 py-2.5 rounded-xl transition-colors shadow-sm"
+                        className="inline-flex items-center gap-2 bg-[#0B2545] hover:bg-[#2563EB] text-white text-sm px-4 py-2.5 rounded-xl transition-colors shadow-sm"
                       >
                         <Plus size={16} />
                         Add Insurance
@@ -251,13 +251,13 @@ export function BookSessionModal({
                           whileTap={{ scale: 0.99 }}
                           className={`w-full text-left p-4 rounded-xl border-2 transition-all ${
                             selectedInsurance === insurance.id
-                              ? "border-[#2563EB] bg-[#f3faff] shadow-sm"
+                              ? "border-[#2563EB] bg-[#F1F7F7] shadow-sm"
                               : "border-slate-200 bg-white hover:border-slate-300"
                           }`}
                         >
                           <div className="flex items-start justify-between gap-3">
                             <div className="flex items-start gap-3 flex-1 min-w-0">
-                              <div className="w-10 h-10 bg-gradient-to-br from-[#043570] to-[#2563EB] rounded-lg flex items-center justify-center flex-shrink-0">
+                              <div className="w-10 h-10 bg-gradient-to-br from-[#0B2545] to-[#2563EB] rounded-lg flex items-center justify-center flex-shrink-0">
                                 <Building2 size={18} className="text-white" />
                               </div>
                               <div className="flex-1 min-w-0">
@@ -321,13 +321,13 @@ export function BookSessionModal({
                           whileTap={{ scale: 0.98 }}
                           className={`relative text-left p-5 rounded-2xl border-2 transition-all ${
                             selectedService === service.id
-                              ? "border-[#2563EB] bg-gradient-to-br from-[#f3faff] to-white shadow-lg"
+                              ? "border-[#2563EB] bg-gradient-to-br from-[#F1F7F7] to-white shadow-lg"
                               : "border-slate-200 bg-white hover:border-[#2563EB]/40 hover:shadow-md"
                           }`}
                         >
                           {/* Header with Icon, Title, Subtitle and Price */}
                           <div className="flex items-start gap-3 mb-4">
-                            <div className="w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-md bg-gradient-to-br from-[#043570] to-[#2563EB]">
+                            <div className="w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-md bg-gradient-to-br from-[#0B2545] to-[#2563EB]">
                               <IconComponent size={32} className="text-white" />
                             </div>
                             <div className="flex-1 min-w-0">
@@ -350,7 +350,7 @@ export function BookSessionModal({
                           <div className="space-y-2.5 pl-1">
                             {service.features.map((feature, index) => (
                               <div key={index} className="flex items-start gap-2.5 text-xs text-slate-700">
-                                <div className="w-4 h-4 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 bg-[#f3faff]">
+                                <div className="w-4 h-4 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 bg-[#F1F7F7]">
                                   <Check size={10} className="text-[#2563EB]" strokeWidth={3} />
                                 </div>
                                 <span className="leading-relaxed">{feature}</span>
@@ -403,7 +403,7 @@ export function BookSessionModal({
                     disabled={!selectedInsurance}
                     className={`px-5 py-2 text-sm font-medium rounded-xl transition-all ${
                       selectedInsurance
-                        ? "bg-[#2563EB] hover:bg-[#043570] text-white shadow-sm"
+                        ? "bg-[#2563EB] hover:bg-[#0B2545] text-white shadow-sm"
                         : "bg-slate-200 text-slate-400 cursor-not-allowed"
                     }`}
                   >
@@ -415,7 +415,7 @@ export function BookSessionModal({
                     disabled={!selectedService}
                     className={`px-5 py-2 text-sm font-medium rounded-xl transition-all ${
                       selectedService
-                        ? "bg-[#2563EB] hover:bg-[#043570] text-white shadow-sm"
+                        ? "bg-[#2563EB] hover:bg-[#0B2545] text-white shadow-sm"
                         : "bg-slate-200 text-slate-400 cursor-not-allowed"
                     }`}
                   >

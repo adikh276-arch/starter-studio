@@ -163,12 +163,12 @@ export function TrichotillomaniaPage() {
             <div className="flex items-center gap-4 mb-2">
               <button
                 onClick={() => navigate(-1)}
-                className="flex items-center justify-center w-9 h-9 rounded-lg text-[#64748B] hover:text-[#043570] hover:bg-white/80 transition-all"
+                className="flex items-center justify-center w-9 h-9 rounded-lg text-[#64748B] hover:text-[#0B2545] hover:bg-white/80 transition-all"
               >
                 <ChevronLeft size={20} strokeWidth={2.5} />
               </button>
               <div>
-                <h1 className="text-2xl font-bold text-[#020817]">Trichotillomania</h1>
+                <h1 className="text-2xl font-bold text-[#0F172A]">Trichotillomania</h1>
                 <p className="text-sm text-[#64748B]">Resources and tools for managing Trichotillomania</p>
               </div>
             </div>
@@ -190,7 +190,7 @@ export function TrichotillomaniaPage() {
                   <ImageIcon size={28} className="text-white" strokeWidth={2} />
                 </div>
                 <div className="text-left">
-                  <h3 className="text-lg font-semibold text-[#020817]">Myths</h3>
+                  <h3 className="text-lg font-semibold text-[#0F172A]">Myths</h3>
                   <p className="text-sm text-[#64748B]">Debunking down misconceptions</p>
                 </div>
               </div>
@@ -226,7 +226,7 @@ export function TrichotillomaniaPage() {
                             {myth.id}
                           </div>
                           <div className="flex-1">
-                            <h4 className="text-sm font-semibold text-[#020817] mb-1">
+                            <h4 className="text-sm font-semibold text-[#0F172A] mb-1">
                               {myth.title}
                             </h4>
                             <p className="text-xs text-[#64748B]">
@@ -258,7 +258,7 @@ export function TrichotillomaniaPage() {
                   <FileText size={28} className="text-white" strokeWidth={2} />
                 </div>
                 <div className="text-left">
-                  <h3 className="text-lg font-semibold text-[#020817]">Articles</h3>
+                  <h3 className="text-lg font-semibold text-[#0F172A]">Articles</h3>
                   <p className="text-sm text-[#64748B]">Research and clinical insights</p>
                 </div>
               </div>
@@ -294,7 +294,7 @@ export function TrichotillomaniaPage() {
                             {article.id}
                           </div>
                           <div className="flex-1">
-                            <h4 className="text-sm font-semibold text-[#020817] mb-1">
+                            <h4 className="text-sm font-semibold text-[#0F172A] mb-1">
                               {article.title}
                             </h4>
                             <p className="text-xs text-[#7C3AED]">
@@ -322,7 +322,7 @@ export function TrichotillomaniaPage() {
                   <Sparkles size={24} className="text-white" strokeWidth={2} />
                 </div>
                 <div>
-                  <h2 className="text-lg font-semibold text-[#020817]">Interactive Tools</h2>
+                  <h2 className="text-lg font-semibold text-[#0F172A]">Interactive Tools</h2>
                   <p className="text-sm text-[#64748B]">Exercises for recovery and wellness</p>
                 </div>
               </div>
@@ -350,7 +350,7 @@ export function TrichotillomaniaPage() {
                   >
                     <tool.icon size={28} style={{ color: tool.iconColor }} strokeWidth={2} />
                   </div>
-                  <p className="text-sm font-medium text-[#020817] text-center">
+                  <p className="text-sm font-medium text-[#0F172A] text-center">
                     {tool.label}
                   </p>
                 </motion.button>
