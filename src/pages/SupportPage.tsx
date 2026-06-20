@@ -231,10 +231,10 @@ export function SupportPage() {
                   <div className="flex flex-wrap items-center gap-5">
                     <a href={`mailto:${card.email}`} className="flex items-center gap-2 text-[#0B2545] hover:text-[#13B5B1] transition-colors group">
                       <Mail size={15} /><span className="text-sm group-hover:underline">{card.email}</span>
-                    </Link>
+                    </a>
                     <a href={`tel:${card.phone.replace(/\s|\(|\)|-/g, "")}`} className="flex items-center gap-2 text-[#0B2545] hover:text-[#13B5B1] transition-colors group">
                       <Phone size={15} /><span className="text-sm group-hover:underline">{card.phone}</span>
-                    </Link>
+                    </a>
                   </div>
                   {card.action && <div>{card.action}</div>}
                 </div>
