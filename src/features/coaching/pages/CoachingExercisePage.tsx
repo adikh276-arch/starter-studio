@@ -21,7 +21,6 @@ import {
   exerciseTemplates,
   exerciseTitleToTemplateId,
   specialExercises,
-  type ExerciseField,
   type ExerciseTemplate,
 } from "../data/exerciseTemplates";
 import { slugify } from "../lib/slug";
@@ -594,6 +593,3 @@ function EmptyCard({ message }: { message: React.ReactNode }) {
     </div>
   );
 }
-
-// Silence unused-import warning for ExerciseField when types are inferred only.
-void (null as unknown as ExerciseField | undefined);
