@@ -14,12 +14,12 @@ interface InteractiveTool {
 }
 
 const interactiveTools: InteractiveTool[] = [
-  { id: "community-stories", icon: BookOpen, label: "Community Stories", bgColor: "linear-gradient(135deg, #F59E0B 0%, #D97706 100%)", link: "https://platform.mantracare.com/real-stories-of-lesbian-women" },
-  { id: "confidence-mirror", icon: Smile, label: "Confidence Mirror", bgColor: "linear-gradient(135deg, #3B82F6 0%, #2563EB 100%)", link: "https://platform.mantracare.com/confidence-mirror/" },
-  { id: "your-heritage", icon: User, label: "Your Heritage", bgColor: "linear-gradient(135deg, #10B981 0%, #059669 100%)", link: "https://platform.mantracare.com/lesbian_power_booster/" },
-  { id: "practice-coming-out", icon: Users, label: "Practice Coming out", bgColor: "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)", link: "https://platform.mantracare.com/practicing_coming_out/" },
-  { id: "handle-reactions", icon: Heart, label: "Handle Reactions of Others", bgColor: "linear-gradient(135deg, #EC4899 0%, #DB2777 100%)", link: "https://platform.mantracare.com/when-they-react/" },
-  { id: "identity-acceptance", icon: Sparkles, label: "Identity Acceptance", bgColor: "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)", link: "https://web.mantracare.com/app/lesbian_power_booster" },
+  { id: "community-stories", icon: BookOpen, label: "Community Stories", bgColor: "linear-gradient(135deg, #F59E0B 0%, #D97706 100%)", link: "/lgbtq/content/real-stories-of-lesbian-women" },
+  { id: "confidence-mirror", icon: Smile, label: "Confidence Mirror", bgColor: "linear-gradient(135deg, #3B82F6 0%, #2563EB 100%)", link: "/lgbtq/content/confidence-mirror" },
+  { id: "your-heritage", icon: User, label: "Your Heritage", bgColor: "linear-gradient(135deg, #10B981 0%, #059669 100%)", link: "/lgbtq/content/lesbian-power-booster" },
+  { id: "practice-coming-out", icon: Users, label: "Practice Coming out", bgColor: "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)", link: "/lgbtq/content/coming-out-practice" },
+  { id: "handle-reactions", icon: Heart, label: "Handle Reactions of Others", bgColor: "linear-gradient(135deg, #EC4899 0%, #DB2777 100%)", link: "/lgbtq/content/when-they-react" },
+  { id: "identity-acceptance", icon: Sparkles, label: "Identity Acceptance", bgColor: "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)", link: "/lgbtq/content/lesbian-power-booster" },
 ];
 
 interface Tip {
@@ -106,11 +106,7 @@ export function LesbianGuide() {
 
   const handleToolClick = (link: string | null) => {
     if (link) {
-      if (link.startsWith('http')) {
-        window.open(link, '_blank');
-      } else {
-        navigate(link);
-      }
+      navigate(link);
     }
   };
 

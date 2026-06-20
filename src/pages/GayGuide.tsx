@@ -14,12 +14,12 @@ interface InteractiveTool {
 }
 
 const interactiveTools: InteractiveTool[] = [
-  { id: "celebrate-identity", icon: Sparkles, label: "Celebrate your Identity", bgColor: "linear-gradient(135deg, #F59E0B 0%, #D97706 100%)", link: "https://platform.mantracare.com/gay-and-proud/" },
-  { id: "confidence-mirror", icon: Smile, label: "Confidence Mirror", bgColor: "linear-gradient(135deg, #3B82F6 0%, #2563EB 100%)", link: "https://platform.mantracare.com/confidence-mirror/" },
-  { id: "masculinity", icon: User, label: "Masculinity on your own terms", bgColor: "linear-gradient(135deg, #10B981 0%, #059669 100%)", link: "https://platform.mantracare.com/masculinity-on-your-own-terms/" },
-  { id: "coming-out", icon: Users, label: "Coming out", bgColor: "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)", link: "https://platform.mantracare.com/gay-coming-out/" },
-  { id: "handle-reactions", icon: Heart, label: "Handle Reactions of Others", bgColor: "linear-gradient(135deg, #EC4899 0%, #DB2777 100%)", link: "https://platform.mantracare.com/when-they-react/" },
-  { id: "dealing-homophobia", icon: BookOpen, label: "Dealing with Homophobia", bgColor: "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)", link: "https://platform.mantracare.com/dealing-with-homophobia/" },
+  { id: "celebrate-identity", icon: Sparkles, label: "Celebrate your Identity", bgColor: "linear-gradient(135deg, #F59E0B 0%, #D97706 100%)", link: "/lgbtq/content/gay-and-proud" },
+  { id: "confidence-mirror", icon: Smile, label: "Confidence Mirror", bgColor: "linear-gradient(135deg, #3B82F6 0%, #2563EB 100%)", link: "/lgbtq/content/confidence-mirror" },
+  { id: "masculinity", icon: User, label: "Masculinity on your own terms", bgColor: "linear-gradient(135deg, #10B981 0%, #059669 100%)", link: "/lgbtq/content/masculinity-on-your-own-terms" },
+  { id: "coming-out", icon: Users, label: "Coming out", bgColor: "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)", link: "/lgbtq/content/gay-coming-out" },
+  { id: "handle-reactions", icon: Heart, label: "Handle Reactions of Others", bgColor: "linear-gradient(135deg, #EC4899 0%, #DB2777 100%)", link: "/lgbtq/content/when-they-react" },
+  { id: "dealing-homophobia", icon: BookOpen, label: "Dealing with Homophobia", bgColor: "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)", link: "/lgbtq/content/dealing-with-homophobia" },
 ];
 
 interface Tip {
@@ -106,11 +106,7 @@ export function GayGuide() {
 
   const handleToolClick = (link: string | null) => {
     if (link) {
-      if (link.startsWith('http')) {
-        window.open(link, '_blank');
-      } else {
-        navigate(link);
-      }
+      navigate(link);
     }
   };
 
