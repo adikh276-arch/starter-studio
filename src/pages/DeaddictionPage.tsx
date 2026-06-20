@@ -5,6 +5,7 @@ import { Sidebar } from "@/components/Sidebar";
 import { MobileNav } from "@/components/MobileNav";
 import { useState } from "react";
 import { MobileAppModal } from "@/components/modals/MobileAppModal";
+import { EmojiIcon } from "@/lib/emoji-icon";
 
 export function DeaddictionPage() {
   const navigate = useNavigate();
@@ -113,7 +114,7 @@ export function DeaddictionPage() {
                 className="w-12 h-12 rounded-full flex items-center justify-center text-2xl flex-shrink-0 mt-0.5"
                 style={{ backgroundColor: service.color }}
               >
-                {service.icon}
+                <EmojiIcon emoji={service.icon} size={22} />
               </div>
               
               {/* Title and Description */}
@@ -333,7 +334,7 @@ export function DeaddictionPage() {
                           <div
                             className={`w-11 h-11 rounded-2xl flex items-center justify-center flex-shrink-0 ${config.iconBg}`}
                           >
-                            {config.icon}
+                            <EmojiIcon emoji={config.icon} size={22} />
                           </div>
 
                           {/* Content */}

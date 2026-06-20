@@ -29,6 +29,7 @@ import lgbtqCtaImage from "figma:asset/f4d666d5d7a1e98a6947a7ca3f0c8c44b62f1580.
 import teleconsultationCtaImage from "figma:asset/69a727af93b78a6d55ca2a2da5a80e3c92408294.png";
 import healthChecksCtaImage from "figma:asset/6e0e3208cd17bd3e4f90e27dd46ded2593e98be6.png";
 import nutritionCtaImage from "figma:asset/e49f3a8f9683847740be442d382c2d75f926f532.png";
+import { EmojiIcon } from "@/lib/emoji-icon";
 
 const serviceDetails: Record<string, {
   name: string;
@@ -879,7 +880,7 @@ export function ServicePage() {
               <ChevronLeft size={24} />
             </button>
             <div className={`w-9 h-9 rounded-xl flex items-center justify-center shadow-md text-lg flex-shrink-0`} style={{ backgroundColor: service.color }}>
-              {service.icon}
+              <EmojiIcon emoji={service.icon} size={22} />
             </div>
             <h1 className={`text-xl md:text-2xl ${t.headingText}`}>{service.name}</h1>
           </div>
@@ -1102,7 +1103,7 @@ export function ServicePage() {
                   <div 
                     className={`w-14 h-14 rounded-[18px] flex items-center justify-center flex-shrink-0 shadow-md ${config.iconBg}`}
                   >
-                    {config.icon}
+                    <EmojiIcon emoji={config.icon} size={22} />
                   </div>
 
                   {/* Content */}
@@ -1671,7 +1672,7 @@ export function ServicePage() {
                                   <div 
                                     className={`w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0 ${config.iconBg}`}
                                   >
-                                    {config.icon}
+                                    <EmojiIcon emoji={config.icon} size={22} />
                                   </div>
 
                                   <div className="flex-1 min-w-0">
@@ -1857,7 +1858,7 @@ export function ServicePage() {
                             <div 
                               className={`w-11 h-11 rounded-2xl flex items-center justify-center flex-shrink-0 ${config.iconBg}`}
                             >
-                              {config.icon}
+                              <EmojiIcon emoji={config.icon} size={22} />
                             </div>
 
                             <div className="flex-1 min-w-0">
@@ -2039,7 +2040,7 @@ export function ServicePage() {
                                   <div 
                                     className={`w-11 h-11 rounded-2xl flex items-center justify-center flex-shrink-0 ${config.iconBg}`}
                                   >
-                                    {config.icon}
+                                    <EmojiIcon emoji={config.icon} size={22} />
                                   </div>
 
                                   <div className="flex-1 min-w-0">
@@ -2226,7 +2227,7 @@ export function ServicePage() {
                             <div 
                               className={`w-11 h-11 rounded-2xl flex items-center justify-center flex-shrink-0 ${config.iconBg}`}
                             >
-                              {config.icon}
+                              <EmojiIcon emoji={config.icon} size={22} />
                             </div>
 
                             {/* Content */}
@@ -2415,7 +2416,7 @@ export function ServicePage() {
                             <div 
                               className={`w-11 h-11 rounded-2xl flex items-center justify-center flex-shrink-0 ${config.iconBg}`}
                             >
-                              {config.icon}
+                              <EmojiIcon emoji={config.icon} size={22} />
                             </div>
 
                             {/* Content */}
@@ -2604,7 +2605,7 @@ export function ServicePage() {
                             <div 
                               className={`w-11 h-11 rounded-2xl flex items-center justify-center flex-shrink-0 ${config.iconBg}`}
                             >
-                              {config.icon}
+                              <EmojiIcon emoji={config.icon} size={22} />
                             </div>
 
                             {/* Content */}
@@ -2793,7 +2794,7 @@ export function ServicePage() {
                             <div 
                               className={`w-11 h-11 rounded-2xl flex items-center justify-center flex-shrink-0 ${config.iconBg}`}
                             >
-                              {config.icon}
+                              <EmojiIcon emoji={config.icon} size={22} />
                             </div>
 
                             {/* Content */}
@@ -2982,7 +2983,7 @@ export function ServicePage() {
                             <div 
                               className={`w-11 h-11 rounded-2xl flex items-center justify-center flex-shrink-0 ${config.iconBg}`}
                             >
-                              {config.icon}
+                              <EmojiIcon emoji={config.icon} size={22} />
                             </div>
 
                             {/* Content */}
@@ -3171,7 +3172,7 @@ export function ServicePage() {
                             <div 
                               className={`w-11 h-11 rounded-2xl flex items-center justify-center flex-shrink-0 ${config.iconBg}`}
                             >
-                              {config.icon}
+                              <EmojiIcon emoji={config.icon} size={22} />
                             </div>
 
                             {/* Content */}
@@ -3355,7 +3356,7 @@ export function ServicePage() {
                             <div 
                               className={`w-11 h-11 rounded-2xl flex items-center justify-center flex-shrink-0 ${config.iconBg}`}
                             >
-                              {config.icon}
+                              <EmojiIcon emoji={config.icon} size={22} />
                             </div>
 
                             <div className="flex-1 min-w-0">
@@ -3575,7 +3576,7 @@ export function ServicePage() {
                           <div 
                             className={`w-11 h-11 rounded-2xl flex items-center justify-center flex-shrink-0 ${config.iconBg}`}
                           >
-                            {config.icon}
+                            <EmojiIcon emoji={config.icon} size={22} />
                           </div>
 
                           {/* Content */}
@@ -3759,7 +3760,7 @@ export function ServicePage() {
                                 <div 
                                   className={`w-11 h-11 rounded-2xl flex items-center justify-center flex-shrink-0 ${config.iconBg}`}
                                 >
-                                  {config.icon}
+                                  <EmojiIcon emoji={config.icon} size={22} />
                                 </div>
 
                                 <div className="flex-1 min-w-0">
@@ -4253,7 +4254,7 @@ export function ServicePage() {
                   <div 
                     className={`w-11 h-11 rounded-2xl flex items-center justify-center flex-shrink-0 ${config.iconBg}`}
                   >
-                    {config.icon}
+                    <EmojiIcon emoji={config.icon} size={22} />
                   </div>
 
                   {/* Content */}
@@ -4636,7 +4637,7 @@ export function ServicePage() {
                   <div 
                     className={`w-11 h-11 rounded-2xl flex items-center justify-center flex-shrink-0 ${config.iconBg}`}
                   >
-                    {config.icon}
+                    <EmojiIcon emoji={config.icon} size={22} />
                   </div>
 
                   <div className="flex-1 min-w-0">

@@ -35,6 +35,7 @@ import { AppointmentDeclinedModal } from "@/components/modals/AppointmentDecline
 import { AppointmentConfirmationModal } from "@/components/modals/AppointmentConfirmationModal";
 import { SessionsVerificationModal } from "@/components/modals/SessionsVerificationModal";
 import { BuyPlanModal } from "@/components/modals/BuyPlanModal";
+import { EmojiIcon } from "@/lib/emoji-icon";
 
 interface Service {
   id: string;
@@ -527,7 +528,7 @@ export function Dashboard() {
                     <div 
                       className={`w-11 h-11 rounded-2xl flex items-center justify-center flex-shrink-0 ${config.iconBg}`}
                     >
-                      {config.icon}
+                      <EmojiIcon emoji={config.icon} size={22} />
                     </div>
 
                     {/* Content */}
