@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Input } from '@/components/ui/input';
 import { ArrowLeft, CheckCircle, Heart } from "lucide-react";
 import { ActivityHistoryDrawer } from "../../_shared/ActivityHistoryDrawer";
 import { StandardCompletionModal } from "../../_shared/StandardCompletionModal";
