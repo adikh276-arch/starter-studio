@@ -21,9 +21,16 @@ if (!i18n.isInitialized) {
       defaultNS: "common",
       ns: ["common"],
       load: "languageOnly",
+      // Strip locale variants/POSIX suffixes that break Intl.* in some envs.
+      supportedLngs: false,
+      nonExplicitSupportedLngs: false,
       interpolation: { escapeValue: false },
       backend: { loadPath: "/locales/{{lng}}/{{ns}}.json" },
-      detection: { order: ["querystring", "localStorage", "navigator"], caches: ["localStorage"] },
+      detection: {
+        order: ["querystring", "localStorage", "navigator"],
+        caches: ["localStorage"],
+        convertDetectedLanguage: (lng: string) => (lng.split(/[-_@]/)[0] || "en").toLowerCase(),
+      },
       react: { useSuspense: false },
       returnEmptyString: false,
     });
