@@ -32,6 +32,8 @@ const pageMap: Record<string, () => Promise<{ default: React.ComponentType }>> =
   "daily-care":        () => import("./pages/DailyCareTracker"),
 };
 
+const PrideStaticViewer = lazy(() => import("./pages/PrideStaticViewer"));
+
 const overrideRoutes = Object.entries(pageMap).map(([id, loader]) => {
   const C = lazy(loader);
   return {
@@ -48,10 +50,7 @@ overrideRoutes.push({
   path: "/lgbtq/content/:slug",
   element: (
     <Suspense fallback={null}>
-      {(() => {
-        const C = lazy(() => import("./pages/PrideStaticViewer"));
-        return <C />;
-      })()}
+      <PrideStaticViewer />
     </Suspense>
   ),
 });
