@@ -75,13 +75,7 @@ const TriggersMapActivity = () => {
     else if (screen === "complete") setScreen("map");
   };
 
-  const handleExit = () => {
-    if (window.parent !== window) {
-      window.parent.postMessage({ action: 'exit' }, 'https://web.mantracare.com');
-    } else {
-      window.location.href = 'https://web.mantracare.com';
-    }
-  };
+  const handleExit = () => { window.history.back(); };
 
   return (
     <div className="w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 relative font-sans theme-trigger-map bg-transparent">
