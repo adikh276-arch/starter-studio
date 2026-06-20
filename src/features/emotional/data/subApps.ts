@@ -1,6 +1,7 @@
 import {
   Wind, Sparkles, Heart, ScrollText, Activity, Lightbulb, Brain,
-  Moon, Apple, Compass, MessageCircle, BookOpen, type LucideIcon,
+  Moon, Apple, Compass, MessageCircle, BookOpen, ClipboardList,
+  type LucideIcon,
 } from "lucide-react";
 import type { SubApp } from "../../_shared/types";
 
@@ -75,7 +76,7 @@ export const emotionalSubApps: SubApp[] = [
   { id: "daily-gratitude-diary",  label: "Gratitude Diary",       description: "A diary devoted to gratitude.",              icon: ScrollText, category: tracker },
   { id: "joyful-activities",      label: "Joyful Activities",     description: "Plan and track joyful activities.",          icon: Sparkles, category: tracker },
   { id: "self-care-bingo",        label: "Self-Care Bingo",       description: "Self-care bingo for the week.",              icon: Sparkles, category: tracker },
-  { id: "concerns",               label: "Concerns",              description: "Capture and triage concerns.",               icon: ClipboardListIcon(), category: tracker },
+  { id: "concerns",               label: "Concerns",              description: "Capture and triage concerns.",               icon: ClipboardList, category: tracker },
   { id: "what-are-your-habits",   label: "Your Habits",           description: "Reflect on your current habits.",            icon: Activity, category: tracker },
   { id: "affirmations",           label: "Affirmations",          description: "Daily affirmations practice.",               icon: Heart,    category: tracker },
 
@@ -88,6 +89,3 @@ export const emotionalSubApps: SubApp[] = [
   { id: "topics",                 label: "Topics",                description: "Browse all emotional topics.",               icon: BookOpen,  category: learn },
 ];
 
-// (Lucide ClipboardList isn't imported above; alias here to keep the catalog flat.)
-import { ClipboardList } from "lucide-react";
-function ClipboardListIcon(): LucideIcon { return ClipboardList; }
