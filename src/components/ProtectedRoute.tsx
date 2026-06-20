@@ -1,4 +1,4 @@
-import { Navigate } from "react-router-dom";
+import { Navigate } from "react-router";
 import type { ReactNode } from "react";
 
 export function ProtectedRoute({ children }: { children: ReactNode }) {

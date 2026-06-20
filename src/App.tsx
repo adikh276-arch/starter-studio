@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router";
 import { routes } from "@/routes";
 import { AppPopupGate } from "@/components/AppPopupGate";
 import { NotFound } from "@/pages/NotFound";

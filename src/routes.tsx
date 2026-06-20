@@ -1,5 +1,5 @@
 import { lazy } from "react";
-import { Navigate } from "react-router-dom";
+import { Navigate } from "react-router";
 import { ProtectedRoute } from "@/components/ProtectedRoute";
 
 const AffirmingSelfTalk = lazy(() => import("@/pages/AffirmingSelfTalk").then(m => ({ default: m.AffirmingSelfTalk })));
