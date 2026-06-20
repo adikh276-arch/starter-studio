@@ -1,4 +1,4 @@
-import TriggersMapActivity from "./triggers-map/TriggersMapActivity";
+import TriggersMapActivity from "./components/triggers-map/TriggersMapActivity";
 import { ShareActivity } from "../../_shared/ShareActivity";
 
 

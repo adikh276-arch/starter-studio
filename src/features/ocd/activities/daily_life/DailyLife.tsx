@@ -3,8 +3,8 @@ import { ActivityHistoryDrawer } from "../../_shared/ActivityHistoryDrawer";
 import { useState, useEffect } from "react";
 
 import { BarChart3, CheckCircle, Info, TrendingUp, ArrowLeft, Loader2, Calendar } from "lucide-react";
-import ImpactSlider from "./ImpactSlider";
-import WeeklyInsights from "./WeeklyInsights";
+import ImpactSlider from "./components/ImpactSlider";
+import WeeklyInsights from "./components/WeeklyInsights";
 import { toast } from "sonner";
 import { useTranslation } from "react-i18next";
 type View = "daily" | "history" | "insights";

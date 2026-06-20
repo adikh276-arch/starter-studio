@@ -1,4 +1,4 @@
-import RitualCostCalculator from "./ritual-calculator/RitualCostCalculator";
+import RitualCostCalculator from "./components/ritual-calculator/RitualCostCalculator";
 
 const Index = () => <RitualCostCalculator />;
 
