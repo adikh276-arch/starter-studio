@@ -1,5 +1,4 @@
-import type { QuizTemplate } from "@/components/SelfCareQuizExercise";
-import type { CheckinTemplate } from "@/components/SelfCareCheckinExercise";
+import type { QuizTemplate, CheckinTemplate } from "./wellnessTypes";
 
 export const selfCareQuiz: QuizTemplate = {
   id: "self-care-quiz",
