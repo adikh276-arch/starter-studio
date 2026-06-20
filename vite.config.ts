@@ -33,4 +33,24 @@ export default defineConfig({
 
   // File types to support raw imports. Never add .css, .tsx, or .ts files to this.
   assetsInclude: ['**/*.svg', '**/*.csv'],
+
+  // The `legacy/` folder holds 8 parked sub-apps (their own tsconfigs, index.html
+  // files, public assets, etc.). Without this, Vite watches every file in there
+  // and fires full-page reloads + tsconfig-changed warnings continuously,
+  // which makes the preview feel like it's crashing.
+  server: {
+    watch: {
+      ignored: [
+        '**/legacy/**',
+        '**/node_modules/**',
+      ],
+    },
+    fs: {
+      // Don't let Vite serve files from legacy/ at all.
+      deny: ['**/legacy/**'],
+    },
+  },
+  optimizeDeps: {
+    entries: ['index.html', 'src/**/*.{ts,tsx}'],
+  },
 })
