@@ -23,6 +23,10 @@ export default function PrideStaticViewer() {
   const { slug = "" } = useParams();
   const metadata = slugMetadata[slug] ?? { title: "Pride Resources", subtitle: "Explore and grow" };
   const src = useMemo(() => `/static/pride/${encodeURIComponent(slug)}/index.html`, [slug]);
+  const handleBack = () => {
+    if (window.history.length > 1) navigate(-1);
+    else navigate("/lgbtq");
+  };
 
   return (
     <div className="flex flex-col min-h-screen bg-[#FDFCFE] relative overflow-hidden">
@@ -33,7 +37,7 @@ export default function PrideStaticViewer() {
           <PrideActivityHeader
             title={metadata.title}
             subtitle={metadata.subtitle}
-            onBack={() => navigate(-1)}
+            onBack={handleBack}
             className="mb-0"
           />
         </div>
