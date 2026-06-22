@@ -168,6 +168,7 @@ export function SelfCarePage() {
                 {featuredContent.map((item, i) => (
                   <motion.button
                     key={i}
+                    onClick={() => navigate("/self-care")}
                     whileHover={{ y: -4 }}
                     whileTap={{ scale: 0.97 }}
                     initial={{ opacity: 0, y: 12 }}
@@ -208,6 +209,7 @@ export function SelfCarePage() {
                   return (
                     <motion.button
                       key={cat.name}
+                      onClick={() => navigate("/self-care")}
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                       initial={{ opacity: 0, scale: 0.9 }}
@@ -241,6 +243,7 @@ export function SelfCarePage() {
                 {featuredContent.map((item, i) => (
                   <motion.button
                     key={i}
+                    onClick={() => navigate("/self-care")}
                     whileHover={{ y: -4 }}
                     whileTap={{ scale: 0.97 }}
                     initial={{ opacity: 0, y: 12 }}
@@ -286,6 +289,7 @@ export function SelfCarePage() {
                 {browseByGoal.map((item, i) => (
                   <motion.button
                     key={i}
+                    onClick={() => navigate("/self-care")}
                     whileHover={{ y: -4 }}
                     whileTap={{ scale: 0.97 }}
                     initial={{ opacity: 0, y: 12 }}
@@ -322,6 +326,7 @@ export function SelfCarePage() {
                   return (
                     <motion.button
                       key={i}
+                      onClick={() => navigate("/self-care")}
                       whileHover={{ y: -2, scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
                       initial={{ opacity: 0, y: 12 }}
@@ -344,6 +349,7 @@ export function SelfCarePage() {
               transition={{ duration: 0.5, delay: 0.4 }}
             >
               <motion.button
+                onClick={() => navigate("/self-care")}
                 whileHover={{ scale: 1.02, y: -2 }}
                 whileTap={{ scale: 0.98 }}
                 className="w-full relative overflow-hidden bg-gradient-to-br from-[#1a2744] to-[#0f172a] border-2 border-[#0F172A]/50 rounded-2xl px-5 py-5 flex items-center justify-between shadow-lg hover:shadow-2xl transition-all duration-300 group"
@@ -384,6 +390,7 @@ export function SelfCarePage() {
                 {featuredCollections.map((item, i) => (
                   <motion.button
                     key={i}
+                    onClick={() => navigate("/self-care")}
                     whileHover={{ y: -4 }}
                     whileTap={{ scale: 0.97 }}
                     initial={{ opacity: 0, y: 12 }}

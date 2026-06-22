@@ -245,5 +245,6 @@ export const routes = [
   { path: "/prescription-refill", element: <ProtectedRoute><PrescriptionRefill /></ProtectedRoute> },
   { path: "/medical-records", element: <ProtectedRoute><MedicalRecords /></ProtectedRoute> },
   { path: "/my-documents", element: <ProtectedRoute><MyDocuments /></ProtectedRoute> },
+  { path: "/self-care-resources", element: <ProtectedRoute><SelfCarePage /></ProtectedRoute> },
   { path: "*", element: <Navigate to="/" replace /> },
 ];

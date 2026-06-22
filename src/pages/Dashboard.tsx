@@ -235,7 +235,6 @@ export function Dashboard() {
     
     // NATIVE MIGRATED ROUTES
     const featureMap: Record<string, string> = {
-      "emotional-wellbeing": "/self-care",
       "financial-wellness": "/financial-wellbeing",
       "women-wellness": "/women-wellness-self-care",
       "fitness": "/fitness-wellness-self-care",

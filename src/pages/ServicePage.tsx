@@ -73,6 +73,10 @@ const serviceDetails: Record<string, {
       { title: "Assess Your Stress Levels", type: "Assessment", points: "10 Points", icon: "📋", duration: "8 min", completed: false },
       { title: "Daily Gratitude Journal", type: "Activity", points: "10 Points", icon: "✍️", duration: "5 min", completed: false }
     ],
+    featureLinks: [
+      { title: "Talk to a Therapist", subtitle: "Get professional support for your mental health", iconType: "chat" },
+      { title: "Self Care Resources", subtitle: "Explore tools for emotional wellbeing", iconType: "selfcare" }
+    ],
     quickTools: [
       { label: "Journal",            Icon: BookOpen,  grad: "#E0A82E", link: "/journal" },
       { label: "Selfcare Tracker",   Icon: Heart,     grad: "#E74C3C", link: "/emotional/daily-self-care-tracker" },
@@ -1459,6 +1463,8 @@ export function ServicePage() {
                         navigate("/diabetes-academy");
                       } else if ((link.title === "Academy" || link.title === "Academy (Wordpress)") && serviceId === "hypertension") {
                         navigate("/hypertension-academy");
+                      } else if (link.title === "Self Care Resources" && serviceId === "emotional-wellbeing") {
+                        navigate("/self-care-resources");
                       } else if (link.title === "Self Care Resources" && serviceId === "yoga") {
                         navigate("/yoga-self-care");
                       } else if (link.title === "Self Care Resources" && serviceId === "lgbtq") {
