@@ -200,7 +200,7 @@ export const emotionalFeature: FeatureModule = {
       element: (
         <Suspense fallback={null}>
           {(() => {
-            const C = lazy(() => import("./activities/concerns/[concern]/[type]"));
+            const C = lazy(() => import("./activities/concerns/_concern/_type"));
             return <C />;
           })()}
         </Suspense>
@@ -332,7 +332,7 @@ export const emotionalFeature: FeatureModule = {
       element: (
         <Suspense fallback={null}>
           {(() => {
-            const C = lazy(() => import("./activities/guided-series/[concern]"));
+            const C = lazy(() => import("./activities/guided-series/_concern"));
             return <C />;
           })()}
         </Suspense>
@@ -343,7 +343,7 @@ export const emotionalFeature: FeatureModule = {
       element: (
         <Suspense fallback={null}>
           {(() => {
-            const C = lazy(() => import("./activities/guided-series/[concern]/[activityName]"));
+            const C = lazy(() => import("./activities/guided-series/_concern/_activityName"));
             return <C />;
           })()}
         </Suspense>
@@ -497,7 +497,7 @@ export const emotionalFeature: FeatureModule = {
       element: (
         <Suspense fallback={null}>
           {(() => {
-            const C = lazy(() => import("./activities/resources/[concern]/[type]"));
+            const C = lazy(() => import("./activities/resources/_concern/_type"));
             return <C />;
           })()}
         </Suspense>
@@ -508,7 +508,7 @@ export const emotionalFeature: FeatureModule = {
       element: (
         <Suspense fallback={null}>
           {(() => {
-            const C = lazy(() => import("./activities/resources/[concern]/[type]/[id]"));
+            const C = lazy(() => import("./activities/resources/_concern/_type/_id"));
             return <C />;
           })()}
         </Suspense>
@@ -629,7 +629,7 @@ export const emotionalFeature: FeatureModule = {
       element: (
         <Suspense fallback={null}>
           {(() => {
-            const C = lazy(() => import("./activities/topics/[topicId]"));
+            const C = lazy(() => import("./activities/topics/_topicId"));
             return <C />;
           })()}
         </Suspense>

@@ -291,7 +291,7 @@ export default function DebtManagementPage() {
                 <button className="btn btn-secondary btn-lg" style={{ flex: 1 }} onClick={handleReset}>
                   <RotateCcw size={16} /> {t('Start Over')}
                 </button>
-                <button className="btn btn-primary btn-lg" style={{ flex: 1 }} onClick={() => router('/', { replace: true })}>
+                <button className="btn btn-primary btn-lg" style={{ flex: 1 }} onClick={() => navigate('/', { replace: true })}>
                   {t('Back')}
                 </button>
               </div>

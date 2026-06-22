@@ -232,11 +232,24 @@ export function Dashboard() {
       setShowMobileAppModal(true);
       return;
     }
-    // Route OCD to dedicated page
-    if (serviceId === "ocd") {
-      navigate("/ocd");
+    
+    // NATIVE MIGRATED ROUTES
+    const featureMap: Record<string, string> = {
+      "emotional-wellbeing": "/self-care",
+      "financial-wellness": "/financial-wellbeing",
+      "women-wellness": "/women-wellness-self-care",
+      "fitness": "/fitness-wellness-self-care",
+      "quit-smoking": "/substance",
+      "ocd": "/ocd-selfcare",
+      "lgbtq": "/lgbtq",
+      "coach": "/coaching-areas"
+    };
+
+    if (featureMap[serviceId]) {
+      navigate(featureMap[serviceId]);
       return;
     }
+
     // Route Hotline to dedicated page
     if (serviceId === "hotline") {
       navigate("/hotline");

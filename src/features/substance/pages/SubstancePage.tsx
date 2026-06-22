@@ -6,6 +6,7 @@ import { getStreak, getEntries, getPrefix, fetchOnboarded, saveOnboarded, resetO
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { loadModuleTranslations } from '@/features/substance/i18n/dynamicLoader';
+import '@/features/substance/i18n';
 import TrackerDetail from '@/features/substance/components/TrackerDetail';
 import ToolModal from '@/features/substance/components/ToolModal';
 import SubstanceIcon from '@/features/substance/components/SubstanceIcon';

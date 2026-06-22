@@ -481,7 +481,7 @@ function SelfCareHubInner({ topicId }: { topicId?: string }) {
                   className="space-y-8"
                 >
                   <button
-                    onClick={() => router(withLang('/', { replace: true }))}
+                    onClick={() => navigate(withLang('/', { replace: true }))}
                     className="flex items-center gap-2 text-[#64748B] hover:text-[#020817] transition-colors group mb-4"
                   >
                     <ChevronLeft size={20} className="group-hover:-translate-x-1 transition-transform" />
@@ -708,7 +708,7 @@ function SelfCareHubInner({ topicId }: { topicId?: string }) {
                           } else if (topic.url) {
                             window.location.href = withLang(topic.url);
                           } else {
-                            router(withLang(`/topics/${topic.id}`, { replace: true }));
+                            navigate(withLang(`/topics/${topic.id}`, { replace: true }));
                           }
                         }}
                         className="p-6 bg-white border border-slate-100 rounded-2xl flex flex-col items-center gap-4 transition-all hover:shadow-md"
